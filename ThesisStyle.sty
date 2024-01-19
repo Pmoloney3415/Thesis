@@ -1,0 +1,89 @@
+\usepackage{graphicx}
+    \def\pdfshellescape{1}
+ \usepackage{epstopdf}
+%
+
+\usepackage[square,numbers,sort&compress% 
+ 			 ]{natbib}
+%			 \usepackage{hypernat}
+\usepackage{siunitx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{bigints}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage{pdfpages}
+\usepackage{subfig}
+\usepackage{ulem}
+\usepackage{esint}
+\usepackage{bbold}
+\usepackage{pdfpages}
+\usepackage{adjustbox}
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+
+\newcommand{\pvec}[1]{\vec{#1}\mkern2mu\vphantom{#1}}
+\DeclareUnicodeCharacter{2009}{ }
+\DeclareUnicodeCharacter{2192}{$\rightarrow$}
+\DeclareUnicodeCharacter{2032}{'}
+\DeclareUnicodeCharacter{03B1}{$\alpha$}
+\DeclareUnicodeCharacter{03B3}{$\gamma$}
+\DeclareMathOperator\erf{erf}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator\var{Var}
+\DeclareMathOperator\cov{Cov}
+\newcommand{\etal}{\textit{et al.} }
+%\bibliographystyle{plainnatnourl}
+%\bibliographystyle{unsrt}
+%\bibliographystyle{ieeetr}
+\bibliographystyle{unsrtnat}
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+%\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+
+\renewcommand{\vec}{\mathbf}
+
+\pagestyle{fancy}
+
+\renewcommand{\chaptermark}[1]{ \markboth{ \chaptername \ \thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+\fancyhf{} % delete current setting for header and footer
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\addtolength{\headsep}{1.0ex} % make space for the foot rule
+\usepackage{caption}
+\captionsetup{labelsep=colon}
+
+\usepackage{textcomp}
+\pdfminorversion=5
+\usepackage[ pdftex, 
+	plainpages = false, 
+	pdfpagelabels, pdfpagelayout = SinglePage, 
+	bookmarks, bookmarksopen = true,bookmarksnumbered = true,breaklinks = true,
+	linktocpage, pagebackref,colorlinks = true, linkcolor = black,urlcolor  = black,citecolor = black,anchorcolor = black, hyperindex = true,
+	 pdfproducer=TeXShop,pdfstartview=FitV, 
+	%hyperfigures 
+	]{hyperref}
+
+\usepackage{appendix}
+\usepackage{chngcntr}
+\usepackage{etoolbox}
+\usepackage{lipsum}
+\usepackage[capitalise]{cleveref}
+\creflabelformat{equation}{#2#1#3}
+
+\AtBeginEnvironment{subappendices}{%
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendices}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+}
+
+\setcounter{secnumdepth}{4}
