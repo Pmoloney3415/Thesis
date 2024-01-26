@@ -1,1 +1,331 @@
-\chapter{Numerical Tools} \label{chap:gorgon_and_epoch}
+\chapter{\textsc{Solas}, A 3-D Laser Ray Trace and Cross-Beam Energy Transfer Model} \label{chap:SOLAS}
+
+
+
+This chapter will describe the \textsc{Solas} code, a 3-D Laser ray tracing module implemented in the rad-MHD code \textsc{Chimera}.
+The key physics that are included in the module shall be presented including discussions of the validity and appliciability range of the models.
+The numerical methods will also be presented alongside an extensive set validation problems to verify the implementation.
+
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Exisiting ICF Laser-CBET models}
+
+
+%################################################################################
+%################################################################################
+\subsection{Ray Based Models}
+
+Explain that only \textsc{Aster}-\textsc{Ifriit} can do 3D CBET+hydro LDD sims, and that uses a very different model to that presented here.
+Briefly describe models for hohlraum sims but don't spend much time on this.
+Include a discussion of mehods to reconstruct field/ intensity and why mine is best lolol.
+
+%################################################################################
+%################################################################################
+\subsection{Wave Solvers}
+
+Explain \textsc{Lpse} briefly and its use as a validation code.
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{\textsc{Solas} 3-D Laser Ray Trace}
+
+This section will follow on from the theory section which derived the equations of ray tracing.
+It shall discuss 1D ray tracing and why that can be inadequate (doing CBET properly and limited to a specific use case) and compare it to 3D.
+
+
+%################################################################################
+%################################################################################
+\subsection{Equations of Rays and Adaptive Integration}
+
+Also mention here why I didn't use Kaiser solution (refraction from Snell was found to create unacceptable noise in the ray amplitude estimation).
+Somewhere mention that ray deposition is interpolated onto neighbrouing cells using shape functions to reduce noise.
+Talk about how additional quantities are integrated along ray trajectory which are described in CBET section.
+However, the derivatives of these other things are assumed to be constant over a single laser step and therefore are not included in the adaptive integration.
+
+Talk about how we use adaptive RK4 to integrate rays.
+Mention that adaptive solvers allow large steps in flat regions and accurately resolve the turning points.
+
+%##################################################
+\subsubsection{Ray Solver Validation}
+
+Quadratic trough, cylindrical helix and blast wave tests
+
+\paragraph*{Quadratic trough}
+Basic test of ray solver.
+
+\paragraph*{Cylindrical Helix}
+Test of refraction in non Cartesian coordinates and also of refraction in directions without gridding.
+
+\paragraph*{Blast wave}
+Test of inverse Bremmstrahlung absorption.
+
+%################################################################################
+%################################################################################
+\subsection{Ray Initialisation}
+
+Give details on random sampling, uniform and invers-projection methods explaining their relative strengths and weaknesses.
+
+%################################################################################
+%################################################################################
+\subsection{\textsc{Solas} Mesh Structure}
+
+Talk about the parallelisation method in \textsc{Chimera} (domain based MPI) and why a good hydro domain decomposition is not good for laser load-balancing.
+Mention that for direct-drive, (which drove most design philosophy for the model), laser uniformly illuminate the surface, so rays are uniformly distributed across sphere.
+Therefore, Ideal domain decomposition for ray trace has processors which each cover an equal area on the surface of a sphere.
+Therefore split the grid solid-angularly, so that even for 1D LDD problems, can load balance across sphere.
+
+\subsubsection{Semi-Structured Eulerian Grid with Combined Cells}
+
+Mention that also for 3D Eulerian spherical meshes near the poles, cell volumes go to zero.
+At a minimum to estimate laser quantities within a cell, the requirement for total number of rays is therefore dictated by the polar region.
+Equivalently for a given number of rays, noise will be much worse at the poles.
+Therefore a novel `semi-structured' grid was designed to circumvent this issue without giving up the advantages of an Eulerian grid (ease of implementation and interpolation between grids).
+Cells are combined in phi and theta to have the same dphi and dtheta as the equatorial cells on the grid, giving a roughly equal area on each raidla surface.
+
+Also mention how cells are combined in r adaptively, which gives improved resolution in the vicinity of the caustic, where deposition, CBET and refraction are singificant.
+Note however that resolution is limited to the hydrodynamic resolution and the laser grid is not entirely separate.
+This does make interpolation between grids easier though.
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Ray Based Field Reconstruction and Ray Sheets}
+
+Say that we want to find the field to get CBET.
+For rays this means solving the transport equation to get ray amplitude and then using amplitude to get field.
+Talk about the concept of ray amplitude and how it can be related to an area of adjacent rays.
+
+%################################################################################
+%################################################################################
+\subsection{Amplitude Estimate from Neighbour Rays}
+
+Go into detail about how the area is obtained from neighbour rays.
+Talk about the concept of sheets and caustics as divergence of amplitude.
+Also talk about `Interpolation' from rays to cells and vice versa.
+
+%################################################################################
+%################################################################################
+\subsection{Caustic Field Capping}
+
+Say that since amplitude diverges in the caustic region, necessary to cap it.
+In reality diffraction would limit the field in this region, but standard geometric optics rays can't model diffraction.
+Therefore typical approach which we follow is to limit the reconstructed field to a sensible, diffraciton-limited value.
+
+%##################################################
+\subsubsection{Field Limiter Approach}
+Say that this is the approach used throughout the thesis apart from in some validation problems where it is labelled.
+Caps the field to the maximum of a Airy function (ray going up linear density profile).
+
+%##################################################
+\subsubsection{Etalon Integral}
+This is an improvement which basically allows for deviations from linearity.
+This is not used normally, other than when cell size << wavelength, because it needs knowledge of the other sheet from the beam which is present in caustic region.
+Could be implemented using linear interpolation.
+However, typically we don't have sufficient angular resolution in combined cell grid (at least for 1D hydro) to reliably interpolate sheet to sheet via this grid.
+It is generally observed however that the field limiter approach is sufficient.
+
+%################################################################################
+%################################################################################
+\subsection{Field Reconstruction Validation}
+Using Russ' paper with lovely test comparisons to \textsc{Lpse}.
+Define the electron density profile here.
+
+%##################################################
+\subsubsection{1D Reflected Beam}
+Just a simple test of field capping compared to an analytic problem, without refraction.
+
+%##################################################
+\subsubsection{2D Reflected Beam}
+Same as above, but now for non-normally incident rays, accounting for refraction.
+Show test results in both Cartesian and Cylindrical.
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Ray Based CBET Model}
+
+Explain that ray based CBET uses the linear gain discussed in theory section.
+Say that since this assumes homogineity, effectively applies to small ray steps, which is typically well satisfied.
+Also say that this homogeneity within a computational cell and nearest neighbour interpolation of field means that it is not necessary to adaptively integrate the CBET gain.
+
+%################################################################################
+%################################################################################
+\subsection{Power Change of Rays due to CBET}
+
+Describe how ray energy changes due to CBET from linear gain models (either fluid or kinetic).
+Say how when including with inv brem, the deposited power and CBET change must be got carefully (i.e. Marozas paper).
+
+%##################################################
+\subsubsection{Fluid CBET Gain}
+
+Breifly discuss the fluid CBET gain and explain why it is easier to use for code validation.
+
+%##################################################
+\subsubsection{Kinetic CBET Gain}
+
+Breifly discuss the kinetic CBET gain and why it is better for predictive simulations.
+
+%################################################################################
+%################################################################################
+\subsection{Dynamic memory structure for storing Fields and CBET Gains}
+
+Give the scaling of storing fields and gains for every beam.
+Say that therefore a dynamic memory structure is used which only stores the fields and gain in cells where they are present.
+Also state that although the ray trace module must be done in double to numerical errors (e.g. omega differences in resonance and difference between rays), gain is stored as a single which greatly reduces cost.
+Give an estimate for how much this reduces the overall memory requirements.
+
+%################################################################################
+%################################################################################
+\subsection{Doppler Shift of Frequency}
+
+Mention time dependant refractive index results in a frequency shift of light.
+This is small, however it is significant to include in CBET models as it can shift the resonance.
+
+%################################################################################
+%################################################################################
+\subsection{Caustic Gain Truncation}
+
+Say that because nearest neighbour interpolation of the fields is used, there exists unphyscial interaction regions where a cell has a field but ray hasn't passed through that portion of the cell.
+This problem becomes particularly bad at ray turning points, where a significant amount fo CBET occurs.
+Therefore a method called `CGT' is used to effectively enhance the laser grid resolution in the vicnity of caustics.
+In cells where a ray from a specific sheet experience a caustic, the field entry for that sheet is divided geometrically, assuming that the caustic is locally a plane.
+If a ray from another sheet passes through the cell and is on the `unlit' side of the caustic plane, it will not experience CBET gain.
+Ray steps are also limited to the caustic plane.
+Other codes have shown that this approach significantly improves energy conservation.
+
+%################################################################################
+%################################################################################
+\subsection{Coherent Caustic Correction and Caustic Region Identification}
+
+Say how the field reconstruction assumption works everywhere apart from at caustics, where it underestimates the field.
+Follow what Russ says in his paper about CC correction and how it significantly improves energy conservation.
+
+%##################################################
+\subsubsection{Geometric Approach to identifying the caustic region}
+
+Other codes find caustic region by phase diff and phase interpolation.
+We can't interpolate due to resolution issues.
+Therefore implemented a new, geometric approach to finding the caustic region.
+Talk about how location of rays is stored for each sheet, partitioned by whether they are over or under the amplitude cap.
+If a cell has rays from both in a cell, then a plane is found between the two to split the cell into caustic and non-caustic.
+If a cell has only capped rays then the whole thing is caustic.
+When a ray from another beam passes through, CC mult is applied if in the caustic region.
+
+
+%################################################################################
+%################################################################################
+\subsection{Energy Conservation in Ray Based CBET Models}
+
+Talk about how energy is conserved away from caustics when converged.
+
+%################################################################################
+%################################################################################
+\subsection{Pump Depletion Iterations}
+
+Talk about why it is necessary to iterate the ray trace.
+Mention that it is possible to store ray locations and avoid performing ray trace all over again, but that approach is not taken due to memory limitations.
+Talk about convergence parameter.
+Mention necessity of damping for complicated, many beam simulations.
+
+%################################################################################
+%################################################################################
+\subsection{Model Assumptions, Applicability and Validity to ICF}
+
+Discuss the key assumptions of the CBET model and whether it is valid to use for LDD and LID.
+
+%################################################################################
+%################################################################################
+\subsection{Computational Efficency and Scaling}
+
+Talk about how the CBET model is quite expensive.
+Give the scaling laws from Russ' paper and explain how that means for many beams, CBET is bound to be the dominant cost in the simulation.
+Also say how it shows that memory is a big consideration for CBET models as the gains and fields must be stored.
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Coupling to Hydrodynamics and Example Use}
+
+Here present an entire explanation for the model working coupled to 1D-Hydrodynamics.
+
+%################################################################################
+%################################################################################
+\subsection{Power Deposition}
+
+Say that the deposited power is just added as an energy source to the electrons.
+If running in 1D or 2D, it is integrated over other directions first.
+
+%################################################################################
+%################################################################################
+\subsection{Time step limiter} \label{dtlaser}
+
+Limit timstep based on the fractional electron energy change.
+Don't limit timestep in cells far from critical.
+This is usually the limitting timestep for `cold start' simulations initially, until deposition begins to occur in hot cells.
+
+%################################################################################
+%################################################################################
+\subsection{Ray Trace Frequency}
+
+For many beam simulations, such as direct-drive simulations, the laser operator (especially with CBET) is typically one of the more expensive parts of the code.
+In the steady state of an implosion, the coronal plasma conditions don't significantly change on the global hydrodynamic timestep.
+Therefore the deposition also doesn't change much meaning that previously calculated Pdep can be stored and reapplied on subsequent timesteps.
+Especially for CBET simulations, this can reduce runtime by order of magnitude.
+Currently the ray trace is performed every timestep up until a pre-specified `warm up' time has expired.
+Then the ray trace is performed at a pre-specified frequency by the user.
+Experimentation has found that for \textsc{Omega} scale simulations, increasing frequency of calculations doesn't significantly change the answer above ... .
+
+Because LDD pulses often start with a low intensity and then ramp up, CBET gains are also often minimal until late in the implosion.
+Therefore field reconstruction and CBET iterations are only performed after a specified start time, normally when the hard-sphere intensity reaches about $1\times 10^{14}$ $Wcm^{-2}$.
+CBET iterations are then performed on the laser frequency.
+
+An improved approach shall soon be implemented where laser iterations occur at $dt_{\text{laser}}$ from section \ref{dtlaser}.
+
+%################################################################################
+%################################################################################
+\subsection{Example use on \textsc{Omega} Shot 89224}
+
+First briefly describe the shot, showing pulse shape and target.
+
+%##################################################
+\subsubsection{1-D Rad-Hydro, 3-D Ray-Trace with CBET Simulation}
+
+Describe the simulation parameters used, e.g. cell resolution, flux limiter etc.
+Show the absorbed power vs time and effect of CBET.
+Show instantaneuos radial profiles.
+Show integrated parameter comparison to \textsc{Lilac} post-shot simulation.
+Describe the previous method of tuning, involving a 2D scan of flux limiter and power multipliers.
+Say how it's great that the $flim_e = 0.06 \rightarrow 0.15$ and CBET combination now gives a predictive capability for \textsc{Omega} shots.
+
+%##################################################
+\subsubsection{3-D Post Process of Absorption Non-Uniformity}
+
+Mention how the model can also be used as a postprocess.
+\textsc{Chimera} can restart from 1-D data into spherically symmetric 3-D profiles.
+Ray Trace and CBET can then be performed through these profiles to understand the absorption non-uniformity present due to CBET.
+Note that comparison of 1-D and 3-D simulations shows that thermal conduction does a good job of smoothing angular deviations in coronal plasma conditions.
+The assumption of spherically symmetric profiles for the laser is therefore deemed valid, and it is a technique typically used by post-process CBET codes.
+
+MAYBE??
+Mention how ray noise means that we can't use direct deposition.
+Therefore use Pdep from field estimate, which is much cleaner.
+
+Talk about how CBET enhances angular non-uniformity.
+Show modal decomposition.
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Conclusions}
+
+Say that the chapter has described the validity and implementation of \textsc{Solas} and validated it.
+Culminated in demonstrating that the model can reproduce post-shot simulations of an \textsc{Omega} shot from the \textsc{Lilac} code which includes a CBET model.
+This demonstrates that the \textsc{Chimera} code now has a predictive capability for \textsc{Omega} scale direct drive experiments, as no free parameter tuning was required.

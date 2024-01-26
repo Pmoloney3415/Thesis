@@ -2,21 +2,14 @@ This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Thesis_MainSample.aux
 The style file: unsrtnat.bst
-A level-1 auxiliary file: Preamble/PreambleMain.aux
-A level-1 auxiliary file: Introduction/IntroductionMain.aux
-A level-1 auxiliary file: Theory/TheoryMain.aux
 A level-1 auxiliary file: Numerics/NumericsMain.aux
-A level-1 auxiliary file: Results1/Results1Main.aux
-A level-1 auxiliary file: Results2/Results2Main.aux
-A level-1 auxiliary file: Results3/Results3Main.aux
-A level-1 auxiliary file: Conclusions/ConclusionsMain.aux
 A level-1 auxiliary file: Appendix/Appendix1Main.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
 I found no \citation commands---while reading file Thesis_MainSample.aux
 Database file #1: Bibliography/Bibliography.bib
 You've used 0 entries,
             2481 wiz_defined-function locations,
-            561 strings with 4723 characters,
+            554 strings with 4538 characters,
 and the built_in function-call counts, 34 in all, are:
 = -- 0
 > -- 0

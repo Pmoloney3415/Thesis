@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.20)  20 JAN 2024 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  26 JAN 2024 17:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Repos/Thesis/Thesis_MainSample.tex
-(c:/Repos/Thesis/Thesis_MainSample.tex
+**f:/Thesis_latex/Thesis_MainSample.tex
+(f:/Thesis_latex/Thesis_MainSample.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (./icldt.cls
@@ -567,6 +567,8 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks38
 \inpenc@posthook=\toks39
+) (c:/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
    defining Unicode char U+2009 (decimal 8201)
    defining Unicode char U+2192 (decimal 8594)
@@ -714,7 +716,7 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Warning: Unused global option(s):
     [onesided,pagesize].
 
-(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Theory/TheoryMain.aux) (./Numerics/NumericsMain.aux) (./Results1/Results1Main.aux) (./Results2/Results2Main.aux) (./Results3/Results3Main.aux) (./Conclusions/ConclusionsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
+(./Thesis_MainSample.aux (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
 \openout1 = `Thesis_MainSample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -765,7 +767,7 @@ Package scrbase Info: activating english \indexname on input line 9.
 * \evensidemargin=18.77873pt
 * \topmargin=-38.53812pt
 * \headheight=17.0pt
-* \headsep=25.11458pt
+* \headsep=25.11342pt
 * \topskip=11.0pt
 * \footskip=47.6pt
 * \marginparwidth=89.62619pt
@@ -831,147 +833,51 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 \BKM@id=\count343
 ))
-\openout2 = `Preamble/PreambleMain.aux'.
-
- (./Preamble/PreambleMain.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
- (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
- (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+esint on input line 2.
- (c:/texlive/2023/texmf-dist/tex/latex/esint/uesint.fd
-File: uesint.fd 
-)
-<Preamble/college_logo.jpg, id=4, 1746.525pt x 632.3625pt>
-File: Preamble/college_logo.jpg Graphic file (type jpg)
-<use Preamble/college_logo.jpg>
-Package pdftex.def Info: Preamble/college_logo.jpg  used on input line 2.
-(pdftex.def)             Requested size: 195.24341pt x 70.68903pt.
- [1
-
-
-
-
-
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Preamble/college_logo.jpg>] (./Preamble/declaration.tex [2]
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
-
- []
-
-) [3
-
-] (./Abstract/abstract.tex [4] [5
-
-] [6
-
-
-]) (./Preamble/authorrole.tex) [7
-
-] (./Preamble/acknowledgements.tex [8]) [9
-
-] [10] (./Thesis_MainSample.toc)
-\tf@toc=\write4
-\openout4 = `Thesis_MainSample.toc'.
-
- [11
-
-] (./Thesis_MainSample.lot)
-\tf@lot=\write5
-\openout5 = `Thesis_MainSample.lot'.
-
- [12
-
-] (./Thesis_MainSample.lof)
-\tf@lof=\write6
-\openout6 = `Thesis_MainSample.lof'.
-
- [13
-
-]) [14]
-\openout2 = `Introduction/IntroductionMain.aux'.
-
- (./Introduction/IntroductionMain.tex
-chapter 1.
-) [15
-
-
-
-
-]
-\openout2 = `Theory/TheoryMain.aux'.
-
- (./Theory/TheoryMain.tex
-chapter 2.
-) [16
-
-
-
-
-]
 \openout2 = `Numerics/NumericsMain.aux'.
 
  (./Numerics/NumericsMain.tex
-chapter 3.
-) [17
+chapter 1.
+[1
 
 
 
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 
-]
-\openout2 = `Results1/Results1Main.aux'.
+Package fancyhdr Warning: \headheight is too small (17.0pt): 
+(fancyhdr)                Make it at least 25.25146pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.25146pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
 
- (./Results1/Results1Main.tex
-chapter 4.
-) [18
+[2] [3]
 
+Package fancyhdr Warning: \headheight is too small (17.0pt): 
+(fancyhdr)                Make it at least 25.25146pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.25146pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
 
+[4] [5]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 286.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 286.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 286.
+ (c:/texlive/2023/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+)
 
+Package fancyhdr Warning: \headheight is too small (17.0pt): 
+(fancyhdr)                Make it at least 25.25146pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.25146pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
 
-]
-\openout2 = `Results2/Results2Main.aux'.
-
- (./Results2/Results2Main.tex
-chapter 5.
-) [19
-
-
-
-
-]
-\openout2 = `Results3/Results3Main.aux'.
-
- (./Results3/Results3Main.tex
-chapter 6.
-) [20
-
-
-
-
-]
-\openout2 = `Conclusions/ConclusionsMain.aux'.
-
- (./Conclusions/ConclusionsMain.tex
-chapter 7.
-) [21
-
-
-
-
-] [22
+[6]) [7] [8
 
 
 
@@ -980,34 +886,34 @@ chapter 7.
 
  (./Appendix/Appendix1Main.tex
 chapter A.
-) [23
+) [9
 
 
-] [24
+] [10
 
 
 
 
 ] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
-\tf@brf=\write7
-\openout7 = `Thesis_MainSample.brf'.
+\tf@brf=\write4
+\openout4 = `Thesis_MainSample.brf'.
 
 
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-) [25
+) [11
 
-] [26
+] [12
 
 
 ]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [27
+ (./Appendix/Permissions.tex) [13
 
 
-] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Theory/TheoryMain.aux) (./Numerics/NumericsMain.aux) (./Results1/Results1Main.aux) (./Results2/Results2Main.aux) (./Results3/Results3Main.aux) (./Conclusions/ConclusionsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
+] (./Thesis_MainSample.aux (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1018,18 +924,18 @@ Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25773 strings out of 474165
- 517046 string characters out of 5749497
- 1929542 words of memory out of 5000000
- 47590 multiletter control sequences out of 15000+600000
- 562794 words of font info for 57 fonts, out of 8000000 for 9000
+ 25791 strings out of 474165
+ 512558 string characters out of 5749497
+ 1935542 words of memory out of 5000000
+ 47652 multiletter control sequences out of 15000+600000
+ 573418 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,7n,121p,10978b,952s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Thesis_MainSample.pdf (27 pages, 235234 bytes).
+ 122i,11n,121p,10978b,914s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc2074.pfb>
+Output written on Thesis_MainSample.pdf (13 pages, 275838 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 312 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 
