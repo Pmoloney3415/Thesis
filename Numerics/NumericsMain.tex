@@ -7,6 +7,31 @@ The key physics that are included in the module shall be presented including dis
 The numerical methods will also be presented alongside an extensive set validation problems to verify the implementation.
 
 
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Ray Tracing for Hydrodynamic Simulations of Fusion Plasmas}
+
+Nano-second length (`long-pulse') lasers are often used as an energy source in the field of high-energy-density physics, for example in laboratory-astrophysics experiments or inertial confinement fusion implosions.
+Simulating the lasers and their interaction with the plasma in fluid radiative-hydrodynamic codes often forms a key part of the analysis and understanding of these experiemnts.
+The physical processes by which lasers interact with plasma is a result of microscopic couplings between the laser field and particles or plasma waves.
+The detailed microphysics of these interactions are often studied using particle-in-cell codes or wave-based solvers, typically for scales and durations of tens of micrometres and hundreds of picoseconds.
+Coupling these tools directly to multi-dimensional hydrodynamic simulations, which are often used for millimetre and nanosecond scales, would usually be computationally intractable.
+
+The geometric optics assumptions are often widely applicable for high-energy-density laser-plasma interactions (validitiy discussed in detail for ICF plasmas in section \ref{sec:model_appliciability}) and therefore ray-tracing offers a computationally tractable approach to modelling lasers in these experiments.
+By assuming static hydrodynamic profiles (which is normally valid for the propagation time of light through a computational domain) a laser beam can be discretised into a bundle of thin rays which, the refraciton of which can be solved through the plasma using the ray equations.
+A discrete amount of power can also be given to each ray.
+If there is a suitable model for the power-absorption rate, this can be integrated along ray trajectories to provide an energy source for the plasma.
+In many laser-driven high-energy-density phsyics experiemnts, long scale-length plasmas mean that inverse-Bremmstrahlung is the dominant deposition process, for which there are well established models that are suitable for implementation in ray-tracing codes.
+
+In inertial confienemtn fusion experiments however, another class of interaction, LPIs (laser-plasma instabilities) are non-linear and not applicable to include in a simple ray-tracing code.
+These LPIs often involve coupling between multiple light and plasma waves, so implementation in a tracing code often necessitates a method by which the seperate light waves can `talk' to eachother.
+For example, the CBET code described in this chapter stores information for seperate components of laser beams on a common grid which can then interact via the `pump-depletion iterations,' described in section \ref{sec:pump_dep_iters}.
+Additionally, models for laser-plasma instabilities often require knowledge of the electric field or intensity of the light.
+In heuristic terms, rays have an associated power, so an area is required to obtain an intensity.
+This is incompatible with a simple ray-tracing routine however because rays locations are discrete points on a laser-phase front and therefore are assumed to be thin.
+
+
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -227,6 +252,7 @@ Talk about how energy is conserved away from caustics when converged.
 %################################################################################
 %################################################################################
 \subsection{Pump Depletion Iterations}
+\label{sec:pump_dep_iters}
 
 Talk about why it is necessary to iterate the ray trace.
 Mention that it is possible to store ray locations and avoid performing ray trace all over again, but that approach is not taken due to memory limitations.
@@ -236,6 +262,7 @@ Mention necessity of damping for complicated, many beam simulations.
 %################################################################################
 %################################################################################
 \subsection{Model Assumptions, Applicability and Validity to ICF}
+\label{sec:model_appliciability}
 
 Discuss the key assumptions of the CBET model and whether it is valid to use for LDD and LID.
 
@@ -253,7 +280,7 @@ Also say how it shows that memory is a big consideration for CBET models as the 
 %###############################################################################################################################
 \section{Coupling to Hydrodynamics and Example Use}
 
-Here present an entire explanation for the model working coupled to 1D-Hydrodynamics.
+Here present an entire explanation for the model working coupled to Hydrodynamics.
 
 %################################################################################
 %################################################################################
@@ -261,6 +288,9 @@ Here present an entire explanation for the model working coupled to 1D-Hydrodyna
 
 Say that the deposited power is just added as an energy source to the electrons.
 If running in 1D or 2D, it is integrated over other directions first.
+Say that when starting from $t=0$, often use a cold-start routine, which uniformly deposits power at the critical surface of a spherical capsule.
+This creates an under-dense small region in which the rays can refract and deposit energy.
+This is unsatisfactory for imprint simulations, where early time imprinting is important, but that is not considered for this thesis.
 
 %################################################################################
 %################################################################################
@@ -287,6 +317,15 @@ Therefore field reconstruction and CBET iterations are only performed after a sp
 CBET iterations are then performed on the laser frequency.
 
 An improved approach shall soon be implemented where laser iterations occur at $dt_{\text{laser}}$ from section \ref{dtlaser}.
+
+%################################################################################
+%################################################################################
+\subsection{Computational Diagnostics}
+
+Say that a variety of diagnostics can be output.
+Qpower with and without CBET.
+Geometric intensity.
+Electric field (from single or all beams), optionally split into inbound and reflected components, both with and without CBET.
 
 %################################################################################
 %################################################################################
@@ -319,6 +358,61 @@ Therefore use Pdep from field estimate, which is much cleaner.
 
 Talk about how CBET enhances angular non-uniformity.
 Show modal decomposition.
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Future Model Extensions}
+
+Say that there is even more laser/ CBET physics that is interesting and can be implemented within the raytracing framework.
+Some are straightforward to implement, while others more difficult and computationally expensive.
+
+%################################################################################
+%################################################################################
+\subsection{Langdon Effect on Abosprtion}
+
+Describe Langdon from a kinetic perspective and why it reduces absorption.
+Describe how you can fit it and include as a modification to ray tracing absorption if you have the field/ intensity.
+Describe the magnitude of the effect for ICF like conditions.
+Describe breifly how it would be implemented, say it would not be difficult.
+
+%################################################################################
+%################################################################################
+\subsection{Langdon Effect on CBET}
+
+Describe what this is.
+Say that it is important for high overlapping intensities, eg hohlraum LEH.
+Say that it is thought to stabilise the CBET interaction in indirect drive configurations and remove the need for artificial clamps.
+Describe breifly how it would be implemented, say it would not be difficult.
+
+%################################################################################
+%################################################################################
+\subsection{Polarised CBET}
+
+Describe how ion accoustic waves are driven by beat between electric fields from light and therefore is polarisation dependent.
+Say how on OMEGA, RPP smoothing means that each beam is split into 2 sub-beams with linear polarisation.
+Say that these do not have a symmetry to the configuration about the sphere.
+Say that this leads to mode-1 on OMEGA.
+Say that you can track polarisation of rays and trace these sub-beams independently.
+Would make it more expensive, but definitely feasible.
+
+%################################################################################
+%################################################################################
+\subsection{Bandwidth for CBET Mitigation Studies}
+
+Describe how bandwidth should reduce LPI growth rates.
+Understanding the desired bandwidth to mitigate CBET is a key consideration for design of future laser sysytems.
+Fields can be modified to include discrete wavelengths to model bandwidth.
+
+%################################################################################
+%################################################################################
+\subsection{Additional LPIs}
+
+Could look at TPD, SBS and SRS.
+In theory not a difficult problem to do backscatter, but side-SRS is difficult, because additional rays would need to be launched.
+This could make the model more useful to indirect-drive experiments and design of ignition scale direct-drive facilities, where SRS is thought to be important energetically due to long scale lengths.
+
 
 
 %###############################################################################################################################
