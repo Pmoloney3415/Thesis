@@ -2,8 +2,10 @@
 
 
 
-This chapter will describe the \textsc{Solas} code, a 3-D Laser ray tracing module implemented in the rad-MHD code \textsc{Chimera}.
-The key physics that are included in the module shall be presented including discussions of the validity and appliciability range of the models.
+This chapter will describe the \textsc{Solas} code, a 3-D Laser ray tracing module implemented in the \ac{Rad-MHD} code \textsc{Chimera}.
+The chapter begins with a discussion of why ray tracing is frequenctly used to model `long-pulse' lasers for \ac{HEDP} experiments and why the standard framework is inadequate to model \ac{LPIs}.
+It will then go on to describe the ray-trajectory solver, electric-field reconstruction and \ac{CBET} components of the model in detail.
+Discussion of the validity of the model components will be included.
 The numerical methods will also be presented alongside an extensive set validation problems to verify the implementation.
 
 
@@ -12,32 +14,47 @@ The numerical methods will also be presented alongside an extensive set validati
 %###############################################################################################################################
 \section{Ray Tracing for Hydrodynamic Simulations of Fusion Plasmas}
 
-Nano-second length (`long-pulse') lasers are often used as an energy source in the field of high-energy-density physics, for example in laboratory-astrophysics experiments or inertial confinement fusion implosions.
-Simulating the lasers and their interaction with the plasma in fluid radiative-hydrodynamic codes often forms a key part of the analysis and understanding of these experiemnts.
+Nano-second length (`long-pulse') lasers are often used as an external energy source in the field of \ac{HEDP}, for example in laboratory-astrophysics experiments or \ac{ICF} implosions.
+Experimental design and analysis for these experiments must often be supported with fluid \ac{Rad-MHD} simulations.
+The laser must therefore be described in these codes by a theoretical framework that is both valid to the problem and computationally tracatable.
 The physical processes by which lasers interact with plasma is a result of microscopic couplings between the laser field and particles or plasma waves.
-The detailed microphysics of these interactions are often studied using particle-in-cell codes or wave-based solvers, typically for scales and durations of tens of micrometres and hundreds of picoseconds.
+The detailed microphysics of these interactions are often studied using \ac{PiC} codes or wave-based solvers, typically for scales and durations of tens of micrometres and hundreds of picoseconds.
 Coupling these tools directly to multi-dimensional hydrodynamic simulations, which are often used for millimetre and nanosecond scales, would usually be computationally intractable.
 
-The geometric optics assumptions are often widely applicable for high-energy-density laser-plasma interactions (validitiy discussed in detail for ICF plasmas in section \ref{sec:model_appliciability}) and therefore ray-tracing offers a computationally tractable approach to modelling lasers in these experiments.
-By assuming static hydrodynamic profiles (which is normally valid for the propagation time of light through a computational domain) a laser beam can be discretised into a bundle of thin rays which, the refraciton of which can be solved through the plasma using the ray equations.
+The \ac{GO} assumptions are often widely applicable for \ac{HEDP} laser-plasma interactions (validitiy discussed in detail for \ac{ICF} plasmas in section \ref{sec:model_appliciability}) and therefore ray-tracing offers a computationally tractable approach to modelling lasers in these experiments.
+By assuming static hydrodynamic profiles (which is normally valid for the propagation time of light through the computational domain) a laser beam can be discretised into a bundle of rays and the ray equations can then be integrated along their path to solve for the trajectory of the light, assuming that refraction dominates over diffraction.
 A discrete amount of power can also be given to each ray.
-If there is a suitable model for the power-absorption rate, this can be integrated along ray trajectories to provide an energy source for the plasma.
-In many laser-driven high-energy-density phsyics experiemnts, long scale-length plasmas mean that inverse-Bremmstrahlung is the dominant deposition process, for which there are well established models that are suitable for implementation in ray-tracing codes.
+If there is a suitable model for the power-absorption rate, this can also be integrated along the ray to provide an energy source for the plasma.
+In many laser-driven \ac{HEDP} experiemnts, frequency-doubled or -tripled lasers and long scale-length plasmas mean that \ac{IB} is the dominant deposition process.
+There are well established models for \ac{IB} that are suitable for implementation in ray-tracing codes, because they only require knowledge of the local plasma conditions, which are easily accesible via interpolation from the hydrodynamic grid to rays.
+The combination of the ray equations and \ac{IB} deposition therefore is the basis for the vast majority of laser-modules coupled to hydrodynamic codes.
 
-In inertial confienemtn fusion experiments however, another class of interaction, LPIs (laser-plasma instabilities) are non-linear and not applicable to include in a simple ray-tracing code.
-These LPIs often involve coupling between multiple light and plasma waves, so implementation in a tracing code often necessitates a method by which the seperate light waves can `talk' to eachother.
-For example, the CBET code described in this chapter stores information for seperate components of laser beams on a common grid which can then interact via the `pump-depletion iterations,' described in section \ref{sec:pump_dep_iters}.
-Additionally, models for laser-plasma instabilities often require knowledge of the electric field or intensity of the light.
-In heuristic terms, rays have an associated power, so an area is required to obtain an intensity.
-This is incompatible with a simple ray-tracing routine however because rays locations are discrete points on a laser-phase front and therefore are assumed to be thin.
+In laser-driven \ac{ICF} experiments however, another class of interaction, \ac{LPIs} are vitally important to the energetics of the implosion.
+For example \ac{CBET} leads to a zeroth-order correction to the energy deposited in direct-drive experiments at the OMEGA laser facility, reducing coupled power late in the implosion by $\sim 50\%$.
+They cannot be included in the simple framework described above because they are non-linear\footnote{Non-linear in this context means that the interaction involves the interaction of multiple light and plasma waves.} and rely on knowledge of the electric field or intensity of the light.
+Implementation in a tracing code therefore necessitates a method by which the seperate light waves can `talk' to eachother.
+For example, the \ac{CBET} code described in this chapter stores information for seperate components of laser beams on a common grid which can then interact via the `pump-depletion iterations,' described in section \ref{sec:pump_dep_iters}.
+Additionally, the knowledge of electric field or intensity is problematic because this is not an attribute which standard \ac{GO} rays posses.
+Heuristically, rays have an associated power, so an area is required to obtain an intensity.
+The evolution of a portion of the beam front's area is governed by a first order expansion of the Helmholtz equation, rather than a zeroth order expansion, as is most commonly used in ray-tracing packages for hydrodynamic codes.
+The first order expansion introduces an equation for the ray amplitude which can be solved in a variety of ways and used to obtain the electric field of the light.
+Section \ref{sec:SOLAS_field_reconstruc} describes the approach taken to solving for the amplitude of the rays in \textsc{Solas}, which is to track the area of a triangle\footnote{For a 2D ray trace, a pair of rays is used rather than a triangle.} of rays around a zeroth order \ac{GO} ray.
 
+For direct-drive \ac{ICF} simulations, it is also desireable to have a 3D ray trace, where rays travel and refract in 3 dimensions.
+In some computational direct-drive studies, particularly in 1D hydrodynamic simulations, simplified laser models are employed in which rays travel radially toward the target.
+This simplification is can lead to significant deviations from reality, as it neglects any refractive losses, which can be significant late in the implosion as the target converges.
+It also leads to deposition occuring further in radially compared to a true 3D ray trace, leading to an overestimation of the drive.
+The growth of \ac{LPIs} also depends on vector summations of light and plasma wavevectors, so a 3D ray trace is necessary when modelling these effects.
+Predictive direct-drive simulations therefore necessitate a fully 3D ray-trace, even when coupled to 1D hydrodynamics.
 
 
 %###############################################################################################################################
 %###############################################################################################################################
 %###############################################################################################################################
-\section{Exisiting ICF Laser-CBET models}
+\section{Exisiting Cross-Beam Energy Transfer Models}
 
+A non-exhaustive list will be presented here of existing codes used to model Cross-Beam Energy Transfer in ICF relevant conditions.
+This is provided as context for the work presented in this section.
 
 %################################################################################
 %################################################################################
@@ -45,13 +62,19 @@ This is incompatible with a simple ray-tracing routine however because rays loca
 
 Explain that only \textsc{Aster}-\textsc{Ifriit} can do 3D CBET+hydro LDD sims, and that uses a very different model to that presented here.
 Briefly describe models for hohlraum sims but don't spend much time on this.
-Include a discussion of mehods to reconstruct field/ intensity and why mine is best lolol.
+Include a discussion of methods to reconstruct field/ intensity and why mine is best lolol.
 
 %################################################################################
 %################################################################################
 \subsection{Wave Solvers}
 
 Explain \textsc{Lpse} briefly and its use as a validation code.
+
+%################################################################################
+%################################################################################
+\subsection{Particel in Cell Code Approaches}
+
+Explain that non-linear saturation effects may be important to CBET and how PiC is used to study this.
 
 
 %###############################################################################################################################
@@ -120,6 +143,7 @@ This does make interpolation between grids easier though.
 %###############################################################################################################################
 %###############################################################################################################################
 \section{Ray Based Field Reconstruction and Ray Sheets}
+\label{sec:SOLAS_field_reconstruc}
 
 Say that we want to find the field to get CBET.
 For rays this means solving the transport equation to get ray amplitude and then using amplitude to get field.

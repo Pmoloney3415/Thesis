@@ -127,7 +127,7 @@ declaration=off,paper=a4,pagesize=auto,11pt,twoside}
 
  \begin{figure}[h!]
  \begin{center}
- \includegraphics[width=0.47\textwidth]{Preamble/college_logo.jpg}
+ \includegraphics[width=0.47\textwidth]{Preamble/new_college_logo.jpg}
  \end{center}
  \end{figure}
 
