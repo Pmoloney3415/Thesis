@@ -1,0 +1,28 @@
+\glsdefs@newdocentry{rMHD}%
+{%
+name={Rad-MHD},%
+sort={Rad-MHD},%
+type={main},%
+first={Rad-MHD},%
+firstplural={Rad-MHDs},%
+text={Rad-MHD},%
+plural={Rad-MHDs},%
+description={Radiative-Magnetohydrodynamics},%
+descriptionplural={Radiative-Magnetohydrodynamics},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
