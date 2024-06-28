@@ -84,7 +84,7 @@ The intensity is then obtained from the power in each cell using electromagnetic
 Obtaining the intensity from deposition means that the field cannot be reconstructed in vacuum regions where no deposition occurs.
 
 \textsc{Draco} uses a similar approach, but the intensity is estimated by multiplying the ray power by the path length in a cell divided by the cell volume, which gives a dimensional estimate for the intensity.
-Both of these approaches require a large number of rays-per cell to accurately obtain the intensity, $\mathcal{O}(100)$ \cite{debayle_unified_2019}.
+Both of these approaches require many rays-per cell to accurately obtain the intensity, $\mathcal{O}(100)$ \cite{debayle_unified_2019}.
 For direct-drive simulations this is extremely computationally expensive, because backscatter \ac{CBET} dominates over sidescatter, therefore the reflected field of each beam must be resolved, and each beam spreads out over a large solid angle after reflecting off a convex density profile, as is demonstrated in figure \ref{fig:reflectedrays}.
 This means that orders of magnitude more rays are required than for approaches which can accurately obtain the field from a single ray per cell.
 
@@ -92,7 +92,7 @@ Another drawback of both of these approaches is that caustics of beams (regions 
 If a significant amount of \ac{CBET} occurs at caustics, such as in direct-drive \ac{ICF}, then erroneous global multipliers to \ac{CBET} gains must be applied which are effectively free parameters that must be tuned to obtain a pre-known reduction in absorbed energy.
 This means that it is difficult to trust this approach for predictive direct-drive simulations.
 
-\paragraph*{\ac{PCGO}} In this approach, each ray has an associated Gaussian intensity profile, the width of which is integrated along the ray trajectory \cite{colaitis_towards_2014,colaitis_crossed_2016,}.
+\paragraph*{\ac{PCGO}} In this approach, each ray has an associated Gaussian intensity profile, the width of which is integrated along the ray trajectory \cite{colaitis_towards_2014,colaitis_crossed_2016}.
 A single ray can be used per cell as each ray can have an intensity which is interpolated to the mesh, but the reconstructed field at caustics is not accurate and the width evolution is only valid for a short propagation distance.
 This approach was coupled to the \textsc{Chic} 2 dimensional hydrodynamics code, but is difficult to extend to 3D as the implementation relied on interacting only rays whose centroids crossed, which does not generically occur in 3D for non-coplanar rays \cite{colaitis_modeling_2015}.
 
@@ -131,40 +131,62 @@ Kinetic modelling of \ac{CBET} has demonstrated that the growth of \ac{LPIs} can
 This section will describe how the ray equations, derived from the Helmholtz equation in section \ref{sec:ray_equations} are solved in the \textsc{Solas} module for the \textsc{Chimera} \ac{Rad-MHD} code.
 Details of the mesh used for spherical simulations and load balancing options shall be provided as well as validation problems.
 
+%################################################################################
+%################################################################################
+\subsection{Outline of \textsc{Solas}-\textsc{Chimera} Interfacing}
+
 \begin{figure}[t!]
     \includegraphics[width=8cm]{Numerics/Images/raytrace_flowchart.png}
     \centering
     \caption{A flowchart illustrating the basic interfacing between \textsc{Chimera} and \textsc{Solas}.
-    The interpolation steps refer simultaneously to the re-domain balancing and cell combination procedures described in section \ref{sec:SOLAS_mesh}}
+    The interpolation steps refer simultaneously to the re-domain balancing and cell combination procedures described in section \ref{sec:SOLAS_mesh}.}
     \label{fig:raytrace_flowchart}
 \end{figure}
 
 A simple flowchart for the basic \textsc{Solas} operational loop and the interfacing with \textsc{Chimera} is shown in figure \ref{fig:raytrace_flowchart}.
+At the start of a \ac{Rad-Hydro} timestep, $t_n$, the hydrodynamic variables (stored on the Eulerian \textsc{Chimera} grid), which are necessary to compute ray trajectories and \ac{CBET} gains are interpolated to the \textsc{Solas} mesh.
+Rays are then initialised on the beam port locations and extrapolated to the computational domain, before being traced through the grid.
+\textsc{Solas} uses a \ac{MPI} domain balanced approach to parallelization, the reasons for which will be discussed in more detail in section \ref{sec:SOLAS_mesh}, therefore rays are traced up to the internal borders of the domain subsection used for the \ac{MPI} rank.
+Rays are then passed between ranks and moved through their new subdomain until they exit the entire simulation domain.
+As rays move through the domain, they contribute to total for \ac{inv-Brem} deposition in each grid cell and other computational diagnostics.
+When all rays have exited the domain, the \textsc{Solas} quantities such as deposited energy which have been built up from the ray trace are then interpolated onto the \textsc{Chimera} grid, where the \ac{inv-Brem} deposition is used as a source term for the electron energy in the subsequent \ac{Rad-Hydro} step, $t_{n+1}$.
 The interpolation, initialization and propagation steps will be outlined in sections \ref{sec:SOLAS_mesh}, \ref{sec:SOLAS_ray_init}, \ref{sec:SOLAS_ray_propagation} respectively.
+
 
 %################################################################################
 %################################################################################
 \subsection{\textsc{Solas} Mesh Structure}
 \label{sec:SOLAS_mesh}
 
-The mesh used for hydrodynamic calculations is often not well suited for ray tracing calculations.
-
-HERE TALK GENERICALLY ABOUT SCALE LENGTHS ETC., OVERCRITICAL CELLS
+For direct-drive \ac{ICF} simulations which model the laser using ray-tracing, especially those which include \ac{CBET}, the choice of an appropriate computational mesh on which to conduct the laser ray-trace is crucial to obtaining an accurate and noise-free energy deposition.
+A well-chosen grid can also significantly reduce the run-time and memory requirements of the calculation.
+The mesh used for hydrodynamic simulations of these experiments is often not well suited for ray-tracing calculations.
+For example, hydrodynamic grid resolutions often have excessive resolution in the corona to resolve the gradients in the laser quantities, which greatly increases the expense of tracing rays through the mesh, without significantly enhancing the accuracy of the solution.
+This section will describe the approach taken in the \textsc{Solas} code to create a grid structure which is well suited to direct-drive simulations which we have found to accurately resolve laser energy deposition both with and without \ac{CBET} in a memory-efficient manner.
 
 %##################################################
 \subsubsection{Re-Domain Balance for Radial Geometries}
+
+\begin{figure}[t!]
+    \includegraphics[width=16cm]{Numerics/Images/SOLAS_CHIMERA_domain.png}
+    \centering
+    \caption{An illustrative diagram demonstrating the MPI re-domain balanced grid employed by \textsc{Solas} compared to the \textsc{Chimera} domain balanced grid for a cylindrical geometry.}
+    \label{fig:SOLAS_CHIMERA_domain}
+\end{figure}
 
 \ac{Rad-MHD} codes often employ a domain balanced approach to parallelization\footnote{This includes the \textsc{Chimera} code for which \textsc{Solas} has been developed.}, where each computational rank solves a portion of the entire spatial domain each discrete timestep.
 Additional `ghost-cells' are stored in the subdomains and used to calculate gradients on the boundaries between ranks, which are updated with inter-rank communications each timestep.
 The hydrodynamic grid for \textsc{Chimera} is Eulerian, with options for Cartesian, cylindrical or spherical-polar grids.
 
-The optimal domain balancing minimises communication between ranks, which leads to cubic\footnote{Cubic in number of cells, not necessarily in physical space for non-Cartesian geometries.} subdomains.
+The optimal domain balancing minimises communication between ranks, which leads to cubic\footnote{Cubic in cell dimension, not necessarily in physical space for non-Cartesian geometries.} subdomains.
 If computing a laser raytrace through this domain however for a typical direct-drive calculation however, initially rays travel approximately radially and therefore regularly encounter processor boundaries where they must be transferred between ranks.
 A more optimal domain decomposition for the raytrace minimises radial splitting to avoid excessive passing of rays.
-When required for spherical and cylindrical simulations, \textsc{Solas} therefore takes the hdyrodynamic variables on the \textsc{Chimera} grid and re-domain balances the grid for the raytrace, such that the splitting does not occur in the radial coordinate, as is shown in figure MAKE FIGURE HERE!!!
+When required for spherical and cylindrical simulations, \textsc{Solas} therefore takes the hydrodynamic variables on the \textsc{Chimera} grid and re-domain balances the grid for the raytrace, such that the splitting does not occur in the radial coordinate.
+An example of this re-domain balancing is shown in figure \ref{fig:SOLAS_CHIMERA_domain} for an illustrative cylindrical mesh.
+The \textsc{Chimera} domain decomposition divides the radial and azimuthal extent into 4 and 3 respectively, whereas \textsc{Solas}' division is purely in the azimuthal direction.
+For spherical and cylindrical direct-drive simulations where there is a defined, global minimum critical radius, \textsc{Solas}' mesh excludes the grid cells below this minimum radius beyond which the rays cannot reach in order to reduce the memory burden of the re-gridding.
 
-Note that a domain balanced, \ac{MPI} communication approach has been employed for the \textsc{Solas} grid and ray transfer.
-An alternative approach to parallelization of the module would be to use the \ac{OpenMP} package, where processors share memory across a computational node.
+An alternative approach to domain-decomposition parallelization of the module would be to use the \ac{OpenMP} package, where processors share memory across a computational node.
 In this approach, the entire laser grid would be stored once on the shared memory of the node and separate ranks would trace rays through the entire domain without the need for transfers.
 While this is certainly a preferable approach for a standard raytrace to the \ac{MPI} procedure described above, including a model for \ac{CBET} is more challenging with this approach.
 This is because \ac{CBET} requires communication between beams and therefore large amounts of information must be stored on the grid, which can lead to large memory overheads.
@@ -174,22 +196,66 @@ Therefore, using multiple computing nodes is often a necessity for 3D \ac{CBET} 
 %##################################################
 \subsubsection{Semi-Structured Eulerian Grid with Combined Cells}
 
-Mention that also for 3D Eulerian spherical meshes near the poles, cell volumes go to zero.
-At a minimum to estimate laser quantities within a cell, the requirement for total number of rays is therefore dictated by the polar region.
-Equivalently for a given number of rays, noise will be much worse at the poles.
-Therefore, a novel `semi-structured' grid was designed to circumvent this issue without giving up the advantages of an Eulerian grid (ease of implementation and interpolation between grids).
-Cells are combined in phi and theta to have the same dphi and dtheta as the equatorial cells on the grid, giving a roughly equal area on each raidla surface.
+\begin{figure}[t!]
+    \includegraphics[width=16cm]{Numerics/Images/solas_cells_3imagescombined.png}
+    \centering
+    \caption{Illustrative diagrams demonstrating a) the spherical polar mesh used by \textsc{Chimera} for hydrodynamic calculations, b) the cell combination mechanism employed by \textsc{Solas} to obtain a roughly equal area grid for spherical simulations and c) the adaptive radial cell combination to reduce resolution in regions where \ac{CBET} and refraction are unimportant.}
+    \label{fig:SOLAS_combined_cells}
+\end{figure}
 
-Also mention how cells are combined in r adaptively, which gives improved resolution in the vicinity of the caustic, where deposition, CBET and refraction are singificant.
-Note however that resolution is limited to the hydrodynamic resolution and the laser grid is not entirely separate.
-This does make interpolation between grids easier though.
+Ideal \ac{ICF} experiments are spherically symmetric and departures from this symmetry are usually next-order corrections to a spherical implosion.
+Simulations of these experiments therefore typically employ a computational grid with spherical symmetry.
+\textsc{Chimera} typically simulates direct-drive implosions with a spherical-polar Eulerian mesh, shown in figure \ref{fig:SOLAS_combined_cells}.a.
+This grid has the advantage of simplicity to take gradients across cells and develop new physics modules for the code, however it has the disadvantage that cell edge lengths go to zero as the radial coordinate, $r\rightarrow 0$ and the polar coordinate, $\theta\rightarrow 0,\pi$.
+This limits the hydrodynamic timestep as stable explicit timesteps are inversely proportional to edge lengths, increasing the cost of 3D spherical simulations.
+The issue is circumvented at late times in the implosion by remapping onto a Cartesian grid, which does not have vanishing edge length and face areas \cite{chittenden_signatures_2016}.
+
+Computing \ac{CBET} however required at least a single ray from each interacting beam to pass through each computational grid cell where the interaction should be important.
+For spherical-polar meshes the vanishing cell volume therefore sets extreme minimum ray number limits for the calculation to fully resolve all the fields, especially for direct-drive simulations due to the requirement to resolve the reflected fields which spread out over $4\pi$ steradians, as is shown in figure \ref{fig:reflectedrays}.
+Hydrodynamic resolutions are often also excessive for ray trace calculations to resolve the necessary refraction and energy exchange of the light.
+Rays must stop at each cell boundary in order to deposit the correct amount of energy into each grid cell and therefore the expense of the ray trace is directly proportional to the number of grid cells that the rays see.
+
+To circumvent this issue cells can be combined around the spherical grid angles in order to make a semi-structured Eulerian grid, as is shown in figure \ref{fig:SOLAS_combined_cells}.b.
+Hydrodynamic grid cells are merged together on the \textsc{Solas} mesh in each grid direction until a pre-speicifed resolution, set by the problem is reached.
+In figure \ref{fig:SOLAS_combined_cells}.b, many cells are combined in each direction to clearly display the effect.
+Typically for spherical simulations however, the cells are not combined in the polar direction, $\theta$ and $n_{\phi}$ cells are combined in the azimuthal direction until the azimuthal and polar resolutions match, explicitly $n_{\phi}r\Delta\phi\sin\theta \approx r \Delta\theta$ at a given radius, $r$.
+
+Figure \ref{fig:SOLAS_combined_cells}.c demonstrates the capability of the meshing algorithm to adaptively combine cells in the radial direction based upon density gradients.
+This allows large cells to exist in the coronal plasma where the light refracts minimially and deposits little energy, while the sharp turning point regions close to the critical surface can be well resolved.
+To find the number of radial cells to combine at a given radius, the cell combination algorithm varies on the number of cells to combine $n_r$ and calculates the maximum gradient length scale from all combined hydrodynamic cells, $L_{n_e}=n_{crit}/|\nabla n_e|_{\max}$.
+The algorithm then finds the optimal number of cells to merge together such that the new cell resolution $n_r\Delta r \approx C_L L_{n_e}$, where $C_L$ is a user parameter\footnote{Default value set to $C_L=0.05$.} which can be reduced to limit cell combining.
+A maximum cell size is also set to prevent excessively large cells in regions with minimal density gradients.
+
+Note that many options for equal area computational grids exist which, unlike the semi-structured grid described here, are completely uncorrelated from the hydrodynamic mesh \cite{cheong_eigensolutions_2015,malkin_new_2019}.
+These have the advantage that the grid can be completely chosen based solely upon the laser ray trace.
+However, the mesh described in this section has the advantage that interpolation to the hydrodynamic mesh is extremely straightforward as the \textsc{Solas} grid cells completely overlap the \textsc{Chimera} cells.
+This also removes minimises artefacts from interpolation between the grids, which have the potential to introduce spurious high order modes to the deposition source term.
 
 %################################################################################
 %################################################################################
 \subsection{Ray Initialisation}
 \label{sec:SOLAS_ray_init}
 
-Give details on random sampling, uniform and invers-projection methods explaining their relative strengths and weaknesses.
+\begin{figure}[t!]
+    \includegraphics[width=16cm]{Numerics/Images/ray_init_plots.png}
+    \centering
+    \caption{!!!!!!!!!!!!.}
+    \label{fig:SOLAS_ray_init}
+\end{figure}
+
+To obtain a noise-free energy deposition source term from a ray trace, both the grid and choice of initial rays number and location is crucial.
+The problems are closely related as a higher resolution grid will require a larger density of rays to get an equivalent ray-per-cell statistics.
+It is therefore wise to choose the number of rays used in a simulation to be some function of the grid used for the ray-trace.
+Several methods for ray initialization which have been implemented shall be briefly outlined here, along with a summary of their strengths and weaknesses.
+
+\paragraph*{Uniform Sampling}
+
+
+\paragraph*{Random Sampling}
+
+
+\paragraph*{Inverse Projection}
+
 
 %################################################################################
 %################################################################################
@@ -227,7 +293,7 @@ Basic test of ray solver.
 Test of refraction in non Cartesian coordinates and also of refraction in directions without gridding.
 
 \paragraph*{Blast wave}
-Test of inverse Bremmstrahlung absorption.
+Test of \ac{inv-Brem} absorption.
 
 %###############################################################################################################################
 %###############################################################################################################################

@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -278,5 +278,29 @@ A.~G. Seaton, L.~Yin, R.~K. Follett, B.~J. Albright, and A.~Le.
 \newblock ISSN 1070-664X.
 \newblock \doi{10.1063/5.0078800}.
 \newblock URL \url{https://doi.org/10.1063/5.0078800}.
+
+\bibitem[Chittenden et~al.(2016)Chittenden, Appelbe, Manke, McGlinchey, and Niasse]{chittenden_signatures_2016}
+J.~P. Chittenden, B.~D. Appelbe, F.~Manke, K.~McGlinchey, and N.~P.~L. Niasse.
+\newblock Signatures of asymmetry in neutron spectra and images predicted by three-dimensional radiation hydrodynamics simulations of indirect drive implosions.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (5):\penalty0 052708, May 2016.
+\newblock ISSN 1070-664X.
+\newblock \doi{10.1063/1.4949523}.
+\newblock URL \url{https://doi.org/10.1063/1.4949523}.
+
+\bibitem[Cheong and Kang(2015)]{cheong_eigensolutions_2015}
+Hyeong‐Bin Cheong and Hyun‐Gyu Kang.
+\newblock Eigensolutions of the spherical {Laplacian} for the cubed‐sphere and icosahedral‐hexagonal grids.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society}, 141\penalty0 (693):\penalty0 3383--3398, October 2015.
+\newblock ISSN 0035-9009, 1477-870X.
+\newblock \doi{10.1002/qj.2620}.
+\newblock URL \url{https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.2620}.
+
+\bibitem[Malkin(2019)]{malkin_new_2019}
+Zinovy Malkin.
+\newblock A {New} {Equal}-area {Isolatitudinal} {Grid} on a {Spherical} {Surface}.
+\newblock \emph{The Astronomical Journal}, 158\penalty0 (4):\penalty0 158, October 2019.
+\newblock ISSN 0004-6256, 1538-3881.
+\newblock \doi{10.3847/1538-3881/ab3a44}.
+\newblock URL \url{https://iopscience.iop.org/article/10.3847/1538-3881/ab3a44}.
 
 \end{thebibliography}

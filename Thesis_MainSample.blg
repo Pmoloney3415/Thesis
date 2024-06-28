@@ -7,47 +7,46 @@ A level-1 auxiliary file: Numerics/NumericsMain.aux
 A level-1 auxiliary file: Appendix/Appendix1Main.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
 Database file #1: Bibliography/Bibliography.bib
-Warning--I didn't find a database entry for ""
 Warning--empty institution in huba_nrl_2013
-You've used 34 entries,
+You've used 37 entries,
             2481 wiz_defined-function locations,
-            833 strings with 21399 characters,
-and the built_in function-call counts, 25819 in all, are:
-= -- 1392
-> -- 3244
-< -- 6
-+ -- 1119
-- -- 1048
-* -- 3108
-:= -- 4999
-add.period$ -- 206
-call.type$ -- 34
-change.case$ -- 68
-chr.to.int$ -- 31
-cite$ -- 35
-duplicate$ -- 642
-empty$ -- 1248
-format.name$ -- 1090
-if$ -- 4793
+            857 strings with 22278 characters,
+and the built_in function-call counts, 27102 in all, are:
+= -- 1515
+> -- 3299
+< -- 8
++ -- 1141
+- -- 1064
+* -- 3225
+:= -- 5210
+add.period$ -- 224
+call.type$ -- 37
+change.case$ -- 74
+chr.to.int$ -- 34
+cite$ -- 38
+duplicate$ -- 699
+empty$ -- 1359
+format.name$ -- 1111
+if$ -- 5063
 int.to.chr$ -- 4
-int.to.str$ -- 35
-missing$ -- 33
-newline$ -- 282
-num.names$ -- 102
-pop$ -- 133
+int.to.str$ -- 38
+missing$ -- 36
+newline$ -- 306
+num.names$ -- 111
+pop$ -- 145
 preamble$ -- 1
-purify$ -- 34
+purify$ -- 37
 quote$ -- 0
-skip$ -- 306
+skip$ -- 336
 stack$ -- 0
-substring$ -- 714
-swap$ -- 107
+substring$ -- 778
+swap$ -- 116
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 238
+type$ -- 259
 warning$ -- 1
-while$ -- 108
+while$ -- 118
 width$ -- 0
-write$ -- 657
-(There were 2 warnings)
+write$ -- 714
+(There was 1 warning)

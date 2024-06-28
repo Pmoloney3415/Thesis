@@ -2,3 +2,5 @@ timestep
 Eulerian
 raytrace
 OpenMP
+sidescatter
+BeamCrosser

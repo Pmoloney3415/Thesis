@@ -1,1 +1,6 @@
 {"rule":"AGREEMENT_SENT_START","sentence":"^\\QThis includes the Chimera code for which Solas has been developed.\\E$"}
+{"rule":"OXFORD_SPELLING_Z_NOT_S","sentence":"^\\QRays are then initialised on the beam port locations and extrapolated to the computational domain, before being traced through the grid.\\E$"}
+{"rule":"AGREEMENT_SENT_START","sentence":"^\\QSolas uses a \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q domain balanced approach to parallelization, the reasons for which will be discussed in more detail in section \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, therefore rays are traced up to the internal borders of the domain subsection used for the \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q rank.\\E$"}
+{"rule":"OXFORD_SPELLING_Z_NOT_S","sentence":"^\\QThe optimal domain balancing minimises communication between ranks, which leads to cubic subdomains.\\E$"}
+{"rule":"SENT_START_CONJUNCTIVE_LINKING_ADVERB_COMMA","sentence":"^\\QTypically for spherical simulations however, the cells are not combined in the polar direction, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q cells are combined in the azimuthal direction until \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q at a given radius, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"OXFORD_SPELLING_Z_NOT_S","sentence":"^\\QRay Initialisation.\\E$"}

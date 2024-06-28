@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  7 JUN 2024 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  28 JUN 2024 17:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -917,7 +917,7 @@ Package acronym Info: Label `acro:Rad-Hydro' newly defined as it shall be overri
 although it is yet undefined on input line 70.
 Package acronym Info: Label `acro:LLE' newly defined as it shall be overridden
 although it is yet undefined on input line 70.
-<Numerics/Images/Reflected_Rays.png, id=215, 440.3652pt x 344.9688pt>
+<Numerics/Images/Reflected_Rays.png, id=219, 440.3652pt x 344.9688pt>
 File: Numerics/Images/Reflected_Rays.png Graphic file (type png)
 <use Numerics/Images/Reflected_Rays.png>
 Package pdftex.def Info: Numerics/Images/Reflected_Rays.png  used on input line 73.
@@ -936,11 +936,7 @@ Package fancyhdr Warning: \headheight is too small (17.0pt):
 [8]
 Package acronym Info: Label `acro:PCGO' newly defined as it shall be overridden
 although it is yet undefined on input line 95.
-
-
-Package natbib Warning: Citation `' on page 9 undefined on input line 95.
-
-[9 <./Numerics/Images/Reflected_Rays.png>]
+ [9 <./Numerics/Images/Reflected_Rays.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ac' on input line 118.
@@ -958,17 +954,52 @@ Package fancyhdr Warning: \headheight is too small (17.0pt):
 
 LaTeX Warning: Reference `sec:ray_equations' on page 11 undefined on input line 131.
 
-<Numerics/Images/raytrace_flowchart.png, id=304, 653.496pt x 400.332pt>
+<Numerics/Images/raytrace_flowchart.png, id=308, 653.496pt x 400.332pt>
 File: Numerics/Images/raytrace_flowchart.png Graphic file (type png)
 <use Numerics/Images/raytrace_flowchart.png>
-Package pdftex.def Info: Numerics/Images/raytrace_flowchart.png  used on input line 135.
+Package pdftex.def Info: Numerics/Images/raytrace_flowchart.png  used on input line 139.
 (pdftex.def)             Requested size: 227.62204pt x 139.44023pt.
-[11 <./Numerics/Images/raytrace_flowchart.png>]
 Package acronym Info: Label `acro:MPI' newly defined as it shall be overridden
-although it is yet undefined on input line 166.
+although it is yet undefined on input line 149.
+Package acronym Info: Label `acro:inv-Brem' newly defined as it shall be overridden
+although it is yet undefined on input line 151.
+
+Overfull \hbox (5.13351pt too wide) in paragraph at lines 146--154
+\T1/cmr/m/n/10.95 A sim-ple flowchart for the ba-sic \T1/cmr/m/sc/10.95 So-las \T1/cmr/m/n/10.95 op-er-a-tional loop and the in-ter-fac-ing with \T1/cmr/m/sc/10.95 Chimera
+ []
+
+[11 <./Numerics/Images/raytrace_flowchart.png>]
+<Numerics/Images/SOLAS_CHIMERA_domain.png, id=344, 1527.45656pt x 804.75656pt>
+File: Numerics/Images/SOLAS_CHIMERA_domain.png Graphic file (type png)
+<use Numerics/Images/SOLAS_CHIMERA_domain.png>
+Package pdftex.def Info: Numerics/Images/SOLAS_CHIMERA_domain.png  used on input line 171.
+(pdftex.def)             Requested size: 455.24408pt x 239.84476pt.
+
+Overfull \hbox (39.83365pt too wide) in paragraph at lines 171--173
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (17.0pt): 
+(fancyhdr)                Make it at least 25.25146pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.25146pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
+
+[12 <./Numerics/Images/SOLAS_CHIMERA_domain.png>]
 Package acronym Info: Label `acro:OpenMP' newly defined as it shall be overridden
-although it is yet undefined on input line 167.
+although it is yet undefined on input line 189.
+<Numerics/Images/solas_cells_3imagescombined.png, id=365, 725.766pt x 600.936pt>
+File: Numerics/Images/solas_cells_3imagescombined.png Graphic file (type png)
+<use Numerics/Images/solas_cells_3imagescombined.png>
+Package pdftex.def Info: Numerics/Images/solas_cells_3imagescombined.png  used on input line 200.
+(pdftex.def)             Requested size: 455.24408pt x 376.95033pt.
 
+Overfull \hbox (39.83365pt too wide) in paragraph at lines 200--202
+ [][] 
+ []
+
+[13]
 
 Package fancyhdr Warning: \headheight is too small (17.0pt): 
 (fancyhdr)                Make it at least 25.25146pt, for example:
@@ -976,19 +1007,18 @@ Package fancyhdr Warning: \headheight is too small (17.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
 
-[12] [13]
+[14 <./Numerics/Images/solas_cells_3imagescombined.png>]
+<Numerics/Images/ray_init_plots.png, id=393, 1011.78pt x 303.534pt>
+File: Numerics/Images/ray_init_plots.png Graphic file (type png)
+<use Numerics/Images/ray_init_plots.png>
+Package pdftex.def Info: Numerics/Images/ray_init_plots.png  used on input line 240.
+(pdftex.def)             Requested size: 455.24408pt x 136.57513pt.
 
-Package fancyhdr Warning: \headheight is too small (17.0pt): 
-(fancyhdr)                Make it at least 25.25146pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.25146pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
+Overfull \hbox (39.83365pt too wide) in paragraph at lines 240--242
+ [][] 
+ []
 
-[14] [15]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ac' on input line 393.
-
+[15 <./Numerics/Images/ray_init_plots.png>]
 
 Package fancyhdr Warning: \headheight is too small (17.0pt): 
 (fancyhdr)                Make it at least 25.25146pt, for example:
@@ -1004,7 +1034,28 @@ Package fancyhdr Warning: \headheight is too small (17.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
 
-[18]) [19] [20
+[18]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ac' on input line 459.
+
+[19]
+
+Package fancyhdr Warning: \headheight is too small (17.0pt): 
+(fancyhdr)                Make it at least 25.25146pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.25146pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
+
+[20] [21])
+
+Package fancyhdr Warning: \headheight is too small (17.0pt): 
+(fancyhdr)                Make it at least 25.25146pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.25146pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
+
+[22] [23] [24
 
 
 
@@ -1013,10 +1064,10 @@ Package fancyhdr Warning: \headheight is too small (17.0pt):
 
  (./Appendix/Appendix1Main.tex
 chapter A.
-) [21
+) [25
 
 
-] [22
+] [26
 
 
 
@@ -1028,9 +1079,9 @@ chapter A.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 15.
  (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [23
+) [27
 
-] [24] [25]
+] [28] [29]
 Underfull \hbox (badness 1490) in paragraph at lines 169--169
 []\T1/cmr/m/n/10.95 A. Co-laïtis, R. K. Fol-lett, J. P. Palas-tro, I. Igu-men-schev, and V. Gon-
  []
@@ -1045,7 +1096,7 @@ Underfull \hbox (badness 1755) in paragraph at lines 169--169
 \T1/cmr/m/n/10.95 of cross beam en-ergy trans-fer in hy-dro-dy-nam-ics sim-u-la-tions.  |   []   |   []
  []
 
-[26] [27]
+[30] [31]
 Underfull \hbox (badness 1924) in paragraph at lines 257--257
 \T1/cmr/m/n/10.95 28(3):032103, March 2021.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 /
  []
@@ -1055,19 +1106,16 @@ Underfull \hbox (badness 1478) in paragraph at lines 257--257
 \T1/cmr/m/n/10.95 5 . 0037869$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 28 / 3 / 032103 / 835482 /
  []
 
-) [28]
-\openout2 = `Appendix/Permissions.aux'.
-
- (./Appendix/Permissions.tex) [29
-
-
+[32]) [33] [34
 
 
 ]
+\openout2 = `Appendix/Permissions.aux'.
 
-Package natbib Warning: There were undefined citations.
+ (./Appendix/Permissions.tex) [35
 
-(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
+
+] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1079,21 +1127,21 @@ LaTeX Warning: There were undefined references.
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: F0ED2744A8568EF30878DDDCC09C940E;2161.
+(rerunfilecheck)             Checksum: 51553C0C4F0AA27BBB6F589BCFC6FB21;2369.
  ) 
 Here is how much of TeX's memory you used:
- 27030 strings out of 474165
- 534893 string characters out of 5749497
+ 27102 strings out of 474165
+ 536935 string characters out of 5749497
  1947542 words of memory out of 5000000
- 48732 multiletter control sequences out of 15000+600000
+ 48785 multiletter control sequences out of 15000+600000
  584305 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,12n,121p,10978b,1125s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc2074.pfb>
-Output written on Thesis_MainSample.pdf (29 pages, 1321655 bytes).
+ 122i,11n,121p,10978b,1141s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc2074.pfb>
+Output written on Thesis_MainSample.pdf (35 pages, 7190640 bytes).
 PDF statistics:
- 837 PDF objects out of 1000 (max. 8388607)
- 739 compressed objects within 8 object streams
- 176 named destinations out of 1000 (max. 500000)
- 344 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 939 PDF objects out of 1000 (max. 8388607)
+ 821 compressed objects within 9 object streams
+ 195 named destinations out of 1000 (max. 500000)
+ 367 words of extra memory for PDF output out of 10000 (max. 10000000)
 
