@@ -4,3 +4,6 @@ raytrace
 OpenMP
 sidescatter
 BeamCrosser
+wavevector
+stepsize
+tricubic

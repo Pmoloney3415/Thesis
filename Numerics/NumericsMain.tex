@@ -237,9 +237,11 @@ This also removes minimises artefacts from interpolation between the grids, whic
 \label{sec:SOLAS_ray_init}
 
 \begin{figure}[t!]
-    \includegraphics[width=16cm]{Numerics/Images/ray_init_plots.png}
+    \includegraphics[width=14.5cm]{Numerics/Images/ray_init_plots.png}
     \centering
-    \caption{!!!!!!!!!!!!.}
+    \caption{Example initial locations for $\sim4000$ rays for an OMEGA beam port with super-Gaussian intensity profile, with a shape defined by $n_s=5.2$ and $\sigma=352\ \mu m$.
+    The inverse-projection ray locations are shown in sub-figure a) which demonstrate a higher ray density for rays pointed to the pole at $x\sim\  -0.15 mm$.
+    b) shows the randomly sampled rays where all rays are initialised with the same power, and c) shows uniformly sampled rays.}
     \label{fig:SOLAS_ray_init}
 \end{figure}
 
@@ -248,32 +250,106 @@ The problems are closely related as a higher resolution grid will require a larg
 It is therefore wise to choose the number of rays used in a simulation to be some function of the grid used for the ray-trace.
 Several methods for ray initialization which have been implemented shall be briefly outlined here, along with a summary of their strengths and weaknesses.
 
-\paragraph*{Uniform Sampling}
+All beams profiles described in this thesis have circularly symmetric super-Gaussian intensity profiles described by the equation,
 
+\begin{equation}
+    \label{eq:supgaus}
+    I(r) = I_0 \exp{\Bigl( -\Bigl| \frac{r}{\sigma} \Bigr| ^{n_s} \Bigr)},
+\end{equation}
+
+where $r$ is the distance from the centre of the beam port, perpendicular to the beam normal, $I_0$ is the peak intensity, $\sigma$ is the beam width\footnote{The radius at which $I=I_0e^{-1}$.} and $n_s$ is the super-Gaussian exponent.
+
+\paragraph*{Uniform Sampling}
+In this method of ray initialisation, demonstrated in figure \ref{fig:SOLAS_ray_init}.c, each beam is assigned a number of rays and a maximum ray initialisation width\footnote{The maximum initialisation width is usually set to be the radius at which $I=I_0e^{-3}$.}, beyond which rays are not initialised.
+Rays are then placed in a uniform, square grid on this plane with a power proportional to the intensity value from by equation \ref{eq:supgaus} and removed if their intensity is below $I_0e^{-3}$, which gives the ray convex hull in \ref{fig:SOLAS_ray_init}.c the circular shape.
+For all three procedures described in this subsection, the total summed power of the rays is normalised to the incident beam power after the initialisation of all rays is complete.
+Typically, for direct-drive, the total number of rays used for spherical simulations is chosen to be,
+
+\begin{equation}
+    \label{eq:SOLAS_nray_uniform}
+    N_{ray} = C_{N}\max{(N_r N_{\phi},N_r N_{\theta},N_{\theta} N_{\phi})},
+\end{equation}
+
+where $N_{i=r,\phi,\theta}$ is the number of \textsc{Solas} grid cells in that grid direction and $C_N$ is a user-parameter multiplier which to give better ray statistics for CBET simulations when required.
+$C_N\sim 2$ is found to give converged deposition when including \ac{CBET} and so this value is used by default.
+
+When there is sufficiently low ray-per-cell statistics, beat phenomena can occur between the ray spacing and the grid resolution.
+In this event, especially when using a nearest neighbour interpolation for ray power deposition onto the grid, significant spurious modes can be introduced to the power deposition.
+To resolve this, ray locations can be `dithered' so that they take a random position within the polygon\footnote{This polygon is a square for uniform sampling, but not for inverse-projection}, defined by neighbouring ray locations.
+This option is always used for simulations using uniform sampling in this thesis.
 
 \paragraph*{Random Sampling}
+Rays can also be randomly sampled according to the intensity profile.
+Example ray locations from this method are shown in figure \ref{fig:SOLAS_ray_init}.b.
+Note that the intensity profile purely emerges from the ray locations in this method as all rays have equal power.
+For no \ac{CBET} simulations this is a useful method as it minimises coherent build-up of noise from ray-spacing, grid-resolution beating.
+However, the wings of the intensity profile have very poor ray statistics so for direct-drive \ac{CBET} calculations, resolving the reflected field and therefore the dominant backscatter \ac{CBET} is excessively expensive.
 
+\paragraph*{Inverse-Projection}
+Inverse-projection, is a final method that has been implemented for ray initialisation in \textsc{Solas}.
+The algorithm is described in detail in Appendix A of Ref. \cite{marozas_wavelength-detuning_2018}, but is not used for simulations in this thesis and therefore shall only be cursively outlined.
+Briefly, the method works by finding several surfaces, defined by fractions of the critical density and then creating aim points in each cell on the surface.
+These aim points and their associated area on the surface are back-projected onto each beam port and rays are created if the aim point is not obscured by the surface on which it was created.
+The power of the ray is then the back-projected area multiplied by the intensity at the beam port location.
+For a spherical polar grid, this gives a ray distribution which varies in ray density according to which region on the beam port maps to regions on the grid with higher or lower cell-face areas.
+The rays in the higher ray density at the beam port region which maps to the polar region of the grid, at $x\sim -0.16\ mm$ on figure \ref{fig:SOLAS_ray_init}.a have a correspondingly lower power compared to rays at equal radii to give the same intensity.
 
-\paragraph*{Inverse Projection}
+While inverse-projection does guarantee good ray statistics at given surfaces for the inbound component of the field, the algorithm does not extend to beyond ray caustics, or the reflected field component.
+Therefore, ray statistics are not guaranteed to be good for the reflected field, so the advantages of this method are not evident for direct-drive \ac{CBET} simulations when backscatter must be resolved.
+However, for no \ac{CBET}, direct-drive simulations, this is a useful option for ray initialisation.
 
+\paragraph*{}
+For all simulations in this thesis, the uniform sampling method with ray dithering is used.
+This method is found to give the best ray-per cell statistics across the semi-structured Eulerian grid described in section \ref{sec:SOLAS_mesh} while minimising the overall number of rays used required to resolve \ac{CBET}.
+
+After rays are initialised on each of the beam ports, rays are extrapolated to the edge of the computational domain.
+Beam focussing is typically neglected, so all rays are assigned velocities parallel to the beam normal.
+This approximation is widely used for codes that simulate OMEGA-scale direct-drive implosions, where the lasers are approximately collimated on the implosion scale \cite{colaitis_inverse_2021,marozas_wavelength-detuning_2018}.
+It is assumed that outside of the simulation domain is vacuum and rays are therefore extrapolated to the edge of the computational domain in straight lines, using a simple root finding to find the intersection of the rays with either a spherical, cylindrical or rectangular domain depending on the simulation geometry.
 
 %################################################################################
 %################################################################################
 \subsection{Equations of Rays and Adaptive Integration}
 \label{sec:SOLAS_ray_propagation}
 
-The partial differential equations that are integrated along the trajectory of each ray are,
+In \textsc{Solas}, each ray is defined by a position $(\mathbf{x})$, wavevector $(\mathbf{k})$, phase $(\phi)$, angular frequency $(\omega)$ and power ($P$).
+The partial differential equations that are integrated along the trajectory of each ray for these quantities are,
 
 \begin{equation}
+    \label{eq:SOLAS_rays}
     \begin{gathered}
         \frac{d \mathbf{x}}{d \tau}=\mathbf{k} \\
         \frac{d \mathbf{k}}{d \tau}=\frac{1}{2} \nabla \varepsilon(\mathbf{x}) \\
         \frac{d \varphi}{d \tau}=\frac{\omega}{c} \varepsilon(\mathbf{x}) \\
-        \frac{d \omega}{d \tau}=\frac{\omega}{2 c} \frac{\partial\left(n_e / n_c\right)}{\partial t},
+        \frac{d \omega}{d \tau}=\frac{\omega}{2 c} \frac{\partial\left(n_e / n_c\right)}{\partial t} \\
+        \frac{d P}{d \tau}=-\kappa_{IB},
     \end{gathered}
 \end{equation}
 
-Also mention here why I didn't use Kaiser solution (refraction from Snell was found to create unacceptable noise in the ray amplitude estimation).
+where $\epsilon=1-n_e/n_c$ is the dielectric permittivity of the plasma, $n_e$ \& $n_c$ are the electron \& critical densities, $c$ is the speed of light, $t$ is time, $\kappa_{IB}$ is the \ac{inv-Brem} absorption kernel, given explicitly in equation \ref{eq:inv_brem} and $\tau$ is the ray path length.
+The wavevector is normalised such that $|\vec{k}|=\sqrt{\epsilon}$.
+The optical path length is related to the arc length, $ds$ by the variable change $ds=d\tau\sqrt{\epsilon}$.
+In some formulations of the ray tracing equations, the differential equations are written in terms of the arc length \cite{marozas_wavelength-detuning_2018,kaiser_laser_2000}, which is equivalent, but more complicated and without benefit.
+The frequency shift of the light is only significant for the work presented in this thesis when calculating \ac{CBET} and is discussed in more detail in section \ref{sec:SOLAS_doppler}, where the equation used to evaluate the right-hand side is given explicitly.
+Note that the time, $t$ is not related to the ray path length $\tau$, because an operator split approach is taken to the ray trace, such that the hydrodynamic variables are frozen and the ray trace finds the time independent trajectory of the light through these profiles.
+The path length $\tau$ is therefore best seen as a parameterisation of the ray curve.
+
+The default ray evolution algorithm in \textsc{Solas} is to solve Eq. \ref{eq:SOLAS_rays} using an adaptive RK45 algorithm with stepsize control \cite{press_numerical_2007}.
+Ray steps are either limited by the error from this algorithm, or by distance to the next impact with a cell face.
+Evaluations of the right-hand side of these equations employ trilinear interpolation for $n_e$, $\nabla n_e$ and $T_e$ to obtain varying values for these quantities at different locations throughout the cell.
+All other quantities are either defined at the ray location, or use nearest neighbour interpolation.
+
+It was found that linear interpolation of $n_e$ and $T_e$ is required for accurate computation of $\kappa_{IB}$, especially for `cold-start' simulations where light impacts upon a solid target and the plasma profiles have steep gradients.
+Interpolation of $\nabla n_e$ was found to be necessary to obtain low-noise ray amplitudes from neighbouring rays for \ac{CBET} evaluation, which is described in more detail in \ref{sec:SOLAS_field_reconstruc}.
+Linear interpolation of both $n_e$ and $\nabla n_e$ is technically inconsistent, because $\nabla n_e$ should be the gradient of $n_e$.
+The Kaiser algorithm was also implemented to compare against \cite{kaiser_laser_2000}.
+In this algorithm, a single density gradient is used throughout a cell.
+The ray equations can be integrated analytically in a linear density gradient, so under these circumstances, the trajectory of light through a cell can be found by using a root finding algorithm to find the cell exit location.
+This leads to discontinuities in $n_e$ at cell interfaces however, so Snell's law must be used to refract the rays as they traverse cells.
+The discontinuous refraction at cell interfaces is found to be incompatible with the \ac{CBET} field reconstruction algorithm from neighbouring rays described in section \ref{sec:SOLAS_field_reconstruc}, which adds large quanitites of noise to the ray amplitudes.
+Therefore, the Kaiser algorithm can only be used for no \ac{CBET} simulations.
+The validation tests in section \ref{sec:SOLAS_ray_validation} demonstrate that the default adaptive-trilinear scheme works well compared to the Kaiser algorithm with default settings.
+
 Somewhere mention that ray deposition is interpolated onto neighbouring cells using shape functions to reduce noise.
 Talk about how additional quantities are integrated along ray trajectory which are described in CBET section.
 However, the derivatives of these other things are assumed to be constant over a single laser step and therefore are not included in the adaptive integration.
@@ -283,10 +359,21 @@ Mention that adaptive solvers allow large steps in flat regions and accurately r
 
 %##################################################
 \subsubsection{Ray Solver Validation}
+\label{sec:SOLAS_ray_validation}
 
 Quadratic trough, cylindrical helix and blast wave tests
 
 \paragraph*{Quadratic trough}
+
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Numerics/Images/Quadtrough.png}
+    \centering
+    \caption{This figure demonstrates results of the quadratic trough ray trajectory test problem for the adaptive solver with 3 different cases.
+    These are default settings (linear interpolation of both $n_e$ and $\nabla n_e$), the Kaiser algorithm (linear interpolation of $n_e$ and uniform $\nabla n_e$ in a cell) and the adaptive algorithm with tricubic interpolation of $n_e$).
+    The top plot shows ray trajectories and analytic trajectory and the bottom plot shows absolute errors for the 3 cases.}
+    \label{fig:SOLAS_quadtrough}
+\end{figure}
+
 Basic test of ray solver.
 
 \paragraph*{Cylindrical Helix}
@@ -388,6 +475,7 @@ Give an estimate for how much this reduces the overall memory requirements.
 %################################################################################
 %################################################################################
 \subsection{Doppler Shift of Frequency}
+\label{sec:SOLAS_doppler}
 
 Mention time dependant refractive index results in a frequency shift of light.
 This is small, however it is significant to include in CBET models as it can shift the resonance.

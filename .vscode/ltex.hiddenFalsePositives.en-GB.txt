@@ -4,3 +4,4 @@
 {"rule":"OXFORD_SPELLING_Z_NOT_S","sentence":"^\\QThe optimal domain balancing minimises communication between ranks, which leads to cubic subdomains.\\E$"}
 {"rule":"SENT_START_CONJUNCTIVE_LINKING_ADVERB_COMMA","sentence":"^\\QTypically for spherical simulations however, the cells are not combined in the polar direction, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q cells are combined in the azimuthal direction until \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q at a given radius, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
 {"rule":"OXFORD_SPELLING_Z_NOT_S","sentence":"^\\QRay Initialisation.\\E$"}
+{"rule":"OXFORD_SPELLING_Z_NOT_S","sentence":"^\\QIn this method of ray initialisation, each beam\\E$"}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  28 JUN 2024 17:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  1 JUL 2024 17:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -580,15 +580,151 @@ Package: suffix 2006/07/15 1.5a Variant command support
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
 \AC@clearlist=\toks40
+) (c:/texlive/2023/texmf-dist/tex/latex/fourier/fourier.sty
+Package: fourier 2022/02/05 2.3 fourier-GUTenberg package
+Now handling font encoding FML ...
+... no UTF-8 mapping file for font encoding FML
+Now handling font encoding FMS ...
+... no UTF-8 mapping file for font encoding FMS
+Now handling font encoding FMX ...
+... no UTF-8 mapping file for font encoding FMX
+ (c:/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+futs on input line 112.
+ (c:/texlive/2023/texmf-dist/tex/latex/fourier/t1futs.fd
+File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
+)) (c:/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (c:/texlive/2023/texmf-dist/tex/latex/fourier/fourier-orns.sty
+Package: fourier-orns 2022/02/05 2.3 fourier-ornaments package
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> T1/futs/m/n on input line 63.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/m/n on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 64.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 72.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `normal' on input line 72.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> FML/futmi/m/it on input line 72.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `bold' on input line 72.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> FML/futmi/m/it on input line 72.
+\symotherletters=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 74.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 76.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 80.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 81.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 85.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 86.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 126.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 126.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> FMS/futm/m/n on input line 126.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 126.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> FMS/futm/m/n on input line 126.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 127.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 127.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 127.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 127.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 127.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 128.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 129.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 130.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> T1/futs/m/it on input line 130.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> T1/futs/m/it on input line 130.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 132.
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 138.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 142.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 143.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 144.
+LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 145.
+LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \intercal on input line 151.
+LaTeX Font Info:    Redeclaring math symbol \hslash on input line 152.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 153.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 154.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 155.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 163.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 164.
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 166.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 167.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 168.
+LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 169.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 199.
+LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 200.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 223.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 228.
+LaTeX Font Info:    Redeclaring math delimiter \lvert on input line 230.
+LaTeX Font Info:    Redeclaring math delimiter \rvert on input line 232.
+LaTeX Font Info:    Redeclaring math delimiter \lVert on input line 234.
+LaTeX Font Info:    Redeclaring math delimiter \rVert on input line 236.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 238.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 240.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 242.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 244.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 246.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 248.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 250.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 252.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 254.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 256.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 260.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 261.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 262.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 263.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 264.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 265.
+LaTeX Font Info:    Redeclaring math accent \check on input line 266.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 267.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 268.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
+\symUfutm=\mathgroup8
 )
    defining Unicode char U+2009 (decimal 8201)
    defining Unicode char U+2192 (decimal 8594)
    defining Unicode char U+2032 (decimal 8242)
    defining Unicode char U+03B1 (decimal 945)
    defining Unicode char U+03B3 (decimal 947)
- (c:/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+ (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
  (c:/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
@@ -744,6 +880,24 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 9.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmlfutm.fd
+File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+)
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 9.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmsfutm.fd
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 9.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmxfutm.fd
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
@@ -778,7 +932,7 @@ Package scrbase Info: activating english \indexname on input line 9.
 * \evensidemargin=18.77873pt
 * \topmargin=-38.53812pt
 * \headheight=17.0pt
-* \headsep=25.11342pt
+* \headsep=25.218pt
 * \topskip=11.0pt
 * \footskip=47.6pt
 * \marginparwidth=89.62619pt
@@ -824,6 +978,11 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Redeclaring math symbol \iintop on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \iiintop on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \oiintop on input line 9.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 9.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 9.
 Package backref Info: ** backref set up for natbib ** on input line 9.
 Package hyperref Info: Link coloring ON on input line 9.
  (./Thesis_MainSample.out) (./Thesis_MainSample.out)
@@ -847,6 +1006,16 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 \openout2 = `Preamble/PreambleMain.aux'.
 
  (./Preamble/PreambleMain.tex
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmlfutmi.fd
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 2.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -859,6 +1028,12 @@ LaTeX Font Info:    Trying to load font information for U+esint on input line 2.
  (c:/texlive/2023/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 2.
 <Preamble/new_college_logo.png, id=4, 12948.375pt x 1422.31375pt>
 File: Preamble/new_college_logo.png Graphic file (type png)
 <use Preamble/new_college_logo.png>
@@ -870,13 +1045,13 @@ Package pdftex.def Info: Preamble/new_college_logo.png  used on input line 2.
 
 
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./Preamble/new_college_logo.png>] [2]
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Preamble/new_college_logo.png>] [2]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 32.
  (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [3
 
-] [4]) [5]
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [4]) [5]
 \openout2 = `Numerics/NumericsMain.aux'.
 
  (./Numerics/NumericsMain.tex
@@ -897,12 +1072,46 @@ Package acronym Info: Label `acro:GO' newly defined as it shall be overridden
 although it is yet undefined on input line 24.
 Package acronym Info: Label `acro:IB' newly defined as it shall be overridden
 although it is yet undefined on input line 28.
+
+Overfull \hbox (3.87509pt too wide) in paragraph at lines 24--31
+[]\T1/futs/m/n/10.95 The [][][][]Geometric Op-tics ([])[] as-sump-tions are of-ten widely ap-pli-ca-ble for [][] laser-plasma
+ []
+
+
+Overfull \hbox (0.16301pt too wide) in paragraph at lines 24--31
+\T1/futs/m/n/10.95 tracing of-fers a com-pu-ta-tion-ally tractable ap-proach to mod-elling lasers in these ex-per-i-ments.
+ []
+
 [6
 
 
 
 
-] [7]
+]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 33.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 33.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 33.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 33.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 33.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 33.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 34.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 34.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 34.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 34.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
 Package acronym Info: Label `acro:SBS' newly defined as it shall be overridden
 although it is yet undefined on input line 63.
 
@@ -917,7 +1126,7 @@ Package acronym Info: Label `acro:Rad-Hydro' newly defined as it shall be overri
 although it is yet undefined on input line 70.
 Package acronym Info: Label `acro:LLE' newly defined as it shall be overridden
 although it is yet undefined on input line 70.
-<Numerics/Images/Reflected_Rays.png, id=219, 440.3652pt x 344.9688pt>
+<Numerics/Images/Reflected_Rays.png, id=209, 440.3652pt x 344.9688pt>
 File: Numerics/Images/Reflected_Rays.png Graphic file (type png)
 <use Numerics/Images/Reflected_Rays.png>
 Package pdftex.def Info: Numerics/Images/Reflected_Rays.png  used on input line 73.
@@ -926,13 +1135,6 @@ Package acronym Info: Label `acro:LLNL' newly defined as it shall be overridden
 although it is yet undefined on input line 81.
 Package acronym Info: Label `acro:CEA' newly defined as it shall be overridden
 although it is yet undefined on input line 81.
-
-Package fancyhdr Warning: \headheight is too small (17.0pt): 
-(fancyhdr)                Make it at least 25.25146pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.25146pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
-
 [8]
 Package acronym Info: Label `acro:PCGO' newly defined as it shall be overridden
 although it is yet undefined on input line 95.
@@ -944,17 +1146,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package acronym Info: Label `acro:IAW' newly defined as it shall be overridden
 although it is yet undefined on input line 122.
 
-Package fancyhdr Warning: \headheight is too small (17.0pt): 
-(fancyhdr)                Make it at least 25.25146pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.25146pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
+LaTeX Warning: Reference `sec:ray_equations' on page 10 undefined on input line 131.
 
-[10]
 
-LaTeX Warning: Reference `sec:ray_equations' on page 11 undefined on input line 131.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<Numerics/Images/raytrace_flowchart.png, id=308, 653.496pt x 400.332pt>
+ [10]
+<Numerics/Images/raytrace_flowchart.png, id=299, 653.496pt x 400.332pt>
 File: Numerics/Images/raytrace_flowchart.png Graphic file (type png)
 <use Numerics/Images/raytrace_flowchart.png>
 Package pdftex.def Info: Numerics/Images/raytrace_flowchart.png  used on input line 139.
@@ -963,13 +1161,8 @@ Package acronym Info: Label `acro:MPI' newly defined as it shall be overridden
 although it is yet undefined on input line 149.
 Package acronym Info: Label `acro:inv-Brem' newly defined as it shall be overridden
 although it is yet undefined on input line 151.
-
-Overfull \hbox (5.13351pt too wide) in paragraph at lines 146--154
-\T1/cmr/m/n/10.95 A sim-ple flowchart for the ba-sic \T1/cmr/m/sc/10.95 So-las \T1/cmr/m/n/10.95 op-er-a-tional loop and the in-ter-fac-ing with \T1/cmr/m/sc/10.95 Chimera
- []
-
-[11 <./Numerics/Images/raytrace_flowchart.png>]
-<Numerics/Images/SOLAS_CHIMERA_domain.png, id=344, 1527.45656pt x 804.75656pt>
+ [11 <./Numerics/Images/raytrace_flowchart.png>]
+<Numerics/Images/SOLAS_CHIMERA_domain.png, id=329, 1527.45656pt x 804.75656pt>
 File: Numerics/Images/SOLAS_CHIMERA_domain.png Graphic file (type png)
 <use Numerics/Images/SOLAS_CHIMERA_domain.png>
 Package pdftex.def Info: Numerics/Images/SOLAS_CHIMERA_domain.png  used on input line 171.
@@ -979,17 +1172,10 @@ Overfull \hbox (39.83365pt too wide) in paragraph at lines 171--173
  [][] 
  []
 
-
-Package fancyhdr Warning: \headheight is too small (17.0pt): 
-(fancyhdr)                Make it at least 25.25146pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.25146pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
-
 [12 <./Numerics/Images/SOLAS_CHIMERA_domain.png>]
 Package acronym Info: Label `acro:OpenMP' newly defined as it shall be overridden
 although it is yet undefined on input line 189.
-<Numerics/Images/solas_cells_3imagescombined.png, id=365, 725.766pt x 600.936pt>
+<Numerics/Images/solas_cells_3imagescombined.png, id=350, 725.766pt x 600.936pt>
 File: Numerics/Images/solas_cells_3imagescombined.png Graphic file (type png)
 <use Numerics/Images/solas_cells_3imagescombined.png>
 Package pdftex.def Info: Numerics/Images/solas_cells_3imagescombined.png  used on input line 200.
@@ -999,63 +1185,43 @@ Overfull \hbox (39.83365pt too wide) in paragraph at lines 200--202
  [][] 
  []
 
-[13]
-
-Package fancyhdr Warning: \headheight is too small (17.0pt): 
-(fancyhdr)                Make it at least 25.25146pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.25146pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
-
-[14 <./Numerics/Images/solas_cells_3imagescombined.png>]
-<Numerics/Images/ray_init_plots.png, id=393, 1011.78pt x 303.534pt>
+[13] [14 <./Numerics/Images/solas_cells_3imagescombined.png>]
+<Numerics/Images/ray_init_plots.png, id=379, 1011.78pt x 303.534pt>
 File: Numerics/Images/ray_init_plots.png Graphic file (type png)
 <use Numerics/Images/ray_init_plots.png>
 Package pdftex.def Info: Numerics/Images/ray_init_plots.png  used on input line 240.
-(pdftex.def)             Requested size: 455.24408pt x 136.57513pt.
+(pdftex.def)             Requested size: 412.56496pt x 123.7689pt.
+ [15 <./Numerics/Images/ray_init_plots.png>] [16]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 315.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 315.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 315.
 
-Overfull \hbox (39.83365pt too wide) in paragraph at lines 240--242
- [][] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[15 <./Numerics/Images/ray_init_plots.png>]
+ [17]
 
-Package fancyhdr Warning: \headheight is too small (17.0pt): 
-(fancyhdr)                Make it at least 25.25146pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.25146pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
-
-[16] [17]
-
-Package fancyhdr Warning: \headheight is too small (17.0pt): 
-(fancyhdr)                Make it at least 25.25146pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.25146pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
+LaTeX Warning: Reference `eq:inv_brem' on page 18 undefined on input line 329.
 
 [18]
+<Numerics/Images/Quadtrough.png, id=449, 867.24pt x 433.62pt>
+File: Numerics/Images/Quadtrough.png Graphic file (type png)
+<use Numerics/Images/Quadtrough.png>
+Package pdftex.def Info: Numerics/Images/Quadtrough.png  used on input line 370.
+(pdftex.def)             Requested size: 415.41043pt x 207.70515pt.
+ [19 <./Numerics/Images/Quadtrough.png>] [20]
+Overfull \hbox (0.90756pt too wide) in paragraph at lines 471--475
+\T1/futs/m/n/10.95 mem-ory struc-ture is used which only stores the fields and gain in cells where they are present.
+ []
+
+[21]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ac' on input line 459.
+(hyperref)                removing `\@ac' on input line 548.
 
-[19]
-
-Package fancyhdr Warning: \headheight is too small (17.0pt): 
-(fancyhdr)                Make it at least 25.25146pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.25146pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
-
-[20] [21])
-
-Package fancyhdr Warning: \headheight is too small (17.0pt): 
-(fancyhdr)                Make it at least 25.25146pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.25146pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.25146pt}.
-
-[22] [23] [24
+[22] [23] [24]) [25] [26
 
 
 
@@ -1064,10 +1230,10 @@ Package fancyhdr Warning: \headheight is too small (17.0pt):
 
  (./Appendix/Appendix1Main.tex
 chapter A.
-) [25
+) [27
 
 
-] [26
+] [28
 
 
 
@@ -1079,40 +1245,95 @@ chapter A.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 15.
  (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [27
-
-] [28] [29]
-Underfull \hbox (badness 1490) in paragraph at lines 169--169
-[]\T1/cmr/m/n/10.95 A. Co-laïtis, R. K. Fol-lett, J. P. Palas-tro, I. Igu-men-schev, and V. Gon-
+)
+Underfull \hbox (badness 1817) in paragraph at lines 24--24
+[]\T1/futs/m/n/10.95 F. Fi-uza, G. F. Swadling, A. Grassi, H. G. Rinderknecht, D. P. Hig-gin-son, D. D.
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 169--169
-\T1/cmr/m/n/10.95 charov.  Adap-tive in-verse ray-tracing for ac-cu-rate and ef-fi-cient mod-el-ing
+Underfull \hbox (badness 2707) in paragraph at lines 24--24
+\T1/futs/m/n/10.95 Ryu-tov, C. Bruulsema, R. P. Drake, S. Funk, S. Glen-zer, G. Gre-gori, C. K. Li,
+ []
+
+[29
+
+] [30]
+Underfull \hbox (badness 1189) in paragraph at lines 99--99
+[]\T1/futs/m/n/10.95 Andrew J. Schmitt and Stephen P. Oben-schain.  The im-por-tance of laser wave-
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 169--169
-\T1/cmr/m/n/10.95 of cross beam en-ergy trans-fer in hy-dro-dy-nam-ics sim-u-la-tions.  |   []   |   []
+Underfull \hbox (badness 3250) in paragraph at lines 99--99
+\T1/futs/m/n/10.95 5 . 0118080$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 30 / 1 / 012701 / 2867678 /
  []
 
-[30] [31]
-Underfull \hbox (badness 1924) in paragraph at lines 257--257
-\T1/cmr/m/n/10.95 28(3):032103, March 2021.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 /
+[31] [32]
+Underfull \hbox (badness 1158) in paragraph at lines 209--209
+[]\T1/futs/m/n/10.95 A. Co-laïtis, S. Hüller, D. Pesme, G. Duchateau, and V. T. Tikhonchuk.  Crossed
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 257--257
-\T1/cmr/m/n/10.95 5 . 0037869$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 28 / 3 / 032103 / 835482 /
+Underfull \hbox (badness 2913) in paragraph at lines 209--209
+\T1/futs/m/n/10.95 proach ver-sus a time-dependent parax-ial method to de-scribe ex-per-i-men-tal re-
  []
 
-[32]) [33] [34
+[33]
+Underfull \hbox (badness 2809) in paragraph at lines 241--241
+[]\T1/futs/m/n/10.95 R. K. Fol-lett, A. Co-laïtis, D. Turn-bull, D. H. Froula, and J. P. Palas-tro.  Val-
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 241--241
+\T1/futs/m/n/10.95 i-da-tion of ray-based cross-beam en-ergy trans-fer mod-els.  |   []   |   []   |   [],
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 241--241
+\T1/futs/m/n/10.95 29(11):113902, Novem-ber 2022.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 /
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 241--241
+\T1/futs/m/n/10.95 5 . 0123462$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 29 / 11 / 113902 / 2844248 /
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 257--257
+[]\T1/futs/m/n/10.95 R. K. Fol-lett, J. G. Shaw, J. F. My-att, H. Wen, D. H. Froula, and J. P. Palas-
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 257--257
+\T1/futs/m/n/10.95 tro.  Thresh-olds of ab-so-lute two-plasmon-decay and stim-u-lated Ra-man scat-
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 257--257
+\T1/futs/m/n/10.95 ter-ing in-sta-bil-i-ties driven by mul-ti-ple broad-band lasers.  |   []   |   []   |   [],
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 257--257
+\T1/futs/m/n/10.95 28(3):032103, March 2021.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 / 5 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+\T1/futs/m/n/10.95 0037869$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 28 / 3 / 032103 / 835482 /
+ []
+
+[34]
+Underfull \hbox (badness 1215) in paragraph at lines 313--313
+\T1/futs/m/n/10.95 PhysRevE . 61 . 895$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / link . aps . org / doi / 10 . 1103 / PhysRevE . 61 . 895$[][]\T1/futs/m/n/10.95 .
+ []
+
+) [35] [36
 
 
 ]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [35
+ (./Appendix/Permissions.tex) [37
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
@@ -1127,21 +1348,21 @@ LaTeX Warning: There were undefined references.
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: 51553C0C4F0AA27BBB6F589BCFC6FB21;2369.
+(rerunfilecheck)             Checksum: CCE45937F1967E4C0CE16C995490C593;2824.
  ) 
 Here is how much of TeX's memory you used:
- 27102 strings out of 474165
- 536935 string characters out of 5749497
- 1947542 words of memory out of 5000000
- 48785 multiletter control sequences out of 15000+600000
- 584305 words of font info for 107 fonts, out of 8000000 for 9000
+ 27549 strings out of 474165
+ 543869 string characters out of 5749497
+ 1949542 words of memory out of 5000000
+ 49165 multiletter control sequences out of 15000+600000
+ 712060 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,11n,121p,10978b,1141s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc2074.pfb>
-Output written on Thesis_MainSample.pdf (35 pages, 7190640 bytes).
+ 122i,12n,121p,10978b,1143s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on Thesis_MainSample.pdf (37 pages, 7099350 bytes).
 PDF statistics:
- 939 PDF objects out of 1000 (max. 8388607)
- 821 compressed objects within 9 object streams
- 195 named destinations out of 1000 (max. 500000)
- 367 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 914 PDF objects out of 1000 (max. 8388607)
+ 830 compressed objects within 9 object streams
+ 206 named destinations out of 1000 (max. 500000)
+ 372 words of extra memory for PDF output out of 10000 (max. 10000000)
 

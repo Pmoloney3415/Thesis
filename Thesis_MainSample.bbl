@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -302,5 +302,19 @@ Zinovy Malkin.
 \newblock ISSN 0004-6256, 1538-3881.
 \newblock \doi{10.3847/1538-3881/ab3a44}.
 \newblock URL \url{https://iopscience.iop.org/article/10.3847/1538-3881/ab3a44}.
+
+\bibitem[Kaiser(2000)]{kaiser_laser_2000}
+Thomas~B. Kaiser.
+\newblock Laser ray tracing and power deposition on an unstructured three-dimensional grid.
+\newblock \emph{Physical Review E}, 61\penalty0 (1):\penalty0 895--905, January 2000.
+\newblock \doi{10.1103/PhysRevE.61.895}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.61.895}.
+\newblock Publisher: American Physical Society.
+
+\bibitem[Press(2007)]{press_numerical_2007}
+William~H. Press, editor.
+\newblock \emph{Numerical recipes: the art of scientific computing}.
+\newblock Cambridge University Press, Cambridge, 3. ed edition, 2007.
+\newblock ISBN 978-0-521-88068-8.
 
 \end{thebibliography}
