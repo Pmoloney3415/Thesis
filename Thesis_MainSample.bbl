@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{44}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -316,5 +316,40 @@ William~H. Press, editor.
 \newblock \emph{Numerical recipes: the art of scientific computing}.
 \newblock Cambridge University Press, Cambridge, 3. ed edition, 2007.
 \newblock ISBN 978-0-521-88068-8.
+
+\bibitem[Williams(2024)]{williams_bspline-fortran_2024}
+Jacob Williams.
+\newblock bspline-fortran, January 2024.
+\newblock URL \url{https://zenodo.org/records/8423936}.
+
+\bibitem[Birdsall and Langdon(1985)]{birdsall_plasma_1985}
+Charles~K. Birdsall and A.~Bruce Langdon.
+\newblock \emph{Plasma physics via computer simulation}.
+\newblock McGraw-Hill, New York, 1985.
+\newblock ISBN 978-0-07-005371-7.
+
+\bibitem[Arber et~al.(2015)Arber, Bennett, Brady, Lawrence-Douglas, Ramsay, Sircombe, Gillies, Evans, Schmitz, Bell, and Ridgers]{arber_contemporary_2015}
+T~D Arber, K~Bennett, C~S Brady, A~Lawrence-Douglas, M~G Ramsay, N~J Sircombe, P~Gillies, R~G Evans, H~Schmitz, A~R Bell, and C~P Ridgers.
+\newblock Contemporary particle-in-cell approach to laser-plasma modelling.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 57\penalty0 (11):\penalty0 113001, November 2015.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/0741-3335/57/11/113001}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/0741-3335/57/11/113001}.
+
+\bibitem[Cornet and Kwok(2007)]{cornet_new_2007}
+Christophe Cornet and Dixon~T.K. Kwok.
+\newblock A new algorithm for charge deposition for multiple-grid method for {PIC} simulations in r–z cylindrical coordinates.
+\newblock \emph{Journal of Computational Physics}, 225\penalty0 (1):\penalty0 808--828, July 2007.
+\newblock ISSN 00219991.
+\newblock \doi{10.1016/j.jcp.2007.01.004}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S0021999107000058}.
+
+\bibitem[Haines et~al.(2020)Haines, Keller, Marozas, McKenty, Anderson, Collins, Dai, Hall, Jones, McKay~Jr, Rauenzahn, and Woods]{haines_coupling_2020}
+Brian~M. Haines, D.E. Keller, J.A. Marozas, P.W. McKenty, K.S. Anderson, T.J.B. Collins, W.W. Dai, M.L. Hall, S.~Jones, M.D. McKay~Jr, R.M. Rauenzahn, and D.N. Woods.
+\newblock Coupling laser physics to radiation-hydrodynamics.
+\newblock \emph{Computers \& Fluids}, 201:\penalty0 104478, April 2020.
+\newblock ISSN 00457930.
+\newblock \doi{10.1016/j.compfluid.2020.104478}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S0045793020300517}.
 
 \end{thebibliography}

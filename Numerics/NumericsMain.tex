@@ -318,50 +318,69 @@ The partial differential equations that are integrated along the trajectory of e
 \begin{equation}
     \label{eq:SOLAS_rays}
     \begin{gathered}
-        \frac{d \mathbf{x}}{d \tau}=\mathbf{k} \\
-        \frac{d \mathbf{k}}{d \tau}=\frac{1}{2} \nabla \varepsilon(\mathbf{x}) \\
-        \frac{d \varphi}{d \tau}=\frac{\omega}{c} \varepsilon(\mathbf{x}) \\
-        \frac{d \omega}{d \tau}=\frac{\omega}{2 c} \frac{\partial\left(n_e / n_c\right)}{\partial t} \\
+        \frac{d \mathbf{x}}{d \tau}=\mathbf{k}, \\
+        \frac{d \mathbf{k}}{d \tau}=\frac{1}{2} \nabla \varepsilon(\mathbf{x}), \\
+        \frac{d \varphi}{d \tau}=\frac{\omega}{c} \varepsilon(\mathbf{x}), \\
+        \frac{d \omega}{d \tau}=\frac{\omega}{2 c} \frac{\partial\left(n_e / n_c\right)}{\partial t}, \\
         \frac{d P}{d \tau}=-\kappa_{IB},
     \end{gathered}
 \end{equation}
 
-where $\epsilon=1-n_e/n_c$ is the dielectric permittivity of the plasma, $n_e$ \& $n_c$ are the electron \& critical densities, $c$ is the speed of light, $t$ is time, $\kappa_{IB}$ is the \ac{inv-Brem} absorption kernel, given explicitly in equation \ref{eq:inv_brem} and $\tau$ is the ray path length.
-The wavevector is normalised such that $|\vec{k}|=\sqrt{\epsilon}$.
-The optical path length is related to the arc length, $ds$ by the variable change $ds=d\tau\sqrt{\epsilon}$.
+where $\varepsilon=1-n_e/n_c$ is the dielectric permittivity of the plasma, $n_e$ \& $n_c$ are the electron \& critical densities, $c$ is the speed of light, $t$ is time, $\kappa_{IB}$ is the \ac{inv-Brem} absorption kernel, given explicitly in equation \ref{eq:inv_brem} and $\tau$ is the ray path length.
+The wavevector is normalised such that $|\vec{k}|=\sqrt{\varepsilon}$.
+The optical path length is related to the arc length, $ds$ by the variable change $ds=d\tau\sqrt{\varepsilon}$.
 In some formulations of the ray tracing equations, the differential equations are written in terms of the arc length \cite{marozas_wavelength-detuning_2018,kaiser_laser_2000}, which is equivalent, but more complicated and without benefit.
 The frequency shift of the light is only significant for the work presented in this thesis when calculating \ac{CBET} and is discussed in more detail in section \ref{sec:SOLAS_doppler}, where the equation used to evaluate the right-hand side is given explicitly.
 Note that the time, $t$ is not related to the ray path length $\tau$, because an operator split approach is taken to the ray trace, such that the hydrodynamic variables are frozen and the ray trace finds the time independent trajectory of the light through these profiles.
 The path length $\tau$ is therefore best seen as a parameterisation of the ray curve.
 
+\paragraph*{Adaptive RK45 Solver}
 The default ray evolution algorithm in \textsc{Solas} is to solve Eq. \ref{eq:SOLAS_rays} using an adaptive RK45 algorithm with stepsize control \cite{press_numerical_2007}.
 Ray steps are either limited by the error from this algorithm, or by distance to the next impact with a cell face.
 Evaluations of the right-hand side of these equations employ trilinear interpolation for $n_e$, $\nabla n_e$ and $T_e$ to obtain varying values for these quantities at different locations throughout the cell.
 All other quantities are either defined at the ray location, or use nearest neighbour interpolation.
+The \texttt{bspline-fortran} library has also been implemented to allow tricubic interpolation of $n_e$, which yields a quadratically varying $\nabla n_e$ across the grid \cite{williams_bspline-fortran_2024}.
+This is slow to evaluate many times per ray step as is required in an RK45 algorithm and therefore limits performance, but is used throughout this chapter as a higher order solution to validate accuracy of the default interpolation.
 
-It was found that linear interpolation of $n_e$ and $T_e$ is required for accurate computation of $\kappa_{IB}$, especially for `cold-start' simulations where light impacts upon a solid target and the plasma profiles have steep gradients.
+Linear interpolation of $n_e$ and $T_e$ is required for accurate computation of $\kappa_{IB}$, especially for `cold-start' simulations where light impacts upon a solid target and the plasma profiles have steep gradients.
 Interpolation of $\nabla n_e$ was found to be necessary to obtain low-noise ray amplitudes from neighbouring rays for \ac{CBET} evaluation, which is described in more detail in \ref{sec:SOLAS_field_reconstruc}.
-Linear interpolation of both $n_e$ and $\nabla n_e$ is technically inconsistent, because $\nabla n_e$ should be the gradient of $n_e$.
-The Kaiser algorithm was also implemented to compare against \cite{kaiser_laser_2000}.
-In this algorithm, a single density gradient is used throughout a cell.
-The ray equations can be integrated analytically in a linear density gradient, so under these circumstances, the trajectory of light through a cell can be found by using a root finding algorithm to find the cell exit location.
-This leads to discontinuities in $n_e$ at cell interfaces however, so Snell's law must be used to refract the rays as they traverse cells.
-The discontinuous refraction at cell interfaces is found to be incompatible with the \ac{CBET} field reconstruction algorithm from neighbouring rays described in section \ref{sec:SOLAS_field_reconstruc}, which adds large quanitites of noise to the ray amplitudes.
-Therefore, the Kaiser algorithm can only be used for no \ac{CBET} simulations.
-The validation tests in section \ref{sec:SOLAS_ray_validation} demonstrate that the default adaptive-trilinear scheme works well compared to the Kaiser algorithm with default settings.
+Linear interpolation of both $n_e$ and $\nabla n_e$ is technically inconsistent, because $\nabla n_e$ should be the gradient of $n_e$, however the test cases presented in section \ref{sec:SOLAS_ray_validation} found that this did not reduce accuracy compared to the Kaiser algorithm, which employs a self-consistent linear interpolation of $n_e$ and constant $\nabla n_e$ within a computational cell.
 
-Somewhere mention that ray deposition is interpolated onto neighbouring cells using shape functions to reduce noise.
-Talk about how additional quantities are integrated along ray trajectory which are described in CBET section.
-However, the derivatives of these other things are assumed to be constant over a single laser step and therefore are not included in the adaptive integration.
+\paragraph*{Kaiser Algorithm}
+The Kaiser algorithm for ray integration has also been implemented \cite{kaiser_laser_2000}.
+In this algorithm, each cell has a single $\nabla n_e$ and an $n_e$ value defined at the cell centre, allowing for linear interpolation of $n_e$ throughout the cell.
+In a constant $\nabla n_e$ region, the trajectory of rays can be analytically shown to follow a parabola.
+The Kaiser algorithm thus evolves rays over parabolic segments between cells by finding the intersection of the parabola with cell faces, using a root finding algorithm.
+Assuming constant $\nabla n_e$ cells leads to discontinuities in $n_e$ at cell interfaces when the true gradient is not linear and thus Snell's Law is used to refract rays upon cell exit.
+While this method is often slightly more efficient compared to the adaptive RK45, it was found that when attempting to reconstruct the ray amplitude from the area of neighbouring rays, as outlined in section \ref{sec:SOLAS_field_reconstruc}, excessive noise was introduced in the amplitude from the discontinuous refraction.
+Therefore, the adaptive algorithm was used for all work in this thesis, other than where explicitly outlined.
 
-Talk about how we use adaptive RK4 to integrate rays.
-Mention that adaptive solvers allow large steps in flat regions and accurately resolve the turning points.
+\begin{figure}[t!]
+    \includegraphics[width=8.0cm]{Numerics/Images/SOLAS_ray_shape_functions.png}
+    \centering
+    \caption{Demonstration of the shape function smearing weighting for ray power interpolation to the \textsc{Solas} mesh for a cylindrical mesh.
+    The shape function has the same size and geometry as the \textsc{Solas} grid cell which the ray is located in.
+    A top-hat shape function is used, so the fraction of the deposited power interpolated to a given cell is proportional to the volume overlap of the shape function with the cell.}
+    \label{fig:SOLAS_ray_shapefunction}
+\end{figure}
+
+\paragraph*{Shape Functions for Ray Deposition}
+Nearest neighbour interpolation of power deposition, which is defined along the ray trajectory, onto the computational grid can result in significant levels of noise in the power deposition profile when ray statistics are not sufficiently high.
+This is similar to problems experienced in \ac{PiC} codes when interpolating macro particles to the grid without the use of shape functions \cite{birdsall_plasma_1985,arber_contemporary_2015}.
+A \ac{PiC}-inspired shape function approach was taken therefore, where the power deposition from rays is smeared across neighbouring cells.
+A top hat shape function is used, with a shape function that has the size and shape of the cell that the ray is located within, as is shown in figure \ref{fig:SOLAS_ray_shapefunction}.
+The power deposited into each cell that has an overlap with the shape function bounds is therefore proportional to the volume overlap of the shape function with the cell.
+This approach is more explicitly outlined, particularly for the case of the non-logically rectilinear grids which are present for \textsc{Solas}, in Ref. \cite{cornet_new_2007}.
+This smearing is somewhat numerically diffusive and therefore can be optionally disabled.
+For the work presented in this thesis, the shape function smearing is employed for multidimensional direct-drive simulations, but otherwise disabled.
 
 %##################################################
 \subsubsection{Ray Solver Validation}
 \label{sec:SOLAS_ray_validation}
 
-Quadratic trough, cylindrical helix and blast wave tests
+Several validation problems have been conducted to verify that the ray solver has been implemented correctly.
+Here we present the quadratic trough and cylindrical helix test problems which compare the path of a single ray in a density profile to an analytic solution to verify that the ray solvers correctly obtain for the trajectory of light.
+The blast wave problem is also presented which is a test of \ac{inv-Brem} absorption to an analytic solution in the absence of thermal conduction and hydrodynamic motion.
 
 \paragraph*{Quadratic trough}
 
@@ -374,7 +393,32 @@ Quadratic trough, cylindrical helix and blast wave tests
     \label{fig:SOLAS_quadtrough}
 \end{figure}
 
-Basic test of ray solver.
+The quadratic trough is a test of ray trajectory in a quadratic density trough, which admits an analytic solution of a periodically oscillating ray \cite{kaiser_laser_2000,haines_coupling_2020}.
+The density profile used for the test is defined as,
+
+\begin{equation}
+    n_e(y) = \frac{n_c}{2} \left( 1 + \frac{y^2}{y_c^2} \right),
+\end{equation}
+
+which for light with wavelength $\lambda=351\ \text{nm}$, is initialised with $n_c = 9.049\times 10^{21} \ \text{cm}^{-3}$ and $y_c = 5 \ \text{cm}$.
+The domain has bounds $x \in [0,25]\ \text{cm}$ and $y \in [-5,5]\ \text{cm}$ and a ray enters the domain at $[x_0,y_0]=[0,3]\ \text{cm}$.
+Analytic integration of the first 2 lines from Eq. \ref{eq:SOLAS_rays}, yields the analytic trajectory as a function of ray path length , $\tau$,
+
+\begin{equation}
+    \begin{gathered}
+        x(\tau) = \tau\sqrt{1-\frac{n_e(y_0)}{n_c}}, \\
+        y(\tau) = y_0\cos{\left( \frac{\tau}{\sqrt{2}y_c} \right)}.
+    \end{gathered}
+\end{equation}
+
+The analytic trajectory is compared to the solution from the adaptive solver (using both default interpolation and tricubic interpolation of $n_e$) and the Kaiser algorithm in figure \ref{fig:SOLAS_quadtrough}.
+The associated error, defined as the difference in $y$ at a given $x$ is also plotted.
+Note that all results were obtained using a grid resolution of $100\times100$ cells.
+The top panel demonstrates that all trajectories are identical to the analytic solution by eye.
+The corresponding errors show that the tricubic interpolation obtains effectively perfectly recreates the analytic solution and the Kaiser error is slightly more significant compared to the default adaptive error.
+The tricubic error is insignificant because the cubic interpolation perfectly recreates the true density profile, so the errors are purely numeric, not due to the resolution.
+Errors from the other algorithms would therefore decrease more quickly with increasing resolution as the density profile the ray sees becomes more similar to a quadratic trough.
+The error from the default adaptive interpolation (linear interpolation of both $n_e$ and $\nabla n_e$) is lower than that of Kaiser (linear $n_e$ and uniform $\nabla n_e$), indicating that the inconsistent interpolation is not a significant issue for resolving ray trajectories.
 
 \paragraph*{Cylindrical Helix}
 Test of refraction in non Cartesian coordinates and also of refraction in directions without gridding.

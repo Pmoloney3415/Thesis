@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  1 JUL 2024 17:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  2 JUL 2024 18:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1205,23 +1205,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Warning: Reference `eq:inv_brem' on page 18 undefined on input line 329.
 
-[18]
-<Numerics/Images/Quadtrough.png, id=449, 867.24pt x 433.62pt>
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 342.
+(c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [18]
+<Numerics/Images/SOLAS_ray_shape_functions.png, id=452, 505.89pt x 361.35pt>
+File: Numerics/Images/SOLAS_ray_shape_functions.png Graphic file (type png)
+<use Numerics/Images/SOLAS_ray_shape_functions.png>
+Package pdftex.def Info: Numerics/Images/SOLAS_ray_shape_functions.png  used on input line 359.
+(pdftex.def)             Requested size: 227.62204pt x 162.58945pt.
+ [19 <./Numerics/Images/SOLAS_ray_shape_functions.png>]
+<Numerics/Images/Quadtrough.png, id=472, 867.24pt x 433.62pt>
 File: Numerics/Images/Quadtrough.png Graphic file (type png)
 <use Numerics/Images/Quadtrough.png>
-Package pdftex.def Info: Numerics/Images/Quadtrough.png  used on input line 370.
+Package pdftex.def Info: Numerics/Images/Quadtrough.png  used on input line 388.
 (pdftex.def)             Requested size: 415.41043pt x 207.70515pt.
- [19 <./Numerics/Images/Quadtrough.png>] [20]
-Overfull \hbox (0.90756pt too wide) in paragraph at lines 471--475
+ [20 <./Numerics/Images/Quadtrough.png>] [21] [22]
+Overfull \hbox (0.90756pt too wide) in paragraph at lines 514--518
 \T1/futs/m/n/10.95 mem-ory struc-ture is used which only stores the fields and gain in cells where they are present.
  []
 
-[21]
+[23]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ac' on input line 548.
+(hyperref)                removing `\@ac' on input line 591.
 
-[22] [23] [24]) [25] [26
+[24] [25] [26]) [27] [28
 
 
 
@@ -1230,10 +1239,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
  (./Appendix/Appendix1Main.tex
 chapter A.
-) [27
+) [29
 
 
-] [28
+] [30
 
 
 
@@ -1242,10 +1251,7 @@ chapter A.
 \tf@brf=\write4
 \openout4 = `Thesis_MainSample.brf'.
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 15.
- (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
+
 Underfull \hbox (badness 1817) in paragraph at lines 24--24
 []\T1/futs/m/n/10.95 F. Fi-uza, G. F. Swadling, A. Grassi, H. G. Rinderknecht, D. P. Hig-gin-son, D. D.
  []
@@ -1255,9 +1261,9 @@ Underfull \hbox (badness 2707) in paragraph at lines 24--24
 \T1/futs/m/n/10.95 Ryu-tov, C. Bruulsema, R. P. Drake, S. Funk, S. Glen-zer, G. Gre-gori, C. K. Li,
  []
 
-[29
+[31
 
-] [30]
+] [32]
 Underfull \hbox (badness 1189) in paragraph at lines 99--99
 []\T1/futs/m/n/10.95 Andrew J. Schmitt and Stephen P. Oben-schain.  The im-por-tance of laser wave-
  []
@@ -1267,7 +1273,7 @@ Underfull \hbox (badness 3250) in paragraph at lines 99--99
 \T1/futs/m/n/10.95 5 . 0118080$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 30 / 1 / 012701 / 2867678 /
  []
 
-[31] [32]
+[33] [34]
 Underfull \hbox (badness 1158) in paragraph at lines 209--209
 []\T1/futs/m/n/10.95 A. Co-laïtis, S. Hüller, D. Pesme, G. Duchateau, and V. T. Tikhonchuk.  Crossed
  []
@@ -1277,7 +1283,7 @@ Underfull \hbox (badness 2913) in paragraph at lines 209--209
 \T1/futs/m/n/10.95 proach ver-sus a time-dependent parax-ial method to de-scribe ex-per-i-men-tal re-
  []
 
-[33]
+[35]
 Underfull \hbox (badness 2809) in paragraph at lines 241--241
 []\T1/futs/m/n/10.95 R. K. Fol-lett, A. Co-laïtis, D. Turn-bull, D. H. Froula, and J. P. Palas-tro.  Val-
  []
@@ -1322,18 +1328,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--257
 \T1/futs/m/n/10.95 0037869$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 28 / 3 / 032103 / 835482 /
  []
 
-[34]
+[36]
 Underfull \hbox (badness 1215) in paragraph at lines 313--313
 \T1/futs/m/n/10.95 PhysRevE . 61 . 895$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / link . aps . org / doi / 10 . 1103 / PhysRevE . 61 . 895$[][]\T1/futs/m/n/10.95 .
  []
 
-) [35] [36
+) [37] [38
 
 
 ]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [37
+ (./Appendix/Permissions.tex) [39
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
@@ -1348,21 +1354,21 @@ LaTeX Warning: There were undefined references.
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: CCE45937F1967E4C0CE16C995490C593;2824.
+(rerunfilecheck)             Checksum: F64267017591131A407AFB56631005A8;3192.
  ) 
 Here is how much of TeX's memory you used:
- 27549 strings out of 474165
- 543869 string characters out of 5749497
+ 27601 strings out of 474165
+ 545341 string characters out of 5749497
  1949542 words of memory out of 5000000
- 49165 multiletter control sequences out of 15000+600000
+ 49204 multiletter control sequences out of 15000+600000
  712060 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,12n,121p,10978b,1143s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (37 pages, 7099350 bytes).
+Output written on Thesis_MainSample.pdf (39 pages, 7442322 bytes).
 PDF statistics:
- 914 PDF objects out of 1000 (max. 8388607)
- 830 compressed objects within 9 object streams
- 206 named destinations out of 1000 (max. 500000)
- 372 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 965 PDF objects out of 1000 (max. 8388607)
+ 877 compressed objects within 9 object streams
+ 219 named destinations out of 1000 (max. 500000)
+ 377 words of extra memory for PDF output out of 10000 (max. 10000000)
 
