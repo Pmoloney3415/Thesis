@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -351,5 +351,13 @@ Brian~M. Haines, D.E. Keller, J.A. Marozas, P.W. McKenty, K.S. Anderson, T.J.B. 
 \newblock ISSN 00457930.
 \newblock \doi{10.1016/j.compfluid.2020.104478}.
 \newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S0045793020300517}.
+
+\bibitem[Denavit and Phillion(1994)]{denavit_laser_1994}
+J.~Denavit and D.~W. Phillion.
+\newblock Laser ionization and heating of gas targets for long-scale-length instability experiments.
+\newblock \emph{Physics of Plasmas}, 1\penalty0 (6):\penalty0 1971--1984, June 1994.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.870653}.
+\newblock URL \url{https://pubs.aip.org/pop/article/1/6/1971/260717/Laser-ionization-and-heating-of-gas-targets-for}.
 
 \end{thebibliography}

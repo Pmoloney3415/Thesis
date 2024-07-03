@@ -136,7 +136,7 @@ Details of the mesh used for spherical simulations and load balancing options sh
 \subsection{Outline of \textsc{Solas}-\textsc{Chimera} Interfacing}
 
 \begin{figure}[t!]
-    \includegraphics[width=8cm]{Numerics/Images/raytrace_flowchart.png}
+    \includegraphics[width=0.9\linewidth]{Numerics/Images/raytrace_flowchart.png}
     \centering
     \caption{A flowchart illustrating the basic interfacing between \textsc{Chimera} and \textsc{Solas}.
     The interpolation steps refer simultaneously to the re-domain balancing and cell combination procedures described in section \ref{sec:SOLAS_mesh}.}
@@ -168,7 +168,7 @@ This section will describe the approach taken in the \textsc{Solas} code to crea
 \subsubsection{Re-Domain Balance for Radial Geometries}
 
 \begin{figure}[t!]
-    \includegraphics[width=16cm]{Numerics/Images/SOLAS_CHIMERA_domain.png}
+    \includegraphics[width=\linewidth]{Numerics/Images/SOLAS_CHIMERA_domain.png}
     \centering
     \caption{An illustrative diagram demonstrating the MPI re-domain balanced grid employed by \textsc{Solas} compared to the \textsc{Chimera} domain balanced grid for a cylindrical geometry.}
     \label{fig:SOLAS_CHIMERA_domain}
@@ -197,7 +197,7 @@ Therefore, using multiple computing nodes is often a necessity for 3D \ac{CBET} 
 \subsubsection{Semi-Structured Eulerian Grid with Combined Cells}
 
 \begin{figure}[t!]
-    \includegraphics[width=16cm]{Numerics/Images/solas_cells_3imagescombined.png}
+    \includegraphics[width=\linewidth]{Numerics/Images/solas_cells_3imagescombined.png}
     \centering
     \caption{Illustrative diagrams demonstrating a) the spherical polar mesh used by \textsc{Chimera} for hydrodynamic calculations, b) the cell combination mechanism employed by \textsc{Solas} to obtain a roughly equal area grid for spherical simulations and c) the adaptive radial cell combination to reduce resolution in regions where \ac{CBET} and refraction are unimportant.}
     \label{fig:SOLAS_combined_cells}
@@ -237,7 +237,7 @@ This also removes minimises artefacts from interpolation between the grids, whic
 \label{sec:SOLAS_ray_init}
 
 \begin{figure}[t!]
-    \includegraphics[width=14.5cm]{Numerics/Images/ray_init_plots.png}
+    \includegraphics[width=\linewidth]{Numerics/Images/ray_init_plots.png}
     \centering
     \caption{Example initial locations for $\sim4000$ rays for an OMEGA beam port with super-Gaussian intensity profile, with a shape defined by $n_s=5.2$ and $\sigma=352\ \mu m$.
     The inverse-projection ray locations are shown in sub-figure a) which demonstrate a higher ray density for rays pointed to the pole at $x\sim\  -0.15 mm$.
@@ -322,11 +322,11 @@ The partial differential equations that are integrated along the trajectory of e
         \frac{d \mathbf{k}}{d \tau}=\frac{1}{2} \nabla \varepsilon(\mathbf{x}), \\
         \frac{d \varphi}{d \tau}=\frac{\omega}{c} \varepsilon(\mathbf{x}), \\
         \frac{d \omega}{d \tau}=\frac{\omega}{2 c} \frac{\partial\left(n_e / n_c\right)}{\partial t}, \\
-        \frac{d P}{d \tau}=-\kappa_{IB},
+        \frac{d P}{d \tau}=-\kappa_{\text{IB}},
     \end{gathered}
 \end{equation}
 
-where $\varepsilon=1-n_e/n_c$ is the dielectric permittivity of the plasma, $n_e$ \& $n_c$ are the electron \& critical densities, $c$ is the speed of light, $t$ is time, $\kappa_{IB}$ is the \ac{inv-Brem} absorption kernel, given explicitly in equation \ref{eq:inv_brem} and $\tau$ is the ray path length.
+where $\varepsilon=1-n_e/n_c$ is the dielectric permittivity of the plasma, $n_e$ \& $n_c$ are the electron \& critical densities, $c$ is the speed of light, $t$ is time, $\kappa_{\text{IB}}$ is the \ac{inv-Brem} absorption kernel, given explicitly in equation \ref{eq:inv_brem} and $\tau$ is the ray path length.
 The wavevector is normalised such that $|\vec{k}|=\sqrt{\varepsilon}$.
 The optical path length is related to the arc length, $ds$ by the variable change $ds=d\tau\sqrt{\varepsilon}$.
 In some formulations of the ray tracing equations, the differential equations are written in terms of the arc length \cite{marozas_wavelength-detuning_2018,kaiser_laser_2000}, which is equivalent, but more complicated and without benefit.
@@ -342,7 +342,7 @@ All other quantities are either defined at the ray location, or use nearest neig
 The \texttt{bspline-fortran} library has also been implemented to allow tricubic interpolation of $n_e$, which yields a quadratically varying $\nabla n_e$ across the grid \cite{williams_bspline-fortran_2024}.
 This is slow to evaluate many times per ray step as is required in an RK45 algorithm and therefore limits performance, but is used throughout this chapter as a higher order solution to validate accuracy of the default interpolation.
 
-Linear interpolation of $n_e$ and $T_e$ is required for accurate computation of $\kappa_{IB}$, especially for `cold-start' simulations where light impacts upon a solid target and the plasma profiles have steep gradients.
+Linear interpolation of $n_e$ and $T_e$ is required for accurate computation of $\kappa_{\text{IB}}$, especially for `cold-start' simulations where light impacts upon a solid target and the plasma profiles have steep gradients.
 Interpolation of $\nabla n_e$ was found to be necessary to obtain low-noise ray amplitudes from neighbouring rays for \ac{CBET} evaluation, which is described in more detail in \ref{sec:SOLAS_field_reconstruc}.
 Linear interpolation of both $n_e$ and $\nabla n_e$ is technically inconsistent, because $\nabla n_e$ should be the gradient of $n_e$, however the test cases presented in section \ref{sec:SOLAS_ray_validation} found that this did not reduce accuracy compared to the Kaiser algorithm, which employs a self-consistent linear interpolation of $n_e$ and constant $\nabla n_e$ within a computational cell.
 
@@ -356,7 +356,7 @@ While this method is often slightly more efficient compared to the adaptive RK45
 Therefore, the adaptive algorithm was used for all work in this thesis, other than where explicitly outlined.
 
 \begin{figure}[t!]
-    \includegraphics[width=8.0cm]{Numerics/Images/SOLAS_ray_shape_functions.png}
+    \includegraphics[width=10.0cm]{Numerics/Images/SOLAS_ray_shape_functions.png}
     \centering
     \caption{Demonstration of the shape function smearing weighting for ray power interpolation to the \textsc{Solas} mesh for a cylindrical mesh.
     The shape function has the same size and geometry as the \textsc{Solas} grid cell which the ray is located in.
@@ -420,11 +420,62 @@ The tricubic error is insignificant because the cubic interpolation perfectly re
 Errors from the other algorithms would therefore decrease more quickly with increasing resolution as the density profile the ray sees becomes more similar to a quadratic trough.
 The error from the default adaptive interpolation (linear interpolation of both $n_e$ and $\nabla n_e$) is lower than that of Kaiser (linear $n_e$ and uniform $\nabla n_e$), indicating that the inconsistent interpolation is not a significant issue for resolving ray trajectories.
 
-\paragraph*{Cylindrical Helix}
-Test of refraction in non Cartesian coordinates and also of refraction in directions without gridding.
+\paragraph*{Cylindrical-Helix}
+
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Numerics/Images/cyl_helix.png}
+    \centering
+    \caption{This figure illustrates the results from the cylindrical-helix test problem, obtained using the default adaptive RK45 algorithm.
+    a) shows the trajectory of a ray with from a simulation with 100 radial cells in 3-D space.
+    b) shows the trajectory of the ray projected on the $x-y$ plane, along with the $n_e$ profile.
+    c) shows the error of the test, defined as the fractional difference in radius of the ray as it exits the domain from the initial radius, as a function of number of radial cells.}
+    \label{fig:SOLAS_cylhelix}
+\end{figure}
+
+The quadratic trough test ensures that the ray evolution algorithm functions correctly in Cartesian geometry.
+An additional test was desired in non-Cartesian geometry, because \textsc{Chimera} also operates with cylindrical and spherical grids.
+The cylindrical-helix test was therefore devised, where a ray enters an axially symmetric density trough that keeps the ray at a constant, cylindrical radius, $r$, as is shown in figure \ref{fig:SOLAS_cylhelix}.b.
+As is shown in figure \ref{fig:SOLAS_cylhelix}.a, the $z$ extent of the simulation is chosen such that the ray has performed one complete helical spiral when it exits the domain.
+By requiring that a ray undergo circular motion in the $x-y$ plane and specifying the initial ray direction such that $k_{z0}=\sqrt{k_{x0}^2+k_{y0}^2}$, it can be derived that a ray entering the domain at $r_0$ will undergo one complete helical spiral over a $z$ length $\Delta z= 2\pi r_0$, if the density profile has the shape,
+
+\begin{equation}
+    \label{eq:SOLAS_cyl_helix_ne}
+    n_e(r) = n_c \left( 1-\exp{\left( \frac{-r^2}{2r_0^2} \right)} \right).
+\end{equation}
+
+For a ray entering the domain at $[x_0=0\ \text{mm},\ y_0=1\ \text{mm},\ z_0=2\pi\ \text{mm}]$, with initial wavevector $[k_{x0}=\sqrt{\varepsilon_0/2},\ k_{y0}=0,\ k_{z0}=-\sqrt{\varepsilon_0/2}]$\footnote{$\varepsilon_0\equiv\varepsilon(r=r_0)$.}, the ray position as a function of path length $\tau$ is,
+
+\begin{equation}
+    \begin{gathered}
+        x(\tau) = r_0\sin{\left( \sqrt{\frac{\varepsilon_0}{2}}\tau \right)}, \\
+        y(\tau) = r_0\cos{\left( \sqrt{\frac{\varepsilon_0}{2}}\tau \right)}, \\
+        z(\tau) = z_0 - \sqrt{\frac{\varepsilon_0}{2}}\tau. \\
+    \end{gathered}
+\end{equation}
+
+The problem was run in cylindrical geometry for a variety of radial resolutions employing the default adaptive RK45 solver with linear interpolation of both $n_e$ and $\nabla n_e$.
+The domain bounds for the problem were $r \in [0,1.5]\ \text{mm}$, $\phi \in [0,2\pi]$ \& $z \in [0,2\pi]\ \text{mm}$, with a single cell in both the $\phi$ \& $z$ directions.
+For all radial resolutions, the ray was observed by eye to exit the domain at the expected location, verifying that the ray trace is functional in non-Cartesian geometries.
+Plotting the fractional error in ray exit location as a function of number of radial cells, $N_r$ in figure \ref{fig:SOLAS_cylhelix}.c, demonstrates that the error in final position of the ray scales as $N_r^{-1}$.
+This is because larger $N_r$ more closely recreates the density profile in equation \ref{eq:SOLAS_cyl_helix_ne}.
+The error scaling in dictated by the error on the lowest order interpolation used in the algorithm, which is the linear interpolation of $n_e$ for the default adaptive RK45 solver, which yields the $N_r^{-1}$ scaling.
 
 \paragraph*{Blast wave}
-Test of \ac{inv-Brem} absorption.
+The blast wave problem is a validation test of the implementation of \ac{inv-Brem} absorption \cite{denavit_laser_1994,haines_coupling_2020}.
+In this problem, a $527\ \text{nm}$, $2\ \text{ns}$ laser is incident on a uniform density $(\rho = 1\ \text{mg}/\text{cm}^{-3})$, cold gas $(T_{e0} = 1\ \text{eV})$ with fixed ionisation at $Z=6$, that has an ideal gas equation of state.
+The $\ln{\Lambda}$ value used for the $\kappa_{\text{IB}}$ coefficient is fixed at 7.
+The laser travels in the $x$ direction and has an intensity of $6.4\times 10^{13}\ \text{Wcm}^{-2}$.
+Hydrodynamic motion and transport is disabled in the simulation.
+The laser is initially very strongly absorbed in the gas, so energy is not transported beyond the initial layer, perpendicular to the laser propagation direction.
+As the gas heats up, $\kappa_{\text{IB}}$ decreases and therefore more energy is transported further into the domain by the laser, moving the heat front forward.
+The heat front $x_{\text{analytic}}(t)$, defined as the largest $x$ coordinate at a time, $t$ where $T_e>T_{e0}$, has an analytic solution under these assumptions derived by Denavit and Phillion \cite{denavit_laser_1994},
+
+\begin{equation}
+    x_{\text{analytic}}(t) = \frac{2}{3\kappa_{\text{IB}}}\left( \frac{5}{3} \frac{\kappa_{\text{IB}}I}{n_e k_B} \right)^{3/5},
+\end{equation}
+
+which can be compared to the result from a ray-tracing simulation.
+
 
 %###############################################################################################################################
 %###############################################################################################################################

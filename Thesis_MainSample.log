@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  2 JUL 2024 18:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  3 JUL 2024 18:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1156,51 +1156,41 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Numerics/Images/raytrace_flowchart.png Graphic file (type png)
 <use Numerics/Images/raytrace_flowchart.png>
 Package pdftex.def Info: Numerics/Images/raytrace_flowchart.png  used on input line 139.
-(pdftex.def)             Requested size: 227.62204pt x 139.44023pt.
+(pdftex.def)             Requested size: 373.86685pt x 229.03458pt.
 Package acronym Info: Label `acro:MPI' newly defined as it shall be overridden
 although it is yet undefined on input line 149.
 Package acronym Info: Label `acro:inv-Brem' newly defined as it shall be overridden
 although it is yet undefined on input line 151.
  [11 <./Numerics/Images/raytrace_flowchart.png>]
-<Numerics/Images/SOLAS_CHIMERA_domain.png, id=329, 1527.45656pt x 804.75656pt>
+<Numerics/Images/SOLAS_CHIMERA_domain.png, id=327, 1527.45656pt x 804.75656pt>
 File: Numerics/Images/SOLAS_CHIMERA_domain.png Graphic file (type png)
 <use Numerics/Images/SOLAS_CHIMERA_domain.png>
 Package pdftex.def Info: Numerics/Images/SOLAS_CHIMERA_domain.png  used on input line 171.
-(pdftex.def)             Requested size: 455.24408pt x 239.84476pt.
-
-Overfull \hbox (39.83365pt too wide) in paragraph at lines 171--173
- [][] 
- []
-
-[12 <./Numerics/Images/SOLAS_CHIMERA_domain.png>]
+(pdftex.def)             Requested size: 415.41043pt x 218.85896pt.
+ [12 <./Numerics/Images/SOLAS_CHIMERA_domain.png>]
 Package acronym Info: Label `acro:OpenMP' newly defined as it shall be overridden
 although it is yet undefined on input line 189.
-<Numerics/Images/solas_cells_3imagescombined.png, id=350, 725.766pt x 600.936pt>
+<Numerics/Images/solas_cells_3imagescombined.png, id=349, 520.344pt x 487.275pt>
 File: Numerics/Images/solas_cells_3imagescombined.png Graphic file (type png)
 <use Numerics/Images/solas_cells_3imagescombined.png>
 Package pdftex.def Info: Numerics/Images/solas_cells_3imagescombined.png  used on input line 200.
-(pdftex.def)             Requested size: 455.24408pt x 376.95033pt.
+(pdftex.def)             Requested size: 415.41043pt x 389.0324pt.
+ [13]
+Underfull \vbox (badness 2744) has occurred while \output is active []
 
-Overfull \hbox (39.83365pt too wide) in paragraph at lines 200--202
- [][] 
- []
-
-[13] [14 <./Numerics/Images/solas_cells_3imagescombined.png>]
-<Numerics/Images/ray_init_plots.png, id=379, 1011.78pt x 303.534pt>
+ [14 <./Numerics/Images/solas_cells_3imagescombined.png>]
+<Numerics/Images/ray_init_plots.png, id=378, 1011.78pt x 331.57475pt>
 File: Numerics/Images/ray_init_plots.png Graphic file (type png)
 <use Numerics/Images/ray_init_plots.png>
 Package pdftex.def Info: Numerics/Images/ray_init_plots.png  used on input line 240.
-(pdftex.def)             Requested size: 412.56496pt x 123.7689pt.
- [15 <./Numerics/Images/ray_init_plots.png>] [16]
+(pdftex.def)             Requested size: 415.41043pt x 136.13878pt.
+ [15] [16 <./Numerics/Images/ray_init_plots.png>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 315.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 315.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 315.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [17]
 
 LaTeX Warning: Reference `eq:inv_brem' on page 18 undefined on input line 329.
@@ -1213,24 +1203,35 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 File: Numerics/Images/SOLAS_ray_shape_functions.png Graphic file (type png)
 <use Numerics/Images/SOLAS_ray_shape_functions.png>
 Package pdftex.def Info: Numerics/Images/SOLAS_ray_shape_functions.png  used on input line 359.
-(pdftex.def)             Requested size: 227.62204pt x 162.58945pt.
+(pdftex.def)             Requested size: 284.52756pt x 203.23682pt.
  [19 <./Numerics/Images/SOLAS_ray_shape_functions.png>]
-<Numerics/Images/Quadtrough.png, id=472, 867.24pt x 433.62pt>
+<Numerics/Images/Quadtrough.png, id=471, 867.24pt x 433.62pt>
 File: Numerics/Images/Quadtrough.png Graphic file (type png)
 <use Numerics/Images/Quadtrough.png>
 Package pdftex.def Info: Numerics/Images/Quadtrough.png  used on input line 388.
 (pdftex.def)             Requested size: 415.41043pt x 207.70515pt.
- [20 <./Numerics/Images/Quadtrough.png>] [21] [22]
-Overfull \hbox (0.90756pt too wide) in paragraph at lines 514--518
+ [20 <./Numerics/Images/Quadtrough.png>]
+<Numerics/Images/cyl_helix.png, id=486, 963.6pt x 344.268pt>
+File: Numerics/Images/cyl_helix.png Graphic file (type png)
+<use Numerics/Images/cyl_helix.png>
+Package pdftex.def Info: Numerics/Images/cyl_helix.png  used on input line 426.
+(pdftex.def)             Requested size: 415.41043pt x 148.41057pt.
+ [21 <./Numerics/Images/cyl_helix.png>]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 446.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 446.
+ [22] [23]
+Overfull \hbox (0.90756pt too wide) in paragraph at lines 565--569
 \T1/futs/m/n/10.95 mem-ory struc-ture is used which only stores the fields and gain in cells where they are present.
  []
 
-[23]
+[24] [25]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ac' on input line 591.
+(hyperref)                removing `\@ac' on input line 642.
 
-[24] [25] [26]) [27] [28
+[26] [27]) [28] [29] [30
 
 
 
@@ -1239,10 +1240,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
  (./Appendix/Appendix1Main.tex
 chapter A.
-) [29
+) [31
 
 
-] [30
+] [32
 
 
 
@@ -1261,9 +1262,9 @@ Underfull \hbox (badness 2707) in paragraph at lines 24--24
 \T1/futs/m/n/10.95 Ryu-tov, C. Bruulsema, R. P. Drake, S. Funk, S. Glen-zer, G. Gre-gori, C. K. Li,
  []
 
-[31
+[33
 
-] [32]
+] [34]
 Underfull \hbox (badness 1189) in paragraph at lines 99--99
 []\T1/futs/m/n/10.95 Andrew J. Schmitt and Stephen P. Oben-schain.  The im-por-tance of laser wave-
  []
@@ -1273,7 +1274,7 @@ Underfull \hbox (badness 3250) in paragraph at lines 99--99
 \T1/futs/m/n/10.95 5 . 0118080$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 30 / 1 / 012701 / 2867678 /
  []
 
-[33] [34]
+[35] [36]
 Underfull \hbox (badness 1158) in paragraph at lines 209--209
 []\T1/futs/m/n/10.95 A. Co-laïtis, S. Hüller, D. Pesme, G. Duchateau, and V. T. Tikhonchuk.  Crossed
  []
@@ -1283,7 +1284,7 @@ Underfull \hbox (badness 2913) in paragraph at lines 209--209
 \T1/futs/m/n/10.95 proach ver-sus a time-dependent parax-ial method to de-scribe ex-per-i-men-tal re-
  []
 
-[35]
+[37]
 Underfull \hbox (badness 2809) in paragraph at lines 241--241
 []\T1/futs/m/n/10.95 R. K. Fol-lett, A. Co-laïtis, D. Turn-bull, D. H. Froula, and J. P. Palas-tro.  Val-
  []
@@ -1328,18 +1329,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--257
 \T1/futs/m/n/10.95 0037869$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 28 / 3 / 032103 / 835482 /
  []
 
-[36]
+[38]
 Underfull \hbox (badness 1215) in paragraph at lines 313--313
 \T1/futs/m/n/10.95 PhysRevE . 61 . 895$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / link . aps . org / doi / 10 . 1103 / PhysRevE . 61 . 895$[][]\T1/futs/m/n/10.95 .
  []
 
-) [37] [38
+
+Underfull \hbox (badness 7504) in paragraph at lines 362--362
+[]\T1/futs/m/n/10.95 J. De-navit and D. W. Phillion.  Laser ion-iza-tion and heat-ing of gas tar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/futs/m/n/10.95 gets for long-scale-length in-sta-bil-ity ex-per-i-ments.  |   []   |   []   |   [], 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/futs/m/n/10.95 (6):1971--1984, June 1994.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 / 1 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/futs/m/n/10.95 870653$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 1 / 6 / 1971 / 260717 /
+ []
+
+) [39] [40
 
 
 ]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [39
+ (./Appendix/Permissions.tex) [41
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
@@ -1354,21 +1375,21 @@ LaTeX Warning: There were undefined references.
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: F64267017591131A407AFB56631005A8;3192.
+(rerunfilecheck)             Checksum: 42530B01BD803188190684305669D8CB;3371.
  ) 
 Here is how much of TeX's memory you used:
- 27601 strings out of 474165
- 545341 string characters out of 5749497
- 1949542 words of memory out of 5000000
- 49204 multiletter control sequences out of 15000+600000
- 712060 words of font info for 187 fonts, out of 8000000 for 9000
+ 27630 strings out of 474165
+ 545998 string characters out of 5749497
+ 1951542 words of memory out of 5000000
+ 49225 multiletter control sequences out of 15000+600000
+ 720260 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,12n,121p,10978b,1143s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (39 pages, 7442322 bytes).
+Output written on Thesis_MainSample.pdf (41 pages, 7453164 bytes).
 PDF statistics:
- 965 PDF objects out of 1000 (max. 8388607)
- 877 compressed objects within 9 object streams
- 219 named destinations out of 1000 (max. 500000)
- 377 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 995 PDF objects out of 1000 (max. 8388607)
+ 902 compressed objects within 10 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 382 words of extra memory for PDF output out of 10000 (max. 10000000)
 
