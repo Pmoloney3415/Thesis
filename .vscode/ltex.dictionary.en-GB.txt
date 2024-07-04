@@ -7,3 +7,5 @@ BeamCrosser
 wavevector
 stepsize
 tricubic
+heatfront
+Chimera-Solas
