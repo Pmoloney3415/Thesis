@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  5 JUL 2024 17:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  5 JUL 2024 17:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1248,20 +1248,23 @@ Package acronym Info: Label `acro:FL' newly defined as it shall be overridden
 although it is yet undefined on input line 607.
 Package acronym Info: Label `acro:EI' newly defined as it shall be overridden
 although it is yet undefined on input line 607.
+
+Underfull \vbox (badness 2080) has occurred while \output is active []
+
  [27]
-Underfull \vbox (badness 1009) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-Overfull \hbox (0.90756pt too wide) in paragraph at lines 707--711
+Overfull \hbox (0.90756pt too wide) in paragraph at lines 708--712
 \T1/futs/m/n/10.95 mem-ory struc-ture is used which only stores the fields and gain in cells where they are present.
  []
 
 [29] [30]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ac' on input line 784.
+(hyperref)                removing `\@ac' on input line 785.
 
-[31] [32]) [33] [34] [35
+[31] [32] [33]) [34] [35
 
 
 
@@ -1444,7 +1447,7 @@ LaTeX Warning: There were undefined references.
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: F16407F5DDCAFEFC7881596E462FE6C4;4676.
+(rerunfilecheck)             Checksum: A9C14D3F8DACEEB581AEA71D21801892;4676.
  ) 
 Here is how much of TeX's memory you used:
  27795 strings out of 474165
@@ -1455,7 +1458,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  122i,14n,121p,10978b,1179s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (47 pages, 9659125 bytes).
+Output written on Thesis_MainSample.pdf (47 pages, 9659290 bytes).
 PDF statistics:
  1167 PDF objects out of 1200 (max. 8388607)
  1058 compressed objects within 11 object streams
