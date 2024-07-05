@@ -1,4 +1,4 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -108,7 +108,7 @@ Andrew~J. Schmitt and Stephen~P. Obenschain.
 \bibitem[Huba(2013)]{huba_nrl_2013}
 J~Huba, D.
 \newblock {NRL} {Plasma} {Formulary}.
-\newblock Technical Report NRL/PU/6790–13-589, Washington, DC, 2013.
+\newblock Technical Report NRL/PU/6790–13-589, Naval Research Laboratory, Washington, DC, 2013.
 
 \bibitem[Johnston and Dawson(1973)]{johnston_correct_1973}
 Tudor~Wyatt Johnston and John~M. Dawson.
@@ -359,5 +359,85 @@ J.~Denavit and D.~W. Phillion.
 \newblock ISSN 1070-664X, 1089-7674.
 \newblock \doi{10.1063/1.870653}.
 \newblock URL \url{https://pubs.aip.org/pop/article/1/6/1971/260717/Laser-ionization-and-heating-of-gas-targets-for}.
+
+\bibitem[Igumenshchev et~al.(2009)Igumenshchev, Marshall, Marozas, Smalyuk, Epstein, Goncharov, Collins, Sangster, and Skupsky]{igumenshchev_effects_2009}
+I.~V. Igumenshchev, F.~J. Marshall, J.~A. Marozas, V.~A. Smalyuk, R.~Epstein, V.~N. Goncharov, T.~J.~B. Collins, T.~C. Sangster, and S.~Skupsky.
+\newblock The effects of target mounts in direct-drive implosions on {OMEGA}.
+\newblock \emph{Physics of Plasmas}, 16\penalty0 (8):\penalty0 082701, August 2009.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.3195065}.
+\newblock URL \url{https://pubs.aip.org/pop/article/16/8/082701/316526/The-effects-of-target-mounts-in-direct-drive}.
+
+\bibitem[Igumenshchev et~al.(2016)Igumenshchev, Goncharov, Marshall, Knauer, Campbell, Forrest, Froula, Glebov, McCrory, Regan, Sangster, Skupsky, and Stoeckl]{igumenshchev_three-dimensional_2016}
+I.~V. Igumenshchev, V.~N. Goncharov, F.~J. Marshall, J.~P. Knauer, E.~M. Campbell, C.~J. Forrest, D.~H. Froula, V.~Yu. Glebov, R.~L. McCrory, S.~P. Regan, T.~C. Sangster, S.~Skupsky, and C.~Stoeckl.
+\newblock Three-dimensional modeling of direct-drive cryogenic implosions on {OMEGA}.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (5):\penalty0 052702, May 2016.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4948418}.
+\newblock URL \url{https://pubs.aip.org/pop/article/23/5/052702/958965/Three-dimensional-modeling-of-direct-drive}.
+
+\bibitem[Gatu~Johnson et~al.(2020)Gatu~Johnson, Adrian, Anderson, Appelbe, Chittenden, Crilly, Edgell, Forrest, Frenje, Glebov, Haines, Igumenshchev, Jacobs-Perkins, Janezic, Kabadi, Knauer, Lahmann, Mannion, Marshall, Michel, Séguin, Shah, Stoeckl, Walsh, and Petrasso]{gatu_johnson_impact_2020}
+M.~Gatu~Johnson, P.~J. Adrian, K.~S. Anderson, B.~D. Appelbe, J.~P. Chittenden, A.~J. Crilly, D.~Edgell, C.~J. Forrest, J.~A. Frenje, V.~Yu. Glebov, B.~M. Haines, I.~Igumenshchev, D.~Jacobs-Perkins, R.~Janezic, N.~V. Kabadi, J.~P. Knauer, B.~Lahmann, O.~M. Mannion, F.~J. Marshall, T.~Michel, F.~H. Séguin, R.~Shah, C.~Stoeckl, C.~A. Walsh, and R.~D. Petrasso.
+\newblock Impact of stalk on directly driven inertial confinement fusion implosions.
+\newblock \emph{Physics of Plasmas}, 27\penalty0 (3):\penalty0 032704, March 2020.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5141607}.
+\newblock URL \url{https://pubs.aip.org/pop/article/27/3/032704/1063027/Impact-of-stalk-on-directly-driven-inertial}.
+
+\bibitem[Igumenshchev et~al.(2012)Igumenshchev, Seka, Edgell, Michel, Froula, Goncharov, Craxton, Divol, Epstein, Follett, Kelly, Kosc, Maximov, McCrory, Meyerhofer, Michel, Myatt, Sangster, Shvydky, Skupsky, and Stoeckl]{igumenshchev_crossed-beam_2012}
+I.~V. Igumenshchev, W.~Seka, D.~H. Edgell, D.~T. Michel, D.~H. Froula, V.~N. Goncharov, R.~S. Craxton, L.~Divol, R.~Epstein, R.~Follett, J.~H. Kelly, T.~Z. Kosc, A.~V. Maximov, R.~L. McCrory, D.~D. Meyerhofer, P.~Michel, J.~F. Myatt, T.~C. Sangster, A.~Shvydky, S.~Skupsky, and C.~Stoeckl.
+\newblock Crossed-beam energy transfer in direct-drive implosions.
+\newblock \emph{Physics of Plasmas}, 19\penalty0 (5):\penalty0 056314, May 2012.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4718594}.
+\newblock URL \url{https://pubs.aip.org/pop/article/19/5/056314/596972/Crossed-beam-energy-transfer-in-direct-drive}.
+
+\bibitem[Kruer(2003)]{kruer_physics_2003}
+William~L. Kruer.
+\newblock \emph{The physics of laser plasma interactions}.
+\newblock Frontiers in physics. Boulder, Colo. [u.a.] Westview, 2003.
+\newblock ISBN 978-0-8133-4083-8.
+
+\bibitem[Kravcov and Orlov(1999)]{kravcov_caustics_1999}
+Jurij~A. Kravcov and Jurij~I. Orlov.
+\newblock \emph{Caustics, catastrophes and wave fields}.
+\newblock Number~15 in Springer series on wave phenomena. Springer, Berlin Heidelberg New York, 2. ed edition, 1999.
+\newblock ISBN 978-3-540-64227-5.
+
+\bibitem[Kratsov and Zhu(2010)]{kratsov_theory_2010}
+Yury~Alexandrovich Kratsov and Ning~Yan Zhu.
+\newblock \emph{Theory of diffraction: heuristic approaches}.
+\newblock Alpha Science International, Oxford, 2010.
+\newblock ISBN 978-1-84265-372-2.
+
+\bibitem[Lopez and Dodin(2022)]{lopez_metaplectic_2022}
+N.~A. Lopez and I.~Y. Dodin.
+\newblock Metaplectic geometrical optics for ray-based modeling of caustics: {Theory} and algorithms.
+\newblock \emph{Physics of Plasmas}, 29\penalty0 (5):\penalty0 052111, May 2022.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0082241}.
+\newblock URL \url{https://pubs.aip.org/pop/article/29/5/052111/2847808/Metaplectic-geometrical-optics-for-ray-based}.
+
+\bibitem[Chang and Jin(1996)]{chang_computation_1996}
+Shan-chieh Chang and Jian-Ming Jin.
+\newblock \emph{Computation of special functions}.
+\newblock Wiley, New York, 1996.
+\newblock ISBN 978-0-471-11963-0.
+
+\bibitem[Asatryan and Kravtsov(1988)]{asatryan_fresnel_1988}
+A.A. Asatryan and Yu.A. Kravtsov.
+\newblock Fresnel zones of hyperbolic type from the physical point of view.
+\newblock \emph{Wave Motion}, 10\penalty0 (1):\penalty0 45--57, January 1988.
+\newblock ISSN 01652125.
+\newblock \doi{10.1016/0165-2125(88)90005-4}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/0165212588900054}.
+
+\bibitem[Kravtsov(1988)]{kravtsov_iv_1988}
+Yu.A. Kravtsov.
+\newblock {IV} {Rays} and {Caustics} as {Physical} {Objects}.
+\newblock In \emph{Progress in {Optics}}, volume~26, pages 227--348. Elsevier, 1988.
+\newblock ISBN 978-0-444-87096-4.
+\newblock \doi{10.1016/S0079-6638(08)70177-X}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S007966380870177X}.
 
 \end{thebibliography}

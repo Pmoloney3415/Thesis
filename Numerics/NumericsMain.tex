@@ -221,7 +221,7 @@ Rays must stop at each cell boundary in order to deposit the correct amount of e
 To circumvent this issue cells can be combined around the spherical grid angles in order to make a semi-structured Eulerian grid, as is shown in Fig.~\ref{fig:SOLAS_combined_cells}.b.
 Hydrodynamic grid cells are merged together on the \textsc{Solas} mesh in each grid direction until a pre-specified resolution, set by the problem is reached.
 In Fig.~\ref{fig:SOLAS_combined_cells}.b, many cells are combined in each direction to clearly display the effect.
-Typically, for spherical simulations however, the cells are not combined in the polar direction, $\theta$ and $n_{\phi}$ cells are combined in the azimuthal direction until the azimuthal and polar resolutions match, explicitly $n_{\phi}r\Delta\phi\sin\theta \approx r \Delta\theta$ at a given radius, $r$.
+Typically, for spherical simulations however, the cells are not combined in the polar direction, $\theta$ and $n_{\varphi}$ cells are combined in the azimuthal direction until the azimuthal and polar resolutions match, explicitly $n_{\varphi}r\Delta\varphi\sin\theta \approx r \Delta\theta$ at a given radius, $r$.
 
 Fig.~\ref{fig:SOLAS_combined_cells}.c demonstrates the capability of the meshing algorithm to adaptively combine cells in the radial direction based upon density gradients.
 This allows large cells to exist in the coronal plasma where the light refracts minimially and deposits little energy, while the sharp turning point regions close to the critical surface can be well resolved.
@@ -267,9 +267,9 @@ For all three procedures described in this subsection, the total summed power of
 Typically, for direct-drive, the total number of rays used for spherical simulations is chosen to be,
 \begin{equation}
     \label{eq:SOLAS_nray_uniform}
-    N_{ray} = C_{N}\max{(N_r N_{\phi},N_r N_{\theta},N_{\theta} N_{\phi})},
+    N_{ray} = C_{N}\max{(N_r N_{\varphi},N_r N_{\theta},N_{\theta} N_{\varphi})},
 \end{equation}
-where $N_{i=r,\phi,\theta}$ is the number of \textsc{Solas} grid cells in that grid direction and $C_N$ is a user-parameter multiplier which to give better ray statistics for CBET simulations when required.
+where $N_{i=r,\varphi,\theta}$ is the number of \textsc{Solas} grid cells in that grid direction and $C_N$ is a user-parameter multiplier which to give better ray statistics for CBET simulations when required.
 $C_N\sim 2$ is found to give converged deposition when including \ac{CBET} and so this value is used by default.
 
 When there is sufficiently low ray-per-cell statistics, beat phenomena can occur between the ray spacing and the grid resolution.
@@ -311,19 +311,20 @@ It is assumed that outside of the simulation domain is vacuum and rays are there
 \subsection{Equations of Rays and Adaptive Integration}%
 \label{sec:SOLAS_ray_propagation}
 
-In \textsc{Solas}, each ray is defined by a position $(\mathbf{x})$, wavevector $(\mathbf{k})$, phase $(\phi)$, angular frequency $(\omega)$ and power ($P$).
+In \textsc{Solas}, each ray is defined by a position $(\mathbf{x})$, wavevector $(\mathbf{k})$, phase $(\varphi)$, angular frequency $(\omega)$ and power ($P$).
 The partial differential equations that are integrated along the trajectory of each ray for these quantities are,
 \begin{equation}
     \label{eq:SOLAS_rays}
     \begin{gathered}
         \frac{d \mathbf{x}}{d \tau}=\mathbf{k}, \\
         \frac{d \mathbf{k}}{d \tau}=\frac{1}{2} \nabla \varepsilon(\mathbf{x}), \\
-        \frac{d \varphi}{d \tau}=\frac{\omega}{c} \varepsilon(\mathbf{x}), \\
-        \frac{d \omega}{d \tau}=\frac{\omega}{2 c} \frac{\partial\left(n_e / n_c\right)}{\partial t}, \\
+        \frac{d \varphi}{d \tau}= \varepsilon(\mathbf{x}), \\
+        \frac{d \omega}{d \tau}=\frac{\omega}{2 c} \frac{\partial\left(n_e / n_{\text{cr}}\right)}{\partial t}, \\
         \frac{d P}{d \tau}=-\kappa_{\text{IB}},
     \end{gathered}
 \end{equation}
-where $\varepsilon=1-n_e/n_c$ is the dielectric permittivity of the plasma, $n_e$ \& $n_c$ are the electron \& critical densities, $c$ is the speed of light, $t$ is time, $\kappa_{\text{IB}}$ is the \ac{inv-Brem} absorption kernel, given explicitly in Eq.~\ref{eq:inv_brem} and $\tau$ is the ray path length.
+where $\varepsilon=1-n_e/n_{\text{cr}}$ is the dielectric permittivity of the plasma, $n_e$ \& $n_{\text{cr}}$ are the electron \& critical densities, $c$ is the speed of light, $t$ is time, $\kappa_{\text{IB}}$ is the \ac{inv-Brem} absorption kernel, given explicitly in Eq.~\ref{eq:inv_brem} and $\tau$ is the ray path length.
+Note that the phase here is defined such that it has the same dimension as path length and therefore has spatial units.
 The wavevector is normalised such that $|\vec{k}|=\sqrt{\varepsilon}$.
 The optical path length is related to the arc length, $ds$ by the variable change $ds=d\tau\sqrt{\varepsilon}$.
 In some formulations of the ray-tracing equations, the differential equations are written in terms of the arc length~\cite{marozas_wavelength-detuning_2018,kaiser_laser_2000}, which is equivalent, but more complicated and without benefit.
@@ -393,14 +394,14 @@ The blast wave problem is also presented which is a test of \ac{inv-Brem} absorp
 The quadratic trough is a test of ray trajectory in a quadratic density trough, which admits an analytic solution of a periodically oscillating ray~\cite{kaiser_laser_2000,haines_coupling_2020}.
 The density profile used for the test is defined as,
 \begin{equation}
-    n_e(y) = \frac{n_c}{2} \left( 1 + \frac{y^2}{y_c^2} \right),
+    n_e(y) = \frac{n_{\text{cr}}}{2} \left( 1 + \frac{y^2}{y_c^2} \right),
 \end{equation}
-which for light with wavelength $\lambda=351\ \text{nm}$, is initialised with $n_c = 9.049\times 10^{21} \ \text{cm}^{-3}$ and $y_c = 5 \ \text{cm}$.
+which for light with wavelength $\lambda=351\ \text{nm}$, is initialised with $n_{\text{cr}} = 9.049\times 10^{21} \ \text{cm}^{-3}$ and $y_c = 5 \ \text{cm}$.
 The domain has bounds $x \in [0,25]\ \text{cm}$ and $y \in [-5,5]\ \text{cm}$ and a ray enters the domain at $[x_0,y_0]=[0,3]\ \text{cm}$.
 Analytic integration of the first 2 lines from Eq.~\ref{eq:SOLAS_rays}, yields the analytic trajectory as a function of ray path length , $\tau$,
 \begin{equation}
     \begin{gathered}
-        x(\tau) = \tau\sqrt{1-\frac{n_e(y_0)}{n_c}}, \\
+        x(\tau) = \tau\sqrt{1-\frac{n_e(y_0)}{n_{\text{cr}}}}, \\
         y(\tau) = y_0\cos{\left( \frac{\tau}{\sqrt{2}y_c} \right)}.
     \end{gathered}
 \end{equation}
@@ -433,7 +434,7 @@ As is shown in Fig.~\ref{fig:SOLAS_cylhelix}.a, the $z$ extent of the simulation
 By requiring that a ray undergo circular motion in the $x-y$ plane and specifying the initial ray direction such that $k_{z0}=\sqrt{k_{x0}^2+k_{y0}^2}$, it can be derived that a ray entering the domain at $r_0$ will undergo one complete helical spiral over a $z$ length $\Delta z= 2\pi r_0$, if the density profile has the shape,
 \begin{equation}
     \label{eq:SOLAS_cyl_helix_ne}
-    n_e(r) = n_c \left( 1-\exp{\left( \frac{-r^2}{2r_0^2} \right)} \right).
+    n_e(r) = n_{\text{cr}} \left( 1-\exp{\left( \frac{-r^2}{2r_0^2} \right)} \right).
 \end{equation}
 For a ray entering the domain at $[x_0=0,\ y_0=1,\ z_0=2\pi]$ mm, with initial wavevector $[k_{x0}=\sqrt{\varepsilon_0/2},\ k_{y0}=0,\ k_{z0}=-\sqrt{\varepsilon_0/2}]$\footnote{$\varepsilon_0\equiv\varepsilon(r=r_0)$.}, the ray position as a function of path length $\tau$ is,
 \begin{equation}
@@ -445,7 +446,7 @@ For a ray entering the domain at $[x_0=0,\ y_0=1,\ z_0=2\pi]$ mm, with initial w
 \end{equation}
 
 The problem was run in cylindrical geometry for a variety of radial resolutions employing the default adaptive RK45 solver with linear interpolation of both $n_e$ and $\nabla n_e$.
-The domain bounds for the problem were $r \in [0,1.5]\ \text{mm}$, $\phi \in [0,2\pi]$ \& $z \in [0,2\pi]\ \text{mm}$, with a single cell in both the $\phi$ \& $z$ directions.
+The domain bounds for the problem were $r \in [0,1.5]\ \text{mm}$, $\varphi \in [0,2\pi]$ \& $z \in [0,2\pi]\ \text{mm}$, with a single cell in both the $\varphi$ \& $z$ directions.
 For all radial resolutions, the ray was observed by eye to exit the domain at the expected location, verifying that the ray trace is functional in non-Cartesian geometries.
 Plotting the fractional error in ray exit location as a function of number of radial cells, $N_r$ in Fig.~\ref{fig:SOLAS_cylhelix}.c, demonstrates that the error in final position of the ray scales as $N_r^{-1}$.
 This is because larger $N_r$ more closely recreates the density profile in Eq.~\ref{eq:SOLAS_cyl_helix_ne}.
@@ -512,7 +513,7 @@ The amplitude can therefore be approximated by assuming proportionality between 
 \end{equation}
 where the $\varepsilon^{-1/4}$ term accounts for swelling of the field due to the increased optical path through plasma with finite density~\cite{follett_validation_2022}.
 Note that the amplitude is a purely geometric quantity, which holds no information about power changes of the light from absorption or \ac{LPIs}.
-The electric field outside the caustic region, which shall be discussed in more detail in Sec.~\ref{sec:SOLAS_caustics}, can then be obtained with the formula,
+The electric field outside the caustic region, which shall be discussed in more detail in Sec.~\ref{sec:SOLAS_caustic_cap}, can then be obtained with the formula,
 \begin{equation}
     \frac{|E(\tau)|}{|E(\tau=0)|} = \sqrt{\frac{P(\tau)}{P(\tau=0)}}A(\tau),
 \end{equation}
@@ -551,10 +552,11 @@ The 2 neighbour-rays of this highlighted main-ray are plotted in blue.
 Note that in this figure, the default initial main-neighbour-ray separation of $\Delta l=\lambda_0/10=0.035\ \mu\text{m}$ was used, but the separation has been magnified on the plot to visualise the amplitude reconstruction from the area more clearly.
 The locations of the main- and neighbour-rays after a single step of each main-ray are plotted as black and dark-blue spots respectively.
 The `area' of the neighbour-rays $S$, which in this 2-D raytrace example here is simply a distance, is plotted on~\ref{fig:SOLAS_fieldcap_diagram}.a as a dashed blue line between the neighbour-rays.
-The neighbour-rays are pushed until they have the same phase as the main-ray, $\phi_{\text{ray}}$, at which point the area is evaluated.
+The neighbour-rays are pushed until they have the same phase as the main-ray, $\varphi_{\text{ray}}$, at which point the area is evaluated.
 
 %##################################################
-\subsubsection{Caustics and Ray-Sheets}
+\subsubsection{Caustics and Ray-Sheets}%
+\label{sec:SOLAS_caustics}
 
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Numerics/Images/Raysheets_withcyl.png}
@@ -564,38 +566,101 @@ The neighbour-rays are pushed until they have the same phase as the main-ray, $\
     Separate colours are used for the incident and reflected sheets, which are separated by a caustic.
     In b), rays propagate up a density profile, $n_e=n_{\text{cr}}\exp{[ -(r_{\mu\text{m}}-20)/100 ]}$.
     Unlike in a), the ray caustics do not occur at their turning point, \textit{i.e.} the minimum radius.}%
-    \label{fig:SOLAS_fieldcap_diagram}
+    \label{fig:SOLAS_sheet_diagram}
 \end{figure}
 
 Caustics are an important concept in \ac{GO}, and the reconstructed field in their vicinity must be handled correctly in order to accurately model \ac{CBET} in ray based codes.
 Fig.~\ref{fig:SOLAS_fieldcap_diagram}.b plots the area of the main-ray as a function of main-ray phase in blue.
-At $\phi_{\text{ray}}\sim12\ \mu\text{m}$, $S\rightarrow 0$, \textit{i.e.} neighbouring-rays cross over each other, which is known as the ray-caustic.
-This leads to divergent 
+At $\varphi_{\text{ray}}\sim12\ \mu\text{m}$, $S\rightarrow 0$, \textit{i.e.} neighbouring-rays cross over each other, which is known as the ray-caustic.
+In the absence of caustics, rays never cross over each other and therefore the mapping from ray phase-space (beam-port locations, where $\tau=0$) to real-space is single valued, or in other words each point in space will be reached by (at most) one ray from each beam.
+In the presence of caustics, this single valued mapping breaks down and a single real-space location is accessible by multiple ray launch locations.
+A single valued mapping is still possible if each beam is separated into distinct `sheets' after caustics, where each sheet still has a single-valued projection from phase-space to real-space.
+
+This is illustrated in Fig.~\ref{fig:SOLAS_sheet_diagram}.a, where rays from a single beam are plotted propagating up a linear density gradient with $n_e=n_{\text{cr}}y_{\mu\text{m}}/15.5$.
+As the density gradient is purely in the $y$ direction, each ray has translational symmetry in $x$ and therefore each ray-caustic is located at the ray turning point, $y\sim14\ \mu\text{m}$.
+The portions of the ray trajectories that fall before and after the caustic are separated into the `incident' and `reflected' sheets respectively and plotted in separate shades of blue.
+Fig.~\ref{fig:SOLAS_sheet_diagram}.b also plots rays from a single beam, but now propagating through a cylindrically symmetric $n_e$ profile.
+As can be seen from this figure, the caustic is not the same as the ray turning-point\footnote{Defined here as the location of maximal $n_e$ experienced along the ray trajectory.}, but the location that the amplitude diverges.
+
+This means that unless the amplitude is tracked along each ray trajectory, the location of the caustic cannot be identified and rays cannot be separated into distinct sheets, both of which have important ramifications for ray-based \ac{CBET} models.
+Firstly, because the amplitude diverges, the field values can become very large and therefore must be capped to diffraction limited values, the method for which is discussed in more detail in Sec.~\ref{sec:SOLAS_caustic_cap}.
+Additionally, if the beam cannot be separated into distinct sheets, then self-\ac{CBET}, where the reflected component of a beam interacts with the incident component of the same beam, must be neglected.
+In \textsc{Solas}, the neighbour-ray method allows the amplitude to be tracked along each ray, enabling caustic location and sheet-separation.
+Currently, it is assumed that each sheet has 2 sheet components, \textit{i.e.} an incident and reflected field, but it should be possible to extend this to multiple caustics to accurately model complex \ac{CBET} interactions such as target-stalk simulations~\cite{igumenshchev_effects_2009,igumenshchev_three-dimensional_2016,gatu_johnson_impact_2020}.
+This is an advantage of the forward ray tracing approach to \ac{CBET} modelling compared to inverse-ray-tracing, where only plasma profiles that result in a single caustic can be modelled~\cite{colaitis_inverse_2021}.
+
+The phase of the light is also evolved along each ray trajectory in equations~\ref{eq:SOLAS_rays}, and therefore the coherent sum of all electric fields can be reconstructed which involves interference between sheets.
+The total electric field is,
+\begin{equation}%
+    \label{eq:SOLAS_Ecoherent}
+    E = \Sigma_{j \text{sheets}}|E_j|\exp{\left( i(k_0\varphi_j-\pi\alpha_j/2) \right)},
+\end{equation}
+where $k_0$ is the vacuum wavevector of the light and $\alpha_j$ accounts for the $\pi/2$ phase shift that occurs when a ray changes sheet, \textit{i.e.} $\alpha_j=0$ for the incident sheet and $\alpha_j=1$ for the reflected sheet \cite{follett_validation_2022}.
 
 %################################################################################
 %################################################################################
 \subsection{Caustic Field Capping}%
-\label{sec:SOLAS_caustics}
-Say that since amplitude diverges in the caustic region, necessary to cap it.
-In reality diffraction would limit the field in this region, but standard geometric optics rays can't model diffraction.
-Therefore typical approach which we follow is to limit the reconstructed field to a sensible, diffraction-limited value.
+\label{sec:SOLAS_caustic_cap}
+In the vicinity of beam-caustics, the electric field magnitude of a beam is limited by diffraction which is neglected in \ac{GO}, so ray based models which do not cap fields near caustics can experience divergent electric fields.
+For direct-drive simulations, significant amount of \ac{CBET} occur near caustics and therefore sensibly capping the field value is crucial for accurate simulations~\cite{colaitis_adaptive_2019}.
+This cannot be achieved without knowledge of the caustic location, which is a severe limitation to the predictive capability of \ac{CBET} codes that do not track the amplitude.
+This section shall describe two methods that have been implemented to cap the field values in the vicinity of laser caustics, the \ac{FL} and \ac{EI} approaches.
 
 %##################################################
-\subsubsection{Field Limiter Approach}
-Say that this is the approach used throughout the thesis apart from in some validation problems where it is labelled.
-Caps the field to the maximum of a Airy function (ray going up linear density profile).
+\paragraph*{Field Limiter}
+This is a straightforward hard cap on the maximum value of the electric field reconstructed during the ray trace.
+The electric field of light propagating up a linear density gradient has the analytic solution of an Airy function.
+The field limiter approach is to cap all electric fields to this value,
+\begin{equation}
+    \begin{gathered}
+        \frac{|E|}{|E(\tau=0)|} = \sqrt{\frac{P(\tau)}{P(\tau=0)}} \min\left[ A, \sqrt{\zeta}\left( \frac{n_{\text{t}}}{n_{\text{cr}}} \right)^{1/4}, \sqrt{\zeta}\sqrt{\frac{S(\tau=0)}{S(\tau)}} \right], \\
+        \zeta = 0.9\left( \omega L/c \right)^{1/3}, \\
+        L = n_{\text{cr}}/|\nabla n_e|_\text{t},
+    \end{gathered}
+\end{equation}
+where $n_{\text{t}}$ is the electron density at the caustic, $|\nabla n_e|_\text{t}$ is the magnitude of the electron density gradient at the caustic location \cite{igumenshchev_crossed-beam_2012,follett_ray-based_2018,kruer_physics_2003}.
+The first term in the minimum is the standard field reconstruction from the amplitude away from caustics.
+The second term is the maximum of the Airy function and the third term is an improvement to the second term for near-normally incident rays~\cite{follett_validation_2022}.
 
 %##################################################
-\subsubsection{Etalon Integral}
-This is an improvement which basically allows for deviations from linearity.
-This is not used normally, other than when cell size << wavelength, because it needs knowledge of the other sheet from the beam which is present in caustic region.
-Could be implemented using linear interpolation.
-However, typically we don't have sufficient angular resolution in combined cell grid (at least for 1D hydro) to reliably interpolate sheet to sheet via this grid.
-It is generally observed however that the field limiter approach is sufficient.
+\paragraph*{Etalon Integral}
+The \ac{EI} method is an improvement to the \ac{FL}, which allows for deviations in the density profile away from linearity~\cite{colaitis_real_2019,kravcov_caustics_1999,kratsov_theory_2010}.
+Several distinct types of caustic exist for different geometries of problem.
+For example in direct-drive, the light reflecting from the critical surface forms a `fold'-type caustic, whereas focussing light leads to a more complex `cusp'-type caustic~\cite{lopez_metaplectic_2022}.
+If the form of the caustic is assumed, then an approximation of the total field in the vicinity of the caustic is formulated which allows for deviations from the ideal case.
+In the example of the direct-drive fold caustic, the field is assumed to be the sum of an Airy function and its derivative, which accounts for the deviations from linearity.
+An expression for the total field can be derived in terms of the ray-amplitude and phase before ($A_1$,$\varphi_1$) and after ($A_2$,$\varphi_2$) the caustic,
+\begin{equation}
+    \begin{gathered}
+        E_T = \sqrt{\pi}\left[(-\xi)^{1/4}(A_1+A_2)\text{Ai}(\xi) - i(-\xi)^{1/4}(A_1-A_2)\text{Ai}'(\xi)  \right]e^{i(k_0\chi - \pi/4)}, \\
+        \chi = \frac{1}{2}(\varphi_1+\varphi_2), \\
+        \xi = -\left[ k_0\frac{3}{4}(\varphi_2-\varphi_1)  \right]^{2/3},
+    \end{gathered}
+\end{equation}
+where $\text{Ai}$ and $\text{Ai}'$ are the Airy function and its derivative.
+In \textsc{Solas}, $\text{Ai}$ and $\text{Ai}'$ are computed numerically using the \texttt{special-functions} library~\cite{chang_computation_1996}.
+This total field can then be divided between the incident and reflected sheet by inversion of Eq.~\ref{eq:SOLAS_Ecoherent} assuming that $|E_1|=|E_2|$,
+\begin{equation}
+    \frac{\left|E_j\right|}{\left|E_{j, 0}\right|}=\frac{\sqrt{W_j}\left|E_T\right|}{\sqrt{2}\left[1+\sin \left(\varphi_2-\varphi_1\right)\right]^{1 / 2}}.
+\end{equation}
+The Etalon integral is applied in the `caustic-region', which in Refs.~\cite{asatryan_fresnel_1988,kravtsov_iv_1988,colaitis_real_2019}, is stated to be equivalent to,
+\begin{equation}%
+    \label{eq:SOLAS_causticregion}
+    |\varphi_1-\varphi_2|\leq\lambda_0/2,
+\end{equation}
+where $\lambda_0$ is the vacuum wavelength of the light.
+
+Applying the \ac{EI} method requires evaluation of Eq.~\ref{eq:SOLAS_causticregion} to determine if a ray is inside its caustic region, which relies on interpolation of the phase of the other sheet from the same beam onto the ray location.
+If using nearest neighbour interpolation, which is used in \textsc{Solas} for interpolation of all field quantities onto rays, this means a resolution of $\Delta x\ll\lambda_0$ must be used, which is a much higher resolution than is required for ray-tracing and \ac{CBET} without the \ac{EI}.
+Therefore, the \ac{EI} method is only used in \textsc{Solas} simulations for very high resolution grid test problems, such as those Sec.~\ref{sec:SOLAS_field_validation}.
+The alternative approach would be to implement linear interpolation from the field quantities all beams onto ray locations such as in Ref.~\cite{follett_validation_2022}.
+This was not deemed a viable approach however, because the mesh resolution for spherical simulations was found to not be well-enough angularly resolved to interpolate the phase with sufficient accuracy to the rays.
+The standard procedure for \ac{CBET} simulations in \text{Solas} is to use the \ac{FL} approach which is found to give satisfactory results compared to the \ac{EI} method.
 
 %################################################################################
 %################################################################################
-\subsection{Field Reconstruction Validation}
+\subsection{Field Reconstruction Validation}%
+\label{sec:SOLAS_field_validation}
 Using Russ' paper with lovely test comparisons to \textsc{Lpse}.
 Define the electron density profile here.
 
@@ -708,7 +773,7 @@ Discuss the key assumptions of the CBET model and whether it is valid to use for
 
 %################################################################################
 %################################################################################
-\subsection{Computational Efficency and Scaling}
+\subsection{Computational Efficiency and Scaling}
 
 Talk about how the CBET model is quite expensive.
 Give the scaling laws from Russ' paper and explain how that means for many beams, CBET is bound to be the dominant cost in the simulation.

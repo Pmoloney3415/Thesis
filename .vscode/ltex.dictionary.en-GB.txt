@@ -9,3 +9,5 @@ stepsize
 tricubic
 heatfront
 Chimera-Solas
+Eq
+Refs
