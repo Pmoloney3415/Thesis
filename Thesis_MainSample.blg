@@ -8,45 +8,45 @@ A level-1 auxiliary file: Appendix/Appendix1Main.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
 Database file #1: Bibliography/Bibliography.bib
 Warning--empty publisher in kruer_physics_2003
-You've used 56 entries,
+You've used 57 entries,
             2481 wiz_defined-function locations,
-            996 strings with 27663 characters,
-and the built_in function-call counts, 36370 in all, are:
-= -- 2228
-> -- 4019
-< -- 24
-+ -- 1403
-- -- 1288
-* -- 4105
-:= -- 6832
-add.period$ -- 326
-call.type$ -- 56
-change.case$ -- 108
-chr.to.int$ -- 53
-cite$ -- 57
-duplicate$ -- 1070
-empty$ -- 2034
-format.name$ -- 1370
-if$ -- 6950
+            1002 strings with 27798 characters,
+and the built_in function-call counts, 36629 in all, are:
+= -- 2250
+> -- 4026
+< -- 25
++ -- 1407
+- -- 1290
+* -- 4118
+:= -- 6871
+add.period$ -- 329
+call.type$ -- 57
+change.case$ -- 110
+chr.to.int$ -- 54
+cite$ -- 58
+duplicate$ -- 1084
+empty$ -- 2064
+format.name$ -- 1373
+if$ -- 7007
 int.to.chr$ -- 4
-int.to.str$ -- 57
+int.to.str$ -- 58
 missing$ -- 59
-newline$ -- 443
-num.names$ -- 169
-pop$ -- 263
+newline$ -- 448
+num.names$ -- 172
+pop$ -- 275
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 57
 quote$ -- 0
-skip$ -- 541
+skip$ -- 552
 stack$ -- 0
-substring$ -- 1074
-swap$ -- 177
+substring$ -- 1076
+swap$ -- 180
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 374
+type$ -- 381
 warning$ -- 1
-while$ -- 174
+while$ -- 176
 width$ -- 0
-write$ -- 1050
+write$ -- 1062
 (There was 1 warning)

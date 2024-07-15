@@ -1193,3 +1193,16 @@ ADS Bibcode: 1973PhFl...16..722J},
 	pages = {45--57},
 	file = {Asatryan and Kravtsov - 1988 - Fresnel zones of hyperbolic type from the physical.pdf:C\:\\Users\\Philip\\Zotero\\storage\\JARBPJHS\\Asatryan and Kravtsov - 1988 - Fresnel zones of hyperbolic type from the physical.pdf:application/pdf},
 }
+
+@misc{follett_lpse_2022,
+	title = {{LPSE} data for ray-based {CBET} test cases},
+	copyright = {Creative Commons Attribution 4.0 International, Open Access},
+	url = {https://zenodo.org/record/6962934},
+	doi = {10.5281/ZENODO.6962934},
+	abstract = {This dataset contains field data from LPSE simulations for the purpose of validating ray-based CBET models. The input parameters required to replicate these results are given in the Physics of Plasmas paper "Validation of ray-based cross-beam energy transfer models." All of the data is stored in HDF5 files. Each file has three data sets: Ez, xAxis, and yAxis (the 1-D datset does not have yAxis). Here is an example of the Matlab code to open and plot one of the 2-D files: {\textless}pre{\textgreater}{\textless}code{\textgreater}filename = 'two\_beam\_at\_caustic.h5'; hInfo = h5info(filename ); data = h5read(filename , '/Ez'); xAxis = h5read(filename , '/x\_axis'); yAxis = h5read(filename , '/y\_axis'); figure(1); clf; imagesc(yAxis, xAxis, data), colorbar, axis xy {\textless}/code{\textgreater}{\textless}/pre{\textgreater} Here is an example of the Python code to open and plot one of the 2-D files: {\textless}pre{\textgreater}{\textless}code class="language-python"{\textgreater}import h5py import matplotlib.pyplot as plt filename = 'two\_beam\_at\_caustic.h5' f = h5py.File(filename, 'r') Ez = list(f["Ez"]) x\_axis = list(f["x\_axis"]) y\_axis = list(f["y\_axis"]) plt.figure() plt.pcolormesh(x\_axis,y\_axis,Ez) plt.colorbar() plt.show() {\textless}/code{\textgreater}{\textless}/pre{\textgreater}},
+	urldate = {2024-07-15},
+	publisher = {Zenodo},
+	author = {Follett, R. K.},
+	month = aug,
+	year = {2022},
+}

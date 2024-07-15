@@ -662,12 +662,53 @@ The standard procedure for \ac{CBET} simulations in \text{Solas} is to use the \
 %################################################################################
 \subsection{Field Reconstruction Validation}%
 \label{sec:SOLAS_field_validation}
-Using Russ' paper with lovely test comparisons to \textsc{Lpse}.
-Define the electron density profile here.
+
+In this section several test problems will be presented that compare electric fields obtained using \textsc{Solas} field solver in the absence of \ac{CBET}, to those from the wave based solver \textsc{Lpse} in direct-drive relevent plasma profiles.
+The \textsc{Lpse} results are presented in Ref.~\cite{follett_validation_2022}, and are available from the repository~\cite{follett_lpse_2022}.
+In all the following test problems, the laser has a vacuum wavelength, $\lambda_0=0.351\ \mu\text{m}$ and a Super-Gaussian intensity profile,
+\begin{equation}
+    I(r) = I_0 e^{-(r/\sigma)^{n_s}},
+\end{equation}
+where $r$ is the distance from the beam centre, perpendicular to the direction of propagation, $\sigma$ is the beam width and $n_s$ is the Super-Gaussian exponent.
+All 1-D and 2-D validation problems assume lasers polarised out of the simulation plane along the $z$ axis.
+The plasma density profiles are given by,
+\begin{equation}%
+    \label{eq:SOLAS_test_ne}
+    n_e(r) = n_0 (d/r)^{m},
+\end{equation}
+where $n_0/n_{text{cr}} = 1.165$, $d = 343\times S\ \mu\text{m}$, $m=3.78$ and $S$ changes the scale of the density profile, where $S=1$ corresponds to scale lengths from implosions using the full OMEGA laser-energy.
+These values where obtained from fitting the equation to 1-D \ac{Rad-Hydro} calculations using the \textsc{Lilac} code.
 
 %##################################################
 \subsubsection{1D Reflected Beam}
-Just a simple test of field capping compared to an analytic problem, without refraction.
+
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Numerics/Images/1d_field_capping.png}
+    \centering
+    \caption{This figure shows the results of the 1-D field reconstruction test, comparing \textsc{Solas} fields with different caustic field capping methods to the \textsc{Lpse} results.
+    Figure a) shows the oscillatory behaviour of the field solution which arises due to the interference between the incident and reflected sheet.
+    Figure b) plots the same results, but zoomed in on the caustic region to demonstrate the differences in fields obtained from the different methods.}%
+    \label{fig:SOLAS_1d_field_test}
+\end{figure}
+
+The first validation problem is for the case of light propagating normally up a density gradient.
+For this problem, 1-D Cartesian geometry is used, so the density profile is obtained by transforming the spatial coordinate from equation~\ref{eq:SOLAS_test_ne}, $r\rightarrow x-36.42\ \mu\text{m}$, and in this problem, the beam is travelling in the $+\hat{x}$ direction, with $I_0 = 14\ \text{W}/\text{cm}^{2}$.
+A scale factor of $S=1/16$ was used, resulting in a critical surface at $x\sim 14.14\ \mu\text{m}$.
+The simulation has bounds $x\in [-16,20]\ \mu\text{m}$ with a resolution of $\Delta x\sim 1\ \text{nm}$.
+A high resolution is used here in order to resolve the highly oscillatory coherent field sum.
+Absorption due to \ac{inv-Brem} is also neglected.
+
+The laser in this problem travels up the density gradient, reflecting from the critical surface.
+For normally incident light up a linear gradient, the critical density is the location of the caustic, because the ray area, $S(\tau)$, is constant and therefore the amplitude diverges when $\varepsilon\rightarrow 0$.
+The total field is given by the coherent sum between the incident and reflected sheets.
+Figure~\ref{fig:SOLAS_1d_field_test}.a shows the \textsc{Lpse} result compared to the field obtained from \textsc{Solas} without a cap on the caustic field; using the \ac{FL} approach; and using the \ac{EI} approach.
+The only difference between the \textsc{Solas} methods occurs in the caustic region\footnote{\textit{i.e.} where equation~\ref{eq:SOLAS_causticregion} is satisfied.}, shown more clearly in figure~\ref{fig:SOLAS_1d_field_test}.b, which in this problem is for $x>13.64\ \mu\text{m}$.
+Failure to cap the caustic field leads to a divergent $|E_z|$ at the critical surface, but both the \ac{EI} and the \ac{FL} methods show very good agreement with \textsc{Lpse}.
+This justifies the default use of the simpler \ac{FL} method for \textsc{Solas} \ac{CBET} calculations.
+
+Standard \ac{GO} cannot capture the field beyond the critical surface because rays cannot propagate beyond $\varepsilon=0$.
+The evanescent field in this region can be reproduced in the complex-\ac{GO} framework, which integrates rays which have complex-valued properties and can thus be evolved beyond the critical surface \cite{colaitis_real_2019}.
+This is not deemed to be necessary for accurate \ac{CBET} modelling of OMEGA-scale direct-drive implosions, however.
 
 %##################################################
 \subsubsection{2D Reflected Beam}

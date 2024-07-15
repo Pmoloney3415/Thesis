@@ -576,6 +576,14 @@ INPUT ./Numerics/Images/Raysheets_withcyl.png
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futri8t.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futri8t.vf
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-alt-ita.tfm
+INPUT ./Numerics/Images/1d_field_capping.png
+INPUT ./Numerics/Images/1d_field_capping.png
+INPUT ./Numerics/Images/1d_field_capping.png
+INPUT ./Numerics/Images/1d_field_capping.png
+INPUT ./Numerics/Images/1d_field_capping.png
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futri8t.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futri8t.vf
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-alt-ita.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futr8t.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futb8t.vf
