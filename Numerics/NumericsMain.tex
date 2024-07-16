@@ -267,7 +267,7 @@ For all three procedures described in this subsection, the total summed power of
 Typically, for direct-drive, the total number of rays used for spherical simulations is chosen to be,
 \begin{equation}
     \label{eq:SOLAS_nray_uniform}
-    N_{ray} = C_{N}\max{(N_r N_{\varphi},N_r N_{\theta},N_{\theta} N_{\varphi})},
+    N_{\text{ray}} = C_{N}\max{(N_r N_{\varphi},N_r N_{\theta},N_{\theta} N_{\varphi})},
 \end{equation}
 where $N_{i=r,\varphi,\theta}$ is the number of \textsc{Solas} grid cells in that grid direction and $C_N$ is a user-parameter multiplier which to give better ray statistics for CBET simulations when required.
 $C_N\sim 2$ is found to give converged deposition when including \ac{CBET} and so this value is used by default.
@@ -693,10 +693,11 @@ These values where obtained from fitting the equation to 1-D \ac{Rad-Hydro} calc
 
 The first validation problem is for the case of light propagating normally up a density gradient.
 For this problem, 1-D Cartesian geometry is used, so the density profile is obtained by transforming the spatial coordinate from equation~\ref{eq:SOLAS_test_ne}, $r\rightarrow x-36.42\ \mu\text{m}$, and in this problem, the beam is travelling in the $+\hat{x}$ direction, with $I_0 = 14\ \text{W}/\text{cm}^{2}$.
+Only a single ray was used because the ray trace is completely 1-D.
 A scale factor of $S=1/16$ was used, resulting in a critical surface at $x\sim 14.14\ \mu\text{m}$.
 The simulation has bounds $x\in [-16,20]\ \mu\text{m}$ with a resolution of $\Delta x\sim 1\ \text{nm}$.
 A high resolution is used here in order to resolve the highly oscillatory coherent field sum.
-Absorption due to \ac{inv-Brem} is also neglected.
+Power changes of the rays due to \ac{inv-Brem} and \ac{CBET} are also neglected.
 
 The laser in this problem travels up the density gradient, reflecting from the critical surface.
 For normally incident light up a linear gradient, the critical density is the location of the caustic, because the ray area, $S(\tau)$, is constant and therefore the amplitude diverges when $\varepsilon\rightarrow 0$.
@@ -712,8 +713,23 @@ This is not deemed to be necessary for accurate \ac{CBET} modelling of OMEGA-sca
 
 %##################################################
 \subsubsection{2D Reflected Beam}
-Same as above, but now for non-normally incident rays, accounting for refraction.
-Show test results in both Cartesian and Cylindrical.
+
+\begin{figure}[t!]
+    \includegraphics[width=1.0\linewidth]{Numerics/Images/2D_field_reconstruction_lineouts.png}
+    \centering
+    \caption{This figure shows the results of the 2-D field reconstruction test.
+    Figure a) plots the }%
+    \label{fig:SOLAS_2d_field_test}
+\end{figure}
+
+A second field reconstruction test was also implemented in 2-D geometry.
+Unlike the previous 1-D test, the reconstructed field for this problem also depends on the divergence of neighbouring rays.
+This is because apart from normally incident rays at the centre of the beam, $\vec{k}\nparallel\nabla n_e$, so the area, $S(\tau)$, of the rays vary.
+The simulations presented here used a scale factor of $S=1/64$ with simulation bounds $x\in [-20,20]\ \mu\text{m}$ and $y\in [-20,20]\ \mu\text{m}$ and resolution $\Delta x\ \sim 20 \text{nm}$.
+A single beam propagated parallel to $+\hat{y}$ and was centred on $x=0\ \mu\text{m}$.
+The standard uniform sampling procedure described in Sec.~\ref{sec:SOLAS_ray_init} was used with $C_N=2$.
+\ac{CBET} and \ac{inv-Brem} were again both neglected.
+
 
 
 %###############################################################################################################################
