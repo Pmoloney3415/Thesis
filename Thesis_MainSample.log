@@ -757,4 +757,728 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
  (c:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
-... no UTF-8 mapping file f
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `plainpages' set `false' on input line 4064.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4064.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4064.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4064.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4064.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4064.
+Package hyperref Info: Option `linktocpage' set `true' on input line 4064.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4064.
+Package hyperref Info: Option `hyperindex' set `true' on input line 4064.
+Package hyperref Info: Hyper figures OFF on input line 4181.
+Package hyperref Info: Link nesting OFF on input line 4186.
+Package hyperref Info: Hyper index ON on input line 4189.
+Package hyperref Info: Plain pages OFF on input line 4196.
+Package hyperref Info: Backreferencing ON on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4448.
+ (c:/texlive/2023/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2023-11-26 v1.44 Bibliographical back referencing
+ (c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (c:/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+) (c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+ (c:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+))
+\c@Hy@tempcnt=\count326
+ (c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4786.
+\XeTeXLinkMargin=\dimen285
+ (c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+)
+\Fld@menulength=\count327
+\Field@Width=\dimen286
+\Fld@charsize=\dimen287
+Package hyperref Info: Hyper figures OFF on input line 6065.
+Package hyperref Info: Link nesting OFF on input line 6070.
+Package hyperref Info: Hyper index ON on input line 6073.
+Package hyperref Info: backreferencing ON on input line 6078.
+Package hyperref Info: Link coloring ON on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6090.
+Package hyperref Info: PDF/A mode OFF on input line 6095.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count328
+\c@Item=\count329
+\c@Hfootnote=\count330
+)
+Package hyperref Info: Driver: hpdftex.
+ (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
+\Fld@listcount=\count331
+\c@bookmark@seq@number=\count332
+\Hy@SectionHShift=\skip94
+) (c:/texlive/2023/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count333
+\c@@ppsavesec=\count334
+\c@@ppsaveapp=\count335
+) (c:/texlive/2023/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+) (c:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.sty (c:/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count336
+\l__lipsum_a_int=\count337
+\l__lipsum_b_int=\count338
+ (c:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (c:/texlive/2023/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `amsthm' support loaded on input line 3026.
+Package cleveref Info: `subfig' support loaded on input line 3164.
+Package cleveref Info: always capitalise cross-reference names on input line 7825.
+Package cleveref Info: always capitalise cross-reference names on input line 7852.
+))
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 9.
+
+
+LaTeX Warning: Unused global option(s):
+    [onesided,pagesize].
+
+(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
+\openout1 = `Thesis_MainSample.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 9.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmlfutm.fd
+File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+)
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 9.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmsfutm.fd
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 9.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmxfutm.fd
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+Package scrbase Info: activating english \abstractname on input line 9.
+Package scrbase Info: activating english \partname on input line 9.
+Package scrbase Info: activating english \chaptername on input line 9.
+Package scrbase Info: activating english \appendixname on input line 9.
+Package scrbase Info: activating english \figurename on input line 9.
+Package scrbase Info: activating english \tablename on input line 9.
+Package scrbase Info: activating english \contentsname on input line 9.
+Package scrbase Info: activating english \listfigurename on input line 9.
+Package scrbase Info: activating english \listtablename on input line 9.
+Package scrbase Info: activating english \bibname on input line 9.
+Package scrbase Info: activating english \indexname on input line 9.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(91.04872pt, 415.41043pt, 91.04872pt)
+* v-part:(T,H,B)=(71.13188pt, 688.5567pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=415.41043pt
+* \textheight=688.5567pt
+* \oddsidemargin=18.77873pt
+* \evensidemargin=18.77873pt
+* \topmargin=-38.53812pt
+* \headheight=17.0pt
+* \headsep=25.218pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=89.62619pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count339
+\scratchdimen=\dimen288
+\scratchbox=\box74
+\nofMPsegments=\count340
+\nofMParguments=\count341
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen289
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
+\everyMPtoPDFconversion=\toks42
+) (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (c:/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Redeclaring math symbol \iintop on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \iiintop on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \oiintop on input line 9.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 9.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 9.
+Package backref Info: ** backref set up for natbib ** on input line 9.
+Package hyperref Info: Link coloring ON on input line 9.
+ (./Thesis_MainSample.out) (./Thesis_MainSample.out)
+\@outlinefile=\write3
+\openout3 = `Thesis_MainSample.out'.
+
+Class scrreprt Info: loading recommended package `bookmark'.
+(scrreprt)           Using `bookmark' together with `hyperref' is recommended,
+(scrreprt)           because of handling of possible bookmark level gaps.
+(scrreprt)           You can avoid loading `bookmark' with KOMA-Script option
+(scrreprt)           `bookmarkpackage=false' before \begin{document} and
+(scrreprt)           you can avoid this message adding:
+(scrreprt)             \usepackage{bookmark}
+(scrreprt)           before \begin{document} on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+ (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
+\BKM@id=\count345
+))
+\openout2 = `Preamble/PreambleMain.aux'.
+
+ (./Preamble/PreambleMain.tex
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmlfutmi.fd
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 2.
+<Preamble/new_college_logo.png, id=4, 12948.375pt x 1422.31375pt>
+File: Preamble/new_college_logo.png Graphic file (type png)
+<use Preamble/new_college_logo.png>
+Package pdftex.def Info: Preamble/new_college_logo.png  used on input line 2.
+(pdftex.def)             Requested size: 195.24341pt x 21.44229pt.
+ [1
+
+
+
+
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Preamble/new_college_logo.png>] [2]
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 32.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [3
+
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [4]) [5]
+\openout2 = `Numerics/NumericsMain.aux'.
+
+ (./Numerics/NumericsMain.tex
+chapter 1.
+Package acronym Info: Label `acro:Rad-MHD' newly defined as it shall be overridden
+although it is yet undefined on input line 6.
+Package acronym Info: Label `acro:HEDP' newly defined as it shall be overridden
+although it is yet undefined on input line 7.
+Package acronym Info: Label `acro:LPIs' newly defined as it shall be overridden
+although it is yet undefined on input line 7.
+Package acronym Info: Label `acro:CBET' newly defined as it shall be overridden
+although it is yet undefined on input line 8.
+Package acronym Info: Label `acro:ICF' newly defined as it shall be overridden
+although it is yet undefined on input line 19.
+Package acronym Info: Label `acro:PiC' newly defined as it shall be overridden
+although it is yet undefined on input line 23.
+Package acronym Info: Label `acro:GO' newly defined as it shall be overridden
+although it is yet undefined on input line 26.
+Package acronym Info: Label `acro:IB' newly defined as it shall be overridden
+although it is yet undefined on input line 30.
+[6
+
+
+
+
+]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 35.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 35.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 35.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 35.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 35.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 35.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 36.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 36.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 36.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 36.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Package acronym Info: Label `acro:SBS' newly defined as it shall be overridden
+although it is yet undefined on input line 65.
+
+
+LaTeX Warning: Reference `sec:SBS_linear_gain' on page 8 undefined on input line 65.
+
+Package acronym Info: Label `acro:IRT' newly defined as it shall be overridden
+although it is yet undefined on input line 69.
+Package acronym Info: Label `acro:FRT' newly defined as it shall be overridden
+although it is yet undefined on input line 70.
+Package acronym Info: Label `acro:Rad-Hydro' newly defined as it shall be overridden
+although it is yet undefined on input line 72.
+Package acronym Info: Label `acro:LLE' newly defined as it shall be overridden
+although it is yet undefined on input line 72.
+<Numerics/Images/Reflected_Rays.png, id=217, 440.3652pt x 344.9688pt>
+File: Numerics/Images/Reflected_Rays.png Graphic file (type png)
+<use Numerics/Images/Reflected_Rays.png>
+Package pdftex.def Info: Numerics/Images/Reflected_Rays.png  used on input line 75.
+(pdftex.def)             Requested size: 284.52756pt x 222.90057pt.
+Package acronym Info: Label `acro:LLNL' newly defined as it shall be overridden
+although it is yet undefined on input line 83.
+Package acronym Info: Label `acro:CEA' newly defined as it shall be overridden
+although it is yet undefined on input line 83.
+[8]
+Package acronym Info: Label `acro:PCGO' newly defined as it shall be overridden
+although it is yet undefined on input line 97.
+ [9 <./Numerics/Images/Reflected_Rays.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ac' on input line 120.
+
+Package acronym Info: Label `acro:IAW' newly defined as it shall be overridden
+although it is yet undefined on input line 124.
+
+LaTeX Warning: Reference `sec:ray_equations' on page 10 undefined on input line 134.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+<Numerics/Images/raytrace_flowchart.png, id=307, 653.496pt x 400.332pt>
+File: Numerics/Images/raytrace_flowchart.png Graphic file (type png)
+<use Numerics/Images/raytrace_flowchart.png>
+Package pdftex.def Info: Numerics/Images/raytrace_flowchart.png  used on input line 142.
+(pdftex.def)             Requested size: 373.86685pt x 229.03458pt.
+Package acronym Info: Label `acro:MPI' newly defined as it shall be overridden
+although it is yet undefined on input line 152.
+Package acronym Info: Label `acro:inv-Brem' newly defined as it shall be overridden
+although it is yet undefined on input line 154.
+ [11 <./Numerics/Images/raytrace_flowchart.png>]
+<Numerics/Images/SOLAS_CHIMERA_domain.png, id=335, 867.24pt x 433.62pt>
+File: Numerics/Images/SOLAS_CHIMERA_domain.png Graphic file (type png)
+<use Numerics/Images/SOLAS_CHIMERA_domain.png>
+Package pdftex.def Info: Numerics/Images/SOLAS_CHIMERA_domain.png  used on input line 174.
+(pdftex.def)             Requested size: 415.41043pt x 207.70515pt.
+ [12 <./Numerics/Images/SOLAS_CHIMERA_domain.png>]
+Package acronym Info: Label `acro:OpenMP' newly defined as it shall be overridden
+although it is yet undefined on input line 192.
+<Numerics/Images/solas_cells_3imagescombined.png, id=357, 520.344pt x 487.275pt>
+File: Numerics/Images/solas_cells_3imagescombined.png Graphic file (type png)
+<use Numerics/Images/solas_cells_3imagescombined.png>
+Package pdftex.def Info: Numerics/Images/solas_cells_3imagescombined.png  used on input line 203.
+(pdftex.def)             Requested size: 415.41043pt x 389.0324pt.
+ [13]
+Underfull \vbox (badness 2744) has occurred while \output is active []
+
+ [14 <./Numerics/Images/solas_cells_3imagescombined.png>]
+Overfull \hbox (5.58328pt too wide) in paragraph at lines 232--236
+\T1/futs/m/n/10.95 structured grid de-scribed here, are com-pletely un-cor-re-lated from the hy-dro-dy-namic mesh [[],
+ []
+
+<Numerics/Images/ray_init_plots.png, id=386, 1011.78pt x 331.57475pt>
+File: Numerics/Images/ray_init_plots.png Graphic file (type png)
+<use Numerics/Images/ray_init_plots.png>
+Package pdftex.def Info: Numerics/Images/ray_init_plots.png  used on input line 243.
+(pdftex.def)             Requested size: 415.41043pt x 136.13878pt.
+[15 <./Numerics/Images/ray_init_plots.png>] [16]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 314.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 314.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 314.
+ [17]
+
+LaTeX Warning: Reference `eq:inv_brem' on page 18 undefined on input line 326.
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 340.
+(c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [18]
+<Numerics/Images/SOLAS_ray_shape_functions.png, id=460, 505.89pt x 361.35pt>
+File: Numerics/Images/SOLAS_ray_shape_functions.png Graphic file (type png)
+<use Numerics/Images/SOLAS_ray_shape_functions.png>
+Package pdftex.def Info: Numerics/Images/SOLAS_ray_shape_functions.png  used on input line 357.
+(pdftex.def)             Requested size: 284.52756pt x 203.23682pt.
+ [19 <./Numerics/Images/SOLAS_ray_shape_functions.png>]
+<Numerics/Images/Quadtrough.png, id=479, 867.24pt x 433.62pt>
+File: Numerics/Images/Quadtrough.png Graphic file (type png)
+<use Numerics/Images/Quadtrough.png>
+Package pdftex.def Info: Numerics/Images/Quadtrough.png  used on input line 386.
+(pdftex.def)             Requested size: 415.41043pt x 207.70515pt.
+ [20 <./Numerics/Images/Quadtrough.png>]
+<Numerics/Images/cyl_helix.png, id=494, 963.6pt x 344.268pt>
+File: Numerics/Images/cyl_helix.png Graphic file (type png)
+<use Numerics/Images/cyl_helix.png>
+Package pdftex.def Info: Numerics/Images/cyl_helix.png  used on input line 421.
+(pdftex.def)             Requested size: 415.41043pt x 148.41057pt.
+ [21 <./Numerics/Images/cyl_helix.png>]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 439.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 439.
+<Numerics/Images/blastwave.png, id=508, 505.89pt x 289.08pt>
+File: Numerics/Images/blastwave.png Graphic file (type png)
+<use Numerics/Images/blastwave.png>
+Package pdftex.def Info: Numerics/Images/blastwave.png  used on input line 458.
+(pdftex.def)             Requested size: 311.55782pt x 178.03677pt.
+ [22]
+
+LaTeX Warning: Reference `eq:theory_rayamp' on page 23 undefined on input line 498.
+
+
+LaTeX Warning: Reference `sec:theory_rayamp' on page 23 undefined on input line 498.
+
+[23 <./Numerics/Images/blastwave.png>]
+Overfull \hbox (11.1239pt too wide) in paragraph at lines 513--517
+\T1/futs/m/n/10.95 The elec-tric field out-side the caus-tic re-gion, which shall be dis-cussed in more de-tail in Sec. [][]1.4.2[][],
+ []
+
+<Numerics/Images/FieldCap_Diagram.png, id=542, 1011.78pt x 397.485pt>
+File: Numerics/Images/FieldCap_Diagram.png Graphic file (type png)
+<use Numerics/Images/FieldCap_Diagram.png>
+Package pdftex.def Info: Numerics/Images/FieldCap_Diagram.png  used on input line 523.
+(pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
+[24 <./Numerics/Images/FieldCap_Diagram.png>]
+<Numerics/Images/Raysheets_withcyl.png, id=557, 1011.78pt x 397.485pt>
+File: Numerics/Images/Raysheets_withcyl.png Graphic file (type png)
+<use Numerics/Images/Raysheets_withcyl.png>
+Package pdftex.def Info: Numerics/Images/Raysheets_withcyl.png  used on input line 562.
+(pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
+ [25] [26 <./Numerics/Images/Raysheets_withcyl.png>]
+Package acronym Info: Label `acro:FL' newly defined as it shall be overridden
+although it is yet undefined on input line 607.
+Package acronym Info: Label `acro:EI' newly defined as it shall be overridden
+although it is yet undefined on input line 607.
+
+Underfull \vbox (badness 2080) has occurred while \output is active []
+
+ [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+<Numerics/Images/1d_field_capping.png, id=651, 867.24pt x 346.896pt>
+File: Numerics/Images/1d_field_capping.png Graphic file (type png)
+<use Numerics/Images/1d_field_capping.png>
+Package pdftex.def Info: Numerics/Images/1d_field_capping.png  used on input line 686.
+(pdftex.def)             Requested size: 415.41043pt x 166.16412pt.
+ [29 <./Numerics/Images/1d_field_capping.png>]
+Overfull \hbox (6.10391pt too wide) in paragraph at lines 710--713
+\T1/futs/m/n/10.95 prop-a-gate be-yond $\FML/futmi/m/it/10.95 " \FMS/futm/m/n/10.95 Å \T1/futs/m/n/10.95 0$. The evanes-cent field in this re-gion can be re-pro-duced in the complex-
+ []
+
+<Numerics/Images/2D_field_reconstruction_lineouts.png, id=679, 1156.32pt x 289.08pt>
+File: Numerics/Images/2D_field_reconstruction_lineouts.png Graphic file (type png)
+<use Numerics/Images/2D_field_reconstruction_lineouts.png>
+Package pdftex.def Info: Numerics/Images/2D_field_reconstruction_lineouts.png  used on input line 718.
+(pdftex.def)             Requested size: 415.41043pt x 103.85257pt.
+[30 <./Numerics/Images/2D_field_reconstruction_lineouts.png>]
+Overfull \hbox (0.90756pt too wide) in paragraph at lines 765--769
+\T1/futs/m/n/10.95 mem-ory struc-ture is used which only stores the fields and gain in cells where they are present.
+ []
+
+[31]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ac' on input line 842.
+
+[32] [33] [34]) [35] [36
+
+
+
+]
+\openout2 = `Appendix/Appendix1Main.aux'.
+
+ (./Appendix/Appendix1Main.tex
+chapter A.
+) [37
+
+
+] [38
+
+
+
+
+] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
+\tf@brf=\write4
+\openout4 = `Thesis_MainSample.brf'.
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 24--24
+[]\T1/futs/m/n/10.95 F. Fi-uza, G. F. Swadling, A. Grassi, H. G. Rinderknecht, D. P. Hig-gin-son, D. D.
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 24--24
+\T1/futs/m/n/10.95 Ryu-tov, C. Bruulsema, R. P. Drake, S. Funk, S. Glen-zer, G. Gre-gori, C. K. Li,
+ []
+
+[39
+
+] [40]
+Underfull \hbox (badness 1189) in paragraph at lines 99--99
+[]\T1/futs/m/n/10.95 Andrew J. Schmitt and Stephen P. Oben-schain.  The im-por-tance of laser wave-
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 99--99
+\T1/futs/m/n/10.95 5 . 0118080$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 30 / 1 / 012701 / 2867678 /
+ []
+
+[41] [42]
+Underfull \hbox (badness 1158) in paragraph at lines 209--209
+[]\T1/futs/m/n/10.95 A. Co-laÔtis, S. H¸ller, D. Pesme, G. Duchateau, and V. T. Tikhonchuk.  Crossed
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 209--209
+\T1/futs/m/n/10.95 proach ver-sus a time-dependent parax-ial method to de-scribe ex-per-i-men-tal re-
+ []
+
+[43]
+Underfull \hbox (badness 2809) in paragraph at lines 241--241
+[]\T1/futs/m/n/10.95 R. K. Fol-lett, A. Co-laÔtis, D. Turn-bull, D. H. Froula, and J. P. Palas-tro.  Val-
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 241--241
+\T1/futs/m/n/10.95 i-da-tion of ray-based cross-beam en-ergy trans-fer mod-els.  |   []   |   []   |   [],
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 241--241
+\T1/futs/m/n/10.95 29(11):113902, Novem-ber 2022.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 /
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 241--241
+\T1/futs/m/n/10.95 5 . 0123462$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 29 / 11 / 113902 / 2844248 /
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 257--257
+[]\T1/futs/m/n/10.95 R. K. Fol-lett, J. G. Shaw, J. F. My-att, H. Wen, D. H. Froula, and J. P. Palas-
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 257--257
+\T1/futs/m/n/10.95 tro.  Thresh-olds of ab-so-lute two-plasmon-decay and stim-u-lated Ra-man scat-
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 257--257
+\T1/futs/m/n/10.95 ter-ing in-sta-bil-i-ties driven by mul-ti-ple broad-band lasers.  |   []   |   []   |   [],
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 257--257
+\T1/futs/m/n/10.95 28(3):032103, March 2021.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 / 5 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+\T1/futs/m/n/10.95 0037869$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 28 / 3 / 032103 / 835482 /
+ []
+
+[44]
+Underfull \hbox (badness 1215) in paragraph at lines 313--313
+\T1/futs/m/n/10.95 PhysRevE . 61 . 895$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / link . aps . org / doi / 10 . 1103 / PhysRevE . 61 . 895$[][]\T1/futs/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 362--362
+[]\T1/futs/m/n/10.95 J. De-navit and D. W. Phillion.  Laser ion-iza-tion and heat-ing of gas tar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/futs/m/n/10.95 gets for long-scale-length in-sta-bil-ity ex-per-i-ments.  |   []   |   []   |   [], 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/futs/m/n/10.95 (6):1971--1984, June 1994.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 / 1 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/futs/m/n/10.95 870653$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 1 / 6 / 1971 / 260717 /
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 370--370
+[]\T1/futs/m/n/10.95 I. V. Igu-men-shchev, F. J. Mar-shall, J. A. Marozas, V. A. Sma-lyuk, R. Ep-stein,
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 370--370
+\T1/futs/m/n/10.95 V. N. Gon-charov, T. J. B. Collins, T. C. Sang-ster, and S. Skup-sky.  The ef-
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 370--370
+\T1/futs/m/n/10.95 fects of tar-get mounts in direct-drive im-plo-sions on OMEGA.  |   []   |   []
+ []
+
+
+Underfull \hbox (badness 3482) in paragraph at lines 370--370
+|   []\T1/futs/m/n/10.95 , 16(8):082701, Au-gust 2009.  ISSN 1070-664X, 1089-7674.  doi: $10 .
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+[]\T1/futs/m/n/10.95 N. A. Lopez and I. Y. Dodin.  Meta-plec-tic ge-o-met-ri-cal op-tics for ray-
+ []
+
+
+Underfull \hbox (badness 6396) in paragraph at lines 420--420
+\T1/futs/m/n/10.95 based mod-el-ing of caus-tics: The-ory and al-go-rithms.  |   []   |   []   |   [],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/futs/m/n/10.95 29(5):052111, May 2022.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 / 5 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/futs/m/n/10.95 0082241$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 29 / 5 / 052111 / 2847808 /
+ []
+
+[46]) [47] [48
+
+
+]
+\openout2 = `Appendix/Permissions.aux'.
+
+ (./Appendix/Permissions.tex) [49
+
+
+] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
+(rerunfilecheck)             Checksum: FA38D9B49E4DFBF1CB5688FD40691F81;4869.
+ ) 
+Here is how much of TeX's memory you used:
+ 27831 strings out of 474165
+ 551359 string characters out of 5749497
+ 1953542 words of memory out of 5000000
+ 49380 multiletter control sequences out of 15000+600000
+ 728532 words of font info for 194 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 122i,14n,121p,10978b,1179s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on Thesis_MainSample.pdf (49 pages, 11095843 bytes).
+PDF statistics:
+ 1217 PDF objects out of 1440 (max. 8388607)
+ 1101 compressed objects within 12 object streams
+ 269 named destinations out of 1000 (max. 500000)
+ 407 words of extra memory for PDF output out of 10000 (max. 10000000)
+
