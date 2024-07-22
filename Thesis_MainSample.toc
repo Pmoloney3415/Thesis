@@ -1,0 +1,56 @@
+\contentsline {chapter}{\numberline {1}\textsc {Solas}, A 3-D Laser Ray-Trace and Cross-Beam Energy Transfer Model}{8}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Ray-tracing for Hydrodynamic Simulations of Fusion Plasmas}{8}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Existing Cross-Beam Energy Transfer Models}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Ray Based Models}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Wave Solvers}{12}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}\ac {PiC} Codes}{12}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}\textsc {Solas} 3-D Laser Ray Trace}{13}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Outline of \textsc {Solas}-\textsc {Chimera} Interfacing}{13}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}\textsc {Solas} Mesh Structure}{14}{subsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.2.1}Re-Domain Balance for Radial Geometries}{14}{subsubsection.1.3.2.1}%
+\contentsline {subsubsection}{\numberline {1.3.2.2}Semi-Structured Eulerian Grid with Combined Cells}{15}{subsubsection.1.3.2.2}%
+\contentsline {subsection}{\numberline {1.3.3}Ray Initialisation}{17}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Equations of Rays and Adaptive Integration}{19}{subsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.4.1}Ray Solver Validation}{22}{subsubsection.1.3.4.1}%
+\contentsline {section}{\numberline {1.4}Ray Based Field Reconstruction and Ray Sheets}{25}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Ray-Amplitude \& Field Estimate from Neighbour Rays}{26}{subsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.1.1}Caustics and Ray-Sheets}{28}{subsubsection.1.4.1.1}%
+\contentsline {subsection}{\numberline {1.4.2}Caustic Field Capping}{29}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Field Reconstruction Validation}{31}{subsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.3.1}1D Reflected Beam}{31}{subsubsection.1.4.3.1}%
+\contentsline {subsubsection}{\numberline {1.4.3.2}2D Reflected Beam}{32}{subsubsection.1.4.3.2}%
+\contentsline {section}{\numberline {1.5}Ray Based CBET Model}{33}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Power Change of Rays due to CBET}{34}{subsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.1.1}Fluid CBET Gain}{34}{subsubsection.1.5.1.1}%
+\contentsline {subsubsection}{\numberline {1.5.1.2}Kinetic CBET Gain}{34}{subsubsection.1.5.1.2}%
+\contentsline {subsection}{\numberline {1.5.2}Dynamic memory structure for storing Fields and CBET Gains}{34}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Doppler Shift of Frequency}{35}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Caustic Gain Truncation}{35}{subsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.5.5}Coherent Caustic Correction and Caustic Region Identification}{36}{subsection.1.5.5}%
+\contentsline {subsubsection}{\numberline {1.5.5.1}Geometric Approach to identifying the caustic region}{36}{subsubsection.1.5.5.1}%
+\contentsline {subsection}{\numberline {1.5.6}Energy Conservation in Ray Based CBET Models}{36}{subsection.1.5.6}%
+\contentsline {subsection}{\numberline {1.5.7}Pump Depletion Iterations}{36}{subsection.1.5.7}%
+\contentsline {subsection}{\numberline {1.5.8}Model Assumptions, Applicability and Validity to ICF}{36}{subsection.1.5.8}%
+\contentsline {subsection}{\numberline {1.5.9}Computational Efficiency and Scaling}{36}{subsection.1.5.9}%
+\contentsline {subsection}{\numberline {1.5.10}CBET Validation}{37}{subsection.1.5.10}%
+\contentsline {subsubsection}{\numberline {1.5.10.1}2D CBET Without Caustics}{37}{subsubsection.1.5.10.1}%
+\contentsline {subsubsection}{\numberline {1.5.10.2}2D CBET With Caustics}{37}{subsubsection.1.5.10.2}%
+\contentsline {section}{\numberline {1.6}Coupling to Hydrodynamics and Example Use}{37}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Power Deposition}{37}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Time step limiter}{38}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Ray Trace Frequency}{38}{subsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.6.4}Computational Diagnostics}{39}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.6.5}Example use on \textsc {Omega} Shot 89224}{39}{subsection.1.6.5}%
+\contentsline {subsubsection}{\numberline {1.6.5.1}1-D Rad-Hydro, 3-D Ray-Trace with CBET Simulation}{39}{subsubsection.1.6.5.1}%
+\contentsline {subsubsection}{\numberline {1.6.5.2}3-D Post Process of Absorption Non-Uniformity}{39}{subsubsection.1.6.5.2}%
+\contentsline {section}{\numberline {1.7}Future Model Extensions}{40}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Langdon Effect on Absorption}{40}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Langdon Effect on CBET}{41}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}Polarised CBET}{41}{subsection.1.7.3}%
+\contentsline {subsection}{\numberline {1.7.4}Bandwidth for CBET Mitigation Studies}{41}{subsection.1.7.4}%
+\contentsline {subsection}{\numberline {1.7.5}Additional LPIs}{42}{subsection.1.7.5}%
+\contentsline {section}{\numberline {1.8}Conclusions}{42}{section.1.8}%
+\contentsline {chapter}{\numberline {A}Numerics Appendices}{44}{appendix.A}%
+\contentsline {chapter}{Bibliography}{45}{section*.63}%
+\contentsline {chapter}{Copyright Permissions}{55}{section*.65}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

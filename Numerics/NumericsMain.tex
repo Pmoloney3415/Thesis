@@ -754,12 +754,20 @@ To remind the reader, this choice is because the implementation of the \ac{EI} m
 \begin{figure}[t!]
     \includegraphics[width=0.9\linewidth]{Numerics/Images/CBET_flowchart.PNG}
     \centering
-    \caption{A flowchart which illustrates the \textsc{Solas} \ac{CBET} model operation loop.}%
+    \caption{A flowchart which illustrates the \textsc{Solas} \ac{CBET} model operation loop.
+    $F_i$ is shorthand for the total field from all laser beams and sheets at pump depletion iteration $i$ and $M_{\text{CP}}$ is the caustic pump multiplier, described in Sec.~\ref{sec:energy_conserv_iters} of energy conservation iteration $j$.
+    $\Delta E$ denotes the energy conservation error, which is the total incident power minus deposited power and power exiting the grid.}%
     \label{fig:SOLAS_CBET_flowchart}
 \end{figure}
 
 This section shall describe the implementation of the \ac{CBET} model in \textsc{Solas}.
-A brief outline of the  model works by performing
+Fig.~\ref{fig:SOLAS_CBET_flowchart} shows a flowchart which illustrates the operational loop of the \ac{CBET} model when coupled to \textsc{Chimera}.
+The initial `field reconstruction' raytrace performed in the absence of \ac{CBET} follows the procedure described in Sec.~\ref{sec:SOLAS_field_reconstruc} to obtain the field for every beam and sheet on the \textsc{Solas} mesh.
+Ray-based \ac{CBET} models typically must perform repeated ray-traces through the same hydrodynamic profiles to account for pump depletion and optionally energy conservation, which are described in Sec.~\ref{sec:pump_dep_iters} and~\ref{sec:energy_conserv_iters} respectively.
+\ac{CBET} does not affect the trajectory of light, just the energy and therefore repeating the calculations of ray trajectories is both computationally costly and unnecessary.
+Ray locations are therefore stored in a memory-efficient, linked-list to be re-used each iteration.
+It is found in \textsc{Solas} that caching the ray locations in this manner typically leads to an order of magnitude speed up compared to performing a new raytrace for every iteration.
+
 Explain that ray based \ac{CBET} uses the linear gain discussed in theory section.
 Say that since this assumes homogineity, effectively applies to small ray steps, which is typically well satisfied.
 Also say that this homogeneity within a computational cell and nearest neighbour interpolation of field means that it is not necessary to adaptively integrate the CBET gain.
@@ -802,6 +810,13 @@ This is small, however it is significant to include in CBET models as it can shi
 %################################################################################
 \subsection{Caustic Gain Truncation}
 
+\begin{figure}[t!]
+    \includegraphics[width=1.0\linewidth]{Numerics/Images/caustic_region_diagram.png}
+    \centering
+    \caption{A series of figures which illustrate how the caustic region identification in \textsc{Solas} work.}%
+    \label{fig:SOLAS_caustic_region}
+\end{figure}
+
 Say that because nearest neighbour interpolation of the fields is used, there exists unphyscial interaction regions where a cell has a field but ray hasn't passed through that portion of the cell.
 This problem becomes particularly bad at ray turning points, where a significant amount fo CBET occurs.
 Therefore a method called `CGT' is used to effectively enhance the laser grid resolution in the vicnity of caustics.
@@ -828,13 +843,6 @@ If a cell has rays from both in a cell, then a plane is found between the two to
 If a cell has only capped rays then the whole thing is caustic.
 When a ray from another beam passes through, CC mult is applied if in the caustic region.
 
-
-%################################################################################
-%################################################################################
-\subsection{Energy Conservation in Ray Based CBET Models}
-
-Talk about how energy is conserved away from caustics when converged.
-
 %################################################################################
 %################################################################################
 \subsection{Pump Depletion Iterations}%
@@ -844,6 +852,14 @@ Talk about why it is necessary to iterate the ray trace.
 Mention that it is possible to store ray locations and avoid performing ray trace all over again, but that approach is not taken due to memory limitations.
 Talk about convergence parameter.
 Mention necessity of damping for complicated, many beam simulations.
+
+
+%################################################################################
+%################################################################################
+\subsection{Energy Conservation Iterations}%
+\label{sec:energy_conserv_iters}
+
+Talk about how energy is conserved away from caustics when converged.
 
 %################################################################################
 %################################################################################
@@ -957,6 +973,13 @@ Electric field (from single or all beams), optionally split into inbound and ref
 %################################################################################
 %################################################################################
 \subsection{Example use on \textsc{Omega} Shot 89224}
+
+\begin{figure}[t!]
+    \includegraphics[width=0.9\linewidth]{Numerics/Images/89224_absorption.png}
+    \centering
+    \caption{This figure shows the results of a \textsc{Chimera}-\textsc{Solas} simulation of \textsc{Omega} shot 89224.}%
+    \label{fig:SOLAS_89224}
+\end{figure}
 
 First briefly describe the shot, showing pulse shape and target.
 
