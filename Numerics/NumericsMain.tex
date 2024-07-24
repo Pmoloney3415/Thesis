@@ -316,17 +316,17 @@ The partial differential equations that are integrated along the trajectory of e
 \begin{equation}
     \label{eq:SOLAS_rays}
     \begin{gathered}
-        \frac{d \mathbf{x}}{d \tau}=\mathbf{k}, \\
-        \frac{d \mathbf{k}}{d \tau}=\frac{1}{2} \nabla \varepsilon(\mathbf{x}), \\
-        \frac{d \varphi}{d \tau}= \varepsilon(\mathbf{x}), \\
-        \frac{d \omega}{d \tau}=\frac{\omega}{2 c} \frac{\partial\left(n_e / n_{\text{cr}}\right)}{\partial t}, \\
-        \frac{d P}{d \tau}=-\kappa_{\text{IB}},
+        \frac{\text{d} \mathbf{x}}{\text{d} \tau}=\mathbf{k}, \\
+        \frac{\text{d} \mathbf{k}}{\text{d} \tau}=\frac{1}{2} \nabla \varepsilon(\mathbf{x}), \\
+        \frac{\text{d} \varphi}{\text{d} \tau}= \varepsilon(\mathbf{x}), \\
+        \frac{\text{d} \omega}{\text{d} \tau}=\frac{\omega}{2 c} \frac{\partial\left(n_e / n_{\text{cr}}\right)}{\partial t}, \\
+        \frac{\text{d} P}{\text{d} \tau}=-\kappa_{\text{IB}},
     \end{gathered}
 \end{equation}
 where $\varepsilon=1-n_e/n_{\text{cr}}$ is the dielectric permittivity of the plasma, $n_e$ \& $n_{\text{cr}}$ are the electron \& critical densities, $c$ is the speed of light, $t$ is time, $\kappa_{\text{IB}}$ is the \ac{inv-Brem} absorption kernel, given explicitly in Eq.~\ref{eq:inv_brem} and $\tau$ is the ray path length.
 Note that the phase here is defined such that it has the same dimension as path length and therefore has spatial units.
 The wavevector is normalised such that $|\vec{k}|=\sqrt{\varepsilon}$.
-The optical path length is related to the arc length, $ds$ by the variable change $ds=d\tau\sqrt{\varepsilon}$.
+The optical path length is related to the arc length, $\text{d}s$ by the variable change $\text{d}s=\text{d}\tau\sqrt{\varepsilon}$.
 In some formulations of the ray-tracing equations, the differential equations are written in terms of the arc length~\cite{marozas_wavelength-detuning_2018,kaiser_laser_2000}, which is equivalent, but more complicated and without benefit.
 The frequency shift of the light is only significant for the work presented in this thesis when calculating \ac{CBET} and is discussed in more detail in Sec.~\ref{sec:SOLAS_doppler}, where the equation used to evaluate the right-hand side is given explicitly.
 Note that the time, $t$ is not related to the ray path length $\tau$, because an operator split approach is taken to the ray trace, such that the hydrodynamic variables are frozen and the ray trace finds the time independent trajectory of the light through these profiles.
@@ -755,44 +755,134 @@ To remind the reader, this choice is because the implementation of the \ac{EI} m
     \includegraphics[width=0.9\linewidth]{Numerics/Images/CBET_flowchart.PNG}
     \centering
     \caption{A flowchart which illustrates the \textsc{Solas} \ac{CBET} model operation loop.
-    $F_i$ is shorthand for the total field from all laser beams and sheets at pump depletion iteration $i$ and $M_{\text{CP}}$ is the caustic pump multiplier, described in Sec.~\ref{sec:energy_conserv_iters} of energy conservation iteration $j$.
+    $F_i$ is shorthand for the total field from all laser beams and sheets at pump depletion iteration $i$ and $M_{\text{CP}}$ is the caustic pump multiplier, described in Sec.~\ref{sec:energy_conserv_iters} of the $j^{\text{th}}$ energy conservation iteration.
     $\Delta E$ denotes the energy conservation error, which is the total incident power minus deposited power and power exiting the grid.}%
     \label{fig:SOLAS_CBET_flowchart}
 \end{figure}
 
 This section shall describe the implementation of the \ac{CBET} model in \textsc{Solas}.
+Initially a broad overview of the model shall be provided.
 Fig.~\ref{fig:SOLAS_CBET_flowchart} shows a flowchart which illustrates the operational loop of the \ac{CBET} model when coupled to \textsc{Chimera}.
-The initial `field reconstruction' raytrace performed in the absence of \ac{CBET} follows the procedure described in Sec.~\ref{sec:SOLAS_field_reconstruc} to obtain the field for every beam and sheet on the \textsc{Solas} mesh.
-Ray-based \ac{CBET} models typically must perform repeated ray-traces through the same hydrodynamic profiles to account for pump depletion and optionally energy conservation, which are described in Sec.~\ref{sec:pump_dep_iters} and~\ref{sec:energy_conserv_iters} respectively.
-\ac{CBET} does not affect the trajectory of light, just the energy and therefore repeating the calculations of ray trajectories is both computationally costly and unnecessary.
-Ray locations are therefore stored in a memory-efficient, linked-list to be re-used each iteration.
-It is found in \textsc{Solas} that caching the ray locations in this manner typically leads to an order of magnitude speed up compared to performing a new raytrace for every iteration.
+The initial `field reconstruction' raytrace in the absence of \ac{CBET}, follows the procedure described in Sec.~\ref{sec:SOLAS_field_reconstruc} to obtain the field for every beam and sheet on the \textsc{Solas} mesh.
+Ray-based \ac{CBET} models, including the model in \textsc{Solas}, typically must perform repeated ray-traces through the same hydrodynamic profiles to account for pump depletion and optionally energy conservation.
 
-Explain that ray based \ac{CBET} uses the linear gain discussed in theory section.
-Say that since this assumes homogineity, effectively applies to small ray steps, which is typically well satisfied.
-Also say that this homogeneity within a computational cell and nearest neighbour interpolation of field means that it is not necessary to adaptively integrate the CBET gain.
+The pump depletion loop, described in more detail in Sec.~\ref{sec:pump_dep_iters} is a fixed point iteration method to obtain the new \ac{CBET} laser fields.
+This loop is necessary as each iteration produces a new background field which leads to a different \ac{CBET} interaction, which converges when \ac{CBET} has been fully accounted for.
+The resultant solution will not necessarily conserve energy if \ac{CBET} occurs in the presence of laser caustics.
+To remedy this, additional energy conservation iterations can be performed, where a multiplier on the \ac{CBET} gain in caustics can be applied, $M_{\text{CP}}$, and varied to conserve laser energy.
+Although this is an ad-hoc correction, it is found to lead to better agreement with higher fidelity solver~\cite{follett_validation_2022}.
+
+\ac{CBET} does not affect the trajectory of light, just its energy and therefore repeating the calculations of ray trajectories is both computationally costly and unnecessary.
+Ray locations are therefore stored in a memory-efficient, linked-list to be re-used in both loops.
+It is found in \textsc{Solas} that caching the ray locations in this manner typically leads to an order of magnitude speed up compared to performing a new raytrace for every iteration.
 
 %################################################################################
 %################################################################################
 \subsection{Power Change of Rays due to CBET}
 
-Describe how ray energy changes due to CBET from linear gain models (either fluid or kinetic).
-Say how when including with inv brem, the deposited power and CBET change must be got carefully (i.e. Marozas paper).
+Ray-tracing calculations assume steady state hydrodynamic profiles for rays propagating through the plasma and that the field of a ray propagates as a plane wave along the ray path~\cite{ding_identify_2020}.
+The linear gain theory of \ac{SBS} can therefore be used \cite{randall_theory_1981}, which describes the steady state energy change of locally plane wave light which passes through uniform plasma conditions~\cite{myatt_wave-based_2017}.
+Linear in this context means that the plasma response to the driving fields is sufficiently small to be treated in linear expansions.
+The uniform assumption here means that the plasma conditions must not vary significantly over the interaction time or length scales.
+For direct-drive conditions, hydrodynamic time scales are typically $\sim100 \text{ps}$ and \ac{CBET} saturates on the order of $\sim10 \text{ps}$.
+Ray steps are also limited to grid cell boundaries, which are smaller than hydrodynamic length-scales, so it is safe to assume a locally uniform plasma background when this model is applied only over a single ray step at a time.
+
+The steady-state interaction between two parallel-polarised sheets ($i,j$) over a path length $\text{d}\tau$ can be written in terms of the field magnitude of the sheet ($|E_{i,j}|$) or equivalently ray power ($P_{i,j} = A_{i,j}|E_{i,j}|^2$),
+\begin{equation}
+    \label{eq:SOLAS_CBET_power_change}
+    \begin{gathered}
+        \frac{\text{d}|E_i|^2}{\text{d}\tau}= \left( -\kappa_{\text{IB}} + \gamma_{ij} |E_j|^2 \right) |E_i|^2, \\
+        \frac{\text{d}P_i}{\text{d}\tau}= \left( -\kappa_{\text{IB}} + \gamma_{ij} A_j P_j \right) P_i,
+    \end{gathered}
+\end{equation}
+where $\kappa_{\text{IB}}$ is the \ac{inv-Brem} absorption kernel, $A_j$ is the amplitude of sheet $j$ and $\gamma_{ij}$ is the \ac{CBET} gain of sheet $i$ from the interaction with sheet $j$.
+The sheet/ ray which changes energy in a given interaction (here $i$), is often called the \textit{probe} while the other beam is termed the \textit{pump}.
+The gain is a function of both the plasma conditions and the local field profiles for both sheets in the interaction, so a gain must be calculated between every pair of sheets at every location where both are present.
+Going from the first to the second equation assumes that $\text{d}A_i/\text{d}\tau=0$, which is consistent with the assumption from the linear gain theory that the fields are approximately uniform over a small step.
+Different models exist for the gain, which either use a fluid or kinetic treatment for the plasma \ac{IAW} response.
+
+When multiple different probe beams are present, the total \ac{CBET} interaction is treated simply as the sum of all interactions from different sheets,
+\begin{equation}
+    \label{eq:SOLAS_CBET_power_change_allsheets}
+    \frac{\text{d}P_i}{\text{d}\tau}= \left( -\kappa_{\text{IB}} + \kappa_{\text{CBET}} \right) P_i,
+\end{equation}
+where the \ac{CBET} kernel has been defined $\kappa_{\text{CBET}} = \sum_{j\neq i} \gamma_{ij} |E_j|^2$.
+This summation assumes that the fields from different sheets are uncorrelated.
+For direct-drive conditions, this assumption is broadly correct, apart from when a probe sheet undergoes a \ac{CBET} interaction in the caustic region of the probe.
+In this case, the \textit{Coherent Caustic} correction is applied, which is described in Sec.~\ref{sec:SOLAS_coherent_caustic}.
+
+Note that when computing both \ac{inv-Brem} and \ac{CBET}, the partition of power lost to each interaction is computed as,
+\begin{equation}
+    \label{eq:CBET_deposition}
+    \begin{gathered}
+        \Delta P_{i,\text{IB}} = - \langle P_i\rangle \frac{\kappa_{\text{IB}}}{\kappa_{\text{CBET}} - \kappa_{\text{IB}}}, \\
+        \Delta P_{i,\text{CBET}} = \langle P_i\rangle \frac{\kappa_{\text{CBET}}}{\kappa_{\text{CBET}} - \kappa_{\text{IB}}}, \\
+        \langle P_i\rangle = P_i  + P_i\left( \kappa_{\text{CBET}} - \kappa_{\text{IB}} \right)\text{d}\tau/2,
+    \end{gathered}
+\end{equation}
+where $\Delta P_{i,\text{IB}}$ and $\Delta P_{i,\text{CBET}}$ are the powers lost to \ac{inv-Brem} and \ac{CBET} respectively and $\langle P_i\rangle$ is the average power of the ray over the step, $\text{d}\tau$.
+This can be derived by solving Eq.~\ref{eq:SOLAS_CBET_power_change} for $P_i$ and then taking the limit $\text{d}\tau\rightarrow0$ \cite{marozas_wavelength-detuning_2018}.
+The deposition, $\Delta P_{i,\text{IB}}$, can then be interpolated to the grid as an electron energy source as is described in Sec.~\ref{sec:SOLAS_ray_propagation}.
+
+The two formulations of the gain shall be presented below.
+Broadly, the gain describes the plasma response to the 2 driving fields and therefore dictates the energy transfer between them.
+They differ in that the fluid formulation derives a gain by linearising the fluid equations for the plasma response whereas the kinetic formulation is obtained from a linearisation of the Vlasov equation.
+The kinetic gain is more complete and should be used for comparison to experimental observables, whereas the fluid gain is useful for comparison with \textsc{Lpse}, which directly solves the linearised fluid equations.
 
 %##################################################
-\subsubsection{Fluid CBET Gain}
+\paragraph*{Fluid CBET Gain}
 
-Breifly discuss the fluid CBET gain and explain why it is easier to use for code validation.
+The linear fluid gain, described by Randall \textit{et al.} in Ref.~\cite{randall_theory_1981} is,
+\begin{equation}
+    \label{eq:SOLAS_CBET_fluid_gain}
+    \begin{gathered}
+        \gamma_{ij} = \frac{n_e e}{4 m_e c \omega_i} \frac{1}{T_e \left( 1 + 3 T_i / Z T_e \right)} \frac{R(\eta_{ij})}{\nu_{\text{ia}}}, \\
+        R(\eta_{ij}) = \frac{ (\nu_{\text{ia}}/\omega_{s})^2 \eta_{ij} } { (\eta^2 - 1)^2 + (\nu_{\text{ia}}/\omega_s)^2 \eta_{ij}^2 }, \\
+        \eta_{ij} = \frac{ (\omega_j-\omega_i) - \vec{k}_s.\vec{u} }{\omega_s},
+    \end{gathered}
+\end{equation}
+where $T_e$ \& $T_i$ are the electron \& ion temperatures in $\text{eV}$ respectively, $\omega_i$ \& $\vec{k}_i$ are the frequency and wavevector of sheet $i$ respectively, $Z$ is the ionisation state, $\vec{u}$ is the fluid velocity, $\omega_s = |\vec{k}_s|c_s$ is the \ac{IAW} frequency, $\vec{k}_s = \vec{k}_j - \vec{k}_i$ is the \ac{IAW} wavevector, $c_s = \sqrt{e(Z T_e + 3 T_i)/m_i}$ is the sound speed and $\nu_{\text{ia}}$ is the \ac{IAW} damping rate.
+This formulation is useful for comparison with \textsc{Lpse}, which directly solves the linearised fluid equations and therefore in situations where the \ac{GO} assumptions are valid, the two methods should give similar results.
+However, it is generally not considered to be a good choice of model to compare to experiment.
+The damping rate, $\nu_{\text{ia}}$ does not have an analytic formula for arbitrary plasma conditions and therefore must be prescribed.
+Additionally, Eq.~\ref{eq:SOLAS_CBET_fluid_gain} assumes an average ion treatment of the species in the plasma if multiple ion species are present.
+In reality, both fast and slow modes of \ac{IAW} can be driven in a 2 species plasma~\cite{williams_frequency_1995}, which can independently lead to \ac{CBET} scattering.
+This effect cannot be captured using the fluid gain, where the plasma is assumed to made of a single ion species with a number density averaged ion mass.
+Codes that use this formulation typically use a damping value $\nu_{\text{ia}}=0.2$ for CH plasmas, which is the value used for all fluid gain simulations in this chapter.
 
 %##################################################
-\subsubsection{Kinetic CBET Gain}
+\paragraph*{Kinetic CBET Gain}
 
-Breifly discuss the kinetic CBET gain and why it is better for predictive simulations.
+The linear kinetic \ac{CBET} gain, described by Michel in Ref.~\cite{michel_saturation_2013} is,
+\begin{equation}
+    \label{eq:SOLAS_CBET_kinetc_gain}
+    \begin{gathered}
+        \gamma_{ij} = \frac{e^2 |\vec{k}_s|^2}{4 m_e^2 c \omega_i^3}\text{Im}(K_{ij}), \\
+        K_{ij} = \frac{\chi_e(1+\chi_i)}{(1+\chi_e+\chi_i)}, \\
+        \chi_e = \frac{-1}{2 |\vec{k}_s|^2 \lambda_{De}^2} \text{Z}'\left( \frac{(\omega_j-\omega_i)-\vec{k}_s.\vec{u}}{\sqrt{2} |\vec{k}|_s v_{Te}} \right), \\
+        \chi_i = \frac{-1}{2 |\vec{k}_s|^2 \lambda_{De}^2} \frac{T_e}{\langle Z\rangle T_i} \nsum_{\alpha}^{\text{species}} f_{\alpha}Z_{\alpha}^2  \text{Z}'\left( \frac{(\omega_j-\omega_i)-\vec{k}_s.\vec{u}}{\sqrt{2} |\vec{k}|_s v_{T\alpha}} \right), \\
+    \end{gathered}
+\end{equation}
+where $\chi_e$ \& $\chi_i$ are the electron \& ion susceptibilities respectively, $f_{\alpha}$ \& $Z_{\alpha}$ are the number fraction \& ionisation of ion species $\alpha$ respectively, $\text{Z}'$ is the derivative of the plasma dispersion function, $v_{Tn}=\sqrt{e T_n/m_n}$ is the thermal velocity of species $n$ with temperature $T_n$ in eV and mass $m_n$, $\lambda_{De}=\sqrt{\varepsilon_0 e T_e / n_e e^2}$ is the electron Debye length and $\langle Z \rangle = \sum_{\alpha}f_{\alpha}Z_{\alpha}$ is the average ionisation.
+Note that the susceptibilities $\chi_{i,e}$ are complex, which arises from the complex plasma dispersion function.
+In order to compute $\text{Z}'$ in \textsc{Solas}, the \texttt{CALGO} library is used to numerically compute the value of the \textit{Fadeeva function}, $w(x)$ \cite{poppe_algorithm_1990}.
+This is then related to the plasma dispersion function and its derivative by,
+\begin{equation}
+    \label{eq:SOLAS_plasma_disp_func}
+    \begin{gathered}
+        \text{Z}(x) = i\sqrt{\pi} w(x), \\
+        \text{Z}'(x) = -2 [1 + x \text{Z}(x)],
+    \end{gathered}
+\end{equation}
+where $i=\sqrt{-1}$ and $w(x)$, $\text{Z}(x)$ and $\text{Z}'(x)$ are all complex numbers \cite{fried_plasma_1961}.
+
 
 %################################################################################
 %################################################################################
 \subsection{Dynamic memory structure for storing Fields and CBET Gains}
 
+\ac{CBET} gains must be calculated between every pair of sheets that cross at a given location.
+For $N_b$ beamhen discretised on a grid (with approximately $N_g$ cells in each dimension), this 
 Give the scaling of storing fields and gains for every beam.
 Say that therefore a dynamic memory structure is used which only stores the fields and gain in cells where they are present.
 Also state that although the ray trace module must be done in double to numerical errors (for exmaple, freq differences in resonance and difference between rays), gain is stored as a single which greatly reduces cost.
@@ -827,7 +917,8 @@ Other codes have shown that this approach significantly improves energy conserva
 
 %################################################################################
 %################################################################################
-\subsection{Coherent Caustic Correction and Caustic Region Identification}
+\subsection{Coherent Caustic Correction and Caustic Region Identification}%
+\label{sec:SOLAS_coherent_caustic}
 
 Say how the field reconstruction assumption works everywhere apart from at caustics, where it underestimates the field.
 Follow what Russ says in his paper about CC correction and how it significantly improves energy conservation.

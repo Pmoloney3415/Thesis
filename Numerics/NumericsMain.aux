@@ -454,86 +454,141 @@
 \@writefile{toc}{\contentsline {section}{\numberline {1.5}Ray Based CBET Model}{31}{section.1.5}\protected@file@percent }
 \acronymused{CBET}
 \acronymused{CBET}
+\citation{follett_validation_2022}
+\citation{ding_identify_2020}
+\citation{randall_theory_1981}
+\citation{myatt_wave-based_2017}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.14}{\ignorespaces A flowchart which illustrates the \textsc  {Solas} \ac {CBET} model operation loop. $F_i$ is shorthand for the total field from all laser beams and sheets at pump depletion iteration $i$ and $M_{\text  {CP}}$ is the caustic pump multiplier, described in Sec.~\ref {sec:energy_conserv_iters} of the $j^{\text  {th}}$ energy conservation iteration. $\Delta E$ denotes the energy conservation error, which is the total incident power minus deposited power and power exiting the grid.}}{32}{figure.caption.54}\protected@file@percent }
 \acronymused{CBET}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.14}{\ignorespaces A flowchart which illustrates the \textsc  {Solas} \ac {CBET} model operation loop. $F_i$ is shorthand for the total field from all laser beams and sheets at pump depletion iteration $i$ and $M_{\text  {CP}}$ is the caustic pump multiplier, described in Sec.~\ref {sec:energy_conserv_iters} of energy conservation iteration $j$. $\Delta E$ denotes the energy conservation error, which is the total incident power minus deposited power and power exiting the grid.}}{32}{figure.caption.54}\protected@file@percent }
-\acronymused{CBET}
-\newlabel{fig:SOLAS_CBET_flowchart}{{1.14}{32}{A flowchart which illustrates the \textsc {Solas} \ac {CBET} model operation loop. $F_i$ is shorthand for the total field from all laser beams and sheets at pump depletion iteration $i$ and $M_{\text {CP}}$ is the caustic pump multiplier, described in Sec.~\ref {sec:energy_conserv_iters} of energy conservation iteration $j$. $\Delta E$ denotes the energy conservation error, which is the total incident power minus deposited power and power exiting the grid}{figure.caption.54}{}}
+\newlabel{fig:SOLAS_CBET_flowchart}{{1.14}{32}{A flowchart which illustrates the \textsc {Solas} \ac {CBET} model operation loop. $F_i$ is shorthand for the total field from all laser beams and sheets at pump depletion iteration $i$ and $M_{\text {CP}}$ is the caustic pump multiplier, described in Sec.~\ref {sec:energy_conserv_iters} of the $j^{\text {th}}$ energy conservation iteration. $\Delta E$ denotes the energy conservation error, which is the total incident power minus deposited power and power exiting the grid}{figure.caption.54}{}}
 \newlabel{fig:SOLAS_CBET_flowchart@cref}{{[figure][14][1]1.14}{[1][31][]32}}
 \acronymused{CBET}
 \acronymused{CBET}
 \acronymused{CBET}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.1}Power Change of Rays due to CBET}{32}{subsection.1.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.5.1.1}Fluid CBET Gain}{33}{subsubsection.1.5.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.5.1.2}Kinetic CBET Gain}{33}{subsubsection.1.5.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.2}Dynamic memory structure for storing Fields and CBET Gains}{33}{subsection.1.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.3}Doppler Shift of Frequency}{33}{subsection.1.5.3}\protected@file@percent }
-\newlabel{sec:SOLAS_doppler}{{1.5.3}{33}{Doppler Shift of Frequency}{subsection.1.5.3}{}}
-\newlabel{sec:SOLAS_doppler@cref}{{[subsection][3][1,5]1.5.3}{[1][33][]33}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.4}Caustic Gain Truncation}{33}{subsection.1.5.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.5}Coherent Caustic Correction and Caustic Region Identification}{33}{subsection.1.5.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1.15}{\ignorespaces A series of figures which illustrate how the caustic region identification in \textsc  {Solas} work.}}{34}{figure.caption.55}\protected@file@percent }
-\newlabel{fig:SOLAS_caustic_region}{{1.15}{34}{A series of figures which illustrate how the caustic region identification in \textsc {Solas} work}{figure.caption.55}{}}
-\newlabel{fig:SOLAS_caustic_region@cref}{{[figure][15][1]1.15}{[1][33][]34}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.5.5.1}Geometric Approach to identifying the caustic region}{34}{subsubsection.1.5.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.6}Pump Depletion Iterations}{34}{subsection.1.5.6}\protected@file@percent }
-\newlabel{sec:pump_dep_iters}{{1.5.6}{34}{Pump Depletion Iterations}{subsection.1.5.6}{}}
-\newlabel{sec:pump_dep_iters@cref}{{[subsection][6][1,5]1.5.6}{[1][34][]34}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.16}{\ignorespaces This figure shows the results of the 2-D \ac {CBET} test in the absence of laser caustics.}}{35}{figure.caption.56}\protected@file@percent }
 \acronymused{CBET}
-\newlabel{fig:SOLAS_CBET_test_nocaustics}{{1.16}{35}{This figure shows the results of the 2-D \ac {CBET} test in the absence of laser caustics}{figure.caption.56}{}}
-\newlabel{fig:SOLAS_CBET_test_nocaustics@cref}{{[figure][16][1]1.16}{[1][35][]35}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.7}Energy Conservation Iterations}{35}{subsection.1.5.7}\protected@file@percent }
-\newlabel{sec:energy_conserv_iters}{{1.5.7}{35}{Energy Conservation Iterations}{subsection.1.5.7}{}}
-\newlabel{sec:energy_conserv_iters@cref}{{[subsection][7][1,5]1.5.7}{[1][34][]35}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.8}Model Assumptions, Applicability and Validity to ICF}{35}{subsection.1.5.8}\protected@file@percent }
-\newlabel{sec:model_appliciability}{{1.5.8}{35}{Model Assumptions, Applicability and Validity to ICF}{subsection.1.5.8}{}}
-\newlabel{sec:model_appliciability@cref}{{[subsection][8][1,5]1.5.8}{[1][35][]35}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.9}Computational Efficiency and Scaling}{35}{subsection.1.5.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.10}CBET Validation}{35}{subsection.1.5.10}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1.17}{\ignorespaces This figure shows the results of the 2-D \ac {CBET} test in the presence of a laser caustic.}}{36}{figure.caption.57}\protected@file@percent }
 \acronymused{CBET}
-\newlabel{fig:SOLAS_CBET_test_caustics}{{1.17}{36}{This figure shows the results of the 2-D \ac {CBET} test in the presence of a laser caustic}{figure.caption.57}{}}
-\newlabel{fig:SOLAS_CBET_test_caustics@cref}{{[figure][17][1]1.17}{[1][36][]36}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.18}{\ignorespaces This figure shows results from a resolution scan of the 2 beam caustic \ac {CBET} test both with \ac {CGT} and without. Plotted in a), b) \& c) are the power amplification of the seed beam, initial energy conservation error before energy conservation iterations \& caustic pump multiplier used to obtain energy conservation respectively.}}{36}{figure.caption.58}\protected@file@percent }
+\acronymused{CBET}
+\acronymused{CBET}
+\@writefile{brf}{\backcite{follett_validation_2022}{{32}{1.5}{figure.caption.54}}}
+\acronymused{CBET}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.1}Power Change of Rays due to CBET}{33}{subsection.1.5.1}\protected@file@percent }
+\@writefile{brf}{\backcite{ding_identify_2020}{{33}{1.5.1}{subsection.1.5.1}}}
+\acronymused{SBS}
+\@writefile{brf}{\backcite{randall_theory_1981}{{33}{1.5.1}{subsection.1.5.1}}}
+\@writefile{brf}{\backcite{myatt_wave-based_2017}{{33}{1.5.1}{subsection.1.5.1}}}
+\acronymused{CBET}
+\newlabel{eq:SOLAS_CBET_power_change}{{1.19}{33}{Power Change of Rays due to CBET}{equation.1.5.19}{}}
+\newlabel{eq:SOLAS_CBET_power_change@cref}{{[equation][19][1]1.19}{[1][33][]33}}
+\acronymused{inv-Brem}
+\acronymused{CBET}
+\acronymused{IAW}
+\acronymused{CBET}
+\newlabel{eq:SOLAS_CBET_power_change_allsheets}{{1.20}{33}{Power Change of Rays due to CBET}{equation.1.5.20}{}}
+\newlabel{eq:SOLAS_CBET_power_change_allsheets@cref}{{[equation][20][1]1.20}{[1][33][]33}}
+\acronymused{CBET}
+\acronymused{CBET}
+\acronymused{inv-Brem}
+\acronymused{CBET}
+\citation{marozas_wavelength-detuning_2018}
+\citation{randall_theory_1981}
+\citation{williams_frequency_1995}
+\citation{michel_saturation_2013}
+\newlabel{eq:CBET_deposition}{{1.21}{34}{Power Change of Rays due to CBET}{equation.1.5.21}{}}
+\newlabel{eq:CBET_deposition@cref}{{[equation][21][1]1.21}{[1][33][]34}}
+\acronymused{inv-Brem}
+\acronymused{CBET}
+\@writefile{brf}{\backcite{marozas_wavelength-detuning_2018}{{34}{1.5.1}{equation.1.5.21}}}
+\@writefile{brf}{\backcite{randall_theory_1981}{{34}{1.5.1}{section*.55}}}
+\newlabel{eq:SOLAS_CBET_fluid_gain}{{1.22}{34}{Fluid CBET Gain}{equation.1.5.22}{}}
+\newlabel{eq:SOLAS_CBET_fluid_gain@cref}{{[equation][22][1]1.22}{[1][34][]34}}
+\acronymused{IAW}
+\acronymused{IAW}
+\acronymused{IAW}
+\acronymused{GO}
+\acronymused{IAW}
+\@writefile{brf}{\backcite{williams_frequency_1995}{{34}{1.5.1}{equation.1.5.22}}}
+\acronymused{CBET}
+\citation{poppe_algorithm_1990}
+\citation{fried_plasma_1961}
+\acronymused{CBET}
+\@writefile{brf}{\backcite{michel_saturation_2013}{{35}{1.5.1}{section*.56}}}
+\newlabel{eq:SOLAS_CBET_kinetc_gain}{{1.23}{35}{Kinetic CBET Gain}{equation.1.5.23}{}}
+\newlabel{eq:SOLAS_CBET_kinetc_gain@cref}{{[equation][23][1]1.23}{[1][34][]35}}
+\@writefile{brf}{\backcite{poppe_algorithm_1990}{{35}{1.5.1}{equation.1.5.23}}}
+\newlabel{eq:SOLAS_plasma_disp_func}{{1.24}{35}{Kinetic CBET Gain}{equation.1.5.24}{}}
+\newlabel{eq:SOLAS_plasma_disp_func@cref}{{[equation][24][1]1.24}{[1][35][]35}}
+\@writefile{brf}{\backcite{fried_plasma_1961}{{35}{1.5.1}{equation.1.5.24}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.2}Dynamic memory structure for storing Fields and CBET Gains}{35}{subsection.1.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.3}Doppler Shift of Frequency}{35}{subsection.1.5.3}\protected@file@percent }
+\newlabel{sec:SOLAS_doppler}{{1.5.3}{35}{Doppler Shift of Frequency}{subsection.1.5.3}{}}
+\newlabel{sec:SOLAS_doppler@cref}{{[subsection][3][1,5]1.5.3}{[1][35][]35}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.4}Caustic Gain Truncation}{35}{subsection.1.5.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.15}{\ignorespaces A series of figures which illustrate how the caustic region identification in \textsc  {Solas} work.}}{36}{figure.caption.57}\protected@file@percent }
+\newlabel{fig:SOLAS_caustic_region}{{1.15}{36}{A series of figures which illustrate how the caustic region identification in \textsc {Solas} work}{figure.caption.57}{}}
+\newlabel{fig:SOLAS_caustic_region@cref}{{[figure][15][1]1.15}{[1][35][]36}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.5}Coherent Caustic Correction and Caustic Region Identification}{36}{subsection.1.5.5}\protected@file@percent }
+\newlabel{sec:SOLAS_coherent_caustic}{{1.5.5}{36}{Coherent Caustic Correction and Caustic Region Identification}{subsection.1.5.5}{}}
+\newlabel{sec:SOLAS_coherent_caustic@cref}{{[subsection][5][1,5]1.5.5}{[1][36][]36}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.5.5.1}Geometric Approach to identifying the caustic region}{36}{subsubsection.1.5.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.6}Pump Depletion Iterations}{37}{subsection.1.5.6}\protected@file@percent }
+\newlabel{sec:pump_dep_iters}{{1.5.6}{37}{Pump Depletion Iterations}{subsection.1.5.6}{}}
+\newlabel{sec:pump_dep_iters@cref}{{[subsection][6][1,5]1.5.6}{[1][37][]37}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.7}Energy Conservation Iterations}{37}{subsection.1.5.7}\protected@file@percent }
+\newlabel{sec:energy_conserv_iters}{{1.5.7}{37}{Energy Conservation Iterations}{subsection.1.5.7}{}}
+\newlabel{sec:energy_conserv_iters@cref}{{[subsection][7][1,5]1.5.7}{[1][37][]37}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.8}Model Assumptions, Applicability and Validity to ICF}{37}{subsection.1.5.8}\protected@file@percent }
+\newlabel{sec:model_appliciability}{{1.5.8}{37}{Model Assumptions, Applicability and Validity to ICF}{subsection.1.5.8}{}}
+\newlabel{sec:model_appliciability@cref}{{[subsection][8][1,5]1.5.8}{[1][37][]37}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.9}Computational Efficiency and Scaling}{37}{subsection.1.5.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.10}CBET Validation}{37}{subsection.1.5.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.5.10.1}2D CBET Without Caustics}{37}{subsubsection.1.5.10.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.5.10.2}2D CBET With Caustics}{37}{subsubsection.1.5.10.2}\protected@file@percent }
+\newlabel{sec:SOLAS_CBET_caustic_test}{{1.5.10.2}{37}{2D CBET With Caustics}{subsubsection.1.5.10.2}{}}
+\newlabel{sec:SOLAS_CBET_caustic_test@cref}{{[subsubsection][2][1,5,10]1.5.10.2}{[1][37][]37}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.6}Coupling to Hydrodynamics and Example Use}{37}{section.1.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.16}{\ignorespaces This figure shows the results of the 2-D \ac {CBET} test in the absence of laser caustics.}}{38}{figure.caption.58}\protected@file@percent }
+\acronymused{CBET}
+\newlabel{fig:SOLAS_CBET_test_nocaustics}{{1.16}{38}{This figure shows the results of the 2-D \ac {CBET} test in the absence of laser caustics}{figure.caption.58}{}}
+\newlabel{fig:SOLAS_CBET_test_nocaustics@cref}{{[figure][16][1]1.16}{[1][37][]38}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.17}{\ignorespaces This figure shows the results of the 2-D \ac {CBET} test in the presence of a laser caustic.}}{38}{figure.caption.59}\protected@file@percent }
+\acronymused{CBET}
+\newlabel{fig:SOLAS_CBET_test_caustics}{{1.17}{38}{This figure shows the results of the 2-D \ac {CBET} test in the presence of a laser caustic}{figure.caption.59}{}}
+\newlabel{fig:SOLAS_CBET_test_caustics@cref}{{[figure][17][1]1.17}{[1][37][]38}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.1}Power Deposition}{38}{subsection.1.6.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.18}{\ignorespaces This figure shows results from a resolution scan of the 2 beam caustic \ac {CBET} test both with \ac {CGT} and without. Plotted in a), b) \& c) are the power amplification of the seed beam, initial energy conservation error before energy conservation iterations \& caustic pump multiplier used to obtain energy conservation respectively.}}{39}{figure.caption.60}\protected@file@percent }
 \acronymused{CBET}
 \AC@undonewlabel{acro:CGT}
-\newlabel{acro:CGT}{{1.18}{36}{This figure shows results from a resolution scan of the 2 beam caustic \ac {CBET} test both with \ac {CGT} and without. Plotted in a), b) \& c) are the power amplification of the seed beam, initial energy conservation error before energy conservation iterations \& caustic pump multiplier used to obtain energy conservation respectively}{section*.59}{}}
-\newlabel{acro:CGT@cref}{{[figure][18][1]1.18}{[1][36][]36}}
+\newlabel{acro:CGT}{{1.18}{39}{This figure shows results from a resolution scan of the 2 beam caustic \ac {CBET} test both with \ac {CGT} and without. Plotted in a), b) \& c) are the power amplification of the seed beam, initial energy conservation error before energy conservation iterations \& caustic pump multiplier used to obtain energy conservation respectively}{section*.61}{}}
+\newlabel{acro:CGT@cref}{{[figure][18][1]1.18}{[1][37][]39}}
 \acronymused{CGT}
-\newlabel{fig:SOLAS_CBET_test_caustics_resscan}{{1.18}{36}{This figure shows results from a resolution scan of the 2 beam caustic \ac {CBET} test both with \ac {CGT} and without. Plotted in a), b) \& c) are the power amplification of the seed beam, initial energy conservation error before energy conservation iterations \& caustic pump multiplier used to obtain energy conservation respectively}{figure.caption.58}{}}
-\newlabel{fig:SOLAS_CBET_test_caustics_resscan@cref}{{[figure][18][1]1.18}{[1][36][]36}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.5.10.1}2D CBET Without Caustics}{36}{subsubsection.1.5.10.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.5.10.2}2D CBET With Caustics}{36}{subsubsection.1.5.10.2}\protected@file@percent }
-\newlabel{sec:SOLAS_CBET_caustic_test}{{1.5.10.2}{36}{2D CBET With Caustics}{subsubsection.1.5.10.2}{}}
-\newlabel{sec:SOLAS_CBET_caustic_test@cref}{{[subsubsection][2][1,5,10]1.5.10.2}{[1][36][]36}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.6}Coupling to Hydrodynamics and Example Use}{36}{section.1.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.1}Power Deposition}{37}{subsection.1.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.2}Time step limiter}{37}{subsection.1.6.2}\protected@file@percent }
-\newlabel{dtlaser}{{1.6.2}{37}{Time step limiter}{subsection.1.6.2}{}}
-\newlabel{dtlaser@cref}{{[subsection][2][1,6]1.6.2}{[1][37][]37}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.3}Ray Trace Frequency}{37}{subsection.1.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.4}Computational Diagnostics}{37}{subsection.1.6.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.5}Example use on \textsc  {Omega} Shot 89224}{37}{subsection.1.6.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1.19}{\ignorespaces This figure shows the results of a \textsc  {Chimera}-\textsc  {Solas} simulation of \textsc  {Omega} shot 89224.}}{38}{figure.caption.60}\protected@file@percent }
-\newlabel{fig:SOLAS_89224}{{1.19}{38}{This figure shows the results of a \textsc {Chimera}-\textsc {Solas} simulation of \textsc {Omega} shot 89224}{figure.caption.60}{}}
-\newlabel{fig:SOLAS_89224@cref}{{[figure][19][1]1.19}{[1][37][]38}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.6.5.1}1-D Rad-Hydro, 3-D Ray-Trace with CBET Simulation}{38}{subsubsection.1.6.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.6.5.2}3-D Post Process of Absorption Non-Uniformity}{38}{subsubsection.1.6.5.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1.20}{\ignorespaces This figure shows the results from a 3-D \textsc  {Solas} post-process of spherically symmetric hydrodynamic data obtained from a \textsc  {Lilac} simulation of an OMEGA direct-drive implosion. Figures a) and b) show the deviation in radially integrated deposited power without and with \ac {CBET} respectively. Figures c) and d) plot the spherical harmonic modal decomposition for these maps alongside results from the \textsc  {Ifriit} and \textsc  {BeamCrosser} codes without and with \ac {CBET} respectively.}}{39}{figure.caption.61}\protected@file@percent }
+\newlabel{fig:SOLAS_CBET_test_caustics_resscan}{{1.18}{39}{This figure shows results from a resolution scan of the 2 beam caustic \ac {CBET} test both with \ac {CGT} and without. Plotted in a), b) \& c) are the power amplification of the seed beam, initial energy conservation error before energy conservation iterations \& caustic pump multiplier used to obtain energy conservation respectively}{figure.caption.60}{}}
+\newlabel{fig:SOLAS_CBET_test_caustics_resscan@cref}{{[figure][18][1]1.18}{[1][37][]39}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.2}Time step limiter}{39}{subsection.1.6.2}\protected@file@percent }
+\newlabel{dtlaser}{{1.6.2}{39}{Time step limiter}{subsection.1.6.2}{}}
+\newlabel{dtlaser@cref}{{[subsection][2][1,6]1.6.2}{[1][39][]39}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.3}Ray Trace Frequency}{39}{subsection.1.6.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.19}{\ignorespaces This figure shows the results of a \textsc  {Chimera}-\textsc  {Solas} simulation of \textsc  {Omega} shot 89224.}}{40}{figure.caption.62}\protected@file@percent }
+\newlabel{fig:SOLAS_89224}{{1.19}{40}{This figure shows the results of a \textsc {Chimera}-\textsc {Solas} simulation of \textsc {Omega} shot 89224}{figure.caption.62}{}}
+\newlabel{fig:SOLAS_89224@cref}{{[figure][19][1]1.19}{[1][40][]40}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.4}Computational Diagnostics}{40}{subsection.1.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.5}Example use on \textsc  {Omega} Shot 89224}{40}{subsection.1.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.6.5.1}1-D Rad-Hydro, 3-D Ray-Trace with CBET Simulation}{40}{subsubsection.1.6.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.20}{\ignorespaces This figure shows the results from a 3-D \textsc  {Solas} post-process of spherically symmetric hydrodynamic data obtained from a \textsc  {Lilac} simulation of an OMEGA direct-drive implosion. Figures a) and b) show the deviation in radially integrated deposited power without and with \ac {CBET} respectively. Figures c) and d) plot the spherical harmonic modal decomposition for these maps alongside results from the \textsc  {Ifriit} and \textsc  {BeamCrosser} codes without and with \ac {CBET} respectively.}}{41}{figure.caption.63}\protected@file@percent }
 \acronymused{CBET}
 \acronymused{CBET}
-\newlabel{fig:SOLAS_qpR_IFRIIT_test}{{1.20}{39}{This figure shows the results from a 3-D \textsc {Solas} post-process of spherically symmetric hydrodynamic data obtained from a \textsc {Lilac} simulation of an OMEGA direct-drive implosion. Figures a) and b) show the deviation in radially integrated deposited power without and with \ac {CBET} respectively. Figures c) and d) plot the spherical harmonic modal decomposition for these maps alongside results from the \textsc {Ifriit} and \textsc {BeamCrosser} codes without and with \ac {CBET} respectively}{figure.caption.61}{}}
-\newlabel{fig:SOLAS_qpR_IFRIIT_test@cref}{{[figure][20][1]1.20}{[1][38][]39}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.7}Future Model Extensions}{39}{section.1.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.7.1}Langdon Effect on Absorption}{39}{subsection.1.7.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.7.2}Langdon Effect on CBET}{39}{subsection.1.7.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.7.3}Polarised CBET}{40}{subsection.1.7.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.7.4}Bandwidth for CBET Mitigation Studies}{40}{subsection.1.7.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.7.5}Additional LPIs}{40}{subsection.1.7.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.8}Conclusions}{40}{section.1.8}\protected@file@percent }
+\newlabel{fig:SOLAS_qpR_IFRIIT_test}{{1.20}{41}{This figure shows the results from a 3-D \textsc {Solas} post-process of spherically symmetric hydrodynamic data obtained from a \textsc {Lilac} simulation of an OMEGA direct-drive implosion. Figures a) and b) show the deviation in radially integrated deposited power without and with \ac {CBET} respectively. Figures c) and d) plot the spherical harmonic modal decomposition for these maps alongside results from the \textsc {Ifriit} and \textsc {BeamCrosser} codes without and with \ac {CBET} respectively}{figure.caption.63}{}}
+\newlabel{fig:SOLAS_qpR_IFRIIT_test@cref}{{[figure][20][1]1.20}{[1][41][]41}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.6.5.2}3-D Post Process of Absorption Non-Uniformity}{41}{subsubsection.1.6.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.7}Future Model Extensions}{41}{section.1.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.7.1}Langdon Effect on Absorption}{42}{subsection.1.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.7.2}Langdon Effect on CBET}{42}{subsection.1.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.7.3}Polarised CBET}{42}{subsection.1.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.7.4}Bandwidth for CBET Mitigation Studies}{42}{subsection.1.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.7.5}Additional LPIs}{42}{subsection.1.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.8}Conclusions}{42}{section.1.8}\protected@file@percent }
 \@setckpt{Numerics/NumericsMain}{
-\setcounter{page}{41}
-\setcounter{equation}{18}
+\setcounter{page}{43}
+\setcounter{equation}{24}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}

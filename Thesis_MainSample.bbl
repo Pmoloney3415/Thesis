@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{62}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -444,5 +444,43 @@ Yu.A. Kravtsov.
 R.~K. Follett.
 \newblock {LPSE} data for ray-based {CBET} test cases, August 2022.
 \newblock URL \url{https://zenodo.org/record/6962934}.
+
+\bibitem[Ding et~al.(2020)Ding, Yang, Mishchenko, and Nevels]{ding_identify_2020}
+Jiachen Ding, Ping Yang, Michael~I. Mishchenko, and Robert~D. Nevels.
+\newblock Identify the limits of geometric optics ray tracing by numerically solving the vector {Kirchhoff} integral.
+\newblock \emph{Optics Express}, 28\penalty0 (7):\penalty0 10670, March 2020.
+\newblock ISSN 1094-4087.
+\newblock \doi{10.1364/OE.389097}.
+\newblock URL \url{https://opg.optica.org/abstract.cfm?URI=oe-28-7-10670}.
+
+\bibitem[Williams et~al.(1995)Williams, Berger, Drake, Rubenchik, Bauer, Meyerhofer, Gaeris, and Johnston]{williams_frequency_1995}
+E.~A. Williams, R.~L. Berger, R.~P. Drake, A.~M. Rubenchik, B.~S. Bauer, D.~D. Meyerhofer, A.~C. Gaeris, and T.~W. Johnston.
+\newblock The frequency and damping of ion acoustic waves in hydrocarbon ({CH}) and two-ion-species plasmas.
+\newblock \emph{Physics of Plasmas}, 2\penalty0 (1):\penalty0 129--138, January 1995.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.871101}.
+\newblock URL \url{https://pubs.aip.org/pop/article/2/1/129/261605/The-frequency-and-damping-of-ion-acoustic-waves-in}.
+
+\bibitem[Michel et~al.(2013)Michel, Rozmus, Williams, Divol, Berger, Glenzer, and Callahan]{michel_saturation_2013}
+P.~Michel, W.~Rozmus, E.~A. Williams, L.~Divol, R.~L. Berger, S.~H. Glenzer, and D.~A. Callahan.
+\newblock Saturation of multi-laser beams laser-plasma instabilities from stochastic ion heating.
+\newblock \emph{Physics of Plasmas}, 20\penalty0 (5):\penalty0 056308, May 2013.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4802828}.
+\newblock URL \url{https://pubs.aip.org/pop/article/20/5/056308/109013/Saturation-of-multi-laser-beams-laser-plasma}.
+
+\bibitem[Poppe and Wijers(1990)]{poppe_algorithm_1990}
+G.~P.~M. Poppe and C.~M.~J. Wijers.
+\newblock Algorithm 680: evaluation of the complex error function.
+\newblock \emph{ACM Transactions on Mathematical Software}, 16\penalty0 (1):\penalty0 47, March 1990.
+\newblock ISSN 0098-3500, 1557-7295.
+\newblock \doi{10.1145/77626.77630}.
+\newblock URL \url{https://dl.acm.org/doi/10.1145/77626.77630}.
+
+\bibitem[Fried and Conte(1961)]{fried_plasma_1961}
+Burton~D. Fried and Samuel~D. Conte.
+\newblock \emph{The {Plasma} {Dispersion} {Function}: {The} {Hilbert} {Transform} of the {Gaussian}}.
+\newblock 1961.
+\newblock ISBN 978-1-4832-2929-4.
 
 \end{thebibliography}

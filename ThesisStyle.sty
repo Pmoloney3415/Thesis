@@ -11,6 +11,7 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
+\usepackage{relsize}
 \usepackage{tabularx}
 \usepackage{bigints}
 \usepackage{booktabs}
@@ -28,6 +29,23 @@
 \usepackage[printonlyused]{acronym}
 % Font fourier
 \usepackage{fourier}
+
+\usepackage{calc}
+\newlength{\depthofsumsign}
+\setlength{\depthofsumsign}{\depthof{$\sum$}}
+\newlength{\totalheightofsumsign}
+\newlength{\heightanddepthofargument}
+
+\newcommand{\nsum}[1][1.4]{% only for \displaystyle
+    \mathop{%
+        \raisebox
+            {-#1\depthofsumsign+1\depthofsumsign}
+            {\scalebox
+                {#1}
+                {$\displaystyle\sum$}%
+            }
+    }
+}
 
 \newcommand{\pvec}[1]{\vec{#1}\mkern2mu\vphantom{#1}}
 \DeclareUnicodeCharacter{2009}{ }

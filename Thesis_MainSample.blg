@@ -8,45 +8,46 @@ A level-1 auxiliary file: Appendix/Appendix1Main.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
 Database file #1: Bibliography/Bibliography.bib
 Warning--empty publisher in kruer_physics_2003
-You've used 57 entries,
+Warning--empty publisher in fried_plasma_1961
+You've used 62 entries,
             2481 wiz_defined-function locations,
-            1002 strings with 27798 characters,
-and the built_in function-call counts, 36629 in all, are:
-= -- 2250
-> -- 4026
-< -- 25
-+ -- 1407
-- -- 1290
-* -- 4118
-:= -- 6871
-add.period$ -- 329
-call.type$ -- 57
-change.case$ -- 110
-chr.to.int$ -- 54
-cite$ -- 58
-duplicate$ -- 1084
-empty$ -- 2064
-format.name$ -- 1373
-if$ -- 7007
+            1035 strings with 29184 characters,
+and the built_in function-call counts, 38891 in all, are:
+= -- 2436
+> -- 4179
+< -- 27
++ -- 1463
+- -- 1336
+* -- 4337
+:= -- 7260
+add.period$ -- 357
+call.type$ -- 62
+change.case$ -- 119
+chr.to.int$ -- 59
+cite$ -- 64
+duplicate$ -- 1179
+empty$ -- 2238
+format.name$ -- 1428
+if$ -- 7470
 int.to.chr$ -- 4
-int.to.str$ -- 58
-missing$ -- 59
-newline$ -- 448
-num.names$ -- 172
-pop$ -- 275
+int.to.str$ -- 63
+missing$ -- 65
+newline$ -- 486
+num.names$ -- 187
+pop$ -- 303
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 62
 quote$ -- 0
-skip$ -- 552
+skip$ -- 601
 stack$ -- 0
-substring$ -- 1076
-swap$ -- 180
+substring$ -- 1150
+swap$ -- 194
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 381
-warning$ -- 1
-while$ -- 176
+type$ -- 413
+warning$ -- 2
+while$ -- 191
 width$ -- 0
-write$ -- 1062
-(There was 1 warning)
+write$ -- 1151
+(There were 2 warnings)
