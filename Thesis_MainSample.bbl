@@ -1,4 +1,4 @@
-\begin{thebibliography}{62}
+\begin{thebibliography}{68}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -395,7 +395,7 @@ I.~V. Igumenshchev, W.~Seka, D.~H. Edgell, D.~T. Michel, D.~H. Froula, V.~N. Gon
 \bibitem[Kruer(2003)]{kruer_physics_2003}
 William~L. Kruer.
 \newblock \emph{The physics of laser plasma interactions}.
-\newblock Frontiers in physics. Boulder, Colo. [u.a.] Westview, 2003.
+\newblock Frontiers in physics. CRC Press, Boulder, Colo. [u.a.] Westview, 2003.
 \newblock ISBN 978-0-8133-4083-8.
 
 \bibitem[Kravcov and Orlov(1999)]{kravcov_caustics_1999}
@@ -480,7 +480,55 @@ G.~P.~M. Poppe and C.~M.~J. Wijers.
 \bibitem[Fried and Conte(1961)]{fried_plasma_1961}
 Burton~D. Fried and Samuel~D. Conte.
 \newblock \emph{The {Plasma} {Dispersion} {Function}: {The} {Hilbert} {Transform} of the {Gaussian}}.
-\newblock 1961.
+\newblock Academic Press, 1961.
 \newblock ISBN 978-1-4832-2929-4.
+
+\bibitem[Boehly et~al.(1999)Boehly, Smalyuk, Meyerhofer, Knauer, Bradley, Craxton, Guardalben, Skupsky, and Kessler]{boehly_reduction_1999}
+T.~R. Boehly, V.~A. Smalyuk, D.~D. Meyerhofer, J.~P. Knauer, D.~K. Bradley, R.~S. Craxton, M.~J. Guardalben, S.~Skupsky, and T.~J. Kessler.
+\newblock Reduction of laser imprinting using polarization smoothing on a solid-state fusion laser.
+\newblock \emph{Journal of Applied Physics}, 85\penalty0 (7):\penalty0 3444--3447, April 1999.
+\newblock ISSN 0021-8979, 1089-7550.
+\newblock \doi{10.1063/1.369702}.
+\newblock URL \url{https://pubs.aip.org/jap/article/85/7/3444/491506/Reduction-of-laser-imprinting-using-polarization}.
+
+\bibitem[Edgell et~al.(2021)Edgell, Radha, Katz, Shvydky, Turnbull, and Froula]{edgell_nonuniform_2021}
+D. H. Edgell, P. B. Radha, J.~Katz, A.~Shvydky, D.~Turnbull, and D. H. Froula.
+\newblock Nonuniform {Absorption} and {Scattered} {Light} in {Direct}-{Drive} {Implosions} {Driven} by {Polarization} {Smoothing}.
+\newblock \emph{Physical Review Letters}, 127\penalty0 (7):\penalty0 075001, August 2021.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.127.075001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.127.075001}.
+
+\bibitem[Colaïtis et~al.(2022)Colaïtis, Turnbull, Igumenschev, Edgell, Shah, Mannion, Stoeckl, Jacob-Perkins, Shvydky, Janezic, Kalb, Cao, Forrest, Kwiatkowski, Regan, Theobald, Goncharov, and Froula]{colaitis_3d_2022}
+A.~Colaïtis, D. P. Turnbull, I. V. Igumenschev, D.~Edgell, R. C. Shah, O. M. Mannion, C.~Stoeckl, D.~Jacob-Perkins, A.~Shvydky, R.~Janezic, A.~Kalb, D.~Cao, C. J. Forrest, J.~Kwiatkowski, S.~Regan, W.~Theobald, V. N. Goncharov, and D. H. Froula.
+\newblock {3D} {Simulations} {Capture} the {Persistent} {Low}-{Mode} {Asymmetries} {Evident} in {Laser}-{Direct}-{Drive} {Implosions} on {OMEGA}.
+\newblock \emph{Physical Review Letters}, 129\penalty0 (9):\penalty0 095001, August 2022.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.129.095001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.129.095001}.
+
+\bibitem[Colaïtis et~al.(2023{\natexlab{a}})Colaïtis, Edgell, Igumenshchev, Turnbull, Strozzi, Chapman, Goncharov, and Froula]{colaitis_3d_2023}
+A~Colaïtis, D~Edgell, I~Igumenshchev, D~Turnbull, D~J Strozzi, T~Chapman, V~Goncharov, and D~H Froula.
+\newblock {3D} simulations of inertial confinement fusion implosions part 1: inline modeling of polarized cross beam energy transfer and subsequent drive anomalies on {OMEGA} and {NIF}.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 65\penalty0 (1):\penalty0 014003, January 2023{\natexlab{a}}.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/1361-6587/aca78e}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/1361-6587/aca78e}.
+
+\bibitem[Colaïtis et~al.(2023{\natexlab{b}})Colaïtis, Igumenshchev, Turnbull, Shah, Edgell, Mannion, Stoeckl, Jacob-Perkins, Shvydky, Janezic, Kalb, Cao, Forrest, Kwiatkowski, Regan, Theobald, Goncharov, and Froula]{colaitis_3d_2023-1}
+A~Colaïtis, I~V Igumenshchev, D~P Turnbull, R~Shah, D~Edgell, O~M Mannion, C~Stoeckl, D~W Jacob-Perkins, A~Shvydky, R~Janezic, A~Kalb, D~Cao, C~J Forrest, J~Kwiatkowski, S~P Regan, W~Theobald, V~N Goncharov, and D~Froula.
+\newblock {3D} simulations of inertial confinement fusion implosions part 2: systematic flow anomalies and impact of low modes on performances in {OMEGA} experiments.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 65\penalty0 (1):\penalty0 014005, January 2023{\natexlab{b}}.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/1361-6587/aca78d}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/1361-6587/aca78d}.
+
+\bibitem[Mannion et~al.(2021)Mannion, Igumenshchev, Anderson, Betti, Campbell, Cao, Forrest, Johnson, Glebov, Goncharov, Gopalaswamy, Ivancic, Jacobs-Perkins, Kalb, Knauer, Kwiatkowski, Lees, Marshall, Michalko, Mohamed, Patel, Rinderknecht, Shah, Stoeckl, Theobald, Woo, and Regan]{mannion_mitigation_2021}
+O.~M. Mannion, I.~V. Igumenshchev, K.~S. Anderson, R.~Betti, E.~M. Campbell, D.~Cao, C.~J. Forrest, M.~Gatu Johnson, V.~Yu. Glebov, V.~N. Goncharov, V.~Gopalaswamy, S.~T. Ivancic, D.~W. Jacobs-Perkins, A.~Kalb, J.~P. Knauer, J.~Kwiatkowski, A.~Lees, F.~J. Marshall, M.~Michalko, Z.~L. Mohamed, D.~Patel, H.~G. Rinderknecht, R.~C. Shah, C.~Stoeckl, W.~Theobald, K.~M. Woo, and S.~P. Regan.
+\newblock Mitigation of mode-one asymmetry in laser-direct-drive inertial confinement fusion implosions.
+\newblock \emph{Physics of Plasmas}, 28\penalty0 (4):\penalty0 042701, April 2021.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0041554}.
+\newblock URL \url{https://pubs.aip.org/pop/article/28/4/042701/263531/Mitigation-of-mode-one-asymmetry-in-laser-direct}.
 
 \end{thebibliography}

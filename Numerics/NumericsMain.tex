@@ -642,8 +642,10 @@ where $\text{Ai}$ and $\text{Ai}'$ are the Airy function and its derivative.
 In \textsc{Solas}, $\text{Ai}$ and $\text{Ai}'$ are computed numerically using the \texttt{special-functions} library~\cite{chang_computation_1996}.
 This total field can then be divided between the incident and reflected sheet by inversion of Eq.~\ref{eq:SOLAS_Ecoherent} assuming that $|E_1|=|E_2|$,
 \begin{equation}
+    \label{eq:SOLAS_etlon_int_field}
     \frac{\left|E_j\right|}{\left|E_{j, 0}\right|}=\frac{\sqrt{W_j}\left|E_T\right|}{\sqrt{2}\left[1+\sin \left(\varphi_2-\varphi_1\right)\right]^{1 / 2}}.
 \end{equation}
+The assumption of equal fields is approximately valid for \textsc{Omega} scale direct-drive conditions, where the caustic region is small compared to the plasma scales and therefore ray powers are assumed to not vary significantly over this distance.
 The Etalon integral is applied in the `caustic-region', which in Refs.~\cite{asatryan_fresnel_1988,kravtsov_iv_1988,colaitis_real_2019}, is stated to be equivalent to,
 \begin{equation}%
     \label{eq:SOLAS_causticregion}
@@ -755,7 +757,7 @@ To remind the reader, this choice is because the implementation of the \ac{EI} m
     \includegraphics[width=0.9\linewidth]{Numerics/Images/CBET_flowchart.PNG}
     \centering
     \caption{A flowchart which illustrates the \textsc{Solas} \ac{CBET} model operation loop.
-    $F_i$ is shorthand for the total field from all laser beams and sheets at pump depletion iteration $i$ and $M_{\text{CP}}$ is the caustic pump multiplier, described in Sec.~\ref{sec:energy_conserv_iters} of the $j^{\text{th}}$ energy conservation iteration.
+    $F_i$ is shorthand for the total field from all laser beams and sheets at pump depletion iteration $i$ and $f_{\text{CP}}$ is the modifier to the caustic pump multiplier, described in Sec.~\ref{sec:energy_conserv_iters} of the $j^{\text{th}}$ energy conservation iteration.
     $\Delta E$ denotes the energy conservation error, which is the total incident power minus deposited power and power exiting the grid.}%
     \label{fig:SOLAS_CBET_flowchart}
 \end{figure}
@@ -769,7 +771,7 @@ Ray-based \ac{CBET} models, including the model in \textsc{Solas}, typically mus
 The pump depletion loop, described in more detail in Sec.~\ref{sec:pump_dep_iters} is a fixed point iteration method to obtain the new \ac{CBET} laser fields.
 This loop is necessary as each iteration produces a new background field which leads to a different \ac{CBET} interaction, which converges when \ac{CBET} has been fully accounted for.
 The resultant solution will not necessarily conserve energy if \ac{CBET} occurs in the presence of laser caustics.
-To remedy this, additional energy conservation iterations can be performed, where a multiplier on the \ac{CBET} gain in caustics can be applied, $M_{\text{CP}}$, and varied to conserve laser energy.
+To remedy this, additional energy conservation iterations can be performed, where a multiplier on the \ac{CBET} gain in caustics can be varied to conserve laser energy.
 Although this is an ad-hoc correction, it is found to lead to better agreement with higher fidelity solver~\cite{follett_validation_2022}.
 
 \ac{CBET} does not affect the trajectory of light, just its energy and therefore repeating the calculations of ray trajectories is both computationally costly and unnecessary.
@@ -778,7 +780,8 @@ It is found in \textsc{Solas} that caching the ray locations in this manner typi
 
 %################################################################################
 %################################################################################
-\subsection{Power Change of Rays due to CBET}
+\subsection{Power Change of Rays due to CBET}%
+\label{sec:SOLAS_ray_power_change}
 
 Ray-tracing calculations assume steady state hydrodynamic profiles for rays propagating through the plasma and that the field of a ray propagates as a plane wave along the ray path~\cite{ding_identify_2020}.
 The linear gain theory of \ac{SBS} can therefore be used \cite{randall_theory_1981}, which describes the steady state energy change of locally plane wave light which passes through uniform plasma conditions~\cite{myatt_wave-based_2017}.
@@ -875,64 +878,158 @@ This is then related to the plasma dispersion function and its derivative by,
     \end{gathered}
 \end{equation}
 where $i=\sqrt{-1}$ and $w(x)$, $\text{Z}(x)$ and $\text{Z}'(x)$ are all complex numbers \cite{fried_plasma_1961}.
+Unlike the fluid gain, this correctly captures the resonance and has no effective free parameters, making it the judicious choice for predictive simulations.
+The plasma dispersion function is however relatively slow to numerically evaluate and dominates computational runtime if evaluated every ray step.
+\textsc{Solas} therefore calculates $\gamma_{ij}$ between each sheet in every grid cell at the end of the field reconstruction ray trace (from Fig.~\ref{fig:SOLAS_CBET_flowchart}) and then interpolates this pre-calculated value onto the ray locations for the pump-depletion iterations.
+This reduces computational runtimes by orders of magnitude for many beam direct-drive simulations, but has an associated memory overhead, which is discussed in more detail in Sec.~\ref{sec:SOLAS_memory}.
+All simulations in this thesis use the kinetic \ac{CBET} gain unless explicitly stated otherwise.
 
+%##################################################
+\paragraph*{Random Polarisation Correction}
+
+The gains calculated above all assume that the interacting fields have parallel polarisations.
+For many laser systems, beams may have arbitrary or random polarisations, such as at the \textsc{Omega} laser facility where \ac{DPRs} separate each beam into 2 orthogonally polarised sub-beams which overlap to effectively have one spot with random polarisation \cite{boehly_reduction_1999}.
+If a simulation is conducted with multiple beams of random polarisation, a \textit{Polarisation Smoothing} multiplier, $M_{\text{PS}}$, must be applied to the value of $\gamma_{12}$ which accounts for random polarisation angles between the field from different sheets,
+\begin{equation}
+    \label{eq:polarisation_smoothing}
+    M_{\text{PS}} = \frac{1}{4}(1 + \cos^2\theta),
+\end{equation}
+where $\theta$ is the angle between the wavevectors of the interacting sheets.
+
+MAYBE TRANSFER BELOW TO THEORY SECTION!
+
+In reality, the \ac{DPRs} on \textsc{Omega} do not actually create a single, mixed polarisation laser spot, but 2 slightly offset sub-beams on the target.
+\ac{CBET} models which track polarisation or rays have been developed which account for the true polarisation angle between 2 sheets~\cite{edgell_nonuniform_2021,colaitis_3d_2022,colaitis_3d_2023,colaitis_3d_2023-1}.
+These models have demonstrated that polarised \ac{CBET} on \textsc{Omega} creates a mode-1 which is always in the same direction.
+This persistent mode-1 was experimentally observed from neutron time of flight diagnostics before its origin was understood~\cite{mannion_mitigation_2021}.
 
 %################################################################################
 %################################################################################
-\subsection{Dynamic memory structure for storing Fields and CBET Gains}
-
-\ac{CBET} gains must be calculated between every pair of sheets that cross at a given location.
-For $N_b$ beamhen discretised on a grid (with approximately $N_g$ cells in each dimension), this 
-Give the scaling of storing fields and gains for every beam.
-Say that therefore a dynamic memory structure is used which only stores the fields and gain in cells where they are present.
-Also state that although the ray trace module must be done in double to numerical errors (for exmaple, freq differences in resonance and difference between rays), gain is stored as a single which greatly reduces cost.
-Give an estimate for how much this reduces the overall memory requirements.
-
-%################################################################################
-%################################################################################
-\subsection{Doppler Shift of Frequency}%
-\label{sec:SOLAS_doppler}
-
-Mention time dependant refractive index results in a frequency shift of light.
-This is small, however it is significant to include in CBET models as it can shift the resonance.
-
-%################################################################################
-%################################################################################
-\subsection{Caustic Gain Truncation}
+\subsection{Caustic Gain Truncation}%
+\label{sec:SOLAS_caustic_gain_truncation}
 
 \begin{figure}[t!]
     \includegraphics[width=1.0\linewidth]{Numerics/Images/caustic_region_diagram.png}
     \centering
-    \caption{A series of figures which illustrate how the caustic region identification in \textsc{Solas} work.}%
+    \caption{A series of figures which illustrate how the caustic region identification in \textsc{Solas} work.
+    Figure a) shows a laser, separated into incident and reflected sheets by a caustic, propagating up and reflecting in a linear density ramp.
+    \ac{CGT} is illustrated in b) where a cell is separated into a \textit{lit} and \textit{unlit} region by the reconstructed \textit{caustic plane}.
+    Figures c) and d) illustrate the method used to identify the \textit{caustic region}, where the coherent caustic modifier is applied.
+    c) shows that cells are geometrically separated into \textit{capped} and \textit{uncapped} regions and the coherent caustic modifier to the gain is applied in this capped region.}%
     \label{fig:SOLAS_caustic_region}
 \end{figure}
 
-Say that because nearest neighbour interpolation of the fields is used, there exists unphyscial interaction regions where a cell has a field but ray hasn't passed through that portion of the cell.
-This problem becomes particularly bad at ray turning points, where a significant amount fo CBET occurs.
-Therefore a method called `CGT' is used to effectively enhance the laser grid resolution in the vicnity of caustics.
-In cells where a ray from a specific sheet experience a caustic, the field entry for that sheet is divided geometrically, assuming that the caustic is locally a plane.
-If a ray from another sheet passes through the cell and is on the `unlit' side of the caustic plane, it will not experience CBET gain.
-Ray steps are also limited to the caustic plane.
-Other codes have shown that this approach significantly improves energy conservation.
+For rays propagating through \textsc{Solas} cells, nearest neighbour interpolation is used to interpolate field quantities to the rays.
+This is generally an adequate approximation for field magnitudes, frequencies and wavevectors, which vary over greater length scales than typical cell resolutions $\mathcal{O}(1 \mu\text{m})$, apart from in the vicinity of a caustic \cite{follett_validation_2022}.
+Near caustics, rays turn sharply and fields have a very sharp \textit{cut off} as be seen for example in Fig.~\ref{fig:SOLAS_2d_field_test}.
+The sharp turning of rays mean that $\vec{k}$ can vary rapidly within a cell.
+Although \textsc{Solas} does have variable radial resolution, as described in Sec.~\ref{fig:SOLAS_combined_cells}, this resolution is limited to the minimum radial cell size from the hydrodynamic grid, which is not dictated from laser parameters and cells are typically larger than the caustic region width $\mathcal{O}(\lambda_0)$.
+The issue of $\vec{k}$ variation is not addressed in \textsc{Solas}, but linear interpolation or a truly adaptive mesh, separate from the \textsc{Chimera} grid could be implemented to address this.
+
+The field cut off is a significant issue however, which can significantly affect energy conservation in ray based \ac{CBET} models.
+\ac{CGT} is an algorithm that effectively improves the resolution of the grid near laser caustics~\cite{follett_ray-based_2018}.
+This method separates cells into \textit{lit} and \textit{unlit} regions.
+If rays travel in the unlit region, then the \ac{CBET} gain is not applied.
+For example, Fig.~\ref{fig:SOLAS_caustic_region}.a shows a beam propagating up a linear density gradient, separated by the caustic into incident and reflected sheets.
+Fig.~\ref{fig:SOLAS_caustic_region}.b shows a zoomed in view of in the vicinity of the caustic of the incident sheet ray locations, plotted as grey dots.
+If a ray from another beam were present with $14.3 \lesssim y < 15\ \mu\text{m}$, nearest neighbour interpolation would lead to ray undergoing a \ac{CBET} interaction occuring in this \textit{unlit} region, where no rays from the pump sheet are present.
+Field magnitudes in this caustic region are typically large, so even though this is a small region of space, it can lead to significant errors, especially at lower resolutions.
+
+The \ac{CGT} algorithm described by Follett in Ref.~\cite{follett_ray-based_2018} defines the \textit{lit} region for each sheet by creating a mesh of the caustic locations from every ray on the sheet and only applying \ac{CBET} gains in on the side of this mesh that rays traversed.
+A different algorithm has been developed for \textsc{Solas}, which geometrically splits each cell into \textit{lit} and \textit{unlit} regions by a \textit{caustic plane} if at least one ray caustic occurs in the cell.
+The \textit{caustic plane}\footnote{In cylindrical and spherical simulation geometries, the `planes' are defined in the native coordinate system, which creates manifolds that better reflect the assumed geometry of the problem.} is defined by a point $\vec{x}_{\text{caus}}$ and normal $\hat{\vec{n}}_{\text{caus}}$.
+The location, $vec{x}_{\text{caus}}$, is simply the average of all ray caustic locations from the sheet present in the cell, for example shown in Fig.~\ref{fig:SOLAS_caustic_region}.b by the small pink circles for each ray caustic and the larger pink square for the cell averaged location.
+The normal is estimated by the average over all ray caustics in the cell of the ray tangent vector just after the caustic $\hat{\vec{t}}_{\text{After}}$, minus the velocity just before $\hat{\vec{t}}_{\text{Before}}$,
+\begin{equation}
+    \hat{\vec{n}}_{\text{caus}} = \left\langle \frac{ \hat{\vec{t}}_{\text{After}} - \hat{\vec{t}}_{\text{Before}} }{ | \hat{\vec{t}}_{\text{After}} - \hat{\vec{t}}_{\text{Before}} | } \right\rangle,
+\end{equation}
+such that the normal points to the lit side.
+This is plotted in Fig.~\ref{fig:SOLAS_caustic_region}.b as small pink arrows for each ray caustic normal and the large arrows in each cell for the cell averaged value.
+The planes defined by these points and normals for each cell that contains a sheet caustic is shown as a pink dashed line.
+If a probe ray at location $\vec{x}_{\text{probe}}$ is propagating in a cell where there is a pump sheet caustic, it will only experience a \ac{CBET} interaction if $\hat{\vec{n}}_{\text{caus}}.(\vec{x}_{\text{probe}} - \vec{x}_{\text{caus}})>0$.
+Rays from other sheets also have their steps limited by the caustic plane.
+
+This is a slightly lower fidelity implementation of the more complete \ac{CGT} model in Ref.~\cite{follett_ray-based_2018}, which can represent caustics which,  within a grid cell, are not locally well approximated by planes.
+It is however simpler to implement and does act to effectively increase the resolution of the cells near caustics.
+The caustic test problem presented in Sec.~\ref{sec:SOLAS_CBET_caustic_test} illustrates the effectiveness of the \textsc{Solas}-\ac{CGT} model at reducing energy conservation errors for caustic \ac{CBET} interactions where the grid cells are significantly larger than the caustic region.
 
 %################################################################################
 %################################################################################
 \subsection{Coherent Caustic Correction and Caustic Region Identification}%
 \label{sec:SOLAS_coherent_caustic}
 
-Say how the field reconstruction assumption works everywhere apart from at caustics, where it underestimates the field.
-Follow what Russ says in his paper about CC correction and how it significantly improves energy conservation.
+In Sec.~\ref{sec:SOLAS_ray_power_change}, in order to obtain Eq.~\ref{eq:SOLAS_CBET_power_change_allsheets}, it was assumed that when a ray in undergoing \ac{CBET} interactions with multiple pump sheets, that the field from the pump sheets can be treated independently.
+This is equivalent to assuming that over a ray propagation path, $\text{d}\tau$, the fields from the sheets do not add coherently,
+\begin{equation}
+    \label{eq:}
+    \int\text{d}\tau \sum_{j}^{\text{sheets}} |E_j|^2 \approx \int\text{d}\tau \ \big| \sum_{j}^{\text{sheets}} E_j \big|^2,
+\end{equation}
+where $E_j$ is the field from the $j^{\text{th}}$ sheet, which is valid for all regions of space where the phase from different sheets are uncorrelated.
+For direct-drive configurations, this assumption holds everywhere apart from the caustic region of the pump sheet, where fields add coherently.
+Thus, the coherent sum of fields in the caustic region is larger than the incoherent sum, so without correcting for this, \ac{CBET} scattering through a pump beam in its caustic region will be underestimated.
 
-%##################################################
-\subsubsection{Geometric Approach to identifying the caustic region}
+The ratio of the coherent and incoherent sums of incident ($E_{\text{inc}}$) and reflected ($E_{\text{refl}}$) fields of the pump sheet in its caustic region is called the \textit{coherent caustic multiplier},
+\begin{equation}
+    M_{\text{CP}} = \frac{|E_{\text{inc}}|e^{i\phi_{\text{inc}}} + |E_{\text{refl}}|e^{i\phi_{\text{refl}}}}{|E_{\text{inc}}|^2 + |E_{\text{refl}}|^2}.
+\end{equation}
+By making the same assumption as used to obtain Eq.~\ref{eq:SOLAS_etlon_int_field}, that $|E_{\text{inc}}|\sim |E_{\text{refl}}|$, this simplifies to,
+\begin{equation}
+    \label{eq:MCC}
+    M_{\text{CP}} = 1 + \sin ( \phi_{\text{refl}} - \phi_{\text{inc}} ),
+\end{equation}
+which should be applied in the caustic region, as defined in Eq.~\ref{eq:SOLAS_causticregion}, where $|\varphi_1-\varphi_2|\leq\lambda_0/2$.
+As stated in the discussion in Sec.~\ref{sec:SOLAS_caustic_cap}, grid cells are typically larger than the size of the caustic region ($\mathcal{O}(\lambda_0)$) and \textsc{Solas} does not include linear interpolation of field quantities.
+Therefore, Eq.~\ref{eq:MCC} cannot robustly be evaluated at the relevant scales.
+The caustic region is identified by geometric a geometric algorithm, similar to the \textit{caustic plane} method discussed in Sec.~\ref{sec:SOLAS_caustic_gain_truncation} and the average value of the coherent caustic multiplier is used,
+\begin{equation}
+    \label{eq:average_MCC}
+    M_{\text{CP}} = 1 + 2/\pi,
+\end{equation}
+when a ray undergoes \ac{CBET} with a pump sheet in its caustic region.
+This coherent caustic correction increases the \ac{CBET} scattering and is an important addition to make sure that \ac{CBET} models are energy conserving.
 
-Other codes find caustic region by phase diff and phase interpolation.
-We can't interpolate due to resolution issues.
-Therefore implemented a new, geometric approach to finding the caustic region.
-Talk about how location of rays is stored for each sheet, partitioned by whether they are over or under the amplitude cap.
-If a cell has rays from both in a cell, then a plane is found between the two to split the cell into caustic and non-caustic.
-If a cell has only capped rays then the whole thing is caustic.
-When a ray from another beam passes through, CC mult is applied if in the caustic region.
+As stated above, \textsc{Solas} does not employ linear interpolation of phases and therefore to estimate when a ray is in the caustic region of another beam, $|\varphi_1-\varphi_2|\leq\lambda_0/2$, an alternative algorithm has been developed.
+Similarly to the \textit{caustic plane} method from Sec.~\ref{sec:SOLAS_caustic_gain_truncation}, this algorithm works by finding planes that separate cells to increase the resolution of cells which use nearest neighbour interpolation of fields.
+The key assumptions of the method are that the boundary of the caustic region can be treated locally in grid cells as a plane and that the caustic region is approximately where ray amplitudes are greater than the \ac{FL} capped amplitude, $A_{\text{ray}}>A_{\text{FL}}$.
+Fig.~\ref{fig:SOLAS_caustic_region}.c plots the trajectory of incident sheet rays from Fig.~\ref{fig:SOLAS_caustic_region}.a, with the locations of capped \& uncapped rays plotted as small transparent red \& blue dots respectively.
+The average value of each of these locations is represented by the larger blue ($\langle\vec{x}_{\text{cap}}\rangle$) and red squares ($\langle\vec{x}_{\text{uncap}}\rangle$) respectively, which is stored, where present, in each \textsc{Solas} grid cell.
+The region of the cell occupied by these capped (blue) ray locations is assumed to be equivalent to the caustic region.
+The validity of the assumption was tested by conducting high resolution simulations of the 2-D reflected beam field reconstruction test in Sec.~\ref{sec:SOLAS_field_validation} to accurately reconstruct the phase and amplitudes of incident and reflected sheets on a high resolution mesh.
+It was found that the assumption is adequate, although it typically slightly overestimates the width of the caustic region by $\mathcal{O}(10 \%)$.
+This is not considered to be a significant issue, because energy conservation iterations are employed which minimise errors by varying $M_{\text{CP}}$ over multiple iterations.
+Therefore, errors in the initial iteration are compensated by this minimisation.
+
+To geometrically estimate the caustic region in cells which contain both capped (blue) and uncapped (red) ray locations, a \textit{caustic region plane} is defined to separate these regions, defined by a point, $\vec{x}_{\text{CR}}$, and normal, $\hat{\vec{n}}_{\text{CR}}$,
+\begin{equation}
+    \label{eq:SOLAS_caustic_region_plane}
+    \begin{gathered}
+        \vec{x}_{\text{CR}} = \frac{\langle\vec{x}_{\text{cap}}\rangle + \langle\vec{x}_{\text{uncap}}\rangle}{2}, \\
+        \hat{\vec{n}}_{\text{CR}} = \frac{\langle\vec{x}_{\text{cap}}\rangle - \langle\vec{x}_{\text{uncap}}\rangle}{ | \langle\vec{x}_{\text{cap}}\rangle - \langle\vec{x}_{\text{uncap}}\rangle | },
+    \end{gathered}
+\end{equation}
+where $\hat{\vec{n}}_{\text{CR}}$ is defined such that it points toward to caustic region.
+For a probe ray propagating through a mesh which contains a pump field, the ray is inside the caustic region if $\hat{\vec{n}}_{\text{CR}}.(\vec{x}_{\text{probe}} - \vec{x}_{\text{CR}})>0$, under which circumstances, the pump-probe \ac{CBET} gain is multiplied by the average value of $M_{\text{CP}}$ defined in~\ref{eq:average_MCC}.
+This is illustrated in Fig.~\ref{fig:SOLAS_caustic_region}.c by the purple dashed lines.
+If a cell contains both a \textit{caustic region plane} and a \textit{caustic plane} (from Sec.~\ref{sec:SOLAS_caustic_gain_truncation}), then the ray must be inside the caustic and on the lit side of the caustic to undergo \ac{CBET} with $M_{\text{CP}}$ applied.
+Fig.~\ref{fig:SOLAS_caustic_region}.d plots the caustic region, as obtained by the algorithm, as a transparent blue shaded area.
+
+%################################################################################
+%################################################################################
+\subsection{Dynamic Memory for Storing Fields and CBET Gains}%
+\label{sec:SOLAS_memory}
+
+\ac{CBET} gains must be calculated between every pair of sheets that cross at a given location.
+For $N_b$ beams, each with 2 possible sheets, discretised on a grid with $N_x$ cells in each dimension, a total of $N_f\sim 2 N_x^3 N_b$ \textit{field data points} must be stored.
+Each of these data points must store the field magnitude, phase, wavevector and information used to evaluate \ac{CGT} and the coherent caustic correction where necessary, as described in Sec.~\ref{sec:SOLAS_caustic_gain_truncation} and~\ref{sec:SOLAS_coherent_caustic} respectively.
+This amounts to large computational memory requirements to store the fields.
+Additionally, \textsc{Solas} stores the \ac{CBET} gains between each laser sheet to improve the code execution time.
+A separate gain exists between each sheet and therefore the memory cost to store this information scales as $N_g\sim 2 N_f^3 N_b^2$.
+
+$N_g$ is a single number and $N_f$ represents all field information, so for simulations with small numbers of beams, $N_f$ is the dominant memory cost, whereas for large number of overlapping beams such as direct-drive simulations, $N_g$ dominates.
+It is therefore important to use a memory efficient method to store this data so that large scale, 3-D simulations can be completed.
+\textsc{Solas} utilises pointers in each grid cell to dynamically allocate the field data, such that only where a sheet is present is its corresponding field magnitude, phase \textit{etc.} stored.
+Additionally, gains between sheets are an attribute of the field data and are stored as single-precision floats, rather than the native \textsc{Solas} double precision, which also reduces memory costs for large simulations.
+These measures significantly reduces memory overhead for multi-dimensional \ac{CBET} simulations, however high resolution 3-D simulations are still extremely memory intensive, which is an issue also experienced by \textsc{Ifriit}, the other 3-D \ac{CBET} code coupled to hydrodynamics.
 
 %################################################################################
 %################################################################################
@@ -950,7 +1047,59 @@ Mention necessity of damping for complicated, many beam simulations.
 \subsection{Energy Conservation Iterations}%
 \label{sec:energy_conserv_iters}
 
-Talk about how energy is conserved away from caustics when converged.
+\begin{figure}[t!]
+    \includegraphics[width=0.6\linewidth]{Numerics/Images/delE_minimisation.png}
+    \centering
+    \caption{This figure shows the results of the energy conservation iterations for a 2 beam caustic test problem, which is presented in Sec.~\ref{sec:SOLAS_CBET_caustic_test}.
+    4 iterations were required to achieve energy conservation, which was defined to be $\delta E<1\times 10^{-4}$.
+    The order of the iterations is indicated by the text next to each point.}%
+    \label{fig:SOLAS_delE_minimisation}
+\end{figure}
+
+The converged field solution from the pump depletion iterations returns the steady state field and deposition profiles, accounting for \ac{CBET}, given a field reconstruction algorithm, interpolation scheme \textit{etc}.
+If there are errors in, for example the field reconstruction algorithm, then the pump depletion iterations will return a steady state solution, however this is not guaranteed to be the `true' solution, or the same as obtained by a higher fidelity solver.
+The main cause of errors in field reconstruction is the treatment of laser caustics, as demonstrated for example in Fig.~\ref{fig:SOLAS_2d_field_test}.
+This figure demonstrates that the \textsc{Solas} field reconstruction algorithm obtains essentially perfect agreement with \textsc{Lpse} everywhere apart from in the vicinity of the caustic.
+It can therefore be assumed that any errors in the \ac{CBET} profiles, returned from the pump depletion iterations, occur due to errors in the field reconstruction and \ac{CBET} scattering in the caustic region.
+The energy conservation error, $\Delta E$, is a good proxy for the accuracy of the fields obtained from \ac{CBET}, as in the absence of laser caustics, energy is conserved in ray-based algorithms~\cite{follett_validation_2022}.
+This is defined as,
+\begin{equation}
+    \Delta E = \frac{ P_{\text{dep}} + P_{\text{out}} - P_{\text{inc}} }{ P_{\text{inc}} },
+\end{equation}
+where $P_{\text{dep}}$, $P_{\text{out}}$ and $P_{\text{inc}}$ are the power deposited by \ac{inv-Brem}, the ray-power leaving the domain and the incident power respectively.
+If this value is not small, it suggests that caustics are not accurately treated in the \ac{CBET} scattering.
+
+As in the \textsc{BeamCrosser} code, the assumption in \textsc{Solas} is made that minimising the $\Delta E$ by altering the \ac{CBET} gains in the caustic region will account for bring the result into better agreement with the true solution~\cite{follett_validation_2022}.
+$M_{\text{CP}}$ is modified to include a new \textit{caustic pump multiplier}, $f_{\text{CP}}$, which is applied to probe ray \ac{CBET} gains, when they are in the caustic region of the pump sheet,
+\begin{equation}
+    \label{eq:modified_MCP}
+    \tilde{M}_{\text{CP}}= 
+\begin{cases}
+    1 + f_{\text{CP}} \left( \frac{2}{\pi} \right),& \text{if in caustic region}\\
+    1,              & \text{otherwise}
+\end{cases}
+\end{equation}
+where the same, geometric identification for the pump sheet caustic region is used as in Sec.~\ref{sec:SOLAS_coherent_caustic}.
+$f_{\text{CP}}=1$ initially and is varied between $f_{\text{CP}}\in [-\pi/2,2]$ over several \textit{energy conservation} iterations\footnote{Each energy conservation iteration contains a new set of pump depletion iterations, as is shown in Fig.~\ref{fig:SOLAS_CBET_flowchart}.} to minimise $\Delta E$.
+The lower bound on $f_{\text{CP}}$ is to prevent `negative scattering' in the caustic region, where the sign of the gain flips.
+The upper bound was selected by experimentation to prevent excessively large gains which result in the exponential power gain of rays blowing up to infinity.
+
+An implementation of the Secant method is used to estimate the next value of $f_{\text{CP}}$.
+The first \& second energy conservation iterations in a simulation use $f_{\text{CP}}=1$ \& $0$, to obtain a gradient with which to estimate values of the multiplier.
+The Secant method was chosen for its simplicity and the fact that bracketing values of the root are not required.
+An example of the minimisation results are shown in figure~\ref{fig:SOLAS_delE_minimisation}.
+These results are from a 2 beam caustic test problem, presented in Sec.~\ref{sec:SOLAS_CBET_caustic_test}, but the specifics of the problem are not important for the discussion here, simply that \ac{CBET} in the presence of a caustic occurs, meaning that a caustic region exists where $F_{\text{CP}}$ will lead to modified gains which affect energy conservation.
+The curve of $\Delta E(f_{\text{CP}})$ is simple and monotonic, which is observed for all simulations conducted with \textsc{Solas}, regardless of the complexity of the laser and target configuration.
+This means a complex algorithm than the Secant method is not required for minimisation.
+When the \ac{CBET} model runs in-line with the hydrodynamics, the value of $f_{\text{CP}}$ from the previous timestep when \ac{CBET} was calculated is used which means that energy conservation iterations frequently do not occur.
+This is shown explicitly in Fig.~\ref{fig:SOLAS_89224}, where shows the results of a 1-D \textsc{Chimera}-\textsc{Solas} simulation of OMEGA shot 89224.
+The bottom panel in the figure shows that energy conservation is frequently achieved by simply resuing the value of $f_{\text{CP}}$ from the previous timestep.
+
+To summarise, the total \ac{CBET} gain that a probe ray ($i$) experiences in a pump sheet ($j$) is,
+\begin{equation}
+    \tilde{\gamma}_{ij} = \gamma_{ij} M_{\text{PS}} \tilde{M}_{\text{CP}},
+\end{equation}
+where $\gamma_{ij}$ is the value defined in Sec.~\ref{sec:SOLAS_ray_power_change} (depending on if using the kinetic or fluid gain model), the modified coherent caustic multiplier $\tilde{M}_{\text{CP}}$ is defined in Eq.~\ref{eq:modified_MCP} and the polarisation smoothing multiplier, $M_{\text{PS}}$, defined in Eq.~\ref{eq:polarisation_smoothing}, is applied if the beams are assumed to be randomly rather than parllel-polarised.
 
 %################################################################################
 %################################################################################
@@ -958,14 +1107,6 @@ Talk about how energy is conserved away from caustics when converged.
 \label{sec:model_appliciability}
 
 Discuss the key assumptions of the CBET model and whether it is valid to use for LDD and LID.
-
-%################################################################################
-%################################################################################
-\subsection{Computational Efficiency and Scaling}
-
-Talk about how the CBET model is quite expensive.
-Give the scaling laws from Russ' paper and explain how that means for many beams, CBET is bound to be the dominant cost in the simulation.
-Also say how it shows that memory is a big consideration for CBET models as the gains and fields must be stored.
 
 %################################################################################
 %################################################################################
@@ -1054,15 +1195,6 @@ An improved approach shall soon be implemented where laser iterations occur at $
 
 %################################################################################
 %################################################################################
-\subsection{Computational Diagnostics}
-
-Say that a variety of diagnostics can be output.
-Qpower with and without CBET.
-Geometric intensity.
-Electric field (from single or all beams), optionally split into inbound and reflected components, both with and without CBET.
-
-%################################################################################
-%################################################################################
 \subsection{Example use on \textsc{Omega} Shot 89224}
 
 \begin{figure}[t!]
@@ -1074,9 +1206,6 @@ Electric field (from single or all beams), optionally split into inbound and ref
 
 First briefly describe the shot, showing pulse shape and target.
 
-%##################################################
-\subsubsection{1-D Rad-Hydro, 3-D Ray-Trace with CBET Simulation}
-
 Describe the simulation parameters used, e.g. cell resolution, flux limiter etc.
 Show the absorbed power vs time and effect of CBET.
 Show instantaneuos radial profiles.
@@ -1085,7 +1214,7 @@ Describe the previous method of tuning, involving a 2D scan of flux limiter and 
 Say how it's great that the $flim_e = 0.06 \rightarrow 0.15$ and CBET combination now gives a predictive capability for \textsc{Omega} shots.
 
 %##################################################
-\subsubsection{3-D Post Process of Absorption Non-Uniformity}
+\subsection{3-D Post Process of Absorption Non-Uniformity}
 
 \begin{figure}[t!]
     \includegraphics[width=1.0\linewidth]{Numerics/Images/DepositionAsymmetries_mollweide_xy32.png}
