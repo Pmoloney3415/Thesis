@@ -15,6 +15,7 @@
 \usepackage{tabularx}
 \usepackage{bigints}
 \usepackage{booktabs}
+\usepackage{hhline}
 \usepackage{mathtools}
 \usepackage{pdfpages}
 \usepackage{subfig}
@@ -35,6 +36,8 @@
 \setlength{\depthofsumsign}{\depthof{$\sum$}}
 \newlength{\totalheightofsumsign}
 \newlength{\heightanddepthofargument}
+
+\newcommand{\closediint}{{\subset\!\supset} \mathllap{\iint}}
 
 \newcommand{\nsum}[1][1.4]{% only for \displaystyle
     \mathop{%

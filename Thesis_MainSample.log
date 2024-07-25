@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  24 JUL 2024 18:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  25 JUL 2024 17:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -401,6 +401,8 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count298
 \@lastruleclass=\count299
 \@thisrulewidth=\dimen184
+) (c:/texlive/2023/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 ) (c:/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
  (c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
@@ -722,46 +724,46 @@ LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
 \symUfutm=\mathgroup8
 )
 \depthofsumsign=\skip94
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 35.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 35.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 35.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 35.
+(Font)              scaled to size 10.07397pt on input line 36.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 35.
+(Font)              scaled to size 7.63599pt on input line 36.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 35.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+(Font)              scaled to size 5.51999pt on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 35.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 35.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 35.
+(Font)              scaled to size 10.07397pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 35.
+(Font)              scaled to size 7.63599pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 35.
+(Font)              scaled to size 5.51999pt on input line 36.
 \totalheightofsumsign=\skip95
 \heightanddepthofargument=\skip96
    defining Unicode char U+2009 (decimal 8201)
@@ -1087,6 +1089,9 @@ Package acronym Info: Label `acro:PiC' newly defined as it shall be overridden
 although it is yet undefined on input line 23.
 Package acronym Info: Label `acro:GO' newly defined as it shall be overridden
 although it is yet undefined on input line 26.
+
+LaTeX Warning: Reference `sec:Theory_GO_appliciability' on page 6 undefined on input line 26.
+
 Package acronym Info: Label `acro:IB' newly defined as it shall be overridden
 although it is yet undefined on input line 30.
 [6
@@ -1121,7 +1126,7 @@ Package acronym Info: Label `acro:Rad-Hydro' newly defined as it shall be overri
 although it is yet undefined on input line 72.
 Package acronym Info: Label `acro:LLE' newly defined as it shall be overridden
 although it is yet undefined on input line 72.
-<Numerics/Images/Reflected_Rays.png, id=225, 440.3652pt x 344.9688pt>
+<Numerics/Images/Reflected_Rays.png, id=223, 440.3652pt x 344.9688pt>
 File: Numerics/Images/Reflected_Rays.png Graphic file (type png)
 <use Numerics/Images/Reflected_Rays.png>
 Package pdftex.def Info: Numerics/Images/Reflected_Rays.png  used on input line 75.
@@ -1147,7 +1152,7 @@ LaTeX Warning: Reference `sec:ray_equations' on page 10 undefined on input line 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-<Numerics/Images/raytrace_flowchart.png, id=315, 653.496pt x 400.551pt>
+<Numerics/Images/raytrace_flowchart.png, id=313, 653.496pt x 400.551pt>
 File: Numerics/Images/raytrace_flowchart.png Graphic file (type png)
 <use Numerics/Images/raytrace_flowchart.png>
 Package pdftex.def Info: Numerics/Images/raytrace_flowchart.png  used on input line 142.
@@ -1157,7 +1162,7 @@ although it is yet undefined on input line 152.
 Package acronym Info: Label `acro:inv-Brem' newly defined as it shall be overridden
 although it is yet undefined on input line 154.
  [11 <./Numerics/Images/raytrace_flowchart.png>]
-<Numerics/Images/SOLAS_CHIMERA_domain.png, id=343, 867.24pt x 433.62pt>
+<Numerics/Images/SOLAS_CHIMERA_domain.png, id=341, 867.24pt x 433.62pt>
 File: Numerics/Images/SOLAS_CHIMERA_domain.png Graphic file (type png)
 <use Numerics/Images/SOLAS_CHIMERA_domain.png>
 Package pdftex.def Info: Numerics/Images/SOLAS_CHIMERA_domain.png  used on input line 174.
@@ -1165,7 +1170,7 @@ Package pdftex.def Info: Numerics/Images/SOLAS_CHIMERA_domain.png  used on input
  [12 <./Numerics/Images/SOLAS_CHIMERA_domain.png>]
 Package acronym Info: Label `acro:OpenMP' newly defined as it shall be overridden
 although it is yet undefined on input line 192.
-<Numerics/Images/solas_cells_3imagescombined.png, id=365, 520.344pt x 487.275pt>
+<Numerics/Images/solas_cells_3imagescombined.png, id=363, 520.344pt x 487.275pt>
 File: Numerics/Images/solas_cells_3imagescombined.png Graphic file (type png)
 <use Numerics/Images/solas_cells_3imagescombined.png>
 Package pdftex.def Info: Numerics/Images/solas_cells_3imagescombined.png  used on input line 203.
@@ -1178,7 +1183,7 @@ Overfull \hbox (5.58328pt too wide) in paragraph at lines 232--236
 \T1/futs/m/n/10.95 structured grid de-scribed here, are com-pletely un-cor-re-lated from the hy-dro-dy-namic mesh [[],
  []
 
-<Numerics/Images/ray_init_plots.png, id=395, 1011.78pt x 331.57475pt>
+<Numerics/Images/ray_init_plots.png, id=393, 1011.78pt x 331.57475pt>
 File: Numerics/Images/ray_init_plots.png Graphic file (type png)
 <use Numerics/Images/ray_init_plots.png>
 Package pdftex.def Info: Numerics/Images/ray_init_plots.png  used on input line 243.
@@ -1195,163 +1200,187 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
 LaTeX Warning: Reference `eq:inv_brem' on page 18 undefined on input line 326.
 
 
-LaTeX Warning: Reference `sec:SOLAS_doppler' on page 18 undefined on input line 331.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 340.
-(c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+ [18]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 357.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [18]
-<Numerics/Images/SOLAS_ray_shape_functions.png, id=466, 505.89pt x 361.35pt>
+)
+<Numerics/Images/SOLAS_ray_shape_functions.png, id=467, 505.89pt x 361.35pt>
 File: Numerics/Images/SOLAS_ray_shape_functions.png Graphic file (type png)
 <use Numerics/Images/SOLAS_ray_shape_functions.png>
-Package pdftex.def Info: Numerics/Images/SOLAS_ray_shape_functions.png  used on input line 357.
+Package pdftex.def Info: Numerics/Images/SOLAS_ray_shape_functions.png  used on input line 374.
 (pdftex.def)             Requested size: 284.52756pt x 203.23682pt.
- [19 <./Numerics/Images/SOLAS_ray_shape_functions.png>]
-<Numerics/Images/Quadtrough.png, id=485, 867.24pt x 433.62pt>
+ [19]
+<Numerics/Images/Quadtrough.png, id=489, 867.24pt x 433.62pt>
 File: Numerics/Images/Quadtrough.png Graphic file (type png)
 <use Numerics/Images/Quadtrough.png>
-Package pdftex.def Info: Numerics/Images/Quadtrough.png  used on input line 386.
+Package pdftex.def Info: Numerics/Images/Quadtrough.png  used on input line 403.
 (pdftex.def)             Requested size: 415.41043pt x 207.70515pt.
- [20 <./Numerics/Images/Quadtrough.png>]
-<Numerics/Images/cyl_helix.png, id=500, 963.6pt x 344.268pt>
+ [20 <./Numerics/Images/SOLAS_ray_shape_functions.png>]
+Underfull \vbox (badness 1221) has occurred while \output is active []
+
+ [21 <./Numerics/Images/Quadtrough.png>]
+<Numerics/Images/cyl_helix.png, id=512, 963.6pt x 344.268pt>
 File: Numerics/Images/cyl_helix.png Graphic file (type png)
 <use Numerics/Images/cyl_helix.png>
-Package pdftex.def Info: Numerics/Images/cyl_helix.png  used on input line 421.
+Package pdftex.def Info: Numerics/Images/cyl_helix.png  used on input line 438.
 (pdftex.def)             Requested size: 415.41043pt x 148.41057pt.
- [21 <./Numerics/Images/cyl_helix.png>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 439.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 456.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 439.
-<Numerics/Images/blastwave.png, id=514, 505.89pt x 289.08pt>
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 456.
+ [22 <./Numerics/Images/cyl_helix.png>]
+<Numerics/Images/blastwave.png, id=528, 505.89pt x 289.08pt>
 File: Numerics/Images/blastwave.png Graphic file (type png)
 <use Numerics/Images/blastwave.png>
-Package pdftex.def Info: Numerics/Images/blastwave.png  used on input line 458.
+Package pdftex.def Info: Numerics/Images/blastwave.png  used on input line 475.
 (pdftex.def)             Requested size: 373.86685pt x 213.64236pt.
- [22]
-
-LaTeX Warning: Reference `eq:theory_rayamp' on page 23 undefined on input line 498.
-
-
-LaTeX Warning: Reference `sec:theory_rayamp' on page 23 undefined on input line 498.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23 <./Numerics/Images/blastwave.png>]
-Overfull \hbox (11.1239pt too wide) in paragraph at lines 513--517
+
+LaTeX Warning: Reference `eq:theory_rayamp' on page 24 undefined on input line 515.
+
+
+LaTeX Warning: Reference `sec:theory_rayamp' on page 24 undefined on input line 515.
+
+
+Overfull \hbox (11.1239pt too wide) in paragraph at lines 530--534
 \T1/futs/m/n/10.95 The elec-tric field out-side the caus-tic re-gion, which shall be dis-cussed in more de-tail in Sec. [][]1.4.2[][],
  []
 
-<Numerics/Images/FieldCap_Diagram.png, id=547, 1011.78pt x 397.485pt>
+<Numerics/Images/FieldCap_Diagram.png, id=552, 1011.78pt x 397.485pt>
 File: Numerics/Images/FieldCap_Diagram.png Graphic file (type png)
 <use Numerics/Images/FieldCap_Diagram.png>
-Package pdftex.def Info: Numerics/Images/FieldCap_Diagram.png  used on input line 523.
+Package pdftex.def Info: Numerics/Images/FieldCap_Diagram.png  used on input line 540.
 (pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
+[24]
+Underfull \vbox (badness 1609) has occurred while \output is active []
 
-Underfull \vbox (badness 2050) has occurred while \output is active []
-
- [24]
-<Numerics/Images/Raysheets_withcyl.png, id=561, 1011.78pt x 397.485pt>
+ [25 <./Numerics/Images/FieldCap_Diagram.png>]
+<Numerics/Images/Raysheets_withcyl.png, id=575, 1011.78pt x 397.485pt>
 File: Numerics/Images/Raysheets_withcyl.png Graphic file (type png)
 <use Numerics/Images/Raysheets_withcyl.png>
-Package pdftex.def Info: Numerics/Images/Raysheets_withcyl.png  used on input line 562.
+Package pdftex.def Info: Numerics/Images/Raysheets_withcyl.png  used on input line 579.
 (pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
-
+ [26 <./Numerics/Images/Raysheets_withcyl.png>] [27]
+Package acronym Info: Label `acro:FL' newly defined as it shall be overridden
+although it is yet undefined on input line 633.
+Package acronym Info: Label `acro:EI' newly defined as it shall be overridden
+although it is yet undefined on input line 633.
+ [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25 <./Numerics/Images/FieldCap_Diagram.png>] [26 <./Numerics/Images/Raysheets_withcyl.png>]
-Package acronym Info: Label `acro:FL' newly defined as it shall be overridden
-although it is yet undefined on input line 607.
-Package acronym Info: Label `acro:EI' newly defined as it shall be overridden
-although it is yet undefined on input line 607.
- [27] [28]
-<Numerics/Images/1d_field_capping.png, id=656, 867.24pt x 346.896pt>
+ [29]
+<Numerics/Images/1d_field_capping.png, id=671, 867.24pt x 346.896pt>
 File: Numerics/Images/1d_field_capping.png Graphic file (type png)
 <use Numerics/Images/1d_field_capping.png>
-Package pdftex.def Info: Numerics/Images/1d_field_capping.png  used on input line 688.
+Package pdftex.def Info: Numerics/Images/1d_field_capping.png  used on input line 714.
 (pdftex.def)             Requested size: 415.41043pt x 166.16412pt.
- [29]
-Overfull \hbox (6.10391pt too wide) in paragraph at lines 712--715
+ [30 <./Numerics/Images/1d_field_capping.png>]
+Overfull \hbox (6.10391pt too wide) in paragraph at lines 738--741
 \T1/futs/m/n/10.95 prop-a-gate be-yond $\FML/futmi/m/it/10.95 " \FMS/futm/m/n/10.95 Å \T1/futs/m/n/10.95 0$. The evanes-cent field in this re-gion can be re-pro-duced in the complex-
  []
 
-<Numerics/Images/2D_field_reconstruction_lineouts_alt.png, id=684, 1011.78pt x 578.16pt>
+<Numerics/Images/2D_field_reconstruction_lineouts_alt.png, id=699, 1011.78pt x 578.16pt>
 File: Numerics/Images/2D_field_reconstruction_lineouts_alt.png Graphic file (type png)
 <use Numerics/Images/2D_field_reconstruction_lineouts_alt.png>
-Package pdftex.def Info: Numerics/Images/2D_field_reconstruction_lineouts_alt.png  used on input line 720.
+Package pdftex.def Info: Numerics/Images/2D_field_reconstruction_lineouts_alt.png  used on input line 746.
 (pdftex.def)             Requested size: 415.41043pt x 237.38237pt.
-[30 <./Numerics/Images/1d_field_capping.png>]
-<Numerics/Images/CBET_flowchart.PNG, id=711, 639.48pt x 526.257pt>
+[31]
+<Numerics/Images/CBET_flowchart.PNG, id=727, 639.48pt x 526.257pt>
 File: Numerics/Images/CBET_flowchart.PNG Graphic file (type png)
 <use Numerics/Images/CBET_flowchart.PNG>
-Package pdftex.def Info: Numerics/Images/CBET_flowchart.PNG  used on input line 757.
+Package pdftex.def Info: Numerics/Images/CBET_flowchart.PNG  used on input line 783.
 (pdftex.def)             Requested size: 373.86685pt x 307.6704pt.
+ [32 <./Numerics/Images/2D_field_reconstruction_lineouts_alt.png>] [33 <./Numerics/Images/CBET_flowchart.PNG>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+Package acronym Info: Label `acro:DPRs' newly defined as it shall be overridden
+although it is yet undefined on input line 917.
+ [36]
+<Numerics/Images/caustic_region_diagram.png, id=833, 939.51pt x 794.97pt>
+File: Numerics/Images/caustic_region_diagram.png Graphic file (type png)
+<use Numerics/Images/caustic_region_diagram.png>
+Package pdftex.def Info: Numerics/Images/caustic_region_diagram.png  used on input line 938.
+(pdftex.def)             Requested size: 415.41043pt x 351.49825pt.
+Package acronym Info: Label `acro:CGT' newly defined as it shall be overridden
+although it is yet undefined on input line 944.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31 <./Numerics/Images/2D_field_reconstruction_lineouts_alt.png>]
-Underfull \vbox (badness 3503) has occurred while \output is active []
-
- [32 <./Numerics/Images/CBET_flowchart.PNG>] [33] [34]
-Package acronym Info: Label `acro:DPRs' newly defined as it shall be overridden
-although it is yet undefined on input line 891.
- [35]
-<Numerics/Images/caustic_region_diagram.png, id=818, 939.51pt x 794.97pt>
-File: Numerics/Images/caustic_region_diagram.png Graphic file (type png)
-<use Numerics/Images/caustic_region_diagram.png>
-Package pdftex.def Info: Numerics/Images/caustic_region_diagram.png  used on input line 912.
-(pdftex.def)             Requested size: 415.41043pt x 351.49825pt.
-Package acronym Info: Label `acro:CGT' newly defined as it shall be overridden
-although it is yet undefined on input line 918.
- [36]
-Underfull \vbox (badness 3623) has occurred while \output is active []
-
- [37 <./Numerics/Images/caustic_region_diagram.png>]
-Overfull \hbox (2.88953pt too wide) in paragraph at lines 952--955
+ [37 <./Numerics/Images/caustic_region_diagram.png>] [38]
+Overfull \hbox (2.88953pt too wide) in paragraph at lines 978--981
 []\T1/futs/m/n/10.95 This is a slightly lower fi-delity im-ple-men-ta-tion of the more com-plete [][] model in Ref. [[]],
  []
 
-[38]
+[39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
-<Numerics/Images/delE_minimisation.png, id=907, 505.89pt x 361.35pt>
+ [40]
+<Numerics/Images/PumpDepletionIterations.png, id=920, 1011.78pt x 578.16pt>
+File: Numerics/Images/PumpDepletionIterations.png Graphic file (type png)
+<use Numerics/Images/PumpDepletionIterations.png>
+Package pdftex.def Info: Numerics/Images/PumpDepletionIterations.png  used on input line 1066.
+(pdftex.def)             Requested size: 415.41043pt x 237.38237pt.
+ [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42 <./Numerics/Images/PumpDepletionIterations.png>]
+<Numerics/Images/delE_minimisation.png, id=957, 505.89pt x 361.35pt>
 File: Numerics/Images/delE_minimisation.png Graphic file (type png)
 <use Numerics/Images/delE_minimisation.png>
-Package pdftex.def Info: Numerics/Images/delE_minimisation.png  used on input line 1051.
+Package pdftex.def Info: Numerics/Images/delE_minimisation.png  used on input line 1110.
 (pdftex.def)             Requested size: 249.24878pt x 178.03899pt.
- [40] [41 <./Numerics/Images/delE_minimisation.png>]
-<Numerics/Images/CBET_test_nocaustics.png, id=947, 2439.86531pt x 1804.49156pt>
-File: Numerics/Images/CBET_test_nocaustics.png Graphic file (type png)
-<use Numerics/Images/CBET_test_nocaustics.png>
-Package pdftex.def Info: Numerics/Images/CBET_test_nocaustics.png  used on input line 1121.
-(pdftex.def)             Requested size: 415.41043pt x 307.22758pt.
-<Numerics/Images/caustic_CBET_test.png, id=950, 2765.0803pt x 1244.39906pt>
-File: Numerics/Images/caustic_CBET_test.png Graphic file (type png)
-<use Numerics/Images/caustic_CBET_test.png>
-Package pdftex.def Info: Numerics/Images/caustic_CBET_test.png  used on input line 1134.
-(pdftex.def)             Requested size: 415.41043pt x 186.93663pt.
-<Numerics/Images/caustic_cbet_test_resscan.png, id=953, 1011.78pt x 361.35pt>
-File: Numerics/Images/caustic_cbet_test_resscan.png Graphic file (type png)
-<use Numerics/Images/caustic_cbet_test_resscan.png>
-Package pdftex.def Info: Numerics/Images/caustic_cbet_test_resscan.png  used on input line 1141.
-(pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
- [42]
+ [43 <./Numerics/Images/delE_minimisation.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43 <./Numerics/Images/CBET_test_nocaustics.png> <./Numerics/Images/caustic_CBET_test.png>] [44 <./Numerics/Images/caustic_cbet_test_resscan.png>]
-<Numerics/Images/89224_absorption.png, id=984, 722.7pt x 722.7pt>
+ [44]
+<Numerics/Images/CBET_test_nocaustics.png, id=1009, 2439.86531pt x 1804.49156pt>
+File: Numerics/Images/CBET_test_nocaustics.png Graphic file (type png)
+<use Numerics/Images/CBET_test_nocaustics.png>
+Package pdftex.def Info: Numerics/Images/CBET_test_nocaustics.png  used on input line 1179.
+(pdftex.def)             Requested size: 415.41043pt x 307.22758pt.
+ [45 <./Numerics/Images/CBET_test_nocaustics.png>]
+<Numerics/Images/caustic_CBET_test.png, id=1030, 2765.0803pt x 1244.39906pt>
+File: Numerics/Images/caustic_CBET_test.png Graphic file (type png)
+<use Numerics/Images/caustic_CBET_test.png>
+Package pdftex.def Info: Numerics/Images/caustic_CBET_test.png  used on input line 1226.
+(pdftex.def)             Requested size: 415.41043pt x 186.93663pt.
+ [46]
+<Numerics/Images/caustic_cbet_test_resscan.png, id=1056, 1011.78pt x 361.35pt>
+File: Numerics/Images/caustic_cbet_test_resscan.png Graphic file (type png)
+<use Numerics/Images/caustic_cbet_test_resscan.png>
+Package pdftex.def Info: Numerics/Images/caustic_cbet_test_resscan.png  used on input line 1260.
+(pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
+
+Overfull \hbox (6.76582pt too wide) in paragraph at lines 1267--1273
+\T1/futs/m/n/10.95 beam am-pli-fi-ca-tion af-ter en-ergy con-ser-va-tion it-er-a-tions is plot-ted in Fig. [][]1.20[][].a, which demon-
+ []
+
+[47 <./Numerics/Images/caustic_CBET_test.png>] [48 <./Numerics/Images/caustic_cbet_test_resscan.png>]
+<Numerics/Images/89224_absorption.png, id=1087, 722.7pt x 722.7pt>
 File: Numerics/Images/89224_absorption.png Graphic file (type png)
 <use Numerics/Images/89224_absorption.png>
-Package pdftex.def Info: Numerics/Images/89224_absorption.png  used on input line 1201.
+Package pdftex.def Info: Numerics/Images/89224_absorption.png  used on input line 1328.
 (pdftex.def)             Requested size: 373.86685pt x 373.86531pt.
-<Numerics/Images/DepositionAsymmetries_mollweide_xy32.png, id=985, 1011.78pt x 505.89pt>
+ [49 <./Numerics/Images/89224_absorption.png>]
+<Numerics/Images/DepositionAsymmetries_mollweide_xy32.png, id=1095, 1011.78pt x 505.89pt>
 File: Numerics/Images/DepositionAsymmetries_mollweide_xy32.png Graphic file (type png)
 <use Numerics/Images/DepositionAsymmetries_mollweide_xy32.png>
-Package pdftex.def Info: Numerics/Images/DepositionAsymmetries_mollweide_xy32.png  used on input line 1220.
+Package pdftex.def Info: Numerics/Images/DepositionAsymmetries_mollweide_xy32.png  used on input line 1347.
 (pdftex.def)             Requested size: 415.41043pt x 207.70956pt.
- [45 <./Numerics/Images/89224_absorption.png>] [46 <./Numerics/Images/DepositionAsymmetries_mollweide_xy32.png>]) [47] [48
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50 <./Numerics/Images/DepositionAsymmetries_mollweide_xy32.png>]) [51] [52] [53
 
 
 
@@ -1360,12 +1389,7 @@ Package pdftex.def Info: Numerics/Images/DepositionAsymmetries_mollweide_xy32.pn
 
  (./Appendix/Appendix1Main.tex
 chapter A.
-) [49
-
-
-] [50
-
-
+) [54
 
 
 ] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
@@ -1382,9 +1406,13 @@ Underfull \hbox (badness 2707) in paragraph at lines 24--24
 \T1/futs/m/n/10.95 Ryu-tov, C. Bruulsema, R. P. Drake, S. Funk, S. Glen-zer, G. Gre-gori, C. K. Li,
  []
 
-[51
+[55
 
-] [52]
+
+
+
+
+] [56]
 Underfull \hbox (badness 1189) in paragraph at lines 99--99
 []\T1/futs/m/n/10.95 Andrew J. Schmitt and Stephen P. Oben-schain.  The im-por-tance of laser wave-
  []
@@ -1394,7 +1422,7 @@ Underfull \hbox (badness 3250) in paragraph at lines 99--99
 \T1/futs/m/n/10.95 5 . 0118080$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 30 / 1 / 012701 / 2867678 /
  []
 
-[53] [54]
+[57] [58]
 Underfull \hbox (badness 1158) in paragraph at lines 209--209
 []\T1/futs/m/n/10.95 A. Co-laÔtis, S. H¸ller, D. Pesme, G. Duchateau, and V. T. Tikhonchuk.  Crossed
  []
@@ -1404,7 +1432,7 @@ Underfull \hbox (badness 2913) in paragraph at lines 209--209
 \T1/futs/m/n/10.95 proach ver-sus a time-dependent parax-ial method to de-scribe ex-per-i-men-tal re-
  []
 
-[55]
+[59]
 Underfull \hbox (badness 2809) in paragraph at lines 241--241
 []\T1/futs/m/n/10.95 R. K. Fol-lett, A. Co-laÔtis, D. Turn-bull, D. H. Froula, and J. P. Palas-tro.  Val-
  []
@@ -1449,123 +1477,123 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--257
 \T1/futs/m/n/10.95 0037869$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 28 / 3 / 032103 / 835482 /
  []
 
-[56]
+[60]
 Underfull \hbox (badness 1215) in paragraph at lines 313--313
 \T1/futs/m/n/10.95 PhysRevE . 61 . 895$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / link . aps . org / doi / 10 . 1103 / PhysRevE . 61 . 895$[][]\T1/futs/m/n/10.95 .
  []
 
-
-Underfull \hbox (badness 7504) in paragraph at lines 362--362
+[61]
+Underfull \hbox (badness 7504) in paragraph at lines 370--370
 []\T1/futs/m/n/10.95 J. De-navit and D. W. Phillion.  Laser ion-iza-tion and heat-ing of gas tar-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 370--370
 \T1/futs/m/n/10.95 gets for long-scale-length in-sta-bil-ity ex-per-i-ments.  |   []   |   []   |   [], 1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 370--370
 \T1/futs/m/n/10.95 (6):1971--1984, June 1994.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 / 1 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 370--370
 \T1/futs/m/n/10.95 870653$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 1 / 6 / 1971 / 260717 /
  []
 
-[57]
-Underfull \hbox (badness 3724) in paragraph at lines 370--370
+
+Underfull \hbox (badness 3724) in paragraph at lines 378--378
 []\T1/futs/m/n/10.95 I. V. Igu-men-shchev, F. J. Mar-shall, J. A. Marozas, V. A. Sma-lyuk, R. Ep-stein,
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 370--370
+Underfull \hbox (badness 3965) in paragraph at lines 378--378
 \T1/futs/m/n/10.95 V. N. Gon-charov, T. J. B. Collins, T. C. Sang-ster, and S. Skup-sky.  The ef-
  []
 
 
-Underfull \hbox (badness 6910) in paragraph at lines 370--370
+Underfull \hbox (badness 6910) in paragraph at lines 378--378
 \T1/futs/m/n/10.95 fects of tar-get mounts in direct-drive im-plo-sions on OMEGA.  |   []   |   []
  []
 
 
-Underfull \hbox (badness 3482) in paragraph at lines 370--370
+Underfull \hbox (badness 3482) in paragraph at lines 378--378
 |   []\T1/futs/m/n/10.95 , 16(8):082701, Au-gust 2009.  ISSN 1070-664X, 1089-7674.  doi: $10 .
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 428--428
 []\T1/futs/m/n/10.95 N. A. Lopez and I. Y. Dodin.  Meta-plec-tic ge-o-met-ri-cal op-tics for ray-
  []
 
 
-Underfull \hbox (badness 6396) in paragraph at lines 420--420
+Underfull \hbox (badness 6396) in paragraph at lines 428--428
 \T1/futs/m/n/10.95 based mod-el-ing of caus-tics: The-ory and al-go-rithms.  |   []   |   []   |   [],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 428--428
 \T1/futs/m/n/10.95 29(5):052111, May 2022.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 / 5 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 428--428
 \T1/futs/m/n/10.95 0082241$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 29 / 5 / 052111 / 2847808 /
  []
 
-[58]
-Underfull \hbox (badness 1859) in paragraph at lines 463--463
+
+Underfull \hbox (badness 1859) in paragraph at lines 471--471
 []\T1/futs/m/n/10.95 E. A. Williams, R. L. Berger, R. P. Drake, A. M. Rubenchik, B. S. Bauer, D. D.
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 463--463
+Underfull \hbox (badness 1348) in paragraph at lines 471--471
 \T1/futs/m/n/10.95 Mey-er-hofer, A. C. Gaeris, and T. W. John-ston.  The fre-quency and damp-ing of
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 463--463
+Underfull \hbox (badness 1253) in paragraph at lines 471--471
 \T1/futs/m/n/10.95 ion acous-tic waves in hy-dro-car-bon (CH) and two-ion-species plas-mas.  |   []
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 463--463
+Underfull \hbox (badness 4634) in paragraph at lines 471--471
 |   []   |   []\T1/futs/m/n/10.95 , 2(1):129--138, Jan-uary 1995.  ISSN 1070-664X, 1089-7674.  doi:
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 463--463
+Underfull \hbox (badness 1097) in paragraph at lines 471--471
 \T1/futs/m/n/10.95 10 . 1063 / 1 . 871101$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 2 / 1 / 129 / 261605 /
  []
 
-
-Underfull \hbox (badness 1067) in paragraph at lines 493--493
+[63]
+Underfull \hbox (badness 1067) in paragraph at lines 501--501
 []\T1/futs/m/n/10.95 T. R. Boehly, V. A. Sma-lyuk, D. D. Mey-er-hofer, J. P. Knauer, D. K. Bradley, R. S.
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 493--493
+Underfull \hbox (badness 1596) in paragraph at lines 501--501
 \T1/futs/m/n/10.95 print-ing us-ing po-lar-iza-tion smooth-ing on a solid-state fu-sion laser.  |   []   |   []
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 493--493
+Underfull \hbox (badness 1019) in paragraph at lines 501--501
 |   []   |   []\T1/futs/m/n/10.95 , 85(7):3444--3447, April 1999.  ISSN 0021-8979, 1089-7550.  doi:
  []
 
-[59]
-Underfull \hbox (badness 2591) in paragraph at lines 533--533
+
+Underfull \hbox (badness 2591) in paragraph at lines 541--541
 |   []   |   []\T1/futs/m/n/10.95 , 28(4):042701, April 2021.  ISSN 1070-664X, 1089-7674.  doi: $10 .
  []
 
-[60]) [61] [62
+[64]) [65] [66
 
 
 ]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [63
+ (./Appendix/Permissions.tex) [67
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
@@ -1580,21 +1608,21 @@ LaTeX Warning: There were undefined references.
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: 90EB3510AA331128D09E793E26E6CD63;6161.
+(rerunfilecheck)             Checksum: B18275AC1C690BDDD895E4755145901E;6625.
  ) 
 Here is how much of TeX's memory you used:
- 28144 strings out of 474165
- 559223 string characters out of 5749497
+ 28216 strings out of 474165
+ 560842 string characters out of 5749497
  1955542 words of memory out of 5000000
- 49638 multiletter control sequences out of 15000+600000
- 728532 words of font info for 194 fonts, out of 8000000 for 9000
+ 49689 multiletter control sequences out of 15000+600000
+ 741957 words of font info for 198 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,14n,121p,10978b,1209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,17n,121p,10978b,1209s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (63 pages, 17444258 bytes).
+Output written on Thesis_MainSample.pdf (67 pages, 18023537 bytes).
 PDF statistics:
- 1541 PDF objects out of 1728 (max. 8388607)
- 1383 compressed objects within 14 object streams
- 320 named destinations out of 1000 (max. 500000)
- 431 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1656 PDF objects out of 1728 (max. 8388607)
+ 1488 compressed objects within 15 object streams
+ 336 named destinations out of 1000 (max. 500000)
+ 428 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{68}
+\begin{thebibliography}{69}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -310,6 +310,14 @@ Thomas~B. Kaiser.
 \newblock \doi{10.1103/PhysRevE.61.895}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.61.895}.
 \newblock Publisher: American Physical Society.
+
+\bibitem[Dewandre et~al.(1981)Dewandre, Albritton, and Williams]{dewandre_doppler_1981}
+Thierry Dewandre, James~R. Albritton, and E.~A. Williams.
+\newblock Doppler shift of laser light reflected from expanding plasmas.
+\newblock \emph{The Physics of Fluids}, 24\penalty0 (3):\penalty0 528--536, March 1981.
+\newblock ISSN 0031-9171.
+\newblock \doi{10.1063/1.863401}.
+\newblock URL \url{https://pubs.aip.org/pfl/article/24/3/528/894917/Doppler-shift-of-laser-light-reflected-from}.
 
 \bibitem[Press(2007)]{press_numerical_2007}
 William~H. Press, editor.
