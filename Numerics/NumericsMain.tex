@@ -195,6 +195,11 @@ While this is certainly a preferable approach for a standard raytrace to the \ac
 This is because \ac{CBET} requires communication between beams and therefore large amounts of information must be stored on the grid, which can lead to large memory overheads.
 Therefore, using multiple computing nodes is often a necessity for 3D \ac{CBET} calculations and \ac{OpenMP}-\ac{MPI} hybrid approaches are required which was deemed too significant an undertaking for the scope of the work presented in this thesis.
 
+When a 3-D ray trace is coupled to a lower dimensional hydrodynamics simulation, for example, a 1-D spherical direct-drive simulation, then a sparse 3-D mesh at a user-specified resolution is created for the ray trace.
+This 3-D mesh allows the re-domain balancing routine to be employed to load balance the simulation.
+For \ac{CBET} simulations, it also allows the field, which is required to compute the power change of rays due to \ac{CBET}, to be stored as a function of angle when discretised on this sparse 3-D mesh.
+Storing the field discretised in angle enables the interaction between beams around the sphere to be correctly computed.
+After the ray trace, if these extra dimensions have been added to the ray trace grid, then the deposited power is integrated over the additional grid directions to obtain the source term on the hydrodynamic grid.
 
 %##################################################
 \subsubsection{Semi-Structured Eulerian Grid with Combined Cells}
@@ -388,6 +393,22 @@ The power deposited into each cell that has an overlap with the shape function b
 This approach is more explicitly outlined, particularly for the case of the non-logically rectilinear grids which are present for \textsc{Solas}, in Ref.~\cite{cornet_new_2007}.
 This smearing is somewhat numerically diffusive and therefore can be optionally disabled.
 For the work presented in this thesis, the shape function smearing is employed for multidimensional direct-drive simulations, but otherwise disabled.
+
+\paragraph*{Hydrodynamic Time Step Limiter}
+Laser heating of a plasma results in a temperature increase of the material, which also reduces the \ac{inv-Brem} kernel.
+If the hydrodynamic timestep, $\delta t$ is too large therefore, excessive heating will be deposited in initially cold cells, which should gradually in time have the magnitude of absorption reduced as they warm up.
+This can lead to spurious oscillations in temperature at fine grid resolutions.
+A limiter on the hydrodynamic time-step is therefore introduced to prevent large heating in any cell within one timestep.
+We implement the limit detailed by Haines in Ref.~\cite{haines_coupling_2020}, which estimates the increase in temperature of a cell from \ac{inv-Brem} heating by assuming an ideal gas equation of state to derive,
+\begin{equation}
+    \label{eq:SOLAS_dt_limit}
+    \delta t = \min_{n\in \text{cells}}{\left( \tilde{\delta t}, C_{\delta t} \frac{3}{2} \frac{n_{e,n} e T_{e,n} V_n }{P_n} \right)},
+\end{equation}
+where $\tilde{\delta t}$ is the stable hydrodynamic timestep from other relevant physics, $n_{e,n}$, $T_{e,n}$, $V_n$ \& $P_n$ are the electron density, electron temperature, volume and deposited power into cell $n$, and $C_{\delta t}$ is a user defined stability parameter.
+By default, the parameter $C_{\delta t}$ is set to 1, which is found to be adequate for most situations~\cite{haines_coupling_2020}.
+Note that Eq.~\ref{eq:SOLAS_dt_limit} is only applied in cells where $n_{e,n}>1\times 10^{-4} n_{\text{cr}}$.
+Small amounts of deposition in these cells can lead to large temperature increases, which severely limits $\delta t$, despite the cells often being far from the region of interest, normally near critical, where the maximum deposition occurs.
+For simulations where a laser heats a solid, initially cold target, Eq.~\ref{eq:SOLAS_dt_limit} mostly only affects the hydrodynamic timestep early in the simulation, after which the laser-heated plasma corona remains in a mostly steady-state unless there are very steep changes in incident power.
 
 %##################################################
 \subsubsection{Ray Solver Validation}%
@@ -1279,50 +1300,42 @@ Both Fig.~\ref{fig:SOLAS_CBET_test_caustics_resscan}.b and Fig.~\ref{fig:SOLAS_C
 %###############################################################################################################################
 %###############################################################################################################################
 %###############################################################################################################################
-\section{Coupling to Hydrodynamics and Example Use}
+\section{Simulations of CBET for \textsc{Omega} Direct-Drive Implosions}
 
-Here present an entire explanation for the model working coupled to Hydrodynamics.
-
-%################################################################################
-%################################################################################
-\subsection{Power Deposition}
-
-Say that the deposited power is just added as an energy source to the electrons.
-If running in 1D or 2D, it is integrated over other directions first.
-Say that when starting from $t=0$, often use a cold-start routine, which uniformly deposits power at the critical surface of a spherical capsule.
-This creates an under-dense small region in which the rays can refract and deposit energy.
-This is unsatisfactory for imprint simulations, where early time imprinting is important, but that is not considered for this thesis.
+This Section shall present \textsc{Chimera}-\textsc{Solas} simulations of OMEGA direct-drive implosions.
+In Sec.~\ref{sec:SOLAS_89224}, 1-D \ac{Rad-Hydro} simulations of OMEGA shot 89224 coupled to a 3-D raytrace from \textsc{Solas} will be presented, both with and without the effect of \ac{CBET}.
+This illustrates that the implementation of the \ac{CBET} model in \textsc{Solas} correctly captures the loss of drive efficiency.
+In Sec.~\ref{sec:SOLAS_89224}, 3-D \textsc{Solas} post-processes of, spherically symmetric hydrodynamic data from the \textsc{Lilac} code shall be presented both with and without \ac{CBET}, alongside comparisons to the 3-D \ac{CBET} codes \textsc{Ifriit} and \textsc{BeamCrosser}.
+These simulations demonstrate that the \textsc{Solas} \ac{CBET} model also correctly captures the enhancement of beam-mode drive asymmetry introduced by \ac{CBET} in spherical illumination geometries.
 
 %################################################################################
 %################################################################################
-\subsection{Time step limiter}%
-\label{dtlaser}
-
-Limit timstep based on the fractional electron energy change.
-Don't limit timestep in cells far from critical.
-This is usually the limitting timestep for `cold start' simulations initially, until deposition begins to occur in hot cells.
-
-%################################################################################
-%################################################################################
-\subsection{Ray Trace Frequency}
-
-For many beam simulations, such as direct-drive simulations, the laser operator (especially with CBET) is typically one of the more expensive parts of the code.
-In the steady state of an implosion, the coronal plasma conditions don't significantly change on the global hydrodynamic timestep.
-Therefore the deposition also doesn't change much meaning that previously calculated Pdep can be stored and reapplied on subsequent timesteps.
-Especially for CBET simulations, this can reduce runtime by order of magnitude.
-Currently the ray trace is performed every timestep up until a pre-specified `warm up' time has expired.
-Then the ray trace is performed at a pre-specified frequency by the user.
-Experimentation has found that for \textsc{Omega} scale simulations, increasing frequency of calculations doesn't significantly change the answer above ... .
-
-Because LDD pulses often start with a low intensity and then ramp up, CBET gains are also often minimal until late in the implosion.
-Therefore field reconstruction and CBET iterations are only performed after a specified start time, normally when the hard-sphere intensity reaches about $1\times 10^{14}$ $Wcm^{-2}$.
-CBET iterations are then performed on the laser frequency.
-
-An improved approach shall soon be implemented where laser iterations occur at $dt_{\text{laser}}$ from Sec.~\ref{dtlaser}.
+%\subsection{Ray Trace Frequency}
+%For many beam simulations, such as direct-drive simulations, the laser operator (especially with CBET) is typically one of the more expensive parts of the code.
+%In the steady state of an implosion, the coronal plasma conditions don't significantly change on the global hydrodynamic timestep.
+%Therefore the deposition also doesn't change much meaning that previously calculated Pdep can be stored and reapplied on subsequent timesteps.
+%Especially for CBET simulations, this can reduce runtime by order of magnitude.
+%Currently the ray trace is performed every timestep up until a pre-specified `warm up' time has expired.
+%Then the ray trace is performed at a pre-specified frequency by the user.
+%Experimentation has found that for \textsc{Omega} scale simulations, increasing frequency of calculations doesn't significantly change the answer above ... .
+%Because LDD pulses often start with a low intensity and then ramp up, CBET gains are also often minimal until late in the implosion.
+%Therefore field reconstruction and CBET iterations are only performed after a specified start time, normally when the hard-sphere intensity reaches about $1\times 10^{14}$ $Wcm^{-2}$.
+%CBET iterations are then performed on the laser frequency.
+%An improved approach shall soon be implemented where laser iterations occur at $dt_{\text{laser}}$ from Sec.~\ref{dtlaser}.
 
 %################################################################################
 %################################################################################
-\subsection{Example use on \textsc{Omega} Shot 89224}
+\subsection{1-D hydrodynamics, 3-D Ray-Trace Simulation of \textsc{Omega} Shot 89224}%
+\label{sec:SOLAS_89224}
+
+\begin{figure}[t!]
+    \includegraphics[width=1.0\linewidth]{Numerics/Images/89224_setup.png}
+    \centering
+    \caption{This figure shows the initial conditions for \textsc{Omega} shot 89224.
+    The shot was a cryogenic, DT implosion with materials and radii shown in panel a).
+    Panel b) plots the incident laser pulse shape.}%
+    \label{fig:SOLAS_89224}
+\end{figure}
 
 \begin{figure}[t!]
     \includegraphics[width=0.9\linewidth]{Numerics/Images/89224_absorption.png}
@@ -1330,6 +1343,15 @@ An improved approach shall soon be implemented where laser iterations occur at $
     \caption{This figure shows the results of a \textsc{Chimera}-\textsc{Solas} simulation of \textsc{Omega} shot 89224.}%
     \label{fig:SOLAS_89224}
 \end{figure}
+
+A 1-D \textsc{Chimera}-\textsc{Solas} \ac{Rad-Hydro} simulation of \textsc{Omega} 89224 was performed to illustrate the effect that \ac{CBET} has on drive efficiency of direct-drive implosions.
+Drive efficiency is lost primarily due a reduction in the magnitude of deposited energy.
+A secondary effect is that the radii where deposition occurs is pushed slightly further away from the ablation surface.
+This happens because beams only lose energy inside of the \ac{CBET} resonance volume, which for backscatter \ac{CBET} occurs at the Mach-1 surface, as explained in Sec.~\ref{sec:Theory_sidescatter_backscatter_CBET}.
+Therefore the deposited power vs. radius curve is shifted to slightly higher radii.
+Both of these effects by a 3-D \ac{CBET} model coupled to 1-D \ac{Rad-Hydro}.
+
+The initial conditions for shot 89224 are plotted in Fig.~\ref{fig:89224_ICs}
 
 First briefly describe the shot, showing pulse shape and target.
 
@@ -1341,7 +1363,8 @@ Describe the previous method of tuning, involving a 2D scan of flux limiter and 
 Say how it's great that the $flim_e = 0.06 \rightarrow 0.15$ and CBET combination now gives a predictive capability for \textsc{Omega} shots.
 
 %##################################################
-\subsection{3-D Post Process of Absorption Non-Uniformity}
+\subsection{3-D Post Process of Absorption Non-Uniformity}%
+\label{sec:SOLAS_IFRIIT_test}
 
 \begin{figure}[t!]
     \includegraphics[width=1.0\linewidth]{Numerics/Images/DepositionAsymmetries_mollweide_xy32.png}
