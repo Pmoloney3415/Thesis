@@ -1296,6 +1296,53 @@ Both Fig.~\ref{fig:SOLAS_CBET_test_caustics_resscan}.b and Fig.~\ref{fig:SOLAS_C
 \subsubsection{16 Beam CBET in 2-D}%
 \label{sec:SOLAS_16beam_CBET}
 
+\begin{figure}[t!]
+    \includegraphics[width=1.0\linewidth]{Numerics/Images/16beamCBET.png}
+    \centering
+    \caption{Plotted in this figure is the results from the 16 beam \ac{CBET} test problem.
+    Panel a) plots the deposited power both without (left) and with (right) \ac{CBET} the the simulation ran in cylindrical coordinates at 1 $\mu\text{m}$ radial resolution.
+    Panel b) plots the results of the resolution scan for both Cartesian and cylindrical coordinates.
+    The circles and squares are the values of power deposition without and with enforced energy conservation respectively.
+    The shaded regions illustrate the magnitude of energy conservation error from the initial energy conservation iteration, which can be thought of as the (single-sided) error on the circular points.}%
+    \label{fig:SOLAS_16CBET_pdep}
+\end{figure}
+
+The final \ac{CBET} test problem presented as validation is a planar, azimuthally symmetric \ac{CBET} test with 16 beams in a direct-drive like plasma at the \textsc{Omega} scale \cite{follett_validation_2022}.
+This problem involves many beams, all of which undergo laser caustics and \ac{CBET} scattering with multiple other laser sheets.
+It is also well suited to test the implementation of the \textsc{Solas} \ac{CBET} model in non-Cartesian geometries, unlike the previous problems which did not have an angle of symmetry.
+The same setup can be easily initialsed in both Cartesian and cylindrical geometry to cross-compare the results.
+
+All beam were pointed toward the origin with an initial starting radius of 1 $\text{mm}$, equally spaced around the circle with a width $\sigma=386.8\ \mu\text{m}$.
+The peak intensity of each beam was $I_0=0.68\times10^{18}\ \text{Wm}^{-2}$ and each had an incident power $P_{\text{inc}}=76.3\ \text{TW}$.
+The electron temperature was set to $T_e = 2\ \text{keV}$ and the ion temperature $T_i = T_e/2$.
+The electron density used the profile from Eq.~\ref{eq:SOLAS_test_ne}, with the scale factor, $S=1$.
+A radial velocity profile was used, which was obtained from a fit to a 1-D \textsc{Lilac} simulation,
+\begin{equation}
+    \vec{u}(r) = c_s \left[ M_0 + M_1 \log\left( \frac{r-x_0}{x_1} \right) \right],
+\end{equation}
+where $M_0 = 1.41$, $M_1=1.37$, $x_0=204\ \mu\text{m}$ and $x_1=343\ \mu\text{m}$.
+The Cartesian simulations had a bounding domain $x,y\in[-800,800]\ \mu\text{m}$, with a resolution ranging from $\Delta_{x,y}=1\rightarrow 12.5\ \mu\text{m}$.
+The cylindrical simulations had domain $r\in[0,800]\ \mu\text{m}$ and $\phi\in[-\pi,\pi]$, with radial resolutions $\Delta_{r}=1\rightarrow 12.5\ \mu\text{m}$ and a fixed $\phi$ resolution of $\Delta_{\phi}=0.025$.
+These simulations are compared to a \textsc{Lpse} simulation of the same problem.
+
+In the absence of \ac{CBET}, \textsc{Lpse} calculated $90.5\  \%$ power deposition.
+All \textsc{Solas} simulations agree with this result to within $\sim\mathcal{O}(0.1\ \%)$.
+Including \ac{CBET}, \textsc{Lpse} obtained an abosrption of $52.7\ \%$.
+Deposited power from the $\Delta_r=1\ \mu\text{m}$ simulation is plotted in Fig.~\ref{fig:SOLAS_16CBET_pdep}.a, both without \ac{CBET}, and with \ac{CBET} after energy conservation was achieved.
+Power deposition from the Cartesian simulation at $\Delta_x=1\ \mu\text{m}$ is not plotted, but looks very similar, apart from the small grid artefacts.
+The reduction in magnitude of depoisition is clearly visible, along with a slight radial broadening of the deposition region.
+The anlged-line features in both plots are from the casutic region of the beam, where 
+A 16-fold symmetry can be seen in both of the results, due to the beam geometry of the problem.
+The finer scale thin structures in both of these plots is due to enhanced deposition occuring at the beam casutic, where the ray amplitude swells to a maximum, enhancing the field strength.
+
+Plotted in Fig.~\ref{fig:SOLAS_16CBET_pdep}.b are the values of deposited power in the presence of \ac{CBET} for both the cylindrical and Cartesian simulations, compared to the \textsc{LPSE} result.
+Circular markers are the values obtained for \ac{CBET} deposition after the first set of pump-depletion iterations, \textit{i.e.} before energy conservation was achieved.
+The larger square markers are the results after energy conservation was achieved.
+Shaded regions correspond to the magnitude and sign of the energy conservation error, $\Delta E_{j=0}$, \textit{before} energy conservatino was achieved, \textit{i.e.}, for the circular points.
+This region corresponds to the deposition that could be achieved if any, arbitrary approach was taken to enforce conservation, for example if the value $\Delta E_{j=0}=\pm10\ \%$ for one simulation, then up to $10\ \%$ could be added to (subtracted from) $P_{\text{dep}}$.
+The trend, especially at lower resolution demonstrates that enforcing energy conservation brings the \textsc{Solas} result closer to \textsc{Lpse}, motivating the use of the approach in later chapters of this thesis.
+Although the cylindrical results typically appear to have a larger value for $\Delta E_{j=0}$ compared to the Cartesian results, the post conservation results are all deemed sufficiently close to both the Cartesian result and \textsc{Lpse}.
+The saturation of error for cylindrical geometry at higher radial resolutions seem to indicate that $\Delta E_{j=0}$ is dominated by the $\phi$ resolution in this region, which  was kept fixed across all simulations.
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -1329,12 +1376,12 @@ These simulations demonstrate that the \textsc{Solas} \ac{CBET} model also corre
 \label{sec:SOLAS_89224}
 
 \begin{figure}[t!]
-    \includegraphics[width=1.0\linewidth]{Numerics/Images/89224_setup.png}
+    \includegraphics[width=0.9\linewidth]{Numerics/Images/89224_setup.png}
     \centering
     \caption{This figure shows the initial conditions for \textsc{Omega} shot 89224.
     The shot was a cryogenic, DT implosion with materials and radii shown in panel a).
     Panel b) plots the incident laser pulse shape.}%
-    \label{fig:SOLAS_89224}
+    \label{fig:89224_ICs}
 \end{figure}
 
 \begin{figure}[t!]
@@ -1351,7 +1398,9 @@ This happens because beams only lose energy inside of the \ac{CBET} resonance vo
 Therefore the deposited power vs. radius curve is shifted to slightly higher radii.
 Both of these effects by a 3-D \ac{CBET} model coupled to 1-D \ac{Rad-Hydro}.
 
-The initial conditions for shot 89224 are plotted in Fig.~\ref{fig:89224_ICs}
+The initial conditions for shot 89224 are plotted in Fig.~\ref{fig:89224_ICs}.a, with vacuum outside the outer radius.
+A tabulated \texttt{Sesame} table of state was used for each material \cite{mchardy_introduction_2018} and a $P_{1/3}$ radiation transport algorithm was used with tabulated opacities and emissivities.
+Thermal conduction was solved using a fully implicit scheme
 
 First briefly describe the shot, showing pulse shape and target.
 

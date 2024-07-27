@@ -1,8 +1,8 @@
-PWD F:/Thesis_latex
+PWD c:/Repos/Thesis
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT f:/Thesis_latex/Thesis_MainSample.tex
+INPUT c:/Repos/Thesis/Thesis_MainSample.tex
 OUTPUT Thesis_MainSample.log
 INPUT ./icldt.cls
 INPUT icldt.cls
@@ -633,6 +633,11 @@ INPUT ./Numerics/Images/caustic_cbet_test_resscan.png
 INPUT ./Numerics/Images/caustic_cbet_test_resscan.png
 INPUT ./Numerics/Images/caustic_cbet_test_resscan.png
 INPUT ./Numerics/Images/caustic_cbet_test_resscan.png
+INPUT ./Numerics/Images/16beamCBET.png
+INPUT ./Numerics/Images/16beamCBET.png
+INPUT ./Numerics/Images/16beamCBET.png
+INPUT ./Numerics/Images/16beamCBET.png
+INPUT ./Numerics/Images/16beamCBET.png
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futmi.vf
 INPUT ./Numerics/Images/89224_setup.png
 INPUT ./Numerics/Images/89224_setup.png
