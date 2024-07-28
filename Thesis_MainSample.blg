@@ -7,46 +7,47 @@ A level-1 auxiliary file: Numerics/NumericsMain.aux
 A level-1 auxiliary file: Appendix/Appendix1Main.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
 Database file #1: Bibliography/Bibliography.bib
+Warning--empty journal in patel_novel_2018
 Warning--empty institution in mchardy_introduction_2018
-You've used 70 entries,
+You've used 74 entries,
             2481 wiz_defined-function locations,
-            1091 strings with 32683 characters,
-and the built_in function-call counts, 44013 in all, are:
-= -- 2755
-> -- 4741
+            1117 strings with 34190 characters,
+and the built_in function-call counts, 46141 in all, are:
+= -- 2911
+> -- 4921
 < -- 29
-+ -- 1660
-- -- 1516
-* -- 4927
-:= -- 8226
-add.period$ -- 403
-call.type$ -- 70
-change.case$ -- 135
-chr.to.int$ -- 66
-cite$ -- 71
-duplicate$ -- 1327
-empty$ -- 2522
-format.name$ -- 1616
-if$ -- 8444
++ -- 1724
+- -- 1572
+* -- 5151
+:= -- 8606
+add.period$ -- 426
+call.type$ -- 74
+change.case$ -- 143
+chr.to.int$ -- 70
+cite$ -- 76
+duplicate$ -- 1403
+empty$ -- 2669
+format.name$ -- 1676
+if$ -- 8867
 int.to.chr$ -- 5
-int.to.str$ -- 71
-missing$ -- 72
-newline$ -- 548
-num.names$ -- 211
-pop$ -- 335
+int.to.str$ -- 75
+missing$ -- 76
+newline$ -- 579
+num.names$ -- 223
+pop$ -- 354
 preamble$ -- 1
-purify$ -- 70
+purify$ -- 74
 quote$ -- 0
-skip$ -- 669
+skip$ -- 705
 stack$ -- 0
-substring$ -- 1312
-swap$ -- 220
+substring$ -- 1395
+swap$ -- 231
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 469
-warning$ -- 1
-while$ -- 216
+type$ -- 497
+warning$ -- 2
+while$ -- 228
 width$ -- 0
-write$ -- 1300
-(There was 1 warning)
+write$ -- 1373
+(There were 2 warnings)

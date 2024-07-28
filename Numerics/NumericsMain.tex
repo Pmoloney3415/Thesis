@@ -1387,9 +1387,27 @@ These simulations demonstrate that the \textsc{Solas} \ac{CBET} model also corre
 \begin{figure}[t!]
     \includegraphics[width=0.9\linewidth]{Numerics/Images/89224_absorption.png}
     \centering
-    \caption{This figure shows the results of a \textsc{Chimera}-\textsc{Solas} simulation of \textsc{Omega} shot 89224.}%
+    \caption{This figure shows the results of a \textsc{Chimera}-\textsc{Solas} simulation of \textsc{Omega} shot 89224.
+    Panel a) shows the deposited power both from 2 separate simulations of 89224, one with \& one without \ac{CBET} as red \& blue solid curves respectively.
+    The shell radius, defined at the radius of maximum density, is also lpotted on the right axis as dashed curves.
+    Panel b) plots the time resolved partition of non-absorbed light for these simulations.
+    Plotted in c) is the energy conservation error after energy conservation was achieved, alongside the value of $f_{\text{CP}}$ that was used to achieve conservation.}%
     \label{fig:SOLAS_89224}
 \end{figure}
+
+\begin{table}[ht]
+    \centering
+    \caption{Integrated metrics from simulations of \textsc{Omega} 89224. \textsc{Lilac} metrics are from Refs.~\cite{patel_novel_2018,cao_interpreting_2019,crilly_neutron_2020}.}
+    \begin{tabular}{cccccc} \hhline{=====}
+    & $\text{Yield}$ & $\langle T_i \rangle$ & $t_{\text{bang}}$ & $V_{\text{imp}}$ \\ 
+    & $\left(\times10^{14}\right)$ & $(\text{keV})$ & $(\text{ns})$ & $(\text{km/s})$ \\ 
+    \hhline{-----}
+    $\textsc{Lilac},\ \text{CBET}$ & 4.00 & 4.8 & 2.17 & 476  \\
+    $\textsc{Chimera},\ \text{CBET}$ & 1.78 & 4.2 & 2.16 & 490  \\
+    $\textsc{Chimera},\ \text{no CBET}$ & 6.77 & 6.2 & 1.94 & 661 \\ \hhline{======}
+    \end{tabular}%
+    \label{tab:nocaustic_CBET_table}
+\end{table}
 
 A 1-D \textsc{Chimera}-\textsc{Solas} \ac{Rad-Hydro} simulation of \textsc{Omega} 89224 was performed to illustrate the effect that \ac{CBET} has on drive efficiency of direct-drive implosions.
 Drive efficiency is lost primarily due a reduction in the magnitude of deposited energy.
@@ -1399,12 +1417,27 @@ Therefore the deposited power vs. radius curve is shifted to slightly higher rad
 Both of these effects by a 3-D \ac{CBET} model coupled to 1-D \ac{Rad-Hydro}.
 
 The initial conditions for shot 89224 are plotted in Fig.~\ref{fig:89224_ICs}.a, with vacuum outside the outer radius.
-A tabulated \texttt{Sesame} table of state was used for each material \cite{mchardy_introduction_2018} and a $P_{1/3}$ radiation transport algorithm was used with tabulated opacities and emissivities.
-Thermal conduction was solved using a fully implicit scheme
+A tabulated \texttt{Sesame} table of state was used for each material \cite{mchardy_introduction_2018} and a $P_{1/3}$ radiation transport algorithm was used with tabulated opacities and emissivities from the \textsc{SpK} code \cite{crilly_spk_2023}.
+Thermal conduction was solved with a fully implicit scheme.
+The electron flux limiter was set by using the default \textsc{Chimera} direct-drive method,
+\begin{equation}
+    f_{\text{lim},e} = 
+    \begin{cases}
+        0.06, & \text{if in picket pulse}\\
+        0.15, & \text{otherwise}.
+    \end{cases}
+\end{equation}
+The simulation domain was $r\in [0,1680]\ \mu\text{m}$, with a fixed radial resolution $\Delta_r = 1\ \mu\text{m}$.
+Two simulations were conducted, one with the effect of \ac{CBET} on power deposition and one without.
+In order to load balance the ray trace and discretise \ac{CBET} interactions between different beams around the spherical $4\pi\ \text{sr}$, \textsc{Solas} used a sparse angular grid with $N_{\phi}=51$ \& $N_{\theta}=30$ azimuthal and polar cells respectively.
+At times earlier than $10\ \text{ps}$, a \textit{cold start} routine was employed, where $50\ \%$ of the incident power was deposited at the critical radius to create a finite scale length of underdense plasma, which rays could deposit and refract in.
+Raytraces were conducted every hydrodynamic timestep, without computing \ac{CBET} up to $150\ \text{ps}$\footnote{Note that the very low intensity from this section of the pulse means that the \ac{CBET} gains are negligable.} after which a full raytrace routine, including the effect of \ac{CBET} was conducted every $10\ \text{ps}$.
+For hydrodynamic steps in between these \ac{CBET} raytraces, the most recently computed $P_{\text{dep}}$ profile (normalised to 1 and then scaled to the incident power), was used as the laser source term for the timestep.
+Paramter scans of the raytrace frequency confirmed that the behviour of \textsc{Omega} simulations is well converged with this frequency.
 
-First briefly describe the shot, showing pulse shape and target.
+The spatially integrated absorbed power is plotted in Fig.~\ref{fig:SOLAS_89224}.a as solid curves.
 
-Describe the simulation parameters used, e.g. cell resolution, flux limiter etc.
+
 Show the absorbed power vs time and effect of CBET.
 Show instantaneuos radial profiles.
 Show integrated parameter comparison to \textsc{Lilac} post-shot simulation.

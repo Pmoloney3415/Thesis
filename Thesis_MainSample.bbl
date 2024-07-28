@@ -1,4 +1,4 @@
-\begin{thebibliography}{70}
+\begin{thebibliography}{74}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -539,10 +539,41 @@ O.~M. Mannion, I.~V. Igumenshchev, K.~S. Anderson, R.~Betti, E.~M. Campbell, D.~
 \newblock \doi{10.1063/5.0041554}.
 \newblock URL \url{https://pubs.aip.org/pop/article/28/4/042701/263531/Mitigation-of-mode-one-asymmetry-in-laser-direct}.
 
+\bibitem[Patel et~al.(2018)Patel, Betti, Gopalaswamy, and Woo]{patel_novel_2018}
+Dhrumir Patel, Riccardo Betti, Varchas Gopalaswamy, and Ka~Ming Woo.
+\newblock Novel double-spike pulse shape for {OMEGA} cryogenic implosions.
+\newblock 2018:\penalty0 GO6.006, January 2018.
+\newblock URL \url{https://ui.adsabs.harvard.edu/abs/2018APS..DPPGO6006P}.
+\newblock Conference Name: APS Division of Plasma Physics Meeting Abstracts ADS Bibcode: 2018APS..DPPGO6006P.
+
+\bibitem[Cao et~al.(2019)Cao, Shah, Regan, Epstein, Igumenshchev, Gopalaswamy, Christopherson, Theobald, Radha, and Goncharov]{cao_interpreting_2019}
+D.~Cao, R.~C. Shah, S.~P. Regan, R.~Epstein, I.~V. Igumenshchev, V.~Gopalaswamy, A.~R. Christopherson, W.~Theobald, P.~B. Radha, and V.~N. Goncharov.
+\newblock Interpreting the electron temperature inferred from x-ray continuum emission for direct-drive inertial confinement fusion implosions on {OMEGA}.
+\newblock \emph{Physics of Plasmas}, 26\penalty0 (8):\penalty0 082709, August 2019.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5112759}.
+\newblock URL \url{https://pubs.aip.org/pop/article/26/8/082709/632047/Interpreting-the-electron-temperature-inferred}.
+
+\bibitem[Crilly et~al.(2020)Crilly, Appelbe, Mannion, Forrest, Gopalaswamy, Walsh, and Chittenden]{crilly_neutron_2020}
+A.~J. Crilly, B.~D. Appelbe, O.~M. Mannion, C.~J. Forrest, V.~Gopalaswamy, C.~A. Walsh, and J.~P. Chittenden.
+\newblock Neutron backscatter edge: {A} measure of the hydrodynamic properties of the dense {DT} fuel at stagnation in {ICF} experiments.
+\newblock \emph{Physics of Plasmas}, 27\penalty0 (1):\penalty0 012701, January 2020.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5128830}.
+\newblock URL \url{https://pubs.aip.org/pop/article/27/1/012701/262967/Neutron-backscatter-edge-A-measure-of-the}.
+
 \bibitem[McHardy(2018)]{mchardy_introduction_2018}
 James McHardy.
 \newblock An introduction to the theory and use of {SESAME} equations of state.
 \newblock Technical Report LA--14503, 1487368, December 2018.
 \newblock URL \url{https://www.osti.gov/servlets/purl/1487368/}.
+
+\bibitem[Crilly et~al.(2023)Crilly, Niasse, Fraser, Chapman, McLean, Rose, and Chittenden]{crilly_spk_2023}
+A.J. Crilly, N.P.L. Niasse, A.R. Fraser, D.A. Chapman, K.W. McLean, S.J. Rose, and J.P. Chittenden.
+\newblock {SpK}: {A} fast atomic and microphysics code for the high-energy-density regime.
+\newblock \emph{High Energy Density Physics}, 48:\penalty0 101053, September 2023.
+\newblock ISSN 15741818.
+\newblock \doi{10.1016/j.hedp.2023.101053}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S1574181823000198}.
 
 \end{thebibliography}
