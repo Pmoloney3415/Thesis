@@ -1,4 +1,4 @@
-\begin{thebibliography}{74}
+\begin{thebibliography}{77}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -575,5 +575,29 @@ A.J. Crilly, N.P.L. Niasse, A.R. Fraser, D.A. Chapman, K.W. McLean, S.J. Rose, a
 \newblock ISSN 15741818.
 \newblock \doi{10.1016/j.hedp.2023.101053}.
 \newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S1574181823000198}.
+
+\bibitem[Spitzer and Härm(1953)]{spitzer_transport_1953}
+Lyman Spitzer and Richard Härm.
+\newblock Transport {Phenomena} in a {Completely} {Ionized} {Gas}.
+\newblock \emph{Physical Review}, 89\penalty0 (5):\penalty0 977--981, March 1953.
+\newblock ISSN 0031-899X.
+\newblock \doi{10.1103/PhysRev.89.977}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.89.977}.
+
+\bibitem[Zhou and Betti(2007)]{zhou_hydrodynamic_2007}
+C.~D. Zhou and R.~Betti.
+\newblock Hydrodynamic relations for direct-drive fast-ignition and conventional inertial confinement fusion implosions.
+\newblock \emph{Physics of Plasmas}, 14\penalty0 (7):\penalty0 072703, July 2007.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.2746812}.
+\newblock URL \url{https://pubs.aip.org/pop/article/14/7/072703/985533/Hydrodynamic-relations-for-direct-drive-fast}.
+
+\bibitem[Trickey et~al.(2024)Trickey, Goncharov, Betti, Campbell, Collins, and Follett]{trickey_physics_2024}
+W.~Trickey, V.~N. Goncharov, R.~Betti, E.~M. Campbell, T.~J.~B. Collins, and R.~K. Follett.
+\newblock The physics of gain relevant to inertial fusion energy target designs.
+\newblock \emph{Physics of Plasmas}, 31\penalty0 (1):\penalty0 012702, January 2024.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0167405}.
+\newblock URL \url{https://pubs.aip.org/pop/article/31/1/012702/2932657/The-physics-of-gain-relevant-to-inertial-fusion}.
 
 \end{thebibliography}

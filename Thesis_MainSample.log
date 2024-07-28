@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.20)  28 JUL 2024 12:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.20)  28 JUL 2024 18:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -910,14 +910,7 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Warning: Unused global option(s):
     [onesided,pagesize].
 
-(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Numerics/NumericsMain.aux
-
-LaTeX Warning: Label `tab:nocaustic_CBET_table' multiply defined.
-
-
-LaTeX Warning: Label `tab:nocaustic_CBET_table@cref' multiply defined.
-
-) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
+(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
 \openout1 = `Thesis_MainSample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1303,26 +1296,26 @@ Package pdftex.def Info: Numerics/Images/2D_field_reconstruction_lineouts_alt.pn
 <Numerics/Images/CBET_flowchart.PNG, id=742, 639.48pt x 526.257pt>
 File: Numerics/Images/CBET_flowchart.PNG Graphic file (type png)
 <use Numerics/Images/CBET_flowchart.PNG>
-Package pdftex.def Info: Numerics/Images/CBET_flowchart.PNG  used on input line 804.
+Package pdftex.def Info: Numerics/Images/CBET_flowchart.PNG  used on input line 805.
 (pdftex.def)             Requested size: 373.86685pt x 307.6704pt.
  [33] [34 <./Numerics/Images/CBET_flowchart.PNG>]
 Underfull \vbox (badness 1859) has occurred while \output is active []
 
  [35] [36]
 Package acronym Info: Label `acro:DPRs' newly defined as it shall be overridden
-although it is yet undefined on input line 938.
+although it is yet undefined on input line 939.
 <Numerics/Images/caustic_region_diagram.png, id=837, 939.51pt x 794.97pt>
 File: Numerics/Images/caustic_region_diagram.png Graphic file (type png)
 <use Numerics/Images/caustic_region_diagram.png>
-Package pdftex.def Info: Numerics/Images/caustic_region_diagram.png  used on input line 959.
+Package pdftex.def Info: Numerics/Images/caustic_region_diagram.png  used on input line 960.
 (pdftex.def)             Requested size: 415.41043pt x 351.49825pt.
 Package acronym Info: Label `acro:CGT' newly defined as it shall be overridden
-although it is yet undefined on input line 965.
+although it is yet undefined on input line 966.
  [37]
 Underfull \vbox (badness 2426) has occurred while \output is active []
 
  [38 <./Numerics/Images/caustic_region_diagram.png>]
-Overfull \hbox (2.88953pt too wide) in paragraph at lines 999--1002
+Overfull \hbox (2.88953pt too wide) in paragraph at lines 1000--1003
 []\T1/futs/m/n/10.95 This is a slightly lower fi-delity im-ple-men-ta-tion of the more com-plete [][] model in Ref. [[]],
  []
 
@@ -1330,13 +1323,13 @@ Overfull \hbox (2.88953pt too wide) in paragraph at lines 999--1002
 <Numerics/Images/PumpDepletionIterations.png, id=934, 1011.78pt x 578.16pt>
 File: Numerics/Images/PumpDepletionIterations.png Graphic file (type png)
 <use Numerics/Images/PumpDepletionIterations.png>
-Package pdftex.def Info: Numerics/Images/PumpDepletionIterations.png  used on input line 1087.
+Package pdftex.def Info: Numerics/Images/PumpDepletionIterations.png  used on input line 1088.
 (pdftex.def)             Requested size: 415.41043pt x 237.38237pt.
  [42 <./Numerics/Images/PumpDepletionIterations.png>]
 <Numerics/Images/delE_minimisation.png, id=966, 505.89pt x 361.35pt>
 File: Numerics/Images/delE_minimisation.png Graphic file (type png)
 <use Numerics/Images/delE_minimisation.png>
-Package pdftex.def Info: Numerics/Images/delE_minimisation.png  used on input line 1131.
+Package pdftex.def Info: Numerics/Images/delE_minimisation.png  used on input line 1132.
 (pdftex.def)             Requested size: 249.24878pt x 178.03899pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1345,7 +1338,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <Numerics/Images/CBET_test_nocaustics.png, id=1017, 2439.86531pt x 1804.49156pt>
 File: Numerics/Images/CBET_test_nocaustics.png Graphic file (type png)
 <use Numerics/Images/CBET_test_nocaustics.png>
-Package pdftex.def Info: Numerics/Images/CBET_test_nocaustics.png  used on input line 1200.
+Package pdftex.def Info: Numerics/Images/CBET_test_nocaustics.png  used on input line 1201.
 (pdftex.def)             Requested size: 415.41043pt x 307.22758pt.
  [45]
 Underfull \vbox (badness 5908) has occurred while \output is active []
@@ -1354,49 +1347,54 @@ Underfull \vbox (badness 5908) has occurred while \output is active []
 <Numerics/Images/caustic_CBET_test.png, id=1047, 2765.0803pt x 1244.39906pt>
 File: Numerics/Images/caustic_CBET_test.png Graphic file (type png)
 <use Numerics/Images/caustic_CBET_test.png>
-Package pdftex.def Info: Numerics/Images/caustic_CBET_test.png  used on input line 1247.
+Package pdftex.def Info: Numerics/Images/caustic_CBET_test.png  used on input line 1248.
 (pdftex.def)             Requested size: 415.41043pt x 186.93663pt.
  [47 <./Numerics/Images/caustic_CBET_test.png>]
-<Numerics/Images/caustic_cbet_test_resscan.png, id=1072, 1011.78pt x 361.35pt>
+<Numerics/Images/caustic_cbet_test_resscan.png, id=1071, 1011.78pt x 361.35pt>
 File: Numerics/Images/caustic_cbet_test_resscan.png Graphic file (type png)
 <use Numerics/Images/caustic_cbet_test_resscan.png>
-Package pdftex.def Info: Numerics/Images/caustic_cbet_test_resscan.png  used on input line 1281.
+Package pdftex.def Info: Numerics/Images/caustic_cbet_test_resscan.png  used on input line 1282.
 (pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
 
-Overfull \hbox (6.76582pt too wide) in paragraph at lines 1288--1294
+Overfull \hbox (6.76582pt too wide) in paragraph at lines 1289--1295
 \T1/futs/m/n/10.95 beam am-pli-fi-ca-tion af-ter en-ergy con-ser-va-tion it-er-a-tions is plot-ted in Fig. [][]1.20[][].a, which demon-
  []
 
-<Numerics/Images/16beamCBET.png, id=1085, 1300.86pt x 544.434pt>
+<Numerics/Images/16beamCBET.png, id=1084, 1300.86pt x 544.434pt>
 File: Numerics/Images/16beamCBET.png Graphic file (type png)
 <use Numerics/Images/16beamCBET.png>
-Package pdftex.def Info: Numerics/Images/16beamCBET.png  used on input line 1300.
+Package pdftex.def Info: Numerics/Images/16beamCBET.png  used on input line 1301.
 (pdftex.def)             Requested size: 415.41043pt x 173.8569pt.
 [48 <./Numerics/Images/caustic_cbet_test_resscan.png>] [49 <./Numerics/Images/16beamCBET.png>]
-<Numerics/Images/89224_setup.png, id=1130, 780.9978pt x 409.53pt>
+<Numerics/Images/89224_setup.png, id=1129, 780.9978pt x 409.53pt>
 File: Numerics/Images/89224_setup.png Graphic file (type png)
 <use Numerics/Images/89224_setup.png>
-Package pdftex.def Info: Numerics/Images/89224_setup.png  used on input line 1379.
+Package pdftex.def Info: Numerics/Images/89224_setup.png  used on input line 1380.
 (pdftex.def)             Requested size: 373.86685pt x 196.04726pt.
-<Numerics/Images/89224_absorption.png, id=1131, 722.7pt x 722.7pt>
+<Numerics/Images/89224_absorption.png, id=1130, 722.7pt x 722.7pt>
 File: Numerics/Images/89224_absorption.png Graphic file (type png)
 <use Numerics/Images/89224_absorption.png>
-Package pdftex.def Info: Numerics/Images/89224_absorption.png  used on input line 1388.
+Package pdftex.def Info: Numerics/Images/89224_absorption.png  used on input line 1389.
 (pdftex.def)             Requested size: 373.86685pt x 373.86531pt.
 
 
-LaTeX Warning: Reference `sec:Theory_sidescatter_backscatter_CBET' on page 50 undefined on input line 1415.
+LaTeX Warning: Reference `sec:Theory_sidescatter_backscatter_CBET' on page 50 undefined on input line 1416.
 
-[50] [51 <./Numerics/Images/89224_setup.png>] [52 <./Numerics/Images/89224_absorption.png>]
-<Numerics/Images/DepositionAsymmetries_mollweide_xy32.png, id=1178, 1011.78pt x 505.89pt>
+[50]
+Underfull \vbox (badness 2027) has occurred while \output is active []
+
+ [51 <./Numerics/Images/89224_setup.png>] [52 <./Numerics/Images/89224_absorption.png>] [53]
+<Numerics/Images/DepositionAsymmetries_mollweide_xy32.png, id=1204, 1011.78pt x 505.89pt>
 File: Numerics/Images/DepositionAsymmetries_mollweide_xy32.png Graphic file (type png)
 <use Numerics/Images/DepositionAsymmetries_mollweide_xy32.png>
-Package pdftex.def Info: Numerics/Images/DepositionAsymmetries_mollweide_xy32.png  used on input line 1452.
+Package pdftex.def Info: Numerics/Images/DepositionAsymmetries_mollweide_xy32.png  used on input line 1475.
 (pdftex.def)             Requested size: 415.41043pt x 207.70956pt.
+ [54 <./Numerics/Images/DepositionAsymmetries_mollweide_xy32.png>] [55])
+Overfull \hbox (1.98215pt too wide) in paragraph at lines 1580--13
+\T1/futs/m/n/10.95 sim-u-la-tion. The power de-po-si-tion asym-me-try was com-pared to the \T1/futs/m/sc/10.95 Ifriit \T1/futs/m/n/10.95 and \T1/futs/m/sc/10.95 Beam-Crosser
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [53 <./Numerics/Images/DepositionAsymmetries_mollweide_xy32.png>]) [54] [55] [56
+[56] [57
 
 
 
@@ -1405,12 +1403,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  (./Appendix/Appendix1Main.tex
 chapter A.
-) [57
-
-
-] [58
-
-
+) [58
 
 
 ] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
@@ -1428,6 +1421,10 @@ Underfull \hbox (badness 2707) in paragraph at lines 24--24
  []
 
 [59
+
+
+
+
 
 ] [60]
 Underfull \hbox (badness 1189) in paragraph at lines 107--107
@@ -1639,13 +1636,37 @@ Underfull \hbox (badness 1248) in paragraph at lines 564--564
 |   []   |   []\T1/futs/m/n/10.95 , 27(1):012701, Jan-uary 2020.  ISSN 1070-664X, 1089-7674.  doi: $10 .
  []
 
-) [69] [70
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
+[]\T1/futs/m/n/10.95 C. D. Zhou and R. Betti.  Hy-dro-dy-namic re-la-tions for direct-drive fast-
+ []
 
 
-]
+Underfull \hbox (badness 8132) in paragraph at lines 594--594
+\T1/futs/m/n/10.95 ignition and con-ven-tional in-er-tial con-fine-ment fu-sion im-plo-sions.  |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
+|   []   |   []\T1/futs/m/n/10.95 , 14(7):072703, July 2007.  ISSN 1070-664X, 1089-7674.  doi:
+ []
+
+
+Underfull \hbox (badness 7379) in paragraph at lines 594--594
+\T1/futs/m/n/10.95 10 . 1063 / 1 . 2746812$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 14 / 7 / 072703 /
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 602--602
+\T1/futs/m/n/10.95 5 . 0167405$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 31 / 1 / 012702 / 2932657 /
+ []
+
+[69]) [70]
 \openout2 = `Appendix/Permissions.aux'.
 
  (./Appendix/Permissions.tex) [71
+
+
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Numerics/NumericsMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
@@ -1657,27 +1678,24 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: D00535CD94A79BBD26710E3C3EAACFC8;7063.
+(rerunfilecheck)             Checksum: F007ACBF438AF21669CAC01FEA99A6A9;7257.
  ) 
 Here is how much of TeX's memory you used:
- 28280 strings out of 474165
- 562559 string characters out of 5749497
+ 28305 strings out of 474165
+ 563234 string characters out of 5749497
  1955542 words of memory out of 5000000
- 49739 multiletter control sequences out of 15000+600000
+ 49761 multiletter control sequences out of 15000+600000
  741957 words of font info for 198 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,17n,121p,10978b,1209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,17n,121p,10978b,1225s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (71 pages, 20965402 bytes).
+Output written on Thesis_MainSample.pdf (71 pages, 20977193 bytes).
 PDF statistics:
- 1748 PDF objects out of 2073 (max. 8388607)
- 1566 compressed objects within 16 object streams
- 350 named destinations out of 1000 (max. 500000)
+ 1800 PDF objects out of 2073 (max. 8388607)
+ 1617 compressed objects within 17 object streams
+ 353 named destinations out of 1000 (max. 500000)
  414 words of extra memory for PDF output out of 10000 (max. 10000000)
 
