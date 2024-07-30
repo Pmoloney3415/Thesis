@@ -3,52 +3,50 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Thesis_MainSample.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Preamble/PreambleMain.aux
-A level-1 auxiliary file: Numerics/NumericsMain.aux
+A level-1 auxiliary file: Results1/Results1Main.aux
 A level-1 auxiliary file: Appendix/Appendix1Main.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
+I found no \citation commands---while reading file Thesis_MainSample.aux
 Database file #1: Bibliography/Bibliography.bib
-Warning--empty journal in patel_novel_2018
-Warning--empty institution in mchardy_introduction_2018
-Warning--empty institution in simon_lle_1989
-You've used 80 entries,
+You've used 0 entries,
             2481 wiz_defined-function locations,
-            1162 strings with 36025 characters,
-and the built_in function-call counts, 49089 in all, are:
-= -- 3148
-> -- 5141
-< -- 33
-+ -- 1804
-- -- 1640
-* -- 5451
-:= -- 9124
-add.period$ -- 460
-call.type$ -- 80
-change.case$ -- 155
-chr.to.int$ -- 76
-cite$ -- 83
-duplicate$ -- 1513
-empty$ -- 2877
-format.name$ -- 1754
-if$ -- 9457
-int.to.chr$ -- 5
-int.to.str$ -- 81
-missing$ -- 81
-newline$ -- 625
-num.names$ -- 241
-pop$ -- 380
+            555 strings with 4563 characters,
+and the built_in function-call counts, 34 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 11
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 0
 quote$ -- 0
-skip$ -- 762
+skip$ -- 1
 stack$ -- 0
-substring$ -- 1511
-swap$ -- 249
-text.length$ -- 6
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 539
-warning$ -- 3
-while$ -- 247
+type$ -- 0
+warning$ -- 0
+while$ -- 0
 width$ -- 0
-write$ -- 1482
-(There were 3 warnings)
+write$ -- 7
+(There was 1 error message)
