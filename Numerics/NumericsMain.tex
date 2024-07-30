@@ -18,33 +18,33 @@ The numerical methods will also be presented alongside an extensive set validati
 
 Nanosecond length (`long-pulse') lasers are often used as an external energy source in the field of \ac{HEDP}, for example in laboratory-astrophysics experiments~\cite{tzeferacos_laboratory_2018,fiuza_electron_2020,meinecke_strong_2022}, equation of state studies~\cite{kritcher_measurement_2020,smith_ramp_2014} or \ac{ICF} implosions~\cite{zylstra_burning_2022,slutz_high-gain_2012,williams_demonstration_2024}.
 Experimental design and analysis for these experiments must often be supported with fluid \ac{Rad-MHD} simulations.
-The laser must therefore be described in these codes by a theoretical framework that is both valid to the problem and computationally tractable.
+The laser must therefore be described in these codes by a theoretical framework that is both valid and computationally tractable.
 The physical processes by which lasers interact with plasma is a result of microscopic couplings between the laser field and particles or plasma waves.
 The detailed microphysics of these interactions are often studied using \ac{PiC} codes~\cite{nguyen_cross-beam_2021} or wave-based solvers~\cite{myatt_wave-based_2017}, typically for scales and durations of tens of micrometres and hundreds of picoseconds.
-Coupling these tools directly to multidimensional hydrodynamic simulations, which are often used for millimetre and nanosecond scales, would usually be computationally intractable.
+Coupling these tools directly to multidimensional \ac{Rad-Hydro} simulations, which are often used for millimetre and nanosecond scales, is usually computationally intractable.
 
 The \ac{GO} assumptions are often applicable for \ac{HEDP} laser-plasma interactions (validity discussed in detail for \ac{ICF} plasmas in Sec.~\ref{sec:Theory_GO_appliciability}) and therefore ray-tracing offers a computationally tractable approach to modelling lasers in these experiments.
-By assuming static hydrodynamic profiles (which is normally valid for the propagation time of light through the computational domain) a laser beam can be discretized into a bundle of rays and the ray equations can then be integrated along their path to solve for the trajectory of the light, assuming that refraction dominates over diffraction.
+By assuming static \ac{Rad-Hydro} profiles (which is normally valid for the propagation time of light through the computational domain) a laser beam can be discretized into a bundle of rays and the ray equations can then be integrated along their path to solve for the trajectory of the light, assuming that refraction dominates over diffraction.
 A discrete amount of power can also be given to each ray.
 If there is a suitable model for the power-absorption rate, this can also be integrated along the ray to provide an energy source for the plasma.
-In many laser-driven \ac{HEDP} experiments, frequency-doubled or -tripled lasers and long scale-length plasmas mean that \ac{IB} is the dominant deposition process~\cite{schmitt_importance_2023,schmitt_importance_2023-1}.
-There are well established models for \ac{IB} that are suitable for implementation in ray-tracing codes, because they only require knowledge of the local plasma conditions, which are easily accessible via interpolation from the hydrodynamic grid to rays~\cite{huba_nrl_2013,johnston_correct_1973}.
-The combination of the ray equations and \ac{IB} deposition therefore is the basis for the vast majority of laser-modules coupled to hydrodynamic codes.
+In many laser-driven \ac{HEDP} experiments, frequency-doubled or -tripled lasers and long scale-length plasmas mean that \ac{inv-Brem} is the dominant deposition process~\cite{schmitt_importance_2023,schmitt_importance_2023-1}.
+There are well established models for \ac{inv-Brem} that are suitable for implementation in ray-tracing codes, because they only require knowledge of the local plasma conditions, which are easily accessible via interpolation from the \ac{Rad-Hydro} grid to ray locations~\cite{huba_nrl_2013,johnston_correct_1973}.
+The combination of the ray equations and \ac{inv-Brem} deposition is therefore the basis for the vast majority of laser-modules coupled to \ac{Rad-Hydro} codes.
 
 In laser-driven \ac{ICF} experiments however, another class of interaction, \ac{LPIs} are vitally important to the energetics of the implosion.
 For example \ac{CBET} leads to a zeroth-order correction to the energy deposited in direct-drive experiments at the OMEGA laser facility, reducing coupled power late in the implosion to $\sim 50\%$~\cite{colaitis_inverse_2021}.
-\ac{LPIs} cannot be included in the simple framework described above because they are non-linear\footnote{Non-linear in this context means that the interaction involves the interaction of multiple light and plasma waves.} and reduced theoretical models of the interaction rely on knowledge of the electric field or intensity of the light~\cite{randall_theory_1981}.
+\ac{LPIs} cannot be included in the simple framework described above because they are non-linear\footnote{Non-linear in this context means that the interaction involves multiple light and plasma waves.} and reduced theoretical models of the interaction rely on knowledge of the electric field or intensity of the light~\cite{randall_theory_1981}.
 Implementation in a tracing code therefore necessitates a method by which the separate light waves can `talk' to each other.
 For example, the \ac{CBET} code described in this chapter stores information for separate components of laser beams on a common grid which can then interact via the `pump-depletion iterations', described in Sec.~\ref{sec:pump_dep_iters}.
-Additionally, the knowledge of electric field or intensity is problematic because this is not an attribute which standard \ac{GO} rays posses.
+Additionally, calculating the electric field or intensity is problematic because this is not an attribute which can be obtained from a \ac{GO} ray.
 Heuristically, rays have an associated power, so an area is required to obtain an intensity.
-The evolution of a portion of the beam front's area is governed by a first order expansion of the Helmholtz equation, rather than the zeroth order expansion which is most commonly used in ray-tracing packages for hydrodynamic codes~\cite{colaitis_towards_2014}.
+The evolution of a portion of the beam front's area is governed by a first order expansion of the Helmholtz equation, rather than the zeroth order expansion which is most commonly used in ray-tracing packages for \ac{Rad-Hydro} codes~\cite{colaitis_towards_2014}.
 The first order expansion introduces an equation for the ray amplitude which can be solved in a variety of ways and used to obtain the electric field of the light.
-Sec.~\ref{sec:SOLAS_field_reconstruc} describes the approach taken to solving for the amplitude of the rays in \textsc{Solas}, which is to track the area of a triangle\footnote{For a 2D ray trace, a pair of rays is used rather than a triangle.} of rays around a standard \ac{GO} ray.
+Sec.~\ref{sec:SOLAS_field_reconstruc} describes the approach taken to solving for the amplitude of the rays in \textsc{Solas}, which is to track the area of a triangle\footnote{For a 2D ray trace, a co-planar, pair of rays is used rather than a triangle.} of rays around a standard \ac{GO} ray.
 
 For direct-drive \ac{ICF} simulations, it is also desirable to have a 3D ray trace, where rays travel and refract in 3 dimensions.
-In some computational direct-drive studies, particularly in 1D hydrodynamic simulations, simplified laser models are employed in which rays travel radially toward the target~\cite{paddock_one-dimensional_2021}.
-This simplification is can lead to significant deviations from reality, as it neglects any refractive losses, which become increasingly significant late in the implosion as the target converges.
+In some computational direct-drive studies, particularly in 1D \ac{Rad-Hydro} simulations, simplified laser models are employed in which rays travel radially toward the target~\cite{paddock_one-dimensional_2021}.
+This simplification can lead to significant deviations from reality, as it neglects any refractive losses, which become increasingly significant late in the implosion as the target converges.
 Assuming that rays travel radially inward also leads to deposition occurring closer to the critical surface compared to a true 3D ray trace, leading to an overestimation of the drive.
 The growth of \ac{LPIs} also depends on vector summations of light and plasma wavevectors, so a 3D ray trace is necessary when modelling these effects.
 Predictive direct-drive simulations therefore necessitate a fully 3D ray-trace, even when coupled to just 1D hydrodynamics.
@@ -55,21 +55,22 @@ Predictive direct-drive simulations therefore necessitate a fully 3D ray-trace, 
 %###############################################################################################################################
 \section{Existing Cross-Beam Energy Transfer Models}
 
-There are a variety of existing computational tools used to model \ac{CBET} for \ac{ICF} conditions, which are used to study the interaction from first principles, reduced models to investigate the effect of \ac{CBET} when coupled to hydrodynamics or validation tools to test the implementation of these reduced models.
-A non-exhaustive list will be presented here of existing codes, provided mainly as context for the work presented in this chapter.
+There are a variety of existing computational tools used to model \ac{CBET} for \ac{ICF} conditions.
+These include codes that are used to study the interaction from first principles, reduced models to investigate the effect of \ac{CBET} when coupled to hydrodynamics and validation tools to test the implementation of these reduced models.
+A non-exhaustive list of existing codes will be presented here, provided as context for the work presented in this chapter.
 
 %################################################################################
 %################################################################################
 \subsection{Ray Based Models}
 
-The most common tool to study the coupling of \ac{CBET} effects into hydrodynamics are reduced ray-based models which use the linear gain theory of \ac{SBS}, outlined in section\ref{sec:SBS_linear_gain}.
+The most common tool to study the coupling of \ac{CBET} effects into hydrodynamics are reduced ray-based models which use the linear gain theory of \ac{SBS}, described in more detail in Sec.~\ref{sec:SOLAS_cbet_model}.
 There are a variety of different codes used to simulate this.
 The main difference between the models is the way that the electric field or intensity of the laser light is obtained.
 
 \paragraph*{\ac{IRT}} This is an approach, implemented within the \textsc{Ifriit} code, that creates a mapping between points on an initial beam front and arbitrary locations within the plasma~\cite{colaitis_real_2019,colaitis_adaptive_2019}.
 This is in contrast to \ac{FRT}, which is used in the other ray-based approaches listed below, where discrete points on the beam front are integrated forward to discrete points within the plasma.
 \ac{IRT} is a very efficient approach for convex, approximately spherically symmetric plasma profiles, it can not deal well with beams that have multiple caustics\footnote{Caustics are defined and discussed in detail in Sec.~\ref{sec:SOLAS_ray_amplitude}.}, where the \ac{FRT} approach is better suited.
-\textsc{Ifriit} has been coupled to the 3-D \ac{Rad-Hydro} code, \textsc{Aster} from \ac{LLE}, and prior to the development of \textsc{Solas}, \textsc{Aster}-\textsc{Ifriit} was the only code combination capable of conducting 3-D direct-drive simulations with in-line \ac{CBET}~\cite{colaitis_inverse_2021}.
+\textsc{Ifriit} has been coupled to the 3-D \ac{Rad-Hydro} code, \textsc{Aster} from \ac{LLE}, and prior to the development of \textsc{Solas} and its coupling to the \textsc{Chimera} \ac{Rad-Hydro} code, \textsc{Aster}-\textsc{Ifriit} was the only code combination capable of conducting 3-D direct-drive simulations with in-line \ac{CBET}~\cite{colaitis_inverse_2021}.
 
 \begin{figure}[t!]
 \includegraphics[width=10cm]{Numerics/Images/Reflected_Rays.png}
@@ -81,48 +82,53 @@ The critical density is represented by the black mesh.}%
 \end{figure}
 
 \paragraph*{Ray Statistics Approach} The \textsc{Lasnex}~\cite{strozzi_interplay_2017}, \textsc{Troll}~\cite{liberatore_first_2023} and \textsc{Draco} codes~\cite{marozas_wavelength-detuning_2018}, developed at \ac{LLNL}, \ac{CEA} and \ac{LLE} respectively, implement field-reconstruction methods which depend heavily on having many rays per computational cell.
-\textsc{Lasnex} and \textsc{Troll}, used mainly for indirect-drive hohlraum simulations, obtains the intensity of light by first propagating rays through the mesh and obtaining the deposited power in each grid cell.
+\textsc{Lasnex} and \textsc{Troll}, used mainly for indirect-drive hohlraum simulations, obtain the intensity of light by first propagating rays through the mesh and obtaining the deposited power in each grid cell.
 The intensity is then obtained from the power in each cell using electromagnetic energy conservation.
 Obtaining the intensity from deposition means that the field cannot be reconstructed in vacuum regions where no deposition occurs.
 
-\textsc{Draco} uses a similar approach, but the intensity is estimated by multiplying the ray power by the path length in a cell divided by the cell volume, which gives a dimensional estimate for the intensity.
+\textsc{Draco} uses a similar approach, but the intensity is estimated by multiplying the ray power by the path length in a cell and dividing by the cell volume, which gives a dimensional estimate for the intensity.
 Both of these approaches require many rays-per cell to accurately obtain the intensity, $\mathcal{O}(100)$~\cite{debayle_unified_2019}.
-For direct-drive simulations this is extremely computationally expensive, because backscatter \ac{CBET} dominates over sidescatter, therefore the reflected field of each beam must be resolved, and each beam spreads out over a large solid angle after reflecting off a convex density profile, as is demonstrated in Fig.~\ref{fig:reflectedrays}.
+For direct-drive simulations this is extremely computationally expensive, because backscatter \ac{CBET} dominates over sidescatter.
+Therefore the reflected field of each beam must be resolved, and each beam spreads out over a large solid angle after reflecting off a convex density profile, as is demonstrated in Fig.~\ref{fig:reflectedrays}.
 This means that orders of magnitude more rays are required than for approaches which can accurately obtain the field from a single ray per cell.
 
 Another drawback of both of these approaches is that caustics of beams (regions where the amplitude of rays diverge) are not identifiable, and therefore fields cannot be capped to physically accurate, diffraction-limited values.
 If a significant amount of \ac{CBET} occurs at caustics, such as in direct-drive \ac{ICF}, then erroneous global multipliers to \ac{CBET} gains must be applied which are effectively free parameters that must be tuned to obtain a pre-known reduction in absorbed energy.
-This means that it is difficult to trust this approach for predictive direct-drive simulations.
+It is therefore difficult to trust this approach for predictive, pre-shot direct-drive simulations.
 
 \paragraph*{\ac{PCGO}} In this approach, each ray has an associated Gaussian intensity profile, the width of which is integrated along the ray trajectory~\cite{colaitis_towards_2014,colaitis_crossed_2016}.
-A single ray can be used per cell as each ray can have an intensity which is interpolated to the mesh, but the reconstructed field at caustics is not accurate and the width evolution is only valid for a short propagation distance.
-This approach was coupled to the \textsc{Chic} 2 dimensional hydrodynamics code, but is difficult to extend to 3D as the implementation relied on interacting only rays whose centroids crossed, which does not generically occur in 3D for non-coplanar rays~\cite{colaitis_modeling_2015}.
+A single ray can be used per cell because each ray therefore has an intensity which is interpolated to the mesh.
+However, the reconstructed field near caustics is not accurate and the width evolution is only valid for a short propagation distance.
+This approach was coupled to the \textsc{Chic} 2-D \ac{Rad-Hydro} code, but the approach is difficult to extend to 3-D as the implementation relied on interacting only rays whose centroids crossed, which will not occur in 3-D for non-coplanar rays~\cite{colaitis_modeling_2015}.
 
 \paragraph*{Neighbouring Rays} The \textsc{BeamCrosser} code obtains an area for each ray by co-tracing a triangle of neighbouring rays around it that can be converted into a ray amplitude and therefore electric field from electromagnetic energy conservation~\cite{edgell_mitigation_2017}.
 Integrating the amplitude along the ray trajectory means that the caustics can be identified and therefore fields in those regions capped to diffraction limited values~\cite{follett_ray-based_2018}.
 Each ray also has an individual field value, and it is therefore less dependent on ray-per-cell statistics than geometric models, such as that used in the \textsc{Draco} code described above~\cite{follett_validation_2022}.
-Sec.~\ref{sec:SOLAS_field_reconstruc} describes the implementation of this approach into the \textsc{Chimera} 3D \ac{Rad-MHD} code, which had not previously been used coupled to hydrodynamics in multidimensional simulations.
+Sec.~\ref{sec:SOLAS_field_reconstruc} describes the implementation of this approach into the \textsc{Chimera} 3D \ac{Rad-MHD} code.
+A similar approach, simplified by assuming uniform illumination of a direct-drive target, has been implemented into the \textsc{Lilac} \ac{Rad-Hydro} code~\cite{igumenshchev_crossed-beam_2010, igumenshchev_crossed-beam_2012}.
+It had previously however, not been coupled to a multi-dimensional \ac{Rad-Hydro} code.
 
 
 %################################################################################
 %################################################################################
 \subsection{Wave Solvers}
 
-Solving Maxwell's equations with coupling to a plasma background is a useful tool for the study of \ac{LPIs}.
+Solving Maxwell's equations in a plasma background is a useful tool for the study of \ac{LPIs}.
 The main code used in the \ac{ICF} community that uses this approach is \textsc{Lpse}, which propagates light waves through a prescribed, spatially varying density, temperature and velocity profile in 1D$\rightarrow$3D~\cite{myatt_wave-based_2017,myatt_lpse_2019}.
-It then solves the nonlinear coupling of electromagnetic waves by allowing first order plasma perturbations (obtained from the ponderomotive beat pattern between light), which then feed back into the wave propagation.
+It then solves the nonlinear coupling of electromagnetic waves by allowing first order plasma perturbations (obtained from the ponderomotive beat pattern between light waves), which then feed back into the wave propagation.
 The perturbative approach means that \textsc{Lpse} is limited to linear problems and the temporal and spatial resolution required to resolve the beat frequency mean that coupling to multidimensional \ac{Rad-Hydro} simulations is not feasible.
-However, it is an extremely useful tool to validate implementation of \ac{CBET} models, especially in situations like scattering at laser caustics, such as the test case presented in Sec.~\ref{sec:SOLAS_CBET_caustic_test}.
+However, it is an extremely useful tool to validate implementation of \ac{CBET} models, especially for laser caustics where diffraction is important, such as the test case presented in Sec.~\ref{sec:SOLAS_CBET_caustic_test}.
 It can also been used for many other important studies, such as the mitigation of \ac{LPIs} via laser bandwidth and the effect of beam smoothing techniques on the growth rate of \ac{LPIs}~\cite{follett_thresholds_2021}.
 
 %################################################################################
 %################################################################################
-\subsection{\ac{PiC} Codes}
+\subsection{Particle in Cell Codes}
 
 Both Ray based codes and \textsc{Lpse} are ill-suited to the study of \ac{LPIs} in the non-linear regime, where the laser intensity becomes sufficiently large that the ponderomotive imprint on the plasma can no longer be treated perturbatively.
-Understanding this growth and saturation of \ac{LPIs} in this regime is particularly important for \ac{ICF} schemes with high peak intensities, such as during the ignitor spike in shock ignition pulses~\cite{perkins_shock_2009}.
-Often kinetic effects such as ion-trapping become important in non-linear saturation, where ion are trapped and then accelerated in the \ac{CBET} induced \ac{IAW}, leading to changes in the \ac{IAW} phase velocity and therefore a loss of resonance~\cite{nguyen_cross-beam_2021}.
-\ac{PiC} codes are therefore well suited to model this kinetic saturation, albeit over short timescales and in simulations that are not truly representative of direct-drive conditions, due to computational expense~\cite{seaton_cross-beam_2022-1}.
+Understanding the growth and saturation of \ac{LPIs} in this regime is particularly important for \ac{ICF} schemes with high peak intensities, such as during the ignitor spike in shock ignition pulses~\cite{perkins_shock_2009}.
+Often kinetic effects such as ion-trapping become important in non-linear saturation, where ions are trapped and then accelerated in the \ac{CBET} induced \ac{IAW}, leading to changes in the \ac{IAW} phase velocity and therefore a loss of resonance~\cite{nguyen_cross-beam_2021}.
+\ac{PiC} codes operate by using a finite number of macro-particles to represent the distribution function of the plasma, coupled to an electromagnetic solver, discretised on a mesh.
+They are therefore well suited to model this kinetic saturation, albeit over short timescales and in simulations that are not truly representative of direct-drive conditions, due to computational expense~\cite{seaton_cross-beam_2022-1}.
 Kinetic modelling of \ac{CBET} has demonstrated that the growth of \ac{LPIs} can be a much more complex, time-dependent problem than is assumed by the linear-models used in ray-based codes, leading to larger net energy transfers~\cite{seaton_cross-beam_2022}.
 
 %###############################################################################################################################
@@ -165,7 +171,8 @@ For direct-drive \ac{ICF} simulations which model the laser using ray-tracing, e
 A well-chosen grid can also significantly reduce the run-time and memory requirements of the calculation.
 The mesh used for hydrodynamic simulations of these experiments is often not well suited for ray-tracing calculations.
 For example, hydrodynamic grid resolutions often have excessive resolution in the corona to resolve the gradients in the laser quantities, which greatly increases the expense of tracing rays through the mesh, without significantly enhancing the accuracy of the solution.
-This section will describe the approach taken in the \textsc{Solas} code to create a grid structure which is well suited to direct-drive simulations which we have found to accurately resolve laser energy deposition both with and without \ac{CBET} in a memory-efficient manner.
+This section will describe the approach taken in the \textsc{Solas} code to create a grid structure which is well suited to direct-drive simulations.
+This grid has been found to accurately resolve laser energy deposition both with and without \ac{CBET} in a memory-efficient manner.
 
 %##################################################
 \subsubsection{Re-Domain Balance for Radial Geometries}
@@ -182,18 +189,18 @@ Additional `ghost-cells' are stored in the subdomains and used to calculate grad
 The hydrodynamic grid for \textsc{Chimera} is Eulerian, with options for Cartesian, cylindrical or spherical-polar grids.
 
 The optimal domain balancing minimises communication between ranks, which leads to cubic\footnote{Cubic in cell dimension, not necessarily in physical space for non-Cartesian geometries.} subdomains.
-If computing a laser raytrace through this domain however for a typical direct-drive calculation however, initially rays travel approximately radially and therefore regularly encounter processor boundaries where they must be transferred between ranks.
+If computing a laser raytrace through this domain for a typical direct-drive calculation however, initially rays travel approximately radially and therefore regularly encounter processor boundaries where they must be transferred between ranks.
 A more optimal domain decomposition for the raytrace minimises radial splitting to avoid excessive passing of rays.
-When required for spherical and cylindrical simulations, \textsc{Solas} therefore takes the hydrodynamic variables on the \textsc{Chimera} grid and re-domain balances the grid for the raytrace, such that the splitting does not occur in the radial coordinate.
+For spherical and cylindrical simulations, \textsc{Solas} therefore takes the hydrodynamic variables on the \textsc{Chimera} grid and re-domain balances the grid for the raytrace, such that the splitting does not occur in the radial coordinate.
 An example of this re-domain balancing is shown in Fig.~\ref{fig:SOLAS_CHIMERA_domain} for an illustrative cylindrical mesh.
 The \textsc{Chimera} domain decomposition divides the radial and azimuthal extent into 4 and 3 respectively, whereas \textsc{Solas}' division is purely in the azimuthal direction.
 For spherical and cylindrical direct-drive simulations where there is a defined, global minimum critical radius, \textsc{Solas}' mesh excludes the grid cells below this minimum radius beyond which the rays cannot reach in order to reduce the memory burden of the re-gridding.
 
 An alternative approach to domain-decomposition parallelization of the module would be to use the \ac{OpenMP} package, where processors share memory across a computational node.
 In this approach, the entire laser grid would be stored once on the shared memory of the node and separate ranks would trace rays through the entire domain without the need for transfers.
-While this is certainly a preferable approach for a standard raytrace to the \ac{MPI} procedure described above, including a model for \ac{CBET} is more challenging with this approach.
+While this is certainly a preferable approach for a standard raytrace to the \ac{MPI} procedure described above, including a model for \ac{CBET} is more challenging.
 This is because \ac{CBET} requires communication between beams and therefore large amounts of information must be stored on the grid, which can lead to large memory overheads.
-Therefore, using multiple computing nodes is often a necessity for 3D \ac{CBET} calculations and \ac{OpenMP}-\ac{MPI} hybrid approaches are required which was deemed too significant an undertaking for the scope of the work presented in this thesis.
+Therefore, using multiple computing nodes is often a necessity for 3D \ac{CBET} calculations and \ac{OpenMP}-\ac{MPI} hybrid approaches are required, deemed too significant an undertaking for the scope of the work presented in this thesis.
 
 When a 3-D ray trace is coupled to a lower dimensional hydrodynamics simulation, for example, a 1-D spherical direct-drive simulation, then a sparse 3-D mesh at a user-specified resolution is created for the ray trace.
 This 3-D mesh allows the re-domain balancing routine to be employed to load balance the simulation.
@@ -215,29 +222,29 @@ Ideal \ac{ICF} experiments are spherically symmetric and departures from this sy
 Simulations of these experiments therefore typically employ a computational grid with spherical symmetry.
 \textsc{Chimera} typically simulates direct-drive implosions with a spherical-polar Eulerian mesh, shown in Fig.~\ref{fig:SOLAS_combined_cells}.a.
 This grid has the advantage of simplicity to take gradients across cells and develop new physics modules for the code, however it has the disadvantage that cell edge lengths go to zero as the radial coordinate, $r\rightarrow 0$ and the polar coordinate, $\theta\rightarrow 0,\pi$.
-This limits the hydrodynamic timestep as stable explicit timesteps are inversely proportional to edge lengths, increasing the cost of 3D spherical simulations.
-The issue is circumvented at late times in the implosion by remapping onto a Cartesian grid, which does not have vanishing edge length and face areas~\cite{chittenden_signatures_2016}.
+This limits the hydrodynamic timestep, because stable explicit timesteps are inversely proportional to edge lengths, increasing the cost of 3D spherical simulations.
+The issue is circumvented at late times in the implosion by remapping onto a Cartesian grid, which does not have vanishing edge lengths and face areas~\cite{chittenden_signatures_2016}.
 
-Computing \ac{CBET} however required at least a single ray from each interacting beam to pass through each computational grid cell where the interaction should be important.
+Computing \ac{CBET} however requires at least a single ray from each interacting beam to pass through each computational grid cell where the interaction should be important.
 For spherical-polar meshes the vanishing cell volume therefore sets extreme minimum ray number limits for the calculation to fully resolve all the fields, especially for direct-drive simulations due to the requirement to resolve the reflected fields which spread out over $4\pi$ steradians, as is shown in Fig.~\ref{fig:reflectedrays}.
 Hydrodynamic resolutions are often also excessive for ray trace calculations to resolve the necessary refraction and energy exchange of the light.
-Rays must stop at each cell boundary in order to deposit the correct amount of energy into each grid cell and therefore the expense of the ray trace is directly proportional to the number of grid cells that the rays see.
+Rays must also stop at each cell boundary in order to deposit the correct amount of energy into each grid cell and therefore the expense of the ray trace is directly proportional to the number of grid cells that the rays see.
 
-To circumvent this issue cells can be combined around the spherical grid angles in order to make a semi-structured Eulerian grid, as is shown in Fig.~\ref{fig:SOLAS_combined_cells}.b.
-Hydrodynamic grid cells are merged together on the \textsc{Solas} mesh in each grid direction until a pre-specified resolution, set by the problem is reached.
+To circumvent these issues cells can be combined around the spherical grid angles in order to make a semi-structured Eulerian grid, as is shown in Fig.~\ref{fig:SOLAS_combined_cells}.b.
+Hydrodynamic grid cells are merged together on the \textsc{Solas} mesh in each grid direction until a pre-specified resolution, set by the user, is reached.
 In Fig.~\ref{fig:SOLAS_combined_cells}.b, many cells are combined in each direction to clearly display the effect.
 Typically, for spherical simulations however, the cells are not combined in the polar direction, $\theta$ and $n_{\varphi}$ cells are combined in the azimuthal direction until the azimuthal and polar resolutions match, explicitly $n_{\varphi}r\Delta\varphi\sin\theta \approx r \Delta\theta$ at a given radius, $r$.
 
 Fig.~\ref{fig:SOLAS_combined_cells}.c demonstrates the capability of the meshing algorithm to adaptively combine cells in the radial direction based upon density gradients.
-This allows large cells to exist in the coronal plasma where the light refracts minimially and deposits little energy, while the sharp turning point regions close to the critical surface can be well resolved.
-To find the number of radial cells to combine at a given radius, the cell combination algorithm varies on the number of cells to combine $n_r$ and calculates the maximum gradient length scale from all combined hydrodynamic cells, $L_{n_e}=n_{crit}/|\nabla n_e|_{\max}$.
+This allows large cells to exist in the coronal plasma where the light refracts minimally and deposits little energy, while the sharp turning point regions close to the critical surface can be well resolved.
+To find the number of radial cells to combine at a given radius $n_r$, maximum gradient length scale from the combined hydrodynamic cells, $L_{n_e}=n_{crit}/|\nabla n_e|_{\max}$ is calculated.
 The algorithm then finds the optimal number of cells to merge together such that the new cell resolution $n_r\Delta r \approx C_L L_{n_e}$, where $C_L$ is a user parameter\footnote{Default value set to $C_L=0.05$.} which can be reduced to limit cell combining.
-A maximum cell size is also set to prevent excessively large cells in regions with minimal density gradients.
+A maximum cell size is also set to prevent excessively large cells in regions with small density gradients.
 
-Note that many options for equal area computational grids exist which, unlike the semi-structured grid described here, are completely uncorrelated from the hydrodynamic mesh~\cite{cheong_eigensolutions_2015,malkin_new_2019}.
-These have the advantage that the grid can be completely chosen based solely upon the laser ray trace.
+Note that many options for equal area computational grids exist which, unlike the semi-structured grid described here, are completely uncorrelated from the \ac{Rad-Hydro} mesh~\cite{cheong_eigensolutions_2015,malkin_new_2019}.
+These have the advantage that the grid can be chosen purely based upon quantities important to the laser ray trace.
 However, the mesh described in this section has the advantage that interpolation to the hydrodynamic mesh is extremely straightforward as the \textsc{Solas} grid cells completely overlap the \textsc{Chimera} cells.
-This also removes minimises artefacts from interpolation between the grids, which have the potential to introduce spurious high order modes to the deposition source term.
+This also minimises artefacts from interpolation between the grids, which have the potential to introduce spurious high order modes to the deposition source term.
 
 %################################################################################
 %################################################################################
@@ -248,13 +255,13 @@ This also removes minimises artefacts from interpolation between the grids, whic
     \includegraphics[width=\linewidth]{Numerics/Images/ray_init_plots.png}
     \centering
     \caption{Example initial locations for $\sim4000$ rays for an OMEGA beam port with super-Gaussian intensity profile, with a shape defined by $n_s=5.2$ and $\sigma=352\ \mu m$.
-    The inverse-projection ray locations are shown in sub-figure a) which demonstrate a higher ray density for rays pointed to the pole at $x\sim\  -0.15 mm$.
+    The inverse-projection ray locations are shown in sub-figure a) which demonstrate a higher ray density for rays pointed to the pole at $x\sim\ -0.15 mm$.
     b) shows the randomly sampled rays where all rays are initialised with the same power, and c) shows uniformly sampled rays.}%
     \label{fig:SOLAS_ray_init}
 \end{figure}
 
-To obtain a noise-free energy deposition source term from a ray trace, both the grid and choice of initial rays number and location is crucial.
-The problems are closely related as a higher resolution grid will require a larger density of rays to get an equivalent ray-per-cell statistics.
+To obtain a noise-free energy deposition source term from a ray trace, both the grid and choice of initial ray number and location is crucial.
+The problems are closely related as a higher resolution grid will require a larger density of rays to get equivalent ray-per-cell statistics.
 It is therefore wise to choose the number of rays used in a simulation to be some function of the grid used for the ray-trace.
 Several methods for ray initialization which have been implemented shall be briefly outlined here, along with a summary of their strengths and weaknesses.
 
@@ -266,15 +273,15 @@ All beams profiles described in this thesis have circularly symmetric super-Gaus
 where $r$ is the distance from the centre of the beam port, perpendicular to the beam normal, $I_0$ is the peak intensity, $\sigma$ is the beam width\footnote{The radius at which $I=I_0e^{-1}$.} and $n_s$ is the super-Gaussian exponent.
 
 \paragraph*{Uniform Sampling}
-In this method of ray initialisation, demonstrated in Fig.~\ref{fig:SOLAS_ray_init}.c, each beam is assigned a number of rays and a maximum ray initialisation width\footnote{The maximum initialisation width is usually set to be the radius at which $I=I_0e^{-3}$.}, beyond which rays are not initialised.
-Rays are then placed in a uniform, square grid on this plane with a power proportional to the intensity value from by Eq.~\ref{eq:supgaus} and removed if their intensity is below $I_0e^{-3}$, which gives the ray convex hull in~\ref{fig:SOLAS_ray_init}.c the circular shape.
+In this method of ray initialisation, demonstrated in Fig.~\ref{fig:SOLAS_ray_init}.c, each beam is assigned a number of rays and a maximum ray width\footnote{The maximum initialisation width is usually set to be the radius at which $I=I_0e^{-3}$.}, beyond which rays are not initialised.
+Rays are then placed on a uniform, square grid in this plane with a power proportional to the intensity value from by Eq.~\ref{eq:supgaus}.
 For all three procedures described in this subsection, the total summed power of the rays is normalised to the incident beam power after the initialisation of all rays is complete.
 Typically, for direct-drive, the total number of rays used for spherical simulations is chosen to be,
 \begin{equation}
     \label{eq:SOLAS_nray_uniform}
     N_{\text{ray}} = C_{N}\max{(N_r N_{\varphi},N_r N_{\theta},N_{\theta} N_{\varphi})},
 \end{equation}
-where $N_{i=r,\varphi,\theta}$ is the number of \textsc{Solas} grid cells in that grid direction and $C_N$ is a user-parameter multiplier which to give better ray statistics for CBET simulations when required.
+where $N_{i=r,\varphi,\theta}$ is the number of \textsc{Solas} grid cells in each grid direction and $C_N$ is a user-parameter multiplier which to give better ray statistics for CBET simulations when required.
 $C_N\sim 2$ is found to give converged deposition when including \ac{CBET} and so this value is used by default.
 
 When there is sufficiently low ray-per-cell statistics, beat phenomena can occur between the ray spacing and the grid resolution.
@@ -296,7 +303,7 @@ Briefly, the method works by finding several surfaces, defined by fractions of t
 These aim points and their associated area on the surface are back-projected onto each beam port and rays are created if the aim point is not obscured by the surface on which it was created.
 The power of the ray is then the back-projected area multiplied by the intensity at the beam port location.
 For a spherical polar grid, this gives a ray distribution which varies in ray density according to which region on the beam port maps to regions on the grid with higher or lower cell-face areas.
-The rays in the higher ray density at the beam port region which maps to the polar region of the grid, at $x\sim -0.16\ mm$ on Fig.~\ref{fig:SOLAS_ray_init}.a have a correspondingly lower power compared to rays at equal radii to give the same intensity.
+The higher ray density region on the beam port maps to the polar region of the grid, at $x\sim -0.16\ mm$ on Fig.~\ref{fig:SOLAS_ray_init}.a have a correspondingly lower power compared to rays at equal radii to give the same intensity.
 
 While inverse-projection does guarantee good ray statistics at given surfaces for the inbound component of the field, the algorithm does not extend to beyond ray caustics, or the reflected field component.
 Therefore, ray statistics are not guaranteed to be good for the reflected field, so the advantages of this method are not evident for direct-drive \ac{CBET} simulations when backscatter must be resolved.
@@ -306,10 +313,10 @@ However, for no \ac{CBET}, direct-drive simulations, this is a useful option for
 For all simulations in this thesis, the uniform sampling method with ray dithering is used.
 This method is found to give the best ray-per cell statistics across the semi-structured Eulerian grid described in Sec.~\ref{sec:SOLAS_mesh} while minimising the overall number of rays used required to resolve \ac{CBET}.
 
-After rays are initialised on each of the beam ports, rays are extrapolated to the edge of the computational domain.
+After rays are initialised on each of the beam ports, they are extrapolated to the edge of the computational domain.
 Beam focussing is typically neglected, so all rays are assigned velocities parallel to the beam normal.
 This approximation is widely used for codes that simulate OMEGA-scale direct-drive implosions, where the lasers are approximately collimated on the implosion scale~\cite{colaitis_inverse_2021,marozas_wavelength-detuning_2018}.
-It is assumed that outside of the simulation domain is vacuum and rays are therefore extrapolated to the edge of the computational domain in straight lines, using a simple root finding to find the intersection of the rays with either a spherical, cylindrical or rectangular domain depending on the simulation geometry.
+It is assumed that outside of the simulation domain is vacuum and rays are therefore extrapolated to the edge of the computational domain in straight lines, using a simple root finding algorithm to obtain the intersection of the rays with either a spherical, cylindrical or rectangular domain depending on the simulation geometry.
 
 %################################################################################
 %################################################################################
@@ -339,9 +346,9 @@ The path length $\tau$ is therefore best seen as a parameterisation of the ray c
 The frequency shift arises due to light propagating through a time varying refractive index.
 This causes sucessive wavefronts to bunch up (blue-shift) or rarerify (red-shift), which occurs for a temporally increasing or decreasing $n_e$ respectively \cite{dewandre_doppler_1981}.
 This effect is only significant for the work presented in this thesis when calculating \ac{CBET}.
-For direct-drive calculations at the \textsc{Omega} laser facility scale, this results in wavelength shifts of $\Delta \lambda/\lambda_0 \sim \mathcal{O}(0.1\%)$, which is typically negible for computing ray trajectories.
-However, the induced wavelength shift is relatively significant when calculating the \ac{CBET} resonance and in direct drive can alter the spatial location where scattering is significant~\cite{colaitis_inverse_2021}.
-Neglecting time-dependent ionisation effects, which is a good assumption during peak-power for the approximately steady-state direct-drive corona where \ac{CBET} occurs, the time derivative of $n_e$ can be obtained by assuming that $n_e$ is advected with the bulk fluid,
+For direct-drive calculations at the \textsc{Omega} laser facility scale, this results in wavelength shifts of $\Delta \lambda/\lambda_0 \sim \mathcal{O}(0.1\%)$, which is typically negligible for computing ray trajectories.
+However, the induced wavelength shift is relatively significant when calculating the \ac{CBET} resonance and in direct-drive can alter the spatial location where scattering is significant~\cite{colaitis_inverse_2021}.
+Neglecting time-dependent ionisation effects, which is a good assumption during peak-power for the approximately steady-state direct-drive corona where \ac{CBET} occurs, the time derivative can be obtained by assuming that $n_e$ is advected with the bulk fluid,
 \begin{equation}
     \label{eq:SOLAS_doppler}
     \frac{\partial\left(n_e / n_{\text{cr}}\right)}{\partial t} = - \frac{ \iiint_V \ \nabla.[(n_e/n_{\text{cr}})\vec{u}] \ \text{d}V }{ \iiint_V \text{d}V },
@@ -378,7 +385,7 @@ Therefore, the adaptive algorithm was used for all work in this thesis, other th
 \begin{figure}[t!]
     \includegraphics[width=10.0cm]{Numerics/Images/SOLAS_ray_shape_functions.png}
     \centering
-    \caption{Demonstration of the shape function smearing weighting for ray power interpolation to the \textsc{Solas} mesh for a cylindrical mesh.
+    \caption{Shape function smearing for ray power interpolation to the \textsc{Solas} grid for a cylindrical mesh.
     The shape function has the same size and geometry as the \textsc{Solas} grid cell which the ray is located in.
     A top-hat shape function is used, so the fraction of the deposited power interpolated to a given cell is proportional to the volume overlap of the shape function with the cell.}%
     \label{fig:SOLAS_ray_shapefunction}
@@ -404,7 +411,7 @@ We implement the limit detailed by Haines in Ref.~\cite{haines_coupling_2020}, w
     \label{eq:SOLAS_dt_limit}
     \delta t = \min_{n\in \text{cells}}{\left( \tilde{\delta t}, C_{\delta t} \frac{3}{2} \frac{n_{e,n} e T_{e,n} V_n }{P_n} \right)},
 \end{equation}
-where $\tilde{\delta t}$ is the stable hydrodynamic timestep from other relevant physics, $n_{e,n}$, $T_{e,n}$, $V_n$ \& $P_n$ are the electron density, electron temperature, volume and deposited power into cell $n$, and $C_{\delta t}$ is a user defined stability parameter.
+where $\tilde{\delta t}$ is the stable hydrodynamic timestep from other physical processes, $n_{e,n}$, $T_{e,n}$, $V_n$ \& $P_n$ are the electron density, electron temperature, volume and deposited power into cell $n$, and $C_{\delta t}$ is a user defined stability parameter.
 By default, the parameter $C_{\delta t}$ is set to 1, which is found to be adequate for most situations~\cite{haines_coupling_2020}.
 Note that Eq.~\ref{eq:SOLAS_dt_limit} is only applied in cells where $n_{e,n}>1\times 10^{-4} n_{\text{cr}}$.
 Small amounts of deposition in these cells can lead to large temperature increases, which severely limits $\delta t$, despite the cells often being far from the region of interest, normally near critical, where the maximum deposition occurs.
@@ -415,7 +422,7 @@ For simulations where a laser heats a solid, initially cold target, Eq.~\ref{eq:
 \label{sec:SOLAS_ray_validation}
 
 Several validation problems have been conducted to verify that the ray solver has been implemented correctly.
-Here we present the quadratic trough and cylindrical helix test problems which compare the path of a single ray in a density profile to an analytic solution to verify that the ray solvers correctly obtain for the trajectory of light.
+Here we present the quadratic trough and cylindrical helix test problems which compare the path of a single ray in to an analytic solution in order to verify that the ray solvers correctly obtain the trajectory of light.
 The blast wave problem is also presented which is a test of \ac{inv-Brem} absorption to an analytic solution in the absence of thermal conduction and hydrodynamic motion.
 
 \paragraph*{Quadratic trough}
@@ -445,10 +452,10 @@ Analytic integration of the first 2 lines from Eq.~\ref{eq:SOLAS_rays}, yields t
 \end{equation}
 
 The analytic trajectory is compared to the solution from the adaptive solver (using both default interpolation and tricubic interpolation of $n_e$) and the Kaiser algorithm in Fig.~\ref{fig:SOLAS_quadtrough}.
-The associated error, defined as the difference in $y$ at a given $x$ is also plotted.
+The associated error, defined as the difference in $y$ from the analytic value at a given $x$ is also plotted.
 Note that all results were obtained using a grid resolution of $100\times100$ cells.
 The top panel demonstrates that all trajectories are identical to the analytic solution by eye.
-The corresponding errors show that the tricubic interpolation obtains effectively perfectly recreates the analytic solution and the Kaiser error is slightly more significant compared to the default adaptive error.
+The corresponding errors show that the tricubic interpolation effectively perfectly recreates the analytic solution and the Kaiser error is slightly more significant compared to the default adaptive error.
 The tricubic error is insignificant because the cubic interpolation perfectly recreates the true density profile, so the errors are purely numeric, not due to the resolution.
 Errors from the other algorithms would therefore decrease more quickly with increasing resolution as the density profile the ray sees becomes more similar to a quadratic trough.
 The error from the default adaptive interpolation (linear interpolation of both $n_e$ and $\nabla n_e$) is lower than that of Kaiser (linear $n_e$ and uniform $\nabla n_e$), indicating that the inconsistent interpolation is not a significant issue for resolving ray trajectories.
@@ -459,7 +466,7 @@ The error from the default adaptive interpolation (linear interpolation of both 
     \includegraphics[width=\linewidth]{Numerics/Images/cyl_helix.png}
     \centering
     \caption{This figure illustrates the results from the cylindrical-helix test problem, obtained using the default adaptive RK45 algorithm.
-    a) shows the trajectory of a ray with from a simulation with 100 radial cells in 3-D space.
+    a) shows the trajectory of a ray from a simulation with 100 radial cells in 3-D space.
     b) shows the trajectory of the ray projected on the $x-y$ plane, along with the $n_e$ profile.
     c) shows the error of the test, defined as the fractional difference in radius of the ray as it exits the domain from the initial radius, as a function of number of radial cells.}%
     \label{fig:SOLAS_cylhelix}
@@ -474,21 +481,22 @@ By requiring that a ray undergo circular motion in the $x-y$ plane and specifyin
     \label{eq:SOLAS_cyl_helix_ne}
     n_e(r) = n_{\text{cr}} \left( 1-\exp{\left( \frac{-r^2}{2r_0^2} \right)} \right).
 \end{equation}
-For a ray entering the domain at $[x_0=0,\ y_0=1,\ z_0=2\pi]$ mm, with initial wavevector $[k_{x0}=\sqrt{\varepsilon_0/2},\ k_{y0}=0,\ k_{z0}=-\sqrt{\varepsilon_0/2}]$\footnote{$\varepsilon_0\equiv\varepsilon(r=r_0)$.}, the ray position as a function of path length $\tau$ is,
+For a ray entering the domain at $[x_0=0,\ y_0=1,\ z_0=2\pi]$ mm, with initial wavevector $[k_{x0}=\sqrt{\varepsilon_0/2},\ k_{y0}=0,\ k_{z0}=-\sqrt{\varepsilon_0/2}]$, the ray position as a function of path length $\tau$ is,
 \begin{equation}
     \begin{gathered}
         x(\tau) = r_0\sin{\left( \sqrt{\frac{\varepsilon_0}{2}}\tau \right)}, \\
         y(\tau) = r_0\cos{\left( \sqrt{\frac{\varepsilon_0}{2}}\tau \right)}, \\
-        z(\tau) = z_0 - \sqrt{\frac{\varepsilon_0}{2}}\tau. \\
+        z(\tau) = z_0 - \sqrt{\frac{\varepsilon_0}{2}}\tau,
     \end{gathered}
 \end{equation}
+where $\varepsilon_0\equiv\varepsilon(r=r_0)$.
 
-The problem was run in cylindrical geometry for a variety of radial resolutions employing the default adaptive RK45 solver with linear interpolation of both $n_e$ and $\nabla n_e$.
+This problem was run in cylindrical geometry for a variety of radial resolutions, employing the default adaptive RK45 solver with linear interpolation of both $n_e$ and $\nabla n_e$.
 The domain bounds for the problem were $r \in [0,1.5]\ \text{mm}$, $\varphi \in [0,2\pi]$ \& $z \in [0,2\pi]\ \text{mm}$, with a single cell in both the $\varphi$ \& $z$ directions.
 For all radial resolutions, the ray was observed by eye to exit the domain at the expected location, verifying that the ray trace is functional in non-Cartesian geometries.
 Plotting the fractional error in ray exit location as a function of number of radial cells, $N_r$ in Fig.~\ref{fig:SOLAS_cylhelix}.c, demonstrates that the error in final position of the ray scales as $N_r^{-1}$.
 This is because larger $N_r$ more closely recreates the density profile in Eq.~\ref{eq:SOLAS_cyl_helix_ne}.
-The error scaling in dictated by the error on the lowest order interpolation used in the algorithm, which is the linear interpolation of $n_e$ for the default adaptive RK45 solver, which yields the $N_r^{-1}$ scaling.
+The error scaling in dictated by the error on the lowest order interpolation used in the algorithm, which is the linear interpolation of $n_e$ for the default adaptive RK45 solver, which leads to the $N_r^{-1}$ scaling.
 
 \paragraph*{Blast wave}
 
@@ -508,7 +516,7 @@ The laser travels in the $x$ direction and has an intensity of $6.4\times 10^{13
 Hydrodynamic motion and transport is disabled in the simulation.
 The laser is initially very strongly absorbed in the gas, so energy is not transported beyond the initial layer, perpendicular to the laser propagation direction.
 As the gas heats up, $\kappa_{\text{IB}}$ decreases and therefore more energy is transported further into the domain by the laser, moving the heatfront forward.
-The heatfront $x_{\text{analytic}}(t)$, defined as the largest $x$ coordinate at a time, $t$ where $T_e>T_{e0}$, has an analytic solution under these assumptions, derived by Denavit and Phillion~\cite{denavit_laser_1994},
+The heatfront $x_{\text{analytic}}(t)$, defined as the largest $x$ coordinate at a time, $t$ where $T_e>T_{e0}$, has an analytic solution, derived by Denavit and Phillion~\cite{denavit_laser_1994},
 \begin{equation}
     x_{\text{analytic}}(t) = \frac{2}{3\kappa_{\text{IB}}}\left( \frac{5}{3} \frac{\kappa_{\text{IB}}I}{n_e k_B} \right)^{3/5},
 \end{equation}
@@ -524,8 +532,8 @@ The heatfront from the simulation compares well to the analytic heatfront, valid
 \section{Ray Based Field Reconstruction and Ray Sheets}%
 \label{sec:SOLAS_field_reconstruc}
 
-In order to compute \ac{CBET}, or other \ac{LPIs} in a ray-tracing calculation, additional information about the electric field or intensity of the light is required than can be obtained from the ray directly from the routine outlined in Sec.~\ref{sec:SOLAS_raytrace}.
-In this section the method used in \textsc{Solas} to obtain the electric field of the light along the path of each ray shall be outlined.
+In order to compute \ac{CBET}, or other \ac{LPIs} in a ray-tracing calculation, additional information about the electric field or intensity of the light is required than can be obtained from the ray directly.
+In this section, the method used in \textsc{Solas} to obtain the electric field of the light along the path of each ray shall be outlined.
 This broadly follows the implementation from Ref.~\cite{follett_validation_2022}.
 
 %################################################################################
@@ -550,7 +558,7 @@ The amplitude can therefore be approximated by assuming proportionality between 
     A(\tau) = \varepsilon^{-1/4} \sqrt{\frac{S(\tau=0)}{S(\tau)}},
 \end{equation}
 where the $\varepsilon^{-1/4}$ term accounts for swelling of the field due to the increased optical path through plasma with finite density~\cite{follett_validation_2022}.
-Note that the amplitude is a purely geometric quantity, which holds no information about power changes of the light from absorption or \ac{LPIs}.
+Note that the amplitude is a purely geometric quantity, which holds no information about power changes of the light due to absorption or \ac{LPIs}.
 The electric field outside the caustic region, which shall be discussed in more detail in Sec.~\ref{sec:SOLAS_caustic_cap}, can then be obtained with the formula,
 \begin{equation}
     \frac{|E(\tau)|}{|E(\tau=0)|} = \sqrt{\frac{P(\tau)}{P(\tau=0)}}A(\tau),
@@ -562,16 +570,16 @@ where $P$ is the power of the ray and the initial (vacuum) electric field $|E(\t
     \centering
     \caption{This illustrative figure demonstrates how the ray-amplitude is obtained from the area of neighbouring-rays for a beam propagating up a linear density gradient.
     Fig. a) explicitly shows the trajectory of a main-ray and its neighbour-rays in red and blue respectively, explicitly highlighting the beam's caustic region, where the amplitude of the light is capped.
-    Fig. b) plots the area of the main-ray in blue, which goes through a minimum at the caustic location as a function of the phase of the ray.
+    Fig. b) plots the area of the main-ray in blue (which goes through a minimum at the caustic location), as a function of the phase of the ray.
     Also shown are the uncapped and capped amplitudes of the ray.}%
     \label{fig:SOLAS_fieldcap_diagram}
 \end{figure}
 
 This method, which has been used successfully to model direct-drive \ac{CBET} in the \textsc{BeamCrosser} post-process code, is the approach taken to estimate the field in \textsc{Solas}.
-Explicitly, for every ray that initialised for a \textsc{Solas} calculation, an additional 3 `neighbour-rays' are initialised in an equilateral triangle around it, perpendicular to the initial direction of propagation at a random angle.
+Explicitly, for every ray that initialised for a \textsc{Solas} calculation, an additional 3 `neighbour-rays' are initialised in an equilateral triangle around it, perpendicular to the initial direction of propagation.
 Note that when a 2-D ray-trace is used, only 2 neighbour-rays are required as the rays cannot change separation in the out of plane direction.
 It is important to distinguish the dimension of the ray-trace, which is the number of dimensions in which rays can move in a simulation, to the dimension of the hydrodynamics.
-For example, a 1-D spherical direct-drive \ac{Rad-Hydro} simulation still requires a 3-D ray trace where rays can move in $x,y\&z$ for full accuracy.
+For example, a 1-D spherical direct-drive \ac{Rad-Hydro} simulation still requires a 3-D ray trace where rays can move in $x,\ y\ \&z$ for full accuracy.
 
 These neighbour-rays are then co-traced up to the phase of the `main-ray' to evaluate the area of the main ray on its phase front.
 Practically, the separation distance of the bundle of neighbour-rays (i.e. the side-length of the triangle, $\Delta l$) does not need to be infinitesimally small, but small enough that it accurately captures the local change of $|D(\tau)|$.
@@ -590,7 +598,7 @@ The 2 neighbour-rays of this highlighted main-ray are plotted in blue.
 Note that in this figure, the default initial main-neighbour-ray separation of $\Delta l=\lambda_0/10=0.035\ \mu\text{m}$ was used, but the separation has been magnified on the plot to visualise the amplitude reconstruction from the area more clearly.
 The locations of the main- and neighbour-rays after a single step of each main-ray are plotted as black and dark-blue spots respectively.
 The `area' of the neighbour-rays $S$, which in this 2-D raytrace example here is simply a distance, is plotted on~\ref{fig:SOLAS_fieldcap_diagram}.a as a dashed blue line between the neighbour-rays.
-The neighbour-rays are pushed until they have the same phase as the main-ray, $\varphi_{\text{ray}}$, at which point the area is evaluated.
+The neighbour-rays are pushed until they have the same phase as the main-ray, at which point the area is evaluated.
 
 %##################################################
 \subsubsection{Caustics and Ray-Sheets}%
@@ -600,7 +608,7 @@ The neighbour-rays are pushed until they have the same phase as the main-ray, $\
     \includegraphics[width=\linewidth]{Numerics/Images/Raysheets_withcyl.png}
     \centering
     \caption{This illustrative figure illustrates the concept of caustics and ray sheets.
-    In a), the trajectory of ray traversing up a linear density gradient are plotted.
+    In a), the trajectory of rays traversing up a linear density gradient are plotted.
     Separate colours are used for the incident and reflected sheets, which are separated by a caustic.
     In b), rays propagate up a density profile, $n_e=n_{\text{cr}}\exp{[ -(r_{\mu\text{m}}-20)/100 ]}$.
     Unlike in a), the ray caustics do not occur at their turning point, \textit{i.e.} the minimum radius.}%
@@ -618,20 +626,21 @@ This is illustrated in Fig.~\ref{fig:SOLAS_sheet_diagram}.a, where rays from a s
 As the density gradient is purely in the $y$ direction, each ray has translational symmetry in $x$ and therefore each ray-caustic is located at the ray turning point, $y\sim14\ \mu\text{m}$.
 The portions of the ray trajectories that fall before and after the caustic are separated into the `incident' and `reflected' sheets respectively and plotted in separate shades of blue.
 Fig.~\ref{fig:SOLAS_sheet_diagram}.b also plots rays from a single beam, but now propagating through a cylindrically symmetric $n_e$ profile.
-As can be seen from this figure, the caustic is not the same as the ray turning-point\footnote{Defined here as the location of maximal $n_e$ experienced along the ray trajectory.}, but the location that the amplitude diverges.
+As can be seen from this figure, the caustic is not the same as the ray turning-point\footnote{Defined here as the location of maximal $n_e$ experienced along the ray trajectory.}, but it is the location that the amplitude diverges.
 
-This means that unless the amplitude is tracked along each ray trajectory, the location of the caustic cannot be identified and rays cannot be separated into distinct sheets, both of which have important ramifications for ray-based \ac{CBET} models.
-Firstly, because the amplitude diverges, the field values can become very large and therefore must be capped to diffraction limited values, the method for which is discussed in more detail in Sec.~\ref{sec:SOLAS_caustic_cap}.
+Unless the amplitude is tracked along each ray trajectory, the location of the caustic cannot be identified and rays cannot be separated into distinct sheets, both of which have important ramifications for ray-based \ac{CBET} models.
+Firstly, because the amplitude diverges, the field values can become very large and therefore must be capped to diffraction limited values (the \textsc{Solas} methods for this are discussed in more detail in Sec.~\ref{sec:SOLAS_caustic_cap}).
+Power change of rays due to \ac{CBET} scale exponentially with field strength squared, so erroneously large field values are extremely problematic to accurately computing power changes.
 Additionally, if the beam cannot be separated into distinct sheets, then self-\ac{CBET}, where the reflected component of a beam interacts with the incident component of the same beam, must be neglected.
-In \textsc{Solas}, the neighbour-ray method allows the amplitude to be tracked along each ray, enabling caustic location and sheet-separation.
+In \textsc{Solas}, the neighbour-ray method allows the amplitude to be tracked along each ray, enabling caustic location identification and sheet-separation.
 Currently, it is assumed that each sheet has 2 sheet components, \textit{i.e.} an incident and reflected field, but it should be possible to extend this to multiple caustics to accurately model complex \ac{CBET} interactions such as target-stalk simulations~\cite{igumenshchev_effects_2009,igumenshchev_three-dimensional_2016,gatu_johnson_impact_2020}.
-This is an advantage of the forward ray tracing approach to \ac{CBET} modelling compared to inverse-ray-tracing, where only plasma profiles that result in a single caustic can be modelled~\cite{colaitis_inverse_2021}.
+This is an advantage of the forward ray tracing approach to \ac{CBET} modelling, compared to inverse-ray-tracing, where only plasma profiles that result in a single caustic can be modelled~\cite{colaitis_inverse_2021}.
 
 The phase of the light is also evolved along each ray trajectory in equations~\ref{eq:SOLAS_rays}, and therefore the coherent sum of all electric fields can be reconstructed which involves interference between sheets.
 The total electric field is,
 \begin{equation}%
     \label{eq:SOLAS_Ecoherent}
-    E = \Sigma_{j \text{sheets}}|E_j|\exp{\left( i(k_0\varphi_j-\pi\alpha_j/2) \right)},
+    E = \sum_{j}^{\text{sheets}} |E_j|\exp{\left( i(k_0\varphi_j-\pi\alpha_j/2) \right)},
 \end{equation}
 where $k_0$ is the vacuum wavevector of the light and $\alpha_j$ accounts for the $\pi/2$ phase shift that occurs when a ray changes sheet, \textit{i.e.} $\alpha_j=0$ for the incident sheet and $\alpha_j=1$ for the reflected sheet \cite{follett_validation_2022}.
 
@@ -649,7 +658,7 @@ The second of these options was tested but proved both to be the dominant comput
 \subsection{Caustic Field Capping}%
 \label{sec:SOLAS_caustic_cap}
 In the vicinity of beam-caustics, the electric field magnitude of a beam is limited by diffraction which is neglected in \ac{GO}, so ray based models which do not cap fields near caustics can experience divergent electric fields.
-For direct-drive simulations, significant amount of \ac{CBET} occur near caustics and therefore sensibly capping the field value is crucial for accurate simulations~\cite{colaitis_adaptive_2019}.
+For direct-drive simulations, a significant amount of \ac{CBET} occurs near caustics and therefore sensibly capping the field value is crucial for accurate simulations~\cite{colaitis_adaptive_2019}.
 This cannot be achieved without knowledge of the caustic location, which is a severe limitation to the predictive capability of \ac{CBET} codes that do not track the amplitude.
 This section shall describe two methods that have been implemented to cap the field values in the vicinity of laser caustics, the \ac{FL} and \ac{EI} approaches.
 
@@ -665,17 +674,17 @@ The field limiter approach is to cap all electric fields to this value,
         L = n_{\text{cr}}/|\nabla n_e|_\text{t},
     \end{gathered}
 \end{equation}
-where $n_{\text{t}}$ is the electron density at the caustic, $|\nabla n_e|_\text{t}$ is the magnitude of the electron density gradient at the caustic location~\cite{igumenshchev_crossed-beam_2012,follett_ray-based_2018,kruer_physics_2003}.
+where $n_{\text{t}}$ is the electron density at the caustic and $|\nabla n_e|_\text{t}$ is the magnitude of the electron density gradient at the caustic location~\cite{igumenshchev_crossed-beam_2012,follett_ray-based_2018,kruer_physics_2003}.
 The first term in the minimum is the standard field reconstruction from the amplitude away from caustics.
 The second term is the maximum of the Airy function and the third term is an improvement to the second term for near-normally incident rays~\cite{follett_validation_2022}.
-Fig.~\ref{fig:SOLAS_fieldcap_diagram}.b shows the capped amplitude obtained from the field limiter approach.
+Fig.~\ref{fig:SOLAS_fieldcap_diagram}.b plots the uncapped and capped amplitudes obtained from the field limiter approach for light propagating at an angle to a linear density gradient.
 
 %##################################################
 \paragraph*{Etalon Integral}
 The \ac{EI} method is an improvement to the \ac{FL}, which allows for deviations in the density profile away from linearity~\cite{colaitis_real_2019,kravcov_caustics_1999,kratsov_theory_2010}.
 Several distinct types of caustic exist for different geometries of problem.
 For example in direct-drive, the light reflecting from the critical surface forms a `fold'-type caustic, whereas focussing light leads to a more complex `cusp'-type caustic~\cite{lopez_metaplectic_2022}.
-If the form of the caustic is assumed, then an approximation of the total field in the vicinity of the caustic is formulated which allows for deviations from the ideal case.
+If the form of the caustic is assumed, then an approximation to the total field in the vicinity of the caustic is formulated, which allows for deviations from the ideal case.
 In the example of the direct-drive fold caustic, the field is assumed to be the sum of an Airy function and its derivative, which accounts for the deviations from linearity.
 An expression for the total field can be derived in terms of the ray-amplitude and phase before ($A_1$,$\varphi_1$) and after ($A_2$,$\varphi_2$) the caustic,
 \begin{equation}
@@ -701,7 +710,7 @@ The Etalon integral is applied in the `caustic-region', which in Refs.~\cite{asa
 where $\lambda_0$ is the vacuum wavelength of the light.
 
 Applying the \ac{EI} method requires evaluation of Eq.~\ref{eq:SOLAS_causticregion} to determine if a ray is inside its caustic region, which relies on interpolation of the phase of the other sheet from the same beam onto the ray location.
-If using nearest neighbour interpolation, which is used in \textsc{Solas} for interpolation of all field quantities onto rays, this means a resolution of $\Delta\ll\lambda_0$ must be used, which is a much higher resolution than is required for ray-tracing and \ac{CBET} without the \ac{EI}.
+If using nearest neighbour interpolation, such as in \textsc{Solas} for interpolation of all field quantities onto rays, this requires a grid resolution of $\Delta\ll\lambda_0$ must be used, which is a much higher resolution than is required for ray-tracing and \ac{CBET} without the \ac{EI}.
 Therefore, the \ac{EI} method is only used in \textsc{Solas} simulations for very high resolution grid test problems, such as those Sec.~\ref{sec:SOLAS_field_validation}.
 The alternative approach would be to implement linear interpolation from the field quantities all beams onto ray locations such as in Ref.~\cite{follett_validation_2022}.
 This was not deemed a viable approach however, because the mesh resolution for spherical simulations was found to not be well-enough angularly resolved to interpolate the phase with sufficient accuracy to the rays.
@@ -712,20 +721,16 @@ The standard procedure for \ac{CBET} simulations in \text{Solas} is to use the \
 \subsection{Field Reconstruction Validation}%
 \label{sec:SOLAS_field_validation}
 
-In this section several test problems will be presented that compare electric fields obtained using \textsc{Solas} field solver in the absence of \ac{CBET}, to those from the wave based solver \textsc{Lpse} in direct-drive relevant plasma profiles.
+In this section, several test problems will be presented that compare electric fields obtained using the \textsc{Solas} field solver in the absence of \ac{CBET}, to those from the wave based solver \textsc{Lpse} in direct-drive relevant plasma profiles.
 The \textsc{Lpse} results are presented in Ref.~\cite{follett_validation_2022}, and are available from the repository~\cite{follett_lpse_2022}.
-In all the following test problems, the laser has a vacuum wavelength, $\lambda_0=0.351\ \mu\text{m}$ and a Super-Gaussian intensity profile,
-\begin{equation}
-    I(r) = I_0 e^{-(r/\sigma)^{n_s}},
-\end{equation}
-where $r$ is the distance from the beam centre, perpendicular to the direction of propagation, $\sigma$ is the beam width and $n_s$ is the Super-Gaussian exponent.
+In all the following test problems, the laser has a vacuum wavelength, $\lambda_0=0.351\ \mu\text{m}$ and a Super-Gaussian intensity profile, defined in Eq.~\ref{eq:supgaus}.
 All 1-D and 2-D validation problems assume lasers polarised out of the simulation plane along the $z$ axis.
 The plasma density profiles are given by,
 \begin{equation}%
     \label{eq:SOLAS_test_ne}
     n_e(r) = n_0 (d/r)^{m},
 \end{equation}
-where $n_0/n_{text{cr}} = 1.165$, $d = 343\times S\ \mu\text{m}$, $m=3.78$ and $S$ changes the scale of the density profile, where $S=1$ corresponds to scale lengths from implosions using the full OMEGA laser-energy.
+where $n_0/n_{\text{cr}} = 1.165$, $d = 343\times S\ \mu\text{m}$, $m=3.78$ and $S$ changes the scale of the density profile, where $S=1$ corresponds to scale lengths from implosions using the full OMEGA laser-energy.
 These values where obtained from fitting the equation to 1-D \ac{Rad-Hydro} calculations using the \textsc{Lilac} code.
 
 %##################################################
@@ -741,15 +746,16 @@ These values where obtained from fitting the equation to 1-D \ac{Rad-Hydro} calc
 \end{figure}
 
 The first validation problem is for the case of light propagating normally up a density gradient.
-For this problem, 1-D Cartesian geometry is used, so the density profile is obtained by transforming the spatial coordinate from equation~\ref{eq:SOLAS_test_ne}, $r\rightarrow x-36.42\ \mu\text{m}$, and in this problem, the beam is travelling in the $+\hat{x}$ direction, with $I_0 = 14\ \text{W}/\text{cm}^{2}$.
+For this problem, 1-D Cartesian geometry is used, so the density profile is obtained by transforming the spatial coordinate from equation~\ref{eq:SOLAS_test_ne}, $r\rightarrow x-36.42\ \mu\text{m}$.
+For this problem, the beam is travelling in the $+\hat{x}$ direction, with $I_0 = 14\ \text{W}/\text{cm}^{2}$.
 Only a single ray was used because the ray trace is completely 1-D.
 A scale factor of $S=1/16$ was used, resulting in a critical surface at $x\sim 14.14\ \mu\text{m}$.
 The simulation has bounds $x\in [-16,20]\ \mu\text{m}$ with a resolution of $\Delta x\sim 1\ \text{nm}$.
-A high resolution is used here in order to resolve the highly oscillatory coherent field sum.
+A high resolution is used here in order to resolve the highly oscillatory coherent field sum and also enables use of the \ac{EI} field capping method.
 Power changes of the rays due to \ac{inv-Brem} and \ac{CBET} are also neglected.
 
 The laser in this problem travels up the density gradient, reflecting from the critical surface.
-For normally incident light up a linear gradient, the critical density is the location of the caustic, because the ray area, $S(\tau)$, is constant and therefore the amplitude diverges when $\varepsilon\rightarrow 0$.
+For light travelling normally up density gradient, the critical density is the location of the caustic, because the ray area, $S(\tau)$, is constant and therefore the amplitude diverges when $\varepsilon\rightarrow 0$.
 The total field is given by the coherent sum between the incident and reflected sheets.
 Figure~\ref{fig:SOLAS_1d_field_test}.a shows the \textsc{Lpse} result compared to the field obtained from \textsc{Solas} without a cap on the caustic field; using the \ac{FL} approach; and using the \ac{EI} approach.
 The only difference between the \textsc{Solas} methods occurs in the caustic region\footnote{\textit{i.e.} where equation~\ref{eq:SOLAS_causticregion} is satisfied.}, shown more clearly in figure~\ref{fig:SOLAS_1d_field_test}.b, which in this problem is for $x>13.64\ \mu\text{m}$.
@@ -770,7 +776,7 @@ This is not deemed to be necessary for accurate \ac{CBET} modelling of OMEGA-sca
     Figure a) plots the field from \textsc{Lpse} on the left side and the \textsc{Solas} field on the right for the $1/64$ OMEGA scale simulation.
     Figure b) shows the \textsc{Solas} field from the $1/4$ scale simulation which, when compared to a), demonstrates that as scale increases, the relative size of the caustic region decreases.
     Figures c), d) \& e) are lineouts near the caustic region along $y$ from the $1/64$ scale simulations at $x=0,\ 3\ \text{\&}\ 6\ \mu\text{m}$ respectively, the positions of which are indicated by the white lines on a).
-    Note that the circular features in the field in figures a) and b) arise due to aliasing artefacts between the true solution scale, with the resolution of the image and, or simulation grid.}%
+    Note that the circular features in the field in figures a) and b) arise due to aliasing artefacts between the true solution scale, with the resolution of the image and/ or simulation grid.}%
     \label{fig:SOLAS_2d_field_test}
 \end{figure}
 
@@ -781,7 +787,7 @@ Simulations at $1/64$ and $1/4$ scales are presented here.
 The $S=1/64$ simulation had bounds $x,y\in [-20,20]\ \mu\text{m}$ and resolution $\Delta\ \sim 20\ \text{nm}$.
 The $S=1/4$ simulation had bounds $x,y\in [-200,200]\ \mu\text{m}$ and resolution $\Delta\ \sim 100\ \text{nm}$.
 For both scales, a single beam propagated parallel to $+\hat{y}$ and was centred on $x=0\ \mu\text{m}$.
-The beam widths were $\sigma=8\ \text{\&}\ 115\ \mu\text{m}$ for the $1/64$ and $1/4$ scales respectively.
+The beam widths were $\sigma=8\ \text{\&}\ 115\ \mu\text{m}$ for the $1/64$ \& $1/4$ scales respectively.
 The standard uniform sampling procedure described in Sec.~\ref{sec:SOLAS_ray_init} was used with $C_N=2$.
 \ac{CBET} and \ac{inv-Brem} were again both neglected.
 
@@ -805,7 +811,7 @@ To remind the reader, this choice is because the implementation of the \ac{EI} m
     \includegraphics[width=0.9\linewidth]{Numerics/Images/CBET_flowchart.PNG}
     \centering
     \caption{A flowchart which illustrates the \textsc{Solas} \ac{CBET} model operation loop.
-    $F_i$ is shorthand for the total field from all laser beams and sheets at pump depletion iteration $i$ and $f_{\text{CP}}$ is the modifier to the caustic pump multiplier, described in Sec.~\ref{sec:energy_conserv_iters} of the $j^{\text{th}}$ energy conservation iteration.
+    $F_i$ is shorthand for the total field from all sheets at pump depletion iteration $i$ and $f_{\text{CP}}$ is the modifier to the caustic pump multiplier, described in Sec.~\ref{sec:energy_conserv_iters} of the $j^{\text{th}}$ energy conservation iteration.
     $\Delta E$ denotes the energy conservation error, which is the total incident power minus deposited power and power exiting the grid.}%
     \label{fig:SOLAS_CBET_flowchart}
 \end{figure}
@@ -813,16 +819,16 @@ To remind the reader, this choice is because the implementation of the \ac{EI} m
 This section shall describe the implementation of the \ac{CBET} model in \textsc{Solas}.
 Initially a broad overview of the model shall be provided.
 Fig.~\ref{fig:SOLAS_CBET_flowchart} shows a flowchart which illustrates the operational loop of the \ac{CBET} model when coupled to \textsc{Chimera}.
-The initial `field reconstruction' raytrace in the absence of \ac{CBET}, follows the procedure described in Sec.~\ref{sec:SOLAS_field_reconstruc} to obtain the field for every beam and sheet on the \textsc{Solas} mesh.
+The initial `field reconstruction' raytrace in the absence of \ac{CBET}, follows the procedure described in Sec.~\ref{sec:SOLAS_field_reconstruc} to obtain the field for every sheet on the \textsc{Solas} mesh.
 Ray-based \ac{CBET} models, including the model in \textsc{Solas}, typically must perform repeated ray-traces through the same hydrodynamic profiles to account for pump depletion and optionally energy conservation.
 
 The pump depletion loop, described in more detail in Sec.~\ref{sec:pump_dep_iters} is a fixed point iteration method to obtain the new \ac{CBET} laser fields.
 This loop is necessary as each iteration produces a new background field which leads to a different \ac{CBET} interaction, which converges when \ac{CBET} has been fully accounted for.
-The resultant solution will not necessarily conserve energy if \ac{CBET} occurs in the presence of laser caustics.
+The resultant solution will not necessarily conserve energy if \ac{CBET} occurs in the presence of laser caustics, due to errors in field reconstruction and \ac{CBET} scattering in these locations.
 To remedy this, additional energy conservation iterations can be performed, where a multiplier on the \ac{CBET} gain in caustics can be varied to conserve laser energy.
-Although this is an ad-hoc correction, it is found to lead to better agreement with higher fidelity solver~\cite{follett_validation_2022}.
+Although this is an ad-hoc correction, it is found to lead to better agreement with higher fidelity solver, as is explicitly demonstrated in Sec.~\ref{sec:SOLAS_16beam_CBET}.
 
-\ac{CBET} does not affect the trajectory of light, just its energy and therefore repeating the calculations of ray trajectories is both computationally costly and unnecessary.
+\ac{CBET} does not affect the trajectory of light, only its power and therefore repeating the calculations of ray trajectories is both computationally costly and unnecessary.
 Ray locations are therefore stored in a memory-efficient, linked-list to be re-used in both loops.
 It is found in \textsc{Solas} that caching the ray locations in this manner typically leads to an order of magnitude speed up compared to performing a new raytrace for every iteration.
 
@@ -833,7 +839,7 @@ It is found in \textsc{Solas} that caching the ray locations in this manner typi
 
 Ray-tracing calculations assume steady state hydrodynamic profiles for rays propagating through the plasma and that the field of a ray propagates as a plane wave along the ray path~\cite{ding_identify_2020}.
 The linear gain theory of \ac{SBS} can therefore be used \cite{randall_theory_1981}, which describes the steady state energy change of locally plane wave light which passes through uniform plasma conditions~\cite{myatt_wave-based_2017}.
-Linear in this context means that the plasma response to the driving fields is sufficiently small to be treated in linear expansions.
+Linear in this context means that the plasma response to the driving fields is sufficiently small to be treated by a linear expansion.
 The uniform assumption here means that the plasma conditions must not vary significantly over the interaction time or length scales.
 For direct-drive conditions, hydrodynamic time scales are typically $\sim100 \text{ps}$ and \ac{CBET} saturates on the order of $\sim10 \text{ps}$.
 Ray steps are also limited to grid cell boundaries, which are smaller than hydrodynamic length-scales, so it is safe to assume a locally uniform plasma background when this model is applied only over a single ray step at a time.
@@ -862,7 +868,7 @@ This summation assumes that the fields from different sheets are uncorrelated.
 For direct-drive conditions, this assumption is broadly correct, apart from when a probe sheet undergoes a \ac{CBET} interaction in the caustic region of the probe.
 In this case, the \textit{Coherent Caustic} correction is applied, which is described in Sec.~\ref{sec:SOLAS_coherent_caustic}.
 
-Note that when computing both \ac{inv-Brem} and \ac{CBET}, the partition of power lost to each interaction is computed as,
+Note that when computing both \ac{inv-Brem} and \ac{CBET}, the partition of power lost to each interaction can be computed as,
 \begin{equation}
     \label{eq:CBET_deposition}
     \begin{gathered}
@@ -877,13 +883,13 @@ The deposition, $\Delta P_{i,\text{IB}}$, can then be interpolated to the grid a
 
 The two formulations of the gain shall be presented below.
 Broadly, the gain describes the plasma response to the 2 driving fields and therefore dictates the energy transfer between them.
-They differ in that the fluid formulation derives a gain by linearising the fluid equations for the plasma response whereas the kinetic formulation is obtained from a linearisation of the Vlasov equation.
+They differ in that the fluid formulation arises by deriving a gain from linearised fluid equations for the plasma response, whereas the kinetic formulation is obtained from a linearisation of the Vlasov equation.
 The kinetic gain is more complete and should be used for comparison to experimental observables, whereas the fluid gain is useful for comparison with \textsc{Lpse}, which directly solves the linearised fluid equations.
 
 %##################################################
 \paragraph*{Fluid CBET Gain}
 
-The linear fluid gain, described by Randall \textit{et al.} in Ref.~\cite{randall_theory_1981} is,
+The linear fluid gain, derived by Randall \textit{et al.} in Ref.~\cite{randall_theory_1981} is,
 \begin{equation}
     \label{eq:SOLAS_CBET_fluid_gain}
     \begin{gathered}
@@ -892,7 +898,7 @@ The linear fluid gain, described by Randall \textit{et al.} in Ref.~\cite{randal
         \eta_{ij} = \frac{ (\omega_j-\omega_i) - \vec{k}_s.\vec{u} }{\omega_s},
     \end{gathered}
 \end{equation}
-where $T_e$ \& $T_i$ are the electron \& ion temperatures in $\text{eV}$ respectively, $\omega_i$ \& $\vec{k}_i$ are the frequency and wavevector of sheet $i$ respectively, $Z$ is the ionisation state, $\vec{u}$ is the fluid velocity, $\omega_s = |\vec{k}_s|c_s$ is the \ac{IAW} frequency, $\vec{k}_s = \vec{k}_j - \vec{k}_i$ is the \ac{IAW} wavevector, $c_s = \sqrt{e(Z T_e + 3 T_i)/m_i}$ is the sound speed and $\nu_{\text{ia}}$ is the \ac{IAW} damping rate.
+where $T_e$ \& $T_i$ are the electron \& ion temperatures in $\text{eV}$ respectively, $\omega_i$ \& $\vec{k}_i$ are the frequency \& wavevector of sheet $i$ respectively, $Z$ is the ionisation state, $\vec{u}$ is the fluid velocity, $\omega_s = |\vec{k}_s|c_s$ is the \ac{IAW} frequency, $\vec{k}_s = \vec{k}_j - \vec{k}_i$ is the \ac{IAW} wavevector, $c_s = \sqrt{e(Z T_e + 3 T_i)/m_i}$ is the sound speed and $\nu_{\text{ia}}$ is the \ac{IAW} damping rate.
 This formulation is useful for comparison with \textsc{Lpse}, which directly solves the linearised fluid equations and therefore in situations where the \ac{GO} assumptions are valid, the two methods should give similar results.
 However, it is generally not considered to be a good choice of model to compare to experiment.
 The damping rate, $\nu_{\text{ia}}$ does not have an analytic formula for arbitrary plasma conditions and therefore must be prescribed.
@@ -915,7 +921,7 @@ The linear kinetic \ac{CBET} gain, described by Michel in Ref.~\cite{michel_satu
     \end{gathered}
 \end{equation}
 where $\chi_e$ \& $\chi_i$ are the electron \& ion susceptibilities respectively, $f_{\alpha}$ \& $Z_{\alpha}$ are the number fraction \& ionisation of ion species $\alpha$ respectively, $\text{Z}'$ is the derivative of the plasma dispersion function, $v_{Tn}=\sqrt{e T_n/m_n}$ is the thermal velocity of species $n$ with temperature $T_n$ in eV and mass $m_n$, $\lambda_{De}=\sqrt{\varepsilon_0 e T_e / n_e e^2}$ is the electron Debye length and $\langle Z \rangle = \sum_{\alpha}f_{\alpha}Z_{\alpha}$ is the average ionisation.
-Note that the susceptibilities $\chi_{i,e}$ are complex, which arises from the complex plasma dispersion function.
+Note that the susceptibilities $\chi_{i,e}$ are complex.
 In order to compute $\text{Z}'$ in \textsc{Solas}, the \texttt{CALGO} library is used to numerically compute the value of the \textit{Fadeeva function}, $w(x)$ \cite{poppe_algorithm_1990}.
 This is then related to the plasma dispersion function and its derivative by,
 \begin{equation}
@@ -926,7 +932,7 @@ This is then related to the plasma dispersion function and its derivative by,
     \end{gathered}
 \end{equation}
 where $i=\sqrt{-1}$ and $w(x)$, $\text{Z}(x)$ and $\text{Z}'(x)$ are all complex numbers \cite{fried_plasma_1961}.
-Unlike the fluid gain, this correctly captures the resonance and has no effective free parameters, making it the judicious choice for predictive simulations.
+Unlike the fluid gain, this thoery correctly captures the resonance and has no effective free parameters, making it the judicious choice for predictive simulations.
 The plasma dispersion function is however relatively slow to numerically evaluate and dominates computational runtime if evaluated every ray step.
 \textsc{Solas} therefore calculates $\gamma_{ij}$ between each sheet in every grid cell at the end of the field reconstruction ray trace (from Fig.~\ref{fig:SOLAS_CBET_flowchart}) and then interpolates this pre-calculated value onto the ray locations for the pump-depletion iterations.
 This reduces computational runtimes by orders of magnitude for many beam direct-drive simulations, but has an associated memory overhead, which is discussed in more detail in Sec.~\ref{sec:SOLAS_memory}.
@@ -959,7 +965,7 @@ This persistent mode-1 was experimentally observed from neutron time of flight d
 \begin{figure}[t!]
     \includegraphics[width=1.0\linewidth]{Numerics/Images/caustic_region_diagram.png}
     \centering
-    \caption{A series of figures which illustrate how the caustic region identification in \textsc{Solas} work.
+    \caption{A series of figures which illustrate how the caustic gain truncation and caustic region identification algorithms in \textsc{Solas} work.
     Figure a) shows a laser, separated into incident and reflected sheets by a caustic, propagating up and reflecting in a linear density ramp.
     \ac{CGT} is illustrated in b) where a cell is separated into a \textit{lit} and \textit{unlit} region by the reconstructed \textit{caustic plane}.
     Figures c) and d) illustrate the method used to identify the \textit{caustic region}, where the coherent caustic modifier is applied.
@@ -969,7 +975,7 @@ This persistent mode-1 was experimentally observed from neutron time of flight d
 
 For rays propagating through \textsc{Solas} cells, nearest neighbour interpolation is used to interpolate field quantities to the rays.
 This is generally an adequate approximation for field magnitudes, frequencies and wavevectors, which vary over greater length scales than typical cell resolutions $\mathcal{O}(1 \mu\text{m})$, apart from in the vicinity of a caustic \cite{follett_validation_2022}.
-Near caustics, rays turn sharply and fields have a very sharp \textit{cut off} as be seen for example in Fig.~\ref{fig:SOLAS_2d_field_test}.
+Near caustics, rays turn sharply and fields have a very sharp \textit{cut off} as be seen in the lineouts from Fig.~\ref{fig:SOLAS_2d_field_test}.
 The sharp turning of rays mean that $\vec{k}$ can vary rapidly within a cell.
 Although \textsc{Solas} does have variable radial resolution, as described in Sec.~\ref{fig:SOLAS_combined_cells}, this resolution is limited to the minimum radial cell size from the hydrodynamic grid, which is not dictated from laser parameters and cells are typically larger than the caustic region width $\mathcal{O}(\lambda_0)$.
 The issue of $\vec{k}$ variation is not addressed in \textsc{Solas}, but linear interpolation or a truly adaptive mesh, separate from the \textsc{Chimera} grid could be implemented to address this.
@@ -980,13 +986,13 @@ This method separates cells into \textit{lit} and \textit{unlit} regions.
 If rays travel in the unlit region, then the \ac{CBET} gain is not applied.
 For example, Fig.~\ref{fig:SOLAS_caustic_region}.a shows a beam propagating up a linear density gradient, separated by the caustic into incident and reflected sheets.
 Fig.~\ref{fig:SOLAS_caustic_region}.b shows a zoomed in view of in the vicinity of the caustic of the incident sheet ray locations, plotted as grey dots.
-If a ray from another beam were present with $14.3 \lesssim y < 15\ \mu\text{m}$, nearest neighbour interpolation would lead to ray undergoing a \ac{CBET} interaction occuring in this \textit{unlit} region, where no rays from the pump sheet are present.
+If a ray from another beam were present with $14.3 \lesssim y < 15\ \mu\text{m}$, nearest neighbour interpolation would lead to ray undergoing a \ac{CBET} interaction in this \textit{unlit} region, where no rays from the pump sheet are present.
 Field magnitudes in this caustic region are typically large, so even though this is a small region of space, it can lead to significant errors, especially at lower resolutions.
 
 The \ac{CGT} algorithm described by Follett in Ref.~\cite{follett_ray-based_2018} defines the \textit{lit} region for each sheet by creating a mesh of the caustic locations from every ray on the sheet and only applying \ac{CBET} gains in on the side of this mesh that rays traversed.
 A different algorithm has been developed for \textsc{Solas}, which geometrically splits each cell into \textit{lit} and \textit{unlit} regions by a \textit{caustic plane} if at least one ray caustic occurs in the cell.
 The \textit{caustic plane}\footnote{In cylindrical and spherical simulation geometries, the `planes' are defined in the native coordinate system, which creates manifolds that better reflect the assumed geometry of the problem.} is defined by a point $\vec{x}_{\text{caus}}$ and normal $\hat{\vec{n}}_{\text{caus}}$.
-The location, $vec{x}_{\text{caus}}$, is simply the average of all ray caustic locations from the sheet present in the cell, for example shown in Fig.~\ref{fig:SOLAS_caustic_region}.b by the small pink circles for each ray caustic and the larger pink square for the cell averaged location.
+The location, $\vec{x}_{\text{caus}}$, is simply the average of all ray caustic locations from the sheet present in the cell, for example shown in Fig.~\ref{fig:SOLAS_caustic_region}.b by the small pink circles for each ray caustic and the larger pink square for the cell averaged location.
 The normal is estimated by the average over all ray caustics in the cell of the ray tangent vector just after the caustic $\hat{\vec{t}}_{\text{After}}$, minus the velocity just before $\hat{\vec{t}}_{\text{Before}}$,
 \begin{equation}
     \hat{\vec{n}}_{\text{caus}} = \left\langle \frac{ \hat{\vec{t}}_{\text{After}} - \hat{\vec{t}}_{\text{Before}} }{ | \hat{\vec{t}}_{\text{After}} - \hat{\vec{t}}_{\text{Before}} | } \right\rangle,
@@ -997,8 +1003,9 @@ The planes defined by these points and normals for each cell that contains a she
 If a probe ray at location $\vec{x}_{\text{probe}}$ is propagating in a cell where there is a pump sheet caustic, it will only experience a \ac{CBET} interaction if $\hat{\vec{n}}_{\text{caus}}.(\vec{x}_{\text{probe}} - \vec{x}_{\text{caus}})>0$.
 Rays from other sheets also have their steps limited by the caustic plane.
 
-This is a slightly lower fidelity implementation of the more complete \ac{CGT} model in Ref.~\cite{follett_ray-based_2018}, which can represent caustics which,  within a grid cell, are not locally well approximated by planes.
-It is however simpler to implement and does act to effectively increase the resolution of the cells near caustics.
+This is a slightly lower fidelity implementation of the more complete \ac{CGT} model from Ref.~\cite{follett_ray-based_2018}.
+The model implemented by Follett can represent caustics which, within a grid cell, are not locally well approximated by planes.
+The \textsc{Solas} model is however simpler to implement and does act to effectively increase the resolution of the cells near caustics.
 The caustic test problem presented in Sec.~\ref{sec:SOLAS_CBET_caustic_test} illustrates the effectiveness of the \textsc{Solas}-\ac{CGT} model at reducing energy conservation errors for caustic \ac{CBET} interactions where the grid cells are significantly larger than the caustic region.
 
 %################################################################################
@@ -1009,10 +1016,11 @@ The caustic test problem presented in Sec.~\ref{sec:SOLAS_CBET_caustic_test} ill
 In Sec.~\ref{sec:SOLAS_ray_power_change}, in order to obtain Eq.~\ref{eq:SOLAS_CBET_power_change_allsheets}, it was assumed that when a ray in undergoing \ac{CBET} interactions with multiple pump sheets, that the field from the pump sheets can be treated independently.
 This is equivalent to assuming that over a ray propagation path, $\text{d}\tau$, the fields from the sheets do not add coherently,
 \begin{equation}
-    \label{eq:}
-    \int\text{d}\tau \sum_{j}^{\text{sheets}} |E_j|^2 \approx \int\text{d}\tau \ \big| \sum_{j}^{\text{sheets}} E_j \big|^2,
+    \label{eq:SOLAS_coherent_incoherent_field}
+    \int\text{d}\tau \sum_{j}^{\text{sheets}} |E_j|^2 \approx \int\text{d}\tau \ \Bigl| \sum_{j}^{\text{sheets}} E_j \Bigr|^2,
 \end{equation}
-where $E_j$ is the field from the $j^{\text{th}}$ sheet, which is valid for all regions of space where the phase from different sheets are uncorrelated.
+where $E_j$ is the field from the $j^{\text{th}}$ sheet.
+Eq.~\ref{eq:SOLAS_coherent_incoherent_field} is valid for all regions of space where the phase from different sheets are uncorrelated.
 For direct-drive configurations, this assumption holds everywhere apart from the caustic region of the pump sheet, where fields add coherently.
 Thus, the coherent sum of fields in the caustic region is larger than the incoherent sum, so without correcting for this, \ac{CBET} scattering through a pump beam in its caustic region will be underestimated.
 
@@ -1025,22 +1033,22 @@ By making the same assumption as used to obtain Eq.~\ref{eq:SOLAS_etlon_int_fiel
     \label{eq:MCC}
     M_{\text{CP}} = 1 + \sin ( \phi_{\text{refl}} - \phi_{\text{inc}} ),
 \end{equation}
-which should be applied in the caustic region, as defined in Eq.~\ref{eq:SOLAS_causticregion}, where $|\varphi_1-\varphi_2|\leq\lambda_0/2$.
-As stated in the discussion in Sec.~\ref{sec:SOLAS_caustic_cap}, grid cells are typically larger than the size of the caustic region ($\mathcal{O}(\lambda_0)$) and \textsc{Solas} does not include linear interpolation of field quantities.
+which should be applied in the caustic region, which is defined in Eq.~\ref{eq:SOLAS_causticregion}, as the region where $|\varphi_1-\varphi_2|\leq\lambda_0/2$.
+As stated in the discussion in Sec.~\ref{sec:SOLAS_caustic_cap}, grid cells are typically larger than the size of the caustic region, $\mathcal{O}(\lambda_0)$, and \textsc{Solas} does not include linear interpolation of field quantities.
 Therefore, Eq.~\ref{eq:MCC} cannot robustly be evaluated at the relevant scales.
-The caustic region is identified by geometric a geometric algorithm, similar to the \textit{caustic plane} method discussed in Sec.~\ref{sec:SOLAS_caustic_gain_truncation} and the average value of the coherent caustic multiplier is used,
+The caustic region is identified by a geometric algorithm, similar to the \textit{caustic plane} method discussed in Sec.~\ref{sec:SOLAS_caustic_gain_truncation} and the `average' value of the coherent caustic multiplier is used,
 \begin{equation}
     \label{eq:average_MCC}
     M_{\text{CP}} = 1 + 2/\pi,
 \end{equation}
 when a ray undergoes \ac{CBET} with a pump sheet in its caustic region.
-This coherent caustic correction increases the \ac{CBET} scattering and is an important addition to make sure that \ac{CBET} models are energy conserving.
+This coherent caustic correction increases the \ac{CBET} scattering and is an important addition to make sure that ray-based \ac{CBET} models are energy conserving.
 
-As stated above, \textsc{Solas} does not employ linear interpolation of phases and therefore to estimate when a ray is in the caustic region of another beam, $|\varphi_1-\varphi_2|\leq\lambda_0/2$, an alternative algorithm has been developed.
-Similarly to the \textit{caustic plane} method from Sec.~\ref{sec:SOLAS_caustic_gain_truncation}, this algorithm works by finding planes that separate cells to increase the resolution of cells which use nearest neighbour interpolation of fields.
+The geometric approach that has been developed to estimate when a ray is in the caustic region of another beam, ($|\varphi_1-\varphi_2|\leq\lambda_0/2$), shall now be outlined.
+Similar to the \textit{caustic plane} method from Sec.~\ref{sec:SOLAS_caustic_gain_truncation}, this algorithm works by finding planes that divide cells and thus effectively increase their resolution, improving the accuracy of the nearest neighbour interpolation.
 The key assumptions of the method are that the boundary of the caustic region can be treated locally in grid cells as a plane and that the caustic region is approximately where ray amplitudes are greater than the \ac{FL} capped amplitude, $A_{\text{ray}}>A_{\text{FL}}$.
 Fig.~\ref{fig:SOLAS_caustic_region}.c plots the trajectory of incident sheet rays from Fig.~\ref{fig:SOLAS_caustic_region}.a, with the locations of capped \& uncapped rays plotted as small transparent red \& blue dots respectively.
-The average value of each of these locations is represented by the larger blue ($\langle\vec{x}_{\text{cap}}\rangle$) and red squares ($\langle\vec{x}_{\text{uncap}}\rangle$) respectively, which is stored, where present, in each \textsc{Solas} grid cell.
+The average value of each of these locations is represented by the larger blue ($\langle\vec{x}_{\text{cap}}\rangle$) and red squares ($\langle\vec{x}_{\text{uncap}}\rangle$) respectively, which are stored (only where present), in each \textsc{Solas} grid cell.
 The region of the cell occupied by these capped (blue) ray locations is assumed to be equivalent to the caustic region.
 The validity of the assumption was tested by conducting high resolution simulations of the 2-D reflected beam field reconstruction test in Sec.~\ref{sec:SOLAS_field_validation} to accurately reconstruct the phase and amplitudes of incident and reflected sheets on a high resolution mesh.
 It was found that the assumption is adequate, although it typically slightly overestimates the width of the caustic region by $\mathcal{O}(10 \%)$.
@@ -1055,7 +1063,7 @@ To geometrically estimate the caustic region in cells which contain both capped 
         \hat{\vec{n}}_{\text{CR}} = \frac{\langle\vec{x}_{\text{cap}}\rangle - \langle\vec{x}_{\text{uncap}}\rangle}{ | \langle\vec{x}_{\text{cap}}\rangle - \langle\vec{x}_{\text{uncap}}\rangle | },
     \end{gathered}
 \end{equation}
-where $\hat{\vec{n}}_{\text{CR}}$ is defined such that it points toward to caustic region.
+where $\hat{\vec{n}}_{\text{CR}}$ is defined such that it points toward the caustic region.
 For a probe ray propagating through a mesh which contains a pump field, the ray is inside the caustic region if $\hat{\vec{n}}_{\text{CR}}.(\vec{x}_{\text{probe}} - \vec{x}_{\text{CR}})>0$, under which circumstances, the pump-probe \ac{CBET} gain is multiplied by the average value of $M_{\text{CP}}$ defined in~\ref{eq:average_MCC}.
 This is illustrated in Fig.~\ref{fig:SOLAS_caustic_region}.c by the purple dashed lines.
 If a cell contains both a \textit{caustic region plane} and a \textit{caustic plane} (from Sec.~\ref{sec:SOLAS_caustic_gain_truncation}), then the ray must be inside the caustic and on the lit side of the caustic to undergo \ac{CBET} with $M_{\text{CP}}$ applied.
@@ -1077,7 +1085,7 @@ $N_g$ is a single number and $N_f$ represents all field information, so for simu
 It is therefore important to use a memory efficient method to store this data so that large scale, 3-D simulations can be completed.
 \textsc{Solas} utilises pointers in each grid cell to dynamically allocate the field data, such that only where a sheet is present is its corresponding field magnitude, phase \textit{etc.} stored.
 Additionally, gains between sheets are an attribute of the field data and are stored as single-precision floats, rather than the native \textsc{Solas} double precision, which also reduces memory costs for large simulations.
-These measures significantly reduces memory overhead for multidimensional \ac{CBET} simulations, however high resolution 3-D simulations are still extremely memory intensive, which is an issue also experienced by \textsc{Ifriit}, the other 3-D \ac{CBET} code coupled to hydrodynamics.
+These measures significantly reduce memory overhead for multidimensional \ac{CBET} simulations, however high resolution 3-D simulations are still extremely memory intensive, which is an issue also experienced by \textsc{Ifriit}, the other 3-D \ac{CBET} code coupled to hydrodynamics.
 
 %################################################################################
 %################################################################################
@@ -1090,7 +1098,7 @@ These measures significantly reduces memory overhead for multidimensional \ac{CB
     \caption{This figure shows the results of successive pump depletion iterations for an illustrative simulation of 2 beams crossing and undergoing a \ac{CBET} resonance in a uniform plasma background.
     Each beams' rays from the field reconstruction ray trace are plotted in a), where more opaque rays indicate a higher power.
     Panel b) plots the reconstructed intensity from this ray trace, where $i=0$ indicates the field reconstruction ray trace and therefore no \ac{CBET} occurs.
-    Panels c) \& d) plot the intensity reconstructed from the $1^{\text{st}}$ \& $7^{\text{th}}$ pump depletion iterations, where the effect of transfer of powers between beams due to \ac{CBET} is evident.
+    Panels c) \& d) plot the intensity reconstructed from the $1^{\text{st}}$ \& $7^{\text{th}}$ pump depletion iterations respectively, where the effect of transfer of powers between beams due to \ac{CBET} is evident.
     Panel e) plots the convergence parameter from the simulation over successive pump depletion iterations, with convergence defined here as $K_{\text{Conv},0}=10^{-6}$.}%
     \label{fig:PumpDepIters}
 \end{figure}
@@ -1099,8 +1107,8 @@ The field reconstruction ray trace (the initial ray trace performed in the absen
 This field is discretised on the \textsc{Solas} mesh using nearest neighbour interpolation, so that a ray passing through a cell updates the field in that cell.
 Rays can then be re-traced through this mesh and undergo changes in power due to \ac{CBET} interactions with the fields from other sheets.
 The solution obtained from a single raytrace with \ac{CBET} is not the true solution however, because the field that the rays see throughout the \ac{CBET} raytrace is not dynamically updated by the change in ray power due to \ac{CBET} as they propagate.
-This necessitates iteratively solving the ray trace to account for \ac{CBET}, whereby for iteration $i$, the rays from sheet $j$ propagate through the mesh and undergo \ac{CBET} through $|E_{sheet\neq j}^{i-1}|$, while building up a new field, $|\tilde{E}_{j}^{i}|$.
-The new fields \textit{build-up}, $|\tilde{E}_{j}^{i}|$, are introduced for the next iteration.
+This necessitates iteratively solving the ray trace to account for \ac{CBET} in \textit{pump depletion iterations}, whereby for iteration $i$, the rays from sheet $j$ propagate through the mesh and undergo \ac{CBET} through $|E_{sheet\neq j}^{i-1}|$, while building up a new field, $|\tilde{E}_{j}^{i}|$.
+The new \textit{build-up} fields, $|\tilde{E}_{j}^{i}|$, are introduced for the next iteration.
 This loop is repeated until convergence of the field has been achieved.
 Convergence is tested each iteration ($i>0$) against the total power of rays $\tilde{P}_{j,n}^{i}$, from each sheet $j$ travelling through each cell, explicitly defined by the convergence parameter,
 \begin{equation}
@@ -1110,13 +1118,13 @@ where $K_{\text{Conv},0}$ is a user defined parameter, typically set to $10^{-5}
 
 This procedure is illustrated in Fig.~\ref{fig:PumpDepIters} for a simple, illustrative problem of 2 beams crossing in a uniform, stationary plasma background with a frequency difference between the beams tuned to give a \ac{CBET} resonance.
 The effect of \ac{inv-Brem} deposition has been neglected in this simulation.
-Fig~\ref{fig:PumpDepIters}.a shows the ray tajectories for the two crossing beams and Fig.~\ref{fig:PumpDepIters}.b plots the intensity from the field reconstruction iteration, without \ac{CBET}.
-The intensities after one \& 7 pump depletion iterations are plotted in Fig.~\ref{fig:PumpDepIters}.c \& Fig.~\ref{fig:PumpDepIters}.d respectively, which show that a single re-trace through the no-\ac{CBET} fields does not return the converged solution.
+Fig~\ref{fig:PumpDepIters}.a shows the ray trajectories for the two crossing beams and Fig.~\ref{fig:PumpDepIters}.b plots the intensity from the field reconstruction iteration, without \ac{CBET}.
+The intensities after one \& seven pump depletion iterations are plotted in Fig.~\ref{fig:PumpDepIters}.c \& Fig.~\ref{fig:PumpDepIters}.d respectively, which show that a single re-trace through the no-\ac{CBET} fields does not return the converged solution.
 Fig~\ref{fig:PumpDepIters}.e plots the convergence parameter after each iteration, illustrating that 7 iterations was required to obtain the converged solution, plotted in Fig~\ref{fig:PumpDepIters}.d.
 
 For many beam simulations with complicated beam trajectories and many overlapping crossings such as direct-drive calculations, the problem is asymptotically unstable.
-This means that for iteration $i$, allowing rays to undergo \ac{CBET} in the full $|\tilde{E}_{sheet\neq j}^{i-1}|$ causes unbounded gains on ray powers leading to divergent results for $|E_{j}^{i}|$.
-Numerical damping is therefore applied for these caluclations to stabilise the solution.
+This means that for iteration $i$, allowing rays to undergo \ac{CBET} in the full $|\tilde{E}_{sheet\neq j}^{i-1}|$ causes unbounded gains on ray powers leading to divergent results for $|\tilde{E}_{j}^{i}|$.
+Numerical damping is therefore applied for these calculations to stabilise the solution.
 The actual fields that a ray will see for the subsequent iteration, $i+1$, are composed of the weighted sum of the two \textit{build-up} fields,
 \begin{equation}
     |E_{j}^{i}| = f_{\text{damp}}|\tilde{E}_{j}^{i}| + (1-f_{\text{damp}})|\tilde{E}_{j}^{i-1}|,
@@ -1138,7 +1146,7 @@ where $f_{\text{damp}}$ is a user-defined damping value, which is by default set
 \end{figure}
 
 The converged field solution from the pump depletion iterations returns the steady state field and deposition profiles, accounting for \ac{CBET}, given a field reconstruction algorithm, interpolation scheme \textit{etc}.
-If there are errors in, for example the field reconstruction algorithm, then the pump depletion iterations will return a steady state solution, however this is not guaranteed to be the `true' solution, or the same as obtained by a higher fidelity solver.
+If there are errors in, for example the field reconstruction algorithm, then the pump depletion iterations will return a steady state solution, however this is not guaranteed to be accurate, as would be obtained by a higher fidelity solver.
 The main cause of errors in field reconstruction is the treatment of laser caustics, as demonstrated for example in Fig.~\ref{fig:SOLAS_2d_field_test}.
 This figure demonstrates that the \textsc{Solas} field reconstruction algorithm obtains essentially perfect agreement with \textsc{Lpse} everywhere apart from in the vicinity of the caustic.
 It can therefore be assumed that any errors in the \ac{CBET} profiles, returned from the pump depletion iterations, occur due to errors in the field reconstruction and \ac{CBET} scattering in the caustic region.
@@ -1150,7 +1158,7 @@ This is defined as,
 where $P_{\text{dep}}$, $P_{\text{out}}$ and $P_{\text{inc}}$ are the power deposited by \ac{inv-Brem}, the ray-power leaving the domain and the incident power respectively.
 If this value is not small, it suggests that caustics are not accurately treated in the \ac{CBET} scattering.
 
-As in the \textsc{BeamCrosser} code, the assumption in \textsc{Solas} is made that minimising the $\Delta E$ by altering the \ac{CBET} gains in the caustic region will account for bring the result into better agreement with the true solution~\cite{follett_validation_2022}.
+As in the \textsc{BeamCrosser} code, the assumption in \textsc{Solas} is made that minimising the $\Delta E$ by altering the \ac{CBET} gains in the caustic region will bring the result into better agreement with the true solution~\cite{follett_validation_2022}.
 $M_{\text{CP}}$ is modified to include a new \textit{caustic pump multiplier}, $f_{\text{CP}}$, which is applied to probe ray \ac{CBET} gains, when they are in the caustic region of the pump sheet,
 \begin{equation}
     \label{eq:modified_MCP}
@@ -1170,12 +1178,12 @@ The first \& second energy conservation iterations in a simulation use $f_{\text
 The Secant method was chosen for its simplicity and the fact that bracketing values of the root are not required.
 An example of the minimisation results are shown in figure~\ref{fig:SOLAS_delE_minimisation}.
 These results are from a 2 beam caustic test problem, presented in Sec.~\ref{sec:SOLAS_CBET_caustic_test}, but the specifics of the problem are not important for the discussion here, simply that \ac{CBET} in the presence of a caustic occurs.
-Therefore a caustic region exists inside which $f_{\text{CP}}$ will lead to modified gains which reduce energy conservation errors.
+Therefore, a caustic region exists inside which $f_{\text{CP}}$ will lead to modified gains which reduce energy conservation errors.
 The curve of $\Delta E(f_{\text{CP}})$ is simple and monotonic, which is observed for all simulations conducted with \textsc{Solas}, regardless of the complexity of the laser and target configuration.
-This means a complex algorithm than the Secant method is not required for minimisation.
-When the \ac{CBET} model runs in-line with the hydrodynamics, the value of $f_{\text{CP}}$ from the previous timestep when \ac{CBET} was calculated is used which means that energy conservation iterations frequently do not occur.
-This is shown explicitly in Fig.~\ref{fig:SOLAS_89224}, where shows the results of a 1-D \textsc{Chimera}-\textsc{Solas} simulation of OMEGA shot 89224.
-The bottom panel in the figure shows that energy conservation is frequently achieved by simply resuing the value of $f_{\text{CP}}$ from the previous timestep.
+This means a more complex algorithm than the Secant method is not required for minimisation.
+When the \ac{CBET} model runs in-line with the hydrodynamics, the value of $f_{\text{CP}}$ from the previous timestep when \ac{CBET} was calculated is used which means that energy conservation iterations are frequently not necessary.
+This is shown explicitly in Fig.~\ref{fig:SOLAS_89224}.c, which shows the results of a 1-D \textsc{Chimera}-\textsc{Solas} simulation of OMEGA shot 89224.
+The bottom panel in the figure shows that energy conservation is frequently achieved by simply re-using the value of $f_{\text{CP}}$ from the previous timestep.
 
 To summarise, the total \ac{CBET} gain that a probe ray ($i$) experiences in a pump sheet ($j$) is,
 \begin{equation}
@@ -1187,10 +1195,10 @@ where $\gamma_{ij}$ is the value defined in Sec.~\ref{sec:SOLAS_ray_power_change
 %################################################################################
 \subsection{CBET Validation}
 
-This section shall present results from several \ac{CBET} test problems where the results from \textsc{Solas} are compared to thewave based solver \textsc{Lpse}.
+This section shall present results from several \ac{CBET} test problems where the results from \textsc{Solas} are compared to the wave based solver \textsc{Lpse}.
 Because comparisons are to \textsc{Lpse} which is a wave-solver coupled to a linearised fluid response, the fluid \ac{CBET} gain is used for all simulations in this section.
-Beams in the simulations all have a vacuum wavelength, $\lambda_0=0.351\ \text{nm}$ and a supergaussian spot profile, which was defined in Eq.~\ref{eq:supgaus}.
-For consistency with \textsc{Lpse}, the Doppler shift of laser frequency is not calucated in these simulations so its effect on \ac{CBET} is neglected, \textit{i.e.} the right hand side of Eq.~\ref{eq:SOLAS_doppler_used} is forced to be zero.
+Beams in the simulations all have a vacuum wavelength, $\lambda_0=0.351\ \text{nm}$ and a super-gaussian spot profile, which was defined in Eq.~\ref{eq:supgaus}.
+For consistency with \textsc{Lpse}, the Doppler shift of laser frequency is not calculated in these simulations so its effect on \ac{CBET} is neglected, \textit{i.e.} the right-hand side of Eq.~\ref{eq:SOLAS_doppler_used} is forced to be zero.
 The plasma backgrounds for all initialisations are fully-ionised CH with $Z=3.1$ and $T_i=T_e/2$.
 All tests are presented in Ref.~\cite{follett_validation_2022} and the \textsc{Lpse} data is available from the repository~\cite{follett_lpse_2022}.
 
@@ -1201,15 +1209,15 @@ All tests are presented in Ref.~\cite{follett_validation_2022} and the \textsc{L
     \includegraphics[width=1.0\linewidth]{Numerics/Images/CBET_test_nocaustics.png}
     \centering
     \caption{This figure shows the results of the 2-D \ac{CBET} test in the absence of laser caustics.
-    Panels a) \& b) show the electric field from the \textsc{Solas} \& \textsc{Lpse} simulations respectively, after the pump depletion iterations have occured.
-    Panels c) \& e) plot lineouts from the inbound fields of the pump and seed beams respectively for both \textsc{Solas} and \textsc{Lpse}.
-    c) \& d) plots the same for the outbound fields.}%
+    Panels a) \& b) show the electric field from the \textsc{Solas} \& \textsc{Lpse} simulations respectively, after the pump depletion iterations have occurred.
+    Panels c) \& d) plot lineouts from the inbound fields of the pump and seed beams respectively for both \textsc{Solas} and \textsc{Lpse}.
+    e) \& f) plot the same for the outbound fields.}%
     \label{fig:SOLAS_CBET_test_nocaustics}
 \end{figure}
 
 \begin{table}[ht]
     \centering
-    \caption{The ratio of the power of the seed beam as it exits the domain to its intial power.}
+    \caption{The ratio of the power of the seed beam as it exits the domain to its initial power.}
     \begin{tabular}{cccc} \hhline{====}
     & $P_{\text{seed,out}}^{\textsc{Lpse}}/P_{\text{seed,in}}^{\textsc{Lpse}}$ & $P_{\text{seed,out}}^{\textsc{BeamCrosser}}/P_{\text{seed,in}}^{\textsc{BeamCrosser}}$ & $P_{\text{seed,out}}^{\textsc{Solas}}/P_{\text{seed,in}}^{\textsc{Solas}}$ \\ 
     \midrule
@@ -1236,9 +1244,9 @@ The beam and plasma configuration were chosen to create a strong \ac{CBET} reson
 
 Fig.~\ref{fig:SOLAS_CBET_test_nocaustics}.a \& Fig.~\ref{fig:SOLAS_CBET_test_nocaustics}.b show the electric field obtained from the \textsc{Solas} \& \textsc{Lpse} simulations respectively.
 It can be seen that the density gradient in $y$ causes the seed beam to refract somewhat and that \ac{CBET} results in a significant energy transfer from the pump to the seed beam.
-The lineouts in Fig.~\ref{fig:SOLAS_CBET_test_nocaustics}.c, Fig.~\ref{fig:SOLAS_CBET_test_nocaustics}.d, Fig.~\ref{fig:SOLAS_CBET_test_nocaustics}.e and Fig.~\ref{fig:SOLAS_CBET_test_nocaustics}.f all show excellent agreement between \textsc{Solas} and \text{Lpse}.
-This is further deomnstrated in Tab.~\ref{tab:nocaustic_CBET_table}, which lists the ratio of the outgoing seed beam power to the incident power for \textsc{Lpse}, \textsc{Solas} and the \textsc{BeamCrosser} postprocessor, the results from which are also presented in Ref.~\cite{follett_validation_2022}.
-The energy conservation error after the pump depletion iterations was very small, $\Delta E \sim 10^{-6}$, as expected becuase the \ac{CBET} interaction does not involve any caustics.
+The lineouts in Fig.~\ref{fig:SOLAS_CBET_test_nocaustics}.c, Fig.~\ref{fig:SOLAS_CBET_test_nocaustics}.d, Fig.~\ref{fig:SOLAS_CBET_test_nocaustics}.e and Fig.~\ref{fig:SOLAS_CBET_test_nocaustics}.f all show excellent agreement between \textsc{Solas} and \textsc{Lpse}.
+This is further demonstrated in Tab.~\ref{tab:nocaustic_CBET_table}, which lists the ratio of the outgoing seed beam power to the incident power for \textsc{Lpse}, \textsc{Solas} and the \textsc{BeamCrosser} post-processor, the results from which are also presented in Ref.~\cite{follett_validation_2022}.
+The energy conservation error after the pump depletion iterations was very small, $\Delta E \sim 10^{-6}$, as expected because the \ac{CBET} interaction does not involve any caustics.
 
 %##################################################
 \subsubsection{2-D CBET With Caustics}%
@@ -1251,12 +1259,12 @@ The energy conservation error after the pump depletion iterations was very small
     Panels a) \& b) show the electric field from the \textsc{Lpse} \& \textsc{Solas} simulations respectively.
     Also plotted is an inset zoom on the caustic region of the seed beam, which demonstrates that \textsc{Solas} does not capture the evanescent field.
     Panels c) \& e) plot lineouts from the inbound fields of the pump and seed beams respectively for both \textsc{Solas} and \textsc{Lpse}.
-    c) \& d) plots the same for the outbound fields.}%
+    d) \& f) plot the same for the outbound fields.}%
     \label{fig:SOLAS_CBET_test_caustics}
 \end{figure}
 
 Another 2 beam problem was implemented to test \ac{CBET} in the presence of a caustic.
-For this simulation, the grid was $xy \in [-21,21]\ \mu\text{m}$ and $xy \in [-60,60]\ \mu\text{m}$ with a minimum resolution of $\Delta x = \Delta y \sim \lambda_0/20$.
+For this simulation, the grid was $x,y \in [-21,21]\ \mu\text{m}$ and $x,y \in [-60,60]\ \mu\text{m}$ with a minimum resolution of $\Delta x = \Delta y \sim \lambda_0/20$.
 A uniform electron temperature was used, $T_e=2\ \text{keV}$.
 The pump beam travels straight up a linear density gradient and therefore does not refract, whereas the seed beam reflects in the gradient and travels out.
 The beam geometry is chosen so that the pump beam crosses through the middle of the seed beam caustic and the density and flow profiles are tuned to create a resonance at this crossing location,
@@ -1269,14 +1277,14 @@ The beam geometry is chosen so that the pump beam crosses through the middle of 
     \vec{u} &= -1.14 c_s \hat{\vec{y}}.
 \end{align}
 Both beams again had widths $\sigma=8.41\ \mu\text{m}$.
-The pump \& seed beams were launched from $\vec{x}=[18,-21] \mu\text{m}$ \& $\vec{x}=[-35,-21]\ \mu\text{m}$ pointed along $\hat{\vec{k}}=[0,1]$ \& $\hat{\vec{k}}=[0.707,0.707]$ respectively.
+The pump \& seed beams were launched from $\vec{x}=[18,-21] \mu\text{m}$ \& $\vec{x}=[-35,-21]\ \mu\text{m}$ and pointed along $\hat{\vec{k}}=[0,1]$ \& $\hat{\vec{k}}=[0.707,0.707]$ respectively.
 The peak intensities were $I_0=2\times10^{18}\ \text{W}/\text{m}^2$ \& $I_0=2\times10^{17}\ \text{W}/\text{m}^2$ for the pump \& seed respectively.
 
 Fig.~\ref{fig:SOLAS_CBET_test_caustics}.a and Fig.~\ref{fig:SOLAS_CBET_test_caustics}.b plot the \textsc{Lpse} and \textsc{Solas}\footnote{The field from \textsc{Solas} simulation with the minimum resolution, $\Delta x \sim \lambda_0/20$ is plotted in Fig.~\ref{fig:SOLAS_CBET_test_caustics}.b.} total fields respectively.
 The inset zooms demonstrate that the evanescent fields are not captured in the \ac{GO} framework.
 Fig.~\ref{fig:SOLAS_CBET_test_caustics}.c, Fig.~\ref{fig:SOLAS_CBET_test_caustics}.d, Fig.~\ref{fig:SOLAS_CBET_test_caustics}.e \& Fig.~\ref{fig:SOLAS_CBET_test_caustics}.f plot the lineouts of the \textsc{Lpse} and \textsc{Solas} field solutions at their exit from the grid, which all demonstrate excellent agreement.
 The \textsc{Lpse} seed beam amplification was $P_{\text{seed,out}}/P_{\text{seed,in}}=1.94$~\cite{follett_validation_2022}.
-This test was run both with and without the \ac{CGT} model described in Sec.~\ref{sec:SOLAS_caustic_gain_truncation} and at a variety resolutions, to demonstrate how energy conservation at caustics are partially a resolution problem and how \ac{CGT} mitigates for this somewhat.
+This test was run both with and without the \ac{CGT} model described in Sec.~\ref{sec:SOLAS_caustic_gain_truncation} and at a variety of resolutions, to demonstrate how energy conservation at caustics are partially a resolution problem and how \ac{CGT} mitigates for this somewhat.
 
 \begin{figure}[t!]
     \includegraphics[width=1.0\linewidth]{Numerics/Images/caustic_cbet_test_resscan.png}
@@ -1287,9 +1295,9 @@ This test was run both with and without the \ac{CGT} model described in Sec.~\re
 \end{figure}
 
 Fig.~\ref{fig:SOLAS_CBET_test_caustics_resscan} plots the results of the resolution scans both with and without \ac{CGT}.
-The seed beam amplification after energy conservation iterations is plotted in Fig.~\ref{fig:SOLAS_CBET_test_caustics_resscan}.a, which demonstrates that even at lower resolutions, \textsc{Solas} is manages to reproduce the \textsc{Lpse} result to an accuracy of $\sim\mathcal{O}(1\%)$.
+The seed beam amplification after energy conservation iterations is plotted in Fig.~\ref{fig:SOLAS_CBET_test_caustics_resscan}.a, which demonstrates that even at lower resolutions, \textsc{Solas} is manages to reproduce the \textsc{Lpse} result to an accuracy of $\mathcal{O}(1\%)$.
 The energy conservation error from the first energy conservation iteration (\textit{i.e.} after the first set of pump depletion iterations, but before energy conservation was achieved), is plotted in Fig.~\ref{fig:SOLAS_CBET_test_caustics_resscan}.b.
-This plot shows shows convergence in the physics at higher resolutions, although the converged solution (without enforced energy conservation) indicates small errors in the handling of the caustics, which energy conservation is able to correct in an \textit{ad-hoc} manner.
+This plot shows convergence in the physics at higher resolutions, although the converged solution (without enforced energy conservation) indicates small errors in the handling of the caustics, which energy conservation is able to correct in an \textit{ad-hoc} manner.
 Fig.~\ref{fig:SOLAS_CBET_test_caustics_resscan}.c plots the caustic pump multiplier that was required to achieve energy conservation.
 Both Fig.~\ref{fig:SOLAS_CBET_test_caustics_resscan}.b and Fig.~\ref{fig:SOLAS_CBET_test_caustics_resscan}.c show that \ac{CGT} improves the convergence of the \textsc{Solas} solution when the caustic region width $\sim\lambda_0$ is not properly resolved by the mesh.
 
@@ -1301,7 +1309,7 @@ Both Fig.~\ref{fig:SOLAS_CBET_test_caustics_resscan}.b and Fig.~\ref{fig:SOLAS_C
     \includegraphics[width=1.0\linewidth]{Numerics/Images/16beamCBET.png}
     \centering
     \caption{Plotted in this figure is the results from the 16 beam \ac{CBET} test problem.
-    Panel a) plots the deposited power both without (left) and with (right) \ac{CBET} the the simulation ran in cylindrical coordinates at 1 $\mu\text{m}$ radial resolution.
+    Panel a) plots the deposited power both without (left) and with (right) \ac{CBET} from the simulation ran in cylindrical coordinates at 1 $\mu\text{m}$ radial resolution.
     Panel b) plots the results of the resolution scan for both Cartesian and cylindrical coordinates.
     The circles and squares are the values of power deposition without and with enforced energy conservation respectively.
     The shaded regions illustrate the magnitude of energy conservation error from the initial energy conservation iteration, which can be thought of as the (single-sided) error on the circular points.}%
@@ -1311,9 +1319,9 @@ Both Fig.~\ref{fig:SOLAS_CBET_test_caustics_resscan}.b and Fig.~\ref{fig:SOLAS_C
 The final \ac{CBET} test problem presented as validation is a planar, azimuthally symmetric \ac{CBET} test with 16 beams in a direct-drive like plasma at the \textsc{Omega} scale \cite{follett_validation_2022}.
 This problem involves many beams, all of which undergo laser caustics and \ac{CBET} scattering with multiple other laser sheets.
 It is also well suited to test the implementation of the \textsc{Solas} \ac{CBET} model in non-Cartesian geometries, unlike the previous problems which did not have an angle of symmetry.
-The same setup can be easily initialsed in both Cartesian and cylindrical geometry to cross-compare the results.
+The same setup can be easily initialised in both Cartesian and cylindrical geometry to cross-compare the results.
 
-All beam were pointed toward the origin with an initial starting radius of 1 $\text{mm}$, equally spaced around the circle with a width $\sigma=386.8\ \mu\text{m}$.
+All beams were pointed toward the origin with an initial starting radius of 1 $\text{mm}$, equally spaced around the circle with a width $\sigma=386.8\ \mu\text{m}$.
 The peak intensity of each beam was $I_0=0.68\times10^{18}\ \text{Wm}^{-2}$ and each had an incident power $P_{\text{inc}}=76.3\ \text{TW}$.
 The electron temperature was set to $T_e = 2\ \text{keV}$ and the ion temperature $T_i = T_e/2$.
 The electron density used the profile from Eq.~\ref{eq:SOLAS_test_ne}, with the scale factor, $S=1$.
@@ -1327,19 +1335,19 @@ The cylindrical simulations had domain $r\in[0,800]\ \mu\text{m}$ and $\phi\in[-
 These simulations are compared to a \textsc{Lpse} simulation of the same problem.
 
 In the absence of \ac{CBET}, \textsc{Lpse} calculated $90.5\  \%$ power deposition.
-All \textsc{Solas} simulations agree with this result to within $\sim\mathcal{O}(0.1\ \%)$.
-Including \ac{CBET}, \textsc{Lpse} obtained an abosrption of $52.7\ \%$.
+All \textsc{Solas} simulations agree with this result to within $\mathcal{O}(0.1\ \%)$.
+Including \ac{CBET}, \textsc{Lpse} obtained an abosrbtion of $52.7\ \%$.
 Deposited power from the $\Delta_r=1\ \mu\text{m}$ simulation is plotted in Fig.~\ref{fig:SOLAS_16CBET_pdep}.a, both without \ac{CBET}, and with \ac{CBET} after energy conservation was achieved.
-Power deposition from the Cartesian simulation at $\Delta_x=1\ \mu\text{m}$ is not plotted, but looks very similar, apart from the small grid artefacts.
-The reduction in magnitude of depoisition is clearly visible, along with a slight radial broadening of the deposition region.
-The anlged-line features in both plots are from the casutic region of the beam, where 
+Power deposition from the Cartesian simulation at $\Delta_x=1\ \mu\text{m}$ is not plotted, but looks almost identical, apart from the small grid artefacts.
+The reduction in magnitude of deposition is clearly visible, along with a slight radial broadening of the deposition region.
+The angled-line features in both plots are from the caustic region of the beam, where 
 A 16-fold symmetry can be seen in both of the results, due to the beam geometry of the problem.
-The finer scale thin structures in both of these plots is due to enhanced deposition occuring at the beam casutic, where the ray amplitude swells to a maximum, enhancing the field strength.
+The finer scale thin structures in both of these plots is due to enhanced deposition occurring at the beam caustic, where the ray amplitude swells to a maximum, enhancing the field strength.
 
 Plotted in Fig.~\ref{fig:SOLAS_16CBET_pdep}.b are the values of deposited power in the presence of \ac{CBET} for both the cylindrical and Cartesian simulations, compared to the \textsc{LPSE} result.
 Circular markers are the values obtained for \ac{CBET} deposition after the first set of pump-depletion iterations, \textit{i.e.} before energy conservation was achieved.
 The larger square markers are the results after energy conservation was achieved.
-Shaded regions correspond to the magnitude and sign of the energy conservation error, $\Delta E_{j=0}$, \textit{before} energy conservatino was achieved, \textit{i.e.}, for the circular points.
+Shaded regions correspond to the magnitude and sign of the energy conservation error, $\Delta E_{j=0}$, \textit{before} energy conservation was achieved, \textit{i.e.}, for the circular points.
 This region corresponds to the deposition that could be achieved if any, arbitrary approach was taken to enforce conservation, for example if the value $\Delta E_{j=0}=\pm10\ \%$ for one simulation, then up to $10\ \%$ could be added to (subtracted from) $P_{\text{dep}}$.
 The trend, especially at lower resolution demonstrates that enforcing energy conservation brings the \textsc{Solas} result closer to \textsc{Lpse}, motivating the use of the approach in later chapters of this thesis.
 Although the cylindrical results typically appear to have a larger value for $\Delta E_{j=0}$ compared to the Cartesian results, the post conservation results are all deemed sufficiently close to both the Cartesian result and \textsc{Lpse}.
@@ -1355,21 +1363,6 @@ In Sec.~\ref{sec:SOLAS_89224}, 1-D \ac{Rad-Hydro} simulations of OMEGA shot 8922
 This illustrates that the implementation of the \ac{CBET} model in \textsc{Solas} correctly captures the loss of drive efficiency.
 In Sec.~\ref{sec:SOLAS_89224}, 3-D \textsc{Solas} post-processes of, spherically symmetric hydrodynamic data from the \textsc{Lilac} code shall be presented both with and without \ac{CBET}, alongside comparisons to the 3-D \ac{CBET} codes \textsc{Ifriit} and \textsc{BeamCrosser}.
 These simulations demonstrate that the \textsc{Solas} \ac{CBET} model also correctly captures the enhancement of beam-mode drive asymmetry introduced by \ac{CBET} in spherical illumination geometries.
-
-%################################################################################
-%################################################################################
-%\subsection{Ray Trace Frequency}
-%For many beam simulations, such as direct-drive simulations, the laser operator (especially with CBET) is typically one of the more expensive parts of the code.
-%In the steady state of an implosion, the coronal plasma conditions don't significantly change on the global hydrodynamic timestep.
-%Therefore the deposition also doesn't change much meaning that previously calculated Pdep can be stored and reapplied on subsequent timesteps.
-%Especially for CBET simulations, this can reduce runtime by order of magnitude.
-%Currently the ray trace is performed every timestep up until a pre-specified `warm up' time has expired.
-%Then the ray trace is performed at a pre-specified frequency by the user.
-%Experimentation has found that for \textsc{Omega} scale simulations, increasing frequency of calculations doesn't significantly change the answer above ... .
-%Because LDD pulses often start with a low intensity and then ramp up, CBET gains are also often minimal until late in the implosion.
-%Therefore field reconstruction and CBET iterations are only performed after a specified start time, normally when the hard-sphere intensity reaches about $1\times 10^{14}$ $Wcm^{-2}$.
-%CBET iterations are then performed on the laser frequency.
-%An improved approach shall soon be implemented where laser iterations occur at $dt_{\text{laser}}$ from Sec.~\ref{dtlaser}.
 
 %################################################################################
 %################################################################################
@@ -1390,7 +1383,7 @@ These simulations demonstrate that the \textsc{Solas} \ac{CBET} model also corre
     \centering
     \caption{This figure shows the results of a \textsc{Chimera}-\textsc{Solas} simulation of \textsc{Omega} shot 89224.
     Panel a) shows the deposited power both from 2 separate simulations of 89224, one with \& one without \ac{CBET} as red \& blue solid curves respectively.
-    The shell radius, defined at the radius of maximum density, is also lpotted on the right axis as dashed curves.
+    The shell radius, defined at the radius of maximum density, is also plotted on the right axis as dashed curves.
     Panel b) plots the time resolved partition of non-absorbed light for these simulations.
     Plotted in c) is the energy conservation error after energy conservation was achieved, alongside the value of $f_{\text{CP}}$ that was used to achieve conservation.}%
     \label{fig:SOLAS_89224}
@@ -1413,9 +1406,9 @@ These simulations demonstrate that the \textsc{Solas} \ac{CBET} model also corre
 A 1-D \textsc{Chimera}-\textsc{Solas} \ac{Rad-Hydro} simulation of \textsc{Omega} 89224 was performed to illustrate the effect that \ac{CBET} has on drive efficiency of direct-drive implosions.
 Drive efficiency is lost primarily due a reduction in the magnitude of deposited energy.
 A secondary effect is that the radii where deposition occurs is pushed slightly further away from the ablation surface.
-This happens because beams only lose energy inside of the \ac{CBET} resonance volume, which for backscatter \ac{CBET} occurs at the Mach-1 surface, as explained in Sec.~\ref{sec:Theory_sidescatter_backscatter_CBET}.
-Therefore the deposited power vs. radius curve is shifted to slightly higher radii.
-Both of these effects by a 3-D \ac{CBET} model coupled to 1-D \ac{Rad-Hydro}.
+This happens because beams only lose energy inside the \ac{CBET} resonance volume, which for backscatter \ac{CBET} occurs at the Mach-1 surface, as explained in Sec.~\ref{sec:Theory_sidescatter_backscatter_CBET}.
+Therefore, the deposited power vs. radius curve is shifted to slightly higher radii.
+Both of these effects are captured by a 3-D \ac{CBET} model coupled to 1-D \ac{Rad-Hydro}.
 
 The initial conditions for shot 89224 are plotted in Fig.~\ref{fig:89224_ICs}.a, with vacuum outside the outer radius.
 The incident laser pulse is also plotted in Fig.~\ref{fig:89224_ICs}.b, which has a total incident energy of $28.7\  \text{kJ}$.
@@ -1434,38 +1427,66 @@ The simulation domain was $r\in [0,1680]\ \mu\text{m}$, with a fixed radial reso
 Two simulations were conducted, one with the effect of \ac{CBET} on power deposition and one without.
 In order to load balance the ray trace and discretise \ac{CBET} interactions between different beams around the spherical $4\pi\ \text{sr}$, \textsc{Solas} used a sparse angular grid with $N_{\phi}=51$ \& $N_{\theta}=30$ azimuthal and polar cells respectively.
 At times earlier than $10\ \text{ps}$, a \textit{cold start} routine was employed, where $50\ \%$ of the incident power was deposited at the critical radius to create a finite scale length of underdense plasma, which rays could deposit and refract in.
-Raytraces were conducted every hydrodynamic timestep, without computing \ac{CBET} up to $150\ \text{ps}$\footnote{Note that the very low intensity from this section of the pulse means that the \ac{CBET} gains are negligable.} after which a full raytrace routine, including the effect of \ac{CBET} was conducted every $10\ \text{ps}$.
-For hydrodynamic steps in between these \ac{CBET} raytraces, the most recently computed $P_{\text{dep}}$ profile (normalised to 1 and then scaled to the incident power), was used as the laser source term for the timestep.
-Paramter scans of the raytrace frequency confirmed that the behviour of \textsc{Omega} simulations is well converged with this frequency.
+Ray-traces were conducted every hydrodynamic timestep, without computing \ac{CBET} up to $150\ \text{ps}$\footnote{Note that the very low intensity from this section of the pulse means that the \ac{CBET} gains are negligible.} after which a full raytrace routine, including the effect of \ac{CBET} was conducted every $10\ \text{ps}$.
+For hydrodynamic steps in between these \ac{CBET} ray-traces, the most recently computed $P_{\text{dep}}$ profile (normalised to 1 and then scaled to the incident power), was used as the laser source term for the timestep.
+Parameter scans of the raytrace frequency confirmed that the behaviour of \textsc{Omega} simulations is well converged with this frequency.
 
 The spatially integrated absorbed power is plotted in Fig.~\ref{fig:SOLAS_89224}.a as solid curves.
-$\ \%$ \& $\ \%$ of the incident energy was absorbed for the \ac{CBET} and no \ac{CBET} simulations respectively.
+$62.8\ \%$ \& $83.9\ \%$ of the incident energy was absorbed for the \ac{CBET} and no \ac{CBET} simulations respectively.
 Also plotted as dashed curves are the shell trajectories from the two simulations.
 It can be seen that the reduction is drive efficiency leads to a significantly slower implosion with a delayed bangtime.
 Tab.~\ref{tab:SOLAS_89224_metrics} gives temporally and spatially integrated implosion metrics from the \textsc{Chimera}-\textsc{Solas} simulations, along with a comparison to a post-shot \textsc{Lilac} simulation which includes a 1-D model for \ac{CBET}.
 Including \ac{CBET} in the \textsc{Chimera}-\textsc{Solas} simulation gives much better agreement across all metrics, which is primarily due to correctly capturing the reduction in absorption.
-The most interesting metrics to compare across the codes when comparing the effect of \ac{CBET} in 1-D are the implosion velocity and bangtime, which are in excellent agreement with \textsc{Lilac}.
-This is because these metrics are primarily functions of the absorbed laser energy, whereas the yield and burn averaged temperature additionally depend strongly on shock timing and compression as well \cite{zhou_hydrodynamic_2007,trickey_physics_2024}.
-Differences in shock timing between codes is particularly sensitive to differences in the thermal conduction modelling, equation of states, grid resolution and preheat modelling, all of which are likely to have been different between the \textsc{Lilac} and \textsc{Chimera} simulations.
-The strong agreement between the \textsc{Chimera} \ac{CBET} simulation and the \textsc{Lilac} results for the bangtime and implosion velocity metrics provide evidence thatdirect-drive implosions can be accurately modelled without using artifical multipliers to the laser power.
+The most interesting metrics to compare across the codes when looking at the effect of \ac{CBET} in 1-D are the implosion velocity and bangtime, which are in excellent agreement with \textsc{Lilac}.
+This is because these metrics are primarily functions of the absorbed laser energy, whereas the yield and burn averaged temperature additionally depend strongly on shock timing and compression~\cite{zhou_hydrodynamic_2007,trickey_physics_2024}.
+Shock timing between codes is particularly sensitive to differences in the thermal conduction modelling, equation of states, grid resolution and preheat modelling, all of which are likely to have been different between the \textsc{Lilac} and \textsc{Chimera} simulations.
+The strong agreement between the \textsc{Chimera} \ac{CBET} simulation and the \textsc{Lilac} results for the bangtime and implosion velocity metrics provide evidence that direct-drive implosions can be accurately modelled without using artificial multipliers to the laser power.
 
 Fig.~\ref{fig:SOLAS_89224}.b plots the partition of the non-absorbed power for both simulations.
-This is divided between \textit{blowby} light ($B$), which is light that eft the computational domain travelling quasi perpendicular to the beam normal and \textit{reflected} light, which leaves the domain travelling quasi anti-parallel.
+This is divided between \textit{blowby} light ($B$), which is light that left the computational domain travelling quasi parallel to the beam normal and \textit{reflected} light, which leaves the domain travelling quasi antiparallel.
 Note that the plot is on a log axis.
 Examining first the blue curves which are from the no-\ac{CBET} simulation, it can be seen that initially during the main pulse, from $t\sim 1.0\rightarrow1.6\ \text{ns}$, the reflected light fraction decreases while the blowby goes up.
-This is because the critical radius converges so the wings of the laser beam are less efficiently absorbed.
-Increases in the reflected light fraction appear to correlate with rises in the incident laser power, liekly due to increasing coronal plasma temperatures and therefore less efficient \ac{inv-Brem} absorption.
+This is because the critical radius converges, so the wings of the laser beam are less efficiently absorbed.
+The reflected light fraction increases sharply at $t \sim 1.6\ \text{ns}$ and $t \sim 1.8\ \text{ns}$ for the no-\ac{CBET} and \ac{CBET} simulations respectively.
+This corresponds to the time when the critical density crosses from the CH ablator material to DT fuel.
+DT has a significantly lower ionisation state compared to the ablator and therefore the electron-ion collision frequency decreases, corresponding to a drop in the \ac{inv-Brem} absorbtion and therefore an increase in the reflected light fraction.
 Both simulations show that blowby light is the most significant loss of coupling both with and without \ac{CBET}, especially late in the implosion as the capsule converges.
 
 Plotted in Fig.~\ref{fig:SOLAS_89224}.c are the laser energy conservation, $\Delta E$, and the modification to the caustic pump multiplier $f_{\text{CP}}$ that was found to achieve energy conservation.
-The grey bounds indicate the accepted criteria to satisy energy conservation, which was $0.5\ \%$ of the incident power.
+The grey bounds indicate the accepted criteria to satisfy energy conservation, which was $0.5\ \%$ of the incident power.
 The plot of $f_{\text{CP}}$ illustrates that the value remained constant over many timesteps and therefore only a single set of pump depletion iterations was required for the majority of timesteps.
 This is not true late in the implosion, when the critical radius converges and \ac{CBET} is responsible for $\sim40\ \%$ reductions in deposited power.
 At these times, caustic \ac{CBET} interactions are very important and therefore $\Delta E$ is very sensitive to the value of $f_{\text{CP}}$.
 As was shown in Sec.~\ref{sec:SOLAS_16beam_CBET} however, the iterations are believed to improve the fidelity of the modelling which is validated here by strong agreement with tuned, post-shot \textsc{Lilac} simulations.
 
-Show the absorbed power vs time and effect of CBET.
-Show instantaneuos radial profiles.
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Numerics/Images/89224_it160_pdepcbet.png}
+    \centering
+    \caption{Plotted in this figure are \ac{CBET} deposition diagnostics from $t=1.6\ \text{ns}$ into the \textsc{Chimera}-\textsc{Solas} simulation of \textsc{Omega} 89224, with \ac{CBET}.
+    Both sub-plots plot the power deposition with and without \ac{CBET}, along with the $g_{\text{CBET}}$, which is defined as the sum of the absolute value of all power lost or gained by rays via \ac{CBET} in the cell.
+    The electron density normalised to critical density and radial velocity normalised to the sound speed are also plotted in panel a) and b) respectively.
+    The blue shaded region in b) represents the full-width half-maximum of the $g_{\text{CBET}}$ curve.}%
+    \label{fig:SOLAS_89224_pdep}
+\end{figure}
+
+Plotted in Fig.~\ref{fig:SOLAS_89224_pdep}.a are the instantaneous power deposition profiles from the \textsc{Chimera}-\textsc{Solas} simulation with \ac{CBET} at $t=1.6\ \text{ns}$, alongside the $n_e$ profile in the under-dense region.
+Note that the no-\ac{CBET} profile plotted here is not from the no-\ac{CBET} simulation of \textsc{Omega} 89224, but the power deposition from the field reconstruction raytrace of the \ac{CBET} simulation, \textit{i.e.}, the deposition through the same hydrodynamic profiles, but without the effect of \ac{CBET} on the power deposition.
+At this time, \textsc{Solas} estimate that \ac{CBET} reduces the deposition versus by about 40 \% compared to the no-\ac{CBET} deposition.
+No rays go beyond $n_{\text{cr}}$ and therefore all deposition occurs outside of the critical radius.
+Also plotted in dark blue is the \ac{CBET} scattering, $g_{\text{CBET}}$, defined as the sum of the absolute value of all power lost or gained by rays due to \ac{CBET} in a \textsc{Solas} cell,
+\begin{equation}
+    g_{\text{CBET}}(\vec{x}) = \sum_{i}^{\text{rays}} \left| \Delta P_{i,\text{CBET}}(\vec{x}) \right|,
+\end{equation}
+where $\vec{x}$ represents the position of the power gain/ loss, discretised within cells on the \textsc{Solas} grid.
+The deposition is broadly reduced only inside the peak of the scattering curve, because backscatter \ac{CBET} transfers energy from inbound light to outbound light in direct-drive.
+Deposition is marginally increased outside the peak of the scattering curve, because the reflected and blowby light has been amplified due to \ac{CBET}.
+
+These power profiles are also plotted alongside the coronal radial velocity profile, normalised to the sound speed.
+The full-width half-maximum of the scattering curve is shown as the shaded blue region.
+Resonance occurs close to the Mach-1 surface as expected, which is where the plasma flow shifts the frequencies of radially inbound and outbound light such that they can excite an \ac{IAW}.
+%Note however, that the calculation of $c_s$ uses average ionisation and the simulation which computed $P_{\text{dep,CBET}}$ used the kinetic \ac{CBET} gain formulation, which can separately excite the fast and slow modes of the \ac{IAW}.
+The peak scattering also is shifted slightly further out, because the outbound light mostly does not travel radially outward.
+Assuming the fluid \ac{CBET} gain formulation and neglecting the $(\omega_j-\omega_i)$ in Eq.~\ref{eq:SOLAS_CBET_fluid_gain}, it can be shown that non-radial light shifts the resonance to larger $u_r$ and therefore greater radii.
 
 %##################################################
 \subsection{3-D Post Process of Absorption Non-Uniformity}%
@@ -1480,19 +1501,70 @@ Show instantaneuos radial profiles.
     \label{fig:SOLAS_qpR_IFRIIT_test}
 \end{figure}
 
-Mention how the model can also be used as a postprocess.
-\textsc{Chimera} can restart from 1-D data into spherically symmetric 3-D profiles.
-Ray Trace and CBET can then be performed through these profiles to understand the absorption non-uniformity present due to CBET.
-Note that comparison of 1-D and 3-D simulations shows that thermal conduction does a good job of smoothing angular deviations in coronal plasma conditions.
-The assumption of spherically symmetric profiles for the laser is therefore deemed valid, and it is a technique typically used by post-process CBET codes.
+A final problem used to validate the \ac{CBET} model from \textsc{Solas} was to compute the instantaneous 3-D effect of \ac{CBET} on power deposition through spherically symmetric hydrodynamic data from a \textsc{Lilac} simulation of an \textsc{Omega} implosion.
+The same problem has been computed with both the \textsc{Ifriit} and \textsc{BeamCrosser} codes allowing cross-code validation of the 3-D deposition asymmetry.
+The \textsc{Lilac} profiles were taken from Ref.~\cite{colaitis_inverse_2021}, and the \textsc{Ifriit} and \textsc{BeamCrosser} results are presented in Ref.~\cite{colaitis_3d_2023}.
+\ac{CBET} is known to enhance the beam-mode asymmetry which arises from the number and geometry of laser beams used to illuminate the target~\cite{edgell_mitigation_2017}.
+Correctly capturing this enhancement of asymmetry relies on a field reconstruction algorithm with good treatment of laser caustics and sufficient ray statistics in every cell across the computational grid to reconstruct the field everywhere that \ac{CBET} is important.
 
-MAYBE??
-Mention how ray noise means that we can't use direct deposition.
-Therefore use Pdep from field estimate, which is much cleaner.
+This problem is a particularly stringent test of the grid discretisation for field reconstruction.
+The use of an underlying spherical polar grid for the \textsc{Solas} semi-structured mesh leads to cells that vary in volume from pole to pole.
+Some differences in the reconstructed field are therefore inevitable between the capsule waist and pole purely from this grid discretisation.
+If this difference was insufficiently small, the power deposition with \ac{CBET} would contain a conspicuous mode-2 which, for simulations integrated with the hydrodynamics, would lead to undesirable stagnation asymmetries, purely seeded from the computational mesh.
 
-Talk about how CBET enhances angular non-uniformity.
-Show modal decomposition.
+The simulation had a radial domain $r\in[350,1362]\ \mu\text{m}$ with underlying grid resolution $\Delta_r=1\ \mu\text{m}$\footnote{Note that the adaptive radial resolution of the \textsc{Solas} mesh had a maximum radial resolution $\Delta_{r,\text{max}}=10\ \mu\text{m}$.}.
+The full $4\pi\ \text{sr}$ was simulated, where an underlying polar mesh was used for the \textsc{Solas} grid with $N_{\phi}=160$ \& $N_{\theta}=82$, which was then combined to give approximately equal area cells as described in Sec.~\ref{sec:SOLAS_mesh}.
+Fig.~\ref{fig:SOLAS_qpR_IFRIIT_test}.a and Fig.~\ref{fig:SOLAS_qpR_IFRIIT_test}.b show the deviation in radially integrated power deposition from the mean value for the no-\ac{CBET} and \ac{CBET} simulations respectively.
+The mode-10 pattern is clearly visible in both plots, although the magnitude is greatly increased by \ac{CBET}, as expected.
+No clear mode-2 from the capsule pole to waist is seen which indicates that the \textsc{Solas} mesh is sufficiently close to equal-area to not result in significant grid artefacts.
 
+A function, $f$ discretised over azimuthal ($\phi$) and polar ($\theta$) angles can be decomposed into spherical harmonics,
+\begin{equation}
+    f(\phi,\theta) = \sum_{\ell=0}^{\ell_{\text{max}}} \sum_{m=-\ell}^{m=\ell} a_{\ell m} Y_{\ell}^{m}(\phi,\theta),
+\end{equation}
+where $Y_{\ell m}$ are the spherical harmonic basis vectors and $a_{\ell m}$ are the associated coefficients \cite{colaitis_3d_2023}.
+The modal asymmetry of a given mode number, $\ell$, is then defined as,
+\begin{equation}
+    \sigma_{\ell} = \sqrt{ \frac{1}{4\pi} \sum_{m=-\ell}^{m=\ell} a_{\ell m} a^*_{\ell m} },
+\end{equation}
+where the $a^*_{\ell m}$ is the conjugate of $a_{\ell m}$.
+Fig.~\ref{fig:SOLAS_qpR_IFRIIT_test}.c plots the modal decomposition of the no-\ac{CBET} radially integrated power deposition deviation from the mean, \textit{i.e.} $\sigma_{\ell}$ up to mode $\ell=20$.
+Excellent agreement is observed between \textsc{Solas} and the other codes.
+The dominant mode is $\ell=10$, as is expected due to the beam port geometry.
+
+Fig.~\ref{fig:SOLAS_qpR_IFRIIT_test}.d plots the same, but now for the power deposition including \ac{CBET}.
+As is also seen in the skymaps, the asymmetry is significantly amplified by \ac{CBET}.
+Very good agreement is again observed between \textsc{Solas}, \textsc{Ifriit} and \textsc{BeamCrosser} across the spectrum.
+\ac{CBET} appears to induce small amplitude modes other than just the $\ell=10$ such as $\ell=6$, $\ell=12$ \& $\ell=18$.
+These are all multiples of 6, and therefore are likely induced by some \textsc{Omega} beam ports having 6 nearest neighbours~\cite{boehly_upgrade_1995,simon_lle_1989}.
+Small differences are observed between all codes, which is expected due to the different solvers and grids employed by each.
+\textsc{Solas} appears to slightly overestimate the modes 9 and 11, which have negligable values for both \textsc{Ifriit} and \textsc{BeamCrosser}.
+This is potentially due to the ray shape function smearing routine used, that was described in Sec.~\ref{sec:SOLAS_ray_propagation}, which smear power from a ray in one cell into neighbours.
+This could bleed some $\ell=10$ into neighbouring modes.
+In future, a more robust spherical harmonic smoothing could be introduced to address this issue, although the effect is not likely to be significant for integrated simulations due to the small amplitude.
+
+\begin{figure}[t!]
+    \includegraphics[width=1.0\linewidth]{Numerics/Images/IFRIIT_test_fields.png}
+    \centering
+    \caption{Ploptted in this figure are the 3-D electric fields from the 3-D post-process.
+    Panels a), b), c) and d) plot the incident sheet without \ac{CBET}, the reflected sheet without \ac{CBET}, the incident sheet with \ac{CBET} and the reflected sheet with \ac{CBET} respectively.
+    The critical surface is plotted with the inbound sheets as a transparent spherical wireframe.
+    Note that the outbound sheets are plotted on a log scale.}%
+    \label{fig:SOLAS_IFRIIT_test_fields}
+\end{figure}
+
+The incident and reflected sheet fields\footnote{Note that icident and reflected here refer to which sheet the ray belongs to, \textit{i.e.} if it is before or after the caustic location.} for a single beam both with and without \ac{CBET} are plotted in Fig.~\ref{fig:SOLAS_IFRIIT_test_fields}.
+the incident fields without and with \ac{CBET} are plotted in Fig.~\ref{fig:SOLAS_IFRIIT_test_fields}.a \& Fig.~\ref{fig:SOLAS_IFRIIT_test_fields}.c respectively, and share the left colorbar.
+The inbound \ac{CBET} sheet field shows a clear depletion of the field strength near the critical surface compared to the no-\ac{CBET} field, which is the result of energy transfer from radially inward propagating light to outward travelling light via backscatter.
+This leads to the reduction in absorbed energy.
+Fig.~\ref{fig:SOLAS_IFRIIT_test_fields}.b \& Fig.~\ref{fig:SOLAS_IFRIIT_test_fields}.d plot the reflected fields without and with \ac{CBET} respectively, and share the right colorbar.
+The reflected sheet travels mostly radially outward and therefore has been significantly amplified by the \ac{CBET} backscatter mechanism compared to the no-\ac{CBET} case.
+In the absence of \ac{CBET}, the field strength of the reflected sheet is significantly lower than the incident sheet field strengths for two reasons.
+Firstly, peak absorbtion occurs at the maximum radial penetration depth of the light into plasma, which is typically close to where rays experience their caustic and change sheet.
+Additionally, the rays diverge after reflecting from the critical surface leading to a reduction in ray amplitude and therefore field strength.
+
+
+\iffalse
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -1547,7 +1619,7 @@ Could look at TPD, SBS and SRS.
 In theory not a difficult problem to do backscatter, but side-SRS is difficult, because additional rays would need to be launched.
 This could make the model more useful to indirect-drive experiments and design of ignition scale direct-drive facilities, where SRS is thought to be important energetically due to long scale lengths.
 
-
+\fi
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -1556,31 +1628,31 @@ This could make the model more useful to indirect-drive experiments and design o
 
 Presented in this chapter was the implementation and validation of a 3-D raytrace and \ac{CBET} model, \textsc{Solas}, for the 3-D \ac{Rad-Hydro} code \textsc{Chimera}.
 Prior to this work, a simple 1-D raytrace was used to model the laser for direct-drive implosions which was strongly detrimental to the ability of the code to accurately model these experiments.
-Radially tracing rays inward, even for 1-D \ac{Rad-Hydro} simulations, misses the important convergence interplay between the convergence of the target and loss of deposition.
-The lack of a \ac{CBET} model, which is responsible for significant energy coupling loss in \textsc{Omega} scale implosions also meant that deposited power had to be reduced in an \textit{ad-hoc} manner to get greement with experiments.
+Radially tracing rays inward, even for 1-D \ac{Rad-Hydro} simulations, misses the important interplay between the convergence of the target and loss of deposition.
+The lack of a \ac{CBET} model, which is responsible for significant energy coupling loss at \textsc{Omega} laser facility energy scale implosions, also meant that deposited power had to be reduced in an \textit{ad-hoc} manner to obtain agreement with experiments.
 These factors severly limited the predictive capability of the code to model these experiments.
 
 Sec.~\ref{sec:SOLAS_raytrace} described the implementation of the 3-D ray-trace in the \textsc{Solas} laser package.
 An adaptive solver is used to trace rays through a semi-structured Eulerian mesh in Cartesian, cylindrical or spherical geometries. 
 Validation of this implementation was also presented.
 The 3-D laser raytrace enables \textsc{Chimera} to model direct-drive implosions and other laser-driven \ac{HEDP} experiments.
-It is also a cricuial pre-requiste to a ray-based \ac{CBET} model.
+It is also a crucial pre-requiste to a ray-based \ac{CBET} model.
 
-Issues with raybased \ac{CBET} models often stem from a poorly reconstructed laser electric field profile.
-The approach taken in \textsc{Solas} was described in Sec.~\ref{sec:SOLAS_field_reconstruc}, which is to trace a set of neighbouring rays around each ray and then relate the area of the ray to the field strength.
+Issues with ray-based \ac{CBET} models often stem from a poorly reconstructed laser electric field profile.
+The approach taken in \textsc{Solas} to obtain the electric field was described in Sec.~\ref{sec:SOLAS_field_reconstruc}, which is to trace a set of neighbouring rays around each ray and then relate the area of the ray to the field strength.
 Validation problems were conducted for this section which illustrated that this approach yields excellent agreement with the wave-based solver \textsc{Lpse}.
-Caustics are also identified and the field in these regions is capped to a diffraction limited value.
-The field solver was therefore shown to be robust and suitable for use within the \ac{CBET} model.
+Caustics are also identified and the field near them is capped to a diffraction limited value.
+Validation problems showed that the field solver was robust and suitable for use within the \ac{CBET} model.
 
 The implementation of the \textsc{Solas} \ac{CBET} model was described in Sec.~\ref{sec:SOLAS_cbet_model}.
 This model employs the linear kinetic or fluid gain formulations and the reconstructed field to estimate power changes of rays due to \ac{CBET}.
-Fixed point iteration is then used to find the equilibrium solution and additional energy conservation iterations can be used to account for slight error in the caustic field reconstruction.
+Fixed point iteration is then used to find the equilibrium solution and additional energy conservation iterations can be used to account for small errors in the caustic field reconstruction.
 Validation problems against \textsc{Lpse} and the ray-based \textsc{BeamCrosser} post-processor demonstrated that \textsc{Solas} correctly computes \ac{CBET} for direct-drive conditions in Cartesian and cylindrical geometries.
 
 A 1-D, spherical \ac{Rad-Hydro}, \textsc{Chimera}-\textsc{Solas} simulation of the \textsc{Omega} shot 89224 was presented in Sec.~\ref{sec:SOLAS_89224}, alongside a comparison to a \textsc{Lilac} simulation.
 The \ac{CBET} model behaved as expected, significantly reducing the power deposition and slowing the implosion.
 Excellent agreement was obtained between \textsc{Chimera}-\textsc{Solas} and \textsc{Lilac} for integrated parameters which primarily depend on the amount of energy coupled to the target.
 Sec.~\ref{sec:SOLAS_IFRIIT_test} presented a 3-D post-process of spherically symmetric hydrodynamic data from a \textsc{Lilac} simulation.
-The power deposition asymmetry was compared to the \textsc{Ifriit} and \textsc{BeamCrosser} codes which demonstrated good agreement.
-\ac{CBET} was shown to significantly enhance the deposition asymmetries.
-The results from this section showed that the \textsc{Solas} \ac{CBET} model functions as expected in spherical geometry and therefore \textsc{Chimera}-\textsc{Solas} is capable of performing 3-D spherical direct-drive miplosions with \ac{CBET} which can currently only be conducted with \textsc{Aster}-\textsc{Ifriit}.
+The power deposition asymmetry was compared to the \textsc{Ifriit} and \textsc{BeamCrosser} codes and good agreement was found with those models.
+\ac{CBET} was shown to significantly enhance the deposition asymmetries as expected.
+The results from this section showed that the \textsc{Solas} \ac{CBET} model functions as expected in spherical geometry and therefore \textsc{Chimera}-\textsc{Solas} is capable of performing 3-D spherical direct-drive implosions with \ac{CBET} which could previously only be conducted with the \textsc{Aster}-\textsc{Ifriit} code combination.

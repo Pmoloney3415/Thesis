@@ -1,4 +1,4 @@
-\begin{thebibliography}{77}
+\begin{thebibliography}{80}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -91,19 +91,19 @@ J.~F. Myatt, R.~K. Follett, J.~G. Shaw, D.~H. Edgell, D.~H. Froula, I.~V. Igumen
 
 \bibitem[Schmitt and Obenschain(2023{\natexlab{a}})]{schmitt_importance_2023}
 Andrew~J. Schmitt and Stephen~P. Obenschain.
-\newblock The importance of laser wavelength for driving inertial confinement fusion targets. {II}. {Target} design.
-\newblock \emph{Physics of Plasmas}, 30\penalty0 (1):\penalty0 012702, January 2023{\natexlab{a}}.
-\newblock ISSN 1070-664X.
-\newblock \doi{10.1063/5.0118093}.
-\newblock URL \url{https://doi.org/10.1063/5.0118093}.
-
-\bibitem[Schmitt and Obenschain(2023{\natexlab{b}})]{schmitt_importance_2023-1}
-Andrew~J. Schmitt and Stephen~P. Obenschain.
 \newblock The importance of laser wavelength for driving inertial confinement fusion targets. {I}. {Basic} physics.
-\newblock \emph{Physics of Plasmas}, 30\penalty0 (1):\penalty0 012701, January 2023{\natexlab{b}}.
+\newblock \emph{Physics of Plasmas}, 30\penalty0 (1):\penalty0 012701, January 2023{\natexlab{a}}.
 \newblock ISSN 1070-664X, 1089-7674.
 \newblock \doi{10.1063/5.0118080}.
 \newblock URL \url{https://pubs.aip.org/pop/article/30/1/012701/2867678/The-importance-of-laser-wavelength-for-driving}.
+
+\bibitem[Schmitt and Obenschain(2023{\natexlab{b}})]{schmitt_importance_2023-1}
+Andrew~J. Schmitt and Stephen~P. Obenschain.
+\newblock The importance of laser wavelength for driving inertial confinement fusion targets. {II}. {Target} design.
+\newblock \emph{Physics of Plasmas}, 30\penalty0 (1):\penalty0 012702, January 2023{\natexlab{b}}.
+\newblock ISSN 1070-664X.
+\newblock \doi{10.1063/5.0118093}.
+\newblock URL \url{https://doi.org/10.1063/5.0118093}.
 
 \bibitem[Huba(2013)]{huba_nrl_2013}
 J~Huba, D.
@@ -239,6 +239,22 @@ R.~K. Follett, A.~Colaïtis, D.~Turnbull, D.~H. Froula, and J.~P. Palastro.
 \newblock \doi{10.1063/5.0123462}.
 \newblock URL \url{https://pubs.aip.org/pop/article/29/11/113902/2844248/Validation-of-ray-based-cross-beam-energy-transfer}.
 
+\bibitem[Igumenshchev et~al.(2010)Igumenshchev, Edgell, Goncharov, Delettrez, Maximov, Myatt, Seka, Shvydky, Skupsky, and Stoeckl]{igumenshchev_crossed-beam_2010}
+I.~V. Igumenshchev, D.~H. Edgell, V.~N. Goncharov, J.~A. Delettrez, A.~V. Maximov, J.~F. Myatt, W.~Seka, A.~Shvydky, S.~Skupsky, and C.~Stoeckl.
+\newblock Crossed-beam energy transfer in implosion experiments on {OMEGA}.
+\newblock \emph{Physics of Plasmas}, 17\penalty0 (12):\penalty0 122708, December 2010.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.3532817}.
+\newblock URL \url{https://pubs.aip.org/pop/article/17/12/122708/918785/Crossed-beam-energy-transfer-in-implosion}.
+
+\bibitem[Igumenshchev et~al.(2012)Igumenshchev, Seka, Edgell, Michel, Froula, Goncharov, Craxton, Divol, Epstein, Follett, Kelly, Kosc, Maximov, McCrory, Meyerhofer, Michel, Myatt, Sangster, Shvydky, Skupsky, and Stoeckl]{igumenshchev_crossed-beam_2012}
+I.~V. Igumenshchev, W.~Seka, D.~H. Edgell, D.~T. Michel, D.~H. Froula, V.~N. Goncharov, R.~S. Craxton, L.~Divol, R.~Epstein, R.~Follett, J.~H. Kelly, T.~Z. Kosc, A.~V. Maximov, R.~L. McCrory, D.~D. Meyerhofer, P.~Michel, J.~F. Myatt, T.~C. Sangster, A.~Shvydky, S.~Skupsky, and C.~Stoeckl.
+\newblock Crossed-beam energy transfer in direct-drive implosions.
+\newblock \emph{Physics of Plasmas}, 19\penalty0 (5):\penalty0 056314, May 2012.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4718594}.
+\newblock URL \url{https://pubs.aip.org/pop/article/19/5/056314/596972/Crossed-beam-energy-transfer-in-direct-drive}.
+
 \bibitem[Myatt et~al.(2019)Myatt, Shaw, Follett, Edgell, Froula, Palastro, and Goncharov]{myatt_lpse_2019}
 Jason~F. Myatt, John~G. Shaw, Russell~K. Follett, Dana~H. Edgell, Dustin~H. Froula, John~P. Palastro, and Valeri~N. Goncharov.
 \newblock {LPSE}: {A} 3-{D} wave-based model of cross-beam energy transfer in laser-irradiated plasmas.
@@ -265,19 +281,19 @@ L.~J. Perkins, R.~Betti, K.~N. LaFortune, and W.~H. Williams.
 
 \bibitem[Seaton et~al.(2022{\natexlab{a}})Seaton, Yin, Follett, Albright, and Le]{seaton_cross-beam_2022-1}
 A.~G. Seaton, L.~Yin, R.~K. Follett, B.~J. Albright, and A.~Le.
-\newblock Cross-beam energy transfer in direct-drive {ICF}. {I}. {Nonlinear} and kinetic effects.
-\newblock \emph{Physics of Plasmas}, 29\penalty0 (4):\penalty0 042706, April 2022{\natexlab{a}}.
-\newblock ISSN 1070-664X.
-\newblock \doi{10.1063/5.0078800}.
-\newblock URL \url{https://doi.org/10.1063/5.0078800}.
-
-\bibitem[Seaton et~al.(2022{\natexlab{b}})Seaton, Yin, Follett, Albright, and Le]{seaton_cross-beam_2022}
-A.~G. Seaton, L.~Yin, R.~K. Follett, B.~J. Albright, and A.~Le.
 \newblock Cross-beam energy transfer in direct-drive {ICF}. {II}. {Theory} and simulation of mitigation through increased laser bandwidth.
-\newblock \emph{Physics of Plasmas}, 29\penalty0 (4):\penalty0 042707, April 2022{\natexlab{b}}.
+\newblock \emph{Physics of Plasmas}, 29\penalty0 (4):\penalty0 042707, April 2022{\natexlab{a}}.
 \newblock ISSN 1070-664X.
 \newblock \doi{10.1063/5.0078801}.
 \newblock URL \url{https://doi.org/10.1063/5.0078801}.
+
+\bibitem[Seaton et~al.(2022{\natexlab{b}})Seaton, Yin, Follett, Albright, and Le]{seaton_cross-beam_2022}
+A.~G. Seaton, L.~Yin, R.~K. Follett, B.~J. Albright, and A.~Le.
+\newblock Cross-beam energy transfer in direct-drive {ICF}. {I}. {Nonlinear} and kinetic effects.
+\newblock \emph{Physics of Plasmas}, 29\penalty0 (4):\penalty0 042706, April 2022{\natexlab{b}}.
+\newblock ISSN 1070-664X.
+\newblock \doi{10.1063/5.0078800}.
+\newblock URL \url{https://doi.org/10.1063/5.0078800}.
 
 \bibitem[Chittenden et~al.(2016)Chittenden, Appelbe, Manke, McGlinchey, and Niasse]{chittenden_signatures_2016}
 J.~P. Chittenden, B.~D. Appelbe, F.~Manke, K.~McGlinchey, and N.~P.~L. Niasse.
@@ -391,14 +407,6 @@ M.~Gatu~Johnson, P.~J. Adrian, K.~S. Anderson, B.~D. Appelbe, J.~P. Chittenden, 
 \newblock ISSN 1070-664X, 1089-7674.
 \newblock \doi{10.1063/1.5141607}.
 \newblock URL \url{https://pubs.aip.org/pop/article/27/3/032704/1063027/Impact-of-stalk-on-directly-driven-inertial}.
-
-\bibitem[Igumenshchev et~al.(2012)Igumenshchev, Seka, Edgell, Michel, Froula, Goncharov, Craxton, Divol, Epstein, Follett, Kelly, Kosc, Maximov, McCrory, Meyerhofer, Michel, Myatt, Sangster, Shvydky, Skupsky, and Stoeckl]{igumenshchev_crossed-beam_2012}
-I.~V. Igumenshchev, W.~Seka, D.~H. Edgell, D.~T. Michel, D.~H. Froula, V.~N. Goncharov, R.~S. Craxton, L.~Divol, R.~Epstein, R.~Follett, J.~H. Kelly, T.~Z. Kosc, A.~V. Maximov, R.~L. McCrory, D.~D. Meyerhofer, P.~Michel, J.~F. Myatt, T.~C. Sangster, A.~Shvydky, S.~Skupsky, and C.~Stoeckl.
-\newblock Crossed-beam energy transfer in direct-drive implosions.
-\newblock \emph{Physics of Plasmas}, 19\penalty0 (5):\penalty0 056314, May 2012.
-\newblock ISSN 1070-664X, 1089-7674.
-\newblock \doi{10.1063/1.4718594}.
-\newblock URL \url{https://pubs.aip.org/pop/article/19/5/056314/596972/Crossed-beam-energy-transfer-in-direct-drive}.
 
 \bibitem[Kruer(2003)]{kruer_physics_2003}
 William~L. Kruer.
@@ -515,21 +523,21 @@ A.~Colaïtis, D. P. Turnbull, I. V. Igumenschev, D.~Edgell, R. C. Shah, O.
 \newblock \doi{10.1103/PhysRevLett.129.095001}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.129.095001}.
 
-\bibitem[Colaïtis et~al.(2023{\natexlab{a}})Colaïtis, Igumenshchev, Turnbull, Shah, Edgell, Mannion, Stoeckl, Jacob-Perkins, Shvydky, Janezic, Kalb, Cao, Forrest, Kwiatkowski, Regan, Theobald, Goncharov, and Froula]{colaitis_3d_2023}
-A~Colaïtis, I~V Igumenshchev, D~P Turnbull, R~Shah, D~Edgell, O~M Mannion, C~Stoeckl, D~W Jacob-Perkins, A~Shvydky, R~Janezic, A~Kalb, D~Cao, C~J Forrest, J~Kwiatkowski, S~P Regan, W~Theobald, V~N Goncharov, and D~Froula.
-\newblock {3D} simulations of inertial confinement fusion implosions part 2: systematic flow anomalies and impact of low modes on performances in {OMEGA} experiments.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 65\penalty0 (1):\penalty0 014005, January 2023{\natexlab{a}}.
-\newblock ISSN 0741-3335, 1361-6587.
-\newblock \doi{10.1088/1361-6587/aca78d}.
-\newblock URL \url{https://iopscience.iop.org/article/10.1088/1361-6587/aca78d}.
-
-\bibitem[Colaïtis et~al.(2023{\natexlab{b}})Colaïtis, Edgell, Igumenshchev, Turnbull, Strozzi, Chapman, Goncharov, and Froula]{colaitis_3d_2023-1}
+\bibitem[Colaïtis et~al.(2023{\natexlab{a}})Colaïtis, Edgell, Igumenshchev, Turnbull, Strozzi, Chapman, Goncharov, and Froula]{colaitis_3d_2023}
 A~Colaïtis, D~Edgell, I~Igumenshchev, D~Turnbull, D~J Strozzi, T~Chapman, V~Goncharov, and D~H Froula.
 \newblock {3D} simulations of inertial confinement fusion implosions part 1: inline modeling of polarized cross beam energy transfer and subsequent drive anomalies on {OMEGA} and {NIF}.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 65\penalty0 (1):\penalty0 014003, January 2023{\natexlab{b}}.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 65\penalty0 (1):\penalty0 014003, January 2023{\natexlab{a}}.
 \newblock ISSN 0741-3335, 1361-6587.
 \newblock \doi{10.1088/1361-6587/aca78e}.
 \newblock URL \url{https://iopscience.iop.org/article/10.1088/1361-6587/aca78e}.
+
+\bibitem[Colaïtis et~al.(2023{\natexlab{b}})Colaïtis, Igumenshchev, Turnbull, Shah, Edgell, Mannion, Stoeckl, Jacob-Perkins, Shvydky, Janezic, Kalb, Cao, Forrest, Kwiatkowski, Regan, Theobald, Goncharov, and Froula]{colaitis_3d_2023-1}
+A~Colaïtis, I~V Igumenshchev, D~P Turnbull, R~Shah, D~Edgell, O~M Mannion, C~Stoeckl, D~W Jacob-Perkins, A~Shvydky, R~Janezic, A~Kalb, D~Cao, C~J Forrest, J~Kwiatkowski, S~P Regan, W~Theobald, V~N Goncharov, and D~Froula.
+\newblock {3D} simulations of inertial confinement fusion implosions part 2: systematic flow anomalies and impact of low modes on performances in {OMEGA} experiments.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 65\penalty0 (1):\penalty0 014005, January 2023{\natexlab{b}}.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/1361-6587/aca78d}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/1361-6587/aca78d}.
 
 \bibitem[Mannion et~al.(2021)Mannion, Igumenshchev, Anderson, Betti, Campbell, Cao, Forrest, Johnson, Glebov, Goncharov, Gopalaswamy, Ivancic, Jacobs-Perkins, Kalb, Knauer, Kwiatkowski, Lees, Marshall, Michalko, Mohamed, Patel, Rinderknecht, Shah, Stoeckl, Theobald, Woo, and Regan]{mannion_mitigation_2021}
 O.~M. Mannion, I.~V. Igumenshchev, K.~S. Anderson, R.~Betti, E.~M. Campbell, D.~Cao, C.~J. Forrest, M.~Gatu Johnson, V.~Yu. Glebov, V.~N. Goncharov, V.~Gopalaswamy, S.~T. Ivancic, D.~W. Jacobs-Perkins, A.~Kalb, J.~P. Knauer, J.~Kwiatkowski, A.~Lees, F.~J. Marshall, M.~Michalko, Z.~L. Mohamed, D.~Patel, H.~G. Rinderknecht, R.~C. Shah, C.~Stoeckl, W.~Theobald, K.~M. Woo, and S.~P. Regan.
@@ -599,5 +607,19 @@ W.~Trickey, V.~N. Goncharov, R.~Betti, E.~M. Campbell, T.~J.~B. Collins, and R.~
 \newblock ISSN 1070-664X, 1089-7674.
 \newblock \doi{10.1063/5.0167405}.
 \newblock URL \url{https://pubs.aip.org/pop/article/31/1/012702/2932657/The-physics-of-gain-relevant-to-inertial-fusion}.
+
+\bibitem[Boehly et~al.(1995)Boehly, Craxton, Hinterman, Kelly, Kessler, Kumpan, Letzring, McCrory, Morse, Seka, Skupsky, Soures, and Verdon]{boehly_upgrade_1995}
+T.~R. Boehly, R.~S. Craxton, T.~H. Hinterman, J.~H. Kelly, T.~J. Kessler, S.~A. Kumpan, S.~A. Letzring, R.~L. McCrory, S.~F.~B. Morse, W.~Seka, S.~Skupsky, J.~M. Soures, and C.~P. Verdon.
+\newblock The upgrade to the {OMEGA} laser system.
+\newblock \emph{Review of Scientific Instruments}, 66\penalty0 (1):\penalty0 508--510, January 1995.
+\newblock ISSN 0034-6748, 1089-7623.
+\newblock \doi{10.1063/1.1146333}.
+\newblock URL \url{https://pubs.aip.org/rsi/article/66/1/508/455144/The-upgrade-to-the-OMEGA-laser-systemPlasma}.
+
+\bibitem[Simon(1989)]{simon_lle_1989}
+A.~Simon.
+\newblock {LLE} {Review} {Quarterly} {Report} ({April}-{June} 1989). {Volume} 39.
+\newblock Technical Report DOE/DP/40200--95, 1191446, June 1989.
+\newblock URL \url{http://www.osti.gov/servlets/purl/1191446/}.
 
 \end{thebibliography}

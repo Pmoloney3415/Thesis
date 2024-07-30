@@ -13,3 +13,6 @@ Eq
 Refs
 lineouts
 Debye
+bangtime
+timesteps
+blowby
