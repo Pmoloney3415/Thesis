@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  30 JUL 2024 17:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  31 JUL 2024 17:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -584,6 +584,12 @@ Package: suffix 2006/07/15 1.5a Variant command support
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
 \AC@clearlist=\toks40
+) (c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip94
+\multirow@cntb=\count322
+\multirow@dima=\skip95
+\bigstrutjot=\dimen284
 ) (c:/texlive/2023/texmf-dist/tex/latex/fourier/fourier.sty
 Package: fourier 2022/02/05 2.3 fourier-GUTenberg package
 Now handling font encoding FML ...
@@ -723,49 +729,49 @@ LaTeX Font Info:    Redeclaring math accent \dot on input line 268.
 LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
 \symUfutm=\mathgroup8
 )
-\depthofsumsign=\skip94
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 36.
+\depthofsumsign=\skip96
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 37.
  (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 36.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 37.
  (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 36.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 37.
  (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 36.
+(Font)              scaled to size 10.07397pt on input line 37.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 36.
+(Font)              scaled to size 7.63599pt on input line 37.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 36.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+(Font)              scaled to size 5.51999pt on input line 37.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 36.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 37.
  (c:/texlive/2023/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 36.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 37.
  (c:/texlive/2023/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 36.
+(Font)              scaled to size 10.07397pt on input line 37.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 36.
+(Font)              scaled to size 7.63599pt on input line 37.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 36.
-\totalheightofsumsign=\skip95
-\heightanddepthofargument=\skip96
+(Font)              scaled to size 5.51999pt on input line 37.
+\totalheightofsumsign=\skip97
+\heightanddepthofargument=\skip98
    defining Unicode char U+2009 (decimal 8201)
    defining Unicode char U+2192 (decimal 8594)
    defining Unicode char U+2032 (decimal 8242)
@@ -788,11 +794,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count322
+\c@section@level=\count323
 )
-\@linkdim=\dimen284
-\Hy@linkcounter=\count323
-\Hy@pagecounter=\count324
+\@linkdim=\dimen285
+\Hy@linkcounter=\count324
+\Hy@pagecounter=\count325
  (c:/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -800,7 +806,7 @@ Now handling font encoding PD1 ...
 ) (c:/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count325
+\Hy@SavedSpaceFactor=\count326
  (c:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -836,19 +842,19 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 ))
-\c@Hy@tempcnt=\count326
+\c@Hy@tempcnt=\count327
  (c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4786.
-\XeTeXLinkMargin=\dimen285
+\XeTeXLinkMargin=\dimen286
  (c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
-\Fld@menulength=\count327
-\Field@Width=\dimen286
-\Fld@charsize=\dimen287
+\Fld@menulength=\count328
+\Field@Width=\dimen287
+\Fld@charsize=\dimen288
 Package hyperref Info: Hyper figures OFF on input line 6065.
 Package hyperref Info: Link nesting OFF on input line 6070.
 Package hyperref Info: Hyper index ON on input line 6073.
@@ -860,21 +866,21 @@ Package hyperref Info: PDF/A mode OFF on input line 6095.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count328
-\c@Item=\count329
-\c@Hfootnote=\count330
+\Hy@abspage=\count329
+\c@Item=\count330
+\c@Hfootnote=\count331
 )
 Package hyperref Info: Driver: hpdftex.
  (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
-\Fld@listcount=\count331
-\c@bookmark@seq@number=\count332
-\Hy@SectionHShift=\skip97
+\Fld@listcount=\count332
+\c@bookmark@seq@number=\count333
+\Hy@SectionHShift=\skip99
 ) (c:/texlive/2023/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count333
-\c@@ppsavesec=\count334
-\c@@ppsaveapp=\count335
+\c@@pps=\count334
+\c@@ppsavesec=\count335
+\c@@ppsaveapp=\count336
 ) (c:/texlive/2023/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
@@ -883,9 +889,9 @@ Package chngcntr Info: \counterwithout already defined.
 Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count336
-\l__lipsum_a_int=\count337
-\l__lipsum_b_int=\count338
+\g__lipsum_par_int=\count337
+\l__lipsum_a_int=\count338
+\l__lipsum_b_int=\count339
  (c:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (c:/texlive/2023/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -985,16 +991,16 @@ Package scrbase Info: activating english \indexname on input line 9.
 
 (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count339
-\scratchdimen=\dimen288
+\scratchcounter=\count340
+\scratchdimen=\dimen289
 \scratchbox=\box74
-\nofMPsegments=\count340
-\nofMParguments=\count341
+\nofMPsegments=\count341
+\nofMParguments=\count342
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count342
-\MPscratchDim=\dimen289
-\MPnumerator=\count343
-\makeMPintoPDFobject=\count344
+\MPscratchCnt=\count343
+\MPscratchDim=\dimen290
+\MPnumerator=\count344
+\makeMPintoPDFobject=\count345
 \everyMPtoPDFconversion=\toks42
 ) (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
@@ -1036,7 +1042,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count345
+\BKM@id=\count346
 ))
 \openout2 = `Preamble/PreambleMain.aux'.
 
@@ -1065,22 +1071,55 @@ Package pdftex.def Info: Preamble/new_college_logo.png  used on input line 2.
 
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Preamble/new_college_logo.png>] [2]
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 58.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [3
 
-]) [4]
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]) [4]
 \openout2 = `Results1/Results1Main.aux'.
 
  (./Results1/Results1Main.tex
 chapter 1.
-<Results1/Images/RbRt_beam_overlap.png, id=28, 1011.78pt x 397.485pt>
+<Results1/Images/RbRt_beam_overlap.png, id=33, 1011.78pt x 469.755pt>
 File: Results1/Images/RbRt_beam_overlap.png Graphic file (type png)
 <use Results1/Images/RbRt_beam_overlap.png>
 Package pdftex.def Info: Results1/Images/RbRt_beam_overlap.png  used on input line 12.
-(pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
-)
+(pdftex.def)             Requested size: 415.41043pt x 192.87317pt.
+<Results1/Images/cyl_setup.png, id=34, 789.933pt x 362.445pt>
+File: Results1/Images/cyl_setup.png Graphic file (type png)
+<use Results1/Images/cyl_setup.png>
+Package pdftex.def Info: Results1/Images/cyl_setup.png  used on input line 60.
+(pdftex.def)             Requested size: 415.41043pt x 190.60724pt.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 64.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 64.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 64.
+
+LaTeX Warning: Reference `fig:89224_ICs' on page 5 undefined on input line 64.
+
+
+LaTeX Warning: Reference `fig:89224_ICs' on page 5 undefined on input line 64.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 78.
+
+<Results1/Images/streaks.png, id=35, 1032.147pt x 542.025pt>
+File: Results1/Images/streaks.png Graphic file (type png)
+<use Results1/Images/streaks.png>
+Package pdftex.def Info: Results1/Images/streaks.png  used on input line 106.
+(pdftex.def)             Requested size: 415.41043pt x 218.146pt.
+Package acronym Info: Label `acro:CBET' newly defined as it shall be overridden
+although it is yet undefined on input line 110.
+<Results1/Images/noCBET_PR_modes.png, id=38, 667.512pt x 537.207pt>
+File: Results1/Images/noCBET_PR_modes.png Graphic file (type png)
+<use Results1/Images/noCBET_PR_modes.png>
+Package pdftex.def Info: Results1/Images/noCBET_PR_modes.png  used on input line 128.
+(pdftex.def)             Requested size: 415.41043pt x 334.31906pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5
@@ -1088,7 +1127,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
- <./Results1/Images/RbRt_beam_overlap.png>] [6] [7
+ <./Results1/Images/RbRt_beam_overlap.png>]
+<Results1/Images/Field_profiles.png, id=51, 706.275pt x 542.025pt>
+File: Results1/Images/Field_profiles.png Graphic file (type png)
+<use Results1/Images/Field_profiles.png>
+Package pdftex.def Info: Results1/Images/Field_profiles.png  used on input line 144.
+(pdftex.def)             Requested size: 415.41043pt x 318.80777pt.
+<Results1/Images/CBET_PR_modes.png, id=60, 667.512pt x 537.207pt>
+File: Results1/Images/CBET_PR_modes.png Graphic file (type png)
+<use Results1/Images/CBET_PR_modes.png>
+Package pdftex.def Info: Results1/Images/CBET_PR_modes.png  used on input line 162.
+(pdftex.def)             Requested size: 415.41043pt x 334.31906pt.
+<Results1/Images/Stagnation_plots.png, id=69, 395.076pt x 542.025pt>
+File: Results1/Images/Stagnation_plots.png Graphic file (type png)
+<use Results1/Images/Stagnation_plots.png>
+Package pdftex.def Info: Results1/Images/Stagnation_plots.png  used on input line 183.
+(pdftex.def)             Requested size: 332.3296pt x 455.95126pt.
+<Results1/Images/RbRt_sig_rhomax.png, id=80, 867.24pt x 361.35pt>
+File: Results1/Images/RbRt_sig_rhomax.png Graphic file (type png)
+<use Results1/Images/RbRt_sig_rhomax.png>
+Package pdftex.def Info: Results1/Images/RbRt_sig_rhomax.png  used on input line 199.
+(pdftex.def)             Requested size: 415.41043pt x 173.08763pt.
+<Results1/Images/RbRts_mode10_growth.png, id=89, 573.561pt x 542.025pt>
+File: Results1/Images/RbRts_mode10_growth.png Graphic file (type png)
+<use Results1/Images/RbRts_mode10_growth.png>
+Package pdftex.def Info: Results1/Images/RbRts_mode10_growth.png  used on input line 214.
+(pdftex.def)             Requested size: 311.55782pt x 294.43423pt.
+)
+Overfull \vbox (522.6944pt too high) has occurred while \output is active []
+
+ [6 <./Results1/Images/cyl_setup.png> <./Results1/Images/streaks.png>] [7] [8 <./Results1/Images/noCBET_PR_modes.png>] [9 <./Results1/Images/Field_profiles.png>] [10 <./Results1/Images/CBET_PR_modes.png>] [11 <./Results1/Images/Stagnation_plots.png>] [12 <./Results1/Images/RbRt_sig_rhomax.png> <./Results1/Images/RbRts_mode10_growth.png>] [13
 
 
 
@@ -1097,7 +1165,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  (./Appendix/Appendix1Main.tex
 chapter A.
-) [8
+) [14
 
 
 ] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
@@ -1108,19 +1176,19 @@ chapter A.
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-) [9
+) [15
 
 
 
 
 
-] [10
+] [16
 
 
 ]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [11
+ (./Appendix/Permissions.tex) [17
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Results1/Results1Main.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
@@ -1128,24 +1196,28 @@ Package natbib Warning: Empty `thebibliography' environment on input line 8.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26984 strings out of 474165
- 531215 string characters out of 5749497
- 1933542 words of memory out of 5000000
- 48795 multiletter control sequences out of 15000+600000
- 648749 words of font info for 131 fonts, out of 8000000 for 9000
+ 27166 strings out of 474165
+ 535684 string characters out of 5749497
+ 1956542 words of memory out of 5000000
+ 48948 multiletter control sequences out of 15000+600000
+ 668409 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,11n,121p,10978b,978s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on Thesis_MainSample.pdf (11 pages, 1668986 bytes).
+ 122i,19n,121p,10978b,996s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
+Output written on Thesis_MainSample.pdf (17 pages, 14229680 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 195 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 235 words of extra memory for PDF output out of 10000 (max. 10000000)
 
