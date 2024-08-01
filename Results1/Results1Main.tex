@@ -1,6 +1,20 @@
 \chapter{Cylindrical Simulations to Study the Effect of Beam Radius in Direct-Drive}
 
+This chapter describes a cylindrical, direct-drive implosion simulation platform and corresponding ensemble of simulations that was developed to study the effect of the beam radius initial condition on \textsc{Omega} laser facility experiments.
+Although results from the cylindrical simulations do not have the same convergence properties of spherical implosions, much of the essential physics which is important to studying the effect of beam radius is preserved.
+The main benefit of the geometry is that a 2-D ray-trace can be used to model the lasers which yields several orders of magnitude speed up, compared to spherical 3-D implosions.
+The reduction in computational expense allows ensembles of \ac{CBET} simulations to be performed, which would be exceedingly expensive for 3-D spherical calculations.
+Beam radius strongly effects \ac{CBET} and therefore including a model for the interaction in computational studies is crucial.
 
+The chapter begins with a review of the work which has been done to study the beam radius initial condition for direct-drive implosions, with an emphasis on the use of this parameter in statistical modelling of \textsc{Omega} campaigns.
+A description of the cylindrical platform is then provided, which includes a discussion of its advantages, weaknesses and applicability to current \textsc{Omega} experiments.
+The tuning procedure which was followed to obtain hydrodynamically similar implosions at different beam radii is then described.
+The main results of the chapter are then presented, which include calculations of the power deposition asymmetry both with and without \ac{CBET} and an explanation of why \ac{CBET} typically amplifies the asymmetry.
+\ac{CBET} is also shown to introduce \textit{modal flips} of the deposition in time.
+Stagnation state asymmetries of the hydrodynamic profiles are then studied for all implosions and these demonstrate that while increasing beam radius in the absence of \ac{CBET} reduces beam mode asymmetries, the opposite behaviour is observed in the presence of \ac{CBET}, although the exact relationship proves is complex.
+The chapter concludes with a summary of the work and suggestions of further work that could be undertaken using the same cylindrical platform.
+
+\newpage
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -9,16 +23,50 @@
 \label{sec:Res1_Beamrad_intro}
 
 \begin{figure}[t!]
-    \includegraphics[width=\linewidth]{Results1/Images/RbRt_beam_overlap.png}
+    \includegraphics[width=\linewidth]{Results1/Images/RbRt_beam_overlap_alt.png}
     \centering
     \caption{The trajectory of rays from two beams with Beam radii.
     The density profile for both simulations is $n_e=n_{\text{cr}}\exp{[ -(r_{\mu\text{m}}-20)/100 ]}$.
-    Panels a) and b) plot rays from beams with widths $\sigma=10$ and $18\ \mu\text{m}$ respectively.}%
+    Panels a) and b) plot rays from beams with widths $\sigma=10$ and $18\ \mu\text{m}$ respectively.
+    Ray trajectories are separated for each beam by colour depending on their sheet.
+    Red and dark blue rays are from the incident sheet (before the ray caustic) and magenta and light blue rays are from the reflected sheet (after the ray caustic).}%
     \label{fig:Res1_RbRt_beam_overlap}
 \end{figure}
 
+An idealised direct drive implosion, (neglecting the effect of random or otherwise, shot-to-shot variations) has a limited number of initial conditions which define the implosion.
+The target can be described by a set of materials and each of their thicknesses.
+Initial target parameters are intimately coupled to the physics of the implosion and, in part, dictate the propagation time of shocks through the target, hydrodynamic stability and absorption of the laser energy.
+The pulse shape describes the laser power which is incident of the target as a function of time, which itself can be parameterised by various features.
+This can be altered to, for example, drive shocks by introducing sharp rises in the incident power with time.
+A given facility also has a number of beam ports each of which has a specific origin and pointing location, which influence the magnitude of the \textit{beam mode} asymmetry, which arises from the uniformity of laser absorption.
+The intensity profile of each laser and specifically the beam radius is an additional parameter which can be varied and plays an important role in defining both the power which can be coupled to the target and the magnitude of beam mode asymmetry.
 
+At a specific laser facility, the ability to vary beam radius is often limited by the available optics, therefore it is often effectively varied from shot to shot by changing the outer radius of the target.
+These parameters can then define a dimensional variable, which is the radius of the beam divided by the target radius.
+Typically, at the \textsc{Omega} laser facility, this is explicitly defined as the radius of the beam which contains 95 \% of the incident power divided by the initial outer target radius,
+\begin{equation}
+    R_b/R_t = \frac{r_{95}}{R_t},
+\end{equation}
+where $r_{95}$ is defined by the integral,
+\begin{equation}
+    \int_0^{r_{95}}e^{- \left| \frac{r}{\sigma} \right| ^{n_s}}\text{d}r = 0.95,
+\end{equation}
+where the definition of a circular, super-Gaussian beam profile from Eq.~\ref{eq:supgaus} has been used.
+In the absence of \ac{CBET} it can intuitively be understood that increasing this parameter should improve the uniformity of the laser illumination, because beam spots overlap each other more on the target, and therefore reduce the beam mode.
+Larger $R_b/R_t$ also lead to slightly less absorption in the absence of \ac{CBET}, because a larger fraction of the incident light (especially at late time as the target converges) would reach lower density plasma and therefore not be absorbed.
+\ac{CBET} significantly complicates this interpretation, however.
 
+Fig.~\ref{fig:Res1_RbRt_beam_overlap}.a and Fig.~\ref{fig:Res1_RbRt_beam_overlap}.b plot results of a ray tracing calculation with a direct-drive relevant, exponentially decaying plasma density with a smaller and larger beam respectively.
+In direct-drive, backscatter \ac{CBET} is the dominant mechanism which depletes absorption, which is where outbound light gains energy from inbound light\footnote{Note here that outbound here means light travelling quasi-parallel to the approximately radially outward fluid velocity and inbound means quasi-anti-parallel.}.
+The outward rays from the small beam radius simulation in Fig.~\ref{fig:Res1_RbRt_beam_overlap}.a do not overlap the incident light from the other beam and therefore limited \ac{CBET} between these beams will occur.
+The trajectories from the larger radius simulation in Fig.~\ref{fig:Res1_RbRt_beam_overlap}.b, however do cross the inbound rays from the other beam, which could lead to a resonant \ac{CBET} interaction, and significant reduction of the absorbed power.
+As was shown in Fig.~\ref{fig:SOLAS_qpR_IFRIIT_test}, \ac{CBET} also substantially increases absorption asymmetry on the \textsc{Omega} laser facility.
+This means that in the presence of \ac{CBET}, the effect of increasing $R_b/R_t$ on illumination asymmetry is not clear.
+While in the absence of \ac{CBET}, it should lead to greater beam overlap, this increased overlap will result in more \ac{CBET} which could reduce uniformity of absorption.
+
+Isolating the contribution of \ac{CBET} is of particular importance to allow extrapolation of experimental results to future facilities, because it is hoped that adding bandwidth to lasers will almost entirely eliminate \ac{CBET} scattering.
+Studying which of these effects dominates is difficult to do experimentally, as significant backscatter \ac{CBET} occurs at all laser facilities which are capable of conducting compression experiments.
+Therefore, computational studies are well suited to investigate how $R_b/R_t$ influences performance and the role of \ac{CBET} in this scaling.
 
 %################################################################################
 %################################################################################
@@ -121,6 +169,24 @@
 
 %################################################################################
 %################################################################################
+\subsection{Analysis and Quantity Definitions}%
+\label{sec:Res1_analysis_and_def}
+
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Results1/Images/Mode_analysis.png}
+    \centering
+    \caption{This figure demonstrates the analysis workflow to obtain the key results for this chapter.
+    The power deposition at $t=1.12\ \text{ns}$ from the \ac{CBET} (left) and no \ac{CBET} (right) simulations are plotted in panel a) for the $R_b/R_t=0.85$ case.
+    Panel b) plots the radially integrated deposition from the profiles in a) as a function of azimuthal angle.
+    It can be seen from this plot, that the \ac{CBET} asymmetry (light-blue) is greater than the no \ac{CBET} asymmetry (red).
+    The power spectrum of these profiles is then plotted in panel c).
+    This demonstrates that the dominant modes in the spectrum are multiples of the number of beams.}%
+    \label{fig:Res1_analysis}
+\end{figure}
+
+
+%################################################################################
+%################################################################################
 \subsection{Deposition Asymmetries in the Absence of CBET}%
 \label{sec:Res1_noCBET_asymmetries}
 
@@ -180,7 +246,7 @@
 \label{sec:Res1_HS_profiles}
 
 \begin{figure}[t!]
-    \includegraphics[width=0.8\linewidth]{Results1/Images/Stagnation_plots.png}
+    \includegraphics[width=0.9\linewidth]{Results1/Images/Stagnation_plots.png}
     \centering
     \caption{Densities of the DT fuel and ion temperatures for various $R_b/R_t$ simulations both with and without \ac{CBET}.
     Each row correspond to a different $R_b/R_t$ value; the left column contains simulations without \ac{CBET}; and the right column contains simulations with \ac{CBET}.
