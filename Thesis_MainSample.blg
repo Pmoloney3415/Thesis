@@ -6,47 +6,47 @@ A level-1 auxiliary file: Preamble/PreambleMain.aux
 A level-1 auxiliary file: Results1/Results1Main.aux
 A level-1 auxiliary file: Appendix/Appendix1Main.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
-I found no \citation commands---while reading file Thesis_MainSample.aux
 Database file #1: Bibliography/Bibliography.bib
-You've used 0 entries,
+Warning--empty journal in thomas_quantifying_2020
+You've used 16 entries,
             2481 wiz_defined-function locations,
-            555 strings with 4563 characters,
-and the built_in function-call counts, 34 in all, are:
-= -- 0
-> -- 0
+            687 strings with 15569 characters,
+and the built_in function-call counts, 16234 in all, are:
+= -- 642
+> -- 2472
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 11
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
++ -- 840
+- -- 808
+* -- 2096
+:= -- 3298
+add.period$ -- 95
+call.type$ -- 16
+change.case$ -- 32
+chr.to.int$ -- 16
+cite$ -- 17
+duplicate$ -- 304
+empty$ -- 595
+format.name$ -- 824
+if$ -- 2883
 int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 8
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 17
+missing$ -- 16
+newline$ -- 135
+num.names$ -- 48
+pop$ -- 67
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 16
 quote$ -- 0
-skip$ -- 1
+skip$ -- 145
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 333
+swap$ -- 47
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 112
+warning$ -- 1
+while$ -- 49
 width$ -- 0
-write$ -- 7
-(There was 1 error message)
+write$ -- 308
+(There was 1 warning)

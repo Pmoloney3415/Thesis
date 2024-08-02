@@ -16,3 +16,7 @@ Debye
 bangtime
 timesteps
 blowby
+adiabat
+permeatively
+ablator
+mispointing
