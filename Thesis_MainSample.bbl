@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -52,6 +52,22 @@ I.~V. Igumenshchev, W.~Seka, D.~H. Edgell, D.~T. Michel, D.~H. Froula, V.~N. Gon
 \newblock ISSN 1070-664X, 1089-7674.
 \newblock \doi{10.1063/1.4718594}.
 \newblock URL \url{https://pubs.aip.org/pop/article/19/5/056314/596972/Crossed-beam-energy-transfer-in-direct-drive}.
+
+\bibitem[Kehne et~al.(2013)Kehne, Karasik, Aglitsky, Smyth, Terrell, Weaver, Chan, Lehmberg, and Obenschain]{kehne_implementation_2013}
+D.~M. Kehne, M.~Karasik, Y.~Aglitsky, Z.~Smyth, S.~Terrell, J.~L. Weaver, Y.~Chan, R.~H. Lehmberg, and S.~P. Obenschain.
+\newblock Implementation of focal zooming on the {Nike} {KrF} laser.
+\newblock \emph{Review of Scientific Instruments}, 84\penalty0 (1):\penalty0 013509, January 2013.
+\newblock ISSN 0034-6748, 1089-7623.
+\newblock \doi{10.1063/1.4789313}.
+\newblock URL \url{https://pubs.aip.org/rsi/article/84/1/013509/354878/Implementation-of-focal-zooming-on-the-Nike-KrF}.
+
+\bibitem[Trickey et~al.(2024)Trickey, Goncharov, Betti, Campbell, Collins, and Follett]{trickey_physics_2024}
+W.~Trickey, V.~N. Goncharov, R.~Betti, E.~M. Campbell, T.~J.~B. Collins, and R.~K. Follett.
+\newblock The physics of gain relevant to inertial fusion energy target designs.
+\newblock \emph{Physics of Plasmas}, 31\penalty0 (1):\penalty0 012702, January 2024.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0167405}.
+\newblock URL \url{https://pubs.aip.org/pop/article/31/1/012702/2932657/The-physics-of-gain-relevant-to-inertial-fusion}.
 
 \bibitem[Lees et~al.(2021)Lees, Betti, Knauer, Gopalaswamy, Patel, Woo, Anderson, Campbell, Cao, Carroll-Nellenback, Epstein, Forrest, Goncharov, Harding, Hu, Igumenshchev, Janezic, Mannion, Radha, Regan, Shvydky, Shah, Shmayda, Stoeckl, Theobald, and Thomas]{lees_experimentally_2021}
 A.~Lees, R.~Betti, J. P. Knauer, V.~Gopalaswamy, D.~Patel, K. M. Woo, K. S. Anderson, E. M. Campbell, D.~Cao, J.~Carroll-Nellenback, R.~Epstein, C.~Forrest, V. N. Goncharov, D. R. Harding, S. X. Hu, I. V. Igumenshchev, R. T. Janezic, O. M. Mannion, P. B. Radha, S. P. Regan, A.~Shvydky, R. C. Shah, W. T. Shmayda, C.~Stoeckl, W.~Theobald, and C.~Thomas.
@@ -131,5 +147,35 @@ V~N Goncharov, S~P Regan, E~M Campbell, T~C Sangster, P~B Radha, J~F Myatt, D~H 
 \newblock ISSN 0741-3335, 1361-6587.
 \newblock \doi{10.1088/0741-3335/59/1/014008}.
 \newblock URL \url{https://iopscience.iop.org/article/10.1088/0741-3335/59/1/014008}.
+
+\bibitem[Pérez-Callejo et~al.(2022)Pérez-Callejo, Vlachos, Walsh, Florido, Bailly-Grandvaux, Vaisseau, Suzuki-Vidal, McGuffey, Beg, Bradford, Ospina-Bohórquez, Batani, Raffestin, Colaïtis, Tikhonchuk, Casner, Koenig, Albertazzi, Fedosejevs, Woolsey, Ehret, Debayle, Loiseau, Calisti, Ferri, Honrubia, Kingham, Mancini, Gigosos, and Santos]{perez-callejo_cylindrical_2022}
+G.~Pérez-Callejo, C.~Vlachos, C.~A. Walsh, R.~Florido, M.~Bailly-Grandvaux, X.~Vaisseau, F.~Suzuki-Vidal, C.~McGuffey, F.~N. Beg, P.~Bradford, V.~Ospina-Bohórquez, D.~Batani, D.~Raffestin, A.~Colaïtis, V.~Tikhonchuk, A.~Casner, M.~Koenig, B.~Albertazzi, R.~Fedosejevs, N.~Woolsey, M.~Ehret, A.~Debayle, P.~Loiseau, A.~Calisti, S.~Ferri, J.~Honrubia, R.~Kingham, R.~C. Mancini, M.~A. Gigosos, and J.~J. Santos.
+\newblock Cylindrical implosion platform for the study of highly magnetized plasmas at {Laser} {MegaJoule}.
+\newblock \emph{Physical Review E}, 106\penalty0 (3):\penalty0 035206, September 2022.
+\newblock ISSN 2470-0045, 2470-0053.
+\newblock \doi{10.1103/PhysRevE.106.035206}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.106.035206}.
+
+\bibitem[Tubbs et~al.(1999)Tubbs, Barnes, Beck, Hoffman, Oertel, Watt, Boehly, Bradley, and Knauer]{tubbs_direct-drive_1999}
+D.L. Tubbs, C.W. Barnes, J.B. Beck, N.M. Hoffman, J.A. Oertel, R.G. Watt, T.~Boehly, D.~Bradley, and J.~Knauer.
+\newblock Direct-drive cylindrical implosion experiments: {Simulations} and data.
+\newblock \emph{Laser and Particle Beams}, 17\penalty0 (3):\penalty0 437--449, July 1999.
+\newblock ISSN 0263-0346, 1469-803X.
+\newblock \doi{10.1017/S0263034699173117}.
+\newblock URL \url{https://www.cambridge.org/core/product/identifier/S0263034699173117/type/journal_article}.
+
+\bibitem[McHardy(2018)]{mchardy_introduction_2018}
+James McHardy.
+\newblock An introduction to the theory and use of {SESAME} equations of state.
+\newblock Technical Report LA--14503, 1487368, December 2018.
+\newblock URL \url{https://www.osti.gov/servlets/purl/1487368/}.
+
+\bibitem[Peaceman and Rachford(1955)]{peaceman_numerical_1955}
+D.~W. Peaceman and H.~H. Rachford, Jr.
+\newblock The {Numerical} {Solution} of {Parabolic} and {Elliptic} {Differential} {Equations}.
+\newblock \emph{Journal of the Society for Industrial and Applied Mathematics}, 3\penalty0 (1):\penalty0 28--41, March 1955.
+\newblock ISSN 0368-4245, 2168-3484.
+\newblock \doi{10.1137/0103003}.
+\newblock URL \url{http://epubs.siam.org/doi/10.1137/0103003}.
 
 \end{thebibliography}
