@@ -20,3 +20,11 @@ adiabat
 permeatively
 ablator
 mispointing
+Trickey
+bangtimes
+lineout
+colourbar
+skymaps
+Vlasov
+Eqs
+re-gridding
