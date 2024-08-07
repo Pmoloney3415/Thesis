@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  6 AUG 2024 17:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  7 AUG 2024 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1232,45 +1232,62 @@ File: Results1/Images/noCBET_PR_modes.png Graphic file (type png)
 Package pdftex.def Info: Results1/Images/noCBET_PR_modes.png  used on input line 440.
 (pdftex.def)             Requested size: 415.41043pt x 334.31906pt.
  [19 <./Results1/Images/noCBET_PR_modes.png>]
-<Results1/Images/NoCBET_modeflip.png, id=377, 1011.78pt x 361.35pt>
+<Results1/Images/NoCBET_modeflip.png, id=380, 1011.78pt x 361.35pt>
 File: Results1/Images/NoCBET_modeflip.png Graphic file (type png)
 <use Results1/Images/NoCBET_modeflip.png>
-Package pdftex.def Info: Results1/Images/NoCBET_modeflip.png  used on input line 462.
+Package pdftex.def Info: Results1/Images/NoCBET_modeflip.png  used on input line 463.
 (pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
-<Results1/Images/Field_profiles.png, id=390, 706.275pt x 541.368pt>
-File: Results1/Images/Field_profiles.png Graphic file (type png)
-<use Results1/Images/Field_profiles.png>
-Package pdftex.def Info: Results1/Images/Field_profiles.png  used on input line 486.
-(pdftex.def)             Requested size: 415.41043pt x 318.42133pt.
-<Results1/Images/CBET_PR_modes.png, id=399, 667.512pt x 537.207pt>
-File: Results1/Images/CBET_PR_modes.png Graphic file (type png)
-<use Results1/Images/CBET_PR_modes.png>
-Package pdftex.def Info: Results1/Images/CBET_PR_modes.png  used on input line 506.
-(pdftex.def)             Requested size: 415.41043pt x 334.31906pt.
-
+<Results1/Images/Field_profiles_alt.png, id=393, 706.275pt x 542.025pt>
+File: Results1/Images/Field_profiles_alt.png Graphic file (type png)
+<use Results1/Images/Field_profiles_alt.png>
+Package pdftex.def Info: Results1/Images/Field_profiles_alt.png  used on input line 487.
+(pdftex.def)             Requested size: 415.41043pt x 318.80777pt.
+ [20 <./Results1/Images/NoCBET_modeflip.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20 <./Results1/Images/NoCBET_modeflip.png>]
-<Results1/Images/Stagnation_plots.png, id=415, 690.069pt x 940.386pt>
+ [21 <./Results1/Images/Field_profiles_alt.png>]
+<Results1/Images/CBET_PR_modes.png, id=434, 667.512pt x 537.207pt>
+File: Results1/Images/CBET_PR_modes.png Graphic file (type png)
+<use Results1/Images/CBET_PR_modes.png>
+Package pdftex.def Info: Results1/Images/CBET_PR_modes.png  used on input line 526.
+(pdftex.def)             Requested size: 415.41043pt x 334.31906pt.
+ [22]
+<Results1/Images/CBET_modeflip.png, id=478, 1011.78pt x 361.35pt>
+File: Results1/Images/CBET_modeflip.png Graphic file (type png)
+<use Results1/Images/CBET_modeflip.png>
+Package pdftex.def Info: Results1/Images/CBET_modeflip.png  used on input line 555.
+(pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
+
+Underfull \vbox (badness 2302) has occurred while \output is active []
+
+ [23 <./Results1/Images/CBET_PR_modes.png>]
+<Results1/Images/Stagnation_plots.png, id=510, 690.069pt x 940.386pt>
 File: Results1/Images/Stagnation_plots.png Graphic file (type png)
 <use Results1/Images/Stagnation_plots.png>
-Package pdftex.def Info: Results1/Images/Stagnation_plots.png  used on input line 530.
+Package pdftex.def Info: Results1/Images/Stagnation_plots.png  used on input line 593.
 (pdftex.def)             Requested size: 373.86685pt x 509.47974pt.
-<Results1/Images/RbRt_sig_rhomax.png, id=426, 867.24pt x 361.35pt>
+
+Underfull \vbox (badness 2903) has occurred while \output is active []
+
+ [24 <./Results1/Images/CBET_modeflip.png>]
+Underfull \vbox (badness 6893) has occurred while \output is active []
+
+ [25 <./Results1/Images/Stagnation_plots.png>]
+<Results1/Images/RbRt_sig_rhomax.png, id=552, 867.24pt x 361.35pt>
 File: Results1/Images/RbRt_sig_rhomax.png Graphic file (type png)
 <use Results1/Images/RbRt_sig_rhomax.png>
-Package pdftex.def Info: Results1/Images/RbRt_sig_rhomax.png  used on input line 548.
+Package pdftex.def Info: Results1/Images/RbRt_sig_rhomax.png  used on input line 621.
 (pdftex.def)             Requested size: 415.41043pt x 173.08763pt.
 
-Underfull \vbox (badness 1371) has occurred while \output is active []
+Underfull \vbox (badness 1831) has occurred while \output is active []
 
- [21 <./Results1/Images/Field_profiles.png>]
-<Results1/Images/RbRts_mode10_growth.png, id=443, 573.561pt x 542.025pt>
+ [26 <./Results1/Images/RbRt_sig_rhomax.png>]
+<Results1/Images/RbRts_mode10_growth.png, id=580, 573.561pt x 542.025pt>
 File: Results1/Images/RbRts_mode10_growth.png Graphic file (type png)
 <use Results1/Images/RbRts_mode10_growth.png>
-Package pdftex.def Info: Results1/Images/RbRts_mode10_growth.png  used on input line 565.
+Package pdftex.def Info: Results1/Images/RbRts_mode10_growth.png  used on input line 656.
 (pdftex.def)             Requested size: 311.55782pt x 294.43423pt.
-) [22 <./Results1/Images/CBET_PR_modes.png>] [23 <./Results1/Images/Stagnation_plots.png>] [24 <./Results1/Images/RbRt_sig_rhomax.png> <./Results1/Images/RbRts_mode10_growth.png>] [25
+) [27] [28 <./Results1/Images/RbRts_mode10_growth.png>] [29
 
 
 
@@ -1279,7 +1296,7 @@ Package pdftex.def Info: Results1/Images/RbRts_mode10_growth.png  used on input 
 
  (./Appendix/Appendix1Main.tex
 chapter A.
-) [26
+) [30
 
 
 ] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
@@ -1296,7 +1313,7 @@ Underfull \hbox (badness 1546) in paragraph at lines 39--39
 \T1/futs/m/n/10.95 trans-fer mit-i-ga-tion tech-niques in direct-drive in-er-tial con-fine-ment fu-sion im-plo-
  []
 
-[27
+[31
 
 
 
@@ -1307,7 +1324,7 @@ Underfull \hbox (badness 3250) in paragraph at lines 71--71
 \T1/futs/m/n/10.95 5 . 0167405$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 31 / 1 / 012702 / 2932657 /
  []
 
-[28]
+[32]
 Underfull \hbox (badness 3250) in paragraph at lines 103--103
 \T1/futs/m/n/10.95 5 . 0195675$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 31 / 5 / 052703 / 3293889 /
  []
@@ -1317,18 +1334,18 @@ Underfull \hbox (badness 2591) in paragraph at lines 126--126
 |   []   |   []\T1/futs/m/n/10.95 , 28(4):042701, April 2021.  ISSN 1070-664X, 1089-7674.  doi: $10 .
  []
 
-[29]
+[33]
 Underfull \hbox (badness 1888) in paragraph at lines 142--142
 \T1/futs/m/n/10.95 P. B. Radha, S. P. Re-gan, T. C. Sang-ster, W. Seka, A. A. Solodov, J. M. Soures,
  []
 
-[30]) [31] [32
+[34]) [35] [36
 
 
 ]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [33
+ (./Appendix/Permissions.tex) [37
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Results1/Results1Main.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
@@ -1346,18 +1363,18 @@ Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
 (rerunfilecheck)             Checksum: B8A769D092FFBECDE70A547FA98E55A3;2078.
  ) 
 Here is how much of TeX's memory you used:
- 27550 strings out of 474165
- 544855 string characters out of 5749497
+ 27562 strings out of 474165
+ 545251 string characters out of 5749497
  1953542 words of memory out of 5000000
- 49242 multiletter control sequences out of 15000+600000
+ 49248 multiletter control sequences out of 15000+600000
  715702 words of font info for 197 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,19n,121p,10978b,1111s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (33 pages, 21042428 bytes).
+Output written on Thesis_MainSample.pdf (37 pages, 23007113 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 614 compressed objects within 7 object streams
- 126 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 864 PDF objects out of 1000 (max. 8388607)
+ 731 compressed objects within 8 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 252 words of extra memory for PDF output out of 10000 (max. 10000000)
 

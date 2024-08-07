@@ -439,7 +439,7 @@ Therefore, they do not significantly imprint on the hydrodynamic profiles over t
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Results1/Images/noCBET_PR_modes.png}
     \centering
-    \caption{The radially integrated deposited power from no-\ac{CBET} simulations as a function of time ($x$-axis) and angle ($y$-axis), alongside amplitudes of the dominant modes from a Fourier power spectrum.
+    \caption{Radially integrated deposited power from no-\ac{CBET} simulations as a function of time ($x$-axis) and angle ($y$-axis), alongside amplitudes of the dominant modes from a Fourier power spectrum.
     Panels a) and b) plot the radially integrated deposited power and Fourier modes respectively for the $R_b/R_t=0.8$ simulation.
     The same is plotted for the $R_b/R_t=0.9$ simulation in c) \& d) and for the $R_b/R_t=1.0$ simulation in e) \& f).
     The mode 10 from the number of beams is clearly visible in the radially integrated power plots as 10 peaks to troughs in angle at a given time, \textit{i.e.} 10 cyclical perturbations along a vertical lineout.}%
@@ -447,12 +447,13 @@ Therefore, they do not significantly imprint on the hydrodynamic profiles over t
 \end{figure}
 
 This section shows results of the deposited power in the absence of \ac{CBET} for several implosions.
-Plotted in Figs.~\ref{fig:Res1_PR_noCBET_modes}.a,~\ref{fig:Res1_PR_noCBET_modes}.c and~\ref{fig:Res1_PR_noCBET_modes}.e are $P_{\text{dep}}(t,\phi)$ for $R_b/R_t=0.8$, $0.9$ and $1.0$ respectively.
+Plotted in Figs.~\ref{fig:Res1_PR_noCBET_modes}.a,~\ref{fig:Res1_PR_noCBET_modes}.c and~\ref{fig:Res1_PR_noCBET_modes}.e are $P_{\text{dep}}R(t,\phi)$ for $R_b/R_t=0.8$, $0.9$ and $1.0$ respectively.
 Explicitly, this is the radially integrated power from Eq.~\ref{eq:Res1_radint}, plotted as a function of time ($x$-axis) and azimuthal angle ($y$-axis).
 The $\ell=10$ deposition asymmetry at a single time (for example the red curve in Fig.~\ref{fig:Res1_analysis}.b) is visible as ten peaks to troughs along a vertical lineout.
 As expected, comparing the saturation of the colour scale between these three plots, demonstrates that at smaller beam radii, asymmetries in the absence of \ac{CBET} are much more significant.
+Figs.~\ref{fig:Res1_PR_noCBET_modes}.b,~\ref{fig:Res1_PR_noCBET_modes}.d and~\ref{fig:Res1_PR_noCBET_modes}.f plot the power spectrum amplitude of the dominant modes $\ell=10$ and $20$ as a function of time on a log scale.
 
-At times $t\sim0.7$, $0.9$ and $1.1\ \text{ns}$ for the $R_b/R_t=0.8$, $0.9$ and $1.0$ simulations respectively, a modal flip of the deposited power is observed.
+At times $t\sim0.7$, $0.9$ and $1.1\ \text{ns}$ for the $R_b/R_t=0.8$, $0.9$ and $1.0$ simulations respectively, a modal-flip of the deposited power is observed.
 This occurs because the plasma scale length increases in time, widening the plasma region above the critical surface where the \ac{Inv-Brem} occurs.
 Thus, the wings of the beams, which do not penetrate as far radially in, contribute more to deposition after this longer scale-length coronal plasma region has evolved.
 This eventually leads to a modal flip, when more deposition occurs between beam angles then at the angle of the beam itself.
@@ -483,24 +484,43 @@ This occurs due to the plasma scale length increasing, raising the density furth
 \label{sec:Res1_CBET_imprint}
 
 \begin{figure}[t!]
-    \includegraphics[width=\linewidth]{Results1/Images/Field_profiles.png}
+    \includegraphics[width=\linewidth]{Results1/Images/Field_profiles_alt.png}
     \centering
-    \caption{This plot illustrates the origin of the \ac{CBET} induced asymmetry on power deposition and its dependence on $R_b/R_t$ and target convergence.
-    Each panel plots the incident field (including the effect of \ac{CBET}), along with contours of the critical electron density and the $|E_z^{\text{in}}|=1\times10^{10}\ \text{Vm}^{-1}$ contour of another beam.
+    \caption{Field structure which leads to \ac{CBET} induced asymmetry on power deposition and its dependence on $R_b/R_t$ and target convergence.
+    Each panel plots the incident sheet field (including the effect of \ac{CBET}), along with contours of the critical electron density (green) and the incident field, $|E_z^{\text{in}}|=1\times10^{10}\ \text{Vm}^{-1}$ contour of another beam (magenta).
     Panel a) \& b) plot this for the $R_b/R_t=0.9$ simulation at $t=1.0\ \text{ns}$ \& $t=1.5\ \text{ns}$ respectively.
     The convergence of the target in this time interval leads to greater convergence and therefore a change in the spatial location across the beam of the resonant \ac{CBET} interaction.
-    Panel c) plots the $R_b/R_t=0.75$ at the same time as panel a).
-    This demonstrates that the $R_b/R_t=0.75$ beam is not wide enough at this time to lead to a resonant \ac{CBET} interaction, unlike the wider beam in panel a).}%
+    Panel c) plots the $R_b/R_t=0.80$ at the same time as panel a).
+    This demonstrates that the $R_b/R_t=0.80$ beam is not wide enough at this time to lead to a resonant \ac{CBET} interaction, unlike the wider beam in panel a).}%
     \label{fig:Res1_field_profiles}
 \end{figure}
 
-cbet imprint
+When \ac{CBET} is included in these simulations, it acts to significantly alter the field structure of the inbound laser sheets, leading to additional asymmetry in the deposition, which predominantly occurs closer to the critical surface than the \ac{CBET} scattering.
+This occurs because the resonant \ac{CBET} interaction is spatially localised, as opposed to azimuthally symmetric around the target.
+Fig.~\ref{fig:Res1_field_profiles}.a illustrates this, by plotting the electric field magnitude from the incident sheet of `beam-1' from the $R_b/R_t=0.9$ \ac{CBET} simulation at $t=1.0\ \text{ns}$, along with the $|E_z^{\text{in}}|=1\times10^{10}\ \text{Vm}^{-1}$ contour of `beam-4'.
+The beams are separated from each other by $108^{\circ}$.
+It can be seen that there are two `holes' in the beam-1 incident field profile, on either side of the beam centre.
+These are due to \ac{CBET} interactions with other beams, for example, the resonance with the caustic field region of beam-4 is responsible for the hole at $[x,y]\sim[-500,-400]\ \mu\text{m}$.
+Typically, a large fraction of \ac{CBET} scattering occurs in the caustic field region of beams for direct-drive implosions, due to the refractive swelling of the ray amplitude and therefore large electric fields present.
+Caustic regions are narrow structures, therefore \ac{CBET} is strongly localised, leading to the significant imprint on the fields of inbound beams.
 
+The trajectory that the light follows, and therefore the location of the caustic, depend on the electron density profile.
+For a direct-drive implosion, the critical density falls inward throughout the implosion leading to a caustic field structure which `wraps around' the target more, \textit{i.e.} rays at an equivalent impact parameter are deflected less, as the critical radius converges.
+This can be seen by comparing Fig.~\ref{fig:Res1_field_profiles}.a ($t=1.0\ \text{ns}$) and Fig.~\ref{fig:Res1_field_profiles}.b ($t=1.5\ \text{ns}$), with critical radii $r_{\text{cr}}\sim430$ and $360\ \mu\text{m}$ respectively.
+The shrinking of $r_{\text{cr}}$ has allowed beam-4 to wrap around the target more, such that the caustic \ac{CBET} interaction now occurs in the middle of the incident field of beam-1.
+Comparing the field structures from Fig.~\ref{fig:Res1_field_profiles}.a and Fig.~\ref{fig:Res1_field_profiles}.b, the deposition of beam-1 at $t=1.0\ \text{ns}$ will peak at the incident beam angle due to the depleted field on either side, whereas at $t=1.0\ \text{ns}$, the depletion of the field in the beam centre will shift the $P_{\text{dep}}R$ maxima in azimuthal angle.
+In other words a modal flip of the power deposition occurs between these times, which is due to the localised caustic \ac{CBET} interaction changing location as the target converges.
+
+Fig.~\ref{fig:Res1_field_profiles}.c plots the same as Fig.~\ref{fig:Res1_field_profiles}.a, but for the $R_b/R_t=0.80$ case, \textit{i.e.} a much narrower beam.
+From this plot, it can be seen that unlike for the $R_b/R_t=0.9$ case, beam-4 does not wrap around the target enough for its caustic region to deplete beam-1, leading to a relatively unperturbed incident field profile.
+This demonstrates that the \ac{CBET} induced modal flips are different for implosions with different $R_b/R_t$, because narrower (wider) beam will wrap around the target less (more) at an equivalent critical radius.
+Therefore, larger $R_b/R_t$ values allow more modal flips to occur, because at a given critical radius, wider beams wrap around more, and therefore can undergo \ac{CBET} with beams which have a larger angular separation.
+It is important to note that although this analysis only considers a single beam, the coronal hydrodynamic profiles are approximately azimuthally symmetric and therefore the beams and \ac{CBET} interactions have rotational symmetry.
 
 %################################################################################
 %################################################################################
-\subsection{Modal Flips of Power Deposition Asymmetries}%
-\label{sec:Res1_ModalFlip}
+\subsection{Deposition Asymmetries in the Presence of CBET}%
+\label{sec:Res1_CBET_asymmetries}
 
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Results1/Images/CBET_PR_modes.png}
@@ -510,8 +530,46 @@ cbet imprint
     \label{fig:Res1_PR_CBET_modes}
 \end{figure}
 
-modal flips
+Results shall be presented in this section of the $P_{\text{dep}}$ asymmetries for simulations including \ac{CBET}, contrasted to Sec.~\ref{sec:Res1_noCBET_asymmetries}, which presented results for the no-\ac{CBET} simulations.
+Similarly to Fig.~\ref{fig:Res1_PR_noCBET_modes}, plotted in Figs.~\ref{fig:Res1_PR_CBET_modes}.a,~\ref{fig:Res1_PR_CBET_modes}.c and~\ref{fig:Res1_PR_CBET_modes}.e are $P_{\text{dep}}R(t,\phi)$ for $R_b/R_t=0.8$, $0.9$ and $1.0$ respectively.
+Note that in these plots, the colour scale saturates at $20\ \%$ rather than $5\ \%$, which demonstrates that deposition asymmetries are typically much larger when the effects of \ac{CBET} are included.
+A small discontinuity is visible in these plots at $t\sim2.15\ \text{ns}$, which is the time that the critical density passes from the CH ablator material into the DT fuel.
+Mix between these materials is not modelled in \textsc{Chimera}, which leads to spurious, radially outward $\nabla n_e$ near the critical radius when this occurs which show up in the field reconstruction and deposition for a short time interval.
 
+The $P_{\text{dep}}R$ plots in Fig.~\ref{fig:Res1_PR_CBET_modes} have significantly more structure than the equivalent no-\ac{CBET} plots in Fig.~\ref{fig:Res1_PR_noCBET_modes}.
+There is an increase in the number of mode-flips, the larger $R_b/R_t$ implosions appear to increase deposition asymmetry (rather than decrease like for no-\ac{CBET}) and more significant higher modes also appear to be present in $P_{\text{dep}}R$.
+Figs.~\ref{fig:Res1_PR_CBET_modes}.b,~\ref{fig:Res1_PR_CBET_modes}.d and~\ref{fig:Res1_PR_CBET_modes}.f plot the $P_{\text{dep}}R$ Fourier power spectrum amplitudes of the modes $\ell=10$ and $20$ throughout the implosion.
+
+Comparing Fig.~\ref{fig:Res1_PR_noCBET_modes} and Fig.~\ref{fig:Res1_PR_CBET_modes}, \ac{CBET} leads to a mode-flip in the deposition at $t\sim0.4\ \text{ns}$, which does not occur for the no-\ac{CBET} case.
+The resulting $\ell=10$ in the \ac{CBET} deposition profiles between $t\sim0.4\ \text{ns}$ and $t\sim1.2\ \text{ns}$ strongly depends on the $R_b/R_t$ value.
+For the $R_b/R_t=0.8$, \ac{CBET} simulation, the $\ell=10$ amplitude is low compared to the larger $R_b/R_t$, \ac{CBET} simulations.
+This is because the relatively narrow beams at this time do not sufficiently wrap around the target to give rise to strong caustic fields and subsequent \ac{CBET} imprints on incident beams.
+This is seen explicitly, by comparing the incident field profiles at $t=1.0\ \text{ns}$ for the $R_b/R_t=0.9$ and $0.8$ simulations plotted in Figs.~\ref{fig:Res1_field_profiles}.a and~\ref{fig:Res1_field_profiles}.c respectively.
+
+Interesting behaviour is also observed later in the implosion.
+Comparing the $R_b/R_t=0.9$ (Fig.~\ref{fig:Res1_PR_CBET_modes}.c) and $1.0$ (Fig.~\ref{fig:Res1_PR_CBET_modes}.e) plots at $t\sim1.8\ \text{ns}$, it can be seen that an additional mode-flip is beginning to develop for the $R_b/R_t=1.0$ case.
+This is also seen in Figs.~\ref{fig:Res1_field_profiles}.d and~\ref{fig:Res1_field_profiles}.f, by the reduction in amplitude of the $\ell=10$ and rise of the $\ell=20$.
+However, the beam $R_b/R_t=1.0$ is not quite wide enough to fully translate to a mode-flip, so this results in a net decrease in $P_{\text{dep}}R$ asymmetry, compared to the $R_b/R_t=1.0$ simulation at the same time.
+
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Results1/Images/CBET_modeflip.png}
+    \centering
+    \caption{Demonstration of a mode-flip in $P_{\text{dep}}$ for the \ac{CBET}, $R_b/R_t=0.9$ simulation.
+    Panels a), b) and c) plot the power deposition before, during and after the mode-flip.
+    Panel d) plots the deviation from the mean of the radially profiles around the azimuthal angle for all 3 simulations.
+    Fig.~\ref{fig:Res1_field_profiles}.a and Fig.~\ref{fig:Res1_field_profiles}.b plot a single, incident sheet field from panels a) and c) respectively.
+    It can be seen that the centre of the beam depletion at $t=1.5\ \text{ns}$ leads to less deposition at the beam angles (magenta lines) on panel d).
+    Panel b) shows that during the \ac{CBET} induced mode-flip, a significant $\ell=20$ occurs in the deposition.
+    The reducing absorption at the centre of one beam is highlighted in by the white dashed circles.}%
+    \label{fig:Res1_CBET_Deposition_change}
+\end{figure}
+
+Fig.~\ref{fig:Res1_CBET_Deposition_change} plots the development of the mode-flip which occurs at $t\sim 1.25\ \text{ns}$.
+Figs. \ref{fig:Res1_CBET_Deposition_change}.a, \ref{fig:Res1_CBET_Deposition_change}.b and \ref{fig:Res1_CBET_Deposition_change}.c plot the deposited power from all beams before, during and after the flip respectively.
+As can be seen in the area highlighted by the dashed white circles in each plot, the deposition at the angle of the beams (magenta dashed lines) becomes less significant, compared to the angles between beams.
+Figs.~\ref{fig:Res1_CBET_Deposition_change}.a and~\ref{fig:Res1_CBET_Deposition_change}.c are from the same time as the single field profiles plotted in Figs.~\ref{fig:Res1_field_profiles}.a and~\ref{fig:Res1_field_profiles}.b respectively.
+These field profiles demonstrate that \ac{CBET} scattering in the caustic region of the beams separated by $108^{\circ}$, is responsible for the depletion of the inbound beams on either side of the beam centre at $t=1.0\ \text{ns}$ and in the beam centre at $t=1.5\ \text{ns}$.
+The radially integrated deposition is plotted in Fig.~\ref{fig:Res1_CBET_Deposition_change}.d, which shows the $\ell=20$ of the deposited power during the mode-flip.
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -519,12 +577,17 @@ modal flips
 \section{Stagnation State Asymmetry}%
 \label{sec:Res1_StagnationAsymm}
 
-stgnation asym
+This section describes how the asymmetries of the deposition profiles, described in Sec.~\ref{sec:Res1_PdepR_CBET_asymm}, imprint upon the hydrodynamics.
+The stagnation profiles for various $R_b/R_t$ are presented for the \ac{CBET} and no-\ac{CBET} simulations.
+These demonstrate that \ac{CBET} tends to increase the asymmetry of the stagnated state, due to the decreased absorption uniformity.
+It is observed that \ac{CBET} changes the trend of the stagnation symmetry with $R_b/R_t$.
+While, for the no-\ac{CBET} simulations, symmetry increases with increasing $R_b/R_t$, \ac{CBET} generally reverses this behaviour, with the least symmetric stagnation states observed for large $R_b/R_t$.
+The \ac{CBET} trend is, however, non-monotonic which is due to development of additional mode-flips at specific values of $R_b/R_t$ slightly increasing the deposition symmetry late in the implosion.
 
 %################################################################################
 %################################################################################
-\subsection{Hotspot Profiles}%
-\label{sec:Res1_HS_profiles}
+\subsection{Stagnation State Asymmetry Trend with Beam Radius}%
+\label{sec:Res1_stagnation_asymm_trend}
 
 \begin{figure}[t!]
     \includegraphics[width=0.9\linewidth]{Results1/Images/Stagnation_plots.png}
@@ -535,14 +598,24 @@ stgnation asym
     \label{fig:Res1_stagnation_plots}
 \end{figure}
 
-hotspot profiles
+Fig.~\ref{fig:Res1_stagnation_plots} plots the stagnation fuel density and ion temperature for both the \ac{CBET} and no-\ac{CBET} simulations at 4 different $R_b/R_t$.
+The beam-mode $\ell=10$ is clearly identifiable in all plots.
+Recall that all simulations are tuned to have the same amount of absorbed laser energy, via the tuning process described in Sec.~\ref{sec:Res1_1D_tuning}.
+The no-\ac{CBET} results clearly show a trend of increasing stagnation symmetry with increasing $R_b/R_t$, as expected from the plots in Fig.~\ref{fig:Res1_PR_noCBET_modes}, which showed increasing symmetry of absorption with increasing beam radius.
+The pressure of the stagnation state is approximately isobaric, and therefore the temperature profiles are inversely proportional to the density.
 
+Peak densities increase and the radius of stagnation decreases marginally as $R_b/R_t$ decrease.
+This improved compression is partially due to increased symmetry providing better compression, but also more optimal shock timing for the larger $R_b/R_t$ implosions also contributes.
+As is seen in the streak plots in Fig.~\ref{fig:Res1_streaks}, the tuning process led to the first shock hitting the axis slightly earlier at narrower $R_b/R_t$, than for the larger $R_b/R_t$ implosions.
+Although the streak plots are for 1-D with-\ac{CBET} simulations, the same trend is observed for the 2-D with- and without-\ac{CBET} simulations.
+The more optimal shock timing for larger $R_b/R_t$ also has the signature of higher on-axis densities.
+The contribution of small differences in shock timing is not quantified in the following analysis, but it is assumed that it will have a second order effect on the stagnation symmetry, compared to asymmetry in deposition.
 
-
-%################################################################################
-%################################################################################
-\subsection{Stagnation State Asymmetry Trend with Beam Radius}%
-\label{sec:Res1_stagnation_asymm_trend}
+Increasing $R_b/R_t$ when including \ac{CBET} broadly shows the opposite behaviour to the no-\ac{CBET} simulations, exhibiting highly non-uniform density profiles at large $R_b/R_t$.
+This trend was also observed in the deposition plots in Fig.~\ref{fig:Res1_PR_CBET_modes}, with the wider beam simulations leading to a more saturated plot on the colour scale.
+Higher order modes than $\ell=10$ also become increasingly evident in the wider beam \ac{CBET} simulations.
+Note that the $R_b/R_t=0.8$ simulation with \ac{CBET} is more symmetric than the no-\ac{CBET} simulation at the same beam radius.
+This is believed to be due to the developing mode-flip in Fig.~\ref{fig:Res1_PR_CBET_modes}.a from $t\sim 0.5\rightarrow 1.3\ \text{ns}$, strongly reducing the absorption asymmetry and subsequent imprinting onto the density early while the capsule is in-flight.
 
 \begin{figure}[t!]
     \includegraphics[width=1.0\linewidth]{Results1/Images/RbRt_sig_rhomax.png}
@@ -553,8 +626,26 @@ hotspot profiles
     \label{fig:Res1_asymm_trend}
 \end{figure}
 
-stagnation trend
+The standard deviations of the radially integrated stagnation state fuel density,
+\begin{equation}
+    \sigma [\rho_{\text{DT}}R] = \sqrt{ \langle \rho_{\text{DT}}R^2 \rangle - \langle \rho_{\text{DT}}R \rangle^2 },
+\end{equation}
+for the \ac{CBET} and no-\ac{CBET} simulations are plotted as a function of $R_b/R_t$ in Fig.~\ref{fig:Res1_asymm_trend}.a.
+The no-\ac{CBET} trend from this metric clearly follow the behaviour seen in Fig.~\ref{fig:Res1_stagnation_plots}, were increasing beam width results in better symmetry of the hydrodynamic profiles at stagnation.
+Note that the $R_b/R_t=0.75$ simulation value is more symmetric than the $0.8$ result, suggesting that more complex behaviour may occur at smaller beam radii.
+This suggests that more complex symmetry behaviour may occur without \ac{CBET} for $R_b/R_t<0.8$, but this is outside of the range of typical \textsc{Omega} implosions and therefore not studied in detail.
+The with-\ac{CBET} curve shows a broad trend of increasing asymmetry with wider beams, as observed from the stagnation profiles in Fig.~\ref{fig:Res1_stagnation_plots}, however the behaviour is clearly more complex than the no-\ac{CBET} simulations.
+A local maxima of asymmetry is observed at $R_b/R_t=0.9$ and minima at $R_b/R_t=1.0$.
+As shall be described in the subsequent section, Sec.~\ref{sec:Res1_time_res_growth}, these features are explained by the complex, \ac{CBET} induced modal-flips of the deposition which were described in Sec.~\ref{sec:Res1_CBET_asymmetries}.
 
+The azimuthally averaged maximum density,
+\begin{equation}
+    \rho_{\text{DT,max}} = \text{max}\left( \int_{-\pi}^{\pi} \rho_{\text{DT}}(r,\phi)\ \text{d}\phi \right),
+\end{equation}
+is plotted in Fig.~\ref{fig:Res1_asymm_trend}.b for both sets of simulations.
+The behaviour in this plot is inversely proportional to the standard deviation, which suggests that the asymmetry of the density has a detrimental effect on the compression of the target.
+The (unintended) improved shock timing at larger beam radii does appear to somewhat compensate for the reduction in uniformity, \textit{i.e.} the compression metric at $R_b/R_t=1.05$ is about the same as $R_b/R_t=0.8$, despite far worse symmetry.
+It is therefore, difficult to quantify the contribution to the degradation of compression due to each of these effects, from this set of simulations.
 
 %################################################################################
 %################################################################################
