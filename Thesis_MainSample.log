@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  7 AUG 2024 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  8 AUG 2024 16:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1089,7 +1089,7 @@ although it is yet undefined on input line 6.
 
 
 ]
-<Results1/Images/RbRt_beam_overlap_alt.png, id=66, 1011.78pt x 469.755pt>
+<Results1/Images/RbRt_beam_overlap_alt.png, id=70, 1011.78pt x 469.755pt>
 File: Results1/Images/RbRt_beam_overlap_alt.png Graphic file (type png)
 <use Results1/Images/RbRt_beam_overlap_alt.png>
 Package pdftex.def Info: Results1/Images/RbRt_beam_overlap_alt.png  used on input line 26.
@@ -1109,49 +1109,11 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 LaTeX Warning: Reference `fig:SOLAS_qpR_IFRIIT_test' on page 7 undefined on input line 65.
 
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 76.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 76.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 76.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 76.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 76.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 76.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 76.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 76.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 76.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 76.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 76.
-
-<Results1/Images/RbRt_froula.png, id=101, 501.875pt x 337.26pt>
+<Results1/Images/RbRt_froula.png, id=105, 501.875pt x 337.26pt>
 File: Results1/Images/RbRt_froula.png Graphic file (type png)
 <use Results1/Images/RbRt_froula.png>
 Package pdftex.def Info: Results1/Images/RbRt_froula.png  used on input line 80.
 (pdftex.def)             Requested size: 207.70522pt x 139.57947pt.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 84.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 84.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 84.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 91.
 [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1161,7 +1123,7 @@ although it is yet undefined on input line 124.
 Package acronym Info: Label `acro:IFAR' newly defined as it shall be overridden
 although it is yet undefined on input line 126.
  [9] [10]
-<Results1/Images/RbRt_degradation_Lees.jpeg, id=185, 84.315pt x 71.42685pt>
+<Results1/Images/RbRt_degradation_Lees.jpeg, id=189, 84.315pt x 71.42685pt>
 File: Results1/Images/RbRt_degradation_Lees.jpeg Graphic file (type jpg)
 <use Results1/Images/RbRt_degradation_Lees.jpeg>
 Package pdftex.def Info: Results1/Images/RbRt_degradation_Lees.jpeg  used on input line 167.
@@ -1177,11 +1139,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package acronym Info: Label `acro:Rad-Hydro' newly defined as it shall be overridden
 although it is yet undefined on input line 231.
  [12]
-<Results1/Images/cyl_setup.png, id=226, 789.933pt x 362.445pt>
+<Results1/Images/cyl_setup.png, id=230, 789.933pt x 362.445pt>
 File: Results1/Images/cyl_setup.png Graphic file (type png)
 <use Results1/Images/cyl_setup.png>
 Package pdftex.def Info: Results1/Images/cyl_setup.png  used on input line 259.
 (pdftex.def)             Requested size: 415.41043pt x 190.60724pt.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 263.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 263.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 263.
 
 
 LaTeX Warning: Reference `fig:89224_ICs' on page 13 undefined on input line 263.
@@ -1209,7 +1177,7 @@ LaTeX Warning: No positions in optional float specifier.
 LaTeX Warning: Reference `fig:SOLAS_89224_pdep' on page 15 undefined on input line 329.
 
 [15]
-<Results1/Images/streaks.png, id=278, 1032.147pt x 542.025pt>
+<Results1/Images/streaks.png, id=282, 1032.147pt x 542.025pt>
 File: Results1/Images/streaks.png Graphic file (type png)
 <use Results1/Images/streaks.png>
 Package pdftex.def Info: Results1/Images/streaks.png  used on input line 340.
@@ -1217,7 +1185,7 @@ Package pdftex.def Info: Results1/Images/streaks.png  used on input line 340.
 Package acronym Info: Label `acro:Inv-Brem' newly defined as it shall be overridden
 although it is yet undefined on input line 362.
  [16 <./Results1/Images/streaks.png>]
-<Results1/Images/Mode_analysis.png, id=302, 1011.78pt x 361.35pt>
+<Results1/Images/Mode_analysis.png, id=306, 1011.78pt x 361.35pt>
 File: Results1/Images/Mode_analysis.png Graphic file (type png)
 <use Results1/Images/Mode_analysis.png>
 Package pdftex.def Info: Results1/Images/Mode_analysis.png  used on input line 372.
@@ -1226,18 +1194,18 @@ Package pdftex.def Info: Results1/Images/Mode_analysis.png  used on input line 3
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18]
-<Results1/Images/noCBET_PR_modes.png, id=358, 667.512pt x 537.207pt>
+<Results1/Images/noCBET_PR_modes.png, id=362, 667.512pt x 537.207pt>
 File: Results1/Images/noCBET_PR_modes.png Graphic file (type png)
 <use Results1/Images/noCBET_PR_modes.png>
 Package pdftex.def Info: Results1/Images/noCBET_PR_modes.png  used on input line 440.
 (pdftex.def)             Requested size: 415.41043pt x 334.31906pt.
  [19 <./Results1/Images/noCBET_PR_modes.png>]
-<Results1/Images/NoCBET_modeflip.png, id=380, 1011.78pt x 361.35pt>
+<Results1/Images/NoCBET_modeflip.png, id=384, 1011.78pt x 361.35pt>
 File: Results1/Images/NoCBET_modeflip.png Graphic file (type png)
 <use Results1/Images/NoCBET_modeflip.png>
 Package pdftex.def Info: Results1/Images/NoCBET_modeflip.png  used on input line 463.
 (pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
-<Results1/Images/Field_profiles_alt.png, id=393, 706.275pt x 542.025pt>
+<Results1/Images/Field_profiles_alt.png, id=397, 706.275pt x 542.025pt>
 File: Results1/Images/Field_profiles_alt.png Graphic file (type png)
 <use Results1/Images/Field_profiles_alt.png>
 Package pdftex.def Info: Results1/Images/Field_profiles_alt.png  used on input line 487.
@@ -1246,13 +1214,13 @@ Package pdftex.def Info: Results1/Images/Field_profiles_alt.png  used on input l
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21 <./Results1/Images/Field_profiles_alt.png>]
-<Results1/Images/CBET_PR_modes.png, id=434, 667.512pt x 537.207pt>
+<Results1/Images/CBET_PR_modes.png, id=438, 667.512pt x 537.207pt>
 File: Results1/Images/CBET_PR_modes.png Graphic file (type png)
 <use Results1/Images/CBET_PR_modes.png>
 Package pdftex.def Info: Results1/Images/CBET_PR_modes.png  used on input line 526.
 (pdftex.def)             Requested size: 415.41043pt x 334.31906pt.
  [22]
-<Results1/Images/CBET_modeflip.png, id=478, 1011.78pt x 361.35pt>
+<Results1/Images/CBET_modeflip.png, id=482, 1011.78pt x 361.35pt>
 File: Results1/Images/CBET_modeflip.png Graphic file (type png)
 <use Results1/Images/CBET_modeflip.png>
 Package pdftex.def Info: Results1/Images/CBET_modeflip.png  used on input line 555.
@@ -1261,7 +1229,7 @@ Package pdftex.def Info: Results1/Images/CBET_modeflip.png  used on input line 5
 Underfull \vbox (badness 2302) has occurred while \output is active []
 
  [23 <./Results1/Images/CBET_PR_modes.png>]
-<Results1/Images/Stagnation_plots.png, id=510, 690.069pt x 940.386pt>
+<Results1/Images/Stagnation_plots.png, id=514, 690.069pt x 940.386pt>
 File: Results1/Images/Stagnation_plots.png Graphic file (type png)
 <use Results1/Images/Stagnation_plots.png>
 Package pdftex.def Info: Results1/Images/Stagnation_plots.png  used on input line 593.
@@ -1273,7 +1241,7 @@ Underfull \vbox (badness 2903) has occurred while \output is active []
 Underfull \vbox (badness 6893) has occurred while \output is active []
 
  [25 <./Results1/Images/Stagnation_plots.png>]
-<Results1/Images/RbRt_sig_rhomax.png, id=552, 867.24pt x 361.35pt>
+<Results1/Images/RbRt_sig_rhomax.png, id=556, 867.24pt x 361.35pt>
 File: Results1/Images/RbRt_sig_rhomax.png Graphic file (type png)
 <use Results1/Images/RbRt_sig_rhomax.png>
 Package pdftex.def Info: Results1/Images/RbRt_sig_rhomax.png  used on input line 621.
@@ -1282,12 +1250,18 @@ Package pdftex.def Info: Results1/Images/RbRt_sig_rhomax.png  used on input line
 Underfull \vbox (badness 1831) has occurred while \output is active []
 
  [26 <./Results1/Images/RbRt_sig_rhomax.png>]
-<Results1/Images/RbRts_mode10_growth.png, id=580, 573.561pt x 542.025pt>
+<Results1/Images/RbRts_mode10_growth.png, id=584, 573.561pt x 542.025pt>
 File: Results1/Images/RbRts_mode10_growth.png Graphic file (type png)
 <use Results1/Images/RbRts_mode10_growth.png>
 Package pdftex.def Info: Results1/Images/RbRts_mode10_growth.png  used on input line 656.
 (pdftex.def)             Requested size: 311.55782pt x 294.43423pt.
-) [27] [28 <./Results1/Images/RbRts_mode10_growth.png>] [29
+ [27]
+Underfull \vbox (badness 4242) has occurred while \output is active []
+
+ [28 <./Results1/Images/RbRts_mode10_growth.png>] [29] [30]
+Package acronym Info: Label `acro:ICF' newly defined as it shall be overridden
+although it is yet undefined on input line 775.
+) [31] [32] [33
 
 
 
@@ -1296,7 +1270,7 @@ Package pdftex.def Info: Results1/Images/RbRts_mode10_growth.png  used on input 
 
  (./Appendix/Appendix1Main.tex
 chapter A.
-) [30
+) [34
 
 
 ] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
@@ -1313,7 +1287,7 @@ Underfull \hbox (badness 1546) in paragraph at lines 39--39
 \T1/futs/m/n/10.95 trans-fer mit-i-ga-tion tech-niques in direct-drive in-er-tial con-fine-ment fu-sion im-plo-
  []
 
-[31
+[35
 
 
 
@@ -1324,7 +1298,7 @@ Underfull \hbox (badness 3250) in paragraph at lines 71--71
 \T1/futs/m/n/10.95 5 . 0167405$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 31 / 1 / 012702 / 2932657 /
  []
 
-[32]
+[36]
 Underfull \hbox (badness 3250) in paragraph at lines 103--103
 \T1/futs/m/n/10.95 5 . 0195675$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 31 / 5 / 052703 / 3293889 /
  []
@@ -1334,18 +1308,57 @@ Underfull \hbox (badness 2591) in paragraph at lines 126--126
 |   []   |   []\T1/futs/m/n/10.95 , 28(4):042701, April 2021.  ISSN 1070-664X, 1089-7674.  doi: $10 .
  []
 
-[33]
+[37]
 Underfull \hbox (badness 1888) in paragraph at lines 142--142
 \T1/futs/m/n/10.95 P. B. Radha, S. P. Re-gan, T. C. Sang-ster, W. Seka, A. A. Solodov, J. M. Soures,
  []
 
-[34]) [35] [36
+[38]
+Underfull \hbox (badness 2409) in paragraph at lines 188--188
+[]\T1/futs/m/n/10.95 G. P. Schurtz, Ph. D. Nico-laï, and M. Bus-quet.  A non-lo-cal elec-tron con-duc-
+ []
 
 
-]
+Underfull \hbox (badness 3635) in paragraph at lines 188--188
+\T1/futs/m/n/10.95 tion model for mul-ti-di-men-sional ra-di-a-tion hy-dro-dy-nam-ics codes.  |   []   |   []
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 188--188
+|   []\T1/futs/m/n/10.95 , 7(10):4238--4249, Oc-to-ber 2000.  ISSN 1070-664X, 1089-7674.  doi: $10 .
+ []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 196--196
+[]\T1/futs/m/n/10.95 Ph. D. Nico-laï, J.-L. A. Feugeas, and G. P. Schurtz.  A prac-ti-cal non-lo-cal
+ []
+
+
+Underfull \hbox (badness 3907) in paragraph at lines 196--196
+\T1/futs/m/n/10.95 model for heat trans-port in mag-ne-tized laser plas-mas.  |   []   |   []   |   [],
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 196--196
+\T1/futs/m/n/10.95 13(3):032701, March 2006.  ISSN 1070-664X, 1089-7674.  doi: $10 . 1063 / 1 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/futs/m/n/10.95 2179392$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 13 / 3 / 032701 / 316589 /
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 204--204
+|   []   |   []\T1/futs/m/n/10.95 , 22(8):082308, Au-gust 2015.  ISSN 1070-664X, 1089-7674.  doi: $10 .
+ []
+
+[39]) [40]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [37
+ (./Appendix/Permissions.tex) [41
+
+
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Results1/Results1Main.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
@@ -1360,21 +1373,21 @@ LaTeX Warning: There were undefined references.
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: B8A769D092FFBECDE70A547FA98E55A3;2078.
+(rerunfilecheck)             Checksum: 5893233DD2BD11EB8759A0E81F71E4FC;2657.
  ) 
 Here is how much of TeX's memory you used:
- 27562 strings out of 474165
- 545251 string characters out of 5749497
+ 27614 strings out of 474165
+ 546729 string characters out of 5749497
  1953542 words of memory out of 5000000
- 49248 multiletter control sequences out of 15000+600000
- 715702 words of font info for 197 fonts, out of 8000000 for 9000
+ 49286 multiletter control sequences out of 15000+600000
+ 691825 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,19n,121p,10978b,1111s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,19n,121p,10978b,1127s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (37 pages, 23007113 bytes).
+Output written on Thesis_MainSample.pdf (41 pages, 23034686 bytes).
 PDF statistics:
- 864 PDF objects out of 1000 (max. 8388607)
- 731 compressed objects within 8 object streams
- 132 named destinations out of 1000 (max. 500000)
- 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 984 PDF objects out of 1000 (max. 8388607)
+ 846 compressed objects within 9 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 260 words of extra memory for PDF output out of 10000 (max. 10000000)
 

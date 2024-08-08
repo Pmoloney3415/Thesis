@@ -73,7 +73,7 @@ Therefore, computational studies are well suited to investigate how $R_b/R_t$ in
 
 %################################################################################
 %################################################################################
-\subsection{Previous Work Studying the Effect of $\mathbf{R_b/R_t}$ on \textsc{Omega}}%
+\subsection{Previous Work Studying the Effect of Beam Radius on \textsc{Omega}}%
 \label{sec:Res1_OMEGA_stat_modelling_RbRt}
 
 \begin{figure}[t!]
@@ -662,8 +662,67 @@ It is therefore, difficult to quantify the contribution to the degradation of co
     \label{fig:Res1_mode10_growths}
 \end{figure}
 
-asym growth time res
+The time-resolved, $\ell=10$ mode growth of the fuel density from the $R_b/R_t=0.8$, $0.9$ and $1.0$, with-\ac{CBET} simulations are examined more closely in this section in order to understand the non-monotonic behaviour of the \ac{CBET} curve from Fig.~\ref{fig:Res1_asymm_trend}.a.
+These simulations were chosen as they are the local minima and maxima of the curve and therefore should most clearly display the important behaviour.
+Fig.~\ref{fig:Res1_mode10_growths}.a plots the $\ell=10$ growth of $\rho_{\text{DT}}R$ for each of these simulations.
+Note that all bangtimes were approximately $t=2.5\ \text{ns}$, so the value at this time is the $\ell=10$ at stagnation.
+The $\ell=10$ growth of $P_{\text{dep}}R$ for these simulations is plotted in Fig.~\ref{fig:Res1_mode10_growths}.b, which are the same as the curves from the right panels of Fig.~\ref{fig:Res1_PR_CBET_modes}, but are plotted again here for direct comparison with the $\rho_{\text{DT}}R$ values.
+The mode-flips are clearly identifiable in this plot as sharp falls and rises in the $\ell=10$, which corresponds to inversion of deposition asymmetry.
 
+Firstly the growth of the fuel density asymmetry from the $R_b/R_t=0.8$ simulation shall be studied.
+It can be seen from the green curve in Fig.~\ref{fig:Res1_mode10_growths}.a, that the growth of this mode is slow from $\sim0.5\rightarrow1.4\ \text{ns}$, compared to the $R_b/R_t=0.9$ and $R_b/R_t=1.0$ simulations.
+This is explained due to the low deposition asymmetry in Fig.~\ref{fig:Res1_mode10_growths}.b which is ultimately responsible for imprinting the asymmetry on the hydrodynamics.
+As was seen from the time-resolved, radially integrated deposition in Fig.~\ref{fig:Res1_PR_CBET_modes}.a, the low asymmetry of the deposition is due to the developing mode-flip at this time.
+In this simulation, the developing mode-flip at this time ultimately reduces deposition asymmetry, because the beam is not wide enough for the target convergence to truly flip the deposition.
+Although the $\ell=10$ of the $\rho_{\text{DT}}R$ starts to grow again after the second mode-flip at $t\sim1.2\ \text{ns}$, the long period of highly symmetric deposition means that the stagnation state is ultimately relatively symmetric compared to higher and lower beam radii simulations.
+
+Comparison of the growth between the $R_b/R_t=0.9$ and $1.0$ simulations is slightly more nuanced.
+As is seen in Figs.~\ref{fig:Res1_PR_CBET_modes}.c and~\ref{fig:Res1_PR_CBET_modes}.e, the mode-flip at $t\sim0.5\ \text{ns}$ develops into a full inversion of the deposition asymmetry.
+Because the beams are wider in the $R_b/R_t=1.0$ simulation, more light wraps around the target.
+This leads to stronger caustic fields, more \ac{CBET} and therefore greater distortion of the inbound field profiles.
+Thus, the $R_b/R_t=1.0$ has a less symmetric deposition profile than the narrower beam case, until the next mode-flip occurs at $t\sim1.2\ \text{ns}$.
+This explains why the $\ell=10$ of the $\rho_{\text{DT}}R$ is larger for the $R_b/R_t=1.0$ simulation up until $t\sim1.5\ \text{ns}$.
+
+This remains the case, until the wider beam of the $R_b/R_t=1.0$ case, begins to wrap around the target sufficiently to begin the development of an additional mode-flip of the deposition at $t\sim1.6\ \text{ns}$.
+Similar to the $R_b/R_t=0.8$ case from $\sim0.5\rightarrow1.2\ \text{ns}$, the development of a flip in the deposition profile acts simply to reduce the deposition asymmetry if the beam is not sufficiently wide.
+Therefore, the deposition asymmetry of $R_b/R_t=1.0$ from $\sim1.6\rightarrow2.1\ \text{ns}$ is reduced compared to the $R_b/R_t=0.9$ simulation, for which the beams are not wide enough to develop another mode-flip during this time.
+The reduction of deposition asymmetry is again clearly visible by comparing Figs.~\ref{fig:Res1_PR_CBET_modes}.c ($R_b/R_t=0.9$) and~\ref{fig:Res1_PR_CBET_modes}.e ($R_b/R_t=1.0$) from $\sim1.6\rightarrow2.1\ \text{ns}$.
+More symmetric deposition during this period reduces the rate of $\rho_{\text{DT}}R$ asymmetry growth.
+This results in a less symmetric $R_b/R_t=0.9$ stagnation state, as this simulation does have experience the same disruption to the asymmetry source.
+For $R_b/R_t>1.0$, the beams are wide enough that the mode-flip at $t\sim1.6\ text{ns}$ does lead to a full inversion of the deposition asymmetry and therefore the $\ell=10$ of the $P_{\text{dep}}R$ is not reduced in the same manner.
+Ultimately this leads to increasing asymmetry of the stagnation state compared to $R_b/R_t=1.0$, as is observed in Fig.~\ref{fig:Res1_asymm_trend}.a.
+
+While this analysis does explain the trend observed in Fig.~\ref{fig:Res1_asymm_trend}.a, subtleties exist which are not explicitly addressed, but could offer additional insight to the growth of stagnation state asymmetries in direct-drive implosions.
+For example, the deposition all occurs below the critical density, which is separated from the ablation surface by a finite stand-off distance, thus the energy must be transported from the absorption region to the ablation surface by thermal conduction.
+This leads to a time-lag for asymmetry in Fig.~\ref{fig:Res1_mode10_growths}.b (deposition) to propagate through to the curves in Fig.~\ref{fig:Res1_mode10_growths}.a (fuel density).
+Changing coronal plasma conditions during the implosion will also change this time-lag in a non-obvious way.
+For example, early in the implosions, deposition occurs exclusively in the outermost CH material.
+As time progresses, the CH expands away and the ablation surface changes from CH to the DT layer.
+Even later, (at $t\sim2.1\ \text{ns}$ in these simulations), the critical surface moves from CH into DT.
+All of these changes in coronal and transport layer conditions will impact how conduction propagates asymmetry from the deposition to the fuel, \textit{i.e.} there is additional complexity in mapping from $P_{\text{dep}}R$ asymmetry to $\rho_{\text{DT}}R$ asymmetry.
+Future work could perhaps investigate this further, by also comparing the heat flux just above the ablation surface, which may further elucidate the important physics.
+
+%################################################################################
+%################################################################################
+\subsection{Comparison of Results to Statistical Modelling}%
+\label{sec:Res1_Stat_Mod_Comp}
+
+Ultimately, this work was conducted to try and explain why statistical modelling of \textsc{Omega} implosions, demonstrates that distinct regimes exist in the $R_b/R_t$ degradation of implosions from 1-D calculations, \textit{i.e.} to explain the shape of the curve in Fig.~\ref{fig:RbRt_YOC_lees}.
+The fit to the experimental scatter plot has a transition at $R_{b/t}^{\text{crit}}=0.86$, after which, improvement of the yield for increasing $R_b/R_t$ slows.
+Neither 1-D codes which include \ac{CBET} models, or 3-D codes without \ac{CBET} are able to reproduce this trend, which means that multidimensional effects, seeded by \ac{CBET} are considered a likely explanation~\cite{gopalaswamy_using_2021}.
+The work conducted in this chapter is not directly comparable to these plots because a 1-D tuning process was conducted to ensure that all implosions had the same coupled energy.
+This was to prevent having to perform a far more in depth optimisation procedure for both the pulse and target simultaneously.
+Therefore, changes in the `1-D' effects of \ac{CBET} at different $R_b/R_t$ are not included in these simulations (\textit{i.e.} a reduction in deposited energy), only the redistribution of deposited energy due to \ac{CBET}, \textit{i.e.} how \ac{CBET} alters asymmetry.
+The differences in cylindrical and spherical geometry also complicate direct comparison between results due to different coronal plasma profiles and convergence properties.
+Therefore, for example, the $R_b/R_t$ values of transitions in behaviour would not be expected to be the same between geometries.
+
+Despite this, the asymmetry and compression metrics in Figs.~\ref{fig:Res1_asymm_trend}.a and~\ref{fig:Res1_asymm_trend}.b respectively, clearly demonstrate relatively sharp transitions in behaviour.
+For example, asymmetry and compression both get worse from $R_b/R_t=0.8\rightarrow0.9$, but improve from $0.9\rightarrow1.0$.
+If also observed in spherical geometry simulations, this change in behaviour due to \ac{CBET} introducing mode-flips in the deposited power, could potentially be the cause of the experimental data transition at $R_{b/t}^{\text{crit}}=0.86$.
+Explicitly, if \ac{CBET} acted to degrade deposition symmetry in spherical implosions from $R_b/R_t=0.86\rightarrow1.00$, this would slow the rate of improvement in the yield over clean metric, plotted in Fig.~\ref{fig:RbRt_YOC_lees}.
+While this is not at all a conclusive explanation of the behaviour in the statistical model, results from these simulations do not seem to rule it out.
+It therefore offers motivation for extending the simulation platform to a spherical geometry and including `1-D' effects of \ac{CBET} in $R_b/R_t$ trends by changing the target and fixing the total incident laser energy.
+This would explicitly demonstrate that shape degradation due to \ac{CBET} either is or is not responsible for the transitions.
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -671,18 +730,52 @@ asym growth time res
 \section{Conclusions}%
 \label{sec:Res1_Conclusions}
 
-conlusions
-
 %################################################################################
 %################################################################################
 \subsection{Summary of work}%
 \label{sec:Res1_Summary}
 
-summary
+This chapter has described the development of a novel, 2-D cylindrical simulation platform to study direct-drive implosion physics, and its use to investigate how altering $R_b/R_t$ changes the stagnation symmetry both with, and without the effects of \ac{CBET}.
+The work was conducted to test the hypothesis that changes to stagnation state symmetry due to changing \ac{CBET} at different $R_b/R_t$ was responsible for unexplained behaviour in statistical modelling of \textsc{Omega} experiments.
+In order to avoid performing an in-depth optimisation process, where the target and pulse were simultaneously varied, only the incident laser energy was varied, to fix the coupled energy to the target.
+Therefore, only the changes to deposition symmetry due to \ac{CBET} were studied at different $R_b/R_t$.
+This 1-D tuning procedure yielded 8 implosions both with and without \ac{CBET} effects.
+
+By conducting 2-D simulations with the initial conditions obtained from the tuning, interesting behaviour was observed for both th3e \ac{CBET} and no-\ac{CBET} cases.
+In both cases, mode-flips of the deposition was observed, due to separate effects.
+For no-\ac{CBET}, these mode flips occurred due to increasing plasma scale lengths, which shifted maximum deposition from beam angles to the overlap region between beams.
+When including \ac{CBET}, this behaviour was obscured by much more dominant mode-flips, which were induced due to caustic \ac{CBET} interactions distorting the incident field profiles the beams.
+
+Without \ac{CBET} changes to deposition symmetry, the stagnation state asymmetry fell with increasing $R_b/R_t$ as more beam overlap led to increasingly symmetric target illumination.
+When \ac{CBET} was included however, increasing \ac{CBET} with wider beam radii resulted in less and less symmetric deposition, broadly increasing asymmetry with $R_b/R_t$.
+The precise behaviour was, however, non-monotonic due to \ac{CBET} mode-flips increasing the symmetry of illumination at specific $R_b/R_t$ values.
+This led to distinct transitions regions in the trends of symmetry and compression plotted against $R_b/R_t$, which could be the cause of the transitions observed in \textsc{Omega} statistical modelling.
+Further work must however be conducted to obtain direct comparison to the statistical model and thus conclusively state whether \ac{CBET} asymmetries are, or are not the cause.
 
 %################################################################################
 %################################################################################
 \subsection{Future Work}%
 \label{sec:Res1_future}
 
-future
+There are many ways that the work presented in this chapter could be extended, the simulation platform improved to better reflect reality, or additional physics studied on the existing platform.
+One interesting way to extend the analysis of the work would be to investigate how heat transport affects the conversion of deposition asymmetries into hydrodynamic perturbations.
+As was discussed at the end of Sec.~\ref{sec:Res1_time_res_growth}, there is a lag in the conversion due to thermal conduction taking this information inward via a finite transport region.
+The transport region would also vary throughout the implosion as the hydrodynamic profiles evolve and the material changes from CH to DT.
+By also including analysis of heat flux, the way that this information is propagated could be studied.
+Furthermore, a model for non-local heatflow could be incorporated into \textsc{Chimera}, such as \textsc{Snb}~\cite{schurtz_nonlocal_2000,nicolai_practical_2006,cao_improved_2015} or \textsc{Fast-VFP}~\cite{bell_fast_2024}.
+Due to the strong temperature gradients in the transport layer, non-local effects could significantly affect how this information is propagated to the ablation surface and thus imprints on the hydrodynamics.
+
+The geometry of the platform could also be modified to allow for spherical rather than cylindrical convergence, which allow for better comparison between simulation results and spherical implosion experiments.
+Cylindrical geometry leads to greater target convergence for a given incident energy and also less divergence of the outflowing, coronal plasma, thus yielding higher coronal plasma densities for a given ablation velocity and distance from the ablation surface.
+By simulating a thin, equatorial `slice' of a spherical domain, \textit{i.e.} a spherical simulation with bounds $\phi\in[-\pi,\pi]$ and $\theta\in\left[\lessapprox\pi/2,\gtrapprox\pi/2\right]$, a 2-D ray trace could still be conducted so simulation run-times should be very similar to the cylindrical case.
+This was not done for the work in this chapter because the \textsc{Solas} 2-D ray trace assumes that the simulation occurs in a plane, and the spherical `slice' is not a plane.
+Minor development for this specific case could rectify this however and enable similar simulations with a spherical geometry.
+
+Similar initial conditions could also be used to study further multidimensional direct-drive physics, without the need to conduct, an expensive, full 3-D ray trace.
+For example, laser imprint is a significant issue which means that direct-drive implosions must be conducted at a high adiabat for optimal yields~\cite{patel_effects_2023}, which limits the compressibility and therefore maximum performance of \ac{ICF} experiments~\cite{dittrich_design_2014,robey_performance_2016}.
+Improved understanding of laser imprint requires high resolution simulations, due to the small spatial scale of the intensity modulations.
+Typically, high resolution, 2-D $r-z$ simulations with a 3-D laser ray trace~\cite{hu_direct-drive_2019}, or lower resolution, fully 3-D simulations~\cite{igumenshchev_rarefaction_2019} are conducted to study the effect of imprint.
+2-D $r-z$ \ac{Rad-Hydro} simulations with a 3-D laser ray trace average the deposition around the capsule and therefore artificially smooth out the modulation around the capsule.
+While 3-D simulations at a sufficiently high resolution should resolve the imprint seed properly, these are extremely expensive to perform, particularly for the fixed angular resolution, Eulerian code \textsc{Aster} which is typically used.
+By performing a spherical or cylindrical `slice' simulation with an imprint model, the seed and the growth of imprint induced instabilities could be consistently modelled at high resolutions, providing a complimentary study to the existing literature.
+This setup would not include out-of-plane stabilisation flows however, and could therefore overestimate growth of these small modes.

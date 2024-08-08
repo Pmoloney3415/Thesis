@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -177,5 +177,77 @@ D.~W. Peaceman and H.~H. Rachford, Jr.
 \newblock ISSN 0368-4245, 2168-3484.
 \newblock \doi{10.1137/0103003}.
 \newblock URL \url{http://epubs.siam.org/doi/10.1137/0103003}.
+
+\bibitem[Schurtz et~al.(2000)Schurtz, Nicolaï, and Busquet]{schurtz_nonlocal_2000}
+G.~P. Schurtz, Ph.~D. Nicolaï, and M.~Busquet.
+\newblock A nonlocal electron conduction model for multidimensional radiation hydrodynamics codes.
+\newblock \emph{Physics of Plasmas}, 7\penalty0 (10):\penalty0 4238--4249, October 2000.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.1289512}.
+\newblock URL \url{https://pubs.aip.org/pop/article/7/10/4238/264657/A-nonlocal-electron-conduction-model-for}.
+
+\bibitem[Nicolaï et~al.(2006)Nicolaï, Feugeas, and Schurtz]{nicolai_practical_2006}
+Ph.~D. Nicolaï, J.-L.~A. Feugeas, and G.~P. Schurtz.
+\newblock A practical nonlocal model for heat transport in magnetized laser plasmas.
+\newblock \emph{Physics of Plasmas}, 13\penalty0 (3):\penalty0 032701, March 2006.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.2179392}.
+\newblock URL \url{https://pubs.aip.org/pop/article/13/3/032701/316589/A-practical-nonlocal-model-for-heat-transport-in}.
+
+\bibitem[Cao et~al.(2015)Cao, Moses, and Delettrez]{cao_improved_2015}
+Duc Cao, Gregory Moses, and Jacques Delettrez.
+\newblock Improved non-local electron thermal transport model for two-dimensional radiation hydrodynamics simulations.
+\newblock \emph{Physics of Plasmas}, 22\penalty0 (8):\penalty0 082308, August 2015.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4928445}.
+\newblock URL \url{https://pubs.aip.org/pop/article/22/8/082308/109167/Improved-non-local-electron-thermal-transport}.
+
+\bibitem[Bell and Sherlock(2024)]{bell_fast_2024}
+Anthony~R Bell and Mark Sherlock.
+\newblock The \textit{fast} {VFP} code for solution of the {Vlasov}-{Fokker}-{Planck} equation.
+\newblock \emph{Plasma Physics and Controlled Fusion}, January 2024.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/1361-6587/ad2278}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/1361-6587/ad2278}.
+
+\bibitem[Patel et~al.(2023)Patel, Knauer, Cao, Betti, Nora, Shvydky, Gopalaswamy, Lees, Sampat, Donaldson, Regan, Stoeckl, Forrest, Glebov, Harding, Bonino, Janezic, Wasilewski, Fella, Shuldberg, Murray, Guzman, and Serrato]{patel_effects_2023}
+D.~Patel, J. P. Knauer, D.~Cao, R.~Betti, R.~Nora, A.~Shvydky, V.~Gopalaswamy, A.~Lees, S.~Sampat, W. R. Donaldson, S. P. Regan, C.~Stoeckl, C. J. Forrest, V. Yu. Glebov, D. R. Harding, M. J. Bonino, R. T. Janezic, D.~Wasilewski, C.~Fella, C.~Shuldberg, J.~Murray, D.~Guzman, and B.~Serrato.
+\newblock Effects of {Laser} {Bandwidth} in {Direct}-{Drive} {High}-{Performance} {DT}-{Layered} {Implosions} on the {OMEGA} {Laser}.
+\newblock \emph{Physical Review Letters}, 131\penalty0 (10):\penalty0 105101, September 2023.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.131.105101}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.131.105101}.
+
+\bibitem[Dittrich et~al.(2014)Dittrich, Hurricane, Callahan, Dewald, Döppner, Hinkel, Berzak~Hopkins, Le~Pape, Ma, Milovich, Moreno, Patel, Park, Remington, Salmonson, and Kline]{dittrich_design_2014}
+T. R. Dittrich, O. A. Hurricane, D. A. Callahan, E. L. Dewald, T.~Döppner, D. E. Hinkel, L. F. Berzak~Hopkins, S.~Le~Pape, T.~Ma, J. L. Milovich, J. C. Moreno, P. K. Patel, H.-S. Park, B. A. Remington, J. D. Salmonson, and J. L. Kline.
+\newblock Design of a {High}-{Foot} {High}-{Adiabat} {ICF} {Capsule} for the {National} {Ignition} {Facility}.
+\newblock \emph{Physical Review Letters}, 112\penalty0 (5):\penalty0 055002, February 2014.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.112.055002}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.112.055002}.
+
+\bibitem[Robey et~al.(2016)Robey, Smalyuk, Milovich, Döppner, Casey, Baker, Peterson, Bachmann, Berzak~Hopkins, Bond, Caggiano, Callahan, Celliers, Cerjan, Clark, Dixit, Edwards, Gharibyan, Haan, Hammel, Hamza, Hatarik, Hurricane, Jancaitis, Jones, Kerbel, Kroll, Lafortune, Landen, Ma, Marinak, MacGowan, MacPhee, Pak, Patel, Patel, Perkins, Sayre, Sepke, Spears, Tommasini, Weber, Widmayer, Yeamans, Giraldez, Hoover, Nikroo, Hohenberger, and Gatu~Johnson]{robey_performance_2016}
+H.~F. Robey, V.~A. Smalyuk, J.~L. Milovich, T.~Döppner, D.~T. Casey, K.~L. Baker, J.~L. Peterson, B.~Bachmann, L.~F. Berzak~Hopkins, E.~Bond, J.~A. Caggiano, D.~A. Callahan, P.~M. Celliers, C.~Cerjan, D.~S. Clark, S.~N. Dixit, M.~J. Edwards, N.~Gharibyan, S.~W. Haan, B.~A. Hammel, A.~V. Hamza, R.~Hatarik, O.~A. Hurricane, K.~S. Jancaitis, O.~S. Jones, G.~D. Kerbel, J.~J. Kroll, K.~N. Lafortune, O.~L. Landen, T.~Ma, M.~M. Marinak, B.~J. MacGowan, A.~G. MacPhee, A.~Pak, M.~Patel, P.~K. Patel, L.~J. Perkins, D.~B. Sayre, S.~M. Sepke, B.~K. Spears, R.~Tommasini, C.~R. Weber, C.~C. Widmayer, C.~Yeamans, E.~Giraldez, D.~Hoover, A.~Nikroo, M.~Hohenberger, and M.~Gatu~Johnson.
+\newblock Performance of indirectly driven capsule implosions on the {National} {Ignition} {Facility} using adiabat-shaping.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (5):\penalty0 056303, May 2016.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4944821}.
+\newblock URL \url{https://pubs.aip.org/pop/article/23/5/056303/966084/Performance-of-indirectly-driven-capsule}.
+
+\bibitem[Hu et~al.(2019)Hu, Epstein, Theobald, Xu, Huang, Goncharov, Regan, McKenty, Betti, Campbell, and Montgomery]{hu_direct-drive_2019}
+S.~X. Hu, R.~Epstein, W.~Theobald, H.~Xu, H.~Huang, V.~N. Goncharov, S.~P. Regan, P.~W. McKenty, R.~Betti, E.~M. Campbell, and D.~S. Montgomery.
+\newblock Direct-drive double-shell implosion: {A} platform for burning-plasma physics studies.
+\newblock \emph{Physical Review E}, 100\penalty0 (6):\penalty0 063204, December 2019.
+\newblock ISSN 2470-0045, 2470-0053.
+\newblock \doi{10.1103/PhysRevE.100.063204}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.100.063204}.
+
+\bibitem[Igumenshchev et~al.(2019)Igumenshchev, Velikovich, Goncharov, Betti, Campbell, Knauer, Regan, Schmitt, Shah, and Shvydky]{igumenshchev_rarefaction_2019}
+I. V. Igumenshchev, A. L. Velikovich, V. N. Goncharov, R.~Betti, E. M. Campbell, J. P. Knauer, S. P. Regan, A. J. Schmitt, R. C. Shah, and A.~Shvydky.
+\newblock Rarefaction {Flows} and {Mitigation} of {Imprint} in {Direct}-{Drive} {Implosions}.
+\newblock \emph{Physical Review Letters}, 123\penalty0 (6):\penalty0 065001, August 2019.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.123.065001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.123.065001}.
 
 \end{thebibliography}
