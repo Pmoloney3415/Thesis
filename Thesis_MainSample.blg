@@ -3,51 +3,54 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Thesis_MainSample.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Preamble/PreambleMain.aux
+A level-1 auxiliary file: Numerics/NumericsMain.aux
 A level-1 auxiliary file: Results1/Results1Main.aux
 A level-1 auxiliary file: Appendix/Appendix1Main.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
 Database file #1: Bibliography/Bibliography.bib
-Warning--empty journal in thomas_quantifying_2020
+Warning--empty journal in patel_novel_2018
 Warning--empty institution in mchardy_introduction_2018
-You've used 31 entries,
+Warning--empty institution in simon_lle_1989
+Warning--empty journal in thomas_quantifying_2020
+You've used 120 entries,
             2481 wiz_defined-function locations,
-            802 strings with 22082 characters,
-and the built_in function-call counts, 26046 in all, are:
-= -- 1237
-> -- 3577
-< -- 4
-+ -- 1224
-- -- 1162
-* -- 3228
-:= -- 5154
-add.period$ -- 183
-call.type$ -- 31
-change.case$ -- 62
-chr.to.int$ -- 31
-cite$ -- 33
-duplicate$ -- 584
-empty$ -- 1128
-format.name$ -- 1197
-if$ -- 4744
-int.to.chr$ -- 1
-int.to.str$ -- 32
-missing$ -- 30
-newline$ -- 253
-num.names$ -- 93
-pop$ -- 131
+            1424 strings with 57535 characters,
+and the built_in function-call counts, 81714 in all, are:
+= -- 4779
+> -- 9479
+< -- 36
++ -- 3291
+- -- 3046
+* -- 9463
+:= -- 15510
+add.period$ -- 699
+call.type$ -- 120
+change.case$ -- 235
+chr.to.int$ -- 115
+cite$ -- 124
+duplicate$ -- 2272
+empty$ -- 4363
+format.name$ -- 3206
+if$ -- 15457
+int.to.chr$ -- 6
+int.to.str$ -- 121
+missing$ -- 121
+newline$ -- 944
+num.names$ -- 361
+pop$ -- 545
 preamble$ -- 1
-purify$ -- 31
+purify$ -- 120
 quote$ -- 0
-skip$ -- 283
+skip$ -- 1127
 stack$ -- 0
-substring$ -- 618
-swap$ -- 92
-text.length$ -- 1
+substring$ -- 2365
+swap$ -- 369
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 217
-warning$ -- 2
-while$ -- 95
+type$ -- 819
+warning$ -- 4
+while$ -- 372
 width$ -- 0
-write$ -- 587
-(There were 2 warnings)
+write$ -- 2238
+(There were 4 warnings)

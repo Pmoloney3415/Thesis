@@ -1,0 +1,60 @@
+\contentsline {chapter}{\numberline {1}\textsc {Solas}, a 3-D Laser Ray-Trace and Cross-Beam Energy Transfer Model}{16}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Ray-Tracing for Hydrodynamic Simulations of Fusion Plasmas}{17}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Existing Cross-Beam Energy Transfer Models}{18}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Ray-Based Models}{18}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Wave Solvers}{20}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Particle in Cell Codes}{21}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}\textsc {Solas} 3-D Laser Ray-Trace}{21}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Outline of \textsc {Solas}-\textsc {Chimera} Interfacing}{22}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}\textsc {Solas} Mesh Structure}{22}{subsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.2.1}Re-Domain Balance for Radial Geometries}{23}{subsubsection.1.3.2.1}%
+\contentsline {subsubsection}{\numberline {1.3.2.2}Semi-Structured Eulerian Grid with Combined Cells}{24}{subsubsection.1.3.2.2}%
+\contentsline {subsection}{\numberline {1.3.3}Ray Initialisation}{26}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Equations of Rays and Adaptive Integration}{29}{subsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.4.1}Ray Solver Validation}{32}{subsubsection.1.3.4.1}%
+\contentsline {section}{\numberline {1.4}Ray-Based Field Reconstruction and Ray Sheets}{35}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Ray-Amplitude and Field Estimate from Neighbour Rays}{36}{subsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.1.1}Caustics and Ray-Sheets}{38}{subsubsection.1.4.1.1}%
+\contentsline {subsection}{\numberline {1.4.2}Caustic Field Capping}{40}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Field Reconstruction Validation}{41}{subsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.3.1}1-D Reflected Beam}{42}{subsubsection.1.4.3.1}%
+\contentsline {subsubsection}{\numberline {1.4.3.2}2-D Reflected Beam}{43}{subsubsection.1.4.3.2}%
+\contentsline {section}{\numberline {1.5}Ray-Based CBET Model}{44}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Power Change of Rays due to CBET}{45}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Caustic Gain Truncation}{48}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Coherent Caustic Correction and Caustic Region Identification}{50}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Dynamic Memory for Storing Fields and CBET Gains}{52}{subsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.5.5}Pump Depletion Iterations}{53}{subsection.1.5.5}%
+\contentsline {subsection}{\numberline {1.5.6}Energy Conservation Iterations}{54}{subsection.1.5.6}%
+\contentsline {subsection}{\numberline {1.5.7}CBET Validation}{56}{subsection.1.5.7}%
+\contentsline {subsubsection}{\numberline {1.5.7.1}2-D CBET Without Caustics}{56}{subsubsection.1.5.7.1}%
+\contentsline {subsubsection}{\numberline {1.5.7.2}2-D CBET With Caustics}{58}{subsubsection.1.5.7.2}%
+\contentsline {subsubsection}{\numberline {1.5.7.3}16 Beam CBET in 2-D}{59}{subsubsection.1.5.7.3}%
+\contentsline {section}{\numberline {1.6}Simulations of CBET for \textsc {Omega} Direct-Drive Implosions}{61}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}1-D hydrodynamics, 3-D Ray-Trace Simulation of \textsc {Omega} Shot 89224}{61}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}3-D Post Process of Absorption Non-Uniformity}{66}{subsection.1.6.2}%
+\contentsline {section}{\numberline {1.7}Conclusions}{68}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Cylindrical Simulations to Study the Effect of Beam Radius in Direct-Drive}{70}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction to Beam Radius in Direct-Drive Inertial Confinement Fusion}{71}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Previous Work Studying the Effect of Beam Radius on \textsc {Omega}}{73}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Statistical Modelling of \textsc {Omega} Direct-Drive Implosions}{74}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Cylindrical Simulation Platform for Beam Radius Parameter Scan}{77}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Advantages and Validity Considerations of the Cylindrical Simulation Platform}{78}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Pulse Shape and Target Initial Conditions}{79}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}1-D Implosion Tuning}{80}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Asymmetry of Deposited Power}{82}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Analysis and Quantity Definitions}{83}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Deposition Asymmetries in the Absence of CBET}{84}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}CBET Imprint on Incident Field}{85}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Deposition Asymmetries in the Presence of CBET}{88}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Stagnation State Asymmetry}{90}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Stagnation State Asymmetry Trend with Beam Radius}{90}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Time Resolved Asymmetry Growth}{93}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Comparison of Results to Statistical Modelling}{95}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Conclusions}{96}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Summary of work}{96}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Future Work}{97}{subsection.2.5.2}%
+\contentsline {chapter}{\numberline {A}Numerics Appendices}{100}{appendix.A}%
+\contentsline {chapter}{Bibliography}{101}{section*.100}%
+\contentsline {chapter}{Copyright Permissions}{121}{section*.102}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
