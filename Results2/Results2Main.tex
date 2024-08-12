@@ -1,1 +1,193 @@
-\chapter{Fully kinetic simulations of a vacuum-plasma interface}
+\chapter{Simulations of Cross-Beam Energy Transfer for Magnetised Direct-Drive}
+
+This chapter describes a set of simulations which were conducted to understand the role of \ac{CBET} in magnetised, direct-drive implosions.
+Magnetised \ac{ICF} is a promising route to achieving higher target gains, due to the reduction of thermal energy loss at stagnation and additional confinement of the alpha particles responsible for burn propagation.
+For direct-drive implosions, magnetisation can significantly alter the coronal plasma profiles, due to the introduced anisotropy of thermal transport.
+The \ac{IAW} dispersion relation, which mediates \ac{CBET} interactions, depends upon the background plasma and therefore significantly altered temperature and density profiles could alter the action of \ac{CBET}.
+Before the development of \textsc{Solas}, no direct-drive suitable \ac{CBET} model existed, which was integrated into a \ac{Rad-MHD} code.
+Therefore, the \textsc{Chimera}-\textsc{Solas} computational model has allowed the effect of magnetisation on \ac{CBET} to be studied for a direct-drive implosion.
+
+The chapter begins with a review of experimental and computational work on magnetised \ac{ICF}, with a particular focus on magnetised direct-drive.
+Work presented in this chapter focuses on the study of \textit{exploding-pusher} experiments.
+These are very different implosions to the typical \textit{central hot-spot} ignition designs, presented in previous chapters, so a short summary of exploding pushers is also provided.
+Simulation results are presented of 1-D and 2-D, unmagnetised exploding pushers, both with and without the effect of \ac{CBET}, which demonstrate that \ac{CBET} does significantly alter the implosion.
+This is followed by an investigation of how various extended-\ac{MHD} terms affect the implosion, including the Nernst effect, the Lorentz force and resistive diffusion of the magnetic field.
+Results are given of how magnetisation affects the \ac{CBET} interaction and ultimately how it changes the stagnation shape of the target.
+The results presented, demonstrate that redistribution of deposited power due to \ac{CBET}, reduced the amplitude of the stagnation asymmetry, which originated from the polar beam configuration used, due to the presence of a field coil at the equator.
+However, the reduction of asymmetry was consistent for different initial seed magnetic field values, and therefore \ac{CBET} was not observed to be sufficiently strongly affected by magnetisation, to lead to observable signatures in experimental measurements.
+The chapter concludes with a summary of the work and suggestions of additional experimental configurations, which may leave a more significant signature of magnetisation altering \ac{CBET}.
+
+\newpage
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Magnetised Inertial Confinement Fusion and Exploding Pushers}%
+\label{sec:Res2_MagICF}
+
+This chapter begins with a review of published work that is relevant to the simulations which are presented.
+Firstly, a short review of magnetised-\ac{ICF} is presented which reviews both the key concepts, existing studies and potential challenges of the design.
+Both work on direct- and indirect drive is summarised, alongside recent theoretical progress on understanding how magnetisation can effect \ac{LPIs}.
+The exploding pusher concept is then briefly explored to aid understanding of the implosion physics, which is markedly different to conventional hot-spot \ac{ICF}.
+
+%################################################################################
+%################################################################################
+\subsection{Potential Benefits of Magnetisation}%
+\label{sec:Res2_magbenefits}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{Existing Studies of Magnetised-ICF}%
+\label{sec:Res2_magicf_prevwork}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{Magnetised Laser-Plasma Instabilities}%
+\label{sec:Res2_maglpis}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{The Exploding-Pusher Configuration}%
+\label{sec:Res2_expl}
+
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Effect of Cross-Beam Energy Transfer in Unmagnetised Exploding Pushers}%
+\label{sec:Res2_CBET_expl}
+
+This section presents simulation results of the effect of \ac{CBET} in exploding pushers on \textsc{Omega}.
+Both 1-D and 2-D \textsc{Chimera}-\textsc{Solas} simulations of 40-beam, polar driven exploding pusher experiments are presented, with a focus on how \ac{CBET} acts to change the implosion.
+The 1-D results demonstrate that \ac{CBET} significantly reduces the coupled laser energy to the implosion from \dots to \dots.
+Simulations conducted in 2-D, with a full 3-D raytrace and \ac{CBET} model, show that \ac{CBET} alters spatial profile of the laser deposition, reducing asymmetry in the drive.
+
+%################################################################################
+%################################################################################
+\subsection{Simulation Configuration}%
+\label{sec:Res2_simconfig}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{1-D Simulations}%
+\label{sec:Res2_expl1D}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{2-D Simulations}%
+\label{sec:Res2_expl2D}
+
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{The Effect of Magnetisation on Exploding-Pusher Implosions}%
+\label{sec:Res2_mag_unmag}
+
+This section presents results of a study of the effect that extended-\ac{MHD} has on the 2-D exploding pusher simulations.
+Simulations were conducted with varying initial magnetic field strengths and particular terms turned off and on to deduce what the important physical processes are.
+Magnetised transport is important for both initial seed magnetic field implosions, resulting in large coronal Hall parameters and therefore significant anisotropy of the implosions.
+The results demonstrate that (resistive diffusion and the Lorentz force have very little impact on the implosion physics, due to the bulk of the plasma being highly resistive and high-$\beta$ respectively)?????.
+The Nernst advection of magnetic field ????????????????????
+
+
+%################################################################################
+%################################################################################
+\subsection{In-Flight Field Structure}%
+\label{sec:Res2_field_structure}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{Anisotropic Thermal Conduction}%
+\label{sec:Res2_aniso}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{The Nernst Effect}%
+\label{sec:Res2_nernst}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{Resistive Diffusion}%
+\label{sec:Res2_resis}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{The Lorentz Force}%
+\label{sec:Res2_lorentz}
+
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{The Effect of Magnetisation on Cross-Beam Energy Transfer and Stagnation}%
+\label{sec:Res2_mag_on_CBET}
+
+This section presents results on how the magnetisation of the corona affects both \ac{CBET} scattering and the stagnation shape of the implosion.
+As was shown in the previous sections, the laser geometry leads to a significant mode $\ell=2$ in the coronal plasma conditions, which is significantly amplified by anisotropic thermal conduction when magnetised.
+This long-wavelength perturbation is slightly reduced by \ac{CBET}, consistent with existing literature on how \ac{CBET} mitigates $\ell=1$ asymmetries~\cite{colaitis_inverse_2021}.
+`No-\ac{CBET}' simulations were conducted, for which the coupled energy was kept the same as the equivalent \ac{CBET} simulation, \textit{i.e.} so \ac{CBET} only acted to redistribute the deposited power, rather than reduce its magnitude.
+These results showed that the increasingly anisotropic coronal plasma profiles for increasing seed magnetic field strengths did lead to changes in the \ac{CBET} scattering, this was too small an effect to lead to experimentally observable changes in behaviour.
+
+%################################################################################
+%################################################################################
+\subsection{Analysis and Key Definitions}%
+\label{sec:Res2_analysis_definitions}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{Spatial Change of CBET and Deposition from Magnetisation}%
+\label{sec:Res2_mag_on_cbet_change}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{Stagnation Profiles}%
+\label{sec:Res2_stgnation_profiles}
+
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Conclusions}%
+\label{sec:Res2_conclusions}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{Summary of Work}%
+\label{sec:Res2_summary}
+
+
+
+%################################################################################
+%################################################################################
+\subsection{Future Work}%
+\label{sec:Res2_future}
+

@@ -3,54 +3,47 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Thesis_MainSample.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Preamble/PreambleMain.aux
-A level-1 auxiliary file: Numerics/NumericsMain.aux
-A level-1 auxiliary file: Results1/Results1Main.aux
-A level-1 auxiliary file: Appendix/Appendix1Main.aux
+A level-1 auxiliary file: Results2/Results2Main.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
 Database file #1: Bibliography/Bibliography.bib
-Warning--empty journal in patel_novel_2018
-Warning--empty institution in mchardy_introduction_2018
-Warning--empty institution in simon_lle_1989
-Warning--empty journal in thomas_quantifying_2020
-You've used 120 entries,
+You've used 1 entry,
             2481 wiz_defined-function locations,
-            1424 strings with 57535 characters,
-and the built_in function-call counts, 81714 in all, are:
-= -- 4779
-> -- 9479
-< -- 36
-+ -- 3291
-- -- 3046
-* -- 9463
-:= -- 15510
-add.period$ -- 699
-call.type$ -- 120
-change.case$ -- 235
-chr.to.int$ -- 115
-cite$ -- 124
-duplicate$ -- 2272
-empty$ -- 4363
-format.name$ -- 3206
-if$ -- 15457
-int.to.chr$ -- 6
-int.to.str$ -- 121
-missing$ -- 121
-newline$ -- 944
-num.names$ -- 361
-pop$ -- 545
+            564 strings with 4905 characters,
+and the built_in function-call counts, 488 in all, are:
+= -- 40
+> -- 27
+< -- 0
++ -- 10
+- -- 8
+* -- 45
+:= -- 89
+add.period$ -- 6
+call.type$ -- 1
+change.case$ -- 2
+chr.to.int$ -- 1
+cite$ -- 1
+duplicate$ -- 19
+empty$ -- 37
+format.name$ -- 9
+if$ -- 95
+int.to.chr$ -- 1
+int.to.str$ -- 2
+missing$ -- 1
+newline$ -- 16
+num.names$ -- 3
+pop$ -- 4
 preamble$ -- 1
-purify$ -- 120
+purify$ -- 1
 quote$ -- 0
-skip$ -- 1127
+skip$ -- 10
 stack$ -- 0
-substring$ -- 2365
-swap$ -- 369
-text.length$ -- 6
+substring$ -- 20
+swap$ -- 3
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 819
-warning$ -- 4
-while$ -- 372
+type$ -- 7
+warning$ -- 0
+while$ -- 3
 width$ -- 0
-write$ -- 2238
-(There were 4 warnings)
+write$ -- 26
