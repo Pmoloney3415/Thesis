@@ -1,9 +1,33 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Perkins et~al.(2017)Perkins, Ho, Logan, Zimmerman, Rhodes, Strozzi, Blackfield, and Hawkins]{perkins_potential_2017}
+L.~J. Perkins, D.~D.-M Ho, B.~G. Logan, G.~B. Zimmerman, M.~A. Rhodes, D.~J. Strozzi, D.~T. Blackfield, and S.~A. Hawkins.
+\newblock The potential of imposed magnetic fields for enhancing ignition probability and fusion energy yield in indirect-drive inertial confinement fusion.
+\newblock \emph{Physics of Plasmas}, 24\penalty0 (6):\penalty0 062708, June 2017.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4985150}.
+\newblock URL \url{https://pubs.aip.org/pop/article/24/6/062708/108192/The-potential-of-imposed-magnetic-fields-for}.
+
+\bibitem[Moody et~al.(2022)Moody, Pollock, Sio, Strozzi, Ho, Walsh, Kemp, Lahmann, Kucheyev, Kozioziemski, Carroll, Kroll, Yanagisawa, Angus, Bachmann, Bhandarkar, Bude, Divol, Ferguson, Fry, Hagler, Hartouni, Herrmann, Hsing, Holunga, Izumi, Javedani, Johnson, Khan, Kalantar, Kohut, Logan, Masters, Nikroo, Orsi, Piston, Provencher, Rowe, Sater, Skulina, Stygar, Tang, Winters, Zimmerman, Adrian, Chittenden, Appelbe, Boxall, Crilly, O’Neill, Davies, Peebles, and Fujioka]{moody_increased_2022}
+J. D. Moody, B. B. Pollock, H.~Sio, D. J. Strozzi, D. D.-M. Ho, C. A. Walsh, G. E. Kemp, B.~Lahmann, S. O. Kucheyev, B.~Kozioziemski, E. G. Carroll, J.~Kroll, D. K. Yanagisawa, J.~Angus, B.~Bachmann, S. D. Bhandarkar, J. D. Bude, L.~Divol, B.~Ferguson, J.~Fry, L.~Hagler, E.~Hartouni, M. C. Herrmann, W.~Hsing, D. M. Holunga, N.~Izumi, J.~Javedani, A.~Johnson, S.~Khan, D.~Kalantar, T.~Kohut, B. G. Logan, N.~Masters, A.~Nikroo, N.~Orsi, K.~Piston, C.~Provencher, A.~Rowe, J.~Sater, K.~Skulina, W. A. Stygar, V.~Tang, S. E. Winters, G.~Zimmerman, P.~Adrian, J. P. Chittenden, B.~Appelbe, A.~Boxall, A.~Crilly, S.~O’Neill, J.~Davies, J.~Peebles, and S.~Fujioka.
+\newblock Increased {Ion} {Temperature} and {Neutron} {Yield} {Observed} in {Magnetized} {Indirectly} {Driven} {D} 2 -{Filled} {Capsule} {Implosions} on the {National} {Ignition} {Facility}.
+\newblock \emph{Physical Review Letters}, 129\penalty0 (19):\penalty0 195002, November 2022.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.129.195002}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.129.195002}.
+
+\bibitem[Bose et~al.(2022)Bose, Peebles, Walsh, Frenje, Kabadi, Adrian, Sutcliffe, Gatu~Johnson, Frank, Davies, Betti, Glebov, Marshall, Regan, Stoeckl, Campbell, Sio, Moody, Crilly, Appelbe, Chittenden, Atzeni, Barbato, Forte, Li, Seguin, and Petrasso]{bose_effect_2022}
+A.~Bose, J.~Peebles, C. A. Walsh, J. A. Frenje, N. V. Kabadi, P. J. Adrian, G. D. Sutcliffe, M.~Gatu~Johnson, C. A. Frank, J. R. Davies, R.~Betti, V. Yu. Glebov, F. J. Marshall, S. P. Regan, C.~Stoeckl, E. M. Campbell, H.~Sio, J.~Moody, A.~Crilly, B. D. Appelbe, J. P. Chittenden, S.~Atzeni, F.~Barbato, A.~Forte, C. K. Li, F. H. Seguin, and R. D. Petrasso.
+\newblock Effect of {Strongly} {Magnetized} {Electrons} and {Ions} on {Heat} {Flow} and {Symmetry} of {Inertial} {Fusion} {Implosions}.
+\newblock \emph{Physical Review Letters}, 128\penalty0 (19):\penalty0 195002, May 2022.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.128.195002}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.128.195002}.
 
 \bibitem[Colaïtis et~al.(2021)Colaïtis, Igumenshchev, Mathiaud, and Goncharov]{colaitis_inverse_2021}
 A.~Colaïtis, I.~Igumenshchev, J.~Mathiaud, and V.~Goncharov.

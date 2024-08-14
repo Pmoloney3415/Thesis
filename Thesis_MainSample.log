@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  12 AUG 2024 17:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  14 AUG 2024 21:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -916,7 +916,14 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Warning: Unused global option(s):
     [onesided,pagesize].
 
-(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Results2/Results2Main.aux) (./Appendix/Permissions.aux))
+(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Results2/Results2Main.aux
+
+LaTeX Warning: Label `fig:Res2_Bose_magp2' multiply defined.
+
+
+LaTeX Warning: Label `fig:Res2_Bose_magp2@cref' multiply defined.
+
+) (./Appendix/Permissions.aux))
 \openout1 = `Thesis_MainSample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1104,13 +1111,95 @@ Overfull \hbox (1.4551pt too wide) in paragraph at lines 28--32
 \T1/futs/m/n/10.95 cept is then briefly ex-plored to aid un-der-stand-ing of the im-plo-sion physics, which is markedly
  []
 
+<Results2/Images/wt_collisions.png, id=78, 561.735pt x 231.045pt>
+File: Results2/Images/wt_collisions.png Graphic file (type png)
+<use Results2/Images/wt_collisions.png>
+Package pdftex.def Info: Results2/Images/wt_collisions.png  used on input line 40.
+(pdftex.def)             Requested size: 311.55782pt x 128.14687pt.
+<Results2/Images/magicf_perkins.jpeg, id=79, 84.315pt x 50.95035pt>
+File: Results2/Images/magicf_perkins.jpeg Graphic file (type jpg)
+<use Results2/Images/magicf_perkins.jpeg>
+Package pdftex.def Info: Results2/Images/magicf_perkins.jpeg  used on input line 47.
+(pdftex.def)             Requested size: 311.55782pt x 188.27461pt.
+<Results2/Images/magnif_yield_inc.png, id=82, 451.6875pt x 501.875pt>
+File: Results2/Images/magnif_yield_inc.png Graphic file (type png)
+<use Results2/Images/magnif_yield_inc.png>
+Package pdftex.def Info: Results2/Images/magnif_yield_inc.png  used on input line 62.
+(pdftex.def)             Requested size: 207.70522pt x 230.78871pt.
+<Results2/Images/MagP2_Bose.png, id=85, 512.679pt x 305.943pt>
+File: Results2/Images/MagP2_Bose.png Graphic file (type png)
+<use Results2/Images/MagP2_Bose.png>
+Package pdftex.def Info: Results2/Images/MagP2_Bose.png  used on input line 71.
+(pdftex.def)             Requested size: 249.24878pt x 148.74162pt.
+<Results2/Images/magpdd_diagram_pulse.png, id=88, 1011.78pt x 433.62pt>
+File: Results2/Images/magpdd_diagram_pulse.png Graphic file (type png)
+<use Results2/Images/magpdd_diagram_pulse.png>
+Package pdftex.def Info: Results2/Images/magpdd_diagram_pulse.png  used on input line 100.
+(pdftex.def)             Requested size: 415.41043pt x 178.03677pt.
 
-Overfull \hbox (2.39606pt too wide) in paragraph at lines 67--71
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./Results2/Images/wt_collisions.png> <./Results2/Images/magicf_perkins.jpeg>]
+Overfull \hbox (2.39606pt too wide) in paragraph at lines 113--117
 \T1/futs/m/n/10.95 This sec-tion presents sim-u-la-tion re-sults of the ef-fect of [][] in ex-plod-ing push-ers on \T1/futs/m/sc/10.95 Omega\T1/futs/m/n/10.95 .
  []
 
-[6]) [7] [8
+[7 <./Results2/Images/magnif_yield_inc.png (PNG copy)> <./Results2/Images/MagP2_Bose.png>]
+<Results2/Images/unmag_CBET_onoff.png, id=119, 650.43pt x 1011.78pt>
+File: Results2/Images/unmag_CBET_onoff.png Graphic file (type png)
+<use Results2/Images/unmag_CBET_onoff.png>
+Package pdftex.def Info: Results2/Images/unmag_CBET_onoff.png  used on input line 133.
+(pdftex.def)             Requested size: 373.86685pt x 581.58372pt.
+<Results2/Images/mag_early_B_develop.png, id=121, 1011.78pt x 867.24pt>
+File: Results2/Images/mag_early_B_develop.png Graphic file (type png)
+<use Results2/Images/mag_early_B_develop.png>
+Package pdftex.def Info: Results2/Images/mag_early_B_develop.png  used on input line 161.
+(pdftex.def)             Requested size: 415.41043pt x 356.07356pt.
+<Results2/Images/magmag_beta_Rm.png, id=122, 1011.78pt x 325.215pt>
+File: Results2/Images/magmag_beta_Rm.png Graphic file (type png)
+<use Results2/Images/magmag_beta_Rm.png>
+Package pdftex.def Info: Results2/Images/magmag_beta_Rm.png  used on input line 190.
+(pdftex.def)             Requested size: 415.41043pt x 133.52757pt.
+<Results2/Images/ne_te_Bstream_comp_alt050.png, id=123, 1011.78pt x 397.485pt>
+File: Results2/Images/ne_te_Bstream_comp_alt050.png Graphic file (type png)
+<use Results2/Images/ne_te_Bstream_comp_alt050.png>
+Package pdftex.def Info: Results2/Images/ne_te_Bstream_comp_alt050.png  used on input line 206.
+(pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./Results2/Images/magpdd_diagram_pulse.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./Results2/Images/unmag_CBET_onoff.png>]
+Overfull \vbox (52.8411pt too high) has occurred while \output is active []
+
+ [10 <./Results2/Images/mag_early_B_develop.png> <./Results2/Images/magmag_beta_Rm.png>]
+<Results2/Images/magcbet_analysis.png, id=162, 1011.78pt x 664.70332pt>
+File: Results2/Images/magcbet_analysis.png Graphic file (type png)
+<use Results2/Images/magcbet_analysis.png>
+Package pdftex.def Info: Results2/Images/magcbet_analysis.png  used on input line 224.
+(pdftex.def)             Requested size: 415.41043pt x 272.91554pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 240.
+
+<Results2/Images/allall_stagnation.png, id=163, 1011.78pt x 1011.78pt>
+File: Results2/Images/allall_stagnation.png Graphic file (type png)
+<use Results2/Images/allall_stagnation.png>
+Package pdftex.def Info: Results2/Images/allall_stagnation.png  used on input line 272.
+(pdftex.def)             Requested size: 415.41043pt x 415.41914pt.
+<Results2/Images/R2R0_errors.png, id=164, 505.89pt x 361.35pt>
+File: Results2/Images/R2R0_errors.png Graphic file (type png)
+<use Results2/Images/R2R0_errors.png>
+Package pdftex.def Info: Results2/Images/R2R0_errors.png  used on input line 280.
+(pdftex.def)             Requested size: 290.78603pt x 207.70847pt.
+) [11 <./Results2/Images/ne_te_Bstream_comp_alt050.png>] [12] [13 <./Results2/Images/magcbet_analysis.png>] [14 <./Results2/Images/allall_stagnation.png> <./Results2/Images/R2R0_errors.png>] [15
+
+
+
+] [16
 
 
 ] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
@@ -1120,17 +1209,15 @@ Overfull \hbox (2.39606pt too wide) in paragraph at lines 67--71
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 15.
  (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)) [9
+)) [17
 
-
-
-] [10
+] [18
 
 
 ]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [11
+ (./Appendix/Permissions.tex) [19
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Results2/Results2Main.aux) (./Appendix/Permissions.aux))
@@ -1138,24 +1225,28 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: 8DF7A426581D5F05E9CA5D10B736CB0E;57.
+(rerunfilecheck)             Checksum: 01EFF4C9400929C14806D1B9D21B598E;248.
  ) 
 Here is how much of TeX's memory you used:
- 27102 strings out of 474165
- 532484 string characters out of 5749497
- 1938542 words of memory out of 5000000
- 48900 multiletter control sequences out of 15000+600000
- 651985 words of font info for 129 fonts, out of 8000000 for 9000
+ 27260 strings out of 474165
+ 537668 string characters out of 5749497
+ 1951542 words of memory out of 5000000
+ 49028 multiletter control sequences out of 15000+600000
+ 653788 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,11n,121p,10978b,978s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (11 pages, 327630 bytes).
+ 122i,17n,121p,10978b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on Thesis_MainSample.pdf (19 pages, 12154346 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 367 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
