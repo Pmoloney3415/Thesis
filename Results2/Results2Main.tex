@@ -39,14 +39,16 @@ The exploding pusher concept is then briefly explored to aid understanding of th
 \begin{figure}[t!]
     \includegraphics[width=0.75\linewidth]{Results2/Images/wt_collisions.png}
     \centering
-    \caption{lol.}%
+    \caption{Cartoon to illustrate the effect of magnetisation on collisions, and therefore transport, of a test positive charge.
+    As the Hall parameter of the particle increases, diffusion is increasingly limited, and therefore collision transport is reduced.}%
     \label{fig:Res2_Bose_magp2}
 \end{figure}
 
 \begin{figure}[t!]
     \includegraphics[width=0.75\linewidth]{Results2/Images/magicf_perkins.jpeg}
     \centering
-    \caption{lol.
+    \caption{Simulated fusion yields versus effective residual fuel kinetic energy under imposed low-mode radiation flux perturbations for imposed fields in the range $B_0=0\rightarrow70\ \text{(T)}$.
+    The plot demonstrates with increasing departure from ideal compression (moving to the right on the $x$ axis), magnetisation can enable the onset of the ignition.
     Reused with permission from Ref.~\cite{perkins_potential_2017}.}%
     \label{fig:Res2_perkins_magicf}
 \end{figure}
@@ -61,7 +63,9 @@ The exploding pusher concept is then briefly explored to aid understanding of th
 \begin{figure}[t!]
     \includegraphics[width=0.5\linewidth]{Results2/Images/magnif_yield_inc.png}
     \centering
-    \caption{lol.
+    \caption{a) A 1.1 keV $T_i$ increase was achieved by adding a 26 T $B_0$ field to a D2 gas capsule implosion on the \ac{NIF}.
+    Also shown in the plot are the simulation results.
+    b)$\rightarrow$d) Equatorial shapes of the implosions.
     Reused with permission from Ref.~\cite{moody_increased_2022}.}%
     \label{fig:Res2_moody_magnif}
 \end{figure}
@@ -70,7 +74,10 @@ The exploding pusher concept is then briefly explored to aid understanding of th
 \begin{figure}[t!]
     \includegraphics[width=0.6\linewidth]{Results2/Images/MagP2_Bose.png}
     \centering
-    \caption{lol.
+    \caption{X-ray self emission images of (left) an unmagnetised and (right) a magnetised implosion.
+    The average radius of the marked contour (corresponding to 40\% of peak intensity), and the oblateness parameter $R_a/R_b$ (ratio of major-to-minor axis) are listed below each image.
+    The polar laser-drive is indicated by the white arrows, and the axis of the initial magnetic field by the black dashed line on the right.
+    Applying an initial magnetic field demonstrated increased oblateness of the implosion.
     Adapted with permission from Ref.~\cite{bose_effect_2022}.}%
     \label{fig:Res2_Bose_magp2}
 \end{figure}
@@ -89,21 +96,6 @@ The exploding pusher concept is then briefly explored to aid understanding of th
 \label{sec:Res2_expl}
 
 
-
-%################################################################################
-%################################################################################
-\subsection{Simulation Configuration}%
-\label{sec:Res2_simconfig}
-
-
-\begin{figure}[t!]
-    \includegraphics[width=\linewidth]{Results2/Images/magpdd_diagram_pulse.png}
-    \centering
-    \caption{lol.}%
-    \label{fig:Res2_simconfig}
-\end{figure}
-
-
 %###############################################################################################################################
 %###############################################################################################################################
 %###############################################################################################################################
@@ -116,12 +108,39 @@ The 1-D results demonstrate that \ac{CBET} significantly reduces the coupled las
 Simulations conducted in 2-D, with a full 3-D raytrace and \ac{CBET} model, show that \ac{CBET} alters spatial profile of the laser deposition, reducing asymmetry in the drive.
 
 
+
+%################################################################################
+%################################################################################
+\subsection{Simulation Configuration}%
+\label{sec:Res2_simconfig}
+
+
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Results2/Images/magpdd_diagram_pulse.png}
+    \centering
+    \caption{The initial conditions used for all simulations presented in this chapter.
+    Panel a) plots the D2 filled, glass shell capsule and direction of the initial magnetic field.
+    An example field coil (illustrative and not included in simulations) is also shown, the presence of which necessitated the polar laser drive in experiments.
+    Panel b) plots the laser pulse shape used, which had a total of $17.7\ \text{kJ}$ laser energy.}%
+    \label{fig:Res2_simconfig}
+\end{figure}
+
+
 %################################################################################
 %################################################################################
 \subsection{1-D Simulations}%
 \label{sec:Res2_expl1D}
 
 
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Results2/Images/expl_streaks.png}
+    \centering
+    \caption{1-D Simulation results both without (left) and with (right) \ac{CBET}.
+    The top row plots the incident and absorbed energy from the simulation on the left axis and the radius of maximum density on the right.
+    In order, the next rows plot $n_e$, $T_e$, $T_i$ and $V_r$.
+    The full-width half-maximum times of the D2 yield are plotted as dotted vertical black lines on all panels.}%
+    \label{fig:Res2_expl_streaks}
+\end{figure}
 
 %################################################################################
 %################################################################################
@@ -130,9 +149,10 @@ Simulations conducted in 2-D, with a full 3-D raytrace and \ac{CBET} model, show
 
 
 \begin{figure}[t!]
-    \includegraphics[width=0.9\linewidth]{Results2/Images/unmag_CBET_onoff.png}
+    \includegraphics[width=0.95\linewidth]{Results2/Images/unmag_CBET_onoff.png}
     \centering
-    \caption{lol.}%
+    \caption{$n_e$ (right-side), $T_e$ (top-left-side) and $T_i$ (bottom-left-side) plots from the 2-D, $0\ text{T}$ simulations without (left) and with (right) \ac{CBET} at a variety of in-flight times.
+    The decreased deposited energy due to \ac{CBET}, results in lower coronal electron temperatures and therefore a slower, weaker shock being driven, which is especially evident at later times.}%
     \label{fig:Res2_unmag_CBET_onoff}
 \end{figure}
 
@@ -160,7 +180,14 @@ The Nernst advection of magnetic field ????????????????????
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Results2/Images/mag_early_B_develop.png}
     \centering
-    \caption{lol.}%
+    \caption{The development of the hydrodynamic variables and magnetic field structure from the $B_{z0}=25\ \text{T}$, \ac{CBET} simulation.
+    Panels a), b) and c) plot $T_e$ (top-left), $T_i$ (bottom-left), $n_e$ (right) and $\vec{B}$ (streamlines) at $t=0.15$, $0.30$ and $0.45\ \text{ns}$ respectively.
+    The approximately radially outward flowing, hot (and therefore highly conductive) ablating plasma pulls the magnetic field with it, resulting in radial $\vec{B}$ field lines, which are weaker at the capsule equator.
+    The radial field lines in the corona prevent angular equilibration of temperature, so act to keep heat at the poles.
+    Compression of the SiO${}_2$ shell leads to a non-radial field pile up on the inside edge of the maximum density, which is most clearly visible in panel c).
+    Panels d), e) and f) plot $n_e$ lineouts along the pole ($\theta=0^{\circ}$) and equator ($\theta=90^{\circ}$).
+    Panels g), h) and i) plot equivalent $T_e$ and $T_i$ lineouts.
+    These all show that the increased polar temperatures, partially due to beam geometry and partially due to magnetisation, lead to preferential ablation at the pole.}%
     \label{fig:Res2_mag_early_B_develop}
 \end{figure}
 
@@ -172,11 +199,34 @@ The Nernst advection of magnetic field ????????????????????
 \label{sec:Res2_aniso}
 
 
+\begin{figure}[t!]
+    \includegraphics[width=0.8\linewidth]{Results2/Images/iso_aniso.png}
+    \centering
+    \caption{In-flight a) and bangtime c) Hall parameters, from the $B_{z0}=25\ \text{T}$, no-\ac{CBET}, anisotropic conduction simulation.
+    Panel b) plots the $T_e$ from the isotropically magnetised simulation (left-side) and anisotropic conduction simulation (right-side) in-flight.
+    Panel c) plots the $T_e$ from the isotropically magnetised simulation (left-side) and anisotropic conduction simulation (right-side) at peak neutron production.
+    The electron Hall parameter is $>1$ at the poles due to high magnetic fields and temperatures, leading to significantly restricted thermal conduction from magnetised transport at the poles.
+    Isotropically magnetised conduction (\textit{i.e.} setting $\kappa_{\parallel}=\kappa_{\perp})$, therefore results in a markedly different implosion morphology, as is shown in panels b) and d).
+    Ion hall parameters peak at bangtime, with values reaching about $\omega_i\tau_i\sim0.1$.}%
+    \label{fig:Res2_iso_aniso}
+\end{figure}
 
 %################################################################################
 %################################################################################
 \subsection{The Nernst Effect}%
 \label{sec:Res2_nernst}
+
+
+\begin{figure}[t!]
+    \includegraphics[width=0.8\linewidth]{Results2/Images/nernst_comp.png}
+    \centering
+    \caption{Panel a) plots in-flight electron density profiles from the $B_{z0}=25\ \text{T}$, no-\ac{CBET} simulations with (left-side) and without (right-side) Nernst advection of the magnetic field.
+    Panel b) plots magnetic field magnitude from the Nernst (left-side) and no-Nernst (right-side) simulation.
+    The Nernst advection velocity is also plotted for the Nernst simulation as streamlines, coloured by speed.
+    Advection of the field is important in the low Hall parameter equatorial region, pulling $\vec{B}$ down $\nabla T_e$, into the dense wall.
+    Altered field at the equator impacts on the magnetised thermal conduction, which ultimately imprints on the density, as is seen in panel a).}%
+    \label{fig:Res2_nernst_comp}
+\end{figure}
 
 
 
@@ -242,7 +292,7 @@ These results showed that the increasingly anisotropic coronal plasma profiles f
     \caption{Results of all Simulations. In the CBET column, `$\sim$' indicates CBET affecting the magnitude, but \textit{not} spatial location, of deposition.}
     \begin{tabular}{cccccccccc}
         \hhline{==========}
-        Run & Dim. & CBET   & Note      & \begin{tabular}[c]{@{}c@{}}$B_{z0}$\\ $(\mathrm{T})$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$t_b$\\ $(\mathrm{ns})$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$\langle T_i \rangle$\\ (keV)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$Y_n$\\ $(\times10^{10}$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$\Delta_b$\\ (ps)\end{tabular} & $R_2/R_1$              \\ \hline
+        Run & Dim. & CBET   & Note      & \begin{tabular}[c]{@{}c@{}}$B_{z0}$\\ $(\mathrm{T})$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$t_b$\\ $(\mathrm{ns})$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$\langle T_i \rangle$\\ (keV)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$Y_n$\\ $(\times10^{10})$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$\Delta_b$\\ (ps)\end{tabular} & $R_2/R_1$              \\ \hline
         1   & 1-D  & Off    & -         & 0                                                                 & 0.69                                                            & 14.66                                                                 & 11.62                                                            & 87                                                        & $1.00_{-0.00}^{+0.00}$ \\
         2   & 1-D  & On     & -         & 0                                                                 &                                                                 &                                                                       &                                                                  &                                                           & $1.00_{-0.00}^{+0.00}$ \\
         3   & 2-D  & Off    & -         & 0                                                                 & 0.71                                                            & 8.44                                                                  & 6.20                                                             & 148                                                       & $2.96_{-0.19}^{+0.20}$ \\
@@ -262,6 +312,13 @@ These results showed that the increasingly anisotropic coronal plasma profiles f
 \end{table}
 \egroup%
 
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Results2/Images/Scattering_time_phi_diffCBET_CBtr.png}
+    \centering
+    \caption{lol.}%
+    \label{fig:Res2_scattering}
+\end{figure}
+
 %################################################################################
 %################################################################################
 \subsection{Stagnation Profiles}%
@@ -277,7 +334,7 @@ These results showed that the increasingly anisotropic coronal plasma profiles f
 
 
 \begin{figure}[t!]
-    \includegraphics[width=0.7\linewidth]{Results2/Images/R2R0_errors.png}
+    \includegraphics[width=0.6\linewidth]{Results2/Images/R2R0_errors.png}
     \centering
     \caption{lol.}%
     \label{fig:Res2_R2R0_errors}

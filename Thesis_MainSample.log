@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  14 AUG 2024 21:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  15 AUG 2024 18:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1111,95 +1111,129 @@ Overfull \hbox (1.4551pt too wide) in paragraph at lines 28--32
 \T1/futs/m/n/10.95 cept is then briefly ex-plored to aid un-der-stand-ing of the im-plo-sion physics, which is markedly
  []
 
-<Results2/Images/wt_collisions.png, id=78, 561.735pt x 231.045pt>
+<Results2/Images/wt_collisions.png, id=82, 561.735pt x 231.045pt>
 File: Results2/Images/wt_collisions.png Graphic file (type png)
 <use Results2/Images/wt_collisions.png>
 Package pdftex.def Info: Results2/Images/wt_collisions.png  used on input line 40.
 (pdftex.def)             Requested size: 311.55782pt x 128.14687pt.
-<Results2/Images/magicf_perkins.jpeg, id=79, 84.315pt x 50.95035pt>
+<Results2/Images/magicf_perkins.jpeg, id=83, 84.315pt x 50.95035pt>
 File: Results2/Images/magicf_perkins.jpeg Graphic file (type jpg)
 <use Results2/Images/magicf_perkins.jpeg>
-Package pdftex.def Info: Results2/Images/magicf_perkins.jpeg  used on input line 47.
+Package pdftex.def Info: Results2/Images/magicf_perkins.jpeg  used on input line 48.
 (pdftex.def)             Requested size: 311.55782pt x 188.27461pt.
-<Results2/Images/magnif_yield_inc.png, id=82, 451.6875pt x 501.875pt>
+<Results2/Images/magnif_yield_inc.png, id=86, 451.6875pt x 501.875pt>
 File: Results2/Images/magnif_yield_inc.png Graphic file (type png)
 <use Results2/Images/magnif_yield_inc.png>
-Package pdftex.def Info: Results2/Images/magnif_yield_inc.png  used on input line 62.
+Package pdftex.def Info: Results2/Images/magnif_yield_inc.png  used on input line 64.
 (pdftex.def)             Requested size: 207.70522pt x 230.78871pt.
-<Results2/Images/MagP2_Bose.png, id=85, 512.679pt x 305.943pt>
-File: Results2/Images/MagP2_Bose.png Graphic file (type png)
-<use Results2/Images/MagP2_Bose.png>
-Package pdftex.def Info: Results2/Images/MagP2_Bose.png  used on input line 71.
-(pdftex.def)             Requested size: 249.24878pt x 148.74162pt.
-<Results2/Images/magpdd_diagram_pulse.png, id=88, 1011.78pt x 433.62pt>
-File: Results2/Images/magpdd_diagram_pulse.png Graphic file (type png)
-<use Results2/Images/magpdd_diagram_pulse.png>
-Package pdftex.def Info: Results2/Images/magpdd_diagram_pulse.png  used on input line 100.
-(pdftex.def)             Requested size: 415.41043pt x 178.03677pt.
+Package acronym Info: Label `acro:NIF' newly defined as it shall be overridden
+although it is yet undefined on input line 69.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <./Results2/Images/wt_collisions.png> <./Results2/Images/magicf_perkins.jpeg>]
-Overfull \hbox (2.39606pt too wide) in paragraph at lines 113--117
+<Results2/Images/MagP2_Bose.png, id=101, 512.679pt x 305.943pt>
+File: Results2/Images/MagP2_Bose.png Graphic file (type png)
+<use Results2/Images/MagP2_Bose.png>
+Package pdftex.def Info: Results2/Images/MagP2_Bose.png  used on input line 75.
+(pdftex.def)             Requested size: 249.24878pt x 148.74162pt.
+
+Overfull \hbox (2.39606pt too wide) in paragraph at lines 105--109
 \T1/futs/m/n/10.95 This sec-tion presents sim-u-la-tion re-sults of the ef-fect of [][] in ex-plod-ing push-ers on \T1/futs/m/sc/10.95 Omega\T1/futs/m/n/10.95 .
  []
 
-[7 <./Results2/Images/magnif_yield_inc.png (PNG copy)> <./Results2/Images/MagP2_Bose.png>]
-<Results2/Images/unmag_CBET_onoff.png, id=119, 650.43pt x 1011.78pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./Results2/Images/magnif_yield_inc.png (PNG copy)> <./Results2/Images/MagP2_Bose.png>]
+<Results2/Images/magpdd_diagram_pulse.png, id=120, 1011.78pt x 433.62pt>
+File: Results2/Images/magpdd_diagram_pulse.png Graphic file (type png)
+<use Results2/Images/magpdd_diagram_pulse.png>
+Package pdftex.def Info: Results2/Images/magpdd_diagram_pulse.png  used on input line 119.
+(pdftex.def)             Requested size: 415.41043pt x 178.03677pt.
+<Results2/Images/expl_streaks.png, id=121, 1068.72pt x 981.339pt>
+File: Results2/Images/expl_streaks.png Graphic file (type png)
+<use Results2/Images/expl_streaks.png>
+Package pdftex.def Info: Results2/Images/expl_streaks.png  used on input line 136.
+(pdftex.def)             Requested size: 415.41043pt x 381.44788pt.
+<Results2/Images/unmag_CBET_onoff.png, id=124, 737.592pt x 1011.78pt>
 File: Results2/Images/unmag_CBET_onoff.png Graphic file (type png)
 <use Results2/Images/unmag_CBET_onoff.png>
-Package pdftex.def Info: Results2/Images/unmag_CBET_onoff.png  used on input line 133.
-(pdftex.def)             Requested size: 373.86685pt x 581.58372pt.
-<Results2/Images/mag_early_B_develop.png, id=121, 1011.78pt x 867.24pt>
+Package pdftex.def Info: Results2/Images/unmag_CBET_onoff.png  used on input line 152.
+(pdftex.def)             Requested size: 394.63864pt x 541.35098pt.
+ [8 <./Results2/Images/magpdd_diagram_pulse.png>]
+<Results2/Images/mag_early_B_develop.png, id=145, 1011.78pt x 874.029pt>
 File: Results2/Images/mag_early_B_develop.png Graphic file (type png)
 <use Results2/Images/mag_early_B_develop.png>
-Package pdftex.def Info: Results2/Images/mag_early_B_develop.png  used on input line 161.
-(pdftex.def)             Requested size: 415.41043pt x 356.07356pt.
-<Results2/Images/magmag_beta_Rm.png, id=122, 1011.78pt x 325.215pt>
+Package pdftex.def Info: Results2/Images/mag_early_B_develop.png  used on input line 181.
+(pdftex.def)             Requested size: 415.41043pt x 358.86101pt.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 190.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 190.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 190.
+<Results2/Images/iso_aniso.png, id=148, 867.24pt x 722.7pt>
+File: Results2/Images/iso_aniso.png Graphic file (type png)
+<use Results2/Images/iso_aniso.png>
+Package pdftex.def Info: Results2/Images/iso_aniso.png  used on input line 203.
+(pdftex.def)             Requested size: 332.3296pt x 276.94463pt.
+<Results2/Images/nernst_comp.png, id=151, 867.24pt x 469.317pt>
+File: Results2/Images/nernst_comp.png Graphic file (type png)
+<use Results2/Images/nernst_comp.png>
+Package pdftex.def Info: Results2/Images/nernst_comp.png  used on input line 221.
+(pdftex.def)             Requested size: 332.3296pt x 179.84616pt.
+<Results2/Images/magmag_beta_Rm.png, id=154, 1011.78pt x 325.215pt>
 File: Results2/Images/magmag_beta_Rm.png Graphic file (type png)
 <use Results2/Images/magmag_beta_Rm.png>
-Package pdftex.def Info: Results2/Images/magmag_beta_Rm.png  used on input line 190.
+Package pdftex.def Info: Results2/Images/magmag_beta_Rm.png  used on input line 240.
 (pdftex.def)             Requested size: 415.41043pt x 133.52757pt.
-<Results2/Images/ne_te_Bstream_comp_alt050.png, id=123, 1011.78pt x 397.485pt>
+<Results2/Images/ne_te_Bstream_comp_alt050.png, id=155, 1011.78pt x 415.881pt>
 File: Results2/Images/ne_te_Bstream_comp_alt050.png Graphic file (type png)
 <use Results2/Images/ne_te_Bstream_comp_alt050.png>
-Package pdftex.def Info: Results2/Images/ne_te_Bstream_comp_alt050.png  used on input line 206.
-(pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
+Package pdftex.def Info: Results2/Images/ne_te_Bstream_comp_alt050.png  used on input line 256.
+(pdftex.def)             Requested size: 415.41043pt x 170.75345pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./Results2/Images/magpdd_diagram_pulse.png>]
+ [9 <./Results2/Images/expl_streaks.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./Results2/Images/unmag_CBET_onoff.png>]
-Overfull \vbox (52.8411pt too high) has occurred while \output is active []
+ [10 <./Results2/Images/unmag_CBET_onoff.png>]
+Overfull \vbox (51.70105pt too high) has occurred while \output is active []
 
- [10 <./Results2/Images/mag_early_B_develop.png> <./Results2/Images/magmag_beta_Rm.png>]
-<Results2/Images/magcbet_analysis.png, id=162, 1011.78pt x 664.70332pt>
+ [11 <./Results2/Images/mag_early_B_develop.png>]
+<Results2/Images/magcbet_analysis.png, id=188, 1011.78pt x 664.70332pt>
 File: Results2/Images/magcbet_analysis.png Graphic file (type png)
 <use Results2/Images/magcbet_analysis.png>
-Package pdftex.def Info: Results2/Images/magcbet_analysis.png  used on input line 224.
+Package pdftex.def Info: Results2/Images/magcbet_analysis.png  used on input line 274.
 (pdftex.def)             Requested size: 415.41043pt x 272.91554pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 240.
+               Default added (so using `tbp') on input line 290.
 
-<Results2/Images/allall_stagnation.png, id=163, 1011.78pt x 1011.78pt>
+<Results2/Images/Scattering_time_phi_diffCBET_CBtr.png, id=189, 956.154pt x 648.021pt>
+File: Results2/Images/Scattering_time_phi_diffCBET_CBtr.png Graphic file (type png)
+<use Results2/Images/Scattering_time_phi_diffCBET_CBtr.png>
+Package pdftex.def Info: Results2/Images/Scattering_time_phi_diffCBET_CBtr.png  used on input line 316.
+(pdftex.def)             Requested size: 415.41043pt x 281.54077pt.
+<Results2/Images/allall_stagnation.png, id=190, 1011.78pt x 1024.92pt>
 File: Results2/Images/allall_stagnation.png Graphic file (type png)
 <use Results2/Images/allall_stagnation.png>
-Package pdftex.def Info: Results2/Images/allall_stagnation.png  used on input line 272.
-(pdftex.def)             Requested size: 415.41043pt x 415.41914pt.
-<Results2/Images/R2R0_errors.png, id=164, 505.89pt x 361.35pt>
+Package pdftex.def Info: Results2/Images/allall_stagnation.png  used on input line 329.
+(pdftex.def)             Requested size: 415.41043pt x 420.8142pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./Results2/Images/iso_aniso.png>] [13]
+<Results2/Images/R2R0_errors.png, id=205, 505.89pt x 361.35pt>
 File: Results2/Images/R2R0_errors.png Graphic file (type png)
 <use Results2/Images/R2R0_errors.png>
-Package pdftex.def Info: Results2/Images/R2R0_errors.png  used on input line 280.
-(pdftex.def)             Requested size: 290.78603pt x 207.70847pt.
-) [11 <./Results2/Images/ne_te_Bstream_comp_alt050.png>] [12] [13 <./Results2/Images/magcbet_analysis.png>] [14 <./Results2/Images/allall_stagnation.png> <./Results2/Images/R2R0_errors.png>] [15
+Package pdftex.def Info: Results2/Images/R2R0_errors.png  used on input line 337.
+(pdftex.def)             Requested size: 249.24878pt x 178.03899pt.
+) [14 <./Results2/Images/nernst_comp.png> <./Results2/Images/magmag_beta_Rm.png>] [15 <./Results2/Images/ne_te_Bstream_comp_alt050.png> <./Results2/Images/magcbet_analysis.png>] [16 <./Results2/Images/Scattering_time_phi_diffCBET_CBtr.png>] [17 <./Results2/Images/allall_stagnation.png> <./Results2/Images/R2R0_errors.png>] [18
 
-
-
-] [16
 
 
 ] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
@@ -1209,15 +1243,17 @@ Package pdftex.def Info: Results2/Images/R2R0_errors.png  used on input line 280
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 15.
  (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)) [17
+)) [19
 
-] [18
+
+
+] [20
 
 
 ]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [19
+ (./Appendix/Permissions.tex) [21
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Results2/Results2Main.aux) (./Appendix/Permissions.aux))
@@ -1232,21 +1268,21 @@ LaTeX Warning: There were multiply-defined labels.
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: 01EFF4C9400929C14806D1B9D21B598E;248.
+(rerunfilecheck)             Checksum: 202B54F9311A7446D1D90B362618FC71;248.
  ) 
 Here is how much of TeX's memory you used:
- 27260 strings out of 474165
- 537668 string characters out of 5749497
- 1951542 words of memory out of 5000000
- 49028 multiletter control sequences out of 15000+600000
- 653788 words of font info for 136 fonts, out of 8000000 for 9000
+ 27316 strings out of 474165
+ 539326 string characters out of 5749497
+ 1955542 words of memory out of 5000000
+ 49076 multiletter control sequences out of 15000+600000
+ 661988 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,17n,121p,10978b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,17n,121p,10978b,998s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (19 pages, 12154346 bytes).
+Output written on Thesis_MainSample.pdf (21 pages, 29624151 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 77 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 408 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
