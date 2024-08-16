@@ -1,9 +1,46 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Lindemuth and Kirkpatrick(1983)]{lindemuth_parameter_1983}
+I.R. Lindemuth and R.C. Kirkpatrick.
+\newblock Parameter space for magnetized fuel targets in inertial confinement fusion.
+\newblock \emph{Nuclear Fusion}, 23\penalty0 (3):\penalty0 263--284, March 1983.
+\newblock ISSN 0029-5515, 1741-4326.
+\newblock \doi{10.1088/0029-5515/23/3/001}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/0029-5515/23/3/001}.
+
+\bibitem[Jones and Mead(1986)]{jones_physics_1986}
+R.D. Jones and W.C. Mead.
+\newblock The physics of burn in magnetized deuterium-tritium plasmas: spherical geometry.
+\newblock \emph{Nuclear Fusion}, 26\penalty0 (2):\penalty0 127--137, February 1986.
+\newblock ISSN 0029-5515, 1741-4326.
+\newblock \doi{10.1088/0029-5515/26/2/001}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/0029-5515/26/2/001}.
+
+\bibitem[Epperlein and Haines(1986)]{epperlein_plasma_1986}
+E.~M. Epperlein and M.~G. Haines.
+\newblock Plasma transport coefficients in a magnetic field by direct numerical solution of the {Fokker}–{Planck} equation.
+\newblock \emph{The Physics of Fluids}, 29\penalty0 (4):\penalty0 1029--1041, April 1986.
+\newblock ISSN 0031-9171.
+\newblock \doi{10.1063/1.865901}.
+\newblock URL \url{https://pubs.aip.org/pfl/article/29/4/1029/819331/Plasma-transport-coefficients-in-a-magnetic-field}.
+
+\bibitem[O’Neill(2023)]{oneill_modelling_2023}
+Sam Thomas~Jack O’Neill.
+\newblock \emph{Modelling {Ignition} and {Burn} in {Pre}-magnetised {Inertial} {Confinement} {Fusion} {Experiments}}.
+\newblock PhD thesis, Imperial College London, London, December 2023.
+
+\bibitem[Fiksel et~al.(2015)Fiksel, Agliata, Barnak, Brent, Chang, Folnsbee, Gates, Hasset, Lonobile, Magoon, Mastrosimone, Shoup, and Betti]{fiksel_note_2015}
+G.~Fiksel, A.~Agliata, D.~Barnak, G.~Brent, P.-Y. Chang, L.~Folnsbee, G.~Gates, D.~Hasset, D.~Lonobile, J.~Magoon, D.~Mastrosimone, M.~J. Shoup, and R.~Betti.
+\newblock Note: {Experimental} platform for magnetized high-energy-density plasma studies at the omega laser facility.
+\newblock \emph{Review of Scientific Instruments}, 86\penalty0 (1):\penalty0 016105, January 2015.
+\newblock ISSN 0034-6748, 1089-7623.
+\newblock \doi{10.1063/1.4905625}.
+\newblock URL \url{https://pubs.aip.org/rsi/article/86/1/016105/360963/Note-Experimental-platform-for-magnetized-high}.
 
 \bibitem[Perkins et~al.(2017)Perkins, Ho, Logan, Zimmerman, Rhodes, Strozzi, Blackfield, and Hawkins]{perkins_potential_2017}
 L.~J. Perkins, D.~D.-M Ho, B.~G. Logan, G.~B. Zimmerman, M.~A. Rhodes, D.~J. Strozzi, D.~T. Blackfield, and S.~A. Hawkins.
@@ -13,10 +50,27 @@ L.~J. Perkins, D.~D.-M Ho, B.~G. Logan, G.~B. Zimmerman, M.~A. Rhodes, D.~J. Str
 \newblock \doi{10.1063/1.4985150}.
 \newblock URL \url{https://pubs.aip.org/pop/article/24/6/062708/108192/The-potential-of-imposed-magnetic-fields-for}.
 
-\bibitem[Moody et~al.(2022)Moody, Pollock, Sio, Strozzi, Ho, Walsh, Kemp, Lahmann, Kucheyev, Kozioziemski, Carroll, Kroll, Yanagisawa, Angus, Bachmann, Bhandarkar, Bude, Divol, Ferguson, Fry, Hagler, Hartouni, Herrmann, Hsing, Holunga, Izumi, Javedani, Johnson, Khan, Kalantar, Kohut, Logan, Masters, Nikroo, Orsi, Piston, Provencher, Rowe, Sater, Skulina, Stygar, Tang, Winters, Zimmerman, Adrian, Chittenden, Appelbe, Boxall, Crilly, O’Neill, Davies, Peebles, and Fujioka]{moody_increased_2022}
+\bibitem[Zylstra et~al.(2022)Zylstra, Hurricane, Callahan, Kritcher, Ralph, Robey, Ross, Young, Baker, Casey, Döppner, Divol, Hohenberger, Le~Pape, Pak, Patel, Tommasini, Ali, Amendt, Atherton, Bachmann, Bailey, Benedetti, Berzak~Hopkins, Betti, Bhandarkar, Biener, Bionta, Birge, Bond, Bradley, Braun, Briggs, Bruhn, Celliers, Chang, Chapman, Chen, Choate, Christopherson, Clark, Crippen, Dewald, Dittrich, Edwards, Farmer, Field, Fittinghoff, Frenje, Gaffney, Gatu~Johnson, Glenzer, Grim, Haan, Hahn, Hall, Hammel, Harte, Hartouni, Heebner, Hernandez, Herrmann, Herrmann, Hinkel, Ho, Holder, Hsing, Huang, Humbird, Izumi, Jarrott, Jeet, Jones, Kerbel, Kerr, Khan, Kilkenny, Kim, Geppert~Kleinrath, Geppert~Kleinrath, Kong, Koning, Kroll, Kruse, Kustowski, Landen, Langer, Larson, Lemos, Lindl, Ma, MacDonald, MacGowan, Mackinnon, MacLaren, MacPhee, Marinak, Mariscal, Marley, Masse, Meaney, Meezan, Michel, Millot, Milovich, Moody, Moore, Morton, Murphy, Newman, Di~Nicola, Nikroo, Nora, Patel, Pelz, Peterson, Ping, Pollock, Ratledge, Rice, Rinderknecht, Rosen, Rubery, Salmonson, Sater, Schiaffino, Schlossberg, Schneider, Schroeder, Scott, Sepke, Sequoia, Sherlock, Shin, Smalyuk, Spears, Springer, Stadermann, Stoupin, Strozzi, Suter, Thomas, Town, Tubman, Trosseille, Volegov, Weber, Widmann, Wild, Wilde, Van~Wonterghem, Woods, Woodworth, Yamaguchi, Yang, and Zimmerman]{zylstra_burning_2022}
+A.~B. Zylstra, O.~A. Hurricane, D.~A. Callahan, A.~L. Kritcher, J.~E. Ralph, H.~F. Robey, J.~S. Ross, C.~V. Young, K.~L. Baker, D.~T. Casey, T.~Döppner, L.~Divol, M.~Hohenberger, S.~Le~Pape, A.~Pak, P.~K. Patel, R.~Tommasini, S.~J. Ali, P.~A. Amendt, L.~J. Atherton, B.~Bachmann, D.~Bailey, L.~R. Benedetti, L.~Berzak~Hopkins, R.~Betti, S.~D. Bhandarkar, J.~Biener, R.~M. Bionta, N.~W. Birge, E.~J. Bond, D.~K. Bradley, T.~Braun, T.~M. Briggs, M.~W. Bruhn, P.~M. Celliers, B.~Chang, T.~Chapman, H.~Chen, C.~Choate, A.~R. Christopherson, D.~S. Clark, J.~W. Crippen, E.~L. Dewald, T.~R. Dittrich, M.~J. Edwards, W.~A. Farmer, J.~E. Field, D.~Fittinghoff, J.~Frenje, J.~Gaffney, M.~Gatu~Johnson, S.~H. Glenzer, G.~P. Grim, S.~Haan, K.~D. Hahn, G.~N. Hall, B.~A. Hammel, J.~Harte, E.~Hartouni, J.~E. Heebner, V.~J. Hernandez, H.~Herrmann, M.~C. Herrmann, D.~E. Hinkel, D.~D. Ho, J.~P. Holder, W.~W. Hsing, H.~Huang, K.~D. Humbird, N.~Izumi, L.~C. Jarrott, J.~Jeet, O.~Jones, G.~D. Kerbel, S.~M. Kerr, S.~F. Khan, J.~Kilkenny, Y.~Kim, H.~Geppert~Kleinrath, V.~Geppert~Kleinrath, C.~Kong, J.~M. Koning, J.~J. Kroll, M.~K.~G. Kruse, B.~Kustowski, O.~L. Landen, S.~Langer, D.~Larson, N.~C. Lemos, J.~D. Lindl, T.~Ma, M.~J. MacDonald, B.~J. MacGowan, A.~J. Mackinnon, S.~A. MacLaren, A.~G. MacPhee, M.~M. Marinak, D.~A. Mariscal, E.~V. Marley, L.~Masse, K.~Meaney, N.~B. Meezan, P.~A. Michel, M.~Millot, J.~L. Milovich, J.~D. Moody, A.~S. Moore, J.~W. Morton, T.~Murphy, K.~Newman, J.-M.~G. Di~Nicola, A.~Nikroo, R.~Nora, M.~V. Patel, L.~J. Pelz, J.~L. Peterson, Y.~Ping, B.~B. Pollock, M.~Ratledge, N.~G. Rice, H.~Rinderknecht, M.~Rosen, M.~S. Rubery, J.~D. Salmonson, J.~Sater, S.~Schiaffino, D.~J. Schlossberg, M.~B. Schneider, C.~R. Schroeder, H.~A. Scott, S.~M. Sepke, K.~Sequoia, M.~W. Sherlock, S.~Shin, V.~A. Smalyuk, B.~K. Spears, P.~T. Springer, M.~Stadermann, S.~Stoupin, D.~J. Strozzi, L.~J. Suter, C.~A. Thomas, R.~P.~J. Town, E.~R. Tubman, C.~Trosseille, P.~L. Volegov, C.~R. Weber, K.~Widmann, C.~Wild, C.~H. Wilde, B.~M. Van~Wonterghem, D.~T. Woods, B.~N. Woodworth, M.~Yamaguchi, S.~T. Yang, and G.~B. Zimmerman.
+\newblock Burning plasma achieved in inertial fusion.
+\newblock \emph{Nature}, 601\penalty0 (7894):\penalty0 542--548, January 2022.
+\newblock ISSN 1476-4687.
+\newblock \doi{10.1038/s41586-021-04281-w}.
+\newblock URL \url{https://www.nature.com/articles/s41586-021-04281-w}.
+\newblock Publisher: Nature Publishing Group.
+
+\bibitem[Moody et~al.(2022{\natexlab{a}})Moody, Pollock, Sio, Strozzi, Ho, Walsh, Kemp, Kucheyev, Kozioziemski, Carroll, Kroll, Yanagisawa, Angus, Bhandarkar, Bude, Divol, Ferguson, Fry, Hagler, Hartouni, Herrmann, Hsing, Holunga, Javedani, Johnson, Kalantar, Kohut, Logan, Masters, Nikroo, Orsi, Piston, Provencher, Rowe, Sater, Skulina, Stygar, Tang, Winters, Chittenden, Appelbe, Boxall, Crilly, O’Neill, Davies, Peebles, and Fujioka]{moody_magnetized_2022}
+J.~D. Moody, B.~B. Pollock, H.~Sio, D.~J. Strozzi, D.~D.-M. Ho, C.~Walsh, G.~E. Kemp, S.~O. Kucheyev, B.~Kozioziemski, E.~G. Carroll, J.~Kroll, D.~K. Yanagisawa, J.~Angus, S.~D. Bhandarkar, J.~D. Bude, L.~Divol, B.~Ferguson, J.~Fry, L.~Hagler, E.~Hartouni, M.~C. Herrmann, W.~Hsing, D.~M. Holunga, J.~Javedani, A.~Johnson, D.~Kalantar, T.~Kohut, B.~G. Logan, N.~Masters, A.~Nikroo, N.~Orsi, K.~Piston, C.~Provencher, A.~Rowe, J.~Sater, K.~Skulina, W.~A. Stygar, V.~Tang, S.~E. Winters, J.~P. Chittenden, B.~Appelbe, A.~Boxall, A.~Crilly, S.~O’Neill, J.~Davies, J.~Peebles, and S.~Fujioka.
+\newblock The {Magnetized} {Indirect} {Drive} {Project} on the {National} {Ignition} {Facility}.
+\newblock \emph{Journal of Fusion Energy}, 41\penalty0 (1):\penalty0 7, June 2022{\natexlab{a}}.
+\newblock ISSN 0164-0313, 1572-9591.
+\newblock \doi{10.1007/s10894-022-00319-7}.
+\newblock URL \url{https://link.springer.com/10.1007/s10894-022-00319-7}.
+
+\bibitem[Moody et~al.(2022{\natexlab{b}})Moody, Pollock, Sio, Strozzi, Ho, Walsh, Kemp, Lahmann, Kucheyev, Kozioziemski, Carroll, Kroll, Yanagisawa, Angus, Bachmann, Bhandarkar, Bude, Divol, Ferguson, Fry, Hagler, Hartouni, Herrmann, Hsing, Holunga, Izumi, Javedani, Johnson, Khan, Kalantar, Kohut, Logan, Masters, Nikroo, Orsi, Piston, Provencher, Rowe, Sater, Skulina, Stygar, Tang, Winters, Zimmerman, Adrian, Chittenden, Appelbe, Boxall, Crilly, O’Neill, Davies, Peebles, and Fujioka]{moody_increased_2022}
 J. D. Moody, B. B. Pollock, H.~Sio, D. J. Strozzi, D. D.-M. Ho, C. A. Walsh, G. E. Kemp, B.~Lahmann, S. O. Kucheyev, B.~Kozioziemski, E. G. Carroll, J.~Kroll, D. K. Yanagisawa, J.~Angus, B.~Bachmann, S. D. Bhandarkar, J. D. Bude, L.~Divol, B.~Ferguson, J.~Fry, L.~Hagler, E.~Hartouni, M. C. Herrmann, W.~Hsing, D. M. Holunga, N.~Izumi, J.~Javedani, A.~Johnson, S.~Khan, D.~Kalantar, T.~Kohut, B. G. Logan, N.~Masters, A.~Nikroo, N.~Orsi, K.~Piston, C.~Provencher, A.~Rowe, J.~Sater, K.~Skulina, W. A. Stygar, V.~Tang, S. E. Winters, G.~Zimmerman, P.~Adrian, J. P. Chittenden, B.~Appelbe, A.~Boxall, A.~Crilly, S.~O’Neill, J.~Davies, J.~Peebles, and S.~Fujioka.
 \newblock Increased {Ion} {Temperature} and {Neutron} {Yield} {Observed} in {Magnetized} {Indirectly} {Driven} {D} 2 -{Filled} {Capsule} {Implosions} on the {National} {Ignition} {Facility}.
-\newblock \emph{Physical Review Letters}, 129\penalty0 (19):\penalty0 195002, November 2022.
+\newblock \emph{Physical Review Letters}, 129\penalty0 (19):\penalty0 195002, November 2022{\natexlab{b}}.
 \newblock ISSN 0031-9007, 1079-7114.
 \newblock \doi{10.1103/PhysRevLett.129.195002}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.129.195002}.
