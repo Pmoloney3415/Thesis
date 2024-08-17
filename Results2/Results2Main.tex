@@ -76,11 +76,15 @@ Increasing magnitude of radiation perturbation were applied to the drive (moving
 The results demonstrate that when an initial magnetic field was applied to the target, it more robustly ignited with increasing field strength due to reduced conduction losses.
 This simulation work, prior to the achievement of ignition on the \ac{NIF}~\cite{zylstra_burning_2022}, motivated the development of a magnetised \ac{ICF} campaign at \ac{LLNL}~\cite{moody_magnetized_2022}.
 
+The \textsc{Chimera} code has been used to study a wide array of physics relevent to magnetised \ac{ICF}.
+Simulation work has been conducted, which has shown that magnetisation can alter instability growth of magnetised laser fusion implosions.
+While in the deceleration phase, magnetic tension can reduce low-mode perturbation growth~\cite{walsh_perturbation_2019}, magnetisation of directly-driven targets inhibits heatflow in the plasma corona and thus limits thermal stabilisation of short wavelength modes from laser imprint~\cite{walsh_magnetized_2020}.
+Recent work has also demonstrated that magnetisation of high-yield, indirect-drive targets must be carefully optimised, in order to avoid significant degradation to the implosion shape, due to anisotropic thermal conduction and inhibition of burn propagation, due to $\alpha$ magnetisation~\cite{oneill_modelling_2023}.
+
 %################################################################################
 %################################################################################
 \subsection{Experimental Studies of Magnetised-ICF}%
 \label{sec:Res2_magicf_prevwork}
-
 
 \begin{figure}[t!]
     \includegraphics[width=0.5\linewidth]{Results2/Images/magnif_yield_inc.png}
@@ -92,6 +96,11 @@ This simulation work, prior to the achievement of ignition on the \ac{NIF}~\cite
     \label{fig:Res2_moody_magnif}
 \end{figure}
 
+Indirect-drive experiments have been conducted on the \ac{NIF} to demonstrate the efficacy of magnetised targets, in reducing thermal conduction losses in the hotspot.
+Non-cryogenic, deuterium filled capsules were deployed with initial field strengths up to $26\ \text{T}$~\cite{moody_increased_2022}.
+Results from this experimental campaign are show in Fig.~\ref{fig:Res2_moody_magnif}.a.
+Fig.~\ref{fig:Res2_moody_magnif}.b,~\ref{fig:Res2_moody_magnif}.c and ~\ref{fig:Res2_moody_magnif}.d plot x-ray images at stagnation of different experiments, showing that a shape-tuning process had to be conducted in order to optimise the sphericity of the target, due to the field leading to anisotropic thermal conduction.
+The magnetised targets demonstrated significantly enhanced ion temperatures and neutron yields and work is underway to explore non-uniform field configurations to further enhance the benefits of magnetisation~\cite{walsh_application_2023}.
 
 \begin{figure}[t!]
     \includegraphics[width=0.6\linewidth]{Results2/Images/MagP2_Bose.png}
@@ -104,19 +113,64 @@ This simulation work, prior to the achievement of ignition on the \ac{NIF}~\cite
     \label{fig:Res2_Bose_magp2}
 \end{figure}
 
+Magnetisation of direct-drive targets has been investigated by experiments on the \textsc{Omega} laser facility for a number of years.
+Initial \textsc{Omega} experiments focussed on verification of magnetic flux compression, by applying an initial seed field along the axis of a cylinder that was imploded via laser irradiation~\cite{gotchev_laser-driven_2009}.
+The magnetised implosions validated predictions of flux compression and demonstrated enhanced neutron yields and core ion temperautres over unmagnetised implosions.
+Spherical targets were subsequently fielded, which also resulted in increased stagnation temperatures and yield compared to unmagnetised targets.
+No noticeable degradation to the implosion shape or performance was observed in these experiments, which was assumed to be due to the high ratio of plasma pressure to magnetic pressure, $\beta\gg 1$.
+
+The most recent experimental, magnetised direct-drive work has focussed on exploring higher initial seed field values ($|\vec{B}_0|\sim50\ \text{T}$ compared to $|\vec{B}_0|\sim8\ \text{T}$), to understand the saturation of performance with increasing field.
+A shock-driven, exploding pusher target configuration was used for these experiments, in order to create high ion temperatures and thus create a platform to study magnetisated ions.
+Exploding pushers are significantly different implosions compared to hot-spot ignition targets discussed in previous chapters and shall be described in detail in Sec.~\ref{sec:Res2_expl}.
+Creating these strong fields at the target necessitated reducing the radius of the equatorial field coil compared to previous experiments, and therefore a 40-beam configuration had to be used, without the 20 equatorial beams, leading to a pole heavy laser drive.
+The high fields of these implosions led to strongly magnetised coronal electrons, $\omega_e\tau_e\sim50$, resulting in strongly anisotropic thermal conduction $\kappa_{\perp,e}/\kappa_{\parallel,e}\sim10^{-4}$.
+This is compared to previous experiments which produced $\omega_e\tau_e\sim1$ and therefore $\kappa_{\perp,e}/\kappa_{\parallel,e}\sim1/3$.
+In direct-drive on \textsc{Omega}, laser deposition is transported to the ablation surface by electron thermal conduction, thus large electron Hall parameters led to an effective asymmetry of the implosion drive.
+
+Fig.~\ref{fig:Res2_Bose_magp2} shows x-ray self-emission images of an unmagnetised (left) and magnetised (right) target with an initial $|\vec{B}_0|=50\ \text{T}$ seed field.
+The strongly magnetised coronal electrons led to decreased drive $\perp\hat{\vec{B_0}}$, markedly increasing the oblateness of the diagnostic image compared to the unmagnetised target.
+An ion magnetisation of $\omega_i\tau_i\sim7$ was also reported.
+Previous \ac{Rad-MHD} modelling of these experiments, using the \textsc{Chimera} code, did not include the effects of \ac{CBET}.
+The development of \textsc{Solas}, and particularly the \ac{CBET} model, motivated further computational study of these experiments, to explore whether \ac{CBET} played a significant role in dictating the shape of these implosions.
+This is because \ac{CBET} is known to markedly compensate global, $\ell=1$ asymmetries~\cite{anderson_effect_2020,colaitis_inverse_2021}, therefore the anisotropy introduced from magnetisation could effect the action of \ac{CBET}.
 
 %################################################################################
 %################################################################################
 \subsection{Magnetised Laser-Plasma Instabilities}%
 \label{sec:Res2_maglpis}
 
+Some of the work conducted in this chapter, aims to understand how magnetisation of a direct drive implosion anisotropically changes the hydrodyanmics, and how these altered coronal plasma conditions modify the calculated \ac{CBET} gains, discussed in Sec.~\ref{sec:SOLAS_ray_power_change}.
+For example, magnetisation restricts thermal conduction and therefore enhances coronal elecron temperatures along the initial field axis.
+Approximately, the fluid \ac{CBET} gain, $\gamma_{ij}\propto T_e^{-1}$, therefore anisotropic changes to $T_e$ could result in reduced \ac{CBET} gains around the target and therefore change \ac{CBET} scattering compared to implosions without an applied field.
+This modification to \ac{CBET} via the altered hydrodynamic profiles is called the \textit{indirect} effect of magnetisation on \ac{LPIs}.
 
+Magnetisation can however also \textit{directly} modify scattering from \ac{LPIs}, in a number of ways.
+For \ac{ICF} conditions, when the field strength is sufficently high, electron cyclotron motion can become comparable to plasma wave frequencies, and therefore alter the dispersion relation of the mediating plasma wave in \ac{LPIs}.
+In underdense, \ac{ICF} relevant plasma ($n_e\sim 10^{20}\ \text{cm}^{-3}$ and $T\sim2\ \text{keV}$), the ion accoustic wave, which mediates \ac{SBS} and \ac{CBET}, is significantly modified when $|\vec{B}|\sim100\ \text{T}$ and the \ac{EPW}, which mediates ac{SRS} and \ac{TPD}, when $|\vec{B}|\sim1000\ \text{T}$~\cite{shi_benchmarking_2023}.
+Additionally, the (predominnantly collisionless) damping of plasma waves can also be modified, because cylclotron motion of particles can affect their trapping in plasma waves~\cite{shi_benchmarking_2023}.
+Significant theoretical progress has been made in this field in recent years by Shi \text{et al.}, who derived analytic formula for 3 wave coupling in the presence of a magnetic field \cite{shi_three-wave_2017,shi_laser-plasma_2018}.
+This was challenging due to the lack of simple geometries for the interaction, when a field is applied to a plasma with an arbitrary direction.
+
+The simulation results here neglect this direct affect of magnetisation on \ac{CBET}, partially because the theory is not yet deemed to be significantly mature, to implement within a reduced, ray-based model.
+Coronal magnetic field strengths of $|\vec{B}|\lesssim50\ \text{T}$ were observed in the underdense coronal plasma so significant modifications to the accoustic wave dispersion relation were not expected.
+It is noted however, that altered damping of the waves from magnetisation may affect the results, but the focus of the study was predominantly to explore how magnetisation might indirectly affect \ac{CBET}.
 
 %################################################################################
 %################################################################################
 \subsection{The Exploding-Pusher Configuration}%
 \label{sec:Res2_expl}
 
+Exploding-pushers are considered to be a highly reproducible platform, robust to instabilities and capable of producing large neutron yields.
+Although historically it had a slightly different meaning~\cite{craxton_direct-drive_2015}, the term `exploding pusher' is now, typically used for low convergence, thin-shell targets~\cite{ellison_development_2018}.
+When irradiated with significant intensity, frequency-tripled laser light\footnote{When frequency-tripled light is not used, suprathermal electrons, rather than ablation, is the dominant driver of the strong shock~\cite{yeamans_high_2021}.}, the thin shell rapidly heats and then explosively ablates, driving a strong shock radially inward, ahead of the in-falling ablated material.
+This shock strongly heats the ions as it propagates through gas fill to large, fusion relevant temperatures.
+After rebounding from the axis, the shock recompresses the infalling exploded shell material, resulting in sufficient density for a significant number of fusion reactions.
+
+Directly-driven exploding pusher targets have the largest direct drive fusion yields recorded on the \ac{NIF}, resulting in $E_{\text{fusion}}\sim 30\ \text{kJ}$~\cite{yeamans_high_2021}.
+However, they are not suitbale for high gain designs, as the low areal densities of the target are not sufficient to confine $\alpha$ particles and thus enable burn propagation.
+A variety of interesting physics may be studied using the platform due to the significant ion temperatures that can be achieved, such as equilibration between electrons and ions~\cite{benedict_molecular_2012}.
+The strong shock is also highly kinetic, and thus accurate comparison to experimental results is difficult for \ac{Rad-Hydro} codes which lack a suitbale model for non-local transport, such as \textsc{Chimera}.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!! - Check tha above sentance and get a reference - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 %###############################################################################################################################
 %###############################################################################################################################

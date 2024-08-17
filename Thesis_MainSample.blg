@@ -6,44 +6,46 @@ A level-1 auxiliary file: Preamble/PreambleMain.aux
 A level-1 auxiliary file: Results2/Results2Main.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
 Database file #1: Bibliography/Bibliography.bib
-You've used 11 entries,
+Warning--empty journal in walsh_application_2023
+You've used 23 entries,
             2481 wiz_defined-function locations,
-            655 strings with 12784 characters,
-and the built_in function-call counts, 12078 in all, are:
-= -- 446
-> -- 1921
-< -- 4
-+ -- 653
-- -- 630
-* -- 1573
-:= -- 2487
-add.period$ -- 64
-call.type$ -- 11
-change.case$ -- 21
-chr.to.int$ -- 10
-cite$ -- 11
-duplicate$ -- 205
-empty$ -- 391
-format.name$ -- 647
-if$ -- 2112
+            747 strings with 18055 characters,
+and the built_in function-call counts, 19782 in all, are:
+= -- 924
+> -- 2747
+< -- 5
++ -- 941
+- -- 894
+* -- 2456
+:= -- 3927
+add.period$ -- 135
+call.type$ -- 23
+change.case$ -- 45
+chr.to.int$ -- 22
+cite$ -- 24
+duplicate$ -- 433
+empty$ -- 839
+format.name$ -- 923
+if$ -- 3589
 int.to.chr$ -- 2
-int.to.str$ -- 12
-missing$ -- 10
-newline$ -- 94
-num.names$ -- 33
-pop$ -- 44
+int.to.str$ -- 24
+missing$ -- 22
+newline$ -- 189
+num.names$ -- 69
+pop$ -- 95
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 23
 quote$ -- 0
-skip$ -- 103
+skip$ -- 212
 stack$ -- 0
-substring$ -- 221
-swap$ -- 35
+substring$ -- 476
+swap$ -- 70
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 77
-warning$ -- 0
-while$ -- 36
+type$ -- 161
+warning$ -- 1
+while$ -- 72
 width$ -- 0
-write$ -- 213
+write$ -- 438
+(There was 1 warning)
