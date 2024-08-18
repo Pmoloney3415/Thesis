@@ -176,21 +176,18 @@ However, much of the key dynamics and serults can be studied more qualitatively.
 %###############################################################################################################################
 %###############################################################################################################################
 %###############################################################################################################################
-\section{Effect of Cross-Beam Energy Transfer in Unmagnetised Exploding Pushers}%
+\section{Cross-Beam Energy Transfer in Unmagnetised Exploding Pushers}%
 \label{sec:Res2_CBET_expl}
 
-This section presents simulation results of the effect of \ac{CBET} in exploding pushers on \textsc{Omega}.
-Both 1-D and 2-D \textsc{Chimera}-\textsc{Solas} simulations of 40-beam, polar driven exploding pusher experiments are presented, with a focus on how \ac{CBET} acts to change the implosion.
+This section presents simulation results, which demonstrate the effect of \ac{CBET} in exploding pushers on \textsc{Omega}.
+Both 1-D and 2-D \textsc{Chimera}-\textsc{Solas} simulations of 40-beam, pole-heavy drive exploding pusher experiments are presented, with a focus on how \ac{CBET} acts to change the implosion.
 The 1-D results demonstrate that \ac{CBET} significantly reduces the coupled laser energy to the implosion from \dots to \dots.
-Simulations conducted in 2-D, with a full 3-D raytrace and \ac{CBET} model, show that \ac{CBET} alters spatial profile of the laser deposition, reducing asymmetry in the drive.
-
-
+Simulations conducted in 2-D, with a full 3-D raytrace and \ac{CBET} model, clearly demonstrated that the polar drive configuration led to an oblate implosion. 
 
 %################################################################################
 %################################################################################
 \subsection{Simulation Configuration}%
 \label{sec:Res2_simconfig}
-
 
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Results2/Images/magpdd_diagram_pulse.png}
@@ -202,6 +199,40 @@ Simulations conducted in 2-D, with a full 3-D raytrace and \ac{CBET} model, show
     \label{fig:Res2_simconfig}
 \end{figure}
 
+The simulations conducted for this chapter aimed to study experimental configurations similar to the results from Bose \textit{et al.}, discussed in Sec.~\ref{sec:Res2_magicf_prevwork}~\cite{bose_effect_2022}.
+Experimental data from these magnetised exploding pushers, demonstrated a clear amplification of the mode-2 due to magnetisastion, which could affect \ac{CBET} scattering.
+The beam configuration, capsule initial conditions and pusle shape are shown in Fig.~\ref{fig:Res2_simconfig}.
+The exact pulse shape and target specifications were from a set of follow up experiments to Bose \textit{et al.} and were provided by C. W. Chang and J. Frenje from \ac{MIT}~\cite{chang_notitle_2023}.
+40 beams from the \textsc{Omega} laser, delviered a total of $17.7\ \text{kJ}$ laser energy to a $2.5\ \mu\text{m}$ thick, glass ($\text{SiO}_2$\footnote{By ion number density, the material was comprised of $1/3$ $\text{Si}$ and $2/3$ $\text{O}$.}) capsule, filled with room temperature and pressure $\text{D}_2$.
+All experiments removed the 20 equatorial beams from the drive, because the presence of the field coil precluded them when an axial field was applied.
+Magnetic fields of strength $B_{z0}=0$, $25$ and $50\ \text{T}$ were applied along the z-axis of the configuration.
+
+An explicit $P_{1/3}$ radiation transport algorithm was used for all simulations, using tabulated opacities and emissivities from the \textsc{SpK} code~\cite{crilly_spk_2023}.
+A tabulated \texttt{Sesame} equation of state was used for each material~\cite{mchardy_introduction_2018}.
+The \textsc{Chimera} extended-\ac{MHD} package was used, which inluded resistive diffusion of the magnetic field, Lorentz force of the magnetic field on the hydrodynamics, Nernst advection of the field down temperature gradients and anisotropic thermal conduction~\cite{walsh_extended-magnetohydrodynamics_2020}.
+Thermal conduction was solved using a Super-time-stepping, semi-implicit algorithm~\cite{vaidya_scalable_2017}, with flux-limited, Spitzer conductivities~\cite{spitzer_transport_1953}.
+An electron flux limiter of $f_{\text{lim},e} = 0.15$ was used for all simulations.
+Exploding pushers exhibit high coronal temperatures due to the high-$Z$ ablator and large temperatures for the strong imploding shock, therefore simulation yields and bangtimes are highly sensitive to thermal conduction and the choice of flux limiter.
+Although not the focus of this work, if attempting to match simulation result to experimental yields, reducing the flux limiter value would strongly inhibit the drive and therefore reduce simulation bangtimes.
+In order to improve the speed of the thermal conduction algorithm, which takes small timesteps on a vacuum-plasma interface, an artificial material was placed outside the capsule, which had an enforced ionisation state of $Z=0$.
+This had minimal impact on the implosion results, but significantly sped up simulation run-times.
+The presence of the material did create large viscous heating of the ions as the coronal plasma expanded into it which is visible in results throughout the chapter.
+However, this viscously heated layer was well separated from the region of interest (near critical) for the majority of the implosion and therefore did not impact upon the results.
+
+All simulations used a spherical-polar \textsc{Chimera} mesh, with a fixed radial resolution of $0.5\ \text{um}$, over the full $4\pi\ \text{str}$.
+1-D simulations were ran from beginning to end in spherical with $r\in[0,1400]\ \mu\text{m}$.
+2-D, $r,\theta$ calculations assumed azimuthal symmetry of the hydrodyanmics and conducted an initial `drive-phase' in spherical coordinates, with $r\in[80,1400]\ \mu\text{m}$, where the central cutout region was removed to avoid taking small radiation transport timesteps due to the small cell faces close to the axis.
+The 2-D drive-phase grid used 120 cells in the polar direction.
+When the shock reached this cutout region, hydrodynamic variables wer trilinearly interpolated onto a 2-D cylindrical $r_{\text{cyl}},z$ mesh with fixed resolution, $\Delta_{r,\text{cyl}}=\Delta_z=1\ \mu\text{m}$, and $r_{\text{cyl}}\in[0,1200]\ \mu\text{m}$ and $z\in[-1200,1200]\ \mu\text{m}$, for the `stagnation-phase'.
+This grid contained no singularities, unlike a 2-D spherical grid which has no cutout, and therefore excessively small radiation transport timesteps were not an issue.
+
+All simulations used a 3-D laser ray-trace with a variety of \ac{CBET} treatments.
+\ac{CBET} was fully included for some simulations and neglected for others.
+Alternatively, to explore the effect that \ac{CBET} \textit{spatial redistribution} of deposited power had on implosions, some simulations were conducted without \ac{CBET}, but forced to deposit the magnitude of power that was absorbed from the equivalent \ac{CBET} simulation at that time.
+Explicitly, these simulations conducted a no-\ac{CBET} ray-trace, where the power of all rays was noramlised to unity.
+When this raytrace was complete, it read in the absorbed power from the (previously conducted) \ac{CBET} simulation at that time and multiplied the (normalised) deposited power by this value.
+This created a hydrodynamically similar implosion to the \ac{CBET} ray-trace, and via comparison of these two simualtions, the impact of \ac{CBET} relocation-of-deposition upon the hydrodyanmics was studied.
+Temporally-and-spatially integrated results from all simulations are presented in Tab.~\ref{tab:Res2_magexpl_results} and are referred to when relevent throughout the chapter.
 
 %################################################################################
 %################################################################################
@@ -234,6 +265,7 @@ Simulations conducted in 2-D, with a full 3-D raytrace and \ac{CBET} model, show
         14  & 2-D  & Off    & No Nern.  & 25                                                                & 0.73                                                            & 7.41                                                                  & 4.85                                                             & 130                                                       & $3.74_{-0.32}^{+0.38}$ \\
         15  & 2-D  & Off    & No Resis. & 25                                                                & 0.73                                                            & 7.07                                                                  & 4.59                                                             & 132                                                       & $3.84_{-0.33}^{+0.42}$ \\ \hhline{==========}
 \end{tabular}
+\label{tab:Res2_magexpl_results}
 \end{table}
 \egroup%
 
@@ -267,7 +299,7 @@ Simulations conducted in 2-D, with a full 3-D raytrace and \ac{CBET} model, show
 %###############################################################################################################################
 %###############################################################################################################################
 %###############################################################################################################################
-\section{The Effect of Magnetisation on Exploding-Pusher Implosions}%
+\section{Magnetisation in Exploding-Pusher Implosions}%
 \label{sec:Res2_mag_unmag}
 
 This section presents results of a study of the effect that extended-\ac{MHD} has on the 2-D exploding pusher simulations.

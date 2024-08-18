@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -75,10 +75,10 @@ C.~A. Walsh, K.~McGlinchey, J.~K. Tong, B.~D. Appelbe, A.~Crilly, M.~F. Zhang, a
 \newblock \doi{10.1063/1.5085498}.
 \newblock URL \url{https://pubs.aip.org/pop/article/26/2/022701/253631/Perturbation-modifications-by-pre-magnetisation-of}.
 
-\bibitem[Walsh et~al.(2020)Walsh, Crilly, and Chittenden]{walsh_magnetized_2020}
+\bibitem[Walsh et~al.(2020{\natexlab{a}})Walsh, Crilly, and Chittenden]{walsh_magnetized_2020}
 C.A. Walsh, A.J. Crilly, and J.P. Chittenden.
 \newblock Magnetized directly-driven {ICF} capsules: increased instability growth from non-uniform laser drive.
-\newblock \emph{Nuclear Fusion}, 60\penalty0 (10):\penalty0 106006, October 2020.
+\newblock \emph{Nuclear Fusion}, 60\penalty0 (10):\penalty0 106006, October 2020{\natexlab{a}}.
 \newblock ISSN 0029-5515, 1741-4326.
 \newblock \doi{10.1088/1741-4326/abab52}.
 \newblock URL \url{https://iopscience.iop.org/article/10.1088/1741-4326/abab52}.
@@ -185,5 +185,46 @@ Lorin~X. Benedict, Michael~P. Surh, John~I. Castor, Saad~A. Khairallah, Heather~
 \newblock ISSN 1539-3755, 1550-2376.
 \newblock \doi{10.1103/PhysRevE.86.046406}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.86.046406}.
+
+\bibitem[Chang and Frenje(2023)]{chang_notitle_2023}
+Cody~Wu Chang and J.~A. Frenje, April 2023.
+
+\bibitem[Crilly et~al.(2023)Crilly, Niasse, Fraser, Chapman, McLean, Rose, and Chittenden]{crilly_spk_2023}
+A.J. Crilly, N.P.L. Niasse, A.R. Fraser, D.A. Chapman, K.W. McLean, S.J. Rose, and J.P. Chittenden.
+\newblock {SpK}: {A} fast atomic and microphysics code for the high-energy-density regime.
+\newblock \emph{High Energy Density Physics}, 48:\penalty0 101053, September 2023.
+\newblock ISSN 15741818.
+\newblock \doi{10.1016/j.hedp.2023.101053}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S1574181823000198}.
+
+\bibitem[McHardy(2018)]{mchardy_introduction_2018}
+James McHardy.
+\newblock An introduction to the theory and use of {SESAME} equations of state.
+\newblock Technical Report LA--14503, 1487368, December 2018.
+\newblock URL \url{https://www.osti.gov/servlets/purl/1487368/}.
+
+\bibitem[Walsh et~al.(2020{\natexlab{b}})Walsh, Chittenden, Hill, and Ridgers]{walsh_extended-magnetohydrodynamics_2020}
+C.~A. Walsh, J.~P. Chittenden, D.~W. Hill, and C.~Ridgers.
+\newblock Extended-magnetohydrodynamics in under-dense plasmas.
+\newblock \emph{Physics of Plasmas}, 27\penalty0 (2):\penalty0 022103, February 2020{\natexlab{b}}.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5124144}.
+\newblock URL \url{https://pubs.aip.org/pop/article/27/2/022103/841709/Extended-magnetohydrodynamics-in-under-dense}.
+
+\bibitem[Vaidya et~al.(2017)Vaidya, Prasad, Mignone, Sharma, and Rickler]{vaidya_scalable_2017}
+Bhargav Vaidya, Deovrat Prasad, Andrea Mignone, Prateek Sharma, and Luca Rickler.
+\newblock Scalable explicit implementation of anisotropic diffusion with {Runge}–{Kutta}–{Legendre} super-time stepping.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society}, 472\penalty0 (3):\penalty0 3147--3160, December 2017.
+\newblock ISSN 0035-8711, 1365-2966.
+\newblock \doi{10.1093/mnras/stx2176}.
+\newblock URL \url{http://academic.oup.com/mnras/article/472/3/3147/4093858/Scalable-explicit-implementation-of-anisotropic}.
+
+\bibitem[Spitzer and Härm(1953)]{spitzer_transport_1953}
+Lyman Spitzer and Richard Härm.
+\newblock Transport {Phenomena} in a {Completely} {Ionized} {Gas}.
+\newblock \emph{Physical Review}, 89\penalty0 (5):\penalty0 977--981, March 1953.
+\newblock ISSN 0031-899X.
+\newblock \doi{10.1103/PhysRev.89.977}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.89.977}.
 
 \end{thebibliography}
