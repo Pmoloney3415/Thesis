@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -226,5 +226,21 @@ Lyman Spitzer and Richard Härm.
 \newblock ISSN 0031-899X.
 \newblock \doi{10.1103/PhysRev.89.977}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.89.977}.
+
+\bibitem[Frenje(2020)]{frenje_nuclear_2020}
+J~A Frenje.
+\newblock Nuclear diagnostics for {Inertial} {Confinement} {Fusion} ({ICF}) plasmas.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 62\penalty0 (2):\penalty0 023001, February 2020.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/1361-6587/ab5137}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/1361-6587/ab5137}.
+
+\bibitem[Bosch and Hale(1992)]{bosch_improved_1992}
+H.-S Bosch and G.M Hale.
+\newblock Improved formulas for fusion cross-sections and thermal reactivities.
+\newblock \emph{Nuclear Fusion}, 32\penalty0 (4):\penalty0 611--631, April 1992.
+\newblock ISSN 0029-5515.
+\newblock \doi{10.1088/0029-5515/32/4/I07}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/0029-5515/32/4/I07}.
 
 \end{thebibliography}

@@ -33,3 +33,11 @@ Snb
 outflowing
 Nernst
 no-Nernst
+collisionless
+kT
+suprathermal
+Frenje
+SpK
+str
+trilinearly
+Nernst-advection

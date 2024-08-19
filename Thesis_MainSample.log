@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.20)  18 AUG 2024 14:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  19 AUG 2024 16:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Repos/Thesis/Thesis_MainSample.tex
-(c:/Repos/Thesis/Thesis_MainSample.tex
+**c:/Thesis_latex/Thesis_MainSample.tex
+(c:/Thesis_latex/Thesis_MainSample.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (./icldt.cls
@@ -1080,8 +1080,8 @@ File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 pdfTeX warning (ext4): destination with the same identifier (name{EPW}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.71 \newpage
-             ]) [4]
+l.67 \end{acronym}
+                  ] [4]) [5]
 \openout2 = `Results2/Results2Main.aux'.
 
  (./Results2/Results2Main.tex
@@ -1096,7 +1096,7 @@ Package acronym Info: Label `acro:Rad-MHD' newly defined as it shall be overridd
 although it is yet undefined on input line 7.
 Package acronym Info: Label `acro:MHD' newly defined as it shall be overridden
 although it is yet undefined on input line 14.
-[5
+[6
 
 
 
@@ -1109,7 +1109,7 @@ Overfull \hbox (1.4551pt too wide) in paragraph at lines 28--32
 \T1/futs/m/n/10.95 cept is then briefly ex-plored to aid un-der-stand-ing of the im-plo-sion physics, which is markedly
  []
 
-<Results2/Images/wt_collisions.png, id=108, 561.735pt x 231.045pt>
+<Results2/Images/wt_collisions.png, id=116, 561.735pt x 231.045pt>
 File: Results2/Images/wt_collisions.png Graphic file (type png)
 <use Results2/Images/wt_collisions.png>
 Package pdftex.def Info: Results2/Images/wt_collisions.png  used on input line 39.
@@ -1122,39 +1122,41 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 56.
-[6 <./Results2/Images/wt_collisions.png>]
-<Results2/Images/magicf_perkins.jpeg, id=131, 84.315pt x 50.95035pt>
+[7 <./Results2/Images/wt_collisions.png>]
+<Results2/Images/magicf_perkins.jpeg, id=141, 84.315pt x 50.95035pt>
 File: Results2/Images/magicf_perkins.jpeg Graphic file (type jpg)
 <use Results2/Images/magicf_perkins.jpeg>
 Package pdftex.def Info: Results2/Images/magicf_perkins.jpeg  used on input line 66.
 (pdftex.def)             Requested size: 311.55782pt x 188.27461pt.
 
 
-LaTeX Warning: Reference `Res2:perkins_magicf' on page 7 undefined on input line 74.
+LaTeX Warning: Reference `Res2:perkins_magicf' on page 8 undefined on input line 74.
 
 Package acronym Info: Label `acro:LLNL' newly defined as it shall be overridden
 although it is yet undefined on input line 77.
 
 Underfull \vbox (badness 5681) has occurred while \output is active []
 
- [7 <./Results2/Images/magicf_perkins.jpeg>]
-<Results2/Images/magnif_yield_inc.png, id=161, 451.6875pt x 501.875pt>
+ [8 <./Results2/Images/magicf_perkins.jpeg>]
+<Results2/Images/magnif_yield_inc.png, id=169, 451.6875pt x 501.875pt>
 File: Results2/Images/magnif_yield_inc.png Graphic file (type png)
 <use Results2/Images/magnif_yield_inc.png>
 Package pdftex.def Info: Results2/Images/magnif_yield_inc.png  used on input line 90.
 (pdftex.def)             Requested size: 207.70522pt x 230.78871pt.
-<Results2/Images/MagP2_Bose.png, id=173, 512.679pt x 305.943pt>
+<Results2/Images/MagP2_Bose.png, id=181, 512.679pt x 305.943pt>
 File: Results2/Images/MagP2_Bose.png Graphic file (type png)
 <use Results2/Images/MagP2_Bose.png>
 Package pdftex.def Info: Results2/Images/MagP2_Bose.png  used on input line 106.
 (pdftex.def)             Requested size: 249.24878pt x 148.74162pt.
- [8 <./Results2/Images/magnif_yield_inc.png (PNG copy)>] [9 <./Results2/Images/MagP2_Bose.png>]
+ [9 <./Results2/Images/magnif_yield_inc.png (PNG copy)>] [10 <./Results2/Images/MagP2_Bose.png>]
 
-LaTeX Warning: Reference `sec:SOLAS_ray_power_change' on page 10 undefined on input line 142.
+LaTeX Warning: Reference `sec:SOLAS_ray_power_change' on page 11 undefined on input line 142.
 
 Package acronym Info: Label `acro:SBS' newly defined as it shall be overridden
 although it is yet undefined on input line 149.
 Package acronym Info: Label `acro:EPW' newly defined as it shall be overridden
+although it is yet undefined on input line 149.
+Package acronym Info: Label `acro:SRS' newly defined as it shall be overridden
 although it is yet undefined on input line 149.
 Package acronym Info: Label `acro:TPD' newly defined as it shall be overridden
 although it is yet undefined on input line 149.
@@ -1170,7 +1172,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 165.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 165.
-[10]
+[11]
 Package acronym Info: Label `acro:Rad-Hydro' newly defined as it shall be overridden
 although it is yet undefined on input line 172.
 
@@ -1178,7 +1180,7 @@ Overfull \hbox (1.88205pt too wide) in paragraph at lines 169--175
 []\T1/futs/m/n/10.95 Directly-driven ex-plod-ing pusher tar-gets have the largest di-rect drive fu-sion yields recorded
  []
 
-<Results2/Images/magpdd_diagram_pulse.png, id=250, 1011.78pt x 433.62pt>
+<Results2/Images/magpdd_diagram_pulse.png, id=263, 1011.78pt x 433.62pt>
 File: Results2/Images/magpdd_diagram_pulse.png Graphic file (type png)
 <use Results2/Images/magpdd_diagram_pulse.png>
 Package pdftex.def Info: Results2/Images/magpdd_diagram_pulse.png  used on input line 193.
@@ -1188,94 +1190,110 @@ although it is yet undefined on input line 205.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 211.
 (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [11] [12 <./Results2/Images/magpdd_diagram_pulse.png>]
+) [12] [13 <./Results2/Images/magpdd_diagram_pulse.png>] [14]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 246.
+               Default added (so using `tbp') on input line 268.
 
-<Results2/Images/expl_streaks.png, id=300, 1068.72pt x 981.339pt>
+
+LaTeX Warning: Reference `sec:SOLAS_mesh' on page 15 undefined on input line 298.
+
+<Results2/Images/expl_streaks.png, id=335, 1068.72pt x 981.339pt>
 File: Results2/Images/expl_streaks.png Graphic file (type png)
 <use Results2/Images/expl_streaks.png>
-Package pdftex.def Info: Results2/Images/expl_streaks.png  used on input line 274.
+Package pdftex.def Info: Results2/Images/expl_streaks.png  used on input line 302.
 (pdftex.def)             Requested size: 415.41043pt x 381.44788pt.
-<Results2/Images/unmag_CBET_onoff.png, id=303, 737.592pt x 1011.78pt>
+[15]
+
+LaTeX Warning: Reference `res1:Res1_streaks' on page 16 undefined on input line 320.
+
+
+LaTeX Warning: Reference `res1:Res1_streaks' on page 16 undefined on input line 321.
+
+
+LaTeX Warning: Reference `fig:Res1_streaks' on page 16 undefined on input line 324.
+
+[16 <./Results2/Images/expl_streaks.png>]
+<Results2/Images/unmag_CBET_onoff.png, id=358, 737.592pt x 1011.78pt>
 File: Results2/Images/unmag_CBET_onoff.png Graphic file (type png)
 <use Results2/Images/unmag_CBET_onoff.png>
-Package pdftex.def Info: Results2/Images/unmag_CBET_onoff.png  used on input line 290.
+Package pdftex.def Info: Results2/Images/unmag_CBET_onoff.png  used on input line 337.
 (pdftex.def)             Requested size: 394.63864pt x 541.35098pt.
-<Results2/Images/mag_early_B_develop.png, id=309, 1011.78pt x 874.029pt>
+ [17]
+Underfull \vbox (badness 1769) has occurred while \output is active []
+
+ [18 <./Results2/Images/unmag_CBET_onoff.png>]
+<Results2/Images/mag_early_B_develop.png, id=401, 1011.78pt x 874.029pt>
 File: Results2/Images/mag_early_B_develop.png Graphic file (type png)
 <use Results2/Images/mag_early_B_develop.png>
-Package pdftex.def Info: Results2/Images/mag_early_B_develop.png  used on input line 319.
+Package pdftex.def Info: Results2/Images/mag_early_B_develop.png  used on input line 390.
 (pdftex.def)             Requested size: 415.41043pt x 358.86101pt.
-<Results2/Images/iso_aniso.png, id=312, 867.24pt x 722.7pt>
+ [19] [20 <./Results2/Images/mag_early_B_develop.png>]
+<Results2/Images/iso_aniso.png, id=425, 867.24pt x 722.7pt>
 File: Results2/Images/iso_aniso.png Graphic file (type png)
 <use Results2/Images/iso_aniso.png>
-Package pdftex.def Info: Results2/Images/iso_aniso.png  used on input line 341.
+Package pdftex.def Info: Results2/Images/iso_aniso.png  used on input line 423.
 (pdftex.def)             Requested size: 332.3296pt x 276.94463pt.
-<Results2/Images/nernst_comp.png, id=315, 867.24pt x 469.317pt>
+<Results2/Images/nernst_comp.png, id=432, 867.24pt x 469.317pt>
 File: Results2/Images/nernst_comp.png Graphic file (type png)
 <use Results2/Images/nernst_comp.png>
-Package pdftex.def Info: Results2/Images/nernst_comp.png  used on input line 359.
+Package pdftex.def Info: Results2/Images/nernst_comp.png  used on input line 445.
 (pdftex.def)             Requested size: 332.3296pt x 179.84616pt.
-<Results2/Images/magmag_beta_Rm.png, id=318, 1011.78pt x 325.215pt>
+<Results2/Images/magmag_beta_Rm.png, id=435, 1011.78pt x 325.215pt>
 File: Results2/Images/magmag_beta_Rm.png Graphic file (type png)
 <use Results2/Images/magmag_beta_Rm.png>
-Package pdftex.def Info: Results2/Images/magmag_beta_Rm.png  used on input line 377.
+Package pdftex.def Info: Results2/Images/magmag_beta_Rm.png  used on input line 463.
 (pdftex.def)             Requested size: 415.41043pt x 133.52757pt.
-<Results2/Images/ne_te_Bstream_comp_alt050.png, id=321, 1011.78pt x 415.881pt>
+<Results2/Images/ne_te_Bstream_comp_alt050.png, id=438, 1011.78pt x 415.881pt>
 File: Results2/Images/ne_te_Bstream_comp_alt050.png Graphic file (type png)
 <use Results2/Images/ne_te_Bstream_comp_alt050.png>
-Package pdftex.def Info: Results2/Images/ne_te_Bstream_comp_alt050.png  used on input line 394.
+Package pdftex.def Info: Results2/Images/ne_te_Bstream_comp_alt050.png  used on input line 480.
 (pdftex.def)             Requested size: 415.41043pt x 170.75345pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13] [14] [15 <./Results2/Images/expl_streaks.png>]
-Underfull \vbox (badness 1769) has occurred while \output is active []
+ [21 <./Results2/Images/iso_aniso.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <./Results2/Images/unmag_CBET_onoff.png>]
-<Results2/Images/magcbet_analysis.png, id=367, 1011.78pt x 664.70332pt>
+ [22 <./Results2/Images/nernst_comp.png> <./Results2/Images/magmag_beta_Rm.png>]
+<Results2/Images/magcbet_analysis.png, id=469, 1011.78pt x 664.70332pt>
 File: Results2/Images/magcbet_analysis.png Graphic file (type png)
 <use Results2/Images/magcbet_analysis.png>
-Package pdftex.def Info: Results2/Images/magcbet_analysis.png  used on input line 416.
+Package pdftex.def Info: Results2/Images/magcbet_analysis.png  used on input line 502.
 (pdftex.def)             Requested size: 415.41043pt x 272.91554pt.
 
 
-LaTeX Warning: Reference `sec:res1_cbet_scattering' on page 17 undefined on input line 424.
+LaTeX Warning: Reference `sec:res1_cbet_scattering' on page 23 undefined on input line 510.
 
 
-LaTeX Warning: Reference `sec:res1_cbet_scattering' on page 17 undefined on input line 424.
+LaTeX Warning: Reference `sec:res1_cbet_scattering' on page 23 undefined on input line 510.
 
-<Results2/Images/Scattering_time_phi_diffCBET_CBtr.png, id=386, 956.154pt x 648.021pt>
+<Results2/Images/Scattering_time_phi_diffCBET_CBtr.png, id=488, 956.154pt x 648.021pt>
 File: Results2/Images/Scattering_time_phi_diffCBET_CBtr.png Graphic file (type png)
 <use Results2/Images/Scattering_time_phi_diffCBET_CBtr.png>
-Package pdftex.def Info: Results2/Images/Scattering_time_phi_diffCBET_CBtr.png  used on input line 435.
+Package pdftex.def Info: Results2/Images/Scattering_time_phi_diffCBET_CBtr.png  used on input line 521.
 (pdftex.def)             Requested size: 415.41043pt x 281.54077pt.
+<Results2/Images/allall_stagnation.png, id=503, 1011.78pt x 1024.92pt>
+File: Results2/Images/allall_stagnation.png Graphic file (type png)
+<use Results2/Images/allall_stagnation.png>
+Package pdftex.def Info: Results2/Images/allall_stagnation.png  used on input line 539.
+(pdftex.def)             Requested size: 415.41043pt x 420.8142pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./Results2/Images/mag_early_B_develop.png>]
-<Results2/Images/allall_stagnation.png, id=407, 1011.78pt x 1024.92pt>
-File: Results2/Images/allall_stagnation.png Graphic file (type png)
-<use Results2/Images/allall_stagnation.png>
-Package pdftex.def Info: Results2/Images/allall_stagnation.png  used on input line 453.
-(pdftex.def)             Requested size: 415.41043pt x 420.8142pt.
-<Results2/Images/CBETshape_stag_diff.png, id=419, 1011.78pt x 375.804pt>
+ [23 <./Results2/Images/ne_te_Bstream_comp_alt050.png>]
+<Results2/Images/CBETshape_stag_diff.png, id=521, 1011.78pt x 375.804pt>
 File: Results2/Images/CBETshape_stag_diff.png Graphic file (type png)
 <use Results2/Images/CBETshape_stag_diff.png>
-Package pdftex.def Info: Results2/Images/CBETshape_stag_diff.png  used on input line 467.
+Package pdftex.def Info: Results2/Images/CBETshape_stag_diff.png  used on input line 553.
 (pdftex.def)             Requested size: 415.41043pt x 154.29854pt.
-<Results2/Images/R2R0_errors.png, id=430, 505.89pt x 361.35pt>
+<Results2/Images/R2R0_errors.png, id=532, 505.89pt x 361.35pt>
 File: Results2/Images/R2R0_errors.png Graphic file (type png)
 <use Results2/Images/R2R0_errors.png>
-Package pdftex.def Info: Results2/Images/R2R0_errors.png  used on input line 476.
+Package pdftex.def Info: Results2/Images/R2R0_errors.png  used on input line 562.
 (pdftex.def)             Requested size: 249.24878pt x 178.03899pt.
-) [18 <./Results2/Images/iso_aniso.png>] [19 <./Results2/Images/nernst_comp.png> <./Results2/Images/magmag_beta_Rm.png>] [20 <./Results2/Images/ne_te_Bstream_comp_alt050.png>] [21 <./Results2/Images/magcbet_analysis.png>] [22 <./Results2/Images/Scattering_time_phi_diffCBET_CBtr.png>] [23 <./Results2/Images/allall_stagnation.png>] [24 <./Results2/Images/CBETshape_stag_diff.png> <./Results2/Images/R2R0_errors.png>] [25
+) [24 <./Results2/Images/magcbet_analysis.png>] [25 <./Results2/Images/Scattering_time_phi_diffCBET_CBtr.png>] [26 <./Results2/Images/allall_stagnation.png>] [27 <./Results2/Images/CBETshape_stag_diff.png> <./Results2/Images/R2R0_errors.png>] [28
 
-
-
-] [26
 
 
 ] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
@@ -1302,9 +1320,11 @@ Underfull \hbox (badness 1694) in paragraph at lines 31--31
 \T1/futs/m/n/10.95 1063 / 1 . 865901$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pfl / article / 29 / 4 / 1029 / 819331 /
  []
 
-[27
+[29
 
-] [28]
+
+
+] [30]
 Underfull \hbox (badness 1472) in paragraph at lines 124--124
 []\T1/futs/m/n/10.95 K. S. An-der-son, C. J. For-rest, O. M. Man-nion, F. J. Mar-shall, R. C. Shah, D. T.
  []
@@ -1314,7 +1334,7 @@ Underfull \hbox (badness 1354) in paragraph at lines 124--124
 \T1/futs/m/n/10.95 Knauer, M. Gatu John-son, and S. Laf-fite.  Ef-fect of cross-beam en-ergy trans-fer
  []
 
-[29]
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 140--140
 [][]$\T1/cmtt/m/n/10.95 https : / / www . cambridge . org / core / product / identifier / S0022377823000405 /
  []
@@ -1324,7 +1344,7 @@ Underfull \hbox (badness 1888) in paragraph at lines 164--164
 \T1/futs/m/n/10.95 P. B. Radha, S. P. Re-gan, T. C. Sang-ster, W. Seka, A. A. Solodov, J. M. Soures,
  []
 
-[30]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 213--213
 []\T1/futs/m/n/10.95 C. A. Walsh, J. P. Chit-ten-den, D. W. Hill, and C. Ridgers.  Extended-
  []
@@ -1349,13 +1369,17 @@ Underfull \hbox (badness 1158) in paragraph at lines 221--221
 \T1/futs/m/n/10.95 3147--3160, De-cem-ber 2017.  ISSN 0035-8711, 1365-2966.  doi: $10 . 1093 / mnras /
  []
 
-) [31] [32
 
+Underfull \hbox (badness 1253) in paragraph at lines 237--237
+[]\T1/futs/m/n/10.95 J A Frenje.  Nu-clear di-ag-nos-tics for In-er-tial Con-fine-ment Fu-sion (ICF) plas-mas.
+ []
 
-]
+[33]) [34]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [33
+ (./Appendix/Permissions.tex) [35
+
+
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Results2/Results2Main.aux) (./Appendix/Permissions.aux))
@@ -1370,21 +1394,21 @@ LaTeX Warning: There were undefined references.
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: 498E8359331DF0B1853F043B9642BCD8;2327.
+(rerunfilecheck)             Checksum: 9D541CF0BF102C4B54587993A5A0E077;2455.
  ) 
 Here is how much of TeX's memory you used:
- 27615 strings out of 474165
- 546150 string characters out of 5749497
- 1963542 words of memory out of 5000000
- 49311 multiletter control sequences out of 15000+600000
- 688227 words of font info for 169 fonts, out of 8000000 for 9000
+ 27655 strings out of 474165
+ 546806 string characters out of 5749497
+ 1959542 words of memory out of 5000000
+ 49332 multiletter control sequences out of 15000+600000
+ 694679 words of font info for 179 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,17n,121p,10978b,1119s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (33 pages, 30152124 bytes).
+ 122i,17n,121p,10978b,1135s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on Thesis_MainSample.pdf (35 pages, 30178666 bytes).
 PDF statistics:
- 772 PDF objects out of 1000 (max. 8388607)
- 628 compressed objects within 7 object streams
- 138 named destinations out of 1000 (max. 500000)
+ 862 PDF objects out of 1000 (max. 8388607)
+ 713 compressed objects within 8 object streams
+ 148 named destinations out of 1000 (max. 500000)
  283 words of extra memory for PDF output out of 10000 (max. 10000000)
 
