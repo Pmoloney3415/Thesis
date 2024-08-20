@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -242,5 +242,13 @@ H.-S Bosch and G.M Hale.
 \newblock ISSN 0029-5515.
 \newblock \doi{10.1088/0029-5515/32/4/I07}.
 \newblock URL \url{https://iopscience.iop.org/article/10.1088/0029-5515/32/4/I07}.
+
+\bibitem[Colaïtis et~al.(2023)Colaïtis, Follett, Dorrer, Seaton, Viala, Igumenshchev, Turnbull, Goncharov, and Froula]{colaitis_exploration_2023}
+A.~Colaïtis, R.~K. Follett, C.~Dorrer, A.~G. Seaton, D.~Viala, I.~Igumenshchev, D.~Turnbull, V.~Goncharov, and D.~H. Froula.
+\newblock Exploration of cross-beam energy transfer mitigation constraints for designing an ignition-scale direct-drive inertial confinement fusion driver.
+\newblock \emph{Physics of Plasmas}, 30\penalty0 (8):\penalty0 082701, August 2023.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0150813}.
+\newblock URL \url{https://pubs.aip.org/pop/article/30/8/082701/2906541/Exploration-of-cross-beam-energy-transfer}.
 
 \end{thebibliography}

@@ -414,6 +414,39 @@ Increased polar electron temperature is partially due to the pole heavy drive, a
 The field structure plotted in Fig.~\ref{fig:Res2_mag_early_B_develop}, inhibited equilibration of temperature via thermal conduction in the polar direction, which increased the temperature asymmetry compared to the unmagnetised simulation.
 
 
+
+%################################################################################
+%################################################################################
+\subsection{Resistive Diffusion and the Lorentz Force}%
+\label{sec:Res2_resis}
+
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Results2/Images/magmag_beta_Rm.png}
+    \centering
+    \caption{Plasma $\beta$ (left-side) and Magnetic Reynolds Number, $R_m$, (right-side) at various in-flight times, throughout the $B_{z0}=25\ \text{T}$, no-\ac{CBET} simulation.
+    Contours of the $n_e=n_{cr}/10$ are plotted on all panels as dashed green lines to indicate the bounding region containing a significant amount plasma.
+    Broadly, the $\beta$ and $R_m$ values are $\gg 1$ in all regions with an appreciable amount of plasma, which demonstrate that the Lorentz force and resistive diffusion respectively, should have minimal effect on the implosion dynamics.}%
+    \label{fig:Res2_magmag_beta_Rm}
+\end{figure}
+
+As was suggested in the above Sec.~\ref{sec:Res2_field_structure}, the coronal plasma was highly conductive for all simulations, due to its high temperatures and low densities.
+The right side of each panel Fig.~\ref{fig:Res2_magmag_beta_Rm} plots the Magnetic Reynolds Number, $R_m$, at three times during the implosion of the $B_{z0}=25\ \text{T}$, no-\ac{CBET} simulation, labelled as run 6 in Tab.~\ref{tab:Res2_magexpl_results}.
+As was stated in Sec.~\ref{sec:theory_mag_theory}, $R_m$ is the ratio of magnetic field advection to diffusion.
+Conservatively, a $1\ \mu\text{m}$ length scale was used to calculate this value, which was approximately the smallest length scale observed throughout the implosion across all times.
+Thus, for the majority of the simulation, $R_m$ is likely partially underestimated, because $R_m\propto L$.
+The green dashed lines are contours of $n_e=n_{\text{cr}}/10$, which are included to illustrate the regions of the simulation that contain the majority of the density.
+Although Fig.~\ref{fig:Res2_magmag_beta_Rm}.a shows that early in the simulation, the gas fill of the capsule has a small value of $R_m$, and therefore resistive diffusion dominates over frozen in flow, the dynamics of the implosion have not reached this region yet.
+The radiative preheat also raises the temperature, and therefore $R_m$ value in this region, before the time plotted in Fig.~\ref{fig:Res2_magmag_beta_Rm}.b.
+Therefore, the majority of the plasma has high values of $R_m$ throughout the implosion, mainly due to the high temperatures, demonstrating that frozen-in-flow dominates over resistive diffusion.
+This is corroborated by comparing run 6 and run 15 in Tab.~\ref{tab:Res2_magexpl_results}, which did not include the effects of resistive diffusion on the field transport.
+There is minimal difference across all metrics in this table on these two rows, which shows that the global dynamics of both simulations were very similar.
+
+The left side of the panels in Fig.~\ref{fig:Res2_magmag_beta_Rm} plots the plasma $\beta$ at the same times for the same simulation.
+As was stated in Sec.~\ref{sec:theory_mag_theory}, this is the ratio of thermal plasma pressure to magnetic pressure and thus describes whether thermal forces or the Lorentz force, is likely to predominantly influence the plasma dynamics.
+Just as was seen for $R_m$, the value of this parameter is generally high in all regions with appreciable plasma density throughout the implosion, so the Lorentz force was assumed to minimally influence the plasma dynamics.
+An additional simulation was performed, in which the effect Lorentz force was not included on the plasma, labelled by run 13 in Tab.~\ref{tab:Res2_magexpl_results}.
+Again, minimal difference was observed in the integrated metrics between this and run 6 (the comparable run, but which included the Lorentz force), which verified this analysis.
+
 %################################################################################
 %################################################################################
 \subsection{Anisotropic Thermal Conduction}%
@@ -432,43 +465,73 @@ The field structure plotted in Fig.~\ref{fig:Res2_mag_early_B_develop}, inhibite
 \end{figure}
 
 In order to understand the effect of anisotropic thermal conduction, an additional simulation was performed, which had the same setup as the $B_{z0}=25\ \text{T}$, no-\ac{CBET}, but thermal conduction was isotropically suppressed by the local magnetic field strength, regardless of its orientation.
+The anisotropic and isotropic simulations are labelled by run 6 and 12 respectively in Tab.~\ref{tab:Res2_magexpl_results}
 Explicitly, the parallel conductivity was forced to take the value of the perpendicular conductivity, $\kappa_{\parallel}=\kappa_{\perp}$.
-Comparison of this isotropically suppressed conduction simulation (labelled as run 12 in Tab.~\ref{tab:Res2_magexpl_results}), with the $B_{z0}=25\ \text{T}$, no-\ac{CBET} simulation (run 6 in Tab.~\ref{tab:Res2_magexpl_results}), thus ellucidated 
+Comparison of this isotropically suppressed conduction simulation, with the $B_{z0}=25\ \text{T}$, no-\ac{CBET} simulation, elucidated the role of anisotropic conductivities relative to the orientation of the field.
+Fig.~\ref{fig:Res2_iso_aniso}.a plots the ion (left-side) and electron (right-side) hall parameters from the $B_{z0}=25\ \text{T}$, no-\ac{CBET}, anisotropic thermal conduction simulation at $t=0.5\ \text{ns}$.
+It can be seen that the polar region of the corona is significantly magnetised, with $1<\omega_e\tau_e<10$, therefore thermal conduction in this region is significantly suppressed perpendicular to the field in the anisotropic simulation, which is approximately the polar direction, as is seen in Fig.~\ref{fig:Res2_mag_early_B_develop}.c.
+Ion Hall parameters peak at values of  $\omega_i\tau_i\sim10^{-2}$, so during the in-flight, ion transport is not expected to be significantly affected by the field.
+
+The electron temperature profiles at the same time are plotted in Fig.~\ref{fig:Res2_iso_aniso}.b for the isotropically-magnetised conduction simulation (left-side) and anisotropic simulation (right-side).
+The $T_e$ profile of the anisotropic is significantly more oblate than the isotropic simulation and the polar regions of the isotropic region are also significantly hotter.
+This was due to decreased transport of deposited laser energy in the isotropic to the ablation region because heat cannot freely stream radially inward along the field lines when conductivity is isotropically suppressed by the field.
+Isotropic magnetisation of electron transport thus leads to reduced ablation at the poles and a larger critical radius along $\pm\hat{\vec{z}}$, giving the implosion and shock a more round appearance.
+
+Bangtimes temperature profiles, plotted in Fig.~\ref{fig:Res2_iso_aniso}.d, corroborate this analysis, where the isotropic simulation has a significantly rounder shape.
+The oblateness parameter in Tab.~\ref{tab:Res2_magexpl_results}, obtained by fitting an ellipse to the radius of maximum density at bangtime, also demonstrates a less oblate profile.
+By isotropically magnetising the conduction, $(R_{\text{equator}}/R_{\text{pole}})|_{t=t_b}$ is reduced from $3.80\rightarrow3.14$.
+The reduced ablation coupled less energy to the implosion, evident in the reduced bangtime from $t_b=0.74\rightarrow0.81\ \text{ns}$, going from anisotropic to isotropic thermal conduction.
+Yield still increased for the isotropic simulation from $4.72\rightarrow5.02\times10^{10}$, demonstrating that these integrated yield metrics are a fine balance of many factors, including coupled energy and implosion shape.
+
+The bangtime Hall parameters are plotted in Fig.~\ref{fig:Res2_iso_aniso}.c, which show highly magnetised electrons and moderately magnetised ions, with a maximum $\omega_i\tau_i\sim10^{-1}$.
+Note that this is also for an initial field strength $B_{z0}=25\ \text{T}$ simulation.
+For the $B_{z0}=50\ \text{T}$, with-\ac{CBET} simulation, which included \ac{CBET} fully and is therefore the most realistic simulation to compare with experiment at this field strength, the maximum ion Hall parameters was also $\omega_i\tau_i\sim10^{-1}$.
+This is lower than the reported value of $\omega_i\tau_i\sim1$ in the original paper~\cite{bose_effect_2022}.
+However, improved sphericity of the converging shock, which could change slightly for example by changing $f_{\text{lim},e}$, would markedly boost this value.
+The hall parameter $\omega\tau\propto T^{3/2}|\vec{B}|$, so a less oblate shock would improve this by both better flux compression of the field, and higher stagnation temperatures, due to improved shock convergence.
 
 %################################################################################
 %################################################################################
 \subsection{The Nernst Effect}%
 \label{sec:Res2_nernst}
 
-
 \begin{figure}[t!]
-    \includegraphics[width=0.8\linewidth]{Results2/Images/nernst_comp.png}
+    \includegraphics[width=0.8\linewidth]{Results2/Images/nernst_comp_Bstream.png}
     \centering
     \caption{Panel a) plots in-flight electron density profiles from the $B_{z0}=25\ \text{T}$, no-\ac{CBET} simulations with (left-side) and without (right-side) Nernst advection of the magnetic field.
-    Panel b) plots magnetic field magnitude from the Nernst (left-side) and no-Nernst (right-side) simulation.
     The Nernst advection velocity is also plotted for the Nernst simulation as streamlines, coloured by speed.
+    Panel b) plots magnetic field magnitude from the Nernst (left-side) and no-Nernst (right-side) simulation along with $\vec{B}$ streamlines on the top half.
     Advection of the field is important in the low Hall parameter equatorial region, pulling $\vec{B}$ down $\nabla T_e$, into the dense wall.
     Altered field at the equator impacts on the magnetised thermal conduction, which ultimately imprints on the density, as is seen in panel a).}%
     \label{fig:Res2_nernst_comp}
 \end{figure}
 
+The final extended-\ac{MHD} term that was independently examined was the Nernst effect.
+In \textsc{Chimera}, Nernst is implemented as an advection of $\vec{B}$ down $\nabla T_e$~\cite{walsh_extended-magnetohydrodynamics_2020}.
+It is a collisional term, and therefore dominates in plasma with low values of $\omega_e\tau_e$.
+The plots of Hall parameter in Fig.~\ref{fig:Res2_iso_aniso} demonstrate that the coronal plasma has low Hall parameters in the equator, thus the Nernst effect would likely be localised to the equator of the capsule and have minimal effect on the field profiles near the poles.
+An additional simulation, with $B_{z0}=25\ \text{T}$, and no-\ac{CBET}, was conducted without Nernst advection of magnetic field to understand its impact upon the field and plasma dynamics.
+The simulation without the Nernst effect is labelled in Tab.~\ref{tab:Res2_magexpl_results} as run 14.
 
+Fig.~\ref{fig:Res2_nernst_comp}.b plots the magnetic field strength equivalent simulations with Nernst (left-side) and without Nernst (right-side) at $t=0.60\ \text{ns}$.
+The simulation including Nernst (run 6 in Tab.~\ref{tab:Res2_magexpl_results}), also plots the Nernst advection velocity as streamlines, coloured by the speed.
+The largest advection speeds are $\sim10^6\ \text{ms}^{-1}$, which is comparable to the coronal fluid ablation speed, demonstrating that Nernst-advection is not a negligible effect in dictating the field structure.
+As expected, the equator of the target has the largest Nernst speeds, due to the low Hall parameter, and it acts to push field from the coronal plasma onto the interior edge of the shell.
+This creates a localised field `pile-up' in this region for the Nernst simulation, compared to the plot on the right.
 
-%################################################################################
-%################################################################################
-\subsection{Resistive Diffusion and the Lorentz Force}%
-\label{sec:Res2_resis}
+Fig.~\ref{fig:Res2_nernst_comp}.1 plots the electron density at the same time for the Nernst (left-side) and no-Nernst (right-side) simulations alongside magnetic field streamlines from the same simulations on the top-half of the plot.
+The streamlines show that the Nernst effect caused the coronal field lines at the equator to be radial, by pushing $B_z$ down the temperature gradient, towards the shell.
+Here it is visible that the altered magnetic field structure has impacted on the plasma density indirectly, creating an equatorial bump in the shell, which is not present in the right-side plot without Nernst included.
+This bump only appeared in simulations with both Nernst and anisotropic conduction, which demonstrates that this altered field profile changed the anisotropic thermal conduction at the equator, which then impacted upon the density.
+The effective re-orientation of $\vec{B}$ at the equator, meant that thermal conduction which transported laser energy was taken from the deposition surface to the ablation surface, experienced the higher, parallel thermal conductivity $\kappa_{\parallel}$, rather than $\kappa_{\perp}$.
+This locally increased the drive along $z=0$, leading to the bump.
 
-\begin{figure}[t!]
-    \includegraphics[width=\linewidth]{Results2/Images/magmag_beta_Rm.png}
-    \centering
-    \caption{Plasma $\beta$ (left-side) and Magnetic Reynolds Number, $R_m$, (right-side) at various in-flight times, throughout the $B_{z0}=25\ \text{T}$, no-\ac{CBET} simulation.
-    Contours of the $n_e=n_{cr}/10$ are plotted on all panels as dashed green lines to indicate the bounding region containing a significant amount plasma.
-    Broadly, the $\beta$ and $R_m$ values are $\gg 1$ in all regions with an appreciable amount of plasma, which demonstrate that the Lorentz force and resistive diffusion respectively, should have minimal effect on the implosion dynamics.}%
-    \label{fig:Res2_magmag_beta_Rm}
-\end{figure}
-
-
+Comparison of run 6 (Nernst) and run 14 (no-Nernst) in Tab.~\ref{tab:Res2_magexpl_results}, shows minimal difference on the integrated metrics, despite the altered dynamics.
+This is mostly because the altered profiles were localised to the equator, which was well separated from the polar region which experienced the strongest shock convergence and therefore greatest temperatures and neutron production.
+It is expected however, that experiments with symmetric laser illumination, and therefore a less oblate implosion, may be more influenced by the Nernst effect, because the equator of the shell would partake more in neutron production.
+Additionally, it is worth noting that this bump is likely to only be observed in magnetised direct-drive implosion and not indirect-drive.
+This is because the main action of Nernst in these simulations was to change the field in the conduction zone, which transports energy from the laser absorption region to the ablation surface for direct-drive configurations with visible wavelength light.
+However, for indirect drive, x-rays penetrate effectively all the way through to the ablation surface, so there is therefore no conduction zone, and the altered conduction zone field profile would have a much less significant impact on the density.
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -488,10 +551,19 @@ Comparison of this isotropically suppressed conduction simulation (labelled as r
 \end{figure}
 
 This section presents results on how the magnetisation of the corona affects both \ac{CBET} scattering and the stagnation shape of the implosion.
-As was shown in the previous sections, the laser geometry leads to a significant mode $\ell=2$ in the coronal plasma conditions, which is significantly amplified by anisotropic thermal conduction when magnetised.
-This long-wavelength perturbation is slightly reduced by \ac{CBET}, consistent with existing literature on how \ac{CBET} mitigates $\ell=1$ asymmetries~\cite{colaitis_inverse_2021}.
-`No-\ac{CBET}' simulations were conducted, for which the coupled energy was kept the same as the equivalent \ac{CBET} simulation, \textit{i.e.} so \ac{CBET} only acted to redistribute the deposited power, rather than reduce its magnitude.
-These results showed that the increasingly anisotropic coronal plasma profiles for increasing seed magnetic field strengths did lead to changes in the \ac{CBET} scattering, this was too small an effect to lead to experimentally observable changes in behaviour.
+Fig.~\ref{fig:Res2_ne_te_Bstream_comp_alt050}.a plots $T_e$ and $n_e$ from the $B_{z0}=0$ (left-side) and $25\ \text{T}$ (right-side), with-\ac{CBET} simulations at $t=0.5\ \text{ns}$.
+Fig.~\ref{fig:Res2_ne_te_Bstream_comp_alt050}.b and Fig.~\ref{fig:Res2_ne_te_Bstream_comp_alt050}.c plot lineouts of $n_e$ and $T_e$ respectively, along both the poles and equator for both simulations.
+While the equatorial profiles are similar, due to low Hall parameters in this region and thus minimal impact of magnetisation upon the hydrodynamics, the polar lineouts are significantly different.
+Magnetisation has therefore significantly amplified the $\ell=2$ of the coronal plasma profiles which are used to calculate the \ac{CBET} gain.
+It was therefore hypothesised that this amplified asymmetry in coronal profiles due to magnetisation, would leave a signature upon the \ac{CBET} and therefore implosion dynamics, because \ac{CBET} is known to interact strongly with low mode, coronal asymmetries~\cite{anderson_effect_2020}.
+
+In this chapter `partial-\ac{CBET}' simulations shall be presented, for which the coupled energy was kept the same as the equivalent with-\ac{CBET} simulation, \textit{i.e.} so \ac{CBET} only acted to reduce the magnitude of the deposited power, rather than redistribute it around the target.
+It was hoped that, by comparison with the full-\ac{CBET} simulations, this would demonstrate that \ac{CEBT} changed the shape of the implosion differently, for different levels of seed magnetic field.
+The $\ell=2$ of the long-wavelength, density perturbation was slightly reduced by \ac{CBET}, consistent with existing literature on how \ac{CBET} mitigates $\ell=1$ asymmetries~\cite{colaitis_inverse_2021}.
+Results also showed that the increasingly anisotropic coronal plasma profiles for increasing seed magnetic field strengths, did lead to changes in the \ac{CBET} scattering.
+However, this was too small an effect to lead to experimentally observable changes in density and temperature.
+It is hypothesised that the polar beam geometry, shock driven characteristics of the exploding pusher implosions and high $Z$ shell (which results in increased coronal temperatures, and therefore reduced \ac{CBET}~\cite{colaitis_exploration_2023}), minimised the impact on hydrodynamics.
+Suggestions for an alternative implosion are provided, which would increase the likelihood of an experimentally observable signature.
 
 %################################################################################
 %################################################################################
