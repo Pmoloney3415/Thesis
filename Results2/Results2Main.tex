@@ -496,7 +496,7 @@ The hall parameter $\omega\tau\propto T^{3/2}|\vec{B}|$, so a less oblate shock 
 \label{sec:Res2_nernst}
 
 \begin{figure}[t!]
-    \includegraphics[width=0.8\linewidth]{Results2/Images/nernst_comp_Bstream.png}
+    \includegraphics[width=\linewidth]{Results2/Images/nernst_comp_Bstream.png}
     \centering
     \caption{Panel a) plots in-flight electron density profiles from the $B_{z0}=25\ \text{T}$, no-\ac{CBET} simulations with (left-side) and without (right-side) Nernst advection of the magnetic field.
     The Nernst advection velocity is also plotted for the Nernst simulation as streamlines, coloured by speed.
@@ -557,8 +557,8 @@ While the equatorial profiles are similar, due to low Hall parameters in this re
 Magnetisation has therefore significantly amplified the $\ell=2$ of the coronal plasma profiles which are used to calculate the \ac{CBET} gain.
 It was therefore hypothesised that this amplified asymmetry in coronal profiles due to magnetisation, would leave a signature upon the \ac{CBET} and therefore implosion dynamics, because \ac{CBET} is known to interact strongly with low mode, coronal asymmetries~\cite{anderson_effect_2020}.
 
-In this chapter `partial-\ac{CBET}' simulations shall be presented, for which the coupled energy was kept the same as the equivalent with-\ac{CBET} simulation, \textit{i.e.} so \ac{CBET} only acted to reduce the magnitude of the deposited power, rather than redistribute it around the target.
-It was hoped that, by comparison with the full-\ac{CBET} simulations, this would demonstrate that \ac{CEBT} changed the shape of the implosion differently, for different levels of seed magnetic field.
+In this chapter `partial-\ac{CBET}' simulations shall also be presented, for which the coupled energy was kept the same as the equivalent with-\ac{CBET} simulation, \textit{i.e.} so \ac{CBET} only acted to reduce the magnitude of the deposited power, rather than redistribute it around the target.
+It was hoped that, by comparison with the full-\ac{CBET} simulations, this would demonstrate that \ac{CBET} changed the shape of the implosion differently, for different levels of seed magnetic field.
 The $\ell=2$ of the long-wavelength, density perturbation was slightly reduced by \ac{CBET}, consistent with existing literature on how \ac{CBET} mitigates $\ell=1$ asymmetries~\cite{colaitis_inverse_2021}.
 Results also showed that the increasingly anisotropic coronal plasma profiles for increasing seed magnetic field strengths, did lead to changes in the \ac{CBET} scattering.
 However, this was too small an effect to lead to experimentally observable changes in density and temperature.
@@ -578,11 +578,48 @@ Suggestions for an alternative implosion are provided, which would increase the 
     Panel a) plots the instantaneous deposition with (right-side) and without (left-side) the effect of \ac{CBET}.
     The `\ac{CBET}-deficit', $\Delta P_{\text{CBET}}$, which is the no-\ac{CBET} deposition, subtracted from the with-\ac{CBET} deposition, is plotted in panel b).
     Panel c) plots the radially integrated $\Delta P_{\text{CBET}}$, as a function of polar angle.
-    The `\ac{CBET}-scattering', defined in Eq.~\ref{sec:res1_cbet_scattering}, is plotted in panel d), and the radial integral is plotted in panel e).
-    At this time, it is evident from panel e) that more \ac{CBET} occurs at the capsule poles, resulting in a \ac{CBET}-reduction of deposition near the poles, seen in panel c).}%
+    The `\ac{CBET}-scattering', is plotted in panel d), and the radial integral is plotted in panel e).
+    At this time, it is evident from panel e) that more \ac{CBET} occurs at the capsule poles, resulting in a \ac{CBET}-reduction of deposition near the poles, seen in panel c).
+    The critical surface is shown in all 2-D panels by a dashed magenta line.}%
     \label{fig:Res2_magcbet_analysis}
 \end{figure}
 
+Firstly, key quantities used for the analysis of this section shall be introduced.
+The key aim of this section was to discover if \ac{CBET} acted differently in the magnetised coronal hydrodynamic profiles, compared the unmagnetised profiles.
+Particular focus was dedicated to discovering if this affected the implosion shape, because this shape change would not be captured by a laser-\ac{MHD} model that did not have a full-\ac{CBET} capability, but rather reduced the incident laser energy to compensate for \ac{CBET}.
+Two quantities were used to understand how \ac{CBET} redistributed the deposited power.
+The first is the `\ac{CBET}-deficit', which is defined as the difference in deposited power computed by a \ac{CBET} and no-\ac{CBET} raytrace through the \textit{same} hydrodynamic profiles,
+\begin{equation}
+    \Delta P_{\text{dep}}(\vec{x},t) = P_{\text{dep}}^{\text{CBET}}(\vec{x},t) - P_{\text{dep}}^{\text{no-CBET}}(\vec{x},t),
+\end{equation}
+where $P_{\text{dep}}^{\text{CBET}}$ is the deposition from the calculation including \ac{CBET} and $P_{\text{dep}}^{\text{no-CBET}}(\vec{x},t)$ is without \ac{CBET}.
+As was described in Sec.~\ref{SOLAS:pump_dep_iters}, a \ac{CBET} calculation in \textsc{Solas} always begins with a raytrace which does not include any \ac{CBET} effects (the field-reconstruction raytrace), so $P_{\text{dep}}^{\text{no-CBET}}(\vec{x},t)$ is the deposited power from this raytrace.
+$P_{\text{dep}}^{\text{CBET}}(\vec{x},t)$ is the value after the pump depletion and energy conservation iterations.
+
+Fig.~\ref{fig:Res2_magcbet_analysis}.a plots the deposited power without (left-side) and with-\ac{CBET} (right-side), from the $B_{z0}=0\ \text{T}$, with-\ac{CBET} simulation at $t=0.30\ \text{ns}$.
+The corresponding \ac{CBET} deficit, which is the difference between these plots, is shown in Fig.~\ref{fig:Res2_magcbet_analysis}.b.
+Note that the value is almost all negative, because in direct-drive configurations, \ac{CBET} mainly acts to reduce the intensity of light near the critical surface where \ac{Inv-Brem} predominantly occurs, and therefore reduces the deposited power.
+There are be small ($\sim$1\%) increases in deposition at radii outside the peak scattering surface, near Mach-1, but this is not be visible to the naked eye when the maximum colourbar scale is increased above zero.
+It can be seen from the \ac{CBET} deficit, that at this time, \ac{CBET} decreased the absorption at the poles more than at the equator of the capsule.
+This can be understood by considering the geometry of the pole heavy drive.
+The beam geometry means that the intensity is greater in the polar coronal plasma, where many beams overlap each other, therefore inbound laser sheets encounter stronger \ac{CBET} resonances, as more reflected sheets are present in this region, thus their energy is depleted more than at the waist.
+The radial integral of the \ac{CBET} deficit is plotted in Fig.~\ref{fig:Res2_magcbet_analysis}.c.
+This conveniently illustrates the previous point, that the reduction in absorption due to \ac{CBET} (at this time, of this simulation), was greater near the poles than the equator.
+It is also worth noting, that if \ac{CBET} acted symmetrically to simply reduce the absorption, then Fig.~\ref{fig:Res2_magcbet_analysis}.c would be uniform in $\theta$.
+This is the case for the `partial-\ac{CBET}' simulations, labelled by `$\sim$' under the \ac{CBET} column in Tab.~\ref{tab:Res2_magexpl_results}, where the magnitude of the power is reduced to account for \ac{CBET}, but the redistribution of power is not accounted for.
+
+The second metric that was used, is the \ac{CBET} scattering, $G_{\text{CBET}}$, which was defined in Sec.~\ref{sec:SOLAS_89224}, but restated here for convenience,
+\begin{equation}
+    \label{sec:res1_cbet_scattering}
+    g_{\text{CBET}}(\vec{x},t) = \sum_{i}^{\text{rays}} \left| \Delta P_{i,\text{CBET}}(\vec{x},t) \right|,
+\end{equation}
+where the time dependence has now been made explicit and $\Delta P_{i,\text{CBET}}$ is the power change of a ray due to \ac{CBET}.
+This quantity shows where the majority of \ac{CBET} power change occurred, throughout the simulation at a given time.
+Fig.~\ref{fig:Res2_magcbet_analysis}.d plots $g_{\text{CBET}}$ on a log scale, from the same simulation and at the same time as Fig.~\ref{fig:Res2_magcbet_analysis}.a.
+The radial integral of this plot is shown in Fig.~\ref{fig:Res2_magcbet_analysis}.e, as a function of angle.
+It is evident by comparison of Fig.~\ref{fig:Res2_magcbet_analysis}.c and Fig.~\ref{fig:Res2_magcbet_analysis}.e, that the angles of maximal \ac{CBET} scattering align with the most significant deficits, and vice-versa.
+It should be noted that there is some noise visible in both \ac{CBET} scattering plots near the poles, presumed to be due to small cells and therefore poorer ray-per-cell statistics in this region.
+This noise was, however, localised to a single polar-cell, and therefore not thought to have a significant impact on the overall dynamics.
 
 %################################################################################
 %################################################################################
@@ -601,16 +638,52 @@ Suggestions for an alternative implosion are provided, which would increase the 
     \label{fig:Res2_scattering}
 \end{figure}
 
+This section shall explore differences in the \ac{CBET}-deficit and \ac{CBET}-scattering, between magnetised and unmagnetised implosions.
+As was illustrated in Fig.~\ref{sec:Res2_mag_on_CBET}, magnetisation significantly amplifies coronal plasma asymmetries in direct-drive implosions and thus an effect on the \ac{CBET} gain calculations is expected.
+How changes to \ac{CBET} affect the hydrodynamics and stagnation shape of the target, is discussed in the subsequent Sec.~\ref{sec:Res2_stgnation_profiles}.
+
+Fig.~\ref{fig:Res2_scattering}.b plots the \ac{CBET} deficit as a function of time ($x$ axis) and polar angle ($y$ axis) for the with-\ac{CBET}, $B_{z0}=50\ \text{T}$ (top-half) and $B_{z0}=0\ \text{T}$ (bottom-half) simulations respectively.
+Note that the colour scale has a maximum of zero, and is most saturated at negative values, because the radially integrated \ac{CBET}-deficit was entirely negative.
+Lineouts in $\theta$ at three times, $t=0.25$, $0.50$ and $0.75\ \text{ns}$ (times indicated by dashed lines on Fig.~\ref{fig:Res2_scattering}.b), are plotted in Fig.~\ref{fig:Res2_scattering}.a, where the $x$ axis of this plot share the colour scale from Fig.~\ref{fig:Res2_scattering}.b.
+Broadly, both the top half and the bottom half of Fig.~\ref{fig:Res2_scattering}.b appear to be qualitatively similar.
+The simulation featured a large \ac{CBET}-deficit of deposition near the poles between $t\sim0.2\rightarrow0.3\ \text{ns}$.
+As the implosion progressed, the asymmetry of the deficit reduced, which is visible as the reducing saturation of the plot, with increasing time.
+This was, however, also partially due to the lengthening of the plasma corona, which increased symmetry primarily through deposition at larger radii.
+Large radius deposition is less efficient at coupling to ablation, compared to if the energy were deposited close to critical, due to thermal conduction having to transport it further.
+An improved metric, which appropriately weights deposition by distance from the critical surface, may further elucidate the role of \ac{CBET}.
+Both plots show behaviour, where the peak of the \ac{CBET}-deficit shifted to the equator as the simulations progressed.
+
+The \ac{CBET}-scattering streak plot and lineouts in Fig.~\ref{fig:Res2_scattering}.d and~\ref{fig:Res2_scattering}.c respectively show similar behaviour.
+Before $t\sim0.2\ \text{ns}$, the level of \ac{CBET}-scattering was low, primarily due to the low incident power, and therefore field strengths, explicitly seen by looking at the pulse shape used in Fig.~\ref{fig:Res2_simconfig}.b.
+Maximal scattering occurred near the poles, at early times in both the magnetised and unmagnetised simulations, which then moved more to the equator later on.
+The movement of the scattering and deficit to the equator was likely due to the convergence of the target.
+As can be seen from the time resolved $n_e$ profiles from the with-\ac{CBET} simulation in Fig.~\ref{fig:Res2_unmag_CBET_onoff}, the coronal plasma was relatively round up until $t\sim0.35\ \text{ns}$, but then began to implode more quickly along the $\pm\hat{\vec{z}}$ axis than the equator.
+When this began to occur, the trajectory of light changed asymmetrically, resulting in a change of polar-angle where \ac{CBET} predominates.
+
+First, the expected change to the bangtime profiles from the similar, qualitative behaviour shall be described.
+Bangtimes for these implosions were at $t\sim0.75\ \text{ns}$, so the late time behaviour shortly before and after this, was unimportant in dictating the bangtime shapes.
+The most significant $\Delta P_{\text{CBET}}$ values occurred between $t\sim0.2\rightarrow0.3\ \text{ns}$ at the poles, for both the magnetised and magnetised simulation.
+This \ac{CBET}-induced power redistribution, would have reduced the strength of the shock launch along the poles, compared to the equator.
+Therefore, simulations with an equal magnitude of power deposition, but no spatial relocation of deposition (\textit{i.e.} the partial-\ac{CBET} simulations), were expected to exhibit a smaller $\ell=2$ asymmetry, because \ac{CBET} appeared to reduce the asymmetry of the drive.
+
+Now, the change to the \ac{CBET} deficit between the magnetised and unmagnetised simulations shall be explicitly compared.
+If the altered coronal plasma profiles due to magnetisation had played a dominant role in changing \ac{CBET}, then the top and bottom plots would look markedly different.
+The similar qualitative behaviour seems to suggest therefore that this is not the dominant role in dictating implosion symmetry.
+Differences are observable, however, for example the magnetised simulation exhibited more \ac{CBET}-scattering and a slightly larger \ac{CBET}-deficit at the poles, which also lasted for a slightly longer period of time.
+This suggests that the shock launch in the $B_{z0}=50\ \text{T}$ case would be slightly weaker than the $B_{z0}=0\ \text{T}$ case.
+A significant reason for the small changes is that the pole-heavy drive obscures these, more subtle, changes to implosion dynamics.
+Explicitly, an unmagnetised, symmetric drive beam-configuration should not display an $\ell=2$ asymmetry in either of these diagnostics, and should thus result in a symmetric bangtime profile.
+Changes to the shape, would therefore be much less obscured by the global asymmetry imposed by the 40-beam drive that these simulations used.
+
 %################################################################################
 %################################################################################
 \subsection{Stagnation Profiles}%
 \label{sec:Res2_stgnation_profiles}
 
-
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Results2/Images/allall_stagnation.png}
     \centering
-    \caption{$n_e$, $T_e$ and $\vec{B}$ profiles from the time of peak neutron production for different initial magnetisation (columns) and \ac{CBET} effects (rows).
+    \caption{$n_e$, $T_e$ and $\vec{B}$ profiles from the time of peak neutron production for different initial magnetisation (columns) and \ac{CBET} treatments (rows).
     Panels a), b) and c) are from the full \ac{CBET} simulations, which show that magnetisation increases the oblateness of the stagnation profile.
     Panels d), e) and f) are from the simulations where only the \ac{CBET} effect on the magnitude, but not spatial location, of deposition was included.
     These simulations have identical coupled energy to the top row, and therefore have the same bangtimes.
@@ -618,17 +691,49 @@ Suggestions for an alternative implosion are provided, which would increase the 
     \label{fig:Res2_allall_stagnation}
 \end{figure}
 
-If \ac{CBET} was anisotropically affected by magnetisation, this would result in spatial differences in deposition location, between the full \ac{CBET} (top row) and \ac{CBET}-on-magnitude simulations (middle row), and therefore the bangtime profiles could be different.
-Additionally, higher initial magnetisation increases the anisotropy of the coronal plasma and therefore 
+The bangtime $n_e$, $T_e$ and $\vec{B}$ profiles from the 2-D simulations with all magnetisations (columns) and all \ac{CBET} treatments (rows) are plotted in Fig.~\ref{fig:Res2_allall_stagnation}.
+The top row of figures correspond to full \ac{CBET} treatment and the bottom row, no effect of \ac{CBET} is included.
+As a reminder, to conduct the partial-\ac{CBET} simulations in the middle row (labelled `$\sim$\ac{CBET}' for shorthand), the deposited power as a function of time was loaded in from the (already completed) full-\ac{CBET} simulation with the same initial $B_{z0}$ value.
+No-\ac{CBET} ray-traces were then conducted with incident power normalised to unity, and the deposition was multiplied by the absorbed power from the full-\ac{CBET} simulation at the same time.
+Thus, simulations full-\ac{CBET} and $\sim$\ac{CBET} simulations with equivalent $B_{z0}$ have identical deposition as a function of time.
+The only difference between them is that in the full-\ac{CBET} simulations, on the top row, include redistribution of deposition around the corona.
+
+Rows labelled run $2\rightarrow11$ in Tab.~\ref{tab:Res2_magexpl_results} provide the integrated metrics for each of these simulations.
+The first thing to note about these results, is that all implosions are oblate, \textit{i.e.} the radius of peak density significantly larger in the equatorial direction than polar.
+Magnetisation also evidently flattens the implosion, regardless of \ac{CBET} treatment.
+No-\ac{CBET} simulations (bottom row) are also significantly less oblate than the top two rows, which both include reduced absorption due to \ac{CBET}.
+The reason for this was described in~\ref{sec:Res2_expl2D}.
+To remind the reader, it was due to the larger $|V_{r,\text{shock}} - V_{r,\text{shell}}|$ for the no-\ac{CBET} simulation, compared to when \ac{CBET} was included.
+Thus, the collision between the rebounding shock and in-falling fuel material happened at larger radii, resulting in a rounder bangtime shape.
+
+The stagnation field structure for the magnetised simulations exhibit field lines along $z\sim0\ \mu\text{m}$ which point along $\pm\hat{\vec{x}}$.
+This is due to the oblate structure of the initial strong shock, which moved mainly along $\pm\hat{\vec{z}}$ for a wide array of $x$ values.
+When the shocks from the two poles met at $z=0\ \mu\text{m}$, a thin layer was superheated to extreme temperatures (several $10 \text{keV}$), creating highly conductive plasma, which led to the un-shocked field along $+\hat{\vec{z}}$ reorientating in the $\pm\hat{\vec{x}}$ directions.
+The large compressed field strengths also increased the peak temperatures significantly, by insulating thermal losses.
+Note however, that this increase is highly anisotropic and is localised to lower density regions of the hotspot, therefore does not directly translate to increased burn-averaged temperatures in Tab.~\ref{tab:Res2_magexpl_results}.
+As the bangtime temperatures and field strengths increase, the higher pressures appear to develop some form of magneto-\ac{RTI} at the equator of the capsule, although the exact dynamics of this have not been studied in detail.
 
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Results2/Images/CBETshape_stag_diff.png}
     \centering
     \caption{Difference in $n_e$ and $T_e$ bangtime profiles, between the full-\ac{CBET} and \ac{CBET}-magnitude a) $B_{z0}=0$, b) $B_{z0}=25$ and c) $B_{z0}=50\ \text{T}$ simulations.
-    The difference in variable $v$, $\Delta v$ is the $v_{full-CB}-v_{mag_CB}$, so higher colour scale values represent regions with increased $v$ for the full \ac{CBET} calculation.
+    The difference in variable $v$, is defined as $\Delta v = v_{\text{full-CB}}-v_{\text{partial-CB}}$, so higher colour scale values represent regions with increased $v$ for the full-\ac{CBET} calculation.
     These results primarily show that \ac{CBET} slightly reduces the bangtime equatorial radius, and thus reduces the oblateness, compared to simulations where the spatial redistribution of power due to \ac{CBET} is neglected.}%
     \label{fig:Res2_CBETshape_diff}
 \end{figure}
+
+If \ac{CBET} was anisotropically affected by magnetisation, this would result in spatial differences in deposition location, between the full \ac{CBET} (top row) and \ac{CBET}-on-magnitude simulations (middle row), and therefore the bangtime profiles would be different.
+Additionally, higher initial magnetisation increased coronal plasma anisotropy, therefore the difference between the top two rows could change as $B_{z0}$ increased, \textit{i.e.} from column to column.
+Evidently, the top rows appear very similar to each other, which illustrates that anisotropy changes to \ac{CBET} from magnetised hydrodynamic profiles is a small effect compared to both the polar nature of the drive and the anisotropic drive due to magnetised transport.
+Small changes are present however, which is far more clearly displayed in Fig.~\ref{fig:Res2_CBETshape_diff}.
+This figure plots the difference in $n_e$ and $T_e$ between the full-\ac{CBET} (top row of~\ref{fig:Res2_allall_stagnation}) and partial-\ac{CBET} (middle row of~\ref{fig:Res2_allall_stagnation}) bangtime profiles.
+As can be seen, differences become more significant at larger magnetisations, demonstrating that anisotropic changes of \ac{CBET} scattering do impact upon the hydrodynamics.
+The main difference can be seen at the equator of the $n_e$ profile, of both magnetised simulations, where the full-\ac{CBET} maximum density occurs at a lower $x$ value.
+Thus, \ac{CBET} redistribution of deposition in magnetised coronal profiles marginally reduced the oblateness of the bangtime profile.
+This aligns with the expected behaviour, described at the end of Sec.~\ref{sec:Res2_mag_on_cbet_change}.
+Restating here, the early, localised \ac{CBET}-deficit should have reduced the strength of the polar shock launch compared to the equator, reducing the asymmetry of the drive and therefore the stagnation state.
+It was also observed that this effect seemed to become marginally more significant in magnetised coronal profiles.
+By comparing Fig.~\ref{fig:Res2_CBETshape_diff}.a with Fig.~\ref{fig:Res2_CBETshape_diff}.b and~\ref{fig:Res2_CBETshape_diff}.c, the differences are slightly more significant, supporting this analysis.
 
 \begin{figure}[t!]
     \includegraphics[width=0.6\linewidth]{Results2/Images/R2R0_errors.png}
@@ -641,7 +746,22 @@ Additionally, higher initial magnetisation increases the anisotropy of the coron
     \label{fig:Res2_R2R0_errors}
 \end{figure}
 
+The oblateness parameters from Tab.~\ref{tab:Res2_magexpl_results} are plotted for these implosions as a function of initial field strength.
+These values were obtained by fitting an ellipse to the contour of maximum density at bangtime and the fitting procedure returned asymmetric error bars which are also plotted.
+As was observed by examining the profiles in Fig.~\ref{fig:Res2_allall_stagnation} directly, the no-\ac{CBET} results are all significantly rounder than when the effect of \ac{CBET} on deposition magnitude is included, due to the faster shock launched with greater deposited power.
+The partial-\ac{CBET} simulations, which do not include redistribution of deposition, are all marginally more oblate than the full-\ac{CBET} simulations, with the caveat this cannot be stated conclusively, because of the error bar magnitudes.
+Simply stated, \ac{CBET} acts to slightly reduce the oblateness of the stagnation state by effectively redistributing a small quantity of power from the poles of the capsule to the equator.
+There is no evidence from this plot, however, that increasing magnetisation, anisotropically alters \ac{CBET} sufficiently to leave an experimental signature.
+If, for example, the difference between the full- and partial-\ac{CBET} curves had diverged (or converged) with increasing magnetisation, this would have suggested that the increasingly anisotropic hydrodynamic profiles from magnetisation, significantly impacted upon the \ac{CBET} scattering.
 
+In retrospect, however, it was noted that the configuration used for these simulations, likely minimised any observable effect in several ways.
+Firstly, as discussed at the end of Sec.~\ref{sec:Res2_mag_on_cbet_change}, the polar beam geometry obscured the less significant \ac{CBET} anisotropy from magnetisation.
+Secondly, the shock driven nature of the exploding pusher configuration could have minimised experimentally observable signatures.
+The shape of the stagnation state is predominantly dictated by the shock launch geometry from when the shell explodes, which is mostly sensitive to the early laser-energy deposition.
+A more conventional, hot-spot ignition target would maintain a dense shell throughout the implosion, which would develop density modulations due to \ac{CBET}-induced deposition asymmetries, as was seen in the previous chapter, for example in Fig.~\ref{fig:Res1_stagnation_plots}.
+Experimentally, a mode $\ell=2$ is long wavelength enough to be inferred from neutron diagnostics and would thus leave an experimentally observable signature~\cite{woo_inferring_2020,casey_three_2024}.
+Finally, higher $Z$ ablator materials such as $\text{SiO}_2$, exhibit higher coronal plasma temperatures than CH, ablators, due to increased \ac{Inv-Brem}.
+\ac{CBET} in direct-drive is less significant as the coronal temperatures increase~\cite{colaitis_exploration_2023}, therefore an experimental setup with a CH outer material, may have more \ac{CBET} overall, and therefore a more easily observable change to \ac{CBET} due to magnetisation.
 
 %###############################################################################################################################
 %###############################################################################################################################

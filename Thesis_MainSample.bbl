@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -250,5 +250,18 @@ A.~Colaïtis, R.~K. Follett, C.~Dorrer, A.~G. Seaton, D.~Viala, I.~Igumenshchev,
 \newblock ISSN 1070-664X, 1089-7674.
 \newblock \doi{10.1063/5.0150813}.
 \newblock URL \url{https://pubs.aip.org/pop/article/30/8/082701/2906541/Exploration-of-cross-beam-energy-transfer}.
+
+\bibitem[Woo et~al.(2020)Woo, Betti, Mannion, Forrest, Knauer, Goncharov, Radha, Patel, Gopalaswamy, and Glebov]{woo_inferring_2020}
+K.~M. Woo, R.~Betti, O.~M. Mannion, C.~J. Forrest, J.~P. Knauer, V.~N. Goncharov, P.~B. Radha, D.~Patel, V.~Gopalaswamy, and V.~Yu. Glebov.
+\newblock Inferring thermal ion temperature and residual kinetic energy from nuclear measurements in inertial confinement fusion implosions.
+\newblock \emph{Physics of Plasmas}, 27\penalty0 (6):\penalty0 062702, June 2020.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5144460}.
+\newblock URL \url{https://pubs.aip.org/pop/article/27/6/062702/1025468/Inferring-thermal-ion-temperature-and-residual}.
+
+\bibitem[Casey et~al.(2024)Casey, Landen, Hartouni, Bionta, Hahn, Volegov, Fittinghoff, Geppert-Kleinrath, Wilde, Milovich, Smalyuk, Field, Hurricane, Zylstra, Kritcher, Clark, Young, Nora, Callahan, MacGowan, Munro, Spears, Peterson, Gaffney, Humbird, Kruse, Moore, Schlossberg, Gatu-Johnson, and Frenje]{casey_three_2024}
+D~T Casey, O~L Landen, E~Hartouni, R~M Bionta, K~D Hahn, P~L Volegov, D~N Fittinghoff, V~Geppert-Kleinrath, C~H Wilde, J~L Milovich, V~A Smalyuk, J~E Field, O~A Hurricane, A~B Zylstra, A~L Kritcher, D~S Clark, C~V Young, R~C Nora, D~A Callahan, B~J MacGowan, D~H Munro, B~K Spears, J~L Peterson, J~A Gaffney, K~D Humbird, M~K~G Kruse, A~S Moore, D~J Schlossberg, M~Gatu-Johnson, and J~A Frenje.
+\newblock Three dimensional low-mode areal-density non-uniformities in indirect-drive implosions at the {National} {Ignition} {Facility}.
+\newblock \emph{Physics of Plasmas}, 2024.
 
 \end{thebibliography}

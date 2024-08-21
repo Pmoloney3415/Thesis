@@ -8,45 +8,45 @@ A level-1 auxiliary file: Appendix/Permissions.aux
 Database file #1: Bibliography/Bibliography.bib
 Warning--empty journal in walsh_application_2023
 Warning--empty institution in mchardy_introduction_2018
-You've used 32 entries,
+You've used 34 entries,
             2481 wiz_defined-function locations,
-            814 strings with 20471 characters,
-and the built_in function-call counts, 23666 in all, are:
-= -- 1265
-> -- 2968
+            824 strings with 21563 characters,
+and the built_in function-call counts, 25302 in all, are:
+= -- 1329
+> -- 3214
 < -- 11
-+ -- 1026
-- -- 960
-* -- 2822
-:= -- 4578
-add.period$ -- 182
-call.type$ -- 32
-change.case$ -- 62
-chr.to.int$ -- 30
-cite$ -- 34
-duplicate$ -- 595
-empty$ -- 1153
-format.name$ -- 1004
-if$ -- 4389
++ -- 1110
+- -- 1040
+* -- 3023
+:= -- 4909
+add.period$ -- 191
+call.type$ -- 34
+change.case$ -- 66
+chr.to.int$ -- 32
+cite$ -- 36
+duplicate$ -- 632
+empty$ -- 1218
+format.name$ -- 1086
+if$ -- 4682
 int.to.chr$ -- 3
-int.to.str$ -- 33
-missing$ -- 29
-newline$ -- 254
-num.names$ -- 96
-pop$ -- 142
+int.to.str$ -- 35
+missing$ -- 31
+newline$ -- 267
+num.names$ -- 102
+pop$ -- 155
 preamble$ -- 1
-purify$ -- 32
+purify$ -- 34
 quote$ -- 0
-skip$ -- 299
+skip$ -- 318
 stack$ -- 0
-substring$ -- 647
-swap$ -- 99
+substring$ -- 669
+swap$ -- 104
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 224
+type$ -- 238
 warning$ -- 2
-while$ -- 100
+while$ -- 105
 width$ -- 0
-write$ -- 593
+write$ -- 624
 (There were 2 warnings)

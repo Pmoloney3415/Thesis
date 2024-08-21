@@ -547,8 +547,19 @@ This section outlines the method used in \textsc{Solas} to obtain the electric f
 
 %################################################################################
 %################################################################################
-\subsection{Ray-Amplitude and Field Estimate from Neighbour Rays}%
+\subsection{Ray-Amplitude and Field Estimate from Neighbour-Rays}%
 \label{sec:SOLAS_ray_amplitude}
+
+\begin{figure}[t!]
+    \includegraphics[width=0.75\linewidth]{Numerics/Images/3d_raytube.png}
+    \centering
+    \caption{A 3-D illustration of the ray-amplitude construction for a single ray in a spherically-symmetric, direct-drive like plasma profile.
+    The critical surface is shown as the grey wire mesh.
+    The main-ray trajectory is plotted in red, and its three neighbour-ray trajectories are in blue.
+    The area of the main-ray at 5 successive phase-fronts is plotted, \textit{i.e.} when the main- and neighbour-rays all have the same phase, $\varphi$, is illustrated by the shaded triangles.
+    This is inversely proportional to the ray-amplitude at this location.}%
+    \label{fig:SOLAS_3draytube}
+\end{figure}
 
 Recalling the formula for the ray-amplitude, $A$, Eq.~\ref{eq:theory_rayamp} from Sec.~\ref{sec:theory_rayamp},
 \begin{align}
@@ -562,7 +573,7 @@ Recalling the formula for the ray-amplitude, $A$, Eq.~\ref{eq:theory_rayamp} fro
 \end{align}
 where $[x,y,z]$ and $[\zeta_1,\zeta_2,\tau]$ are the ray real-space and phase-space coordinates respectively and $D$ is the Jacobian for the coordinate transform from phase-space to real-space.
 When refraction forces rays closer together, $|D(\tau)|$ will decrease and equally, when refraction forces rays to separate, $|D(\tau)|$ will increase.
-The amplitude can therefore be approximated by assuming proportionality between the determinant of the Jacobian and the area, $S$ of an infinitesimally small bundle of rays surrounding the main ray,
+The amplitude can therefore be approximated by assuming proportionality between the determinant of the Jacobian and the area, $S$ of an infinitesimally small bundle of rays surrounding the main-ray,
 \begin{equation}
     A(\tau) = \varepsilon^{-1/4} \sqrt{\frac{S(\tau=0)}{S(\tau)}},
 \end{equation}
@@ -590,7 +601,10 @@ Note that when a 2-D ray-trace is used, only two neighbour-rays are required as 
 It is important to distinguish the dimension of the ray-trace, which is the number of dimensions in which rays can move in a simulation, to the dimension of the hydrodynamics.
 For example, a 1-D spherical direct-drive \ac{Rad-Hydro} simulation still requires a 3-D ray-trace where rays can move in $x,\ y$ and $z$ for full accuracy.
 
-These neighbour-rays are then co-traced up to the phase of the `main-ray' to evaluate the area of the main ray on its phase front.
+These neighbour-rays are then co-traced up to the phase of the `main-ray' to evaluate the area of the main-ray on its phase front.
+Fig.~\ref{fig:SOLAS_3draytube} plots an example of this co-tracing procedure for a single ray propagating in a 3-D direct-drive profile.
+It can be seen that as the reflects away from the critical surface, the area diverges.
+Note that artifically large neighbour-ray separation was used for this plot as it is purely illustrative.
 Practically, the separation distance of the bundle of neighbour-rays (i.e. the side-length of the triangle, $\Delta l$) does not need to be infinitesimally small, but small enough that it accurately captures the local change of $|D(\tau)|$.
 In terms of the hydrodynamic profiles, this means that $\Delta l \ll L_{n_e}$, where $L_{n_e}$ is the density length scale of the plasma.
 For OMEGA scale direct-drive simulations, an initial separation of $\Delta l\lesssim 1\ \mu\text{m}$ is found to give converged behaviour.
