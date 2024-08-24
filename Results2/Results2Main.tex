@@ -761,7 +761,7 @@ The shape of the stagnation state is predominantly dictated by the shock launch 
 A more conventional, hot-spot ignition target would maintain a dense shell throughout the implosion, which would develop density modulations due to \ac{CBET}-induced deposition asymmetries, as was seen in the previous chapter, for example in Fig.~\ref{fig:Res1_stagnation_plots}.
 Experimentally, a mode $\ell=2$ is long wavelength enough to be inferred from neutron diagnostics and would thus leave an experimentally observable signature~\cite{woo_inferring_2020,casey_three_2024}.
 Finally, higher $Z$ ablator materials such as $\text{SiO}_2$, exhibit higher coronal plasma temperatures than CH, ablators, due to increased \ac{Inv-Brem}.
-\ac{CBET} in direct-drive is less significant as the coronal temperatures increase~\cite{colaitis_exploration_2023}, therefore an experimental setup with a CH outer material, may have more \ac{CBET} overall, and therefore a more easily observable change to \ac{CBET} due to magnetisation.
+\ac{CBET} becomes less significant for direct-drive, as the coronal temperatures increase~\cite{colaitis_exploration_2023}, therefore an experimental setup with a CH outer material, may have more \ac{CBET} overall, and therefore a more easily observable change to \ac{CBET} due to magnetisation.
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -776,10 +776,42 @@ Finally, higher $Z$ ablator materials such as $\text{SiO}_2$, exhibit higher cor
 \subsection{Summary of Work}%
 \label{sec:Res2_summary}
 
+This chapter has described simulations of directly-driven, magnetised exploding pusher implosions.
+For the first time, an in-line model for \ac{CBET} was included in a magnetised direct-drive implosion, in order to study how asymmetry in coronal plasma profiles from magnetisation, may affect the action of \ac{CBET}.
+1-D simulations of the exploding pusher configuration without magnetisation demonstrated that \ac{CBET} was dynamically significant to the implosion, reducing the coupled laser energy to the target by $10\rightarrow15\%$.
+The main effect of this reduced absorption was to slow the speed of the strong shock, which led to bangtime occurring at greater target convergence after the rebounding shock compressed against the in-falling material.
+When exteded to 2-D, the simulations demonstrated that the polar nature of the drive was highly significant to the symmetry of the implosion, leading to a bagntime density profile with an aspect ratio $R_{\text{eq.}}/R_{\text{pole}}\sim 3$.
+The slowing of shock due to the \ac{CBET} reduction of absorption, led to bangtime occuring at a larger radius, and thus a less oblate profile, because the shock travelled mainly along the $\pm\hat{\vec{z}}$-axis.
+Simulations which included the reduced absorption due to \ac{CBET}, but not spatial redistribution of energy, showed that \ac{CBET} power redistribution marginally reduced the oblateness of the implosion, consistent with how it reduces $\ell=1$ asymmetries~\cite{anderson_effect_2020}.
 
+Simulations were also conducted which included an initial magnetic field along the $+\hat{\vec{z}}$-axis and the key physical processes which were dynamically significant to the implosion dynamics were identified by turning off the effect of each process in turn.
+Anisotropic thermal conduction was shown to be highly significant.
+It acted to insulate the deposited energy at the poles of the equator, preventing thermal equilibration in the polar direction and thus leading to an increased asymmetry of the drive.
+The genrally high temperatures of the target led to large $R_m$ and Plasma $\beta$ values, therefore the Lorentz force and resistive diffusion had minimal impact on the implosion.
+Nernst advection of the magnetic field, effectively reoriented the coronal field structure at the low-Hall parameter, equator of the target, which altered the thermal conduction, leading to a `bump' in the density at the target waist.
+Although this equatorial-bump had minimal impact on integrated neutron diagnostics, because was well removed from the polar-regions, which produced the most thermonuclear reactions at bangtime, it may significantly impact yields for symmetrically driven targets.
+
+The impact of the magnetised coronal plasma profiles on \ac{CBET} scattering of the laser energy was also studied.
+By examining how \ac{CBET} reduced absorption instantaneuosly through both the magnetised and unmagnetised coronas, the dominant effect of \ac{CBET} was observed to be an early reduction of deposition at the capsule poles, regardless of magnetisation.
+This led to a marginally more symmetric drive, reducing the oblateness of the bangtime profiles.
+Increasing the level of the initial seed magnetic field appeared to slightly exagerate this early polar reduction of deposition, although the effect was minimal and did not significantly impact upon the hydrodynamics.
+Therefore, increased anisotropy of the coronal field profiles was not observed to sinificantly alter \ac{CBET} scattering for these polar-drive exploding pusher targets.
 
 %################################################################################
 %################################################################################
 \subsection{Future Work}%
 \label{sec:Res2_future}
 
+Future alterations to the simulation configuration shall now be suggested, which may lead to a more obvious impact of magnetisation on \ac{CBET}.
+The simulations that were conducted for this work all used a 40-beam \textsc{Omega} configuration, where the 20 equatorial beams were removed from the drive, due to the presence of a magnetic field coil in experiments.
+Simulations demonstarted that this was the dominant effect, which dictated the symmetry of the bangtime state.
+Magnetisation of thermal conduction also played a significant role, increasing the oblateness of the drive.
+The polar drive largely obscured the much more subtle changes to \ac{CBET} from the altered hydrodynamics profiles, shown by comparing the top and bottom halves of panels in Fig.~\ref{fig:Res2_scattering}.
+A configutration with a more symmetric, 60-beam drive, would not have an underlying $\ell=2$ anisotropy wihtout magnetisation, which may make the changes to \ac{CBET} in magnetised profiles more pronounced.
+
+Secondly, alteration to the target could be made which may lead to both increased diagnostic signatures of an anisotropic drive and a larger impact of \ac{CBET} overall.
+Firstly, simulations of a more conventional, central hot-spot ignition target could be conducted.
+Unlike the exploding pushers simulated in this chapter, a dense shell is maintained throughout the implosion.
+This is in contrast to the exploding pusher targets presented here, where the bangtime symmetry is predominantly dictated by the shape of the early, shock launch.
+Additionally, using an ablator material with a lower ionisation state would lower the coronal plasma temperatures significantly and thus enhance the levels of \ac{CBET}~\cite{colaitis_exploration_2023}.
+More subtle changes to \ac{CBET} scattering from magnetisation may thus have a larger impact on the implosion.
