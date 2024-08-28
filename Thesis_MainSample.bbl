@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -114,6 +114,22 @@ O.~V. Gotchev, P.~Y. Chang, J.~P. Knauer, D.~D. Meyerhofer, O.~Polomarov, J.~Fre
 \newblock \doi{10.1103/PhysRevLett.103.215004}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.103.215004}.
 
+\bibitem[Chang et~al.(2011)Chang, Fiksel, Hohenberger, Knauer, Betti, Marshall, Meyerhofer, Séguin, and Petrasso]{chang_fusion_2011}
+P.~Y. Chang, G.~Fiksel, M.~Hohenberger, J.~P. Knauer, R.~Betti, F.~J. Marshall, D.~D. Meyerhofer, F.~H. Séguin, and R.~D. Petrasso.
+\newblock Fusion {Yield} {Enhancement} in {Magnetized} {Laser}-{Driven} {Implosions}.
+\newblock \emph{Physical Review Letters}, 107\penalty0 (3):\penalty0 035006, July 2011.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.107.035006}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.107.035006}.
+
+\bibitem[Hohenberger et~al.(2012)Hohenberger, Chang, Fiksel, Knauer, Betti, Marshall, Meyerhofer, Séguin, and Petrasso]{hohenberger_inertial_2012}
+M.~Hohenberger, P.-Y. Chang, G.~Fiksel, J.~P. Knauer, R.~Betti, F.~J. Marshall, D.~D. Meyerhofer, F.~H. Séguin, and R.~D. Petrasso.
+\newblock Inertial confinement fusion implosions with imposed magnetic field compression using the {OMEGA} {Laser}.
+\newblock \emph{Physics of Plasmas}, 19\penalty0 (5):\penalty0 056306, May 2012.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.3696032}.
+\newblock URL \url{https://pubs.aip.org/pop/article/19/5/056306/596932/Inertial-confinement-fusion-implosions-with}.
+
 \bibitem[Anderson et~al.(2020)Anderson, Forrest, Mannion, Marshall, Shah, Michel, Marozas, Radha, Edgell, Epstein, Goncharov, Knauer, Gatu~Johnson, and Laffite]{anderson_effect_2020}
 K.~S. Anderson, C.~J. Forrest, O.~M. Mannion, F.~J. Marshall, R.~C. Shah, D.~T. Michel, J.~A. Marozas, P.~B. Radha, D.~H. Edgell, R.~Epstein, V.~N. Goncharov, J.~P. Knauer, M.~Gatu~Johnson, and S.~Laffite.
 \newblock Effect of cross-beam energy transfer on target-offset asymmetry in direct-drive inertial confinement fusion implosions.
@@ -185,6 +201,22 @@ Lorin~X. Benedict, Michael~P. Surh, John~I. Castor, Saad~A. Khairallah, Heather~
 \newblock ISSN 1539-3755, 1550-2376.
 \newblock \doi{10.1103/PhysRevE.86.046406}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.86.046406}.
+
+\bibitem[Mannion et~al.(2023)Mannion, Taitano, Appelbe, Crilly, Forrest, Glebov, Knauer, McKenty, Mohamed, Stoeckl, Keenan, Chittenden, Adrian, Frenje, Kabadi, Gatu~Johnson, and Regan]{mannion_evidence_2023}
+O.~M. Mannion, W.~T. Taitano, B.~D. Appelbe, A.~J. Crilly, C.~J. Forrest, V.~Yu. Glebov, J.~P. Knauer, P.~W. McKenty, Z.~L. Mohamed, C.~Stoeckl, B.~D. Keenan, J.~P. Chittenden, P.~Adrian, J.~Frenje, N.~Kabadi, M.~Gatu~Johnson, and S.~P. Regan.
+\newblock Evidence of non-{Maxwellian} ion velocity distributions in spherical shock-driven implosions.
+\newblock \emph{Physical Review E}, 108\penalty0 (3):\penalty0 035201, September 2023.
+\newblock ISSN 2470-0045, 2470-0053.
+\newblock \doi{10.1103/PhysRevE.108.035201}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.108.035201}.
+
+\bibitem[Larroche et~al.(2016)Larroche, Rinderknecht, Rosenberg, Hoffman, Atzeni, Petrasso, Amendt, and Séguin]{larroche_ion-kinetic_2016}
+O.~Larroche, H.~G. Rinderknecht, M.~J. Rosenberg, N.~M. Hoffman, S.~Atzeni, R.~D. Petrasso, P.~A. Amendt, and F.~H. Séguin.
+\newblock Ion-kinetic simulations of {D}-{3He} gas-filled inertial confinement fusion target implosions with moderate to large {Knudsen} number.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (1):\penalty0 012701, January 2016.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4939025}.
+\newblock URL \url{https://pubs.aip.org/pop/article/23/1/012701/108502/Ion-kinetic-simulations-of-D-3He-gas-filled}.
 
 \bibitem[Chang and Frenje(2023)]{chang_notitle_2023}
 Cody~Wu Chang and J.~A. Frenje, April 2023.
