@@ -42,3 +42,5 @@ str
 trilinearly
 Nernst-advection
 anisotropisation
+un-shocked
+ablators

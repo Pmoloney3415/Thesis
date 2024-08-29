@@ -1,9 +1,977 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{152}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Patel et~al.(2018)Patel, Betti, Gopalaswamy, and Woo]{patel_novel_2018}
+Dhrumir Patel, Riccardo Betti, Varchas Gopalaswamy, and Ka~Ming Woo.
+\newblock Novel double-spike pulse shape for {OMEGA} cryogenic implosions.
+\newblock 2018:\penalty0 GO6.006, January 2018.
+\newblock URL \url{https://ui.adsabs.harvard.edu/abs/2018APS..DPPGO6006P}.
+\newblock Conference Name: APS Division of Plasma Physics Meeting Abstracts ADS Bibcode: 2018APS..DPPGO6006P.
+
+\bibitem[Cao et~al.(2019)Cao, Shah, Regan, Epstein, Igumenshchev, Gopalaswamy, Christopherson, Theobald, Radha, and Goncharov]{cao_interpreting_2019}
+D.~Cao, R.~C. Shah, S.~P. Regan, R.~Epstein, I.~V. Igumenshchev, V.~Gopalaswamy, A.~R. Christopherson, W.~Theobald, P.~B. Radha, and V.~N. Goncharov.
+\newblock Interpreting the electron temperature inferred from x-ray continuum emission for direct-drive inertial confinement fusion implosions on {OMEGA}.
+\newblock \emph{Physics of Plasmas}, 26\penalty0 (8):\penalty0 082709, August 2019.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5112759}.
+\newblock URL \url{https://pubs.aip.org/pop/article/26/8/082709/632047/Interpreting-the-electron-temperature-inferred}.
+
+\bibitem[Crilly et~al.(2020)Crilly, Appelbe, Mannion, Forrest, Gopalaswamy, Walsh, and Chittenden]{crilly_neutron_2020}
+A.~J. Crilly, B.~D. Appelbe, O.~M. Mannion, C.~J. Forrest, V.~Gopalaswamy, C.~A. Walsh, and J.~P. Chittenden.
+\newblock Neutron backscatter edge: {A} measure of the hydrodynamic properties of the dense {DT} fuel at stagnation in {ICF} experiments.
+\newblock \emph{Physics of Plasmas}, 27\penalty0 (1):\penalty0 012701, January 2020.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5128830}.
+\newblock URL \url{https://pubs.aip.org/pop/article/27/1/012701/262967/Neutron-backscatter-edge-A-measure-of-the}.
+
+\bibitem[Froula et~al.(2012)Froula, Igumenshchev, Michel, Edgell, Follett, Glebov, Goncharov, Kwiatkowski, Marshall, Radha, Seka, Sorce, Stagnitto, Stoeckl, and Sangster]{froula_increasing_2012}
+D.~H. Froula, I.~V. Igumenshchev, D.~T. Michel, D.~H. Edgell, R.~Follett, V.~Yu. Glebov, V.~N. Goncharov, J.~Kwiatkowski, F.~J. Marshall, P.~B. Radha, W.~Seka, C.~Sorce, S.~Stagnitto, C.~Stoeckl, and T.~C. Sangster.
+\newblock Increasing {Hydrodynamic} {Efficiency} by {Reducing} {Cross}-{Beam} {Energy} {Transfer} in {Direct}-{Drive}-{Implosion} {Experiments}.
+\newblock \emph{Physical Review Letters}, 108\penalty0 (12):\penalty0 125003, March 2012.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.108.125003}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.108.125003}.
+
+\bibitem[Lees et~al.(2023)Lees, Betti, Knauer, Gopalaswamy, Patel, Woo, Anderson, Campbell, Cao, Carroll-Nellenback, Epstein, Forrest, Goncharov, Harding, Hu, Igumenshchev, Janezic, Mannion, Radha, Regan, Shvydky, Shah, Shmayda, Stoeckl, Theobald, and Thomas]{lees_understanding_2023}
+A.~Lees, R.~Betti, J.~P. Knauer, V.~Gopalaswamy, D.~Patel, K.~M. Woo, K.~S. Anderson, E.~M. Campbell, D.~Cao, J.~Carroll-Nellenback, R.~Epstein, C.~J. Forrest, V.~N. Goncharov, D.~R. Harding, S.~X. Hu, I.~V. Igumenshchev, R.~T. Janezic, O.~M. Mannion, P.~B. Radha, S.~P. Regan, A.~Shvydky, R.~C. Shah, W.~T. Shmayda, C.~Stoeckl, W.~Theobald, and C.~A. Thomas.
+\newblock Understanding the fusion yield dependencies in {OMEGA} {DT}-layered implosion experiments using a physics-based statistical mapping model.
+\newblock \emph{Physics of Plasmas}, 30\penalty0 (1):\penalty0 012709, January 2023.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0106515}.
+\newblock URL \url{https://pubs.aip.org/pop/article/30/1/012709/2867741/Understanding-the-fusion-yield-dependencies-in}.
+
+\bibitem[Perkins et~al.(2017)Perkins, Ho, Logan, Zimmerman, Rhodes, Strozzi, Blackfield, and Hawkins]{perkins_potential_2017}
+L.~J. Perkins, D.~D.-M Ho, B.~G. Logan, G.~B. Zimmerman, M.~A. Rhodes, D.~J. Strozzi, D.~T. Blackfield, and S.~A. Hawkins.
+\newblock The potential of imposed magnetic fields for enhancing ignition probability and fusion energy yield in indirect-drive inertial confinement fusion.
+\newblock \emph{Physics of Plasmas}, 24\penalty0 (6):\penalty0 062708, June 2017.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4985150}.
+\newblock URL \url{https://pubs.aip.org/pop/article/24/6/062708/108192/The-potential-of-imposed-magnetic-fields-for}.
+
+\bibitem[Moody et~al.(2022{\natexlab{a}})Moody, Pollock, Sio, Strozzi, Ho, Walsh, Kemp, Lahmann, Kucheyev, Kozioziemski, Carroll, Kroll, Yanagisawa, Angus, Bachmann, Bhandarkar, Bude, Divol, Ferguson, Fry, Hagler, Hartouni, Herrmann, Hsing, Holunga, Izumi, Javedani, Johnson, Khan, Kalantar, Kohut, Logan, Masters, Nikroo, Orsi, Piston, Provencher, Rowe, Sater, Skulina, Stygar, Tang, Winters, Zimmerman, Adrian, Chittenden, Appelbe, Boxall, Crilly, O’Neill, Davies, Peebles, and Fujioka]{moody_increased_2022}
+J. D. Moody, B. B. Pollock, H.~Sio, D. J. Strozzi, D. D.-M. Ho, C. A. Walsh, G. E. Kemp, B.~Lahmann, S. O. Kucheyev, B.~Kozioziemski, E. G. Carroll, J.~Kroll, D. K. Yanagisawa, J.~Angus, B.~Bachmann, S. D. Bhandarkar, J. D. Bude, L.~Divol, B.~Ferguson, J.~Fry, L.~Hagler, E.~Hartouni, M. C. Herrmann, W.~Hsing, D. M. Holunga, N.~Izumi, J.~Javedani, A.~Johnson, S.~Khan, D.~Kalantar, T.~Kohut, B. G. Logan, N.~Masters, A.~Nikroo, N.~Orsi, K.~Piston, C.~Provencher, A.~Rowe, J.~Sater, K.~Skulina, W. A. Stygar, V.~Tang, S. E. Winters, G.~Zimmerman, P.~Adrian, J. P. Chittenden, B.~Appelbe, A.~Boxall, A.~Crilly, S.~O’Neill, J.~Davies, J.~Peebles, and S.~Fujioka.
+\newblock Increased {Ion} {Temperature} and {Neutron} {Yield} {Observed} in {Magnetized} {Indirectly} {Driven} {D} 2 -{Filled} {Capsule} {Implosions} on the {National} {Ignition} {Facility}.
+\newblock \emph{Physical Review Letters}, 129\penalty0 (19):\penalty0 195002, November 2022{\natexlab{a}}.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.129.195002}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.129.195002}.
+
+\bibitem[Bose et~al.(2022)Bose, Peebles, Walsh, Frenje, Kabadi, Adrian, Sutcliffe, Gatu~Johnson, Frank, Davies, Betti, Glebov, Marshall, Regan, Stoeckl, Campbell, Sio, Moody, Crilly, Appelbe, Chittenden, Atzeni, Barbato, Forte, Li, Seguin, and Petrasso]{bose_effect_2022}
+A.~Bose, J.~Peebles, C. A. Walsh, J. A. Frenje, N. V. Kabadi, P. J. Adrian, G. D. Sutcliffe, M.~Gatu~Johnson, C. A. Frank, J. R. Davies, R.~Betti, V. Yu. Glebov, F. J. Marshall, S. P. Regan, C.~Stoeckl, E. M. Campbell, H.~Sio, J.~Moody, A.~Crilly, B. D. Appelbe, J. P. Chittenden, S.~Atzeni, F.~Barbato, A.~Forte, C. K. Li, F. H. Seguin, and R. D. Petrasso.
+\newblock Effect of {Strongly} {Magnetized} {Electrons} and {Ions} on {Heat} {Flow} and {Symmetry} of {Inertial} {Fusion} {Implosions}.
+\newblock \emph{Physical Review Letters}, 128\penalty0 (19):\penalty0 195002, May 2022.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.128.195002}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.128.195002}.
+
+\bibitem[Tzeferacos et~al.(2018)Tzeferacos, Rigby, Bott, Bell, Bingham, Casner, Cattaneo, Churazov, Emig, Fiuza, Forest, Foster, Graziani, Katz, Koenig, Li, Meinecke, Petrasso, Park, Remington, Ross, Ryu, Ryutov, White, Reville, Miniati, Schekochihin, Lamb, Froula, and Gregori]{tzeferacos_laboratory_2018}
+P.~Tzeferacos, A.~Rigby, A.~F.~A. Bott, A.~R. Bell, R.~Bingham, A.~Casner, F.~Cattaneo, E.~M. Churazov, J.~Emig, F.~Fiuza, C.~B. Forest, J.~Foster, C.~Graziani, J.~Katz, M.~Koenig, C.-K. Li, J.~Meinecke, R.~Petrasso, H.-S. Park, B.~A. Remington, J.~S. Ross, D.~Ryu, D.~Ryutov, T.~G. White, B.~Reville, F.~Miniati, A.~A. Schekochihin, D.~Q. Lamb, D.~H. Froula, and G.~Gregori.
+\newblock Laboratory evidence of dynamo amplification of magnetic fields in a turbulent plasma.
+\newblock \emph{Nature Communications}, 9\penalty0 (1):\penalty0 591, February 2018.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/s41467-018-02953-2}.
+\newblock URL \url{https://www.nature.com/articles/s41467-018-02953-2}.
+
+\bibitem[Fiuza et~al.(2020)Fiuza, Swadling, Grassi, Rinderknecht, Higginson, Ryutov, Bruulsema, Drake, Funk, Glenzer, Gregori, Li, Pollock, Remington, Ross, Rozmus, Sakawa, Spitkovsky, Wilks, and Park]{fiuza_electron_2020}
+F.~Fiuza, G.~F. Swadling, A.~Grassi, H.~G. Rinderknecht, D.~P. Higginson, D.~D. Ryutov, C.~Bruulsema, R.~P. Drake, S.~Funk, S.~Glenzer, G.~Gregori, C.~K. Li, B.~B. Pollock, B.~A. Remington, J.~S. Ross, W.~Rozmus, Y.~Sakawa, A.~Spitkovsky, S.~Wilks, and H.-S. Park.
+\newblock Electron acceleration in laboratory-produced turbulent collisionless shocks.
+\newblock \emph{Nature Physics}, 16\penalty0 (9):\penalty0 916--920, September 2020.
+\newblock ISSN 1745-2481.
+\newblock \doi{10.1038/s41567-020-0919-4}.
+\newblock URL \url{https://www.nature.com/articles/s41567-020-0919-4}.
+\newblock Publisher: Nature Publishing Group.
+
+\bibitem[Meinecke et~al.(2022)Meinecke, Tzeferacos, Ross, Bott, Feister, Park, Bell, Blandford, Berger, Bingham, Casner, Chen, Foster, Froula, Goyon, Kalantar, Koenig, Lahmann, Li, Lu, Palmer, Petrasso, Poole, Remington, Reville, Reyes, Rigby, Ryu, Swadling, Zylstra, Miniati, Sarkar, Schekochihin, Lamb, and Gregori]{meinecke_strong_2022}
+Jena Meinecke, Petros Tzeferacos, James~S. Ross, Archie F.~A. Bott, Scott Feister, Hye-Sook Park, Anthony~R. Bell, Roger Blandford, Richard~L. Berger, Robert Bingham, Alexis Casner, Laura~E. Chen, John Foster, Dustin~H. Froula, Clement Goyon, Daniel Kalantar, Michel Koenig, Brandon Lahmann, Chikang Li, Yingchao Lu, Charlotte A.~J. Palmer, Richard~D. Petrasso, Hannah Poole, Bruce Remington, Brian Reville, Adam Reyes, Alexandra Rigby, Dongsu Ryu, George Swadling, Alex Zylstra, Francesco Miniati, Subir Sarkar, Alexander~A. Schekochihin, Donald~Q. Lamb, and Gianluca Gregori.
+\newblock Strong suppression of heat conduction in a laboratory replica of galaxy-cluster turbulent plasmas.
+\newblock \emph{Science Advances}, 8\penalty0 (10):\penalty0 eabj6799, March 2022.
+\newblock ISSN 2375-2548.
+\newblock \doi{10.1126/sciadv.abj6799}.
+\newblock URL \url{https://www.science.org/doi/10.1126/sciadv.abj6799}.
+
+\bibitem[Kritcher et~al.(2020)Kritcher, Swift, Döppner, Bachmann, Benedict, Collins, DuBois, Elsner, Fontaine, Gaffney, Hamel, Lazicki, Johnson, Kostinski, Kraus, MacDonald, Maddox, Martin, Neumayer, Nikroo, Nilsen, Remington, Saumon, Sterne, Sweet, Correa, Whitley, Falcone, and Glenzer]{kritcher_measurement_2020}
+Andrea~L. Kritcher, Damian~C. Swift, Tilo Döppner, Benjamin Bachmann, Lorin~X. Benedict, Gilbert~W. Collins, Jonathan~L. DuBois, Fred Elsner, Gilles Fontaine, Jim~A. Gaffney, Sebastien Hamel, Amy Lazicki, Walter~R. Johnson, Natalie Kostinski, Dominik Kraus, Michael~J. MacDonald, Brian Maddox, Madison~E. Martin, Paul Neumayer, Abbas Nikroo, Joseph Nilsen, Bruce~A. Remington, Didier Saumon, Phillip~A. Sterne, Wendi Sweet, Alfredo~A. Correa, Heather~D. Whitley, Roger~W. Falcone, and Siegfried~H. Glenzer.
+\newblock A measurement of the equation of state of carbon envelopes of white dwarfs.
+\newblock \emph{Nature}, 584\penalty0 (7819):\penalty0 51--54, August 2020.
+\newblock ISSN 0028-0836, 1476-4687.
+\newblock \doi{10.1038/s41586-020-2535-y}.
+\newblock URL \url{https://www.nature.com/articles/s41586-020-2535-y}.
+
+\bibitem[Smith et~al.(2014)Smith, Eggert, Jeanloz, Duffy, Braun, Patterson, Rudd, Biener, Lazicki, Hamza, Wang, Braun, Benedict, Celliers, and Collins]{smith_ramp_2014}
+R.~F. Smith, J.~H. Eggert, R.~Jeanloz, T.~S. Duffy, D.~G. Braun, J.~R. Patterson, R.~E. Rudd, J.~Biener, A.~E. Lazicki, A.~V. Hamza, J.~Wang, T.~Braun, L.~X. Benedict, P.~M. Celliers, and G.~W. Collins.
+\newblock Ramp compression of diamond to five terapascals.
+\newblock \emph{Nature}, 511\penalty0 (7509):\penalty0 330--333, July 2014.
+\newblock ISSN 1476-4687.
+\newblock \doi{10.1038/nature13526}.
+\newblock URL \url{https://www.nature.com/articles/nature13526}.
+\newblock Publisher: Nature Publishing Group.
+
+\bibitem[Zylstra et~al.(2022)Zylstra, Hurricane, Callahan, Kritcher, Ralph, Robey, Ross, Young, Baker, Casey, Döppner, Divol, Hohenberger, Le~Pape, Pak, Patel, Tommasini, Ali, Amendt, Atherton, Bachmann, Bailey, Benedetti, Berzak~Hopkins, Betti, Bhandarkar, Biener, Bionta, Birge, Bond, Bradley, Braun, Briggs, Bruhn, Celliers, Chang, Chapman, Chen, Choate, Christopherson, Clark, Crippen, Dewald, Dittrich, Edwards, Farmer, Field, Fittinghoff, Frenje, Gaffney, Gatu~Johnson, Glenzer, Grim, Haan, Hahn, Hall, Hammel, Harte, Hartouni, Heebner, Hernandez, Herrmann, Herrmann, Hinkel, Ho, Holder, Hsing, Huang, Humbird, Izumi, Jarrott, Jeet, Jones, Kerbel, Kerr, Khan, Kilkenny, Kim, Geppert~Kleinrath, Geppert~Kleinrath, Kong, Koning, Kroll, Kruse, Kustowski, Landen, Langer, Larson, Lemos, Lindl, Ma, MacDonald, MacGowan, Mackinnon, MacLaren, MacPhee, Marinak, Mariscal, Marley, Masse, Meaney, Meezan, Michel, Millot, Milovich, Moody, Moore, Morton, Murphy, Newman, Di~Nicola, Nikroo, Nora, Patel, Pelz, Peterson, Ping, Pollock, Ratledge, Rice, Rinderknecht, Rosen, Rubery, Salmonson, Sater, Schiaffino, Schlossberg, Schneider, Schroeder, Scott, Sepke, Sequoia, Sherlock, Shin, Smalyuk, Spears, Springer, Stadermann, Stoupin, Strozzi, Suter, Thomas, Town, Tubman, Trosseille, Volegov, Weber, Widmann, Wild, Wilde, Van~Wonterghem, Woods, Woodworth, Yamaguchi, Yang, and Zimmerman]{zylstra_burning_2022}
+A.~B. Zylstra, O.~A. Hurricane, D.~A. Callahan, A.~L. Kritcher, J.~E. Ralph, H.~F. Robey, J.~S. Ross, C.~V. Young, K.~L. Baker, D.~T. Casey, T.~Döppner, L.~Divol, M.~Hohenberger, S.~Le~Pape, A.~Pak, P.~K. Patel, R.~Tommasini, S.~J. Ali, P.~A. Amendt, L.~J. Atherton, B.~Bachmann, D.~Bailey, L.~R. Benedetti, L.~Berzak~Hopkins, R.~Betti, S.~D. Bhandarkar, J.~Biener, R.~M. Bionta, N.~W. Birge, E.~J. Bond, D.~K. Bradley, T.~Braun, T.~M. Briggs, M.~W. Bruhn, P.~M. Celliers, B.~Chang, T.~Chapman, H.~Chen, C.~Choate, A.~R. Christopherson, D.~S. Clark, J.~W. Crippen, E.~L. Dewald, T.~R. Dittrich, M.~J. Edwards, W.~A. Farmer, J.~E. Field, D.~Fittinghoff, J.~Frenje, J.~Gaffney, M.~Gatu~Johnson, S.~H. Glenzer, G.~P. Grim, S.~Haan, K.~D. Hahn, G.~N. Hall, B.~A. Hammel, J.~Harte, E.~Hartouni, J.~E. Heebner, V.~J. Hernandez, H.~Herrmann, M.~C. Herrmann, D.~E. Hinkel, D.~D. Ho, J.~P. Holder, W.~W. Hsing, H.~Huang, K.~D. Humbird, N.~Izumi, L.~C. Jarrott, J.~Jeet, O.~Jones, G.~D. Kerbel, S.~M. Kerr, S.~F. Khan, J.~Kilkenny, Y.~Kim, H.~Geppert~Kleinrath, V.~Geppert~Kleinrath, C.~Kong, J.~M. Koning, J.~J. Kroll, M.~K.~G. Kruse, B.~Kustowski, O.~L. Landen, S.~Langer, D.~Larson, N.~C. Lemos, J.~D. Lindl, T.~Ma, M.~J. MacDonald, B.~J. MacGowan, A.~J. Mackinnon, S.~A. MacLaren, A.~G. MacPhee, M.~M. Marinak, D.~A. Mariscal, E.~V. Marley, L.~Masse, K.~Meaney, N.~B. Meezan, P.~A. Michel, M.~Millot, J.~L. Milovich, J.~D. Moody, A.~S. Moore, J.~W. Morton, T.~Murphy, K.~Newman, J.-M.~G. Di~Nicola, A.~Nikroo, R.~Nora, M.~V. Patel, L.~J. Pelz, J.~L. Peterson, Y.~Ping, B.~B. Pollock, M.~Ratledge, N.~G. Rice, H.~Rinderknecht, M.~Rosen, M.~S. Rubery, J.~D. Salmonson, J.~Sater, S.~Schiaffino, D.~J. Schlossberg, M.~B. Schneider, C.~R. Schroeder, H.~A. Scott, S.~M. Sepke, K.~Sequoia, M.~W. Sherlock, S.~Shin, V.~A. Smalyuk, B.~K. Spears, P.~T. Springer, M.~Stadermann, S.~Stoupin, D.~J. Strozzi, L.~J. Suter, C.~A. Thomas, R.~P.~J. Town, E.~R. Tubman, C.~Trosseille, P.~L. Volegov, C.~R. Weber, K.~Widmann, C.~Wild, C.~H. Wilde, B.~M. Van~Wonterghem, D.~T. Woods, B.~N. Woodworth, M.~Yamaguchi, S.~T. Yang, and G.~B. Zimmerman.
+\newblock Burning plasma achieved in inertial fusion.
+\newblock \emph{Nature}, 601\penalty0 (7894):\penalty0 542--548, January 2022.
+\newblock ISSN 1476-4687.
+\newblock \doi{10.1038/s41586-021-04281-w}.
+\newblock URL \url{https://www.nature.com/articles/s41586-021-04281-w}.
+\newblock Publisher: Nature Publishing Group.
+
+\bibitem[Slutz and Vesey(2012)]{slutz_high-gain_2012}
+Stephen~A. Slutz and Roger~A. Vesey.
+\newblock High-{Gain} {Magnetized} {Inertial} {Fusion}.
+\newblock \emph{Physical Review Letters}, 108\penalty0 (2):\penalty0 025003, January 2012.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.108.025003}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.108.025003}.
+
+\bibitem[Williams et~al.(2024)Williams, Betti, Gopalaswamy, Knauer, Forrest, Lees, Ejaz, Farmakis, Cao, Radha, Anderson, Regan, Glebov, Shah, Stoeckl, Ivancic, Churnetski, Janezic, Fella, Rosenberg, Bonino, Harding, Shmayda, Carroll-Nellenback, Hu, Epstein, Collins, Thomas, Igumenshchev, Goncharov, Theobald, Woo, Marozas, Bauer, Sampat, Waxer, Turnbull, Heuer, McClow, Ceurvorst, Scullin, Edgell, Koch, Bredesen, Johnson, Frenje, Petrasso, Shuldberg, Farrell, Murray, Guzman, Serrato, Morse, Labuzeta, Deeney, and Campbell]{williams_demonstration_2024}
+C.~A. Williams, R.~Betti, V.~Gopalaswamy, J.~P. Knauer, C.~J. Forrest, A.~Lees, R.~Ejaz, P.~S. Farmakis, D.~Cao, P.~B. Radha, K.~S. Anderson, S.~P. Regan, V.~Yu Glebov, R.~C. Shah, C.~Stoeckl, S.~Ivancic, K.~Churnetski, R.~T. Janezic, C.~Fella, M.~J. Rosenberg, M.~J. Bonino, D.~R. Harding, W.~T. Shmayda, J.~Carroll-Nellenback, S.~X. Hu, R.~Epstein, T.~J.~B. Collins, C.~A. Thomas, I.~V. Igumenshchev, V.~N. Goncharov, W.~Theobald, K.~M. Woo, J.~A. Marozas, K.~A. Bauer, S.~Sampat, L.~J. Waxer, D.~Turnbull, P.~V. Heuer, H.~McClow, L.~Ceurvorst, W.~Scullin, D.~H. Edgell, M.~Koch, D.~Bredesen, M.~Gatu Johnson, J.~A. Frenje, R.~D. Petrasso, C.~Shuldberg, M.~Farrell, J.~Murray, D.~Guzman, B.~Serrato, S.~F.~B. Morse, M.~Labuzeta, C.~Deeney, and E.~M. Campbell.
+\newblock Demonstration of hot-spot fuel gain exceeding unity in direct-drive inertial confinement fusion implosions.
+\newblock \emph{Nature Physics}, 20\penalty0 (5):\penalty0 758--764, May 2024.
+\newblock ISSN 1745-2481.
+\newblock \doi{10.1038/s41567-023-02363-2}.
+\newblock URL \url{https://www.nature.com/articles/s41567-023-02363-2}.
+\newblock Publisher: Nature Publishing Group.
+
+\bibitem[Nguyen et~al.(2021)Nguyen, Yin, Albright, Hansen, Froula, Turnbull, Follett, and Palastro]{nguyen_cross-beam_2021}
+K.~L. Nguyen, L.~Yin, B.~J. Albright, A.~M. Hansen, D.~H. Froula, D.~Turnbull, R.~K. Follett, and J.~P. Palastro.
+\newblock Cross-beam energy transfer saturation by ion trapping-induced detuning.
+\newblock \emph{Physics of Plasmas}, 28\penalty0 (8):\penalty0 082705, August 2021.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0054008}.
+\newblock URL \url{https://pubs.aip.org/aip/pop/article/106807}.
+
+\bibitem[Myatt et~al.(2017)Myatt, Follett, Shaw, Edgell, Froula, Igumenshchev, and Goncharov]{myatt_wave-based_2017}
+J.~F. Myatt, R.~K. Follett, J.~G. Shaw, D.~H. Edgell, D.~H. Froula, I.~V. Igumenshchev, and V.~N. Goncharov.
+\newblock A wave-based model for cross-beam energy transfer in direct-drive inertial confinement fusion.
+\newblock \emph{Physics of Plasmas}, 24\penalty0 (5):\penalty0 056308, April 2017.
+\newblock ISSN 1070-664X.
+\newblock \doi{10.1063/1.4982059}.
+\newblock URL \url{https://doi.org/10.1063/1.4982059}.
+
+\bibitem[Schmitt and Obenschain(2023{\natexlab{a}})]{schmitt_importance_2023}
+Andrew~J. Schmitt and Stephen~P. Obenschain.
+\newblock The importance of laser wavelength for driving inertial confinement fusion targets. {I}. {Basic} physics.
+\newblock \emph{Physics of Plasmas}, 30\penalty0 (1):\penalty0 012701, January 2023{\natexlab{a}}.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0118080}.
+\newblock URL \url{https://pubs.aip.org/pop/article/30/1/012701/2867678/The-importance-of-laser-wavelength-for-driving}.
+
+\bibitem[Schmitt and Obenschain(2023{\natexlab{b}})]{schmitt_importance_2023-1}
+Andrew~J. Schmitt and Stephen~P. Obenschain.
+\newblock The importance of laser wavelength for driving inertial confinement fusion targets. {II}. {Target} design.
+\newblock \emph{Physics of Plasmas}, 30\penalty0 (1):\penalty0 012702, January 2023{\natexlab{b}}.
+\newblock ISSN 1070-664X.
+\newblock \doi{10.1063/5.0118093}.
+\newblock URL \url{https://doi.org/10.1063/5.0118093}.
+
+\bibitem[Huba(2013)]{huba_nrl_2013}
+J~Huba, D.
+\newblock {NRL} {Plasma} {Formulary}.
+\newblock Technical Report NRL/PU/6790–13-589, Naval Research Laboratory, Washington, DC, 2013.
+
+\bibitem[Johnston and Dawson(1973)]{johnston_correct_1973}
+Tudor~Wyatt Johnston and John~M. Dawson.
+\newblock Correct values for high-frequency power absorption by inverse bremsstrahlung in plasmas.
+\newblock \emph{Physics of Fluids}, 16:\penalty0 722--722, May 1973.
+\newblock ISSN 0899-82131070-6631.
+\newblock \doi{10.1063/1.1694419}.
+\newblock URL \url{https://ui.adsabs.harvard.edu/abs/1973PhFl...16..722J}.
+\newblock Publisher: AIP ADS Bibcode: 1973PhFl...16..722J.
+
+\bibitem[Colaïtis et~al.(2021)Colaïtis, Igumenshchev, Mathiaud, and Goncharov]{colaitis_inverse_2021}
+A.~Colaïtis, I.~Igumenshchev, J.~Mathiaud, and V.~Goncharov.
+\newblock Inverse ray tracing on icosahedral tetrahedron grids for non-linear laser plasma interaction coupled to {3D} radiation hydrodynamics.
+\newblock \emph{Journal of Computational Physics}, 443:\penalty0 110537, October 2021.
+\newblock ISSN 0021-9991.
+\newblock \doi{10.1016/j.jcp.2021.110537}.
+\newblock URL \url{https://www.sciencedirect.com/science/article/pii/S0021999121004320}.
+
+\bibitem[Randall et~al.(1981)Randall, Albritton, and Thomson]{randall_theory_1981}
+C.~J. Randall, James~R. Albritton, and J.~J. Thomson.
+\newblock Theory and simulation of stimulated {Brillouin} scatter excited by nonabsorbed light in laser fusion systems.
+\newblock \emph{The Physics of Fluids}, 24\penalty0 (8):\penalty0 1474--1484, August 1981.
+\newblock ISSN 0031-9171.
+\newblock \doi{10.1063/1.863551}.
+\newblock URL \url{https://doi.org/10.1063/1.863551}.
+
+\bibitem[Colaïtis et~al.(2014)Colaïtis, Duchateau, Nicolaï, and Tikhonchuk]{colaitis_towards_2014}
+A.~Colaïtis, G.~Duchateau, P.~Nicolaï, and V.~Tikhonchuk.
+\newblock Towards modeling of nonlinear laser-plasma interactions with hydrocodes: {The} thick-ray approach.
+\newblock \emph{Physical Review E}, 89\penalty0 (3):\penalty0 033101, March 2014.
+\newblock \doi{10.1103/PhysRevE.89.033101}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.89.033101}.
+\newblock Publisher: American Physical Society.
+
+\bibitem[Paddock et~al.(2021)Paddock, Martin, Ruskov, Scott, Garbett, Haines, Zylstra, Aboushelbaya, Mayr, Spiers, Wang, and Norreys]{paddock_one-dimensional_2021}
+R.~W. Paddock, H.~Martin, R.~T. Ruskov, R.~H.~H. Scott, W.~Garbett, B.~M. Haines, A.~B. Zylstra, R.~Aboushelbaya, M.~W. Mayr, B.~T. Spiers, R.~H.~W. Wang, and P.~A. Norreys.
+\newblock One-dimensional hydrodynamic simulations of low convergence ratio direct-drive inertial confinement fusion implosions.
+\newblock \emph{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}, 379\penalty0 (2189):\penalty0 20200224, January 2021.
+\newblock ISSN 1364-503X, 1471-2962.
+\newblock \doi{10.1098/rsta.2020.0224}.
+\newblock URL \url{https://royalsocietypublishing.org/doi/10.1098/rsta.2020.0224}.
+
+\bibitem[Colaïtis et~al.(2019{\natexlab{a}})Colaïtis, Palastro, Follett, Igumenschev, and Goncharov]{colaitis_real_2019}
+A.~Colaïtis, J.~P. Palastro, R.~K. Follett, I.~V. Igumenschev, and V.~Goncharov.
+\newblock Real and complex valued geometrical optics inverse ray-tracing for inline field calculations.
+\newblock \emph{Physics of Plasmas}, 26\penalty0 (3):\penalty0 032301, March 2019{\natexlab{a}}.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5082951}.
+\newblock URL \url{https://pubs.aip.org/pop/article/26/3/032301/699557/Real-and-complex-valued-geometrical-optics-inverse}.
+
+\bibitem[Colaïtis et~al.(2019{\natexlab{b}})Colaïtis, Follett, Palastro, Igumenschev, and Goncharov]{colaitis_adaptive_2019}
+A.~Colaïtis, R.~K. Follett, J.~P. Palastro, I.~Igumenschev, and V.~Goncharov.
+\newblock Adaptive inverse ray-tracing for accurate and efficient modeling of cross beam energy transfer in hydrodynamics simulations.
+\newblock \emph{Physics of Plasmas}, 26\penalty0 (7):\penalty0 072706, July 2019{\natexlab{b}}.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5108777}.
+\newblock URL \url{https://pubs.aip.org/pop/article/26/7/072706/1060189/Adaptive-inverse-ray-tracing-for-accurate-and}.
+
+\bibitem[Strozzi et~al.(2017)Strozzi, Bailey, Michel, Divol, Sepke, Kerbel, Thomas, Ralph, Moody, and Schneider]{strozzi_interplay_2017}
+D. J. Strozzi, D. S. Bailey, P.~Michel, L.~Divol, S. M. Sepke, G. D. Kerbel, C. A. Thomas, J. E. Ralph, J. D. Moody, and M. B. Schneider.
+\newblock Interplay of {Laser}-{Plasma} {Interactions} and {Inertial} {Fusion} {Hydrodynamics}.
+\newblock \emph{Physical Review Letters}, 118\penalty0 (2):\penalty0 025002, January 2017.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.118.025002}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.118.025002}.
+
+\bibitem[Liberatore et~al.(2023)Liberatore, Gauthier, Willien, Masson-Laborde, Philippe, Poujade, Alozy, Botrel, Boutoux, Bray, Caillaud, Chicanne, Chollet, Debayle, Depierreux, Duchastenier, Ferri, Henry, Hoch, Laffite, Landoas, Le-Deroff, Lefebvre, Legay, Marmajou, Meyer, Molina, Morice, Peche, Prunet, Riquier, Rosch, Tassin, Vaisseau, and Villette]{liberatore_first_2023}
+S.~Liberatore, P.~Gauthier, J.~L. Willien, P.~E. Masson-Laborde, F.~Philippe, O.~Poujade, E.~Alozy, R.~Botrel, G.~Boutoux, J.~Bray, T.~Caillaud, C.~Chicanne, C.~Chollet, A.~Debayle, S.~Depierreux, W.~Duchastenier, M.~Ferri, O.~Henry, P.~Hoch, S.~Laffite, O.~Landoas, L.~Le-Deroff, E.~Lefebvre, G.~Legay, I.~Marmajou, C.~Meyer, K.~Molina, O.~Morice, E.~Peche, P.~Prunet, R.~Riquier, R.~Rosch, V.~Tassin, X.~Vaisseau, and B.~Villette.
+\newblock First indirect drive inertial confinement fusion campaign at {Laser} {Megajoule}.
+\newblock \emph{Physics of Plasmas}, 30\penalty0 (12):\penalty0 122707, December 2023.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0176446}.
+\newblock URL \url{https://pubs.aip.org/pop/article/30/12/122707/2930727/First-indirect-drive-inertial-confinement-fusion}.
+
+\bibitem[Marozas et~al.(2018)Marozas, Hohenberger, Rosenberg, Turnbull, Collins, Radha, McKenty, Zuegel, Marshall, Regan, Sangster, Seka, Campbell, Goncharov, Bowers, Di~Nicola, Erbert, MacGowan, Pelz, Moody, and Yang]{marozas_wavelength-detuning_2018}
+J.~A. Marozas, M.~Hohenberger, M.~J. Rosenberg, D.~Turnbull, T.~J.~B. Collins, P.~B. Radha, P.~W. McKenty, J.~D. Zuegel, F.~J. Marshall, S.~P. Regan, T.~C. Sangster, W.~Seka, E.~M. Campbell, V.~N. Goncharov, M.~W. Bowers, J.-M.~G. Di~Nicola, G.~Erbert, B.~J. MacGowan, L.~J. Pelz, J.~Moody, and S.~T. Yang.
+\newblock Wavelength-detuning cross-beam energy transfer mitigation scheme for direct drive: {Modeling} and evidence from {National} {Ignition} {Facility} implosions.
+\newblock \emph{Physics of Plasmas}, 25\penalty0 (5):\penalty0 056314, May 2018.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5022181}.
+\newblock URL \url{https://pubs.aip.org/pop/article/25/5/056314/1061159/Wavelength-detuning-cross-beam-energy-transfer}.
+
+\bibitem[Debayle et~al.(2019)Debayle, Ruyer, Morice, Masson-Laborde, Loiseau, and Benisti]{debayle_unified_2019}
+A.~Debayle, C.~Ruyer, O.~Morice, P.-E. Masson-Laborde, P.~Loiseau, and D.~Benisti.
+\newblock A unified modeling of wave mixing processes with the ray tracing method.
+\newblock \emph{Physics of Plasmas}, 26\penalty0 (9):\penalty0 092705, September 2019.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5110247}.
+\newblock URL \url{https://pubs.aip.org/pop/article/26/9/092705/263616/A-unified-modeling-of-wave-mixing-processes-with}.
+
+\bibitem[Colaïtis et~al.(2016)Colaïtis, Hüller, Pesme, Duchateau, and Tikhonchuk]{colaitis_crossed_2016}
+A.~Colaïtis, S.~Hüller, D.~Pesme, G.~Duchateau, and V.~T. Tikhonchuk.
+\newblock Crossed beam energy transfer: {Assessment} of the paraxial complex geometrical optics approach versus a time-dependent paraxial method to describe experimental results.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (3):\penalty0 032118, March 2016.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4944496}.
+\newblock URL \url{https://pubs.aip.org/pop/article/23/3/032118/1016773/Crossed-beam-energy-transfer-Assessment-of-the}.
+
+\bibitem[Colaïtis et~al.(2015)Colaïtis, Duchateau, Ribeyre, and Tikhonchuk]{colaitis_modeling_2015}
+A.~Colaïtis, G.~Duchateau, X.~Ribeyre, and V.~Tikhonchuk.
+\newblock Modeling of the cross-beam energy transfer with realistic inertial-confinement-fusion beams in a large-scale hydrocode.
+\newblock \emph{Physical Review E}, 91\penalty0 (1):\penalty0 013102, January 2015.
+\newblock ISSN 1539-3755, 1550-2376.
+\newblock \doi{10.1103/PhysRevE.91.013102}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.91.013102}.
+
+\bibitem[Edgell et~al.(2017)Edgell, Follett, Igumenshchev, Myatt, Shaw, and Froula]{edgell_mitigation_2017}
+D.~H. Edgell, R.~K. Follett, I.~V. Igumenshchev, J.~F. Myatt, J.~G. Shaw, and D.~H. Froula.
+\newblock Mitigation of cross-beam energy transfer in symmetric implosions on {OMEGA} using wavelength detuning.
+\newblock \emph{Physics of Plasmas}, 24\penalty0 (6):\penalty0 062706, June 2017.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4985315}.
+\newblock URL \url{https://pubs.aip.org/aip/pop/article/108749}.
+
+\bibitem[Follett et~al.(2018)Follett, Shaw, Myatt, Goncharov, Edgell, Froula, and Palastro]{follett_ray-based_2018}
+R.~K. Follett, J.~G. Shaw, J.~F. Myatt, V.~N. Goncharov, D.~H. Edgell, D.~H. Froula, and J.~P. Palastro.
+\newblock Ray-based modeling of cross-beam energy transfer at caustics.
+\newblock \emph{Physical Review E}, 98\penalty0 (4):\penalty0 043202, October 2018.
+\newblock ISSN 2470-0045, 2470-0053.
+\newblock \doi{10.1103/PhysRevE.98.043202}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.98.043202}.
+
+\bibitem[Follett et~al.(2022)Follett, Colaïtis, Turnbull, Froula, and Palastro]{follett_validation_2022}
+R.~K. Follett, A.~Colaïtis, D.~Turnbull, D.~H. Froula, and J.~P. Palastro.
+\newblock Validation of ray-based cross-beam energy transfer models.
+\newblock \emph{Physics of Plasmas}, 29\penalty0 (11):\penalty0 113902, November 2022.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0123462}.
+\newblock URL \url{https://pubs.aip.org/pop/article/29/11/113902/2844248/Validation-of-ray-based-cross-beam-energy-transfer}.
+
+\bibitem[Igumenshchev et~al.(2010)Igumenshchev, Edgell, Goncharov, Delettrez, Maximov, Myatt, Seka, Shvydky, Skupsky, and Stoeckl]{igumenshchev_crossed-beam_2010}
+I.~V. Igumenshchev, D.~H. Edgell, V.~N. Goncharov, J.~A. Delettrez, A.~V. Maximov, J.~F. Myatt, W.~Seka, A.~Shvydky, S.~Skupsky, and C.~Stoeckl.
+\newblock Crossed-beam energy transfer in implosion experiments on {OMEGA}.
+\newblock \emph{Physics of Plasmas}, 17\penalty0 (12):\penalty0 122708, December 2010.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.3532817}.
+\newblock URL \url{https://pubs.aip.org/pop/article/17/12/122708/918785/Crossed-beam-energy-transfer-in-implosion}.
+
+\bibitem[Igumenshchev et~al.(2012)Igumenshchev, Seka, Edgell, Michel, Froula, Goncharov, Craxton, Divol, Epstein, Follett, Kelly, Kosc, Maximov, McCrory, Meyerhofer, Michel, Myatt, Sangster, Shvydky, Skupsky, and Stoeckl]{igumenshchev_crossed-beam_2012}
+I.~V. Igumenshchev, W.~Seka, D.~H. Edgell, D.~T. Michel, D.~H. Froula, V.~N. Goncharov, R.~S. Craxton, L.~Divol, R.~Epstein, R.~Follett, J.~H. Kelly, T.~Z. Kosc, A.~V. Maximov, R.~L. McCrory, D.~D. Meyerhofer, P.~Michel, J.~F. Myatt, T.~C. Sangster, A.~Shvydky, S.~Skupsky, and C.~Stoeckl.
+\newblock Crossed-beam energy transfer in direct-drive implosions.
+\newblock \emph{Physics of Plasmas}, 19\penalty0 (5):\penalty0 056314, May 2012.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4718594}.
+\newblock URL \url{https://pubs.aip.org/pop/article/19/5/056314/596972/Crossed-beam-energy-transfer-in-direct-drive}.
+
+\bibitem[Myatt et~al.(2019)Myatt, Shaw, Follett, Edgell, Froula, Palastro, and Goncharov]{myatt_lpse_2019}
+Jason~F. Myatt, John~G. Shaw, Russell~K. Follett, Dana~H. Edgell, Dustin~H. Froula, John~P. Palastro, and Valeri~N. Goncharov.
+\newblock {LPSE}: {A} 3-{D} wave-based model of cross-beam energy transfer in laser-irradiated plasmas.
+\newblock \emph{Journal of Computational Physics}, 399:\penalty0 108916, December 2019.
+\newblock ISSN 00219991.
+\newblock \doi{10.1016/j.jcp.2019.108916}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S0021999119306217}.
+
+\bibitem[Follett et~al.(2021)Follett, Shaw, Myatt, Wen, Froula, and Palastro]{follett_thresholds_2021}
+R.~K. Follett, J.~G. Shaw, J.~F. Myatt, H.~Wen, D.~H. Froula, and J.~P. Palastro.
+\newblock Thresholds of absolute two-plasmon-decay and stimulated {Raman} scattering instabilities driven by multiple broadband lasers.
+\newblock \emph{Physics of Plasmas}, 28\penalty0 (3):\penalty0 032103, March 2021.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0037869}.
+\newblock URL \url{https://pubs.aip.org/pop/article/28/3/032103/835482/Thresholds-of-absolute-two-plasmon-decay-and}.
+
+\bibitem[Perkins et~al.(2009)Perkins, Betti, LaFortune, and Williams]{perkins_shock_2009}
+L.~J. Perkins, R.~Betti, K.~N. LaFortune, and W.~H. Williams.
+\newblock Shock {Ignition}: {A} {New} {Approach} to {High} {Gain} {Inertial} {Confinement} {Fusion} on the {National} {Ignition} {Facility}.
+\newblock \emph{Physical Review Letters}, 103\penalty0 (4):\penalty0 045004, July 2009.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.103.045004}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.103.045004}.
+
+\bibitem[Seaton et~al.(2022{\natexlab{a}})Seaton, Yin, Follett, Albright, and Le]{seaton_cross-beam_2022-1}
+A.~G. Seaton, L.~Yin, R.~K. Follett, B.~J. Albright, and A.~Le.
+\newblock Cross-beam energy transfer in direct-drive {ICF}. {II}. {Theory} and simulation of mitigation through increased laser bandwidth.
+\newblock \emph{Physics of Plasmas}, 29\penalty0 (4):\penalty0 042707, April 2022{\natexlab{a}}.
+\newblock ISSN 1070-664X.
+\newblock \doi{10.1063/5.0078801}.
+\newblock URL \url{https://doi.org/10.1063/5.0078801}.
+
+\bibitem[Seaton et~al.(2022{\natexlab{b}})Seaton, Yin, Follett, Albright, and Le]{seaton_cross-beam_2022}
+A.~G. Seaton, L.~Yin, R.~K. Follett, B.~J. Albright, and A.~Le.
+\newblock Cross-beam energy transfer in direct-drive {ICF}. {I}. {Nonlinear} and kinetic effects.
+\newblock \emph{Physics of Plasmas}, 29\penalty0 (4):\penalty0 042706, April 2022{\natexlab{b}}.
+\newblock ISSN 1070-664X.
+\newblock \doi{10.1063/5.0078800}.
+\newblock URL \url{https://doi.org/10.1063/5.0078800}.
+
+\bibitem[Chittenden et~al.(2016)Chittenden, Appelbe, Manke, McGlinchey, and Niasse]{chittenden_signatures_2016}
+J.~P. Chittenden, B.~D. Appelbe, F.~Manke, K.~McGlinchey, and N.~P.~L. Niasse.
+\newblock Signatures of asymmetry in neutron spectra and images predicted by three-dimensional radiation hydrodynamics simulations of indirect drive implosions.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (5):\penalty0 052708, May 2016.
+\newblock ISSN 1070-664X.
+\newblock \doi{10.1063/1.4949523}.
+\newblock URL \url{https://doi.org/10.1063/1.4949523}.
+
+\bibitem[Cheong and Kang(2015)]{cheong_eigensolutions_2015}
+Hyeong‐Bin Cheong and Hyun‐Gyu Kang.
+\newblock Eigensolutions of the spherical {Laplacian} for the cubed‐sphere and icosahedral‐hexagonal grids.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society}, 141\penalty0 (693):\penalty0 3383--3398, October 2015.
+\newblock ISSN 0035-9009, 1477-870X.
+\newblock \doi{10.1002/qj.2620}.
+\newblock URL \url{https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.2620}.
+
+\bibitem[Malkin(2019)]{malkin_new_2019}
+Zinovy Malkin.
+\newblock A {New} {Equal}-area {Isolatitudinal} {Grid} on a {Spherical} {Surface}.
+\newblock \emph{The Astronomical Journal}, 158\penalty0 (4):\penalty0 158, October 2019.
+\newblock ISSN 0004-6256, 1538-3881.
+\newblock \doi{10.3847/1538-3881/ab3a44}.
+\newblock URL \url{https://iopscience.iop.org/article/10.3847/1538-3881/ab3a44}.
+
+\bibitem[Kaiser(2000)]{kaiser_laser_2000}
+Thomas~B. Kaiser.
+\newblock Laser ray tracing and power deposition on an unstructured three-dimensional grid.
+\newblock \emph{Physical Review E}, 61\penalty0 (1):\penalty0 895--905, January 2000.
+\newblock \doi{10.1103/PhysRevE.61.895}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.61.895}.
+\newblock Publisher: American Physical Society.
+
+\bibitem[Dewandre et~al.(1981)Dewandre, Albritton, and Williams]{dewandre_doppler_1981}
+Thierry Dewandre, James~R. Albritton, and E.~A. Williams.
+\newblock Doppler shift of laser light reflected from expanding plasmas.
+\newblock \emph{The Physics of Fluids}, 24\penalty0 (3):\penalty0 528--536, March 1981.
+\newblock ISSN 0031-9171.
+\newblock \doi{10.1063/1.863401}.
+\newblock URL \url{https://pubs.aip.org/pfl/article/24/3/528/894917/Doppler-shift-of-laser-light-reflected-from}.
+
+\bibitem[Press(2007)]{press_numerical_2007}
+William~H. Press, editor.
+\newblock \emph{Numerical recipes: the art of scientific computing}.
+\newblock Cambridge University Press, Cambridge, 3. ed edition, 2007.
+\newblock ISBN 978-0-521-88068-8.
+
+\bibitem[Williams(2024)]{williams_bspline-fortran_2024}
+Jacob Williams.
+\newblock bspline-fortran, January 2024.
+\newblock URL \url{https://zenodo.org/records/8423936}.
+
+\bibitem[Birdsall and Langdon(1985)]{birdsall_plasma_1985}
+Charles~K. Birdsall and A.~Bruce Langdon.
+\newblock \emph{Plasma physics via computer simulation}.
+\newblock McGraw-Hill, New York, 1985.
+\newblock ISBN 978-0-07-005371-7.
+
+\bibitem[Arber et~al.(2015)Arber, Bennett, Brady, Lawrence-Douglas, Ramsay, Sircombe, Gillies, Evans, Schmitz, Bell, and Ridgers]{arber_contemporary_2015}
+T~D Arber, K~Bennett, C~S Brady, A~Lawrence-Douglas, M~G Ramsay, N~J Sircombe, P~Gillies, R~G Evans, H~Schmitz, A~R Bell, and C~P Ridgers.
+\newblock Contemporary particle-in-cell approach to laser-plasma modelling.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 57\penalty0 (11):\penalty0 113001, November 2015.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/0741-3335/57/11/113001}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/0741-3335/57/11/113001}.
+
+\bibitem[Cornet and Kwok(2007)]{cornet_new_2007}
+Christophe Cornet and Dixon~T.K. Kwok.
+\newblock A new algorithm for charge deposition for multiple-grid method for {PIC} simulations in r–z cylindrical coordinates.
+\newblock \emph{Journal of Computational Physics}, 225\penalty0 (1):\penalty0 808--828, July 2007.
+\newblock ISSN 00219991.
+\newblock \doi{10.1016/j.jcp.2007.01.004}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S0021999107000058}.
+
+\bibitem[Haines et~al.(2020)Haines, Keller, Marozas, McKenty, Anderson, Collins, Dai, Hall, Jones, McKay~Jr, Rauenzahn, and Woods]{haines_coupling_2020}
+Brian~M. Haines, D.E. Keller, J.A. Marozas, P.W. McKenty, K.S. Anderson, T.J.B. Collins, W.W. Dai, M.L. Hall, S.~Jones, M.D. McKay~Jr, R.M. Rauenzahn, and D.N. Woods.
+\newblock Coupling laser physics to radiation-hydrodynamics.
+\newblock \emph{Computers \& Fluids}, 201:\penalty0 104478, April 2020.
+\newblock ISSN 00457930.
+\newblock \doi{10.1016/j.compfluid.2020.104478}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S0045793020300517}.
+
+\bibitem[Denavit and Phillion(1994)]{denavit_laser_1994}
+J.~Denavit and D.~W. Phillion.
+\newblock Laser ionization and heating of gas targets for long-scale-length instability experiments.
+\newblock \emph{Physics of Plasmas}, 1\penalty0 (6):\penalty0 1971--1984, June 1994.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.870653}.
+\newblock URL \url{https://pubs.aip.org/pop/article/1/6/1971/260717/Laser-ionization-and-heating-of-gas-targets-for}.
+
+\bibitem[Igumenshchev et~al.(2009)Igumenshchev, Marshall, Marozas, Smalyuk, Epstein, Goncharov, Collins, Sangster, and Skupsky]{igumenshchev_effects_2009}
+I.~V. Igumenshchev, F.~J. Marshall, J.~A. Marozas, V.~A. Smalyuk, R.~Epstein, V.~N. Goncharov, T.~J.~B. Collins, T.~C. Sangster, and S.~Skupsky.
+\newblock The effects of target mounts in direct-drive implosions on {OMEGA}.
+\newblock \emph{Physics of Plasmas}, 16\penalty0 (8):\penalty0 082701, August 2009.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.3195065}.
+\newblock URL \url{https://pubs.aip.org/pop/article/16/8/082701/316526/The-effects-of-target-mounts-in-direct-drive}.
+
+\bibitem[Igumenshchev et~al.(2016)Igumenshchev, Goncharov, Marshall, Knauer, Campbell, Forrest, Froula, Glebov, McCrory, Regan, Sangster, Skupsky, and Stoeckl]{igumenshchev_three-dimensional_2016}
+I.~V. Igumenshchev, V.~N. Goncharov, F.~J. Marshall, J.~P. Knauer, E.~M. Campbell, C.~J. Forrest, D.~H. Froula, V.~Yu. Glebov, R.~L. McCrory, S.~P. Regan, T.~C. Sangster, S.~Skupsky, and C.~Stoeckl.
+\newblock Three-dimensional modeling of direct-drive cryogenic implosions on {OMEGA}.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (5):\penalty0 052702, May 2016.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4948418}.
+\newblock URL \url{https://pubs.aip.org/pop/article/23/5/052702/958965/Three-dimensional-modeling-of-direct-drive}.
+
+\bibitem[Gatu~Johnson et~al.(2020)Gatu~Johnson, Adrian, Anderson, Appelbe, Chittenden, Crilly, Edgell, Forrest, Frenje, Glebov, Haines, Igumenshchev, Jacobs-Perkins, Janezic, Kabadi, Knauer, Lahmann, Mannion, Marshall, Michel, Séguin, Shah, Stoeckl, Walsh, and Petrasso]{gatu_johnson_impact_2020}
+M.~Gatu~Johnson, P.~J. Adrian, K.~S. Anderson, B.~D. Appelbe, J.~P. Chittenden, A.~J. Crilly, D.~Edgell, C.~J. Forrest, J.~A. Frenje, V.~Yu. Glebov, B.~M. Haines, I.~Igumenshchev, D.~Jacobs-Perkins, R.~Janezic, N.~V. Kabadi, J.~P. Knauer, B.~Lahmann, O.~M. Mannion, F.~J. Marshall, T.~Michel, F.~H. Séguin, R.~Shah, C.~Stoeckl, C.~A. Walsh, and R.~D. Petrasso.
+\newblock Impact of stalk on directly driven inertial confinement fusion implosions.
+\newblock \emph{Physics of Plasmas}, 27\penalty0 (3):\penalty0 032704, March 2020.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5141607}.
+\newblock URL \url{https://pubs.aip.org/pop/article/27/3/032704/1063027/Impact-of-stalk-on-directly-driven-inertial}.
+
+\bibitem[Kruer(2003)]{kruer_physics_2003}
+William~L. Kruer.
+\newblock \emph{The physics of laser plasma interactions}.
+\newblock Frontiers in physics. CRC Press, Boulder, Colo. [u.a.] Westview, 2003.
+\newblock ISBN 978-0-8133-4083-8.
+
+\bibitem[Kravcov and Orlov(1999)]{kravcov_caustics_1999}
+Jurij~A. Kravcov and Jurij~I. Orlov.
+\newblock \emph{Caustics, catastrophes and wave fields}.
+\newblock Number~15 in Springer series on wave phenomena. Springer, Berlin Heidelberg New York, 2. ed edition, 1999.
+\newblock ISBN 978-3-540-64227-5.
+
+\bibitem[Kratsov and Zhu(2010)]{kratsov_theory_2010}
+Yury~Alexandrovich Kratsov and Ning~Yan Zhu.
+\newblock \emph{Theory of diffraction: heuristic approaches}.
+\newblock Alpha Science International, Oxford, 2010.
+\newblock ISBN 978-1-84265-372-2.
+
+\bibitem[Lopez and Dodin(2022)]{lopez_metaplectic_2022}
+N.~A. Lopez and I.~Y. Dodin.
+\newblock Metaplectic geometrical optics for ray-based modeling of caustics: {Theory} and algorithms.
+\newblock \emph{Physics of Plasmas}, 29\penalty0 (5):\penalty0 052111, May 2022.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0082241}.
+\newblock URL \url{https://pubs.aip.org/pop/article/29/5/052111/2847808/Metaplectic-geometrical-optics-for-ray-based}.
+
+\bibitem[Chang and Jin(1996)]{chang_computation_1996}
+Shan-chieh Chang and Jian-Ming Jin.
+\newblock \emph{Computation of special functions}.
+\newblock Wiley, New York, 1996.
+\newblock ISBN 978-0-471-11963-0.
+
+\bibitem[Asatryan and Kravtsov(1988)]{asatryan_fresnel_1988}
+A.A. Asatryan and Yu.A. Kravtsov.
+\newblock Fresnel zones of hyperbolic type from the physical point of view.
+\newblock \emph{Wave Motion}, 10\penalty0 (1):\penalty0 45--57, January 1988.
+\newblock ISSN 01652125.
+\newblock \doi{10.1016/0165-2125(88)90005-4}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/0165212588900054}.
+
+\bibitem[Kravtsov(1988)]{kravtsov_iv_1988}
+Yu.A. Kravtsov.
+\newblock {IV} {Rays} and {Caustics} as {Physical} {Objects}.
+\newblock In \emph{Progress in {Optics}}, volume~26, pages 227--348. Elsevier, 1988.
+\newblock ISBN 978-0-444-87096-4.
+\newblock \doi{10.1016/S0079-6638(08)70177-X}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S007966380870177X}.
+
+\bibitem[Follett(2022)]{follett_lpse_2022}
+R.~K. Follett.
+\newblock {LPSE} data for ray-based {CBET} test cases, August 2022.
+\newblock URL \url{https://zenodo.org/record/6962934}.
+
+\bibitem[Ding et~al.(2020)Ding, Yang, Mishchenko, and Nevels]{ding_identify_2020}
+Jiachen Ding, Ping Yang, Michael~I. Mishchenko, and Robert~D. Nevels.
+\newblock Identify the limits of geometric optics ray tracing by numerically solving the vector {Kirchhoff} integral.
+\newblock \emph{Optics Express}, 28\penalty0 (7):\penalty0 10670, March 2020.
+\newblock ISSN 1094-4087.
+\newblock \doi{10.1364/OE.389097}.
+\newblock URL \url{https://opg.optica.org/abstract.cfm?URI=oe-28-7-10670}.
+
+\bibitem[Williams et~al.(1995)Williams, Berger, Drake, Rubenchik, Bauer, Meyerhofer, Gaeris, and Johnston]{williams_frequency_1995}
+E.~A. Williams, R.~L. Berger, R.~P. Drake, A.~M. Rubenchik, B.~S. Bauer, D.~D. Meyerhofer, A.~C. Gaeris, and T.~W. Johnston.
+\newblock The frequency and damping of ion acoustic waves in hydrocarbon ({CH}) and two-ion-species plasmas.
+\newblock \emph{Physics of Plasmas}, 2\penalty0 (1):\penalty0 129--138, January 1995.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.871101}.
+\newblock URL \url{https://pubs.aip.org/pop/article/2/1/129/261605/The-frequency-and-damping-of-ion-acoustic-waves-in}.
+
+\bibitem[Michel et~al.(2013)Michel, Rozmus, Williams, Divol, Berger, Glenzer, and Callahan]{michel_saturation_2013}
+P.~Michel, W.~Rozmus, E.~A. Williams, L.~Divol, R.~L. Berger, S.~H. Glenzer, and D.~A. Callahan.
+\newblock Saturation of multi-laser beams laser-plasma instabilities from stochastic ion heating.
+\newblock \emph{Physics of Plasmas}, 20\penalty0 (5):\penalty0 056308, May 2013.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4802828}.
+\newblock URL \url{https://pubs.aip.org/pop/article/20/5/056308/109013/Saturation-of-multi-laser-beams-laser-plasma}.
+
+\bibitem[Poppe and Wijers(1990)]{poppe_algorithm_1990}
+G.~P.~M. Poppe and C.~M.~J. Wijers.
+\newblock Algorithm 680: evaluation of the complex error function.
+\newblock \emph{ACM Transactions on Mathematical Software}, 16\penalty0 (1):\penalty0 47, March 1990.
+\newblock ISSN 0098-3500, 1557-7295.
+\newblock \doi{10.1145/77626.77630}.
+\newblock URL \url{https://dl.acm.org/doi/10.1145/77626.77630}.
+
+\bibitem[Fried and Conte(1961)]{fried_plasma_1961}
+Burton~D. Fried and Samuel~D. Conte.
+\newblock \emph{The {Plasma} {Dispersion} {Function}: {The} {Hilbert} {Transform} of the {Gaussian}}.
+\newblock Academic Press, 1961.
+\newblock ISBN 978-1-4832-2929-4.
+
+\bibitem[Boehly et~al.(1999)Boehly, Smalyuk, Meyerhofer, Knauer, Bradley, Craxton, Guardalben, Skupsky, and Kessler]{boehly_reduction_1999}
+T.~R. Boehly, V.~A. Smalyuk, D.~D. Meyerhofer, J.~P. Knauer, D.~K. Bradley, R.~S. Craxton, M.~J. Guardalben, S.~Skupsky, and T.~J. Kessler.
+\newblock Reduction of laser imprinting using polarization smoothing on a solid-state fusion laser.
+\newblock \emph{Journal of Applied Physics}, 85\penalty0 (7):\penalty0 3444--3447, April 1999.
+\newblock ISSN 0021-8979, 1089-7550.
+\newblock \doi{10.1063/1.369702}.
+\newblock URL \url{https://pubs.aip.org/jap/article/85/7/3444/491506/Reduction-of-laser-imprinting-using-polarization}.
+
+\bibitem[Edgell et~al.(2021)Edgell, Radha, Katz, Shvydky, Turnbull, and Froula]{edgell_nonuniform_2021}
+D. H. Edgell, P. B. Radha, J.~Katz, A.~Shvydky, D.~Turnbull, and D. H. Froula.
+\newblock Nonuniform {Absorption} and {Scattered} {Light} in {Direct}-{Drive} {Implosions} {Driven} by {Polarization} {Smoothing}.
+\newblock \emph{Physical Review Letters}, 127\penalty0 (7):\penalty0 075001, August 2021.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.127.075001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.127.075001}.
+
+\bibitem[Colaïtis et~al.(2022)Colaïtis, Turnbull, Igumenschev, Edgell, Shah, Mannion, Stoeckl, Jacob-Perkins, Shvydky, Janezic, Kalb, Cao, Forrest, Kwiatkowski, Regan, Theobald, Goncharov, and Froula]{colaitis_3d_2022}
+A.~Colaïtis, D. P. Turnbull, I. V. Igumenschev, D.~Edgell, R. C. Shah, O. M. Mannion, C.~Stoeckl, D.~Jacob-Perkins, A.~Shvydky, R.~Janezic, A.~Kalb, D.~Cao, C. J. Forrest, J.~Kwiatkowski, S.~Regan, W.~Theobald, V. N. Goncharov, and D. H. Froula.
+\newblock {3D} {Simulations} {Capture} the {Persistent} {Low}-{Mode} {Asymmetries} {Evident} in {Laser}-{Direct}-{Drive} {Implosions} on {OMEGA}.
+\newblock \emph{Physical Review Letters}, 129\penalty0 (9):\penalty0 095001, August 2022.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.129.095001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.129.095001}.
+
+\bibitem[Colaïtis et~al.(2023{\natexlab{a}})Colaïtis, Edgell, Igumenshchev, Turnbull, Strozzi, Chapman, Goncharov, and Froula]{colaitis_3d_2023}
+A~Colaïtis, D~Edgell, I~Igumenshchev, D~Turnbull, D~J Strozzi, T~Chapman, V~Goncharov, and D~H Froula.
+\newblock {3D} simulations of inertial confinement fusion implosions part 1: inline modeling of polarized cross beam energy transfer and subsequent drive anomalies on {OMEGA} and {NIF}.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 65\penalty0 (1):\penalty0 014003, January 2023{\natexlab{a}}.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/1361-6587/aca78e}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/1361-6587/aca78e}.
+
+\bibitem[Colaïtis et~al.(2023{\natexlab{b}})Colaïtis, Igumenshchev, Turnbull, Shah, Edgell, Mannion, Stoeckl, Jacob-Perkins, Shvydky, Janezic, Kalb, Cao, Forrest, Kwiatkowski, Regan, Theobald, Goncharov, and Froula]{colaitis_3d_2023-1}
+A~Colaïtis, I~V Igumenshchev, D~P Turnbull, R~Shah, D~Edgell, O~M Mannion, C~Stoeckl, D~W Jacob-Perkins, A~Shvydky, R~Janezic, A~Kalb, D~Cao, C~J Forrest, J~Kwiatkowski, S~P Regan, W~Theobald, V~N Goncharov, and D~Froula.
+\newblock {3D} simulations of inertial confinement fusion implosions part 2: systematic flow anomalies and impact of low modes on performances in {OMEGA} experiments.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 65\penalty0 (1):\penalty0 014005, January 2023{\natexlab{b}}.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/1361-6587/aca78d}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/1361-6587/aca78d}.
+
+\bibitem[Mannion et~al.(2021)Mannion, Igumenshchev, Anderson, Betti, Campbell, Cao, Forrest, Johnson, Glebov, Goncharov, Gopalaswamy, Ivancic, Jacobs-Perkins, Kalb, Knauer, Kwiatkowski, Lees, Marshall, Michalko, Mohamed, Patel, Rinderknecht, Shah, Stoeckl, Theobald, Woo, and Regan]{mannion_mitigation_2021}
+O.~M. Mannion, I.~V. Igumenshchev, K.~S. Anderson, R.~Betti, E.~M. Campbell, D.~Cao, C.~J. Forrest, M.~Gatu Johnson, V.~Yu. Glebov, V.~N. Goncharov, V.~Gopalaswamy, S.~T. Ivancic, D.~W. Jacobs-Perkins, A.~Kalb, J.~P. Knauer, J.~Kwiatkowski, A.~Lees, F.~J. Marshall, M.~Michalko, Z.~L. Mohamed, D.~Patel, H.~G. Rinderknecht, R.~C. Shah, C.~Stoeckl, W.~Theobald, K.~M. Woo, and S.~P. Regan.
+\newblock Mitigation of mode-one asymmetry in laser-direct-drive inertial confinement fusion implosions.
+\newblock \emph{Physics of Plasmas}, 28\penalty0 (4):\penalty0 042701, April 2021.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0041554}.
+\newblock URL \url{https://pubs.aip.org/pop/article/28/4/042701/263531/Mitigation-of-mode-one-asymmetry-in-laser-direct}.
+
+\bibitem[McHardy(2018)]{mchardy_introduction_2018}
+James McHardy.
+\newblock An introduction to the theory and use of {SESAME} equations of state.
+\newblock Technical Report LA--14503, 1487368, December 2018.
+\newblock URL \url{https://www.osti.gov/servlets/purl/1487368/}.
+
+\bibitem[Crilly et~al.(2023)Crilly, Niasse, Fraser, Chapman, McLean, Rose, and Chittenden]{crilly_spk_2023}
+A.J. Crilly, N.P.L. Niasse, A.R. Fraser, D.A. Chapman, K.W. McLean, S.J. Rose, and J.P. Chittenden.
+\newblock {SpK}: {A} fast atomic and microphysics code for the high-energy-density regime.
+\newblock \emph{High Energy Density Physics}, 48:\penalty0 101053, September 2023.
+\newblock ISSN 15741818.
+\newblock \doi{10.1016/j.hedp.2023.101053}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S1574181823000198}.
+
+\bibitem[Spitzer and Härm(1953)]{spitzer_transport_1953}
+Lyman Spitzer and Richard Härm.
+\newblock Transport {Phenomena} in a {Completely} {Ionized} {Gas}.
+\newblock \emph{Physical Review}, 89\penalty0 (5):\penalty0 977--981, March 1953.
+\newblock ISSN 0031-899X.
+\newblock \doi{10.1103/PhysRev.89.977}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.89.977}.
+
+\bibitem[Zhou and Betti(2007)]{zhou_hydrodynamic_2007}
+C.~D. Zhou and R.~Betti.
+\newblock Hydrodynamic relations for direct-drive fast-ignition and conventional inertial confinement fusion implosions.
+\newblock \emph{Physics of Plasmas}, 14\penalty0 (7):\penalty0 072703, July 2007.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.2746812}.
+\newblock URL \url{https://pubs.aip.org/pop/article/14/7/072703/985533/Hydrodynamic-relations-for-direct-drive-fast}.
+
+\bibitem[Trickey et~al.(2024)Trickey, Goncharov, Betti, Campbell, Collins, and Follett]{trickey_physics_2024}
+W.~Trickey, V.~N. Goncharov, R.~Betti, E.~M. Campbell, T.~J.~B. Collins, and R.~K. Follett.
+\newblock The physics of gain relevant to inertial fusion energy target designs.
+\newblock \emph{Physics of Plasmas}, 31\penalty0 (1):\penalty0 012702, January 2024.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0167405}.
+\newblock URL \url{https://pubs.aip.org/pop/article/31/1/012702/2932657/The-physics-of-gain-relevant-to-inertial-fusion}.
+
+\bibitem[Boehly et~al.(1995)Boehly, Craxton, Hinterman, Kelly, Kessler, Kumpan, Letzring, McCrory, Morse, Seka, Skupsky, Soures, and Verdon]{boehly_upgrade_1995}
+T.~R. Boehly, R.~S. Craxton, T.~H. Hinterman, J.~H. Kelly, T.~J. Kessler, S.~A. Kumpan, S.~A. Letzring, R.~L. McCrory, S.~F.~B. Morse, W.~Seka, S.~Skupsky, J.~M. Soures, and C.~P. Verdon.
+\newblock The upgrade to the {OMEGA} laser system.
+\newblock \emph{Review of Scientific Instruments}, 66\penalty0 (1):\penalty0 508--510, January 1995.
+\newblock ISSN 0034-6748, 1089-7623.
+\newblock \doi{10.1063/1.1146333}.
+\newblock URL \url{https://pubs.aip.org/rsi/article/66/1/508/455144/The-upgrade-to-the-OMEGA-laser-systemPlasma}.
+
+\bibitem[Simon(1989)]{simon_lle_1989}
+A.~Simon.
+\newblock {LLE} {Review} {Quarterly} {Report} ({April}-{June} 1989). {Volume} 39.
+\newblock Technical Report DOE/DP/40200--95, 1191446, June 1989.
+\newblock URL \url{http://www.osti.gov/servlets/purl/1191446/}.
+
+\bibitem[Scott et~al.(2022)Scott, Barlow, Trickey, Ruocco, Glize, Antonelli, Khan, and Woolsey]{scott_shock-augmented_2022}
+R. H. H. Scott, D.~Barlow, W.~Trickey, A.~Ruocco, K.~Glize, L.~Antonelli, M.~Khan, and N. C. Woolsey.
+\newblock Shock-{Augmented} {Ignition} {Approach} to {Laser} {Inertial} {Fusion}.
+\newblock \emph{Physical Review Letters}, 129\penalty0 (19):\penalty0 195001, November 2022.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.129.195001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.129.195001}.
+
+\bibitem[Colaïtis et~al.(2023{\natexlab{c}})Colaïtis, Follett, Dorrer, Seaton, Viala, Igumenshchev, Turnbull, Goncharov, and Froula]{colaitis_exploration_2023}
+A.~Colaïtis, R.~K. Follett, C.~Dorrer, A.~G. Seaton, D.~Viala, I.~Igumenshchev, D.~Turnbull, V.~Goncharov, and D.~H. Froula.
+\newblock Exploration of cross-beam energy transfer mitigation constraints for designing an ignition-scale direct-drive inertial confinement fusion driver.
+\newblock \emph{Physics of Plasmas}, 30\penalty0 (8):\penalty0 082701, August 2023{\natexlab{c}}.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0150813}.
+\newblock URL \url{https://pubs.aip.org/pop/article/30/8/082701/2906541/Exploration-of-cross-beam-energy-transfer}.
+
+\bibitem[Anderson et~al.(2024)Anderson, Marozas, Collins, Forrest, Goncharov, and Cao]{anderson_enhanced_2024}
+K.~S. Anderson, J.~A. Marozas, T.~J.~B. Collins, C.~J. Forrest, V.~N. Goncharov, and D.~Cao.
+\newblock Enhanced sensitivity to target offset when using cross-beam energy transfer mitigation techniques in direct-drive inertial confinement fusion implosions.
+\newblock \emph{Physics of Plasmas}, 31\penalty0 (3):\penalty0 032704, March 2024.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0191277}.
+\newblock URL \url{https://pubs.aip.org/pop/article/31/3/032704/3278248/Enhanced-sensitivity-to-target-offset-when-using}.
+
+\bibitem[Bates et~al.(2018)Bates, Myatt, Shaw, Follett, Weaver, Lehmberg, and Obenschain]{bates_mitigation_2018}
+J.~W. Bates, J.~F. Myatt, J.~G. Shaw, R.~K. Follett, J.~L. Weaver, R.~H. Lehmberg, and S.~P. Obenschain.
+\newblock Mitigation of cross-beam energy transfer in inertial-confinement-fusion plasmas with enhanced laser bandwidth.
+\newblock \emph{Physical Review E}, 97\penalty0 (6):\penalty0 061202, June 2018.
+\newblock ISSN 2470-0045, 2470-0053.
+\newblock \doi{10.1103/PhysRevE.97.061202}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.97.061202}.
+
+\bibitem[Bates et~al.(2023)Bates, Follett, Shaw, Obenschain, Myatt, Weaver, Wolford, Kehne, Myers, and Kessler]{bates_suppressing_2023}
+J.~W. Bates, R.~K. Follett, J.~G. Shaw, S.~P. Obenschain, J.~F. Myatt, J.~L. Weaver, M.~F. Wolford, D.~M. Kehne, M.~C. Myers, and T.~J. Kessler.
+\newblock Suppressing parametric instabilities in direct-drive inertial-confinement-fusion plasmas using broadband laser light.
+\newblock \emph{Physics of Plasmas}, 30\penalty0 (5):\penalty0 052703, May 2023.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0150865}.
+\newblock URL \url{https://pubs.aip.org/pop/article/30/5/052703/2890436/Suppressing-parametric-instabilities-in-direct}.
+
+\bibitem[Follett et~al.(2023)Follett, Colaïtis, Seaton, Wen, Turnbull, Froula, and Palastro]{follett_ray-based_2023}
+R.~K. Follett, A.~Colaïtis, A.~G. Seaton, H.~Wen, D.~Turnbull, D.~H. Froula, and J.~P. Palastro.
+\newblock Ray-based cross-beam energy transfer modeling for broadband lasers.
+\newblock \emph{Physics of Plasmas}, 30\penalty0 (4):\penalty0 042102, April 2023.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0137420}.
+\newblock URL \url{https://pubs.aip.org/pop/article/30/4/042102/2882936/Ray-based-cross-beam-energy-transfer-modeling-for}.
+
+\bibitem[Kehne et~al.(2013)Kehne, Karasik, Aglitsky, Smyth, Terrell, Weaver, Chan, Lehmberg, and Obenschain]{kehne_implementation_2013}
+D.~M. Kehne, M.~Karasik, Y.~Aglitsky, Z.~Smyth, S.~Terrell, J.~L. Weaver, Y.~Chan, R.~H. Lehmberg, and S.~P. Obenschain.
+\newblock Implementation of focal zooming on the {Nike} {KrF} laser.
+\newblock \emph{Review of Scientific Instruments}, 84\penalty0 (1):\penalty0 013509, January 2013.
+\newblock ISSN 0034-6748, 1089-7623.
+\newblock \doi{10.1063/1.4789313}.
+\newblock URL \url{https://pubs.aip.org/rsi/article/84/1/013509/354878/Implementation-of-focal-zooming-on-the-Nike-KrF}.
+
+\bibitem[Igumenshchev et~al.(2013)Igumenshchev, Froula, Edgell, Goncharov, Kessler, Marshall, McCrory, McKenty, Meyerhofer, Michel, Sangster, Seka, and Skupsky]{igumenshchev_laser-beam_2013}
+I.~V. Igumenshchev, D.~H. Froula, D.~H. Edgell, V.~N. Goncharov, T.~J. Kessler, F.~J. Marshall, R.~L. McCrory, P.~W. McKenty, D.~D. Meyerhofer, D.~T. Michel, T.~C. Sangster, W.~Seka, and S.~Skupsky.
+\newblock Laser-{Beam} {Zooming} to {Mitigate} {Crossed}-{Beam} {Energy} {Losses} in {Direct}-{Drive} {Implosions}.
+\newblock \emph{Physical Review Letters}, 110\penalty0 (14):\penalty0 145001, April 2013.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.110.145001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.110.145001}.
+
+\bibitem[Lees et~al.(2021)Lees, Betti, Knauer, Gopalaswamy, Patel, Woo, Anderson, Campbell, Cao, Carroll-Nellenback, Epstein, Forrest, Goncharov, Harding, Hu, Igumenshchev, Janezic, Mannion, Radha, Regan, Shvydky, Shah, Shmayda, Stoeckl, Theobald, and Thomas]{lees_experimentally_2021}
+A.~Lees, R.~Betti, J. P. Knauer, V.~Gopalaswamy, D.~Patel, K. M. Woo, K. S. Anderson, E. M. Campbell, D.~Cao, J.~Carroll-Nellenback, R.~Epstein, C.~Forrest, V. N. Goncharov, D. R. Harding, S. X. Hu, I. V. Igumenshchev, R. T. Janezic, O. M. Mannion, P. B. Radha, S. P. Regan, A.~Shvydky, R. C. Shah, W. T. Shmayda, C.~Stoeckl, W.~Theobald, and C.~Thomas.
+\newblock Experimentally {Inferred} {Fusion} {Yield} {Dependencies} of {OMEGA} {Inertial} {Confinement} {Fusion} {Implosions}.
+\newblock \emph{Physical Review Letters}, 127\penalty0 (10):\penalty0 105001, August 2021.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.127.105001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.127.105001}.
+
+\bibitem[Gopalaswamy et~al.(2019)Gopalaswamy, Betti, Knauer, Luciani, Patel, Woo, Bose, Igumenshchev, Campbell, Anderson, Bauer, Bonino, Cao, Christopherson, Collins, Collins, Davies, Delettrez, Edgell, Epstein, Forrest, Froula, Glebov, Goncharov, Harding, Hu, Jacobs-Perkins, Janezic, Kelly, Mannion, Maximov, Marshall, Michel, Miller, Morse, Palastro, Peebles, Radha, Regan, Sampat, Sangster, Sefkow, Seka, Shah, Shmyada, Shvydky, Stoeckl, Solodov, Theobald, Zuegel, Johnson, Petrasso, Li, and Frenje]{gopalaswamy_tripled_2019}
+V.~Gopalaswamy, R.~Betti, J.~P. Knauer, N.~Luciani, D.~Patel, K.~M. Woo, A.~Bose, I.~V. Igumenshchev, E.~M. Campbell, K.~S. Anderson, K.~A. Bauer, M.~J. Bonino, D.~Cao, A.~R. Christopherson, G.~W. Collins, T.~J.~B. Collins, J.~R. Davies, J.~A. Delettrez, D.~H. Edgell, R.~Epstein, C.~J. Forrest, D.~H. Froula, V.~Y. Glebov, V.~N. Goncharov, D.~R. Harding, S.~X. Hu, D.~W. Jacobs-Perkins, R.~T. Janezic, J.~H. Kelly, O.~M. Mannion, A.~Maximov, F.~J. Marshall, D.~T. Michel, S.~Miller, S.~F.~B. Morse, J.~Palastro, J.~Peebles, P.~B. Radha, S.~P. Regan, S.~Sampat, T.~C. Sangster, A.~B. Sefkow, W.~Seka, R.~C. Shah, W.~T. Shmyada, A.~Shvydky, C.~Stoeckl, A.~A. Solodov, W.~Theobald, J.~D. Zuegel, M.~Gatu Johnson, R.~D. Petrasso, C.~K. Li, and J.~A. Frenje.
+\newblock Tripled yield in direct-drive laser fusion through statistical modelling.
+\newblock \emph{Nature}, 565\penalty0 (7741):\penalty0 581--586, January 2019.
+\newblock ISSN 0028-0836, 1476-4687.
+\newblock \doi{10.1038/s41586-019-0877-0}.
+\newblock URL \url{https://www.nature.com/articles/s41586-019-0877-0}.
+
+\bibitem[Gopalaswamy et~al.(2021)Gopalaswamy, Betti, Knauer, Lees, Patel, Christopherson, Igumenshchev, Cao, Anderson, Shvydky, Edgell, Mannion, Thomas, Theobald, Stoeckl, Regan, Goncharov, Shah, and Campbell]{gopalaswamy_using_2021}
+V.~Gopalaswamy, R.~Betti, J.~P. Knauer, A.~Lees, D.~Patel, A.~R. Christopherson, I.~V. Igumenshchev, D.~Cao, K.~S. Anderson, A.~Shvydky, D.~H. Edgell, O.~M. Mannion, C.~Thomas, W.~Theobald, C.~Stoeckl, S.~P. Regan, V.~N. Goncharov, R.~Shah, and E.~M. Campbell.
+\newblock Using statistical modeling to predict and understand fusion experiments.
+\newblock \emph{Physics of Plasmas}, 28\penalty0 (12):\penalty0 122705, December 2021.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0056662}.
+\newblock URL \url{https://pubs.aip.org/pop/article/28/12/122705/108236/Using-statistical-modeling-to-predict-and}.
+
+\bibitem[Ejaz et~al.(2024)Ejaz, Gopalaswamy, Lees, Kanan, Cao, and Betti]{ejaz_deep_2024}
+R.~Ejaz, V.~Gopalaswamy, A.~Lees, C.~Kanan, D.~Cao, and R.~Betti.
+\newblock Deep learning-based predictive models for laser direct drive at the {Omega} {Laser} {Facility}.
+\newblock \emph{Physics of Plasmas}, 31\penalty0 (5):\penalty0 052703, May 2024.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0195675}.
+\newblock URL \url{https://pubs.aip.org/pop/article/31/5/052703/3293889/Deep-learning-based-predictive-models-for-laser}.
+
+\bibitem[Thomas et~al.(2020)Thomas, Cao, Theobald, Betti, Anderson, Bauer, Campbell, Christopherson, Collins, Craxton, Edgell, Epstein, Forrest, Glebov, Gopalaswamy, Igumenshchev, Ivancic, Jacobs-Perkins, Janezic, Joshi, Knauer, Kwiatkowski, Lees, Mannion, Marshall, and {LLE Team}]{thomas_quantifying_2020}
+C.~A. Thomas, D.~Cao, W.~Theobald, R.~Betti, K.~A. Anderson, K.~A. Bauer, E.~M. Campbell, A.~R. Christopherson, T.~J.~B. Collins, R.~S. Craxton, D.~H. Edgell, R.~Epstein, C.~J. Forrest, V.~Yu. Glebov, V.~Gopalaswamy, I.~V. Igumenshchev, S.~T. Ivancic, D.~W. Jacobs-Perkins, R.~T. Janezic, T.~Joshi, J.~P. Knauer, J.~Kwiatkowski, A.~Lees, O.~M. Mannion, F.~J. Marshall, and {LLE Team}.
+\newblock Quantifying the {Effects} of {Scale} and {Illumination} {Geometry} in {Laser} {Direct} {Drive}.
+\newblock 2020:\penalty0 BO09.014, January 2020.
+\newblock URL \url{https://ui.adsabs.harvard.edu/abs/2020APS..DPPB09014T}.
+\newblock Conference Name: APS Division of Plasma Physics Meeting Abstracts ADS Bibcode: 2020APS..DPPB09014T.
+
+\bibitem[Hu et~al.(2012)Hu, Fiksel, Goncharov, Skupsky, Meyerhofer, and Smalyuk]{hu_mitigating_2012}
+S.~X. Hu, G.~Fiksel, V.~N. Goncharov, S.~Skupsky, D.~D. Meyerhofer, and V.~A. Smalyuk.
+\newblock Mitigating {Laser} {Imprint} in {Direct}-{Drive} {Inertial} {Confinement} {Fusion} {Implosions} with {High}- {Z} {Dopants}.
+\newblock \emph{Physical Review Letters}, 108\penalty0 (19):\penalty0 195003, May 2012.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.108.195003}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.108.195003}.
+
+\bibitem[Karasik et~al.(2015)Karasik, Weaver, Aglitskiy, Oh, and Obenschain]{karasik_suppression_2015}
+Max Karasik, J. L. Weaver, Y.~Aglitskiy, J.~Oh, and S. P. Obenschain.
+\newblock Suppression of {Laser} {Nonuniformity} {Imprinting} {Using} a {Thin} {High}- {Z} {Coating}.
+\newblock \emph{Physical Review Letters}, 114\penalty0 (8):\penalty0 085001, February 2015.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.114.085001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.114.085001}.
+
+\bibitem[Hu et~al.(2018)Hu, Theobald, Radha, Peebles, Regan, Nikroo, Bonino, Harding, Goncharov, Petta, Sangster, and Campbell]{hu_mitigating_2018}
+S.~X. Hu, W.~Theobald, P.~B. Radha, J.~L. Peebles, S.~P. Regan, A.~Nikroo, M.~J. Bonino, D.~R. Harding, V.~N. Goncharov, N.~Petta, T.~C. Sangster, and E.~M. Campbell.
+\newblock Mitigating laser-imprint effects in direct-drive inertial confinement fusion implosions with an above-critical-density foam layer.
+\newblock \emph{Physics of Plasmas}, 25\penalty0 (8):\penalty0 082710, August 2018.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5044609}.
+\newblock URL \url{https://pubs.aip.org/pop/article/25/8/082710/1058211/Mitigating-laser-imprint-effects-in-direct-drive}.
+
+\bibitem[Dittrich et~al.(1994)Dittrich, Hammel, Keane, McEachern, Turner, Haan, and Suter]{dittrich_diagnosis_1994}
+T.~R. Dittrich, B.~A. Hammel, C.~J. Keane, R.~McEachern, R.~E. Turner, S.~W. Haan, and L.~J. Suter.
+\newblock Diagnosis of {Pusher}-{Fuel} {Mix} in {Indirectly} {Driven} {Nova} {Implosions}.
+\newblock \emph{Physical Review Letters}, 73\penalty0 (17):\penalty0 2324--2327, October 1994.
+\newblock ISSN 0031-9007.
+\newblock \doi{10.1103/PhysRevLett.73.2324}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.73.2324}.
+
+\bibitem[Miller and Goncharov(2022)]{miller_instability_2022}
+S.~C. Miller and V.~N. Goncharov.
+\newblock Instability seeding mechanisms due to internal defects in inertial confinement fusion targets.
+\newblock \emph{Physics of Plasmas}, 29\penalty0 (8):\penalty0 082701, August 2022.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0091949}.
+\newblock URL \url{https://pubs.aip.org/pop/article/29/8/082701/2844945/Instability-seeding-mechanisms-due-to-internal}.
+
+\bibitem[MacPhee et~al.(2015)MacPhee, Peterson, Casey, Clark, Haan, Jones, Landen, Milovich, Robey, and Smalyuk]{macphee_stabilization_2015}
+A.~G. MacPhee, J.~L. Peterson, D.~T. Casey, D.~S. Clark, S.~W. Haan, O.~S. Jones, O.~L. Landen, J.~L. Milovich, H.~F. Robey, and V.~A. Smalyuk.
+\newblock Stabilization of high-compression, indirect-drive inertial confinement fusion implosions using a 4-shock adiabat-shaped drive.
+\newblock \emph{Physics of Plasmas}, 22\penalty0 (8):\penalty0 080702, August 2015.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4928909}.
+\newblock URL \url{https://pubs.aip.org/pop/article/22/8/080702/109302/Stabilization-of-high-compression-indirect-drive}.
+
+\bibitem[Smalyuk et~al.(2017)Smalyuk, Robey, Casey, Clark, Döppner, Haan, Hammel, MacPhee, Martinez, Milovich, Peterson, Pickworth, Pino, Raman, Tipton, Weber, Baker, Bachmann, Hopkins, Bond, Caggiano, Callahan, Celliers, Cerjan, Dixit, Edwards, Felker, Field, Fittinghoff, Gharibyan, Grim, Hamza, Hatarik, Hohenberger, Hsing, Hurricane, Jancaitis, Jones, Khan, Kroll, Lafortune, Landen, Ma, MacGowan, Masse, Moore, Nagel, Nikroo, Pak, Patel, Remington, Sayre, Spears, Stadermann, Tommasini, Widmayer, Yeamans, Crippen, Farrell, Giraldez, Rice, Wilde, Volegov, and Johnson]{smalyuk_mix_2017}
+V.A. Smalyuk, H.F. Robey, D.T. Casey, D.S. Clark, T.~Döppner, S.W. Haan, B.A. Hammel, A.G. MacPhee, D.~Martinez, J.L. Milovich, J.L. Peterson, L.~Pickworth, J.E. Pino, K.~Raman, R.~Tipton, C.R. Weber, K.L. Baker, B.~Bachmann, L.F.~Berzak Hopkins, E.~Bond, J.A. Caggiano, D.A. Callahan, P.M. Celliers, C.~Cerjan, S.N. Dixit, M.J. Edwards, S.~Felker, J.E. Field, D.N. Fittinghoff, N.~Gharibyan, G.P. Grim, A.V. Hamza, R.~Hatarik, M.~Hohenberger, W.W. Hsing, O.A. Hurricane, K.S. Jancaitis, O.S. Jones, S.~Khan, J.J. Kroll, K.N. Lafortune, O.L. Landen, T.~Ma, B.J. MacGowan, L.~Masse, A.S. Moore, S.R. Nagel, A.~Nikroo, A.~Pak, P.K. Patel, B.A. Remington, D.B. Sayre, B.K. Spears, M.~Stadermann, R.~Tommasini, C.C. Widmayer, C.B. Yeamans, J.~Crippen, M.~Farrell, E.~Giraldez, N.~Rice, C.H. Wilde, P.L. Volegov, and M.~Gatu Johnson.
+\newblock Mix and hydrodynamic instabilities on {NIF}.
+\newblock \emph{Journal of Instrumentation}, 12\penalty0 (06):\penalty0 C06001--C06001, June 2017.
+\newblock ISSN 1748-0221.
+\newblock \doi{10.1088/1748-0221/12/06/C06001}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/1748-0221/12/06/C06001}.
+
+\bibitem[Haines et~al.(2019)Haines, Olson, Sweet, Yi, Zylstra, Bradley, Elsner, Huang, Jimenez, Kline, Kong, Kyrala, Leeper, Paguio, Pajoom, Peterson, Ratledge, and Rice]{haines_robustness_2019}
+Brian~M. Haines, R.~E. Olson, W.~Sweet, S.~A. Yi, A.~B. Zylstra, P.~A. Bradley, F.~Elsner, H.~Huang, R.~Jimenez, J.~L. Kline, C.~Kong, G.~A. Kyrala, R.~J. Leeper, R.~Paguio, S.~Pajoom, R.~R. Peterson, M.~Ratledge, and N.~Rice.
+\newblock Robustness to hydrodynamic instabilities in indirectly driven layered capsule implosions.
+\newblock \emph{Physics of Plasmas}, 26\penalty0 (1):\penalty0 012707, January 2019.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5080262}.
+\newblock URL \url{https://pubs.aip.org/pop/article/26/1/012707/367410/Robustness-to-hydrodynamic-instabilities-in}.
+
+\bibitem[Regan et~al.(2019)Regan, Goncharov, Sangster, Campbell, Betti, Bates, Bauer, Bernat, Bhandarkar, Boehly, Bonino, Bose, Cao, Carlson, Chapman, Chapman, Collins, Collins, Craxton, Delettrez, Edgell, Epstein, Farrell, Forrest, Follett, Frenje, Froula, Gatu~Johnson, Gibson, Gonzalez, Goyon, Glebov, Gopalaswamy, Greenwood, Harding, Hohenberger, Hu, Huang, Hund, Igumenshchev, Jacobs-Perkins, Janezic, Karasik, Kelly, Kessler, Knauer, Kosc, Luo, Loucks, Marozas, Marshall, Mauldin, McCrory, Mckenty, Michel, Michel, Moody, Myatt, Nikroo, Nilson, Obenschain, Palastro, Peebles, Petrasso, Petta, Radha, Ralph, Rosenberg, Sampat, Schmitt, Schmitt, Schoff, Seka, Shah, Rygg, Shaw, Short, Shmayda, Shoup, Shvydky, Solodov, Sorce, Stadermann, Stoeckl, Sweet, Taylor, Taylor, Theobald, Turnbull, Ulreich, Wittman, Woo, Youngblood, and Zuegel]{regan_national_2019}
+S.P. Regan, V.N. Goncharov, T.C. Sangster, E.M. Campbell, R.~Betti, J.W. Bates, K.~Bauer, T.~Bernat, S.~Bhandarkar, T.R. Boehly, M.J. Bonino, A.~Bose, D.~Cao, L.~Carlson, R.~Chapman, T.~Chapman, G.W. Collins, T.J.B. Collins, R.S. Craxton, J.A. Delettrez, D.H. Edgell, R.~Epstein, M.~Farrell, C.J. Forrest, R.K. Follett, J.A. Frenje, D.H. Froula, M.~Gatu~Johnson, C.R. Gibson, L.~Gonzalez, C.~Goyon, V.Yu Glebov, V.~Gopalaswamy, A.~Greenwood, D.R. Harding, M.~Hohenberger, S.X. Hu, H.~Huang, J.~Hund, I.V. Igumenshchev, D.W. Jacobs-Perkins, R.T. Janezic, M.~Karasik, J.H. Kelly, T.J. Kessler, J.P. Knauer, T.Z. Kosc, R.~Luo, S.J. Loucks, J.A. Marozas, F.J. Marshall, M.~Mauldin, R.L. McCrory, P.W. Mckenty, D.T. Michel, P.~Michel, J.D. Moody, J.F. Myatt, A.~Nikroo, P.M. Nilson, S.P. Obenschain, J.P. Palastro, J.~Peebles, R.D. Petrasso, N.~Petta, P.B. Radha, J.E. Ralph, M.J. Rosenberg, S.~Sampat, A.J. Schmitt, M.J. Schmitt, M.~Schoff, W.~Seka, R.~Shah, J.R. Rygg, J.G. Shaw, R.~Short, W.T. Shmayda, M.J. Shoup, A.~Shvydky, A.A. Solodov, C.~Sorce, M.~Stadermann, C.~Stoeckl, W.~Sweet, C.~Taylor, R.~Taylor, W.~Theobald, D.P. Turnbull, J.~Ulreich, M.D. Wittman, K.M. Woo, K.~Youngblood, and J.D. Zuegel.
+\newblock The {National} {Direct}-{Drive} {Inertial} {Confinement} {Fusion} {Program}.
+\newblock \emph{Nuclear Fusion}, 59\penalty0 (3):\penalty0 032007, March 2019.
+\newblock ISSN 0029-5515, 1741-4326.
+\newblock \doi{10.1088/1741-4326/aae9b5}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/1741-4326/aae9b5}.
+
+\bibitem[Woo et~al.(2020)Woo, Betti, Mannion, Forrest, Knauer, Goncharov, Radha, Patel, Gopalaswamy, and Glebov]{woo_inferring_2020}
+K.~M. Woo, R.~Betti, O.~M. Mannion, C.~J. Forrest, J.~P. Knauer, V.~N. Goncharov, P.~B. Radha, D.~Patel, V.~Gopalaswamy, and V.~Yu. Glebov.
+\newblock Inferring thermal ion temperature and residual kinetic energy from nuclear measurements in inertial confinement fusion implosions.
+\newblock \emph{Physics of Plasmas}, 27\penalty0 (6):\penalty0 062702, June 2020.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5144460}.
+\newblock URL \url{https://pubs.aip.org/pop/article/27/6/062702/1025468/Inferring-thermal-ion-temperature-and-residual}.
+
+\bibitem[Craxton et~al.(2015)Craxton, Anderson, Boehly, Goncharov, Harding, Knauer, McCrory, McKenty, Meyerhofer, Myatt, Schmitt, Sethian, Short, Skupsky, Theobald, Kruer, Tanaka, Betti, Collins, Delettrez, Hu, Marozas, Maximov, Michel, Radha, Regan, Sangster, Seka, Solodov, Soures, Stoeckl, and Zuegel]{craxton_direct-drive_2015}
+R.~S. Craxton, K.~S. Anderson, T.~R. Boehly, V.~N. Goncharov, D.~R. Harding, J.~P. Knauer, R.~L. McCrory, P.~W. McKenty, D.~D. Meyerhofer, J.~F. Myatt, A.~J. Schmitt, J.~D. Sethian, R.~W. Short, S.~Skupsky, W.~Theobald, W.~L. Kruer, K.~Tanaka, R.~Betti, T.~J.~B. Collins, J.~A. Delettrez, S.~X. Hu, J.~A. Marozas, A.~V. Maximov, D.~T. Michel, P.~B. Radha, S.~P. Regan, T.~C. Sangster, W.~Seka, A.~A. Solodov, J.~M. Soures, C.~Stoeckl, and J.~D. Zuegel.
+\newblock Direct-drive inertial confinement fusion: {A} review.
+\newblock \emph{Physics of Plasmas}, 22\penalty0 (11):\penalty0 110501, November 2015.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4934714}.
+\newblock URL \url{https://pubs.aip.org/pop/article/22/11/110501/109006/Direct-drive-inertial-confinement-fusion-A-review}.
+
+\bibitem[Goncharov et~al.(2017)Goncharov, Regan, Campbell, Sangster, Radha, Myatt, Froula, Betti, Boehly, Delettrez, Edgell, Epstein, Forrest, Yu~Glebov, Harding, Hu, Igumenshchev, Marshall, McCrory, Michel, Seka, Shvydky, Stoeckl, Theobald, and Gatu-Johnson]{goncharov_national_2017}
+V~N Goncharov, S~P Regan, E~M Campbell, T~C Sangster, P~B Radha, J~F Myatt, D~H Froula, R~Betti, T~R Boehly, J~A Delettrez, D~H Edgell, R~Epstein, C~J Forrest, V~Yu~Glebov, D~R Harding, S~X Hu, I~V Igumenshchev, F~J Marshall, R~L McCrory, D~T Michel, W~Seka, A~Shvydky, C~Stoeckl, W~Theobald, and M~Gatu-Johnson.
+\newblock National direct-drive program on {OMEGA} and the {National} {Ignition} {Facility}.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 59\penalty0 (1):\penalty0 014008, January 2017.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/0741-3335/59/1/014008}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/0741-3335/59/1/014008}.
+
+\bibitem[Pérez-Callejo et~al.(2022)Pérez-Callejo, Vlachos, Walsh, Florido, Bailly-Grandvaux, Vaisseau, Suzuki-Vidal, McGuffey, Beg, Bradford, Ospina-Bohórquez, Batani, Raffestin, Colaïtis, Tikhonchuk, Casner, Koenig, Albertazzi, Fedosejevs, Woolsey, Ehret, Debayle, Loiseau, Calisti, Ferri, Honrubia, Kingham, Mancini, Gigosos, and Santos]{perez-callejo_cylindrical_2022}
+G.~Pérez-Callejo, C.~Vlachos, C.~A. Walsh, R.~Florido, M.~Bailly-Grandvaux, X.~Vaisseau, F.~Suzuki-Vidal, C.~McGuffey, F.~N. Beg, P.~Bradford, V.~Ospina-Bohórquez, D.~Batani, D.~Raffestin, A.~Colaïtis, V.~Tikhonchuk, A.~Casner, M.~Koenig, B.~Albertazzi, R.~Fedosejevs, N.~Woolsey, M.~Ehret, A.~Debayle, P.~Loiseau, A.~Calisti, S.~Ferri, J.~Honrubia, R.~Kingham, R.~C. Mancini, M.~A. Gigosos, and J.~J. Santos.
+\newblock Cylindrical implosion platform for the study of highly magnetized plasmas at {Laser} {MegaJoule}.
+\newblock \emph{Physical Review E}, 106\penalty0 (3):\penalty0 035206, September 2022.
+\newblock ISSN 2470-0045, 2470-0053.
+\newblock \doi{10.1103/PhysRevE.106.035206}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.106.035206}.
+
+\bibitem[Tubbs et~al.(1999)Tubbs, Barnes, Beck, Hoffman, Oertel, Watt, Boehly, Bradley, and Knauer]{tubbs_direct-drive_1999}
+D.L. Tubbs, C.W. Barnes, J.B. Beck, N.M. Hoffman, J.A. Oertel, R.G. Watt, T.~Boehly, D.~Bradley, and J.~Knauer.
+\newblock Direct-drive cylindrical implosion experiments: {Simulations} and data.
+\newblock \emph{Laser and Particle Beams}, 17\penalty0 (3):\penalty0 437--449, July 1999.
+\newblock ISSN 0263-0346, 1469-803X.
+\newblock \doi{10.1017/S0263034699173117}.
+\newblock URL \url{https://www.cambridge.org/core/product/identifier/S0263034699173117/type/journal_article}.
+
+\bibitem[Peaceman and Rachford(1955)]{peaceman_numerical_1955}
+D.~W. Peaceman and H.~H. Rachford, Jr.
+\newblock The {Numerical} {Solution} of {Parabolic} and {Elliptic} {Differential} {Equations}.
+\newblock \emph{Journal of the Society for Industrial and Applied Mathematics}, 3\penalty0 (1):\penalty0 28--41, March 1955.
+\newblock ISSN 0368-4245, 2168-3484.
+\newblock \doi{10.1137/0103003}.
+\newblock URL \url{http://epubs.siam.org/doi/10.1137/0103003}.
+
+\bibitem[Bose et~al.(2017)Bose, Betti, Shvarts, and Woo]{bose_physics_2017}
+A.~Bose, R.~Betti, D.~Shvarts, and K.~M. Woo.
+\newblock The physics of long- and intermediate-wavelength asymmetries of the hot spot: {Compression} hydrodynamics and energetics.
+\newblock \emph{Physics of Plasmas}, 24\penalty0 (10):\penalty0 102704, October 2017.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4995250}.
+\newblock URL \url{https://pubs.aip.org/pop/article/24/10/102704/795291/The-physics-of-long-and-intermediate-wavelength}.
+
+\bibitem[Bose et~al.(2018)Bose, Betti, Mangino, Woo, Patel, Christopherson, Gopalaswamy, Mannion, Regan, Goncharov, Edgell, Forrest, Frenje, Gatu~Johnson, Yu~Glebov, Igumenshchev, Knauer, Marshall, Radha, Shah, Stoeckl, Theobald, Sangster, Shvarts, and Campbell]{bose_analysis_2018}
+A.~Bose, R.~Betti, D.~Mangino, K.~M. Woo, D.~Patel, A.~R. Christopherson, V.~Gopalaswamy, O.~M. Mannion, S.~P. Regan, V.~N. Goncharov, D.~H. Edgell, C.~J. Forrest, J.~A. Frenje, M.~Gatu~Johnson, V.~Yu~Glebov, I.~V. Igumenshchev, J.~P. Knauer, F.~J. Marshall, P.~B. Radha, R.~Shah, C.~Stoeckl, W.~Theobald, T.~C. Sangster, D.~Shvarts, and E.~M. Campbell.
+\newblock Analysis of trends in experimental observables: {Reconstruction} of the implosion dynamics and implications for fusion yield extrapolation for direct-drive cryogenic targets on {OMEGA}.
+\newblock \emph{Physics of Plasmas}, 25\penalty0 (6):\penalty0 062701, June 2018.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5026780}.
+\newblock URL \url{https://pubs.aip.org/pop/article/25/6/062701/320064/Analysis-of-trends-in-experimental-observables}.
+
+\bibitem[Schurtz et~al.(2000)Schurtz, Nicolaï, and Busquet]{schurtz_nonlocal_2000}
+G.~P. Schurtz, Ph.~D. Nicolaï, and M.~Busquet.
+\newblock A nonlocal electron conduction model for multidimensional radiation hydrodynamics codes.
+\newblock \emph{Physics of Plasmas}, 7\penalty0 (10):\penalty0 4238--4249, October 2000.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.1289512}.
+\newblock URL \url{https://pubs.aip.org/pop/article/7/10/4238/264657/A-nonlocal-electron-conduction-model-for}.
+
+\bibitem[Nicolaï et~al.(2006)Nicolaï, Feugeas, and Schurtz]{nicolai_practical_2006}
+Ph.~D. Nicolaï, J.-L.~A. Feugeas, and G.~P. Schurtz.
+\newblock A practical nonlocal model for heat transport in magnetized laser plasmas.
+\newblock \emph{Physics of Plasmas}, 13\penalty0 (3):\penalty0 032701, March 2006.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.2179392}.
+\newblock URL \url{https://pubs.aip.org/pop/article/13/3/032701/316589/A-practical-nonlocal-model-for-heat-transport-in}.
+
+\bibitem[Cao et~al.(2015)Cao, Moses, and Delettrez]{cao_improved_2015}
+Duc Cao, Gregory Moses, and Jacques Delettrez.
+\newblock Improved non-local electron thermal transport model for two-dimensional radiation hydrodynamics simulations.
+\newblock \emph{Physics of Plasmas}, 22\penalty0 (8):\penalty0 082308, August 2015.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4928445}.
+\newblock URL \url{https://pubs.aip.org/pop/article/22/8/082308/109167/Improved-non-local-electron-thermal-transport}.
+
+\bibitem[Bell and Sherlock(2024)]{bell_fast_2024}
+Anthony~R Bell and Mark Sherlock.
+\newblock The \textit{fast} {VFP} code for solution of the {Vlasov}-{Fokker}-{Planck} equation.
+\newblock \emph{Plasma Physics and Controlled Fusion}, January 2024.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/1361-6587/ad2278}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/1361-6587/ad2278}.
+
+\bibitem[Patel et~al.(2023)Patel, Knauer, Cao, Betti, Nora, Shvydky, Gopalaswamy, Lees, Sampat, Donaldson, Regan, Stoeckl, Forrest, Glebov, Harding, Bonino, Janezic, Wasilewski, Fella, Shuldberg, Murray, Guzman, and Serrato]{patel_effects_2023}
+D.~Patel, J. P. Knauer, D.~Cao, R.~Betti, R.~Nora, A.~Shvydky, V.~Gopalaswamy, A.~Lees, S.~Sampat, W. R. Donaldson, S. P. Regan, C.~Stoeckl, C. J. Forrest, V. Yu. Glebov, D. R. Harding, M. J. Bonino, R. T. Janezic, D.~Wasilewski, C.~Fella, C.~Shuldberg, J.~Murray, D.~Guzman, and B.~Serrato.
+\newblock Effects of {Laser} {Bandwidth} in {Direct}-{Drive} {High}-{Performance} {DT}-{Layered} {Implosions} on the {OMEGA} {Laser}.
+\newblock \emph{Physical Review Letters}, 131\penalty0 (10):\penalty0 105101, September 2023.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.131.105101}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.131.105101}.
+
+\bibitem[Dittrich et~al.(2014)Dittrich, Hurricane, Callahan, Dewald, Döppner, Hinkel, Berzak~Hopkins, Le~Pape, Ma, Milovich, Moreno, Patel, Park, Remington, Salmonson, and Kline]{dittrich_design_2014}
+T. R. Dittrich, O. A. Hurricane, D. A. Callahan, E. L. Dewald, T.~Döppner, D. E. Hinkel, L. F. Berzak~Hopkins, S.~Le~Pape, T.~Ma, J. L. Milovich, J. C. Moreno, P. K. Patel, H.-S. Park, B. A. Remington, J. D. Salmonson, and J. L. Kline.
+\newblock Design of a {High}-{Foot} {High}-{Adiabat} {ICF} {Capsule} for the {National} {Ignition} {Facility}.
+\newblock \emph{Physical Review Letters}, 112\penalty0 (5):\penalty0 055002, February 2014.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.112.055002}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.112.055002}.
+
+\bibitem[Robey et~al.(2016)Robey, Smalyuk, Milovich, Döppner, Casey, Baker, Peterson, Bachmann, Berzak~Hopkins, Bond, Caggiano, Callahan, Celliers, Cerjan, Clark, Dixit, Edwards, Gharibyan, Haan, Hammel, Hamza, Hatarik, Hurricane, Jancaitis, Jones, Kerbel, Kroll, Lafortune, Landen, Ma, Marinak, MacGowan, MacPhee, Pak, Patel, Patel, Perkins, Sayre, Sepke, Spears, Tommasini, Weber, Widmayer, Yeamans, Giraldez, Hoover, Nikroo, Hohenberger, and Gatu~Johnson]{robey_performance_2016}
+H.~F. Robey, V.~A. Smalyuk, J.~L. Milovich, T.~Döppner, D.~T. Casey, K.~L. Baker, J.~L. Peterson, B.~Bachmann, L.~F. Berzak~Hopkins, E.~Bond, J.~A. Caggiano, D.~A. Callahan, P.~M. Celliers, C.~Cerjan, D.~S. Clark, S.~N. Dixit, M.~J. Edwards, N.~Gharibyan, S.~W. Haan, B.~A. Hammel, A.~V. Hamza, R.~Hatarik, O.~A. Hurricane, K.~S. Jancaitis, O.~S. Jones, G.~D. Kerbel, J.~J. Kroll, K.~N. Lafortune, O.~L. Landen, T.~Ma, M.~M. Marinak, B.~J. MacGowan, A.~G. MacPhee, A.~Pak, M.~Patel, P.~K. Patel, L.~J. Perkins, D.~B. Sayre, S.~M. Sepke, B.~K. Spears, R.~Tommasini, C.~R. Weber, C.~C. Widmayer, C.~Yeamans, E.~Giraldez, D.~Hoover, A.~Nikroo, M.~Hohenberger, and M.~Gatu~Johnson.
+\newblock Performance of indirectly driven capsule implosions on the {National} {Ignition} {Facility} using adiabat-shaping.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (5):\penalty0 056303, May 2016.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4944821}.
+\newblock URL \url{https://pubs.aip.org/pop/article/23/5/056303/966084/Performance-of-indirectly-driven-capsule}.
+
+\bibitem[Hu et~al.(2019)Hu, Epstein, Theobald, Xu, Huang, Goncharov, Regan, McKenty, Betti, Campbell, and Montgomery]{hu_direct-drive_2019}
+S.~X. Hu, R.~Epstein, W.~Theobald, H.~Xu, H.~Huang, V.~N. Goncharov, S.~P. Regan, P.~W. McKenty, R.~Betti, E.~M. Campbell, and D.~S. Montgomery.
+\newblock Direct-drive double-shell implosion: {A} platform for burning-plasma physics studies.
+\newblock \emph{Physical Review E}, 100\penalty0 (6):\penalty0 063204, December 2019.
+\newblock ISSN 2470-0045, 2470-0053.
+\newblock \doi{10.1103/PhysRevE.100.063204}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.100.063204}.
+
+\bibitem[Igumenshchev et~al.(2019)Igumenshchev, Velikovich, Goncharov, Betti, Campbell, Knauer, Regan, Schmitt, Shah, and Shvydky]{igumenshchev_rarefaction_2019}
+I. V. Igumenshchev, A. L. Velikovich, V. N. Goncharov, R.~Betti, E. M. Campbell, J. P. Knauer, S. P. Regan, A. J. Schmitt, R. C. Shah, and A.~Shvydky.
+\newblock Rarefaction {Flows} and {Mitigation} of {Imprint} in {Direct}-{Drive} {Implosions}.
+\newblock \emph{Physical Review Letters}, 123\penalty0 (6):\penalty0 065001, August 2019.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.123.065001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.123.065001}.
 
 \bibitem[Lindemuth and Kirkpatrick(1983)]{lindemuth_parameter_1983}
 I.R. Lindemuth and R.C. Kirkpatrick.
@@ -42,27 +1010,10 @@ G.~Fiksel, A.~Agliata, D.~Barnak, G.~Brent, P.-Y. Chang, L.~Folnsbee, G.~Gates, 
 \newblock \doi{10.1063/1.4905625}.
 \newblock URL \url{https://pubs.aip.org/rsi/article/86/1/016105/360963/Note-Experimental-platform-for-magnetized-high}.
 
-\bibitem[Perkins et~al.(2017)Perkins, Ho, Logan, Zimmerman, Rhodes, Strozzi, Blackfield, and Hawkins]{perkins_potential_2017}
-L.~J. Perkins, D.~D.-M Ho, B.~G. Logan, G.~B. Zimmerman, M.~A. Rhodes, D.~J. Strozzi, D.~T. Blackfield, and S.~A. Hawkins.
-\newblock The potential of imposed magnetic fields for enhancing ignition probability and fusion energy yield in indirect-drive inertial confinement fusion.
-\newblock \emph{Physics of Plasmas}, 24\penalty0 (6):\penalty0 062708, June 2017.
-\newblock ISSN 1070-664X, 1089-7674.
-\newblock \doi{10.1063/1.4985150}.
-\newblock URL \url{https://pubs.aip.org/pop/article/24/6/062708/108192/The-potential-of-imposed-magnetic-fields-for}.
-
-\bibitem[Zylstra et~al.(2022)Zylstra, Hurricane, Callahan, Kritcher, Ralph, Robey, Ross, Young, Baker, Casey, Döppner, Divol, Hohenberger, Le~Pape, Pak, Patel, Tommasini, Ali, Amendt, Atherton, Bachmann, Bailey, Benedetti, Berzak~Hopkins, Betti, Bhandarkar, Biener, Bionta, Birge, Bond, Bradley, Braun, Briggs, Bruhn, Celliers, Chang, Chapman, Chen, Choate, Christopherson, Clark, Crippen, Dewald, Dittrich, Edwards, Farmer, Field, Fittinghoff, Frenje, Gaffney, Gatu~Johnson, Glenzer, Grim, Haan, Hahn, Hall, Hammel, Harte, Hartouni, Heebner, Hernandez, Herrmann, Herrmann, Hinkel, Ho, Holder, Hsing, Huang, Humbird, Izumi, Jarrott, Jeet, Jones, Kerbel, Kerr, Khan, Kilkenny, Kim, Geppert~Kleinrath, Geppert~Kleinrath, Kong, Koning, Kroll, Kruse, Kustowski, Landen, Langer, Larson, Lemos, Lindl, Ma, MacDonald, MacGowan, Mackinnon, MacLaren, MacPhee, Marinak, Mariscal, Marley, Masse, Meaney, Meezan, Michel, Millot, Milovich, Moody, Moore, Morton, Murphy, Newman, Di~Nicola, Nikroo, Nora, Patel, Pelz, Peterson, Ping, Pollock, Ratledge, Rice, Rinderknecht, Rosen, Rubery, Salmonson, Sater, Schiaffino, Schlossberg, Schneider, Schroeder, Scott, Sepke, Sequoia, Sherlock, Shin, Smalyuk, Spears, Springer, Stadermann, Stoupin, Strozzi, Suter, Thomas, Town, Tubman, Trosseille, Volegov, Weber, Widmann, Wild, Wilde, Van~Wonterghem, Woods, Woodworth, Yamaguchi, Yang, and Zimmerman]{zylstra_burning_2022}
-A.~B. Zylstra, O.~A. Hurricane, D.~A. Callahan, A.~L. Kritcher, J.~E. Ralph, H.~F. Robey, J.~S. Ross, C.~V. Young, K.~L. Baker, D.~T. Casey, T.~Döppner, L.~Divol, M.~Hohenberger, S.~Le~Pape, A.~Pak, P.~K. Patel, R.~Tommasini, S.~J. Ali, P.~A. Amendt, L.~J. Atherton, B.~Bachmann, D.~Bailey, L.~R. Benedetti, L.~Berzak~Hopkins, R.~Betti, S.~D. Bhandarkar, J.~Biener, R.~M. Bionta, N.~W. Birge, E.~J. Bond, D.~K. Bradley, T.~Braun, T.~M. Briggs, M.~W. Bruhn, P.~M. Celliers, B.~Chang, T.~Chapman, H.~Chen, C.~Choate, A.~R. Christopherson, D.~S. Clark, J.~W. Crippen, E.~L. Dewald, T.~R. Dittrich, M.~J. Edwards, W.~A. Farmer, J.~E. Field, D.~Fittinghoff, J.~Frenje, J.~Gaffney, M.~Gatu~Johnson, S.~H. Glenzer, G.~P. Grim, S.~Haan, K.~D. Hahn, G.~N. Hall, B.~A. Hammel, J.~Harte, E.~Hartouni, J.~E. Heebner, V.~J. Hernandez, H.~Herrmann, M.~C. Herrmann, D.~E. Hinkel, D.~D. Ho, J.~P. Holder, W.~W. Hsing, H.~Huang, K.~D. Humbird, N.~Izumi, L.~C. Jarrott, J.~Jeet, O.~Jones, G.~D. Kerbel, S.~M. Kerr, S.~F. Khan, J.~Kilkenny, Y.~Kim, H.~Geppert~Kleinrath, V.~Geppert~Kleinrath, C.~Kong, J.~M. Koning, J.~J. Kroll, M.~K.~G. Kruse, B.~Kustowski, O.~L. Landen, S.~Langer, D.~Larson, N.~C. Lemos, J.~D. Lindl, T.~Ma, M.~J. MacDonald, B.~J. MacGowan, A.~J. Mackinnon, S.~A. MacLaren, A.~G. MacPhee, M.~M. Marinak, D.~A. Mariscal, E.~V. Marley, L.~Masse, K.~Meaney, N.~B. Meezan, P.~A. Michel, M.~Millot, J.~L. Milovich, J.~D. Moody, A.~S. Moore, J.~W. Morton, T.~Murphy, K.~Newman, J.-M.~G. Di~Nicola, A.~Nikroo, R.~Nora, M.~V. Patel, L.~J. Pelz, J.~L. Peterson, Y.~Ping, B.~B. Pollock, M.~Ratledge, N.~G. Rice, H.~Rinderknecht, M.~Rosen, M.~S. Rubery, J.~D. Salmonson, J.~Sater, S.~Schiaffino, D.~J. Schlossberg, M.~B. Schneider, C.~R. Schroeder, H.~A. Scott, S.~M. Sepke, K.~Sequoia, M.~W. Sherlock, S.~Shin, V.~A. Smalyuk, B.~K. Spears, P.~T. Springer, M.~Stadermann, S.~Stoupin, D.~J. Strozzi, L.~J. Suter, C.~A. Thomas, R.~P.~J. Town, E.~R. Tubman, C.~Trosseille, P.~L. Volegov, C.~R. Weber, K.~Widmann, C.~Wild, C.~H. Wilde, B.~M. Van~Wonterghem, D.~T. Woods, B.~N. Woodworth, M.~Yamaguchi, S.~T. Yang, and G.~B. Zimmerman.
-\newblock Burning plasma achieved in inertial fusion.
-\newblock \emph{Nature}, 601\penalty0 (7894):\penalty0 542--548, January 2022.
-\newblock ISSN 1476-4687.
-\newblock \doi{10.1038/s41586-021-04281-w}.
-\newblock URL \url{https://www.nature.com/articles/s41586-021-04281-w}.
-\newblock Publisher: Nature Publishing Group.
-
-\bibitem[Moody et~al.(2022{\natexlab{a}})Moody, Pollock, Sio, Strozzi, Ho, Walsh, Kemp, Kucheyev, Kozioziemski, Carroll, Kroll, Yanagisawa, Angus, Bhandarkar, Bude, Divol, Ferguson, Fry, Hagler, Hartouni, Herrmann, Hsing, Holunga, Javedani, Johnson, Kalantar, Kohut, Logan, Masters, Nikroo, Orsi, Piston, Provencher, Rowe, Sater, Skulina, Stygar, Tang, Winters, Chittenden, Appelbe, Boxall, Crilly, O’Neill, Davies, Peebles, and Fujioka]{moody_magnetized_2022}
+\bibitem[Moody et~al.(2022{\natexlab{b}})Moody, Pollock, Sio, Strozzi, Ho, Walsh, Kemp, Kucheyev, Kozioziemski, Carroll, Kroll, Yanagisawa, Angus, Bhandarkar, Bude, Divol, Ferguson, Fry, Hagler, Hartouni, Herrmann, Hsing, Holunga, Javedani, Johnson, Kalantar, Kohut, Logan, Masters, Nikroo, Orsi, Piston, Provencher, Rowe, Sater, Skulina, Stygar, Tang, Winters, Chittenden, Appelbe, Boxall, Crilly, O’Neill, Davies, Peebles, and Fujioka]{moody_magnetized_2022}
 J.~D. Moody, B.~B. Pollock, H.~Sio, D.~J. Strozzi, D.~D.-M. Ho, C.~Walsh, G.~E. Kemp, S.~O. Kucheyev, B.~Kozioziemski, E.~G. Carroll, J.~Kroll, D.~K. Yanagisawa, J.~Angus, S.~D. Bhandarkar, J.~D. Bude, L.~Divol, B.~Ferguson, J.~Fry, L.~Hagler, E.~Hartouni, M.~C. Herrmann, W.~Hsing, D.~M. Holunga, J.~Javedani, A.~Johnson, D.~Kalantar, T.~Kohut, B.~G. Logan, N.~Masters, A.~Nikroo, N.~Orsi, K.~Piston, C.~Provencher, A.~Rowe, J.~Sater, K.~Skulina, W.~A. Stygar, V.~Tang, S.~E. Winters, J.~P. Chittenden, B.~Appelbe, A.~Boxall, A.~Crilly, S.~O’Neill, J.~Davies, J.~Peebles, and S.~Fujioka.
 \newblock The {Magnetized} {Indirect} {Drive} {Project} on the {National} {Ignition} {Facility}.
-\newblock \emph{Journal of Fusion Energy}, 41\penalty0 (1):\penalty0 7, June 2022{\natexlab{a}}.
+\newblock \emph{Journal of Fusion Energy}, 41\penalty0 (1):\penalty0 7, June 2022{\natexlab{b}}.
 \newblock ISSN 0164-0313, 1572-9591.
 \newblock \doi{10.1007/s10894-022-00319-7}.
 \newblock URL \url{https://link.springer.com/10.1007/s10894-022-00319-7}.
@@ -83,28 +1034,12 @@ C.A. Walsh, A.J. Crilly, and J.P. Chittenden.
 \newblock \doi{10.1088/1741-4326/abab52}.
 \newblock URL \url{https://iopscience.iop.org/article/10.1088/1741-4326/abab52}.
 
-\bibitem[Moody et~al.(2022{\natexlab{b}})Moody, Pollock, Sio, Strozzi, Ho, Walsh, Kemp, Lahmann, Kucheyev, Kozioziemski, Carroll, Kroll, Yanagisawa, Angus, Bachmann, Bhandarkar, Bude, Divol, Ferguson, Fry, Hagler, Hartouni, Herrmann, Hsing, Holunga, Izumi, Javedani, Johnson, Khan, Kalantar, Kohut, Logan, Masters, Nikroo, Orsi, Piston, Provencher, Rowe, Sater, Skulina, Stygar, Tang, Winters, Zimmerman, Adrian, Chittenden, Appelbe, Boxall, Crilly, O’Neill, Davies, Peebles, and Fujioka]{moody_increased_2022}
-J. D. Moody, B. B. Pollock, H.~Sio, D. J. Strozzi, D. D.-M. Ho, C. A. Walsh, G. E. Kemp, B.~Lahmann, S. O. Kucheyev, B.~Kozioziemski, E. G. Carroll, J.~Kroll, D. K. Yanagisawa, J.~Angus, B.~Bachmann, S. D. Bhandarkar, J. D. Bude, L.~Divol, B.~Ferguson, J.~Fry, L.~Hagler, E.~Hartouni, M. C. Herrmann, W.~Hsing, D. M. Holunga, N.~Izumi, J.~Javedani, A.~Johnson, S.~Khan, D.~Kalantar, T.~Kohut, B. G. Logan, N.~Masters, A.~Nikroo, N.~Orsi, K.~Piston, C.~Provencher, A.~Rowe, J.~Sater, K.~Skulina, W. A. Stygar, V.~Tang, S. E. Winters, G.~Zimmerman, P.~Adrian, J. P. Chittenden, B.~Appelbe, A.~Boxall, A.~Crilly, S.~O’Neill, J.~Davies, J.~Peebles, and S.~Fujioka.
-\newblock Increased {Ion} {Temperature} and {Neutron} {Yield} {Observed} in {Magnetized} {Indirectly} {Driven} {D} 2 -{Filled} {Capsule} {Implosions} on the {National} {Ignition} {Facility}.
-\newblock \emph{Physical Review Letters}, 129\penalty0 (19):\penalty0 195002, November 2022{\natexlab{b}}.
-\newblock ISSN 0031-9007, 1079-7114.
-\newblock \doi{10.1103/PhysRevLett.129.195002}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.129.195002}.
-
 \bibitem[Walsh et~al.(2023)Walsh, Strozzi, Moody, Sio, Pollock, Lahmann, Djordjevic, Lumbard, Povilus, Chittenden, O'Neill, Crilly, and Appelbe]{walsh_application_2023}
 Chris Walsh, Dave Strozzi, John Moody, Hong Sio, Bradley Pollock, Brandon Lahmann, Blagoje Djordjevic, Alexander Lumbard, Alexander Povilus, Jeremy Chittenden, Sam O'Neill, Aidan Crilly, and Brian Appelbe.
 \newblock Application of {Non}-{Uniform} {Magnetic} {Fields} to {Inertial} {Confinement} {Fusion} {Implosions}.
 \newblock 2023:\penalty0 JO07.014, January 2023.
 \newblock URL \url{https://ui.adsabs.harvard.edu/abs/2023APS..DPPJO7014W}.
 \newblock Conference Name: APS Division of Plasma Physics Meeting Abstracts ADS Bibcode: 2023APS..DPPJO7014W.
-
-\bibitem[Bose et~al.(2022)Bose, Peebles, Walsh, Frenje, Kabadi, Adrian, Sutcliffe, Gatu~Johnson, Frank, Davies, Betti, Glebov, Marshall, Regan, Stoeckl, Campbell, Sio, Moody, Crilly, Appelbe, Chittenden, Atzeni, Barbato, Forte, Li, Seguin, and Petrasso]{bose_effect_2022}
-A.~Bose, J.~Peebles, C. A. Walsh, J. A. Frenje, N. V. Kabadi, P. J. Adrian, G. D. Sutcliffe, M.~Gatu~Johnson, C. A. Frank, J. R. Davies, R.~Betti, V. Yu. Glebov, F. J. Marshall, S. P. Regan, C.~Stoeckl, E. M. Campbell, H.~Sio, J.~Moody, A.~Crilly, B. D. Appelbe, J. P. Chittenden, S.~Atzeni, F.~Barbato, A.~Forte, C. K. Li, F. H. Seguin, and R. D. Petrasso.
-\newblock Effect of {Strongly} {Magnetized} {Electrons} and {Ions} on {Heat} {Flow} and {Symmetry} of {Inertial} {Fusion} {Implosions}.
-\newblock \emph{Physical Review Letters}, 128\penalty0 (19):\penalty0 195002, May 2022.
-\newblock ISSN 0031-9007, 1079-7114.
-\newblock \doi{10.1103/PhysRevLett.128.195002}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.128.195002}.
 
 \bibitem[Gotchev et~al.(2009)Gotchev, Chang, Knauer, Meyerhofer, Polomarov, Frenje, Li, Manuel, Petrasso, Rygg, Séguin, and Betti]{gotchev_laser-driven_2009}
 O.~V. Gotchev, P.~Y. Chang, J.~P. Knauer, D.~D. Meyerhofer, O.~Polomarov, J.~Frenje, C.~K. Li, M.~J.-E. Manuel, R.~D. Petrasso, J.~R. Rygg, F.~H. Séguin, and R.~Betti.
@@ -138,14 +1073,6 @@ K.~S. Anderson, C.~J. Forrest, O.~M. Mannion, F.~J. Marshall, R.~C. Shah, D.~T. 
 \newblock \doi{10.1063/5.0015781}.
 \newblock URL \url{https://pubs.aip.org/pop/article/27/11/112713/107948/Effect-of-cross-beam-energy-transfer-on-target}.
 
-\bibitem[Colaïtis et~al.(2021)Colaïtis, Igumenshchev, Mathiaud, and Goncharov]{colaitis_inverse_2021}
-A.~Colaïtis, I.~Igumenshchev, J.~Mathiaud, and V.~Goncharov.
-\newblock Inverse ray tracing on icosahedral tetrahedron grids for non-linear laser plasma interaction coupled to {3D} radiation hydrodynamics.
-\newblock \emph{Journal of Computational Physics}, 443:\penalty0 110537, October 2021.
-\newblock ISSN 0021-9991.
-\newblock \doi{10.1016/j.jcp.2021.110537}.
-\newblock URL \url{https://www.sciencedirect.com/science/article/pii/S0021999121004320}.
-
 \bibitem[Shi(2023)]{shi_benchmarking_2023}
 Yuan Shi.
 \newblock Benchmarking magnetised three-wave coupling for laser backscattering: analytic solutions and kinetic simulations.
@@ -169,14 +1096,6 @@ Yuan Shi, Hong Qin, and Nathaniel~J. Fisch.
 \newblock ISSN 1070-664X, 1089-7674.
 \newblock \doi{10.1063/1.5017980}.
 \newblock URL \url{https://pubs.aip.org/pop/article/25/5/055706/1061011/Laser-plasma-interactions-in-magnetized}.
-
-\bibitem[Craxton et~al.(2015)Craxton, Anderson, Boehly, Goncharov, Harding, Knauer, McCrory, McKenty, Meyerhofer, Myatt, Schmitt, Sethian, Short, Skupsky, Theobald, Kruer, Tanaka, Betti, Collins, Delettrez, Hu, Marozas, Maximov, Michel, Radha, Regan, Sangster, Seka, Solodov, Soures, Stoeckl, and Zuegel]{craxton_direct-drive_2015}
-R.~S. Craxton, K.~S. Anderson, T.~R. Boehly, V.~N. Goncharov, D.~R. Harding, J.~P. Knauer, R.~L. McCrory, P.~W. McKenty, D.~D. Meyerhofer, J.~F. Myatt, A.~J. Schmitt, J.~D. Sethian, R.~W. Short, S.~Skupsky, W.~Theobald, W.~L. Kruer, K.~Tanaka, R.~Betti, T.~J.~B. Collins, J.~A. Delettrez, S.~X. Hu, J.~A. Marozas, A.~V. Maximov, D.~T. Michel, P.~B. Radha, S.~P. Regan, T.~C. Sangster, W.~Seka, A.~A. Solodov, J.~M. Soures, C.~Stoeckl, and J.~D. Zuegel.
-\newblock Direct-drive inertial confinement fusion: {A} review.
-\newblock \emph{Physics of Plasmas}, 22\penalty0 (11):\penalty0 110501, November 2015.
-\newblock ISSN 1070-664X, 1089-7674.
-\newblock \doi{10.1063/1.4934714}.
-\newblock URL \url{https://pubs.aip.org/pop/article/22/11/110501/109006/Direct-drive-inertial-confinement-fusion-A-review}.
 
 \bibitem[Ellison et~al.(2018)Ellison, Whitley, Brown, Copeland, Garbett, Le, Schneider, Walters, Chen, Castor, Craxton, Gatu~Johnson, Garcia, Graziani, Kemp, Krauland, McKenty, Lahmann, Pino, Rubery, Scott, Shepherd, and Sio]{ellison_development_2018}
 C.~Leland Ellison, Heather~D. Whitley, Colin R.~D. Brown, Sean~R. Copeland, Warren~J. Garbett, Hai~P. Le, Marilyn~B. Schneider, Zachary~B. Walters, Hui Chen, John~I. Castor, R.~Stephen Craxton, Maria Gatu~Johnson, Emma~M. Garcia, Frank~R. Graziani, G.~Elijah Kemp, Christine~M. Krauland, Patrick~W. McKenty, Brandon Lahmann, Jesse~E. Pino, Michael~S. Rubery, Howard~A. Scott, Ronnie Shepherd, and Hong Sio.
@@ -221,20 +1140,6 @@ O.~Larroche, H.~G. Rinderknecht, M.~J. Rosenberg, N.~M. Hoffman, S.~Atzeni, R.~D
 \bibitem[Chang and Frenje(2023)]{chang_notitle_2023}
 Cody~Wu Chang and J.~A. Frenje, April 2023.
 
-\bibitem[Crilly et~al.(2023)Crilly, Niasse, Fraser, Chapman, McLean, Rose, and Chittenden]{crilly_spk_2023}
-A.J. Crilly, N.P.L. Niasse, A.R. Fraser, D.A. Chapman, K.W. McLean, S.J. Rose, and J.P. Chittenden.
-\newblock {SpK}: {A} fast atomic and microphysics code for the high-energy-density regime.
-\newblock \emph{High Energy Density Physics}, 48:\penalty0 101053, September 2023.
-\newblock ISSN 15741818.
-\newblock \doi{10.1016/j.hedp.2023.101053}.
-\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S1574181823000198}.
-
-\bibitem[McHardy(2018)]{mchardy_introduction_2018}
-James McHardy.
-\newblock An introduction to the theory and use of {SESAME} equations of state.
-\newblock Technical Report LA--14503, 1487368, December 2018.
-\newblock URL \url{https://www.osti.gov/servlets/purl/1487368/}.
-
 \bibitem[Walsh et~al.(2020{\natexlab{b}})Walsh, Chittenden, Hill, and Ridgers]{walsh_extended-magnetohydrodynamics_2020}
 C.~A. Walsh, J.~P. Chittenden, D.~W. Hill, and C.~Ridgers.
 \newblock Extended-magnetohydrodynamics in under-dense plasmas.
@@ -250,14 +1155,6 @@ Bhargav Vaidya, Deovrat Prasad, Andrea Mignone, Prateek Sharma, and Luca Rickler
 \newblock ISSN 0035-8711, 1365-2966.
 \newblock \doi{10.1093/mnras/stx2176}.
 \newblock URL \url{http://academic.oup.com/mnras/article/472/3/3147/4093858/Scalable-explicit-implementation-of-anisotropic}.
-
-\bibitem[Spitzer and Härm(1953)]{spitzer_transport_1953}
-Lyman Spitzer and Richard Härm.
-\newblock Transport {Phenomena} in a {Completely} {Ionized} {Gas}.
-\newblock \emph{Physical Review}, 89\penalty0 (5):\penalty0 977--981, March 1953.
-\newblock ISSN 0031-899X.
-\newblock \doi{10.1103/PhysRev.89.977}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.89.977}.
 
 \bibitem[Frenje(2020)]{frenje_nuclear_2020}
 J~A Frenje.
@@ -275,25 +1172,20 @@ H.-S Bosch and G.M Hale.
 \newblock \doi{10.1088/0029-5515/32/4/I07}.
 \newblock URL \url{https://iopscience.iop.org/article/10.1088/0029-5515/32/4/I07}.
 
-\bibitem[Colaïtis et~al.(2023)Colaïtis, Follett, Dorrer, Seaton, Viala, Igumenshchev, Turnbull, Goncharov, and Froula]{colaitis_exploration_2023}
-A.~Colaïtis, R.~K. Follett, C.~Dorrer, A.~G. Seaton, D.~Viala, I.~Igumenshchev, D.~Turnbull, V.~Goncharov, and D.~H. Froula.
-\newblock Exploration of cross-beam energy transfer mitigation constraints for designing an ignition-scale direct-drive inertial confinement fusion driver.
-\newblock \emph{Physics of Plasmas}, 30\penalty0 (8):\penalty0 082701, August 2023.
+\bibitem[Woo et~al.(2018)Woo, Betti, Shvarts, Mannion, Patel, Goncharov, Anderson, Radha, Knauer, Bose, Gopalaswamy, Christopherson, Campbell, Sanz, and Aluie]{woo_impact_2018}
+K.~M. Woo, R.~Betti, D.~Shvarts, O.~M. Mannion, D.~Patel, V.~N. Goncharov, K.~S. Anderson, P.~B. Radha, J.~P. Knauer, A.~Bose, V.~Gopalaswamy, A.~R. Christopherson, E.~M. Campbell, J.~Sanz, and H.~Aluie.
+\newblock Impact of three-dimensional hot-spot flow asymmetry on ion-temperature measurements in inertial confinement fusion experiments.
+\newblock \emph{Physics of Plasmas}, 25\penalty0 (10):\penalty0 102710, October 2018.
 \newblock ISSN 1070-664X, 1089-7674.
-\newblock \doi{10.1063/5.0150813}.
-\newblock URL \url{https://pubs.aip.org/pop/article/30/8/082701/2906541/Exploration-of-cross-beam-energy-transfer}.
+\newblock \doi{10.1063/1.5048429}.
+\newblock URL \url{https://pubs.aip.org/pop/article/25/10/102710/1056709/Impact-of-three-dimensional-hot-spot-flow}.
 
-\bibitem[Woo et~al.(2020)Woo, Betti, Mannion, Forrest, Knauer, Goncharov, Radha, Patel, Gopalaswamy, and Glebov]{woo_inferring_2020}
-K.~M. Woo, R.~Betti, O.~M. Mannion, C.~J. Forrest, J.~P. Knauer, V.~N. Goncharov, P.~B. Radha, D.~Patel, V.~Gopalaswamy, and V.~Yu. Glebov.
-\newblock Inferring thermal ion temperature and residual kinetic energy from nuclear measurements in inertial confinement fusion implosions.
-\newblock \emph{Physics of Plasmas}, 27\penalty0 (6):\penalty0 062702, June 2020.
-\newblock ISSN 1070-664X, 1089-7674.
-\newblock \doi{10.1063/1.5144460}.
-\newblock URL \url{https://pubs.aip.org/pop/article/27/6/062702/1025468/Inferring-thermal-ion-temperature-and-residual}.
-
-\bibitem[Casey et~al.(2024)Casey, Landen, Hartouni, Bionta, Hahn, Volegov, Fittinghoff, Geppert-Kleinrath, Wilde, Milovich, Smalyuk, Field, Hurricane, Zylstra, Kritcher, Clark, Young, Nora, Callahan, MacGowan, Munro, Spears, Peterson, Gaffney, Humbird, Kruse, Moore, Schlossberg, Gatu-Johnson, and Frenje]{casey_three_2024}
-D~T Casey, O~L Landen, E~Hartouni, R~M Bionta, K~D Hahn, P~L Volegov, D~N Fittinghoff, V~Geppert-Kleinrath, C~H Wilde, J~L Milovich, V~A Smalyuk, J~E Field, O~A Hurricane, A~B Zylstra, A~L Kritcher, D~S Clark, C~V Young, R~C Nora, D~A Callahan, B~J MacGowan, D~H Munro, B~K Spears, J~L Peterson, J~A Gaffney, K~D Humbird, M~K~G Kruse, A~S Moore, D~J Schlossberg, M~Gatu-Johnson, and J~A Frenje.
+\bibitem[Casey et~al.(2021)Casey, Landen, Hartouni, Bionta, Hahn, Volegov, Fittinghoff, Geppert-Kleinrath, Wilde, Milovich, Smalyuk, Field, Hurricane, Zylstra, Kritcher, Clark, Young, Nora, Callahan, MacGowan, Munro, Spears, Peterson, Gaffney, Humbird, Kruse, Moore, Schlossberg, Gatu-Johnson, and Frenje]{casey_three_2021}
+D.~T. Casey, O.~L. Landen, E.~Hartouni, R.~M. Bionta, K.~D. Hahn, P.~L. Volegov, D.~N. Fittinghoff, V.~Geppert-Kleinrath, C.~H. Wilde, J.~L. Milovich, V.~A. Smalyuk, J.~E. Field, O.~A. Hurricane, A.~B. Zylstra, A.~L. Kritcher, D.~S. Clark, C.~V. Young, R.~C. Nora, D.~A. Callahan, B.~J. MacGowan, D.~H. Munro, B.~K. Spears, J.~L. Peterson, J.~A. Gaffney, K.~D. Humbird, M.~K.~G. Kruse, A.~S. Moore, D.~J. Schlossberg, M.~Gatu-Johnson, and J.~A. Frenje.
 \newblock Three dimensional low-mode areal-density non-uniformities in indirect-drive implosions at the {National} {Ignition} {Facility}.
-\newblock \emph{Physics of Plasmas}, 2024.
+\newblock \emph{Physics of Plasmas}, 28\penalty0 (4):\penalty0 042708, April 2021.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0043589}.
+\newblock URL \url{https://pubs.aip.org/pop/article/28/4/042708/263544/Three-dimensional-low-mode-areal-density-non}.
 
 \end{thebibliography}
