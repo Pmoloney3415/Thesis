@@ -3,56 +3,49 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Thesis_MainSample.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Preamble/PreambleMain.aux
-A level-1 auxiliary file: Numerics/NumericsMain.aux
-A level-1 auxiliary file: Results1/Results1Main.aux
-A level-1 auxiliary file: Results2/Results2Main.aux
+A level-1 auxiliary file: Introduction/IntroductionMain.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
+I found no \citation commands---while reading file Thesis_MainSample.aux
 Database file #1: Bibliography/Bibliography.bib
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Warning--empty journal in patel_novel_2018
-Warning--empty institution in mchardy_introduction_2018
-Warning--empty institution in simon_lle_1989
-Warning--empty journal in thomas_quantifying_2020
-Warning--empty journal in walsh_application_2023
-You've used 152 entries,
+You've used 0 entries,
             2481 wiz_defined-function locations,
-            1629 strings with 71308 characters,
-and the built_in function-call counts, 102559 in all, are:
-= -- 6046
-> -- 11789
-< -- 44
-+ -- 4097
-- -- 3786
-* -- 11863
-:= -- 19425
-add.period$ -- 882
-call.type$ -- 152
-change.case$ -- 297
-chr.to.int$ -- 145
-cite$ -- 157
-duplicate$ -- 2871
-empty$ -- 5531
-format.name$ -- 3988
-if$ -- 19427
-int.to.chr$ -- 8
-int.to.str$ -- 153
-missing$ -- 151
-newline$ -- 1191
-num.names$ -- 457
-pop$ -- 686
+            554 strings with 4545 characters,
+and the built_in function-call counts, 34 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 11
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 152
+purify$ -- 0
 quote$ -- 0
-skip$ -- 1424
+skip$ -- 1
 stack$ -- 0
-substring$ -- 3016
-swap$ -- 468
-text.length$ -- 6
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1043
-warning$ -- 5
-while$ -- 471
+type$ -- 0
+warning$ -- 0
+while$ -- 0
 width$ -- 0
-write$ -- 2827
-(There were 5 warnings)
+write$ -- 7
+(There was 1 error message)
