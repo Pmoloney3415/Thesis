@@ -1,8 +1,36 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Institute(2024)]{ember_institute_statistical_2024}
+Ember Institute.
+\newblock Statistical {Review} of {World} {Energy}, May 2024.
+\newblock URL \url{https://ember-climate.org/app/uploads/2024/05/Report-Global-Electricity-Review-2024.pdf}.
+
+\bibitem[Griffiths et~al.(2022)Griffiths, Pearson, Bluck, and Takeda]{griffiths_commercialisation_2022}
+Thomas Griffiths, Richard Pearson, Michael Bluck, and Shutaro Takeda.
+\newblock The commercialisation of fusion for the energy market: a review of socio-economic studies.
+\newblock \emph{Progress in Energy}, 4\penalty0 (4):\penalty0 042008, October 2022.
+\newblock ISSN 2516-1083.
+\newblock \doi{10.1088/2516-1083/ac84bf}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/2516-1083/ac84bf}.
+
+\bibitem[Atzeni and Meyer-ter Vehn(2004)]{atzeni_physics_2004}
+Stefano Atzeni and Jürgen Meyer-ter Vehn.
+\newblock \emph{The physics of inertial fusion: beam plasma interaction, hydrodynamics, hot dense matter}.
+\newblock Number 125 in Oxford science publications. Clarendon Press ; Oxford University Press, Oxford : New York, 2004.
+\newblock ISBN 978-0-19-856264-1.
+\newblock OCLC: ocm55883769.
+
+\bibitem[Rider(1995)]{rider_general_1995}
+Todd~H. Rider.
+\newblock A general critique of inertial-electrostatic confinement fusion systems.
+\newblock \emph{Physics of Plasmas}, 2\penalty0 (6):\penalty0 1853--1872, June 1995.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.871273}.
+\newblock URL \url{https://pubs.aip.org/pop/article/2/6/1853/895158/A-general-critique-of-inertial-electrostatic}.
 
 \end{thebibliography}
