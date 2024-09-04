@@ -1103,4 +1103,115 @@ Package pdftex.def Info: Introduction/Images/BE_per_nucleon.png  used on input l
 <Introduction/Images/fusion-reactivities.png, id=103, 505.89pt x 433.62pt>
 File: Introduction/Images/fusion-reactivities.png Graphic file (type png)
 <use Introduction/Images/fusion-reactivities.png>
-Package pdftex.def Info: 
+Package pdftex.def Info: Introduction/Images/fusion-reactivities.png  used on input line 53.
+(pdftex.def)             Requested size: 249.24878pt x 213.64677pt.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 58.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./Introduction/Images/BE_per_nucleon.png>]
+Package acronym Info: Label `acro:ICF' newly defined as it shall be overridden
+although it is yet undefined on input line 77.
+Package acronym Info: Label `acro:MCF' newly defined as it shall be overridden
+although it is yet undefined on input line 81.
+
+Underfull \vbox (badness 2426) has occurred while \output is active []
+
+ [8 <./Introduction/Images/fusion-reactivities.png>]
+<Introduction/Images/hotspot ignition white.png, id=138, 844.40268pt x 840.64464pt>
+File: Introduction/Images/hotspot ignition white.png Graphic file (type png)
+<use Introduction/Images/hotspot ignition white.png>
+Package pdftex.def Info: Introduction/Images/hotspot ignition white.png  used on input line 112.
+(pdftex.def)             Requested size: 290.78603pt x 289.4968pt.
+<Introduction/Images/indirect icf white.png, id=141, 643.6848pt x 219.4599pt>
+File: Introduction/Images/indirect icf white.png Graphic file (type png)
+<use Introduction/Images/indirect icf white.png>
+Package pdftex.def Info: Introduction/Images/indirect icf white.png  used on input line 142.
+(pdftex.def)             Requested size: 415.41043pt x 141.63593pt.
+<Introduction/Images/direct icf white.png, id=144, 286.1892pt x 278.9622pt>
+File: Introduction/Images/direct icf white.png Graphic file (type png)
+<use Introduction/Images/direct icf white.png>
+Package pdftex.def Info: Introduction/Images/direct icf white.png  used on input line 158.
+(pdftex.def)             Requested size: 290.78603pt x 283.44373pt.
+ [9]
+Overfull \hbox (1.00975pt too wide) in paragraph at lines 182--185
+\T1/futs/m/n/10.95 Want col-li-sional ab-sorp-tion and to avoid LPIs. There-fore short wave-length, high power lasers,
+ []
+
+<Introduction/Images/LPI diagram.png, id=151, 953.2413pt x 526.1256pt>
+File: Introduction/Images/LPI diagram.png Graphic file (type png)
+<use Introduction/Images/LPI diagram.png>
+Package pdftex.def Info: Introduction/Images/LPI diagram.png  used on input line 192.
+(pdftex.def)             Requested size: 415.41043pt x 229.28024pt.
+Package acronym Info: Label `acro:LPIs' newly defined as it shall be overridden
+although it is yet undefined on input line 195.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <./Introduction/Images/hotspot ignition white.png> <./Introduction/Images/indirect icf white.png>])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./Introduction/Images/direct icf white.png> <./Introduction/Images/LPI diagram.png>] [12] [13
+
+
+
+] [14
+
+
+] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
+\tf@brf=\write5
+\openout5 = `Thesis_MainSample.brf'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]\T1/futs/m/n/10.95 Ember In-sti-tute.  Sta-tis-ti-cal Re-view of World En-ergy, May
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\T1/futs/m/n/10.95 2024.  URL [][]$\T1/cmtt/m/n/10.95 https : / / ember-[]climate . org / app / uploads / 2024 / 05 /
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 35--35
+\T1/futs/m/n/10.95 10 . 1063 / 1 . 871273$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 2 / 6 / 1853 / 895158 /
+ []
+
+[15
+
+]) [16]
+\openout2 = `Appendix/Permissions.aux'.
+
+ (./Appendix/Permissions.tex) [17
+
+
+
+
+] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Appendix/Permissions.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2020/03/25>
+ ***********
+Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
+(rerunfilecheck)             Checksum: 9B164E1B4633855F4AAA2841F95AF6FE;500.
+ ) 
+Here is how much of TeX's memory you used:
+ 27206 strings out of 474165
+ 536387 string characters out of 5749497
+ 1943542 words of memory out of 5000000
+ 48986 multiletter control sequences out of 15000+600000
+ 644093 words of font info for 135 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 122i,12n,121p,10978b,1091s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on Thesis_MainSample.pdf (17 pages, 6936869 bytes).
+PDF statistics:
+ 321 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+
