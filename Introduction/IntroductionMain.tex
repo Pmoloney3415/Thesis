@@ -26,6 +26,7 @@ which is a function of the centre of mass energy, $E$, the `astrophysical $S$-fa
 The exponential term in Eq.~\ref{eq:intro_cross_sec} is related to the probability of reactants tunnelling through the energy barrier, due to electrostatic Coulomb repulsion.
 One approach to achieving the energies required to overcome this barrier are `beam-target' configurations, wherein a high energy beam of reactants is focussed onto a stationary target, has proven unviable~\cite{rider_general_1995}.
 Thermonuclear fusion is the alternative approach, wherein the bulk fuel is heated to sufficient temperatures that the particles in the high-energy tail of the distribution have sufficient energy to undergo fusion reactions.
+For a fuel is in thermal equilibrium, the high particle energies required to overcome the Coulomb barrier, $\mathcal{O}(100)\ \text{keV}$, are well above ionisation energies, $13.6\ \text{eV}$ for Hydrogen, so the fuel will be in the plasma state.
 If the fusion products are able to deposit a sufficient fraction of their energy back into the fuel, then a self-sustaining fusion reaction is possible, where the high temperatures required for the reactants to fuse is maintained.
 For a fusion reaction with reactants labelled by 1 and 2, the number of fusion reactions per unit time and volume is known as the `volumetric reaction rate',
 \begin{equation}
@@ -48,12 +49,37 @@ Eq.~\ref{eq:intro_reacrate} explicitly demonstrates that achieving a high fuel d
     \label{fig:intro_BEperNucleon}
 \end{figure}
 
+\begin{figure}[t!]
+    \includegraphics[width=0.6\linewidth]{Introduction/Images/fusion-reactivities.png}
+    \centering
+    \caption{Averaged reactivities for important fusion reactions.
+    The deuterium-tritium reactivity is significantly larger than all other reactions up to $T\sim500\ \text{keV}$.
+    Averaged reactivities are obtained from cross-section data, available in the \texttt{ENDF/B-VII.1} library~\cite{chadwick_endfb-vii1_2011}.
+    }%
+    \label{fig:intro_reactivities}
+\end{figure}
+
 The efficacy of a fusion fuel is dictated by the availability of the reactants, the fusion products, the averaged reactivity of the reactants and the energy released per reaction, $Q$, which is the difference in binding energy between the reactants and products.
 Most current, fusion-energy experiments are focussed on demonstrating that fusion power production is possible, thus the choice of fuel is predominantly dictated by the reactivity.
 Hydrogen-Hydrogen isotope fusion reactions have much higher reactivities than other elements, because the Coulomb repulsion scales as $Z^2$, thus the Gamow energy, $E_G$ is significantly smaller.
+The nuclear physics is particularly favourable for the fusion of deuterium (D) and tritium (T), because there is a nuclear resonance at relatively modest energies for the reaction chain which produces an excited, unstable ${}^5 \text{He}$ nucleus, which subsequently decays to ${}^4\text{He}$ and a neutron~\cite{brown_field_2014}.
+Averaged-reactivates of several important fusion reactions, obtained from reaction cross-sections from the \texttt{ENDF/B-VII.1} library~\cite{chadwick_endfb-vii1_2011}, are plotted in Fig.~\ref{fig:intro_reactivities}.
+The D-T reactivity is at least an order of magnitude larger than the other reactions plotted, up to $T\sim100\ \text{keV}$, and it is thus the most commonly used fuel for high-gain fusion experiments.
+The reaction proceeds as,
+\begin{equation}
+    \label{eq:intro_DTreac}
+    {}^{2}_{1}\text{D} + {}^{3}_{1}\text{T} \rightarrow \alpha(3.5\ \text{MeV}) + \text{n}(14.1\ \text{MeV}),
+\end{equation}
+where $\alpha$ is a ${}^{4}_{2}\text{He}$ nucleus, which gains $3.5\ \text{MeV}$, and $\text{n}$ is a neutron, which gains $14.1\ \text{MeV}$ from the fusion energy released, $Q$.
+The energy partition is dictated by energy-momentum conservation of the products in the centre of mass frame.
+The alpha particles typically couple their energy back into the bulk fuel via Coulomb collisions, which has the effect of raising the fuel temperature and thus further raising the reactivity, for fuel temperatures below $T\sim60\ \text{keV}$.
+Neutrons have a much lower reaction cross-section because they are not charged, and thus typically leave the reaction region.
+However, in fusion experiments with high density configurations such as \ac{ICF}, their heating of the fuel can also play a significant role~\cite{daughton_influence_2023}.
 
-
-Describe main approaches to fusion on earth.
+In order for net energy gain, sufficient energy must be released by fusion to compensate for the energy required to perform the experiment.
+This requires a fuel configuration with a combination of high temperatures and densities for a large volumetric reaction rate, that is confined for a period of time, which is sufficient for enough reactions to occur.
+The method of confinement for fusion energy experiments has two broad streams: \ac{MCF}, where magnetic fields are used to confine steady-state fusion-plasma over long time-scales, and \ac{ICF}, where dense fusion fuel is assembled for a short time period and `confined' by its own inertia.
+The work conducted in this thesis is of relevance to \ac{ICF} schemes, specifically those in which the plasma is produced by laser irradiation.
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -61,12 +87,18 @@ Describe main approaches to fusion on earth.
 \section{Inertial Confinement Fusion}%
 \label{sec:intro_ICF}
 
-Broadly describe the key idea of ICF here.
+In \ac{ICF} experiments, the high temperatures and densities required to initiate an appreciable number of fusion reactions are maintained over a short timescale, which is set by the inertia of the fuel configuration, before the fuel disassembles due to large pressure gradients.
+The required fuel density is typically achieved by an implosion process.
+High temperatures are typically obtained either from the conversion to internal energy of the implosion kinetic energy, which is the central hotspot ignition variant, described in Sec.~\ref{sec:intro_centralhotspot}, or via an external heating source, as described in Sec.~\ref{sec:intro_icf_alt}.
+Before describing these schemes in more detail however, necessary criterion for energy gain conditions shall be discussed, which are agnostic of how the fusion fuel is assembled and dictate the plasma conditions which must be achieved.
 
 %################################################################################
 %################################################################################
 \subsection{Ignition Requirements}%
 \label{sec:intro_icf_ignition}
+
+The point at which alpha heating becomes the dominant term in the power balance of the fusion fuel is termed `ignition' and it is a necessary condition for high gain \ac{ICF} experiments.
+Broad plasma conditions can be deduced 
 
 Give Lawson ICF version.
 IFE requirements.
@@ -97,7 +129,7 @@ Shock and fast ignition.
 %###############################################################################################################################
 %###############################################################################################################################
 \section{Current Experiments/ Main Approaches}%
-\label{sec:intro_ICF}
+\label{sec:intro_mainexperiments}
 
 Small intro on direct vs indirect.
 

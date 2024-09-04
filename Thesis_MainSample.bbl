@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -32,5 +32,29 @@ Todd~H. Rider.
 \newblock ISSN 1070-664X, 1089-7674.
 \newblock \doi{10.1063/1.871273}.
 \newblock URL \url{https://pubs.aip.org/pop/article/2/6/1853/895158/A-general-critique-of-inertial-electrostatic}.
+
+\bibitem[Chadwick et~al.(2011)Chadwick, Herman, Obložinský, Dunn, Danon, Kahler, Smith, Pritychenko, Arbanas, Arcilla, Brewer, Brown, Capote, Carlson, Cho, Derrien, Guber, Hale, Hoblit, Holloway, Johnson, Kawano, Kiedrowski, Kim, Kunieda, Larson, Leal, Lestone, Little, McCutchan, MacFarlane, MacInnes, Mattoon, McKnight, Mughabghab, Nobre, Palmiotti, Palumbo, Pigni, Pronyaev, Sayer, Sonzogni, Summers, Talou, Thompson, Trkov, Vogt, Van Der~Marck, Wallner, White, Wiarda, and Young]{chadwick_endfb-vii1_2011}
+M.B. Chadwick, M.~Herman, P.~Obložinský, M.E. Dunn, Y.~Danon, A.C. Kahler, D.L. Smith, B.~Pritychenko, G.~Arbanas, R.~Arcilla, R.~Brewer, D.A. Brown, R.~Capote, A.D. Carlson, Y.S. Cho, H.~Derrien, K.~Guber, G.M. Hale, S.~Hoblit, S.~Holloway, T.D. Johnson, T.~Kawano, B.C. Kiedrowski, H.~Kim, S.~Kunieda, N.M. Larson, L.~Leal, J.P. Lestone, R.C. Little, E.A. McCutchan, R.E. MacFarlane, M.~MacInnes, C.M. Mattoon, R.D. McKnight, S.F. Mughabghab, G.P.A. Nobre, G.~Palmiotti, A.~Palumbo, M.T. Pigni, V.G. Pronyaev, R.O. Sayer, A.A. Sonzogni, N.C. Summers, P.~Talou, I.J. Thompson, A.~Trkov, R.L. Vogt, S.C. Van Der~Marck, A.~Wallner, M.C. White, D.~Wiarda, and P.G. Young.
+\newblock {ENDF}/{B}-{VII}.1 {Nuclear} {Data} for {Science} and {Technology}: {Cross} {Sections}, {Covariances}, {Fission} {Product} {Yields} and {Decay} {Data}.
+\newblock \emph{Nuclear Data Sheets}, 112\penalty0 (12):\penalty0 2887--2996, December 2011.
+\newblock ISSN 00903752.
+\newblock \doi{10.1016/j.nds.2011.11.002}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S009037521100113X}.
+
+\bibitem[Brown and Hale(2014)]{brown_field_2014}
+Lowell~S. Brown and Gerald~M. Hale.
+\newblock Field theory of the d + t → n + α reaction dominated by a 5 {He} * unstable particle.
+\newblock \emph{Physical Review C}, 89\penalty0 (1):\penalty0 014622, January 2014.
+\newblock ISSN 0556-2813, 1089-490X.
+\newblock \doi{10.1103/PhysRevC.89.014622}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevC.89.014622}.
+
+\bibitem[Daughton et~al.(2023)Daughton, Albright, Finnegan, Haines, Kline, Sauppe, and Smidt]{daughton_influence_2023}
+W.~Daughton, B.~J. Albright, S.~M. Finnegan, Brian~M. Haines, J.~L. Kline, J.~P. Sauppe, and J.~M. Smidt.
+\newblock Influence of mass ablation on ignition and burn propagation in layered fusion capsules.
+\newblock \emph{Physics of Plasmas}, 30\penalty0 (1):\penalty0 012704, January 2023.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/5.0129561}.
+\newblock URL \url{https://pubs.aip.org/pop/article/30/1/012704/2867644/Influence-of-mass-ablation-on-ignition-and-burn}.
 
 \end{thebibliography}
