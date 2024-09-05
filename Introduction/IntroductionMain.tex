@@ -87,7 +87,10 @@ The work conducted in this thesis is of relevance to \ac{ICF} schemes, specifica
 \section{Inertial Confinement Fusion}%
 \label{sec:intro_ICF}
 
-In \ac{ICF} experiments, the high temperatures and densities required to initiate an appreciable number of fusion reactions are maintained over a short timescale, which is set by the inertia of the fuel configuration, before the fuel disassembles due to large pressure gradients.
+In the 1950s and 60s, the first devices were built which demonstrated stimulated emission of microwave~\cite{schawlow_infrared_1958} and optical~\cite{maiman_stimulated_1960} light.
+The optical-wavelength lasers were quickly recognised as an ideal driver for a far smaller and therefore less destructive thermonuclear device than was used in warheads, which could thus be used for fusion energy generation~\cite{nuckolls_early_1998}.
+Much of the research was declassified and subsequently published in a 1972 article by Nuckolls \textit{et al.} in 1972~\cite{nuckolls_laser_1972}.
+In these \ac{ICF} experiments, the high temperatures and densities required to initiate an appreciable number of fusion reactions are maintained over a short timescale, which is set by the inertia of the fuel configuration, before the fuel disassembles due to large pressure gradients.
 The required fuel density is typically achieved by an implosion process.
 High temperatures are typically obtained either from the conversion to internal energy of the implosion kinetic energy, which is the central hotspot ignition variant, described in Sec.~\ref{sec:intro_centralhotspot}, or via an external heating source, as described in Sec.~\ref{sec:intro_icf_alt}.
 Before describing these schemes in more detail however, necessary criterion for energy gain conditions shall be discussed, which are agnostic of how the fusion fuel is assembled and dictate the plasma conditions which must be achieved.
@@ -98,10 +101,49 @@ Before describing these schemes in more detail however, necessary criterion for 
 \label{sec:intro_icf_ignition}
 
 The point at which alpha heating becomes the dominant term in the power balance of the fusion fuel is termed `ignition' and it is a necessary condition for high gain \ac{ICF} experiments.
-Broad plasma conditions can be deduced 
+Ignition necessitates that the plasma is confined for a sufficiently long period of time, for an appreciable number of fusion reactions to occur, raising the fuel temperatures and reactivities, which results in a propagating burn wave.
+Estimates for the required plasma conditions which must be achieved for this to occur, can be estimated by considering the timescales of confinement and fusion.
+Initially, a uniform ion number density $n_i$ and temperature $T$, spherical fuel assembly, with outer radius $R$, shall be considered.
+The ions have an average mass, $m_i$, such that the mass-density of the fuel, $\rho = m_i n_i$ and the volume of the fuel sphere, $V = 4\pi R^3/3$.
+Dimensional considerations give an order of magnitude estimate for the timescale on which fusion reactions occur,
+\begin{equation}
+    \tau_{\text{fus}} = \frac{1}{n_i \langle \sigma v \rangle},
+\end{equation}
+where $n_i$ in the ion number density of the plasma.
+A radially inward pressure gradient will exist due to the high temperature of the plasma, which will lead to an inward propagating rarefaction wave, disassembling the fuel.
+This rarefaction wave will move at the isothermal sound speed, $c_s=\sqrt{2k_{\text{B}T/m_i}}$,\footnote{The factor of 2 in $C-s$ is because the pressure is the sum of contributions from ions and electrons.} from $t=0$, such that its position is given by $r=R-c_s t$.
+Therefore, the timescale on which the burning fuel remains un-rarefied and thus confined is,
+\begin{align}
+    \begin{split}
+        \tau_{\text{conf}} &= \int_0^{R/c_s} \frac{ (R - c_s t)^3 }{R^3} \ \text{d}t,\\
+        &= \frac{R}{4 c_s}.
+    \end{split}
+\end{align}
+The ratio of these timescales,
+\begin{equation}
+    \frac{\tau_{\text{conf}}}{\tau_{\text{fus}}} = \frac{\langle \sigma v \rangle \rho R}{4 m_i c_s},
+\end{equation}
+illustrates that, for ignition and hence gain, \ac{ICF} reactions require a large $\rho R$ value, which is typically referred to as the `areal-density'~\cite{fraley_thermonuclear_1974}.
 
-Give Lawson ICF version.
-IFE requirements.
+The timescale ratio can be used to derive the `burn-up fraction', which is defined as the ratio of fusion reactions, $N_{\text{fus}} = R_{\text{DT}}V\tau_{\text{conf}}$, to the number of DT pairs, $N_{\text{DT}}=n_i/2$, in the fuel assembly,
+\begin{align}
+    \label{eq:intro_burn_frac}
+    \begin{split}
+        \Phi &\equiv \frac{N_{\text{fus}}}{N_{\text{DT}}},\\
+        &= \frac{\langle \sigma v \rangle \rho R}{H_{\text{B}}},
+    \end{split}
+\end{align}
+where the `burn-parameter', $H_{\text{B}} \equiv \langle \sigma v \rangle / 8 m_i c_s$ has been defined.
+Eq.~\ref{eq:intro_burn_frac} is only valid for $\Phi \ll 1$, because the conversion of DT pairs into non-fusing products has not been considered~\cite{atzeni_physics_2004}.
+A modified form of Eq.~\ref{eq:intro_burn_frac}, which approximately accounts for burn-depletion, was derived by Fraley \textit{et al.} in Ref.~\cite{fraley_thermonuclear_1974},
+\begin{equation}
+    \Phi = \frac{\rho R}{H_{\text{B}} + \rho R}.
+\end{equation}
+If solid density DT was used, the mass of fuel required to achieve $\Phi=30\%$ of the fuel would be 2.5 kg, which would release the same energy as 50 kilotons of TNT~\cite{crilly_simulation_2020}.
+In order to harness the released fusion energy without destroying the surrounding infrastructure, a smaller mass is required, which necessitates compression of the fuel to achieve the $\rho R$ constraint.
+A pellet containing $1\ \text{mg}$, compressed to densities $\mathcal{O}(10^3)$ times solid density, could release $100\ \text{MJ}$ of fusion energy at $\Phi=30\%$.
+Spherical compression is optimal because the fuel compresses in three dimensions.
+This minimises the convergence ratio, $CR = R_{\text{init}}/R_{\text{final}}$, which increases the tolerance to a given amplitude of perturbation.
 
 %################################################################################
 %################################################################################
@@ -124,6 +166,40 @@ Describe ablation pressure, ignite small volume of fuel etc.
 \label{sec:intro_icf_alt}
 
 Shock and fast ignition.
+
+%################################################################################
+%################################################################################
+\subsection{Inertial Fusion Energy Considerations}%
+\label{sec:intro_IFE_gain}
+
+\begin{figure}[t!]
+    \includegraphics[width=0.8\linewidth]{Introduction/Images/IFE_powerplant.png}
+    \centering
+    \caption{Energy balance of an \ac{IFE} power plant.
+    Based on a similar figure from Ref.~\cite{atzeni_physics_2004}.
+    }%
+    \label{fig:intro_IFE_energy_balance}
+\end{figure}
+
+For a power plant to produce net energy from \ac{ICF} implosions, the energy from each target must of course be greater than the energy to drive the implosion.
+In reality, additional inefficiencies in power plants set more stringent constraints on the energy which must be produced.
+The energy balance of an \ac{IFE} power plant is shown in Fig.~\ref{fig:intro_IFE_energy_balance}.
+A driver, such as the lasers which are considered for the work conducted in this thesis, converts an input energy, $E_{\text{in}}$, to a driver energy, $E_{\text{d}} = \eta_{\text{d}}E_{\text{in}}$, where $\eta_{\text{d}}$ is the energy efficiency of the driver.
+The driver energy initiates a fusion reaction, which releases energy $E_{\text{fus}}$, with gain, $G = E_{\text{fus}}/E_{\text{d}}$.
+The released fusion energy, for example in the form of energetic neutrons, is converted into thermal energy in an encompassing `blanket', and then into output electrical energy, $E_\text{out}$ by a thermal-cycle (such as steam turbines), with efficiency, $\eta_{\text{th}}$.
+Some fraction $f$ of this generated energy is recycled back into the plant to power the driver and the remaining fraction is sent to the grid,
+\begin{equation}
+    E_{\text{grid}} = (1-f) \eta_{\text{th}} \eta_{\text{d}} G E_{\text{in}},
+\end{equation}
+with the constraint, $f \eta_{\text{th}} \eta_{\text{d}} G \geq 1$ for net energy production.
+Power plants must also produce a sufficiently large volume of energy to be economical.
+Therefore, several $\sim100\ \text{MJ}$ reactions must occur each second for a $100 \text{MW}$ plant, which necessitates a driver that can operate at $\sim10\ \text{Hz}$.
+
+The \ac{DPSSL} concept, could feasibly produce laser energy at $\sim10\ \text{Hz}$ repetition rate, with an efficiency $\eta_d\sim10\%$.
+Assuming a thermal cycle efficiency, $\eta_{\text{th}}=40\%$ and a recycled energy fraction, $f=1/4$, this means that a target gain of approximately $G\sim100$ is required for power production.
+Additionally, the plant must be economically profitable, thus for a $G=100$ reaction, which releases $E_{\text{fus}} = 100\ \text{MJ} = 28\ \text{kWh}$, the energy sold to the grid would make about $£1.50$\footnote{The UK April 2024 energy price of $£0.25$ per $\text{kWh}$ was used.}.
+Therefore, targets must cost approximately $£0.10$, which limits the tolerable manufacturing complexity.
+\ac{IFE} target concepts exist, which could feasibly be mass-produced for an acceptable cost, for example initially uniform density liquid spheres, known as `dynamic shell' targets~\cite{goncharov_novel_2020,igumenshchev_proof--principle_2023}.
 
 %###############################################################################################################################
 %###############################################################################################################################
