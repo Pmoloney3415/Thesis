@@ -6,46 +6,54 @@ A level-1 auxiliary file: Preamble/PreambleMain.aux
 A level-1 auxiliary file: Introduction/IntroductionMain.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
 Database file #1: Bibliography/Bibliography.bib
+Reallocated buffer (elt_size=1) to 40000 items from 20000.
+Reallocated sv_buffer (elt_size=1) to 40000 items from 20000.
+Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
+Reallocated out_buf (elt_size=1) to 40000 items from 20000.
+Reallocated name_tok (elt_size=4) to 40000 items from 20000.
+Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Warning--empty institution in nuckolls_early_1998
-You've used 33 entries,
+Warning--empty year in noauthor_nif_nodate
+You've used 51 entries,
             2481 wiz_defined-function locations,
-            832 strings with 19489 characters,
-and the built_in function-call counts, 23173 in all, are:
-= -- 1331
-> -- 2751
-< -- 12
-+ -- 954
-- -- 888
-* -- 2712
-:= -- 4431
-add.period$ -- 191
-call.type$ -- 33
-change.case$ -- 64
-chr.to.int$ -- 33
-cite$ -- 34
-duplicate$ -- 614
-empty$ -- 1193
-format.name$ -- 929
-if$ -- 4341
+            965 strings with 80236 characters,
+and the built_in function-call counts, 116151 in all, are:
+= -- 2059
+> -- 22786
+< -- 13
++ -- 7652
+- -- 7550
+* -- 16565
+:= -- 25368
+add.period$ -- 296
+call.type$ -- 51
+change.case$ -- 100
+chr.to.int$ -- 51
+cite$ -- 54
+duplicate$ -- 951
+empty$ -- 1859
+format.name$ -- 7608
+if$ -- 19081
 int.to.chr$ -- 1
-int.to.str$ -- 34
-missing$ -- 31
-newline$ -- 264
-num.names$ -- 99
-pop$ -- 145
+int.to.str$ -- 52
+missing$ -- 48
+newline$ -- 405
+num.names$ -- 150
+pop$ -- 225
 preamble$ -- 1
-purify$ -- 33
+purify$ -- 51
 quote$ -- 0
-skip$ -- 309
+skip$ -- 476
 stack$ -- 0
-substring$ -- 690
-swap$ -- 99
+substring$ -- 1072
+swap$ -- 152
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 228
-warning$ -- 1
-while$ -- 107
+type$ -- 354
+warning$ -- 2
+while$ -- 164
 width$ -- 0
-write$ -- 618
-(There was 1 warning)
+write$ -- 952
+(There were 2 warnings)

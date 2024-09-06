@@ -179,7 +179,14 @@ Greatest convergence can be achieved if the pressure of the gas fill is minimise
 For example, a poorly pulse-shaped driver will lead to undesrired shock heating of the interior fuel ahead of the converging shell, which raises its pressure and thus limits compressibility.
 Assuming perfectly spherical targets adnd driver radiation, isentropic pulses maximise the target gains, which are designed to limit shock preheating of the gas-fill.
 In reaility, target defects and short wavelength perturbations in the driver radiation seed the \ac{RTI} on the ablation surface, which can grow due to the misaligned density and pressure gradients.
-Realistic pulse shapes often slightly preheat the target, which increases stability to hi=ydrodynamic instability growth~\cite{goncharov_improved_2003,hurricane_high-foot_2014}.
+Realistic pulse shapes often slightly preheat the target, which increases stability to hydrodynamic instability growth~\cite{goncharov_improved_2003,hurricane_high-foot_2014}.
+The preheat and thus stability of the design, is typically parameterised by the `adiabat' parameter,
+\begin{equation}
+    \label{eq:intro_adiabat}
+    \alpha = \frac{P_{\text{shell}}}{P_{\text{F}}},
+\end{equation}
+where $P_{\text{shell}}$ is the pressure of the DT shell and $P_{\text{F}}$ is the Fermi degenerate pressure, \textit{i.e.} truly isentropic compression of a $T\sim0\ \text{K}$ fuel has $\alpha=1$.
+Higher adiabat designs are more stable, and the parameter is set in each shot by launching a weak shock through the capsule before the main pulse.
 
 The stagnation phase of the implosion is shown in the bottom right quadrant of Fig.~\ref{fig:intro_hotspot}.
 As the remaining relatively cold and dense shell converges on the axis, $P\text{d}V$ heating raises the temparture of the compressed interior gas fill.
@@ -280,12 +287,48 @@ Each appraoch is introduced below, and progress on the main experimental facilit
     \label{fig:intro_indirect}
 \end{figure}
 
-The \ac{NIF} at the \ac{LLNL} in the United States of America, is the largest \ac{ICF} facility and high power laser system in the world, which mainly focusses on the indirect-drive appraoch.
-It is comprised of ...
-The \ac{LMJ} is a newer facility at \ac{CEA} in France, which ...
+A schematic of an indirect-drive experiment is shown in Fig.~\ref{fig:intro_indirect}.
+The \ac{NIF} at the \ac{LLNL} in the United States of America, is the largest \ac{ICF} facility and high power laser system in the world, and it mainly focusses on the indirect-drive appraoch to \ac{ICF}~\cite{miller_national_2004,spaeth_description_2016}.
+The laser system is comprised of 192 beams, which are clustered around two poles, so that they can enter the small \ac{LEH} of the hohlraum, as is demonstrated in Fig.~\ref{fig:intro_indirect}.
+Approximately $2\ \text{MJ}$ of laser energy can be delivered to the target, usually on a timescale of $10\rightarrow20\ \text{ns}$.
+The \ac{LMJ} is a newer facility at \ac{CEA} in France, which is the largest \ac{ICF} experiment outside of the United States.
+It is also predominantly focussed on the indirect-drive approach and, although currently still in construction, plasna to habe 176 beams that will deliver approximately $1\ \text{MJ}$ of laser energy to the hohlraum~\cite{fleurot_laser_2005}.
 
-Talk about all that jazz and give the diagram.
-Talk about NIF and ignition, gain etc.
+The main benefit of the indirect-drive approach is in the uniformity of the driving radiation.
+Laser focal spots are instabtaneuosly highly non-uniform, which can seed instabilities and compression is also limited based on the number of available beams.
+Conversion of laser light to z-rays in a hohlraum creates a highly uniformly radiation field inside the hohlraum, which has limitted short wavelength perturbations to seed \ac{RTI} growth.
+Instability growth is therefore mostly seeded from engineering features, such as the tent used to hold the capsule in place, defects in the capsule and surface roughness, and the fill tube used to insert the fuel~\cite{clark_three-dimensional_2016}.
+A high-Z material such as gold is used for the hohlraum, due to high laser absorption and emissivity.
+Longer wavelength modes can be seeded if the laser heating of the hohlraum is asymmetric.
+For example, Fig.~\ref{fig:intro_indirect} shows that the hohlraum wall can heat and expand, blocking the `inner-cone' beams which heat the material near the capsule eqautor.
+Filling the hohlraum with a low-Z gas fill\footnote{A low-Z hohlraum fill is used to limit laser absorption.} to limit the `gold bubble' expansion, however, this allows for deletrious \ac{LPIs} to occur, which reflect laser energy back out of the \ac{LEH}~\cite{macgowan_laserplasma_1996}.
+Current experiments on the \ac{NIF}, use a relatively low gas fill to reduce backscatter-\ac{LPIs}, and introduce a wavelength shift between the inner and outer cones of laser beams, which allows for a laser-plasma interaction known as \ac{CBET} to transfer power to the outer beams late in the implosion\cite{michel_tuning_2009,moody_multistep_2012,kritcher_energy_2018}.
+This compensates for absorption in the expanding gold bubble and can maintain symmetry of the implosion.
+The main drawback of the approach to the direct-drive appraoch is that the conversion of laser light to capsule kinetic energy vai the hohlraum, introduces an additional $\sim10\%$ efficiency decrease, limiting the maximum gains that can be achieved.
+Increasing the size of the capsule relative to the hohlraum increases the fraction of x-ray energy which is coupled to the target, but can introduce long-wavelength instabilites if made too large by blocking laser propagation.
+Direct-drive is thus often considered the preferred scheme for \ac{IFE}.
+
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Introduction/Images/NIF_yields.jpg}
+    \centering
+    \caption{$G$ plotted against time for indirect-drive \ac{ICF} shots on \ac{NIF}.
+    The color of each bars represents a different implosion design, and the dashed horizontal line represents $G=1$, where the fusion energy produced is equal to the incident laser energy.
+    Used under CC BY 4.0 from Ref.~\cite{abu-shawareb_achievement_2024}.
+    }%
+    \label{fig:intro_nif_yields}
+\end{figure}
+
+Although early experiments on the \ac{NIF} dramatically underachieved the main aim of demonstrating ignition, a tremendous amount of progress has been made in recent years~\cite{hurricane_physics_2023}.
+Fig.~\ref{fig:intro_nif_yields} plots $G$ for indirect-drive \ac{ICF} shots on the \ac{NIF}, up to December 2022~\cite{abu-shawareb_achievement_2024}.
+The initial target designs, up to 2013, utilised a low adiabat design, with a plastic (CH) ablator, known as `Low Foot', which proved very sensitivie to hydrodynamic instabilities, the results of which are shown in shaded grey in Fig.~\ref{fig:intro_nif_yields}~\cite{lindl_review_2014}.
+This led to the subsequent, `High Foot' campaign, where the target was kept similar, but the adiabat of the design was raised to create a more stable implosion, which improved yields, plotted in red~\cite{hurricane_high-foot_2014}.
+A new ablator material, \ac{HDC}, was deployed subsequent to this campaign which had a higher density than CH, resulting in improved absorption and thus shorter laser pulses~\cite{mackinnon_high-density_2014}.
+The gas fill-density of the hohlraum was also lowered to reduce the loss of laser energy to backscatter \ac{LPIs}.
+The `Hybrid' campaigns made further improvements, by utilising \ac{CBET} to compensate for the loss of symmetry resulting from the gold-bubble expansion in the low-fill hohlraum, using larger capsules to increase coupling efficiency and thicker shells to mitigate instabilities~\cite{zylstra_record_2021}.
+Additional improvements were made to capsule quality which minimised sources of instability~\cite{kritcher_design_2024}.
+Shots from these campaigns are shown in the light and darker blue in Fig.~\ref{fig:intro_nif_yields} and have led to the achievement of a burning-plasma\footnote{A burning-plasma is defined as plasma where alpha heating is the dominant heating mechanism. This is opposed to ignition, where alpha heating is greater than loss terms.}~\cite{zylstra_burning_2022,kritcher_design_2022} and ignition regimes~\cite{abu-shawareb_lawson_2022}.
+This ultimately resulted a shot $G>1$ in December 2022~\cite{abu-shawareb_achievement_2024}.
+Although not plotted in Fig.~\ref{fig:intro_nif_yields}, the gain record at the time of writing stands at $G=2.4$~\cite{noauthor_nif_nodate}.
 
 %################################################################################
 %################################################################################
