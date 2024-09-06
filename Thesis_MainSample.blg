@@ -7,45 +7,45 @@ A level-1 auxiliary file: Introduction/IntroductionMain.aux
 A level-1 auxiliary file: Appendix/Permissions.aux
 Database file #1: Bibliography/Bibliography.bib
 Warning--empty institution in nuckolls_early_1998
-You've used 15 entries,
+You've used 33 entries,
             2481 wiz_defined-function locations,
-            686 strings with 9999 characters,
-and the built_in function-call counts, 8230 in all, are:
-= -- 582
-> -- 755
-< -- 10
-+ -- 270
-- -- 240
-* -- 870
-:= -- 1503
-add.period$ -- 83
-call.type$ -- 15
-change.case$ -- 28
-chr.to.int$ -- 15
-cite$ -- 16
-duplicate$ -- 272
-empty$ -- 521
-format.name$ -- 261
-if$ -- 1600
+            832 strings with 19489 characters,
+and the built_in function-call counts, 23173 in all, are:
+= -- 1331
+> -- 2751
+< -- 12
++ -- 954
+- -- 888
+* -- 2712
+:= -- 4431
+add.period$ -- 191
+call.type$ -- 33
+change.case$ -- 64
+chr.to.int$ -- 33
+cite$ -- 34
+duplicate$ -- 614
+empty$ -- 1193
+format.name$ -- 929
+if$ -- 4341
 int.to.chr$ -- 1
-int.to.str$ -- 16
-missing$ -- 13
-newline$ -- 120
-num.names$ -- 45
-pop$ -- 73
+int.to.str$ -- 34
+missing$ -- 31
+newline$ -- 264
+num.names$ -- 99
+pop$ -- 145
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 33
 quote$ -- 0
-skip$ -- 144
+skip$ -- 309
 stack$ -- 0
-substring$ -- 288
-swap$ -- 45
+substring$ -- 690
+swap$ -- 99
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 102
+type$ -- 228
 warning$ -- 1
-while$ -- 47
+while$ -- 107
 width$ -- 0
-write$ -- 276
+write$ -- 618
 (There was 1 warning)

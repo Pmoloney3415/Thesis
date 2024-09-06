@@ -153,19 +153,70 @@ This minimises the convergence ratio, $CR = R_{\text{init}}/R_{\text{final}}$, w
 \begin{figure}[t!]
     \includegraphics[width=0.7\linewidth]{Introduction/Images/hotspot ignition white.png}
     \centering
-    \caption{Key Stages of the central hotspot ignition \ac{ICF} concept.
+    \caption{Four key Stages of the central hotspot ignition \ac{ICF} concept.
+    The chronological order of the diagram is top-left, bottom-left, bottom-right and then top-right quadrants, which display the initial configuration, implosion, stagnation and burn propagation stages respectively.
     }%
     \label{fig:intro_hotspot}
 \end{figure}
 
-Describe ablation pressure, ignite small volume of fuel etc.
+Increasing fuel mass requires larger and larger driver energy to heat to the required fusion temperatures, $T\sim5\ \text{keV}$.
+This necessitates larger and more expensive drivers, limiting both the upfront driver cost and potential target gain.
+Therefore, schemes which can minise the driver energy required to ignite a given fuel mass are more practical for current experiments and future power plants.
+The `central hotspot ignition' scheme is one such target configuration, where the target is isentropically compressed by carefully constructed pulse shapes, such that it maintains a cold dense fuel shell which implodes inward.
+Only a small mass of central fuel is heated to the required fusion temperatures.
+The energy required for this heating is provided from implosion kinetic energy of the dense shell.
+Fig.~\ref{fig:intro_hotspot} shows a schematic representation of a central hotspot ignition implosion at 4 important stages.
+The top left quadrant shows the initial, spherical target configuration, which is comprised of an outer ablator, a solid DT ice layer and an inner DT gas fill.
+Choice of ablator material is driven by a number of considerations, including mass ablation rate, minimisation of instability growth, radiation coupling and ease of manufacturing~\cite{lafon_direct-driveignition_2015,kline_first_2016,hu_laser-direct-drive_2023,casey_performance_2015}.
+Cryogenic temperatures are required to form the ice layer from the DT fuel.
+The driver should, ideally, uniformly irradiate the outer surface to maintain the optimal spherical compression and to minimise instabilities growth.
+Specific radiation drives shall be discussed in Sec.~\ref{sec:intro_mainexperiments}, but for now, the scheme shall be discussed, while remaining agnostic of the driver.
+
+The bottom left quadrant of Fig.~\ref{fig:intro_hotspot} shows the implosion phase of the scheme.
+As the radiation from the driver heats the outer layer of the ablator, it heats up and expands radially outward, which imparts a rocket force on the interior target, propelling it inward.
+A low density gas fill is used to make compression of the target easier such that high convergence ratios can be achieved.
+Greatest convergence can be achieved if the pressure of the gas fill is minimised and thus high-gain \ac{ICF} targets aim to limit `preheat' of the interior gas fill ahead of the shock.
+For example, a poorly pulse-shaped driver will lead to undesrired shock heating of the interior fuel ahead of the converging shell, which raises its pressure and thus limits compressibility.
+Assuming perfectly spherical targets adnd driver radiation, isentropic pulses maximise the target gains, which are designed to limit shock preheating of the gas-fill.
+In reaility, target defects and short wavelength perturbations in the driver radiation seed the \ac{RTI} on the ablation surface, which can grow due to the misaligned density and pressure gradients.
+Realistic pulse shapes often slightly preheat the target, which increases stability to hi=ydrodynamic instability growth~\cite{goncharov_improved_2003,hurricane_high-foot_2014}.
+
+The stagnation phase of the implosion is shown in the bottom right quadrant of Fig.~\ref{fig:intro_hotspot}.
+As the remaining relatively cold and dense shell converges on the axis, $P\text{d}V$ heating raises the temparture of the compressed interior gas fill.
+If the implosion velocity is sufficeint, this piston heating of the fuel results is fusion relevant temperatures.
+The deceleration phase is also hydrodynamically unstable, because the high pressure, low density interior pushes on the high density, low pressure shell, which results in furhter \ac{RTI} growth.
+Long wavelength perturbations to the radiation drive result in unstagnated kinetic energy in the hotspot, limitting maximum achievable temperatures~\cite{gatu_johnson_impact_2018}.
+Short wavelength perturbations from the \ac{RTI}, can introduce high-Z ablator material to the hotspot which enhances radiative losses, and if sufficiently large amplitude can puncture the shell, severley degrading confinement~\cite{smalyuk_review_2020}.
+
+The upper-right quadrant of Fig.~\ref{fig:intro_hotspot} shows the final, ignition and burn propagation phase of the design.
+If the dnesity and temperature of the fuel hotspot are sufficient, then fusion reactions begin to occur, generating energetic alpha fusion products.
+For sufficnetly high areal density shells, the alpha particles deposit their energy in the dense fuel shell, raising its temperature and intoriducing further fusion fuel to the burn process.
+This leads to ignition, if the confinement holds the fuel together for a sufficiently long period.
 
 %################################################################################
 %################################################################################
-\subsection{Alternative Approaches}%
+\subsection{Alternative Ignition Approaches}%
 \label{sec:intro_icf_alt}
 
-Shock and fast ignition.
+In the central hotspot ignition scheme, the energy required to heat the fuel to fusion temperatures is supplied by the kinetic energy of the imploding shell.
+The high shell velocities required to result in hotspot fusion temperatures is $\sim300\ \text{km/s}$ and results in significant instability growth.
+Alternative schemes exist, namely the shock- and fast-ignition variants, where the required shell density is obtained via a much slower implosion process, limitting instability growth.
+Temperatures are then achieved by applying a heating source, separate from the implosion dynamics.
+For shock ignition, the driver pulse shape is sharply ramped up at the end of the pulse, in order to generate a strong, spherically converging shock, heating the fuel to fusion temperatures~\cite{betti_shock_2007,perkins_shock_2009}.
+The main issue with this scheme for laser-driven \ac{ICF}, has been questions over laser coupling at the high intensities required to generate the ignitor shock.
+At high laser intensities, a mostly deletrious class of laser-plasma interaction known as \ac{LPIs} dominate.
+\ac{LPIs} are introduced in detail Sec.~\ref{sec:intro_LPIs}.
+Recent work has explored the possibility of augmenting the laser pulse shape to add a dip in power, prior to the ignitor pulse rise, which aids in shock generation and thus limits the intensities required~\cite{scott_shock-augmented_2022}.
+
+Fast-ignition is an alternative concept which utilises an external ignitor-beam, of charged particles, to provide the hotspot heating~\cite{tabak_ignition_1994}.
+Scientific research related to this scheme include studying how the high energy charged particles are generated via ultraintense laser interactions and they can be focused and couple their energy to the fuel~\cite{jarrott_visualizing_2016,gong_direct_2019}.
+The overall complexity of many of proposed driver and target configurations would also likely have to be reduced, in order to make \ac{IFE} relevant targets.
+
+All of the ignition concepts introduced so far focus on igniting a small central mass, which then initiates a propagating burn wave into surrounding fuel.
+The volume-ignition variant, instead proposes igniting the entire fuel volume simultaneuosly~\cite{khoda-bakhsh_advanced_1992,molvig_low_2016}.
+This is achieved by assembling a large, dense fuel mass, kept at a much lower temperature than the hotspot in other schemes.
+A large and dense fuel assembly has minimal radiative losses and can thus ignite at $T\sim1.5\ \text{keV}$, as opposed to the ideal ignition temperature of hotspot schemes, $T=4.3\ \text{keV}$~\cite{atzeni_physics_2004}\footnote{The ideal ignition temperature is the value at which alpha heating balances alpha heating.}.
+One issue with this scheme is that singificantly more laser energy is required to ignite a given fuel mass, because the entire volume must be brought to ignition conditions at the same time.
 
 %################################################################################
 %################################################################################
@@ -193,12 +244,12 @@ Some fraction $f$ of this generated energy is recycled back into the plant to po
 \end{equation}
 with the constraint, $f \eta_{\text{th}} \eta_{\text{d}} G \geq 1$ for net energy production.
 Power plants must also produce a sufficiently large volume of energy to be economical.
-Therefore, several $\sim100\ \text{MJ}$ reactions must occur each second for a $100 \text{MW}$ plant, which necessitates a driver that can operate at $\sim10\ \text{Hz}$.
+Therefore, several $\sim100\ \text{MJ}$ reactions must occur each second for a $100\ \text{MW}$ plant, which necessitates a driver that can operate at $\sim10\ \text{Hz}$.
 
 The \ac{DPSSL} concept, could feasibly produce laser energy at $\sim10\ \text{Hz}$ repetition rate, with an efficiency $\eta_d\sim10\%$.
 Assuming a thermal cycle efficiency, $\eta_{\text{th}}=40\%$ and a recycled energy fraction, $f=1/4$, this means that a target gain of approximately $G\sim100$ is required for power production.
-Additionally, the plant must be economically profitable, thus for a $G=100$ reaction, which releases $E_{\text{fus}} = 100\ \text{MJ} = 28\ \text{kWh}$, the energy sold to the grid would make about $£1.50$\footnote{The UK April 2024 energy price of $£0.25$ per $\text{kWh}$ was used.}.
-Therefore, targets must cost approximately $£0.10$, which limits the tolerable manufacturing complexity.
+Additionally, the plant must be economically profitable, thus for a $G=100$ reaction, which releases $E_{\text{fus}} = 100\ \text{MJ} = 28\ \text{kWh}$, the energy sold to the grid would make about £1.50\footnote{The UK April 2024 energy price of £0.25 per $\text{kWh}$ was used.}.
+Therefore, targets must cost approximately £0.10, which limits the tolerable manufacturing complexity.
 \ac{IFE} target concepts exist, which could feasibly be mass-produced for an acceptable cost, for example initially uniform density liquid spheres, known as `dynamic shell' targets~\cite{goncharov_novel_2020,igumenshchev_proof--principle_2023}.
 
 %###############################################################################################################################
@@ -207,27 +258,38 @@ Therefore, targets must cost approximately $£0.10$, which limits the tolerable 
 \section{Current Experiments/ Main Approaches}%
 \label{sec:intro_mainexperiments}
 
-Small intro on direct vs indirect.
+In Sec.~\ref{sec:intro_ICF}, the basic principles of \ac{ICF} were introduced without specifying the driver technology.
+Although heavy ion beams have been proposed as a driver technology~\cite{metzler_target_1984}, most current research focusses on the direct-drive and indirect-drive approaches, which use laser light to directly and indirectly irradiate the target respectively.
+For the direct-drive approach, laser are focussed upon the outer surface of the target, whereas in indirect-drive, they illuminate the interior surface of a high-Z material `hohlraum', which generates a thermal bath of x-rays.
+The indirect-drive approach was developed in order to relax requirements on laser beam uniformity and sensitivity to hydrodynamic instbailities in direct-drive~\cite{lindl_development_1995}.
+Sources of degradation and imposion dynamics are somewhat different in each of these approaches.
+Each appraoch is introduced below, and progress on the main experimental facilities is summarised.
 
 %################################################################################
 %################################################################################
-\subsection{Indirect Drive}%
+\subsection{Indirect-Drive}%
 \label{sec:intro_indirect}
 
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Introduction/Images/indirect icf white.png}
     \centering
     \caption{Schematic of the indirect-drive approach to \ac{ICF}.
+    Laser light, represented as blue transparent rectangles, irradiate the interior of a high-Z (\textit{e.g.} gold) hohlraum, which produces thermal x-rays that drive the capsule implosion.
+    A number of important physical effects, typical to indreict-drive experiments, are also illustrated on the diagram.
     }%
     \label{fig:intro_indirect}
 \end{figure}
+
+The \ac{NIF} at the \ac{LLNL} in the United States of America, is the largest \ac{ICF} facility and high power laser system in the world, which mainly focusses on the indirect-drive appraoch.
+It is comprised of ...
+The \ac{LMJ} is a newer facility at \ac{CEA} in France, which ...
 
 Talk about all that jazz and give the diagram.
 Talk about NIF and ignition, gain etc.
 
 %################################################################################
 %################################################################################
-\subsection{Direct Drive}%
+\subsection{Direct-Drive}%
 \label{sec:intro_direct}
 
 \begin{figure}[t!]
@@ -274,7 +336,7 @@ Balance between $P_abl$ and high $I*lam^2$.
 
 Damaging class of laser-plasma interactions for ICF.
 Give diagram of how they work microphysically.
-Include direct drive LPI diagram.
+Include direct-drive LPI diagram.
 Introduce each in turn and say what they do for direct and indirect.
 
 %###############################################################################################################################

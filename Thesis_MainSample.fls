@@ -1,8 +1,8 @@
-PWD C:/Thesis_latex
+PWD c:/Repos/Thesis
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Thesis_latex/Thesis_MainSample.tex
+INPUT c:/Repos/Thesis/Thesis_MainSample.tex
 OUTPUT Thesis_MainSample.log
 INPUT ./icldt.cls
 INPUT icldt.cls
@@ -505,12 +505,12 @@ INPUT ./Introduction/Images/hotspot ignition white.png
 INPUT ./Introduction/Images/hotspot ignition white.png
 INPUT ./Introduction/Images/hotspot ignition white.png
 INPUT ./Introduction/Images/hotspot ignition white.png
-INPUT ./Introduction/Images/IFE_powerplant.png
-INPUT ./Introduction/Images/IFE_powerplant.png
-INPUT ./Introduction/Images/IFE_powerplant.png
-INPUT ./Introduction/Images/IFE_powerplant.png
-INPUT ./Introduction/Images/IFE_powerplant.png
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futmi.vf
+INPUT ./Introduction/Images/IFE_powerplant.png
+INPUT ./Introduction/Images/IFE_powerplant.png
+INPUT ./Introduction/Images/IFE_powerplant.png
+INPUT ./Introduction/Images/IFE_powerplant.png
+INPUT ./Introduction/Images/IFE_powerplant.png
 INPUT ./Introduction/Images/indirect icf white.png
 INPUT ./Introduction/Images/indirect icf white.png
 INPUT ./Introduction/Images/indirect icf white.png

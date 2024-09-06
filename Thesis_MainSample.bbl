@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -101,6 +101,134 @@ Aidan Crilly.
 \newblock PhD thesis, Imperial College London, London, April 2020.
 \newblock URL \url{https://inspirehep.net/literature/1850910}.
 
+\bibitem[Lafon et~al.(2015)Lafon, Betti, Anderson, Collins, Epstein, McKenty, Myatt, Shvydky, and Skupsky]{lafon_direct-driveignition_2015}
+M.~Lafon, R.~Betti, K.~S. Anderson, T.~J.~B. Collins, R.~Epstein, P.~W. McKenty, J.~F. Myatt, A.~Shvydky, and S.~Skupsky.
+\newblock Direct-drive–ignition designs with mid- \textit{{Z}} ablators.
+\newblock \emph{Physics of Plasmas}, 22\penalty0 (3):\penalty0 032703, March 2015.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4914835}.
+\newblock URL \url{https://pubs.aip.org/pop/article/22/3/032703/1079495/Direct-drive-ignition-designs-with-mid-Z-ablators}.
+
+\bibitem[Kline et~al.(2016)Kline, Yi, Simakov, Olson, Wilson, Kyrala, Perry, Batha, Zylstra, Dewald, Tommasini, Ralph, Strozzi, MacPhee, Callahan, Hinkel, Hurricane, Milovich, Rygg, Khan, Haan, Celliers, Clark, Hammel, Kozioziemski, Schneider, Marinak, Rinderknecht, Robey, Salmonson, Patel, Ma, Edwards, Stadermann, Baxamusa, Alford, Wang, Nikroo, Rice, Hoover, Youngblood, Xu, Huang, and Sio]{kline_first_2016}
+J.~L. Kline, S.~A. Yi, A.~N. Simakov, R.~E. Olson, D.~C. Wilson, G.~A. Kyrala, T.~S. Perry, S.~H. Batha, A.~B. Zylstra, E.~L. Dewald, R.~Tommasini, J.~E. Ralph, D.~J. Strozzi, A.~G. MacPhee, D.~A. Callahan, D.~E. Hinkel, O.~A. Hurricane, J.~L. Milovich, J.~R. Rygg, S.~F. Khan, S.~W. Haan, P.~M. Celliers, D.~S. Clark, B.~A. Hammel, B.~Kozioziemski, M.~B. Schneider, M.~M. Marinak, H.~G. Rinderknecht, H.~F. Robey, J.~D. Salmonson, P.~K. Patel, T.~Ma, M.~J. Edwards, M.~Stadermann, S.~Baxamusa, C.~Alford, M.~Wang, A.~Nikroo, N.~Rice, D.~Hoover, K.~P. Youngblood, H.~Xu, H.~Huang, and H.~Sio.
+\newblock First beryllium capsule implosions on the {National} {Ignition} {Facility}.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (5):\penalty0 056310, May 2016.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4948277}.
+\newblock URL \url{https://pubs.aip.org/pop/article/23/5/056310/966619/First-beryllium-capsule-implosions-on-the-National}.
+
+\bibitem[Hu et~al.(2023)Hu, Ceurvorst, Peebles, Mao, Li, Lu, Shvydky, Goncharov, Epstein, Nichols, Goshadze, Ghosh, Hinz, Karasiev, Zhang, Shaffer, Mihaylov, Cappelletti, Harding, Li, Campbell, Shah, Collins, Regan, and Deeney]{hu_laser-direct-drive_2023}
+S.~X. Hu, L.~Ceurvorst, J.~L. Peebles, A.~Mao, P.~Li, Y.~Lu, A.~Shvydky, V.~N. Goncharov, R.~Epstein, K.~A. Nichols, R.~M.~N. Goshadze, M.~Ghosh, J.~Hinz, V.~V. Karasiev, S.~Zhang, N.~R. Shaffer, D.~I. Mihaylov, J.~Cappelletti, D.~R. Harding, C.~K. Li, E.~M. Campbell, R.~C. Shah, T.~J.~B. Collins, S.~P. Regan, and C.~Deeney.
+\newblock Laser-direct-drive fusion target design with a high- {Z} gradient-density pusher shell.
+\newblock \emph{Physical Review E}, 108\penalty0 (3):\penalty0 035209, September 2023.
+\newblock ISSN 2470-0045, 2470-0053.
+\newblock \doi{10.1103/PhysRevE.108.035209}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.108.035209}.
+
+\bibitem[Casey et~al.(2015)Casey, Woods, Smalyuk, Hurricane, Glebov, Stoeckl, Theobald, Wallace, Nikroo, Schoff, Shuldberg, Wu, Frenje, Landen, Remington, and Glendinning]{casey_performance_2015}
+D. T. Casey, D. T. Woods, V. A. Smalyuk, O. A. Hurricane, V. Y. Glebov, C.~Stoeckl, W.~Theobald, R.~Wallace, A.~Nikroo, M.~Schoff, C.~Shuldberg, K. J. Wu, J. A. Frenje, O. L. Landen, B. A. Remington, and G.~Glendinning.
+\newblock Performance and {Mix} {Measurements} of {Indirect} {Drive} {Cu}-{Doped} {Be} {Implosions}.
+\newblock \emph{Physical Review Letters}, 114\penalty0 (20):\penalty0 205002, May 2015.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.114.205002}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.114.205002}.
+
+\bibitem[Goncharov et~al.(2003)Goncharov, Knauer, McKenty, Radha, Sangster, Skupsky, Betti, McCrory, and Meyerhofer]{goncharov_improved_2003}
+V.~N. Goncharov, J.~P. Knauer, P.~W. McKenty, P.~B. Radha, T.~C. Sangster, S.~Skupsky, R.~Betti, R.~L. McCrory, and D.~D. Meyerhofer.
+\newblock Improved performance of direct-drive inertial confinement fusion target designs with adiabat shaping using an intensity picket.
+\newblock \emph{Physics of Plasmas}, 10\penalty0 (5):\penalty0 1906--1918, May 2003.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.1562166}.
+\newblock URL \url{https://pubs.aip.org/pop/article/10/5/1906/1070561/Improved-performance-of-direct-drive-inertial}.
+
+\bibitem[Hurricane et~al.(2014)Hurricane, Callahan, Casey, Dewald, Dittrich, Döppner, Barrios~Garcia, Hinkel, Berzak~Hopkins, Kervin, Kline, Pape, Ma, MacPhee, Milovich, Moody, Pak, Patel, Park, Remington, Robey, Salmonson, Springer, Tommasini, Benedetti, Caggiano, Celliers, Cerjan, Dylla-Spears, Edgell, Edwards, Fittinghoff, Grim, Guler, Izumi, Frenje, Gatu~Johnson, Haan, Hatarik, Herrmann, Khan, Knauer, Kozioziemski, Kritcher, Kyrala, Maclaren, Merrill, Michel, Ralph, Ross, Rygg, Schneider, Spears, Widmann, and Yeamans]{hurricane_high-foot_2014}
+O.~A. Hurricane, D.~A. Callahan, D.~T. Casey, E.~L. Dewald, T.~R. Dittrich, T.~Döppner, M.~A. Barrios~Garcia, D.~E. Hinkel, L.~F. Berzak~Hopkins, P.~Kervin, J.~L. Kline, S.~Le Pape, T.~Ma, A.~G. MacPhee, J.~L. Milovich, J.~Moody, A.~E. Pak, P.~K. Patel, H.-S. Park, B.~A. Remington, H.~F. Robey, J.~D. Salmonson, P.~T. Springer, R.~Tommasini, L.~R. Benedetti, J.~A. Caggiano, P.~Celliers, C.~Cerjan, R.~Dylla-Spears, D.~Edgell, M.~J. Edwards, D.~Fittinghoff, G.~P. Grim, N.~Guler, N.~Izumi, J.~A. Frenje, M.~Gatu~Johnson, S.~Haan, R.~Hatarik, H.~Herrmann, S.~Khan, J.~Knauer, B.~J. Kozioziemski, A.~L. Kritcher, G.~Kyrala, S.~A. Maclaren, F.~E. Merrill, P.~Michel, J.~Ralph, J.~S. Ross, J.~R. Rygg, M.~B. Schneider, B.~K. Spears, K.~Widmann, and C.~B. Yeamans.
+\newblock The high-foot implosion campaign on the {National} {Ignition} {Facility}.
+\newblock \emph{Physics of Plasmas}, 21\penalty0 (5):\penalty0 056314, May 2014.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4874330}.
+\newblock URL \url{https://pubs.aip.org/pop/article/21/5/056314/319363/The-high-foot-implosion-campaign-on-the-National}.
+
+\bibitem[Gatu~Johnson et~al.(2018)Gatu~Johnson, Appelbe, Chittenden, Delettrez, Forrest, Frenje, Glebov, Grimble, Haines, Igumenshchev, Janezic, Knauer, Lahmann, Marshall, Michel, Séguin, Stoeckl, Walsh, Zylstra, and Petrasso]{gatu_johnson_impact_2018}
+M.~Gatu~Johnson, B.~D. Appelbe, J.~P. Chittenden, J.~Delettrez, C.~Forrest, J.~A. Frenje, V.~Yu. Glebov, W.~Grimble, B.~M. Haines, I.~Igumenshchev, R.~Janezic, J.~P. Knauer, B.~Lahmann, F.~J. Marshall, T.~Michel, F.~H. Séguin, C.~Stoeckl, C.~Walsh, A.~B. Zylstra, and R.~D. Petrasso.
+\newblock Impact of asymmetries on fuel performance in inertial confinement fusion.
+\newblock \emph{Physical Review E}, 98\penalty0 (5):\penalty0 051201, November 2018.
+\newblock ISSN 2470-0045, 2470-0053.
+\newblock \doi{10.1103/PhysRevE.98.051201}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.98.051201}.
+
+\bibitem[Smalyuk et~al.(2020)Smalyuk, Weber, Landen, Ali, Bachmann, Celliers, Dewald, Fernandez, Hammel, Hall, MacPhee, Pickworth, Robey, Alfonso, Baker, Hopkins, Carlson, Casey, Clark, Crippen, Divol, Döppner, Edwards, Farrell, Felker, Field, Haan, Hamza, Havre, Herrmann, Hsing, Khan, Kline, Kroll, LePape, Loomis, MacGowan, Martinez, Masse, Mauldin, Milovich, Moore, Nikroo, Pak, Patel, Peterson, Raman, Remington, Rice, Schoff, and Stadermann]{smalyuk_review_2020}
+V~A Smalyuk, C~R Weber, O~L Landen, S~Ali, B~Bachmann, P~M Celliers, E~L Dewald, A~Fernandez, B~A Hammel, G~Hall, A~G MacPhee, L~Pickworth, H~F Robey, N~Alfonso, K~L Baker, L~F~Berzak Hopkins, L~Carlson, D~T Casey, D~S Clark, J~Crippen, L~Divol, T~Döppner, M~J Edwards, M~Farrell, S~Felker, J~E Field, S~W Haan, A~V Hamza, M~Havre, M~C Herrmann, W~W Hsing, S~Khan, J~Kline, J~J Kroll, S~LePape, E~Loomis, B~J MacGowan, D~Martinez, L~Masse, M~Mauldin, J~L Milovich, A~S Moore, A~Nikroo, A~Pak, P~K Patel, J~L Peterson, K~Raman, B~A Remington, N~Rice, M~Schoff, and M~Stadermann.
+\newblock Review of hydrodynamic instability experiments in inertially confined fusion implosions on {National} {Ignition} {Facility}.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 62\penalty0 (1):\penalty0 014007, January 2020.
+\newblock ISSN 0741-3335, 1361-6587.
+\newblock \doi{10.1088/1361-6587/ab49f4}.
+\newblock URL \url{https://iopscience.iop.org/article/10.1088/1361-6587/ab49f4}.
+
+\bibitem[Betti et~al.(2007)Betti, Zhou, Anderson, Perkins, Theobald, and Solodov]{betti_shock_2007}
+R.~Betti, C.~D. Zhou, K.~S. Anderson, L.~J. Perkins, W.~Theobald, and A.~A. Solodov.
+\newblock Shock {Ignition} of {Thermonuclear} {Fuel} with {High} {Areal} {Density}.
+\newblock \emph{Physical Review Letters}, 98\penalty0 (15):\penalty0 155001, April 2007.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.98.155001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.98.155001}.
+
+\bibitem[Perkins et~al.(2009)Perkins, Betti, LaFortune, and Williams]{perkins_shock_2009}
+L.~J. Perkins, R.~Betti, K.~N. LaFortune, and W.~H. Williams.
+\newblock Shock {Ignition}: {A} {New} {Approach} to {High} {Gain} {Inertial} {Confinement} {Fusion} on the {National} {Ignition} {Facility}.
+\newblock \emph{Physical Review Letters}, 103\penalty0 (4):\penalty0 045004, July 2009.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.103.045004}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.103.045004}.
+
+\bibitem[Scott et~al.(2022)Scott, Barlow, Trickey, Ruocco, Glize, Antonelli, Khan, and Woolsey]{scott_shock-augmented_2022}
+R. H. H. Scott, D.~Barlow, W.~Trickey, A.~Ruocco, K.~Glize, L.~Antonelli, M.~Khan, and N. C. Woolsey.
+\newblock Shock-{Augmented} {Ignition} {Approach} to {Laser} {Inertial} {Fusion}.
+\newblock \emph{Physical Review Letters}, 129\penalty0 (19):\penalty0 195001, November 2022.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.129.195001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.129.195001}.
+
+\bibitem[Tabak et~al.(1994)Tabak, Hammer, Glinsky, Kruer, Wilks, Woodworth, Campbell, Perry, and Mason]{tabak_ignition_1994}
+Max Tabak, James Hammer, Michael~E. Glinsky, William~L. Kruer, Scott~C. Wilks, John Woodworth, E.~Michael Campbell, Michael~D. Perry, and Rodney~J. Mason.
+\newblock Ignition and high gain with ultrapowerful lasers*.
+\newblock \emph{Physics of Plasmas}, 1\penalty0 (5):\penalty0 1626--1634, May 1994.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.870664}.
+\newblock URL \url{https://pubs.aip.org/pop/article/1/5/1626/103434/Ignition-and-high-gain-with-ultrapowerful-lasers}.
+
+\bibitem[Jarrott et~al.(2016)Jarrott, Wei, McGuffey, Solodov, Theobald, Qiao, Stoeckl, Betti, Chen, Delettrez, Döppner, Giraldez, Glebov, Habara, Iwawaki, Key, Luo, Marshall, McLean, Mileham, Patel, Santos, Sawada, Stephens, Yabuuchi, and Beg]{jarrott_visualizing_2016}
+L.~C. Jarrott, M.~S. Wei, C.~McGuffey, A.~A. Solodov, W.~Theobald, B.~Qiao, C.~Stoeckl, R.~Betti, H.~Chen, J.~Delettrez, T.~Döppner, E.~M. Giraldez, V.~Y. Glebov, H.~Habara, T.~Iwawaki, M.~H. Key, R.~W. Luo, F.~J. Marshall, H.~S. McLean, C.~Mileham, P.~K. Patel, J.~J. Santos, H.~Sawada, R.~B. Stephens, T.~Yabuuchi, and F.~N. Beg.
+\newblock Visualizing fast electron energy transport into laser-compressed high-density fast-ignition targets.
+\newblock \emph{Nature Physics}, 12\penalty0 (5):\penalty0 499--504, May 2016.
+\newblock ISSN 1745-2473, 1745-2481.
+\newblock \doi{10.1038/nphys3614}.
+\newblock URL \url{https://www.nature.com/articles/nphys3614}.
+
+\bibitem[Gong et~al.(2019)Gong, Habara, Sumioka, Yoshimoto, Hayashi, Kawazu, Otsuki, Matsumoto, Minami, Abe, Aizawa, Enmei, Fujita, Ikegami, Makiyama, Okazaki, Okida, Tsukamoto, Arikawa, Fujioka, Iwasa, Lee, Nagatomo, Shiraga, Yamanoi, Wei, and Tanaka]{gong_direct_2019}
+T.~Gong, H.~Habara, K.~Sumioka, M.~Yoshimoto, Y.~Hayashi, S.~Kawazu, T.~Otsuki, T.~Matsumoto, T.~Minami, K.~Abe, K.~Aizawa, Y.~Enmei, Y.~Fujita, A.~Ikegami, H.~Makiyama, K.~Okazaki, K.~Okida, T.~Tsukamoto, Y.~Arikawa, S.~Fujioka, Y.~Iwasa, S.~Lee, H.~Nagatomo, H.~Shiraga, K.~Yamanoi, M.~S. Wei, and K.~A. Tanaka.
+\newblock Direct observation of imploded core heating via fast electrons with super-penetration scheme.
+\newblock \emph{Nature Communications}, 10\penalty0 (1):\penalty0 5614, December 2019.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/s41467-019-13574-8}.
+\newblock URL \url{https://www.nature.com/articles/s41467-019-13574-8}.
+
+\bibitem[Khoda-Bakhsh et~al.(1992)Khoda-Bakhsh, Horat, Miley, Stening, and Pieruschka]{khoda-bakhsh_advanced_1992}
+Rasol Khoda-Bakhsh, Heinrich Horat, George~H. Miley, Robert~J. Stening, and Peter Pieruschka.
+\newblock Advanced {Fusion} {Fuel} for {Inertial} {Confinement} {Fusion}.
+\newblock \emph{Fusion Technology}, 22\penalty0 (1):\penalty0 50--55, August 1992.
+\newblock ISSN 0748-1896.
+\newblock \doi{10.13182/FST92-A30053}.
+\newblock URL \url{https://www.tandfonline.com/doi/full/10.13182/FST92-A30053}.
+
+\bibitem[Molvig et~al.(2016)Molvig, Schmitt, Albright, Dodd, Hoffman, McCall, and Ramsey]{molvig_low_2016}
+Kim Molvig, Mark~J. Schmitt, B. J. Albright, E. S. Dodd, N. M. Hoffman, G. H. McCall, and S. D. Ramsey.
+\newblock Low {Fuel} {Convergence} {Path} to {Direct}-{Drive} {Fusion} {Ignition}.
+\newblock \emph{Physical Review Letters}, 116\penalty0 (25):\penalty0 255003, June 2016.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.116.255003}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.116.255003}.
+
 \bibitem[Goncharov et~al.(2020)Goncharov, Igumenshchev, Harding, Morse, Hu, Radha, Froula, Regan, Sangster, and Campbell]{goncharov_novel_2020}
 V. N. Goncharov, I. V. Igumenshchev, D. R. Harding, S. F. B. Morse, S. X. Hu, P. B. Radha, D. H. Froula, S. P. Regan, T. C. Sangster, and E. M. Campbell.
 \newblock Novel {Hot}-{Spot} {Ignition} {Designs} for {Inertial} {Confinement} {Fusion} with {Liquid}-{Deuterium}-{Tritium} {Spheres}.
@@ -116,5 +244,21 @@ I. V. Igumenshchev, W.~Theobald, C.~Stoeckl, R. C. Shah, D. T. Bishel, V.�
 \newblock ISSN 0031-9007, 1079-7114.
 \newblock \doi{10.1103/PhysRevLett.131.015102}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.131.015102}.
+
+\bibitem[Metzler and Meyer-Ter-Vehn(1984)]{metzler_target_1984}
+N.~Metzler and J.~Meyer-Ter-Vehn.
+\newblock Target study for heavy ion beam fusion.
+\newblock \emph{Laser and Particle Beams}, 2\penalty0 (1):\penalty0 27--48, February 1984.
+\newblock ISSN 0263-0346, 1469-803X.
+\newblock \doi{10.1017/S0263034600000604}.
+\newblock URL \url{https://www.cambridge.org/core/product/identifier/S0263034600000604/type/journal_article}.
+
+\bibitem[Lindl(1995)]{lindl_development_1995}
+John Lindl.
+\newblock Development of the indirect-drive approach to inertial confinement fusion and the target physics basis for ignition and gain.
+\newblock \emph{Physics of Plasmas}, 2\penalty0 (11):\penalty0 3933--4024, November 1995.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.871025}.
+\newblock URL \url{https://pubs.aip.org/pop/article/2/11/3933/261855/Development-of-the-indirect-drive-approach-to}.
 
 \end{thebibliography}
