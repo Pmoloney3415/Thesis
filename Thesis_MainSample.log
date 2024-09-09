@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.20)  6 SEP 2024 18:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  9 SEP 2024 17:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Repos/Thesis/Thesis_MainSample.tex
-(c:/Repos/Thesis/Thesis_MainSample.tex
+**c:/Thesis_latex/Thesis_MainSample.tex
+(c:/Thesis_latex/Thesis_MainSample.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (./icldt.cls
@@ -1082,25 +1082,30 @@ LaTeX Font Info:    Trying to load font information for T1+cmss on input line 36
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [4
 
-{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]) [5]
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+pdfTeX warning (ext4): destination with the same identifier (name{EPW}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.68     \acro{MCF}{Magnetic Confinement Fusion}
+                                                ] [5]) [6]
 \openout2 = `Introduction/IntroductionMain.aux'.
 
  (./Introduction/IntroductionMain.tex
 chapter 1.
 Package acronym Info: Label `acro:LCOE' newly defined as it shall be overridden
 although it is yet undefined on input line 17.
-[6
+[7
 
 
 
 
 ]
-<Introduction/Images/BE_per_nucleon.png, id=144, 722.7pt x 433.62pt>
+<Introduction/Images/BE_per_nucleon.png, id=176, 722.7pt x 433.62pt>
 File: Introduction/Images/BE_per_nucleon.png Graphic file (type png)
 <use Introduction/Images/BE_per_nucleon.png>
 Package pdftex.def Info: Introduction/Images/BE_per_nucleon.png  used on input line 44.
 (pdftex.def)             Requested size: 373.86685pt x 224.31918pt.
-<Introduction/Images/fusion-reactivities.png, id=145, 505.89pt x 433.62pt>
+<Introduction/Images/fusion-reactivities.png, id=177, 505.89pt x 433.62pt>
 File: Introduction/Images/fusion-reactivities.png Graphic file (type png)
 <use Introduction/Images/fusion-reactivities.png>
 Package pdftex.def Info: Introduction/Images/fusion-reactivities.png  used on input line 53.
@@ -1111,7 +1116,7 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./Introduction/Images/BE_per_nucleon.png>]
+ [8 <./Introduction/Images/BE_per_nucleon.png>]
 Package acronym Info: Label `acro:ICF' newly defined as it shall be overridden
 although it is yet undefined on input line 77.
 Package acronym Info: Label `acro:MCF' newly defined as it shall be overridden
@@ -1119,7 +1124,7 @@ although it is yet undefined on input line 81.
 
 Underfull \vbox (badness 2426) has occurred while \output is active []
 
- [8 <./Introduction/Images/fusion-reactivities.png>]
+ [9 <./Introduction/Images/fusion-reactivities.png>]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 114.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1128,33 +1133,37 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 114.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 114.
- [9]
-<Introduction/Images/hotspot ignition white.png, id=204, 844.40268pt x 840.64464pt>
+ [10]
+<Introduction/Images/hotspot ignition white.png, id=234, 844.40268pt x 840.64464pt>
 File: Introduction/Images/hotspot ignition white.png Graphic file (type png)
 <use Introduction/Images/hotspot ignition white.png>
 Package pdftex.def Info: Introduction/Images/hotspot ignition white.png  used on input line 154.
 (pdftex.def)             Requested size: 290.78603pt x 289.4968pt.
- [10]
+ [11]
 Package acronym Info: Label `acro:RTI' newly defined as it shall be overridden
 although it is yet undefined on input line 181.
 
 Underfull \vbox (badness 1122) has occurred while \output is active []
 
- [11 <./Introduction/Images/hotspot ignition white.png>]
+ [12 <./Introduction/Images/hotspot ignition white.png>]
 Package acronym Info: Label `acro:LPIs' newly defined as it shall be overridden
 although it is yet undefined on input line 214.
- [12]
+
+
+LaTeX Warning: Reference `sec:intro_LPIs' on page 13 undefined on input line 215.
+
+[13]
 Package acronym Info: Label `acro:IFE' newly defined as it shall be overridden
 although it is yet undefined on input line 220.
-<Introduction/Images/IFE_powerplant.png, id=267, 710.655pt x 328.8285pt>
+<Introduction/Images/IFE_powerplant.png, id=297, 710.655pt x 328.8285pt>
 File: Introduction/Images/IFE_powerplant.png Graphic file (type png)
 <use Introduction/Images/IFE_powerplant.png>
 Package pdftex.def Info: Introduction/Images/IFE_powerplant.png  used on input line 234.
 (pdftex.def)             Requested size: 332.3296pt x 153.77672pt.
- [13 <./Introduction/Images/IFE_powerplant.png>]
+ [14 <./Introduction/Images/IFE_powerplant.png>]
 Package acronym Info: Label `acro:DPSSL' newly defined as it shall be overridden
 although it is yet undefined on input line 256.
-<Introduction/Images/indirect icf white.png, id=299, 643.6848pt x 219.4599pt>
+<Introduction/Images/indirect icf white.png, id=328, 643.6848pt x 219.4599pt>
 File: Introduction/Images/indirect icf white.png Graphic file (type png)
 <use Introduction/Images/indirect icf white.png>
 Package pdftex.def Info: Introduction/Images/indirect icf white.png  used on input line 281.
@@ -1169,11 +1178,15 @@ Package acronym Info: Label `acro:LMJ' newly defined as it shall be overridden
 although it is yet undefined on input line 294.
 Package acronym Info: Label `acro:CEA' newly defined as it shall be overridden
 although it is yet undefined on input line 294.
- [14]
+ [15]
+Package acronym Info: Label `acro:SBS' newly defined as it shall be overridden
+although it is yet undefined on input line 305.
+Package acronym Info: Label `acro:SRS' newly defined as it shall be overridden
+although it is yet undefined on input line 305.
 Package acronym Info: Label `acro:CBET' newly defined as it shall be overridden
 although it is yet undefined on input line 305.
- [15 <./Introduction/Images/indirect icf white.png>]
-<Introduction/Images/NIF_yields.jpg, id=352, 2497.33pt x 1993.4475pt>
+ [16 <./Introduction/Images/indirect icf white.png>]
+<Introduction/Images/NIF_yields.jpg, id=383, 2497.33pt x 1993.4475pt>
 File: Introduction/Images/NIF_yields.jpg Graphic file (type jpg)
 <use Introduction/Images/NIF_yields.jpg>
 Package pdftex.def Info: Introduction/Images/NIF_yields.jpg  used on input line 312.
@@ -1188,31 +1201,68 @@ Overfull \hbox (6.70012pt too wide) in paragraph at lines 321--332
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <./Introduction/Images/NIF_yields.jpg>]
-<Introduction/Images/direct icf white.png, id=391, 286.1892pt x 278.9622pt>
+ [17 <./Introduction/Images/NIF_yields.jpg>]
+<Introduction/Images/direct icf white.png, id=422, 286.1892pt x 278.9622pt>
 File: Introduction/Images/direct icf white.png Graphic file (type png)
 <use Introduction/Images/direct icf white.png>
 Package pdftex.def Info: Introduction/Images/direct icf white.png  used on input line 339.
 (pdftex.def)             Requested size: 290.78603pt x 283.44373pt.
+Package acronym Info: Label `acro:LLE' newly defined as it shall be overridden
+although it is yet undefined on input line 350.
+ [18 <./Introduction/Images/direct icf white.png>]
+<Introduction/Images/SmoothingOptics.png, id=452, 1001.5016pt x 513.117pt>
+File: Introduction/Images/SmoothingOptics.png Graphic file (type png)
+<use Introduction/Images/SmoothingOptics.png>
+Package pdftex.def Info: Introduction/Images/SmoothingOptics.png  used on input line 366.
+(pdftex.def)             Requested size: 415.41043pt x 212.8378pt.
+Package acronym Info: Label `acro:SSD' newly defined as it shall be overridden
+although it is yet undefined on input line 373.
 
-Overfull \hbox (1.00975pt too wide) in paragraph at lines 363--366
+
+LaTeX Warning: Reference `fig:SOLAS_qpR_IFRIIT_test' on page 19 undefined on input line 378.
+
+
+Overfull \hbox (1.36665pt too wide) in paragraph at lines 377--391
+\T1/futs/m/n/10.95 their widths leads to a `beam-mode' asym-me-try, which for \T1/futs/m/sc/10.95 Omega \T1/futs/m/n/10.95 has a dis-tinc-tive Legendre-
+ []
+
+[19]
+Overfull \hbox (10.04358pt too wide) in paragraph at lines 392--398
+\T1/futs/m/n/10.95 time-integrated, in-stan-ta-neously, large am-pli-tude, short wave-length per-tur-ba-tions ex-ist. When
+ []
+
+<Introduction/Images/LPI diagram.png, id=476, 953.2413pt x 526.1256pt>
+File: Introduction/Images/LPI diagram.png Graphic file (type png)
+<use Introduction/Images/LPI diagram.png>
+Package pdftex.def Info: Introduction/Images/LPI diagram.png  used on input line 400.
+(pdftex.def)             Requested size: 415.41043pt x 229.28024pt.
+Package acronym Info: Label `acro:Inv-Brem' newly defined as it shall be overridden
+although it is yet undefined on input line 407.
+Package acronym Info: Label `acro:EPW' newly defined as it shall be overridden
+although it is yet undefined on input line 407.
+Package acronym Info: Label `acro:TPD' newly defined as it shall be overridden
+although it is yet undefined on input line 407.
+
+Underfull \hbox (badness 7504) in paragraph at lines 407--407
+[][][]|\T1/futs/m/n/10.95 Im-por-tant [][] for direct-drive [][]. En-ergy is ab-sorbed by [][][][]Inverse-
+ []
+
+
+Underfull \vbox (badness 7186) has occurred while \output is active []
+
+ [20 <./Introduction/Images/SmoothingOptics.png>]
+Overfull \hbox (1.00975pt too wide) in paragraph at lines 429--432
 \T1/futs/m/n/10.95 Want col-li-sional ab-sorp-tion and to avoid LPIs. There-fore short wave-length, high power lasers,
  []
 
 
-Underfull \vbox (badness 1097) has occurred while \output is active []
+Underfull \vbox (badness 4441) has occurred while \output is active []
 
- [17 <./Introduction/Images/direct icf white.png>]
-<Introduction/Images/LPI diagram.png, id=407, 953.2413pt x 526.1256pt>
-File: Introduction/Images/LPI diagram.png Graphic file (type png)
-<use Introduction/Images/LPI diagram.png>
-Package pdftex.def Info: Introduction/Images/LPI diagram.png  used on input line 373.
-(pdftex.def)             Requested size: 415.41043pt x 229.28024pt.
-) [18 <./Introduction/Images/LPI diagram.png>] [19
+ [21 <./Introduction/Images/LPI diagram.png>]) [22] [23
 
 
 
-] [20
+] [24
 
 
 ] (./Thesis_MainSample.bbl (./Thesis_MainSample.brf)
@@ -1229,7 +1279,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--12
 \T1/futs/m/n/10.95 2024.  URL [][]$\T1/cmtt/m/n/10.95 https : / / ember-[]climate . org / app / uploads / 2024 / 05 /
  []
 
-[21
+[25
 
 ]
 Underfull \hbox (badness 6236) in paragraph at lines 97--97
@@ -1256,7 +1306,7 @@ Underfull \hbox (badness 1852) in paragraph at lines 103--103
 []\T1/futs/m/n/10.95 Aidan Crilly.  |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
-[22] [23]
+[26] [27]
 Underfull \hbox (badness 5607) in paragraph at lines 199--199
 []\T1/futs/m/n/10.95 Max Tabak, James Ham-mer, Michael E. Glin-sky, William L. Kruer, Scott C.
  []
@@ -1281,7 +1331,7 @@ Underfull \hbox (badness 4391) in paragraph at lines 199--199
 \T1/futs/m/n/10.95 1063 / 1 . 870664$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 1 / 5 / 1626 / 103434 /
  []
 
-[24]
+[28]
 Underfull \hbox (badness 1107) in paragraph at lines 255--255
 \T1/futs/m/n/10.95 10 . 1017 / S0263034600000604$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / www . cambridge . org / core / product /
  []
@@ -1301,7 +1351,7 @@ Underfull \hbox (badness 1694) in paragraph at lines 263--263
 \T1/futs/m/n/10.95 1063 / 1 . 871025$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / pop / article / 2 / 11 / 3933 / 261855 /
  []
 
-[25]
+[29]
 Underfull \hbox (badness 4595) in paragraph at lines 271--271
 []\T1/futs/m/n/10.95 George H. Miller.  The Na-tional Ig-ni-tion Fa-cil-ity.  |   []   |   [], 43
  []
@@ -1321,34 +1371,34 @@ Underfull \hbox (badness 1337) in paragraph at lines 287--287
 \T1/futs/m/n/10.95 ded-i-cated to in-er-tial con-fine-ment fu-sion: De-vel-op-ment and con-struc-tion sta-tus.
  []
 
-[26] [27]
+[30] [31]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
+ [32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
+ [33]
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31] [32] [33]
-Underfull \vbox (badness 1019) has occurred while \output is active []
 
  [34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [35] [36] [37]
+Underfull \vbox (badness 1019) has occurred while \output is active []
 
  [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
 Underfull \hbox (badness 10000) in paragraph at lines 408--408
 []\T1/futs/m/n/10.95 NIF Sets Power and En-ergy Records | Na-tional Ig-ni-tion Fa-cil-ity & Pho-
  []
@@ -1358,13 +1408,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--408
 \T1/futs/m/n/10.95 ton Sci-ence.  URL [][]$\T1/cmtt/m/n/10.95 https : / / lasers . llnl . gov / about / keys-[]to-[]success /
  []
 
-) [39] [40
+
+Underfull \hbox (badness 1043) in paragraph at lines 422--422
+\T1/futs/m/n/10.95 S. A. Let-zring, R. L. Mc-Crory, S. F. B. Morse, W. Seka, S. Skup-sky, J. M. Soures,
+ []
 
 
-]
+Underfull \hbox (badness 1796) in paragraph at lines 422--422
+\T1/futs/m/n/10.95 1063 / 1 . 1146333$.  URL [][]$\T1/cmtt/m/n/10.95 https : / / pubs . aip . org / rsi / article / 66 / 1 / 508 / 455144 /
+ []
+
+[43]
+Underfull \hbox (badness 1067) in paragraph at lines 470--470
+[]\T1/futs/m/n/10.95 T. R. Boehly, V. A. Sma-lyuk, D. D. Mey-er-hofer, J. P. Knauer, D. K. Bradley, R. S.
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 470--470
+\T1/futs/m/n/10.95 print-ing us-ing po-lar-iza-tion smooth-ing on a solid-state fu-sion laser.  |   []   |   []
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 470--470
+|   []   |   []\T1/futs/m/n/10.95 , 85(7):3444--3447, April 1999.  ISSN 0021-8979, 1089-7550.  doi:
+ []
+
+) [44]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [41
+ (./Appendix/Permissions.tex) [45
+
+
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Appendix/Permissions.aux))
@@ -1372,24 +1446,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--408
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `Thesis_MainSample.brf' has not changed.
-(rerunfilecheck)             Checksum: 80BEA71EAAB5C97432883FCDFBEEBC5F;3631.
+(rerunfilecheck)             Checksum: 004C0A8F035CA96084764BAE311856C5;4351.
  ) 
 Here is how much of TeX's memory you used:
- 27701 strings out of 474165
- 547762 string characters out of 5749497
- 1988542 words of memory out of 5000000
- 49367 multiletter control sequences out of 15000+600000
- 665809 words of font info for 164 fonts, out of 8000000 for 9000
+ 27843 strings out of 474165
+ 550740 string characters out of 5749497
+ 1987542 words of memory out of 5000000
+ 49472 multiletter control sequences out of 15000+600000
+ 680620 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,18n,121p,11693b,1175s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (41 pages, 10024331 bytes).
+ 122i,18n,121p,11693b,1189s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on Thesis_MainSample.pdf (45 pages, 10999863 bytes).
 PDF statistics:
- 792 PDF objects out of 1000 (max. 8388607)
- 692 compressed objects within 7 object streams
- 166 named destinations out of 1000 (max. 500000)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 948 PDF objects out of 1000 (max. 8388607)
+ 829 compressed objects within 9 object streams
+ 195 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -48,3 +48,6 @@ microphysically
 Gamow
 Nuckolls
 un-rarefied
+unstagnated
+adiabats
+filamentation

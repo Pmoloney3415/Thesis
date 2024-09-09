@@ -1,8 +1,8 @@
-PWD c:/Repos/Thesis
+PWD C:/Thesis_latex
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Repos/Thesis/Thesis_MainSample.tex
+INPUT c:/Thesis_latex/Thesis_MainSample.tex
 OUTPUT Thesis_MainSample.log
 INPUT ./icldt.cls
 INPUT icldt.cls
@@ -526,11 +526,28 @@ INPUT ./Introduction/Images/direct icf white.png
 INPUT ./Introduction/Images/direct icf white.png
 INPUT ./Introduction/Images/direct icf white.png
 INPUT ./Introduction/Images/direct icf white.png
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futrc8t.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futrc8t.vf
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futr8r.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tfm
+INPUT ./Introduction/Images/SmoothingOptics.png
+INPUT ./Introduction/Images/SmoothingOptics.png
+INPUT ./Introduction/Images/SmoothingOptics.png
+INPUT ./Introduction/Images/SmoothingOptics.png
+INPUT ./Introduction/Images/SmoothingOptics.png
 INPUT ./Introduction/Images/LPI diagram.png
 INPUT ./Introduction/Images/LPI diagram.png
 INPUT ./Introduction/Images/LPI diagram.png
 INPUT ./Introduction/Images/LPI diagram.png
 INPUT ./Introduction/Images/LPI diagram.png
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futrc8t.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futrc8t.vf
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futr8r.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futmii.vf
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futri8r.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futr8t.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futb8t.vf
@@ -571,6 +588,7 @@ INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb

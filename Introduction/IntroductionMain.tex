@@ -282,30 +282,30 @@ Each appraoch is introduced below, and progress on the main experimental facilit
     \centering
     \caption{Schematic of the indirect-drive approach to \ac{ICF}.
     Laser light, represented as blue transparent rectangles, irradiate the interior of a high-Z (\textit{e.g.} gold) hohlraum, which produces thermal x-rays that drive the capsule implosion.
-    A number of important physical effects, typical to indreict-drive experiments, are also illustrated on the diagram.
+    A number of important physical effects, typical to indirect-drive experiments, are also illustrated on the diagram.
     }%
     \label{fig:intro_indirect}
 \end{figure}
 
 A schematic of an indirect-drive experiment is shown in Fig.~\ref{fig:intro_indirect}.
-The \ac{NIF} at the \ac{LLNL} in the United States of America, is the largest \ac{ICF} facility and high power laser system in the world, and it mainly focusses on the indirect-drive appraoch to \ac{ICF}~\cite{miller_national_2004,spaeth_description_2016}.
-The laser system is comprised of 192 beams, which are clustered around two poles, so that they can enter the small \ac{LEH} of the hohlraum, as is demonstrated in Fig.~\ref{fig:intro_indirect}.
+The \ac{NIF} at the \ac{LLNL} in the United States of America, is the largest \ac{ICF} facility and high power laser system in the world, and it mainly focusses on the indirect-drive approach to \ac{ICF}~\cite{miller_national_2004,spaeth_description_2016}.
+The laser system is composed of 192 beams, which are clustered around two poles, so that they can enter the small \ac{LEH} of the hohlraum, as is demonstrated in Fig.~\ref{fig:intro_indirect}.
 Approximately $2\ \text{MJ}$ of laser energy can be delivered to the target, usually on a timescale of $10\rightarrow20\ \text{ns}$.
-The \ac{LMJ} is a newer facility at \ac{CEA} in France, which is the largest \ac{ICF} experiment outside of the United States.
-It is also predominantly focussed on the indirect-drive approach and, although currently still in construction, plasna to habe 176 beams that will deliver approximately $1\ \text{MJ}$ of laser energy to the hohlraum~\cite{fleurot_laser_2005}.
+The \ac{LMJ} is a newer facility at \ac{CEA} in France, which is the largest \ac{ICF} experiment outside the United States.
+It is also predominantly focussed on the indirect-drive approach and, although currently still in construction, it is intended to have 176 beams that will deliver approximately $1\ \text{MJ}$ of laser energy to the hohlraum~\cite{fleurot_laser_2005}.
 
 The main benefit of the indirect-drive approach is in the uniformity of the driving radiation.
-Laser focal spots are instabtaneuosly highly non-uniform, which can seed instabilities and compression is also limited based on the number of available beams.
-Conversion of laser light to z-rays in a hohlraum creates a highly uniformly radiation field inside the hohlraum, which has limitted short wavelength perturbations to seed \ac{RTI} growth.
+Laser focal spots are instantaneously highly non-uniform, which can seed instabilities and compression is also limited based on the number of available beams.
+Conversion of laser light to z-rays in a hohlraum creates a highly uniformly radiation field inside the hohlraum, which has limited short wavelength perturbations to seed \ac{RTI} growth.
 Instability growth is therefore mostly seeded from engineering features, such as the tent used to hold the capsule in place, defects in the capsule and surface roughness, and the fill tube used to insert the fuel~\cite{clark_three-dimensional_2016}.
 A high-Z material such as gold is used for the hohlraum, due to high laser absorption and emissivity.
 Longer wavelength modes can be seeded if the laser heating of the hohlraum is asymmetric.
-For example, Fig.~\ref{fig:intro_indirect} shows that the hohlraum wall can heat and expand, blocking the `inner-cone' beams which heat the material near the capsule eqautor.
-Filling the hohlraum with a low-Z gas fill\footnote{A low-Z hohlraum fill is used to limit laser absorption.} to limit the `gold bubble' expansion, however, this allows for deletrious \ac{LPIs} to occur, which reflect laser energy back out of the \ac{LEH}~\cite{macgowan_laserplasma_1996}.
-Current experiments on the \ac{NIF}, use a relatively low gas fill to reduce backscatter-\ac{LPIs}, and introduce a wavelength shift between the inner and outer cones of laser beams, which allows for a laser-plasma interaction known as \ac{CBET} to transfer power to the outer beams late in the implosion\cite{michel_tuning_2009,moody_multistep_2012,kritcher_energy_2018}.
+For example, Fig.~\ref{fig:intro_indirect} shows that the hohlraum wall can heat and expand, blocking the `inner-cone' beams which heat the material near the capsule equator.
+Filling the hohlraum with a low-Z gas fill\footnote{A low-Z hohlraum fill is used to limit laser absorption.} to limit the `gold bubble' expansion, however, this allows for deleterious \ac{LPIs} to occur, which reflect laser energy back out of the \ac{LEH}~\cite{macgowan_laserplasma_1996}.
+Current experiments on the \ac{NIF}, use a relatively low gas fill to reduce backscatter-\ac{LPIs} (specifically \ac{SBS} and \ac{SRS}), and introduce a wavelength shift between the inner and outer cones of laser beams, which allows for a laser-plasma interaction known as \ac{CBET} to transfer power to the outer beams late in the implosion\cite{michel_tuning_2009,moody_multistep_2012,kritcher_energy_2018}.
 This compensates for absorption in the expanding gold bubble and can maintain symmetry of the implosion.
-The main drawback of the approach to the direct-drive appraoch is that the conversion of laser light to capsule kinetic energy vai the hohlraum, introduces an additional $\sim10\%$ efficiency decrease, limiting the maximum gains that can be achieved.
-Increasing the size of the capsule relative to the hohlraum increases the fraction of x-ray energy which is coupled to the target, but can introduce long-wavelength instabilites if made too large by blocking laser propagation.
+The main drawback of the approach to the direct-drive approach is that the conversion of laser light to capsule kinetic energy via the hohlraum, introduces an additional $\sim10\%$ efficiency decrease, limiting the maximum gains that can be achieved.
+Increasing the size of the capsule relative to the hohlraum increases the fraction of x-ray energy which is coupled to the target, but can introduce long-wavelength instabilities if made too large by blocking laser propagation.
 Direct-drive is thus often considered the preferred scheme for \ac{IFE}.
 
 \begin{figure}[t!]
@@ -339,48 +339,96 @@ Although not plotted in Fig.~\ref{fig:intro_nif_yields}, the gain record at the 
     \includegraphics[width=0.7\linewidth]{Introduction/Images/direct icf white.png}
     \centering
     \caption{Schematic of the direct-drive approach to \ac{ICF}.
+    Laser light, represented by the transparent, blue rectangles is absorbed outside the critical surface and then transported in to the ablation surface by thermal conduction.
+    Speckle from beam smoothing optics leads to short-scale non-uniformity of deposition, known as imprint.
+    \ac{LPIs} degrade the performance, both by reflecting light, and by generating hot electrons which pre-heat the fuel.
     }%
     \label{fig:intro_direct}
 \end{figure}
 
-Say its the assumed version for IFE.
-Give a much more detailed anatomy of implosion, incl diagram.
-Talk about hydro-scaled ignition etc.
+A schematic of a direct-drive experiment is shown in Fig.~\ref{fig:intro_direct}.
+Although a limited number of direct-drive implosions are performed on the \ac{NIF}, the largest dedicated direct-drive facility in the world is the \textsc{Omega} laser facility at the \ac{LLE} in the United States~\cite{simon_lle_1989,boehly_upgrade_1995}.
+Work presented in this thesis is most relevant to direct-drive implosions on this facility.
+The \textsc{Omega} laser has a total of 60 beams, arranged to provide approximately symmetric radiation to a spherical target.
+In total, beams can deliver approximately $30\ \text{kJ}$ of laser energy to the target, usually in a timescale of $2\rightarrow3\ \text{ns}$.
+As previously stated, the high driver efficiencies are desirable for \ac{IFE}, and the relative inefficiency of the hohlraum light to x-ray conversion, means that direct-drive is the assumed driver for a future \ac{IFE} power plant.
+As opposed to indirectly-driven \ac{NIF} experiments, where the capsule is held in place by a thin tent attached to the hohlraum, directly-driven \textsc{Omega} targets are glued to a mounting stalk to hold them in place initially.
+This can lead to low-mode asymmetries and unstagnated flows in the hotspot, which degrade the performance~\cite{gatu_johnson_impact_2020}.
 
-%###############################################################################################################################
-%###############################################################################################################################
-%###############################################################################################################################
-\section{Laser Interaction with Plasmas}%
-\label{sec:intro_laserplasmas}
+In plasmas, electro-magnetic radiation is absorbed beyond the critical surface, which is the surface interior to which the electron density is sufficiently high, that light of a given wavelength cannot propagate.
+For indirect-drive, high frequency x-rays are absorbed close to the ablation surface, whereas for indirect-drive, the longer wavelength laser light has a critical surface which is exterior to the ablation surface.
+Thus, energy is absorbed beyond the critical surface, heating this `coronal plasma'\footnote{The term coronal plasma shall be used throughout this thesis to refer to the approximately isothermal, outward flowing, low density plasma blow-off, which is exterior to the critical surface.} to high temperatures.
+This absorbed energy is then transported radially inward via thermal conduction in the `conduction-zone', to the higher density, lower temperature ablation surface, as is shown in Fi.g~\ref{fig:intro_direct}.
+Non-uniform absorption at the critical surface is partially smoothed by non-radial thermal conduction in this region, which is more efficient for shorter wavelength perturbations.
 
-Understanding lasers is obviously crucial for Direct, indirect and hedp more generally.
 
-%################################################################################
-%################################################################################
-\subsection{Regime of interest}%
-\label{sec:intro_laser_regime}
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Introduction/Images/SmoothingOptics.png}
+    \centering
+    \caption{Schematic of beam smoothing techniques employed on the \textsc{Omega} laser system.
+    Phase aberrations can lead to large scale modulations to the far-field intensity profile.
+    Phase plates shift the perturbations to shorter scales, which are more efficiently smoother by thermal conduction.
+    \ac{SSD} creates a time-varying speckle pattern, which leads to a smooth time-integrated far-field profile.
+    Polarisation smoothing splits the beam into orthogonally polarised sub-beams, which do not interfere and thus further reduce non-uniformity.
+    }%
+    \label{fig:intro_SmoothingOptics}
+\end{figure}
 
-Want collisional absorption and to avoid LPIs.
-Therefore short wavelength, high power lasers, with limits to peak intensity.
-Balance between $P_abl$ and high $I*lam^2$.
+Despite this non-radial smoothing in the conduction zone, non-uniformity of the laser drive is a significant difficulty for direct-drive \ac{ICF} implosions.
+The number of beams and their widths leads to a `beam-mode' asymmetry, which for \textsc{Omega} has a distinctive Legendre-mode, $\ell=10$ pattern, which can be seen in Fig.~\ref{fig:SOLAS_qpR_IFRIIT_test}.
+Focal spots of high power lasers are also often highly non-uniform when so-called `beam-smoothing' techniques are not employed.
+As light propagates from the beam port to the far-field, random `phase-aberrations' are picked up by the beam due to distortions in the medium through which it travels, which results in large scale modulations of the focal spot intensity profile.
+When the target is illuminated by these modulated beams, significant asymmetry is imparted on the drive, severely limiting the overall performance.
+A variety of beam smoothing techniques are thus employed which lead to a significantly more uniform beam profile.
+Fig.~\ref{fig:intro_SmoothingOptics} shows a schematic of several important beam smoothing techniques employed by the \textsc{Omega} laser system.
+The diagram demonstrates that without beam smoothing, a uniform near-field intensity profile picks up phase aberrations along the laser chain, leading to interference and thus large scale modulations at focus.
+Phase plates are an array of small optical elements which offset the phase beam at discrete points in the near-field, acting to shift the scale of modulation in the far-field to a much smaller spatial scale~\cite{kato_random_1984}.
+These short-scale modulations are known as `laser-speckle', and are much more easily smoothed in the conduction zone, than the large modulations from beams without smoothing techniques applied.
+The static phase plate far-field profile can be further improved by using \ac{SSD}, which creates a temporally varying speckle pattern and thus the time-integrated profile is much smoother.
+Fig.~\ref{fig:intro_SmoothingOptics} compactly displays how \ac{SSD} operates, which is to apply a temporally varying bandwidth to the light signal, then pass it through a diffraction grating, such that different wavelengths are dispersed in different directions~\cite{skupsky_improved_1989,hohenberger_optical_2016}.
+Finally, Polarisation smoothing is employed on \textsc{Omega}, which works by splitting each beam into two slightly spatially-offset, orthogonally polarised sub-beams.
+These sub-beams do not interfere with each other, and thus when added together the root-mean-square intensity variation of the whole beam is improved by a factor $\sqrt{2}$~\cite{tsubakimoto_suppression_1992,boehly_reduction_1999}.
 
-%################################################################################
-%################################################################################
-\subsection{ICF Relevant LPIs}%
-\label{sec:intro_LPIs}
+Although the combination of these optics create an intensity spot which is smooth when time-integrated, instantaneously, large amplitude, short wavelength perturbations exist.
+When an extended plasma corona has formed, these perturbations are effectively smoothed by non-radial thermal conduction in the conduction zone, but early in the implosion, the small amplitude perturbations are deposited close to the ablation surface.
+This is known as `laser imprint' and unless mitigated by sufficiently raising the adiabat of the implosion, can break up the shell.
+The adiabat is typically set for direct-drive implosion by including a small `picket' pulse in the laser temporal profile, which weakly shocks the shell.
+The laser turns off after this picket pulse, leading to an unsupported shock, which decays in amplitude as it travels through the shell, such that only the outer extent of the shell, where the imprint occurs, is on a high adiabat.
+Imprint does not occur in indirectly-driven implosion, and thus the highest performing direct-drive experiments normally have much higher adiabats.
 
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Introduction/Images/LPI diagram.png}
     \centering
     \caption{Important \ac{LPIs} for direct-drive \ac{ICF}.
+    Energy is absorbed by \ac{Inv-Brem} close to critical, and resonance absorption at the critical surface.
+    Hot electrons pre-heat the fuel reducing compressibility and are generated from an \ac{EPW} from \ac{TPD} or \ac{SRS}.
+    Energy is reflected by \ac{CBET}, \ac{SRS} and \ac{SBS}.
+    The filamentation instability can cause light to self-focus and thus enhance asymmetry of the deposition.
     }%
     \label{fig:intro_dd_lpis}
 \end{figure}
 
-Damaging class of laser-plasma interactions for ICF.
-Give diagram of how they work microphysically.
-Include direct-drive LPI diagram.
-Introduce each in turn and say what they do for direct and indirect.
+\ac{LPIs} also act to significantly degrade direct-drive \ac{ICF} implosions.
+A schematic diagram of \ac{LPIs} relevant to direct-drive is shown in Fig.~\ref{fig:intro_dd_lpis}.
+Energy is absorbed either via \ac{Inv-Brem}, which is the absorption of laser energy by an electron while it undergoes a collision with an ion, or by resonance absorption, which is the excitation of a resonant \ac{EPW} at the critical surface.
+\ac{Inv-Brem} is the dominant absorption mechanism for \textsc{Omega} experiments, because frequency-tripled\footnote{The \textsc{Omega} laser-beam are initially generated at a vacuum wavelength, $\lambda_0 = 1064\ \text{nm}$, by a Nd:YAG crystal and then passed through a non-linear optic, which converts the wavelength to $\lambda_0^{3\omega}=351\ \text{nm}$~\cite{boehly_upgrade_1995}.} light is employed for the lasers 
+Similarly to indirect-drive, \ac{SBS} and \ac{SRS} act to reflect laser light away from the capsule.
+However, unlike for indirect-drive, where \ac{CBET} is used to tune the symmetry of the implosion, in direct-drive configurations \ac{CBET} acts to reflect significant amounts of energy.
+For direct-drive, the dominant \ac{CBET} interaction occurs as light from the edge of beams reflects outward and gains energy from inward travelling beams.
+This mechanism is responsible for a $\sim20\%$ reduction in energy for typical \textsc{Omega} implosions over the whole implosion, and can instantaneously reduce power deposition by up to $\sim50\%$~\cite{colaitis_inverse_2021}.
+Additionally, \ac{LPIs} which excite an \ac{EPW}, specifically \ac{TPD} and \ac{SRS}, can trap and accelerate a population of electrons to high energies ($\gtrsim50\ \text{keV}$), which travel through the ablator material and preheat the fuel, reducing compressibility and thus performance.
+Finally, filamentation of the beam can occur, where the field self-focusses through low-density channels in the plasma, which increases laser non-uniformities~\cite{afshar-rad_evidence_1992}.
+
+Discuss progress of direct-drive ICF on OMEGA.
+
+%################################################################################
+%################################################################################
+\subsection{Laser Regime of interest}%
+\label{sec:intro_laser_regime}
+
+Want collisional absorption and to avoid LPIs.
+Therefore short wavelength, high power lasers, with limits to peak intensity.
+Balance between $P_abl$ and high $I*lam^2$.
 
 %###############################################################################################################################
 %###############################################################################################################################

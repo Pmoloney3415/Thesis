@@ -15,45 +15,46 @@ Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Warning--empty institution in nuckolls_early_1998
 Warning--empty year in noauthor_nif_nodate
-You've used 51 entries,
+Warning--empty institution in simon_lle_1989
+You've used 61 entries,
             2481 wiz_defined-function locations,
-            965 strings with 80236 characters,
-and the built_in function-call counts, 116151 in all, are:
-= -- 2059
-> -- 22786
-< -- 13
-+ -- 7652
-- -- 7550
-* -- 16565
-:= -- 25368
-add.period$ -- 296
-call.type$ -- 51
-change.case$ -- 100
-chr.to.int$ -- 51
-cite$ -- 54
-duplicate$ -- 951
-empty$ -- 1859
-format.name$ -- 7608
-if$ -- 19081
+            1045 strings with 84267 characters,
+and the built_in function-call counts, 122125 in all, are:
+= -- 2477
+> -- 23366
+< -- 15
++ -- 7856
+- -- 7734
+* -- 17229
+:= -- 26461
+add.period$ -- 354
+call.type$ -- 61
+change.case$ -- 120
+chr.to.int$ -- 61
+cite$ -- 65
+duplicate$ -- 1137
+empty$ -- 2221
+format.name$ -- 7802
+if$ -- 20236
 int.to.chr$ -- 1
-int.to.str$ -- 52
-missing$ -- 48
-newline$ -- 405
-num.names$ -- 150
-pop$ -- 225
+int.to.str$ -- 62
+missing$ -- 57
+newline$ -- 483
+num.names$ -- 180
+pop$ -- 267
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 61
 quote$ -- 0
-skip$ -- 476
+skip$ -- 565
 stack$ -- 0
-substring$ -- 1072
-swap$ -- 152
-text.length$ -- 2
+substring$ -- 1305
+swap$ -- 182
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 354
-warning$ -- 2
-while$ -- 164
+type$ -- 424
+warning$ -- 3
+while$ -- 199
 width$ -- 0
-write$ -- 952
-(There were 2 warnings)
+write$ -- 1137
+(There were 3 warnings)

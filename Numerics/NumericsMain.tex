@@ -31,7 +31,7 @@ There are well established models for \ac{Inv-Brem} that are suitable for implem
 The combination of the ray equations and \ac{Inv-Brem} deposition is therefore the basis for the vast majority of laser-modules coupled to \ac{Rad-Hydro} codes.
 
 In laser-driven \ac{ICF} experiments however, another class of interaction, \ac{LPIs}, are vitally important to the energetics of the implosion.
-For example, \ac{CBET} leads to a zeroth-order correction to the energy deposited in direct-drive experiments at the OMEGA laser facility, reducing coupled power late in the implosion to $\sim 50\%$~\cite{colaitis_inverse_2021}.
+For example, \ac{CBET} leads to a zeroth-order correction to the energy deposited in direct-drive experiments at the \textsc{Omega} laser facility, reducing coupled power late in the implosion to $\sim 50\%$~\cite{colaitis_inverse_2021}.
 \ac{LPIs} cannot be included in the simple framework described above for two reasons.
 Firstly, they are non-linear\footnote{Non-linear in this context means that the interaction involves multiple light and plasma waves.} and secondly, reduced theoretical models of the interaction rely on knowledge of the electric field or intensity of the light~\cite{randall_theory_1981}.
 Implementation in a ray-tracing code therefore necessitates a method by which the separate light waves can `talk' to each other.
@@ -75,7 +75,7 @@ This is in contrast to \ac{FRT}, used in the other ray-based approaches listed b
 \begin{figure}[t!]
 \includegraphics[width=10cm]{Numerics/Images/Reflected_Rays.png}
 \centering
-\caption{3-D ray trajectories through a spherically symmetric, OMEGA direct-drive scale density profile.
+\caption{3-D ray trajectories through a spherically symmetric, \textsc{Omega} direct-drive scale density profile.
 The incident rays are plotted in cyan and the reflected rays, which spread out over a large solid angle, are plotted in dark blue.
 The critical density is represented by the black mesh.}%
 \label{fig:reflectedrays}
@@ -261,7 +261,7 @@ This also minimises artefacts from interpolation between the grids, which have t
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Numerics/Images/ray_init_plots.png}
     \centering
-    \caption{Example initial locations for $\sim4000$ rays for an OMEGA beam port with super-Gaussian intensity profile, with a shape defined by $n_s=5.2$ and $\sigma=352\ \mu m$.
+    \caption{Example initial locations for $\sim4000$ rays for an \textsc{Omega} beam port with super-Gaussian intensity profile, with a shape defined by $n_s=5.2$ and $\sigma=352\ \mu m$.
     The inverse-projection ray locations are shown in sub-figure a) which demonstrate a higher ray density for rays pointed to the pole at $x\sim\ -0.15 mm$.
     b) shows the randomly sampled rays where all rays are initialised with the same power, and c) shows uniformly sampled rays.}%
     \label{fig:SOLAS_ray_init}
@@ -322,7 +322,7 @@ This method is found to give the best ray-per cell statistics across the semi-st
 
 After rays are initialised on each of the beam ports, they are extrapolated to the edge of the computational domain.
 Beam focussing is typically neglected, so all rays are assigned velocities parallel to the beam normal.
-This approximation is widely used for codes that simulate OMEGA-scale direct-drive implosions, where the lasers are approximately collimated on the implosion scale~\cite{colaitis_inverse_2021,marozas_wavelength-detuning_2018}.
+This approximation is widely used for codes that simulate \textsc{Omega}-scale direct-drive implosions, where the lasers are approximately collimated on the implosion scale~\cite{colaitis_inverse_2021,marozas_wavelength-detuning_2018}.
 It is assumed that outside of the simulation domain is vacuum and rays are therefore extrapolated to the edge of the computational domain in straight lines, using a simple root finding algorithm to obtain the intersection of the rays with either a spherical, cylindrical or rectangular domain depending on the simulation geometry.
 
 %################################################################################
@@ -607,7 +607,7 @@ It can be seen that as the reflects away from the critical surface, the area div
 Note that artifically large neighbour-ray separation was used for this plot as it is purely illustrative.
 Practically, the separation distance of the bundle of neighbour-rays (i.e. the side-length of the triangle, $\Delta l$) does not need to be infinitesimally small, but small enough that it accurately captures the local change of $|D(\tau)|$.
 In terms of the hydrodynamic profiles, this means that $\Delta l \ll L_{n_e}$, where $L_{n_e}$ is the density length scale of the plasma.
-For OMEGA scale direct-drive simulations, an initial separation of $\Delta l\lesssim 1\ \mu\text{m}$ is found to give converged behaviour.
+For \textsc{Omega} scale direct-drive simulations, an initial separation of $\Delta l\lesssim 1\ \mu\text{m}$ is found to give converged behaviour.
 If the separation is too small however, floating point arithmetic can lead to noise in the ray-amplitude estimation.
 For all simulations presented in this thesis, $\Delta l=\lambda_0/10\ll1\ \mu\text{m}$ was used.
 
@@ -754,7 +754,7 @@ The plasma density profiles are given by,
     \label{eq:SOLAS_test_ne}
     n_e(r) = n_0 (d/r)^{m},
 \end{equation}
-where $n_0/n_{\text{cr}} = 1.165$, $d = 343\times S\ \mu\text{m}$, $m=3.78$ and $S$ changes the scale of the density profile, where $S=1$ corresponds to scale lengths from implosions using the full OMEGA laser-energy.
+where $n_0/n_{\text{cr}} = 1.165$, $d = 343\times S\ \mu\text{m}$, $m=3.78$ and $S$ changes the scale of the density profile, where $S=1$ corresponds to scale lengths from implosions using the full \textsc{Omega} laser-energy.
 These values where obtained from fitting the equation to 1-D \ac{Rad-Hydro} calculations using the \textsc{Lilac} code.
 
 %##################################################
@@ -788,7 +788,7 @@ This justifies the default use of the simpler \ac{FL} method for \textsc{Solas} 
 
 Standard~\ac{GO} cannot capture the field beyond the critical surface because rays cannot propagate beyond $\varepsilon=0$.
 The evanescent field in this region can be reproduced in the complex-\ac{GO} framework, which integrates rays which have complex-valued properties and can thus be evolved beyond the critical surface \cite{colaitis_real_2019}.
-This, however, is not deemed to be necessary for accurate \ac{CBET} modelling of OMEGA-scale direct-drive implosions.
+This, however, is not deemed to be necessary for accurate \ac{CBET} modelling of \textsc{Omega}-scale direct-drive implosions.
 
 %##################################################
 \subsubsection{2-D Reflected Beam}
@@ -797,7 +797,7 @@ This, however, is not deemed to be necessary for accurate \ac{CBET} modelling of
     \includegraphics[width=1.0\linewidth]{Numerics/Images/2D_field_reconstruction_lineouts_alt.png}
     \centering
     \caption{Results of the 2-D field reconstruction test.
-    Panel a) plots the field from \textsc{Lpse} on the left side and the \textsc{Solas} field on the right for the $1/64$ OMEGA scale simulation.
+    Panel a) plots the field from \textsc{Lpse} on the left side and the \textsc{Solas} field on the right for the $1/64$ \textsc{Omega} scale simulation.
     Panel b) shows the \textsc{Solas} field from the $1/4$ scale simulation which, when compared to a), demonstrates that as scale increases, the relative size of the caustic region decreases.
     Panels c), d) and e) are lineouts near the caustic region along $y$ from the $1/64$ scale simulations at $x=0,\ 3$ and $6\ \mu\text{m}$ respectively, the positions of which are indicated by the white lines on a).
     Note that the circular features in the field in panels a) and b) arise due to aliasing artefacts between the true solution scale, with the resolution of the image and/ or simulation grid.}%
@@ -1205,7 +1205,7 @@ Therefore, a caustic region exists inside which $f_{\text{CP}}$ will lead to mod
 The curve of $\Delta E(f_{\text{CP}})$ is simple and monotonic, which is observed for all simulations conducted with \textsc{Solas}, regardless of the complexity of the laser and target configuration.
 This means a more complex algorithm than the Secant method is not required for minimisation.
 When the \ac{CBET} model runs in-line with the hydrodynamics, the value of $f_{\text{CP}}$ from the last timestep that \ac{CBET} was calculated is used, which means that energy conservation iterations are often not necessary.
-This is shown explicitly in Fig.~\ref{fig:SOLAS_89224}.c, which shows the results of a 1-D \textsc{Chimera}-\textsc{Solas} simulation of OMEGA shot 89224.
+This is shown explicitly in Fig.~\ref{fig:SOLAS_89224}.c, which shows the results of a 1-D \textsc{Chimera}-\textsc{Solas} simulation of \textsc{Omega} shot 89224.
 The bottom panel in the figure shows that energy conservation is frequently achieved by simply re-using the value of $f_{\text{CP}}$ from the previous timestep.
 
 To summarise, the total \ac{CBET} gain that a probe ray ($i$) experiences in a pump sheet ($j$) is,
@@ -1380,8 +1380,8 @@ The saturation of error for cylindrical geometry at higher radial resolutions se
 %###############################################################################################################################
 \section{Simulations of CBET for \textsc{Omega} Direct-Drive Implosions}
 
-This Section presents \textsc{Chimera}-\textsc{Solas} simulations of OMEGA direct-drive implosions.
-In Sec.~\ref{sec:SOLAS_89224}, 1-D \ac{Rad-Hydro} simulations of OMEGA shot 89224 coupled to a 3-D ray-trace from \textsc{Solas} will be presented, both with and without the effect of \ac{CBET}.
+This Section presents \textsc{Chimera}-\textsc{Solas} simulations of \textsc{Omega} direct-drive implosions.
+In Sec.~\ref{sec:SOLAS_89224}, 1-D \ac{Rad-Hydro} simulations of \textsc{Omega} shot 89224 coupled to a 3-D ray-trace from \textsc{Solas} will be presented, both with and without the effect of \ac{CBET}.
 This illustrates that the implementation of the \ac{CBET} model in \textsc{Solas} correctly captures the loss of drive efficiency.
 In Sec.~\ref{sec:SOLAS_89224}, 3-D \textsc{Solas} post-processes of spherically symmetric hydrodynamic data from the \textsc{Lilac} code are presented both with and without \ac{CBET}.
 It is compared to results from the 3-D \ac{CBET} codes \textsc{Ifriit} and \textsc{BeamCrosser}.
@@ -1520,7 +1520,7 @@ Assuming the fluid \ac{CBET} gain formulation and neglecting the $(\omega_j-\ome
 \begin{figure}[t!]
     \includegraphics[width=1.0\linewidth]{Numerics/Images/DepositionAsymmetries_mollweide_xy32.png}
     \centering
-    \caption{3-D \textsc{Solas} post-process of spherically symmetric hydrodynamic data obtained from a \textsc{Lilac} simulation of an OMEGA direct-drive implosion.
+    \caption{3-D \textsc{Solas} post-process of spherically symmetric hydrodynamic data obtained from a \textsc{Lilac} simulation of an \textsc{Omega} direct-drive implosion.
     Figures a) and b) show the deviation in radially integrated deposited power without and with \ac{CBET} respectively.
     Figures c) and d) plot the spherical harmonic modal decomposition for these maps alongside results from the \textsc{Ifriit} and \textsc{BeamCrosser} codes without and with \ac{CBET} respectively.}%
     \label{fig:SOLAS_qpR_IFRIIT_test}
@@ -1622,9 +1622,9 @@ Describe briefly how it would be implemented, say it would not be difficult.
 \subsection{Polarised CBET}
 
 Describe how ion acoustic waves are driven by beat between electric fields from light and therefore is polarisation dependent.
-Say how on OMEGA, RPP smoothing means that each beam is split into 2 sub-beams with linear polarisation.
+Say how on \textsc{Omega}, RPP smoothing means that each beam is split into 2 sub-beams with linear polarisation.
 Say that these do not have a symmetry to the configuration about the sphere.
-Say that this leads to mode-1 on OMEGA.
+Say that this leads to mode-1 on \textsc{Omega}.
 Say that you can track polarisation of rays and trace these sub-beams independently.
 Would make it more expensive, but definitely feasible.
 

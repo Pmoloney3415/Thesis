@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{61}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -405,5 +405,83 @@ H.~Abu-Shawareb, R.~Acree, P.~Adams, J.~Adams, B.~Addis, R.~Aden, P.~Adrian, B.�
 \bibitem[noa()]{noauthor_nif_nodate}
 {NIF} {Sets} {Power} and {Energy} {Records} {\textbar} {National} {Ignition} {Facility} \& {Photon} {Science}.
 \newblock URL \url{https://lasers.llnl.gov/about/keys-to-success/nif-sets-power-energy-records}.
+
+\bibitem[Simon(1989)]{simon_lle_1989}
+A.~Simon.
+\newblock {LLE} {Review} {Quarterly} {Report} ({April}-{June} 1989). {Volume} 39.
+\newblock Technical Report DOE/DP/40200--95, 1191446, June 1989.
+\newblock URL \url{http://www.osti.gov/servlets/purl/1191446/}.
+
+\bibitem[Boehly et~al.(1995)Boehly, Craxton, Hinterman, Kelly, Kessler, Kumpan, Letzring, McCrory, Morse, Seka, Skupsky, Soures, and Verdon]{boehly_upgrade_1995}
+T.~R. Boehly, R.~S. Craxton, T.~H. Hinterman, J.~H. Kelly, T.~J. Kessler, S.~A. Kumpan, S.~A. Letzring, R.~L. McCrory, S.~F.~B. Morse, W.~Seka, S.~Skupsky, J.~M. Soures, and C.~P. Verdon.
+\newblock The upgrade to the {OMEGA} laser system.
+\newblock \emph{Review of Scientific Instruments}, 66\penalty0 (1):\penalty0 508--510, January 1995.
+\newblock ISSN 0034-6748, 1089-7623.
+\newblock \doi{10.1063/1.1146333}.
+\newblock URL \url{https://pubs.aip.org/rsi/article/66/1/508/455144/The-upgrade-to-the-OMEGA-laser-systemPlasma}.
+
+\bibitem[Gatu~Johnson et~al.(2020)Gatu~Johnson, Adrian, Anderson, Appelbe, Chittenden, Crilly, Edgell, Forrest, Frenje, Glebov, Haines, Igumenshchev, Jacobs-Perkins, Janezic, Kabadi, Knauer, Lahmann, Mannion, Marshall, Michel, Séguin, Shah, Stoeckl, Walsh, and Petrasso]{gatu_johnson_impact_2020}
+M.~Gatu~Johnson, P.~J. Adrian, K.~S. Anderson, B.~D. Appelbe, J.~P. Chittenden, A.~J. Crilly, D.~Edgell, C.~J. Forrest, J.~A. Frenje, V.~Yu. Glebov, B.~M. Haines, I.~Igumenshchev, D.~Jacobs-Perkins, R.~Janezic, N.~V. Kabadi, J.~P. Knauer, B.~Lahmann, O.~M. Mannion, F.~J. Marshall, T.~Michel, F.~H. Séguin, R.~Shah, C.~Stoeckl, C.~A. Walsh, and R.~D. Petrasso.
+\newblock Impact of stalk on directly driven inertial confinement fusion implosions.
+\newblock \emph{Physics of Plasmas}, 27\penalty0 (3):\penalty0 032704, March 2020.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.5141607}.
+\newblock URL \url{https://pubs.aip.org/pop/article/27/3/032704/1063027/Impact-of-stalk-on-directly-driven-inertial}.
+
+\bibitem[Kato et~al.(1984)Kato, Mima, Miyanaga, Arinaga, Kitagawa, Nakatsuka, and Yamanaka]{kato_random_1984}
+Y.~Kato, K.~Mima, N.~Miyanaga, S.~Arinaga, Y.~Kitagawa, M.~Nakatsuka, and C.~Yamanaka.
+\newblock Random {Phasing} of {High}-{Power} {Lasers} for {Uniform} {Target} {Acceleration} and {Plasma}-{Instability} {Suppression}.
+\newblock \emph{Physical Review Letters}, 53\penalty0 (11):\penalty0 1057--1060, September 1984.
+\newblock ISSN 0031-9007.
+\newblock \doi{10.1103/PhysRevLett.53.1057}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.53.1057}.
+
+\bibitem[Skupsky et~al.(1989)Skupsky, Short, Kessler, Craxton, Letzring, and Soures]{skupsky_improved_1989}
+S.~Skupsky, R.~W. Short, T.~Kessler, R.~S. Craxton, S.~Letzring, and J.~M. Soures.
+\newblock Improved laser-beam uniformity using the angular dispersion of frequency-modulated light.
+\newblock \emph{Journal of Applied Physics}, 66\penalty0 (8):\penalty0 3456--3462, October 1989.
+\newblock ISSN 0021-8979, 1089-7550.
+\newblock \doi{10.1063/1.344101}.
+\newblock URL \url{https://pubs.aip.org/jap/article/66/8/3456/17624/Improved-laser-beam-uniformity-using-the-angular}.
+
+\bibitem[Hohenberger et~al.(2016)Hohenberger, Shvydky, Marozas, Fiksel, Bonino, Canning, Collins, Dorrer, Kessler, Kruschwitz, McKenty, Meyerhofer, Regan, Sangster, and Zuegel]{hohenberger_optical_2016}
+M.~Hohenberger, A.~Shvydky, J.~A. Marozas, G.~Fiksel, M.~J. Bonino, D.~Canning, T.~J.~B. Collins, C.~Dorrer, T.~J. Kessler, B.~E. Kruschwitz, P.~W. McKenty, D.~D. Meyerhofer, S.~P. Regan, T.~C. Sangster, and J.~D. Zuegel.
+\newblock Optical smoothing of laser imprinting in planar-target experiments on {OMEGA} {EP} using multi-{FM} 1-{D} smoothing by spectral dispersion.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (9):\penalty0 092702, September 2016.
+\newblock ISSN 1070-664X, 1089-7674.
+\newblock \doi{10.1063/1.4962185}.
+\newblock URL \url{https://pubs.aip.org/pop/article/23/9/092702/319968/Optical-smoothing-of-laser-imprinting-in-planar}.
+
+\bibitem[Tsubakimoto et~al.(1992)Tsubakimoto, Nakatsuka, Nakano, Kanabe, Jitsuno, and Nakai]{tsubakimoto_suppression_1992}
+K.~Tsubakimoto, M.~Nakatsuka, H.~Nakano, T.~Kanabe, T.~Jitsuno, and S.~Nakai.
+\newblock Suppression of interference speckles produced by a random phase plate, using a polarization control plate.
+\newblock \emph{Optics Communications}, 91\penalty0 (1-2):\penalty0 9--12, July 1992.
+\newblock ISSN 00304018.
+\newblock \doi{10.1016/0030-4018(92)90091-5}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/0030401892900915}.
+
+\bibitem[Boehly et~al.(1999)Boehly, Smalyuk, Meyerhofer, Knauer, Bradley, Craxton, Guardalben, Skupsky, and Kessler]{boehly_reduction_1999}
+T.~R. Boehly, V.~A. Smalyuk, D.~D. Meyerhofer, J.~P. Knauer, D.~K. Bradley, R.~S. Craxton, M.~J. Guardalben, S.~Skupsky, and T.~J. Kessler.
+\newblock Reduction of laser imprinting using polarization smoothing on a solid-state fusion laser.
+\newblock \emph{Journal of Applied Physics}, 85\penalty0 (7):\penalty0 3444--3447, April 1999.
+\newblock ISSN 0021-8979, 1089-7550.
+\newblock \doi{10.1063/1.369702}.
+\newblock URL \url{https://pubs.aip.org/jap/article/85/7/3444/491506/Reduction-of-laser-imprinting-using-polarization}.
+
+\bibitem[Colaïtis et~al.(2021)Colaïtis, Igumenshchev, Mathiaud, and Goncharov]{colaitis_inverse_2021}
+A.~Colaïtis, I.~Igumenshchev, J.~Mathiaud, and V.~Goncharov.
+\newblock Inverse ray tracing on icosahedral tetrahedron grids for non-linear laser plasma interaction coupled to {3D} radiation hydrodynamics.
+\newblock \emph{Journal of Computational Physics}, 443:\penalty0 110537, October 2021.
+\newblock ISSN 0021-9991.
+\newblock \doi{10.1016/j.jcp.2021.110537}.
+\newblock URL \url{https://www.sciencedirect.com/science/article/pii/S0021999121004320}.
+
+\bibitem[Afshar-rad et~al.(1992)Afshar-rad, Gizzi, Desselberger, Khattak, Willi, and Giulietti]{afshar-rad_evidence_1992}
+T.~Afshar-rad, L.~A. Gizzi, M.~Desselberger, F.~Khattak, O.~Willi, and A.~Giulietti.
+\newblock Evidence for whole-beam self-focusing of induced spatially incoherent laser light in large underdense plasma.
+\newblock \emph{Physical Review Letters}, 68\penalty0 (7):\penalty0 942--945, February 1992.
+\newblock ISSN 0031-9007.
+\newblock \doi{10.1103/PhysRevLett.68.942}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.68.942}.
 
 \end{thebibliography}
