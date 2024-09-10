@@ -51,3 +51,14 @@ un-rarefied
 unstagnated
 adiabats
 filamentation
+YOC
+CBET-mitigation
+ArF
+Vlasov-Fokker-Planck
+fast-VFP
+PdV
+LASNEX
+Gbar
+ENDF
+isentropically
+ignitor-beam

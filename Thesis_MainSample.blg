@@ -1,60 +1,15 @@
-This is BibTeX, Version 0.99d (TeX Live 2023)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: Thesis_MainSample.aux
-The style file: unsrtnat.bst
-A level-1 auxiliary file: Preamble/PreambleMain.aux
-A level-1 auxiliary file: Introduction/IntroductionMain.aux
-A level-1 auxiliary file: Appendix/Permissions.aux
-Database file #1: Bibliography/Bibliography.bib
-Reallocated buffer (elt_size=1) to 40000 items from 20000.
-Reallocated sv_buffer (elt_size=1) to 40000 items from 20000.
-Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
-Reallocated out_buf (elt_size=1) to 40000 items from 20000.
-Reallocated name_tok (elt_size=4) to 40000 items from 20000.
-Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Warning--empty institution in nuckolls_early_1998
-Warning--empty year in noauthor_nif_nodate
-Warning--empty institution in simon_lle_1989
-You've used 61 entries,
-            2481 wiz_defined-function locations,
-            1045 strings with 84267 characters,
-and the built_in function-call counts, 122125 in all, are:
-= -- 2477
-> -- 23366
-< -- 15
-+ -- 7856
-- -- 7734
-* -- 17229
-:= -- 26461
-add.period$ -- 354
-call.type$ -- 61
-change.case$ -- 120
-chr.to.int$ -- 61
-cite$ -- 65
-duplicate$ -- 1137
-empty$ -- 2221
-format.name$ -- 7802
-if$ -- 20236
-int.to.chr$ -- 1
-int.to.str$ -- 62
-missing$ -- 57
-newline$ -- 483
-num.names$ -- 180
-pop$ -- 267
-preamble$ -- 1
-purify$ -- 61
-quote$ -- 0
-skip$ -- 565
-stack$ -- 0
-substring$ -- 1305
-swap$ -- 182
-text.length$ -- 3
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 424
-warning$ -- 3
-while$ -- 199
-width$ -- 0
-write$ -- 1137
-(There were 3 warnings)
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Thesis_MainSample.blg'
+[222] biber-MSWIN64:340> INFO - === 
+[287] Biber.pm:419> INFO - Reading 'Thesis_MainSample.bcf'
+[520] Biber.pm:979> INFO - Found 69 citekeys in bib section 0
+[551] Biber.pm:4419> INFO - Processing section 0
+[576] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
+[687] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1933] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
+[12398] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[12398] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[12399] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[12399] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[12789] bbl.pm:660> INFO - Writing 'Thesis_MainSample.bbl' with encoding 'UTF-8'
+[29467] bbl.pm:763> INFO - Output to Thesis_MainSample.bbl

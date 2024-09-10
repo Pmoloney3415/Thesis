@@ -3,8 +3,10 @@
  \usepackage{epstopdf}
 %
 
-\usepackage[square,numbers,sort&compress% 
- 			 ]{natbib}
+\usepackage[utf8]{inputenc}
+%\usepackage[square,numbers,sort&compress]{natbib}
+\usepackage[backend=biber, style=numeric, sorting=none, maxnames=5, doi=true, isbn=true]{biblatex}
+\addbibresource{Bibliography.bib}
 %			 \usepackage{hypernat}
 \usepackage{siunitx}
 \usepackage{fancyhdr}
@@ -19,12 +21,11 @@
 \usepackage{mathtools}
 \usepackage{pdfpages}
 \usepackage{subfig}
-\usepackage{ulem}
+\usepackage[normalem]{ulem}
 \usepackage{esint}
 \usepackage{bbold}
 \usepackage{pdfpages}
 \usepackage{adjustbox}
-\usepackage[utf8]{inputenc}
 \usepackage{caption}
 \usepackage[T1]{fontenc}
 \usepackage[printonlyused]{acronym}
@@ -65,7 +66,7 @@
 %\bibliographystyle{plainnatnourl}
 %\bibliographystyle{unsrt}
 %\bibliographystyle{ieeetr}
-\bibliographystyle{unsrtnat}
+%\bibliographystyle{unsrtnat}
 \newcommand{\degree}{\ensuremath{^\circ}}
 
 %\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
@@ -93,7 +94,7 @@
 	plainpages = false, 
 	pdfpagelabels, pdfpagelayout = SinglePage, 
 	bookmarks, bookmarksopen = true,bookmarksnumbered = true,breaklinks = true,
-	linktocpage, pagebackref,colorlinks = true, linkcolor = black,urlcolor  = black,citecolor = black,anchorcolor = black, hyperindex = true,
+	linktocpage, colorlinks = true, linkcolor = black,urlcolor  = black,citecolor = black,anchorcolor = black, hyperindex = true,
 	 pdfproducer=TeXShop,pdfstartview=FitV, 
 	%hyperfigures 
 	]{hyperref}
