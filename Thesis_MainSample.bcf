@@ -96,15 +96,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -331,15 +331,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -2365,86 +2365,93 @@
     <bcf:citekey order="2" intorder="1">griffiths_commercialisation_2022</bcf:citekey>
     <bcf:citekey order="3" intorder="1">atzeni_physics_2004</bcf:citekey>
     <bcf:citekey order="4" intorder="1">rider_general_1995</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">chadwick_endf_2011</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">atzeni_physics_2004</bcf:citekey>
     <bcf:citekey order="6" intorder="1">chadwick_endf_2011</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">brown_field_2014</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">chadwick_endf_2011</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">daughton_influence_2023</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">schawlow_infrared_1958</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">maiman_stimulated_1960</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">nuckolls_early_1998</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">nuckolls_laser_1972</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">fraley_thermonuclear_1974</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">atzeni_physics_2004</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">fraley_thermonuclear_1974</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">crilly_simulation_2020</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">lafon_directdriveignition_2015</bcf:citekey>
-    <bcf:citekey order="18" intorder="2">kline_first_2016</bcf:citekey>
-    <bcf:citekey order="18" intorder="3">hu_laserdirectdrive_2023</bcf:citekey>
-    <bcf:citekey order="18" intorder="4">casey_performance_2015</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">goncharov_improved_2003</bcf:citekey>
-    <bcf:citekey order="19" intorder="2">hurricane_highfoot_2014</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">gatujohnson_impact_2018</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">smalyuk_review_2020</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">betti_shock_2007</bcf:citekey>
-    <bcf:citekey order="22" intorder="2">perkins_shock_2009</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">scott_shockaugmented_2022</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">tabak_ignition_1994</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">jarrott_visualizing_2016</bcf:citekey>
-    <bcf:citekey order="25" intorder="2">gong_direct_2019</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">khoda-bakhsh_advanced_1992</bcf:citekey>
-    <bcf:citekey order="26" intorder="2">molvig_low_2016</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">atzeni_physics_2004</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">atzeni_physics_2004</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">atzeni_physics_2004</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">goncharov_novel_2020</bcf:citekey>
-    <bcf:citekey order="30" intorder="2">igumenshchev_proofprinciple_2023</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">metzler_target_1984</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">lindl_development_1995</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">miller_national_2004</bcf:citekey>
-    <bcf:citekey order="33" intorder="2">spaeth_description_2016</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">fleurot_laser_2005</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">clark_threedimensional_2016</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">macgowan_laser_1996</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">michel_tuning_2009</bcf:citekey>
-    <bcf:citekey order="37" intorder="2">moody_multistep_2012</bcf:citekey>
-    <bcf:citekey order="37" intorder="3">kritcher_energy_2018</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">abu-shawareb_achievement_2024</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">abu-shawareb_achievement_2024</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">hurricane_physics_2023</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">abu-shawareb_achievement_2024</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">lindl_review_2014</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">hurricane_highfoot_2014</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">mackinnon_highdensity_2014</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">zylstra_record_2021</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">kritcher_design_2024</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">zylstra_burning_2022</bcf:citekey>
-    <bcf:citekey order="47" intorder="2">kritcher_design_2022</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">abu-shawareb_lawson_2022</bcf:citekey>
-    <bcf:citekey order="49" intorder="1">abu-shawareb_achievement_2024</bcf:citekey>
-    <bcf:citekey order="50" intorder="1">_nif_</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">simon_lle_1989</bcf:citekey>
-    <bcf:citekey order="51" intorder="2">boehly_upgrade_1995</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">gatujohnson_impact_2020</bcf:citekey>
-    <bcf:citekey order="53" intorder="1">kato_random_1984</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">skupsky_improved_1989</bcf:citekey>
-    <bcf:citekey order="54" intorder="2">hohenberger_optical_2016</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">tsubakimoto_suppression_1992</bcf:citekey>
-    <bcf:citekey order="55" intorder="2">boehly_reduction_1999</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">boehly_upgrade_1995</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">colaitis_inverse_2021</bcf:citekey>
-    <bcf:citekey order="58" intorder="1">afshar-rad_evidence_1992</bcf:citekey>
-    <bcf:citekey order="59" intorder="1">zhou_hydrodynamic_2007</bcf:citekey>
-    <bcf:citekey order="60" intorder="1">betti_deceleration_2002</bcf:citekey>
-    <bcf:citekey order="61" intorder="1">lees_experimentally_2021</bcf:citekey>
-    <bcf:citekey order="62" intorder="1">lees_understanding_2023</bcf:citekey>
-    <bcf:citekey order="63" intorder="1">gopalaswamy_tripled_2019</bcf:citekey>
-    <bcf:citekey order="64" intorder="1">williams_high_2021</bcf:citekey>
-    <bcf:citekey order="65" intorder="1">williams_demonstration_2024</bcf:citekey>
-    <bcf:citekey order="66" intorder="1">gopalaswamy_demonstration_2024</bcf:citekey>
-    <bcf:citekey order="67" intorder="1">kritcher_design_2022</bcf:citekey>
-    <bcf:citekey order="68" intorder="1">colaitis_inverse_2021</bcf:citekey>
-    <bcf:citekey order="69" intorder="1">colaitis_inverse_2021</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">chadwick_endf_2011</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">brown_field_2014</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">chadwick_endf_2011</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">daughton_influence_2023</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">rebut_joint_2018</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">nuckolls_laser_1972</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">schawlow_infrared_1958</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">maiman_stimulated_1960</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">nuckolls_early_1998</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">nuckolls_laser_1972</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">fraley_thermonuclear_1974</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">atzeni_physics_2004</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">fraley_thermonuclear_1974</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">crilly_simulation_2020</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">lafon_directdriveignition_2015</bcf:citekey>
+    <bcf:citekey order="21" intorder="2">kline_first_2016</bcf:citekey>
+    <bcf:citekey order="21" intorder="3">hu_laserdirectdrive_2023</bcf:citekey>
+    <bcf:citekey order="21" intorder="4">casey_performance_2015</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">goncharov_improved_2003</bcf:citekey>
+    <bcf:citekey order="22" intorder="2">hurricane_highfoot_2014</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">gatujohnson_impact_2018</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">smalyuk_review_2020</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">betti_shock_2007</bcf:citekey>
+    <bcf:citekey order="25" intorder="2">perkins_shock_2009</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">scott_shockaugmented_2022</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">tabak_ignition_1994</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">jarrott_visualizing_2016</bcf:citekey>
+    <bcf:citekey order="28" intorder="2">gong_direct_2019</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">khoda-bakhsh_advanced_1992</bcf:citekey>
+    <bcf:citekey order="29" intorder="2">molvig_low_2016</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">atzeni_physics_2004</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">atzeni_physics_2004</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">atzeni_physics_2004</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">banerjee_dipole_2015</bcf:citekey>
+    <bcf:citekey order="33" intorder="2">batani_future_2023</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">goncharov_novel_2020</bcf:citekey>
+    <bcf:citekey order="34" intorder="2">igumenshchev_proofprinciple_2023</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">metzler_target_1984</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">lindl_development_1995</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">miller_national_2004</bcf:citekey>
+    <bcf:citekey order="37" intorder="2">spaeth_description_2016</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">fleurot_laser_2005</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">clark_threedimensional_2016</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">macgowan_laser_1996</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">michel_tuning_2009</bcf:citekey>
+    <bcf:citekey order="41" intorder="2">moody_multistep_2012</bcf:citekey>
+    <bcf:citekey order="41" intorder="3">kritcher_energy_2018</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">abu-shawareb_achievement_2024</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">abu-shawareb_achievement_2024</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">hurricane_physics_2023</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">abu-shawareb_achievement_2024</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">lindl_review_2014</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">hurricane_highfoot_2014</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">mackinnon_highdensity_2014</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">zylstra_record_2021</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">kritcher_design_2024</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">zylstra_burning_2022</bcf:citekey>
+    <bcf:citekey order="51" intorder="2">kritcher_design_2022</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">abu-shawareb_lawson_2022</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">abu-shawareb_achievement_2024</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">_nif_</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">simon_lle_1989</bcf:citekey>
+    <bcf:citekey order="55" intorder="2">boehly_upgrade_1995</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">gatujohnson_impact_2020</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">bodner_critical_1981</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">kato_random_1984</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">skupsky_improved_1989</bcf:citekey>
+    <bcf:citekey order="59" intorder="2">hohenberger_optical_2016</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">tsubakimoto_suppression_1992</bcf:citekey>
+    <bcf:citekey order="60" intorder="2">boehly_reduction_1999</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">boehly_upgrade_1995</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">huba_nrl_2013</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">colaitis_inverse_2021</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">afshar-rad_evidence_1992</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">zhou_hydrodynamic_2007</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">betti_deceleration_2002</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">lees_experimentally_2021</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">lees_understanding_2023</bcf:citekey>
+    <bcf:citekey order="69" intorder="1">gopalaswamy_tripled_2019</bcf:citekey>
+    <bcf:citekey order="70" intorder="1">williams_high_2021</bcf:citekey>
+    <bcf:citekey order="71" intorder="1">williams_demonstration_2024</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">gopalaswamy_demonstration_2024</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">kritcher_design_2022</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">colaitis_inverse_2021</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">colaitis_inverse_2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

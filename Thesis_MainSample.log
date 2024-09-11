@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  10 SEP 2024 17:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  11 SEP 2024 16:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1322,7 +1322,7 @@ l.65     \acro{NIF}{National Ignition Facility}
  (./Introduction/IntroductionMain.tex
 chapter 1.
 Package acronym Info: Label `acro:LCOE' newly defined as it shall be overridden
-although it is yet undefined on input line 17.
+although it is yet undefined on input line 20.
 [7
 
 
@@ -1332,14 +1332,14 @@ although it is yet undefined on input line 17.
 <Introduction/Images/BE_per_nucleon.png, id=182, 722.7pt x 433.62pt>
 File: Introduction/Images/BE_per_nucleon.png Graphic file (type png)
 <use Introduction/Images/BE_per_nucleon.png>
-Package pdftex.def Info: Introduction/Images/BE_per_nucleon.png  used on input line 44.
+Package pdftex.def Info: Introduction/Images/BE_per_nucleon.png  used on input line 49.
 (pdftex.def)             Requested size: 373.86685pt x 224.31918pt.
 <Introduction/Images/fusion-reactivities.png, id=183, 505.89pt x 433.62pt>
 File: Introduction/Images/fusion-reactivities.png Graphic file (type png)
 <use Introduction/Images/fusion-reactivities.png>
-Package pdftex.def Info: Introduction/Images/fusion-reactivities.png  used on input line 53.
+Package pdftex.def Info: Introduction/Images/fusion-reactivities.png  used on input line 58.
 (pdftex.def)             Requested size: 249.24878pt x 213.64677pt.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 58.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 63.
  (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -1347,161 +1347,150 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./Introduction/Images/BE_per_nucleon.png>]
 Package acronym Info: Label `acro:ICF' newly defined as it shall be overridden
-although it is yet undefined on input line 77.
+although it is yet undefined on input line 83.
 Package acronym Info: Label `acro:MCF' newly defined as it shall be overridden
-although it is yet undefined on input line 81.
-
-Underfull \vbox (badness 2426) has occurred while \output is active []
-
- [9 <./Introduction/Images/fusion-reactivities.png>]
+although it is yet undefined on input line 88.
+ [9 <./Introduction/Images/fusion-reactivities.png>] [10]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 114.
+(Font)              scaled to size 8.27998pt on input line 121.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 114.
+(Font)              scaled to size 6.99199pt on input line 121.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 114.
+(Font)              scaled to size 8.27998pt on input line 121.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 114.
- [10]
-<Introduction/Images/hotspot ignition white.png, id=240, 844.40268pt x 840.64464pt>
+(Font)              scaled to size 6.99199pt on input line 121.
+ [11]
+<Introduction/Images/hotspot ignition white.png, id=256, 844.40268pt x 840.64464pt>
 File: Introduction/Images/hotspot ignition white.png Graphic file (type png)
 <use Introduction/Images/hotspot ignition white.png>
-Package pdftex.def Info: Introduction/Images/hotspot ignition white.png  used on input line 154.
+Package pdftex.def Info: Introduction/Images/hotspot ignition white.png  used on input line 165.
 (pdftex.def)             Requested size: 290.78603pt x 289.4968pt.
- [11]
-Package acronym Info: Label `acro:RTI' newly defined as it shall be overridden
-although it is yet undefined on input line 181.
-
-Underfull \vbox (badness 1122) has occurred while \output is active []
-
  [12 <./Introduction/Images/hotspot ignition white.png>]
+Package acronym Info: Label `acro:RTI' newly defined as it shall be overridden
+although it is yet undefined on input line 193.
+
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [13]
 Package acronym Info: Label `acro:LPIs' newly defined as it shall be overridden
-although it is yet undefined on input line 214.
-
-
-LaTeX Warning: Reference `sec:intro_LPIs' on page 13 undefined on input line 215.
-
-[13]
+although it is yet undefined on input line 227.
 Package acronym Info: Label `acro:IFE' newly defined as it shall be overridden
-although it is yet undefined on input line 220.
-<Introduction/Images/IFE_powerplant.png, id=308, 710.655pt x 328.8285pt>
+although it is yet undefined on input line 232.
+<Introduction/Images/IFE_powerplant.png, id=310, 710.655pt x 328.8285pt>
 File: Introduction/Images/IFE_powerplant.png Graphic file (type png)
 <use Introduction/Images/IFE_powerplant.png>
-Package pdftex.def Info: Introduction/Images/IFE_powerplant.png  used on input line 234.
+Package pdftex.def Info: Introduction/Images/IFE_powerplant.png  used on input line 246.
 (pdftex.def)             Requested size: 332.3296pt x 153.77672pt.
- [14 <./Introduction/Images/IFE_powerplant.png>]
+ [14]
 Package acronym Info: Label `acro:DPSSL' newly defined as it shall be overridden
-although it is yet undefined on input line 256.
-<Introduction/Images/indirect icf white.png, id=338, 643.6848pt x 219.4599pt>
+although it is yet undefined on input line 271.
+ [15 <./Introduction/Images/IFE_powerplant.png>]
+<Introduction/Images/indirect icf white.png, id=354, 643.6848pt x 219.4599pt>
 File: Introduction/Images/indirect icf white.png Graphic file (type png)
 <use Introduction/Images/indirect icf white.png>
-Package pdftex.def Info: Introduction/Images/indirect icf white.png  used on input line 281.
+Package pdftex.def Info: Introduction/Images/indirect icf white.png  used on input line 296.
 (pdftex.def)             Requested size: 415.41043pt x 141.63593pt.
 Package acronym Info: Label `acro:NIF' newly defined as it shall be overridden
-although it is yet undefined on input line 291.
+although it is yet undefined on input line 311.
 Package acronym Info: Label `acro:LLNL' newly defined as it shall be overridden
-although it is yet undefined on input line 291.
+although it is yet undefined on input line 311.
 Package acronym Info: Label `acro:LEH' newly defined as it shall be overridden
-although it is yet undefined on input line 292.
+although it is yet undefined on input line 312.
 Package acronym Info: Label `acro:LMJ' newly defined as it shall be overridden
-although it is yet undefined on input line 294.
+although it is yet undefined on input line 314.
 Package acronym Info: Label `acro:CEA' newly defined as it shall be overridden
-although it is yet undefined on input line 294.
- [15]
-Package acronym Info: Label `acro:SBS' newly defined as it shall be overridden
-although it is yet undefined on input line 305.
-Package acronym Info: Label `acro:SRS' newly defined as it shall be overridden
-although it is yet undefined on input line 305.
-Package acronym Info: Label `acro:CBET' newly defined as it shall be overridden
-although it is yet undefined on input line 305.
+although it is yet undefined on input line 314.
  [16 <./Introduction/Images/indirect icf white.png>]
-<Introduction/Images/NIF_yields.jpg, id=395, 2497.33pt x 1993.4475pt>
+Package acronym Info: Label `acro:SBS' newly defined as it shall be overridden
+although it is yet undefined on input line 326.
+Package acronym Info: Label `acro:SRS' newly defined as it shall be overridden
+although it is yet undefined on input line 326.
+Package acronym Info: Label `acro:CBET' newly defined as it shall be overridden
+although it is yet undefined on input line 326.
+<Introduction/Images/NIF_yields.jpg, id=400, 2497.33pt x 1993.4475pt>
 File: Introduction/Images/NIF_yields.jpg Graphic file (type jpg)
 <use Introduction/Images/NIF_yields.jpg>
-Package pdftex.def Info: Introduction/Images/NIF_yields.jpg  used on input line 312.
+Package pdftex.def Info: Introduction/Images/NIF_yields.jpg  used on input line 333.
 (pdftex.def)             Requested size: 415.41043pt x 331.58139pt.
 Package acronym Info: Label `acro:HDC' newly defined as it shall be overridden
-although it is yet undefined on input line 325.
-
-Overfull \hbox (6.70012pt too wide) in paragraph at lines 321--332
-[]\T1/futs/m/n/10.95 Although early ex-per-i-ments on the [][] dra-mat-i-cally un-der-achieved the main aim of demon-
- []
-
+although it is yet undefined on input line 352.
+ [17]
+<Introduction/Images/direct icf white.png, id=447, 286.1892pt x 278.9622pt>
+File: Introduction/Images/direct icf white.png Graphic file (type png)
+<use Introduction/Images/direct icf white.png>
+Package pdftex.def Info: Introduction/Images/direct icf white.png  used on input line 366.
+(pdftex.def)             Requested size: 290.78603pt x 283.44373pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./Introduction/Images/NIF_yields.jpg>]
-<Introduction/Images/direct icf white.png, id=434, 286.1892pt x 278.9622pt>
-File: Introduction/Images/direct icf white.png Graphic file (type png)
-<use Introduction/Images/direct icf white.png>
-Package pdftex.def Info: Introduction/Images/direct icf white.png  used on input line 339.
-(pdftex.def)             Requested size: 290.78603pt x 283.44373pt.
+ [18 <./Introduction/Images/NIF_yields.jpg>]
 Package acronym Info: Label `acro:LLE' newly defined as it shall be overridden
-although it is yet undefined on input line 350.
- [18 <./Introduction/Images/direct icf white.png>]
-<Introduction/Images/SmoothingOptics.png, id=464, 1001.5016pt x 513.117pt>
+although it is yet undefined on input line 382.
+ [19 <./Introduction/Images/direct icf white.png>]
+<Introduction/Images/SmoothingOptics.png, id=487, 1001.5016pt x 513.117pt>
 File: Introduction/Images/SmoothingOptics.png Graphic file (type png)
 <use Introduction/Images/SmoothingOptics.png>
-Package pdftex.def Info: Introduction/Images/SmoothingOptics.png  used on input line 366.
+Package pdftex.def Info: Introduction/Images/SmoothingOptics.png  used on input line 397.
 (pdftex.def)             Requested size: 415.41043pt x 212.8378pt.
 Package acronym Info: Label `acro:SSD' newly defined as it shall be overridden
-although it is yet undefined on input line 373.
+although it is yet undefined on input line 404.
 
 
-LaTeX Warning: Reference `fig:SOLAS_qpR_IFRIIT_test' on page 19 undefined on input line 378.
+LaTeX Warning: Reference `fig:SOLAS_qpR_IFRIIT_test' on page 20 undefined on input line 409.
 
-
-Overfull \hbox (1.36665pt too wide) in paragraph at lines 377--391
-\T1/futs/m/n/10.95 their widths leads to a `beam-mode' asym-me-try, which for \T1/futs/m/sc/10.95 Omega \T1/futs/m/n/10.95 has a dis-tinc-tive Legendre-
- []
-
-[19]
-Overfull \hbox (8.11638pt too wide) in paragraph at lines 392--398
+[20 <./Introduction/Images/SmoothingOptics.png>]
+Overfull \hbox (8.11638pt too wide) in paragraph at lines 424--430
 \T1/futs/m/n/10.95 time-integrated, in-stan-ta-neously large am-pli-tude, short wave-length per-tur-ba-tions ex-ist. When
  []
 
-<Introduction/Images/LPI diagram.png, id=488, 953.2413pt x 526.1256pt>
+<Introduction/Images/LPI diagram.png, id=508, 953.2413pt x 526.1256pt>
 File: Introduction/Images/LPI diagram.png Graphic file (type png)
 <use Introduction/Images/LPI diagram.png>
-Package pdftex.def Info: Introduction/Images/LPI diagram.png  used on input line 400.
+Package pdftex.def Info: Introduction/Images/LPI diagram.png  used on input line 432.
 (pdftex.def)             Requested size: 415.41043pt x 229.28024pt.
 Package acronym Info: Label `acro:Inv-Brem' newly defined as it shall be overridden
-although it is yet undefined on input line 407.
+although it is yet undefined on input line 440.
 Package acronym Info: Label `acro:EPW' newly defined as it shall be overridden
-although it is yet undefined on input line 407.
+although it is yet undefined on input line 440.
 Package acronym Info: Label `acro:TPD' newly defined as it shall be overridden
-although it is yet undefined on input line 407.
-
-Underfull \hbox (badness 7504) in paragraph at lines 407--407
-[][][]|\T1/futs/m/n/10.95 Im-por-tant [][] for direct-drive [][]. En-ergy is ab-sorbed by [][][][]Inverse-
- []
-
-
-Underfull \vbox (badness 7186) has occurred while \output is active []
-
- [20 <./Introduction/Images/SmoothingOptics.png>] [21 <./Introduction/Images/LPI diagram.png>]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 425.
+although it is yet undefined on input line 440.
+[21]
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 463.
  (c:/texlive/2023/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-)
+) [22 <./Introduction/Images/LPI diagram.png>]
 
-LaTeX Warning: Reference `sec:Res1_OMEGA_stat_modelling' on page 22 undefined on input line 438.
+LaTeX Warning: Reference `sec:Res1_OMEGA_stat_modelling' on page 23 undefined on input line 476.
 
 
-Overfull \hbox (0.63757pt too wide) in paragraph at lines 434--439
-\T1/futs/m/n/10.95 con-ver-sion ef-fi-ciency [[][]63[][]]. Over the past decade, im-plo-sion per-for-mance im-proved markedly
+Overfull \hbox (0.63757pt too wide) in paragraph at lines 472--477
+\T1/futs/m/n/10.95 con-ver-sion ef-fi-ciency [[][]68[][]]. Over the past decade, im-plo-sion per-for-mance im-proved markedly
  []
 
-[22]
+[23]
 Package acronym Info: Label `acro:MHD' newly defined as it shall be overridden
-although it is yet undefined on input line 465.
+although it is yet undefined on input line 503.
+
+
+LaTeX Warning: Reference `chap:Theory' on page 24 undefined on input line 516.
+
 Package acronym Info: Label `acro:Rad-Hydro' newly defined as it shall be overridden
-although it is yet undefined on input line 479.
- [23]) [24] [25
+although it is yet undefined on input line 517.
+
+LaTeX Warning: Reference `chap:SOLAS' on page 24 undefined on input line 522.
+
+[24]
+
+LaTeX Warning: Reference `chap:RbRt' on page 25 undefined on input line 528.
 
 
+LaTeX Warning: Reference `chap:Mag' on page 25 undefined on input line 532.
 
-] [26
+
+LaTeX Warning: Reference `chap:Conc' on page 25 undefined on input line 536.
+
+) [25] [26
+
 
 
 ]
@@ -1514,7 +1503,14 @@ Overfull \hbox (4.39388pt too wide) in paragraph at lines 28--28
 \T1/futs/m/n/10.95 ford : New York: Claren-don Press ; Ox-ford Uni-ver-sity Press, 2004. \T1/futs/m/sc/10.95 isbn\T1/futs/m/n/10.95 : 978-0-19-856264-
  []
 
+
+Overfull \hbox (1.59256pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 John Nuck-olls et al. ``Laser Com-pres-sion of Mat-ter to Super-High Den-si-ties: Ther-monu-
+ []
+
 [27
+
+
 
 ]
 Overfull \hbox (3.57384pt too wide) in paragraph at lines 28--28
@@ -1541,12 +1537,13 @@ Overfull \hbox (11.93205pt too wide) in paragraph at lines 28--28
 \T1/futs/m/n/10.95 in Direct-Drive In-er-tial Con-fine-ment Fu-sion''. In: \T1/futs/m/it/10.95 Na-ture Physics \T1/futs/m/n/10.95 20.5 (May 2024), pp. 751^^U
  []
 
-[32]
+[32] [33] [34
+
+
+]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [33
-
-
+ (./Appendix/Permissions.tex) [35
 
 
 ] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Appendix/Permissions.aux))
@@ -1565,18 +1562,18 @@ Package logreq Info: Writing requests to 'Thesis_MainSample.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34227 strings out of 474165
- 687226 string characters out of 5749497
- 2267203 words of memory out of 5000000
- 55818 multiletter control sequences out of 15000+600000
+ 34279 strings out of 474165
+ 688954 string characters out of 5749497
+ 2276214 words of memory out of 5000000
+ 55858 multiletter control sequences out of 15000+600000
  681056 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,18n,121p,10978b,2023s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (33 pages, 10950226 bytes).
+Output written on Thesis_MainSample.pdf (35 pages, 10921098 bytes).
 PDF statistics:
- 870 PDF objects out of 1000 (max. 8388607)
- 764 compressed objects within 8 object streams
- 195 named destinations out of 1000 (max. 500000)
+ 918 PDF objects out of 1000 (max. 8388607)
+ 809 compressed objects within 9 object streams
+ 207 named destinations out of 1000 (max. 500000)
  155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
