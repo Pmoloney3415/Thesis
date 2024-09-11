@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  11 SEP 2024 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  11 SEP 2024 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1130,7 +1130,14 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Warning: Unused global option(s):
     [onesided,pagesize].
 
-(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Appendix/Permissions.aux))
+(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Numerics/NumericsMain.aux) (./Results1/Results1Main.aux) (./Results2/Results2Main.aux
+
+LaTeX Warning: Label `sec:res1_cbet_scattering' multiply defined.
+
+
+LaTeX Warning: Label `sec:res1_cbet_scattering@cref' multiply defined.
+
+) (./Results3/Results3Main.aux) (./Appendix/Permissions.aux))
 \openout1 = `Thesis_MainSample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1229,7 +1236,204 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis_MainSample.bbl' found.
- (./Thesis_MainSample.bbl)
+ (./Thesis_MainSample.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                chang_notitle_2023
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                colaitis_3d_2023-1
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                colaitis_towards_2014
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                craxton_direct-drive_2015
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                follett_ray-based_2018
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                follett_ray-based_2023
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                gatu_johnson_impact_2020
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                gotchev_laser-driven_2009
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                hu_direct-drive_2019
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                igumenshchev_crossed-beam_2010
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                igumenshchev_crossed-beam_2012
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                igumenshchev_laser-beam_2013
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                igumenshchev_three-dimensional_2016
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                larroche_ion-kinetic_2016
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                marozas_wavelength-detuning_2018
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                myatt_wave-based_2017
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                nguyen_cross-beam_2021
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                paddock_one-dimensional_2021
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                schmitt_importance_2023-1
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                scott_shock-augmented_2022
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                seaton_cross-beam_2022
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                seaton_cross-beam_2022-1
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                shi_laser-plasma_2018
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                shi_three-wave_2017
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                slutz_high-gain_2012
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                tubbs_direct-drive_1999
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                walsh_extended-magnetohydrodynamics_2020
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                williams_bspline-fortran_2024
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 9.
 Package biblatex Info: Reference segment=0 on input line 9.
  (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
@@ -1299,99 +1503,598 @@ Package pdftex.def Info: Preamble/new_college_logo.png  used on input line 2.
 
 
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Preamble/new_college_logo.png>] [2] (./Thesis_MainSample.toc)
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Preamble/new_college_logo.png>] [2] (./Thesis_MainSample.toc [3
+
+]
+Overfull \hbox (1.09499pt too wide) detected at line 54
+ [][][]\T1/futs/m/n/10.95 100[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 55
+ [][][]\T1/futs/m/n/10.95 101[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 56
+ [][][]\T1/futs/m/n/10.95 105[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 57
+ [][][]\T1/futs/m/n/10.95 105[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 58
+ [][][]\T1/futs/m/n/10.95 106[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 59
+ [][][]\T1/futs/m/n/10.95 107[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 60
+ [][][]\T1/futs/m/n/10.95 108[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 61
+ [][][]\T1/futs/m/n/10.95 109[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 62
+ [][][]\T1/futs/m/n/10.95 111[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 63
+ [][][]\T1/futs/m/n/10.95 113[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 64
+ [][][]\T1/futs/m/n/10.95 115[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 65
+ [][][]\T1/futs/m/n/10.95 116[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 66
+ [][][]\T1/futs/m/n/10.95 117[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 67
+ [][][]\T1/futs/m/n/10.95 120[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 68
+ [][][]\T1/futs/m/n/10.95 122[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 69
+ [][][]\T1/futs/m/n/10.95 123[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 70
+ [][][]\T1/futs/m/n/10.95 123[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 71
+ [][][]\T1/futs/m/n/10.95 124[][]
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 72
+ [][]\T1/futs/b/n/10.95 126[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 73
+ [][][]\T1/futs/m/n/10.95 127[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 74
+ [][][]\T1/futs/m/n/10.95 127[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 75
+ [][][]\T1/futs/m/n/10.95 129[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 76
+ [][][]\T1/futs/m/n/10.95 131[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 77
+ [][][]\T1/futs/m/n/10.95 131[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 78
+ [][][]\T1/futs/m/n/10.95 132[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 79
+ [][][]\T1/futs/m/n/10.95 132[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 80
+ [][][]\T1/futs/m/n/10.95 135[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 81
+ [][][]\T1/futs/m/n/10.95 137[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 82
+ [][][]\T1/futs/m/n/10.95 139[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 83
+ [][][]\T1/futs/m/n/10.95 140[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 84
+ [][][]\T1/futs/m/n/10.95 141[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 85
+ [][][]\T1/futs/m/n/10.95 142[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 86
+ [][][]\T1/futs/m/n/10.95 144[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 87
+ [][][]\T1/futs/m/n/10.95 146[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 88
+ [][][]\T1/futs/m/n/10.95 147[][]
+ []
+
+[4]
+Overfull \hbox (1.09499pt too wide) detected at line 89
+ [][][]\T1/futs/m/n/10.95 149[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 90
+ [][][]\T1/futs/m/n/10.95 151[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 91
+ [][][]\T1/futs/m/n/10.95 155[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 92
+ [][][]\T1/futs/m/n/10.95 155[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 93
+ [][][]\T1/futs/m/n/10.95 156[][]
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 94
+ [][]\T1/futs/b/n/10.95 157[][]
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 95
+ [][]\T1/futs/b/n/10.95 159[][]
+ []
+
+
+Overfull \hbox (1.98195pt too wide) detected at line 96
+ [][]\T1/futs/b/n/10.95 175[][]
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `Thesis_MainSample.toc'.
 
- [3
-
-]
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 33.
+ [5]
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 32.
  (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [4
+) [6
 
-{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 pdfTeX warning (ext4): destination with the same identifier (name{EPW}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.65     \acro{NIF}{National Ignition Facility}
-                                               ] [5]) [6]
+<to be read again> 
+                   \relax 
+l.53     \acro{EPW}{Electron Plasma Wave}
+                                          [7] [8] (./Thesis_MainSample.lot
+Overfull \hbox (1.09499pt too wide) detected at line 6
+ [][][]\T1/futs/m/n/10.95 108[][]
+ []
+
+Package acronym Info: Label `acro:CBET' newly defined as it shall be overridden
+although it is yet undefined on input line 8.
+
+Overfull \hbox (1.09499pt too wide) detected at line 8
+ [][][]\T1/futs/m/n/10.95 135[][]
+ []
+
+)
+\tf@lot=\write6
+\openout6 = `Thesis_MainSample.lot'.
+
+ [9
+
+] (./Thesis_MainSample.lof
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Overfull \hbox (27.07773pt too wide) in paragraph at lines 3--3
+ \T1/futs/m/n/10.95 aged re-ac-tiv-i-ties are ob-tained from cross-section data, avail-able in the \T1/cmtt/m/n/10.95 ENDF/B-VII.1 
+ []
+
+Package acronym Info: Label `acro:ICF' newly defined as it shall be overridden
+although it is yet undefined on input line 4.
+Package acronym Info: Label `acro:IFE' newly defined as it shall be overridden
+although it is yet undefined on input line 5.
+
+Overfull \hbox (15.11285pt too wide) in paragraph at lines 6--6
+ \T1/futs/m/n/10.95 blue trans-par-ent rect-an-gles, ir-ra-di-ates the in-te-rior of a high-Z (\T1/futs/m/it/10.95 e.g. \T1/futs/m/n/10.95 gold) hohlraum, 
+ []
+
+Package acronym Info: Label `acro:NIF' newly defined as it shall be overridden
+although it is yet undefined on input line 7.
+Package acronym Info: Label `acro:LPIs' newly defined as it shall be overridden
+although it is yet undefined on input line 8.
+
+Overfull \hbox (10.34663pt too wide) in paragraph at lines 8--8
+ \T1/futs/m/n/10.95 beam smooth-ing op-tics leads to short-scale non-uniformity of de-po-si-tion, known 
+ []
+
+Package acronym Info: Label `acro:SSD' newly defined as it shall be overridden
+although it is yet undefined on input line 9.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10
+
+]
+Package acronym Info: Label `acro:Inv-Brem' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+Package acronym Info: Label `acro:EPW' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+Package acronym Info: Label `acro:TPD' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+Package acronym Info: Label `acro:SRS' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+Package acronym Info: Label `acro:SBS' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+
+Overfull \hbox (10.86041pt too wide) in paragraph at lines 15--15
+ [][] []\T1/futs/m/n/10.95 Illustrative di-a-grams demon-strat-ing a) the spher-i-cal po-lar mesh used by \T1/futs/m/sc/10.95 Chimera 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+Overfull \hbox (4.15987pt too wide) in paragraph at lines 19--19
+ [][] []\T1/futs/m/n/10.95 Results from the cylindrical-helix test prob-lem, ob-tained us-ing the de-fault adap- 
+ []
+
+
+Overfull \hbox (15.95181pt too wide) in paragraph at lines 21--21
+ [][] []\T1/futs/m/n/10.95 A 3-D il-lus-tra-tion of the ray-amplitude con-struc-tion for a sin-gle ray in a spherically- 
+ []
+
+
+Overfull \hbox (28.52292pt too wide) in paragraph at lines 22--22
+ [][] []\T1/futs/m/n/10.95 A demon-stra-tion of how the ray-amplitude is ob-tained from the area of neighbouring- 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Package acronym Info: Label `acro:CGT' newly defined as it shall be overridden
+although it is yet undefined on input line 27.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+Overfull \hbox (2.40933pt too wide) in paragraph at lines 35--35
+ [][] []\T1/futs/m/sc/10.95 Chimera\T1/futs/m/n/10.95 -\T1/futs/m/sc/10.95 Solas \T1/futs/m/n/10.95 sim-u-la-tion of \T1/futs/m/sc/10.95 Omega \T1/futs/m/n/10.95 shot 89224. Panel a) shows the de-posited 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Overfull \hbox (7.13815pt too wide) in paragraph at lines 40--40
+ [][] []\T1/futs/m/n/10.95 The tra-jec-tory of rays from two beams through a direct-drive like coro-nal plasma. 
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 41
+ [][][]\T1/futs/m/n/10.95 100[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 42
+ [][][]\T1/futs/m/n/10.95 103[][]
+ []
+
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 43.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 43.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 43.
+
+Overfull \hbox (1.09499pt too wide) detected at line 43
+ [][][]\T1/futs/m/n/10.95 106[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 44
+ [][][]\T1/futs/m/n/10.95 109[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Overfull \hbox (1.09499pt too wide) detected at line 45
+ [][][]\T1/futs/m/n/10.95 110[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 46
+ [][][]\T1/futs/m/n/10.95 112[][]
+ []
+
+
+Overfull \hbox (4.11598pt too wide) in paragraph at lines 46--46
+ \T1/futs/m/n/10.95 of time ($\FML/futmi/m/it/10.95 x$\T1/futs/m/n/10.95 -axis) and an-gle ($\FML/futmi/m/it/10.95 y$\T1/futs/m/n/10.95 -axis), along-side am-pli-tudes of the dom-i-nant modes 
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 47
+ [][][]\T1/futs/m/n/10.95 113[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 48
+ [][][]\T1/futs/m/n/10.95 114[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 49
+ [][][]\T1/futs/m/n/10.95 115[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+Overfull \hbox (1.09499pt too wide) detected at line 50
+ [][][]\T1/futs/m/n/10.95 117[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 51
+ [][][]\T1/futs/m/n/10.95 118[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 52
+ [][][]\T1/futs/m/n/10.95 119[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 53
+ [][][]\T1/futs/m/n/10.95 121[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 55
+ [][][]\T1/futs/m/n/10.95 127[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 56
+ [][][]\T1/futs/m/n/10.95 128[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Overfull \hbox (1.09499pt too wide) detected at line 57
+ [][][]\T1/futs/m/n/10.95 129[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 58
+ [][][]\T1/futs/m/n/10.95 130[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 59
+ [][][]\T1/futs/m/n/10.95 133[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 60
+ [][][]\T1/futs/m/n/10.95 136[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 61
+ [][][]\T1/futs/m/n/10.95 138[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 62
+ [][][]\T1/futs/m/n/10.95 140[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 63
+ [][][]\T1/futs/m/n/10.95 141[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Overfull \hbox (1.09499pt too wide) detected at line 64
+ [][][]\T1/futs/m/n/10.95 143[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 65
+ [][][]\T1/futs/m/n/10.95 144[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 66
+ [][][]\T1/futs/m/n/10.95 146[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 67
+ [][][]\T1/futs/m/n/10.95 147[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+Overfull \hbox (1.09499pt too wide) detected at line 68
+ [][][]\T1/futs/m/n/10.95 149[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 69
+ [][][]\T1/futs/m/n/10.95 152[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 70
+ [][][]\T1/futs/m/n/10.95 153[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 71
+ [][][]\T1/futs/m/n/10.95 154[][]
+ []
+
+)
+\tf@lof=\write7
+\openout7 = `Thesis_MainSample.lof'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20] [21]) [22]
 \openout2 = `Introduction/IntroductionMain.aux'.
 
  (./Introduction/IntroductionMain.tex
 chapter 1.
 Package acronym Info: Label `acro:LCOE' newly defined as it shall be overridden
 although it is yet undefined on input line 20.
-[7
+[23
 
 
 
 
 ]
-<Introduction/Images/BE_per_nucleon.png, id=182, 722.7pt x 433.62pt>
+<Introduction/Images/BE_per_nucleon.png, id=752, 722.7pt x 433.62pt>
 File: Introduction/Images/BE_per_nucleon.png Graphic file (type png)
 <use Introduction/Images/BE_per_nucleon.png>
 Package pdftex.def Info: Introduction/Images/BE_per_nucleon.png  used on input line 49.
 (pdftex.def)             Requested size: 373.86685pt x 224.31918pt.
-<Introduction/Images/fusion-reactivities.png, id=183, 505.89pt x 433.62pt>
+<Introduction/Images/fusion-reactivities.png, id=753, 505.89pt x 433.62pt>
 File: Introduction/Images/fusion-reactivities.png Graphic file (type png)
 <use Introduction/Images/fusion-reactivities.png>
 Package pdftex.def Info: Introduction/Images/fusion-reactivities.png  used on input line 58.
 (pdftex.def)             Requested size: 249.24878pt x 213.64677pt.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 63.
- (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./Introduction/Images/BE_per_nucleon.png>]
-Package acronym Info: Label `acro:ICF' newly defined as it shall be overridden
-although it is yet undefined on input line 83.
+ [24 <./Introduction/Images/BE_per_nucleon.png>]
 Package acronym Info: Label `acro:MCF' newly defined as it shall be overridden
 although it is yet undefined on input line 88.
- [9 <./Introduction/Images/fusion-reactivities.png>] [10]
+ [25 <./Introduction/Images/fusion-reactivities.png>] [26]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 121.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 121.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 121.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 121.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 121.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 121.
- [11]
-<Introduction/Images/hotspot ignition white.png, id=256, 844.40268pt x 840.64464pt>
+ [27]
+<Introduction/Images/hotspot ignition white.png, id=823, 844.40268pt x 840.64464pt>
 File: Introduction/Images/hotspot ignition white.png Graphic file (type png)
 <use Introduction/Images/hotspot ignition white.png>
 Package pdftex.def Info: Introduction/Images/hotspot ignition white.png  used on input line 165.
 (pdftex.def)             Requested size: 290.78603pt x 289.4968pt.
- [12 <./Introduction/Images/hotspot ignition white.png>]
+ [28 <./Introduction/Images/hotspot ignition white.png>]
 Package acronym Info: Label `acro:RTI' newly defined as it shall be overridden
 although it is yet undefined on input line 193.
 
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [13]
-Package acronym Info: Label `acro:LPIs' newly defined as it shall be overridden
-although it is yet undefined on input line 227.
-Package acronym Info: Label `acro:IFE' newly defined as it shall be overridden
-although it is yet undefined on input line 232.
-<Introduction/Images/IFE_powerplant.png, id=310, 710.655pt x 328.8285pt>
+ [29]
+<Introduction/Images/IFE_powerplant.png, id=874, 710.655pt x 328.8285pt>
 File: Introduction/Images/IFE_powerplant.png Graphic file (type png)
 <use Introduction/Images/IFE_powerplant.png>
 Package pdftex.def Info: Introduction/Images/IFE_powerplant.png  used on input line 246.
 (pdftex.def)             Requested size: 332.3296pt x 153.77672pt.
- [14]
+ [30]
 Package acronym Info: Label `acro:DPSSL' newly defined as it shall be overridden
 although it is yet undefined on input line 271.
- [15 <./Introduction/Images/IFE_powerplant.png>]
-<Introduction/Images/indirect icf white.png, id=354, 643.6848pt x 219.4599pt>
+ [31 <./Introduction/Images/IFE_powerplant.png>]
+<Introduction/Images/indirect icf white.png, id=919, 643.6848pt x 219.4599pt>
 File: Introduction/Images/indirect icf white.png Graphic file (type png)
 <use Introduction/Images/indirect icf white.png>
 Package pdftex.def Info: Introduction/Images/indirect icf white.png  used on input line 296.
 (pdftex.def)             Requested size: 415.41043pt x 141.63593pt.
-Package acronym Info: Label `acro:NIF' newly defined as it shall be overridden
-although it is yet undefined on input line 311.
 Package acronym Info: Label `acro:LLNL' newly defined as it shall be overridden
 although it is yet undefined on input line 311.
 Package acronym Info: Label `acro:LEH' newly defined as it shall be overridden
@@ -1400,153 +2103,1113 @@ Package acronym Info: Label `acro:LMJ' newly defined as it shall be overridden
 although it is yet undefined on input line 314.
 Package acronym Info: Label `acro:CEA' newly defined as it shall be overridden
 although it is yet undefined on input line 314.
- [16 <./Introduction/Images/indirect icf white.png>]
-Package acronym Info: Label `acro:SBS' newly defined as it shall be overridden
-although it is yet undefined on input line 326.
-Package acronym Info: Label `acro:SRS' newly defined as it shall be overridden
-although it is yet undefined on input line 326.
-Package acronym Info: Label `acro:CBET' newly defined as it shall be overridden
-although it is yet undefined on input line 326.
-<Introduction/Images/NIF_yields.jpg, id=400, 2497.33pt x 1993.4475pt>
+ [32 <./Introduction/Images/indirect icf white.png>]
+<Introduction/Images/NIF_yields.jpg, id=964, 2497.33pt x 1993.4475pt>
 File: Introduction/Images/NIF_yields.jpg Graphic file (type jpg)
 <use Introduction/Images/NIF_yields.jpg>
 Package pdftex.def Info: Introduction/Images/NIF_yields.jpg  used on input line 333.
 (pdftex.def)             Requested size: 415.41043pt x 331.58139pt.
 Package acronym Info: Label `acro:HDC' newly defined as it shall be overridden
 although it is yet undefined on input line 352.
- [17]
-<Introduction/Images/direct icf white.png, id=447, 286.1892pt x 278.9622pt>
+ [33]
+<Introduction/Images/direct icf white.png, id=1008, 286.1892pt x 278.9622pt>
 File: Introduction/Images/direct icf white.png Graphic file (type png)
 <use Introduction/Images/direct icf white.png>
 Package pdftex.def Info: Introduction/Images/direct icf white.png  used on input line 366.
 (pdftex.def)             Requested size: 290.78603pt x 283.44373pt.
+Package acronym Info: Label `acro:LLE' newly defined as it shall be overridden
+although it is yet undefined on input line 382.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./Introduction/Images/NIF_yields.jpg>]
-Package acronym Info: Label `acro:LLE' newly defined as it shall be overridden
-although it is yet undefined on input line 382.
- [19 <./Introduction/Images/direct icf white.png>]
-<Introduction/Images/SmoothingOptics.png, id=487, 1001.5016pt x 513.117pt>
+ [34 <./Introduction/Images/NIF_yields.jpg>] [35 <./Introduction/Images/direct icf white.png>]
+<Introduction/Images/SmoothingOptics.png, id=1047, 1001.5016pt x 513.117pt>
 File: Introduction/Images/SmoothingOptics.png Graphic file (type png)
 <use Introduction/Images/SmoothingOptics.png>
 Package pdftex.def Info: Introduction/Images/SmoothingOptics.png  used on input line 397.
 (pdftex.def)             Requested size: 415.41043pt x 212.8378pt.
-Package acronym Info: Label `acro:SSD' newly defined as it shall be overridden
-although it is yet undefined on input line 404.
-
-
-LaTeX Warning: Reference `fig:SOLAS_qpR_IFRIIT_test' on page 20 undefined on input line 409.
-
-[20 <./Introduction/Images/SmoothingOptics.png>]
+ [36 <./Introduction/Images/SmoothingOptics.png>]
 Overfull \hbox (8.11638pt too wide) in paragraph at lines 424--430
 \T1/futs/m/n/10.95 time-integrated, in-stan-ta-neously large am-pli-tude, short wave-length per-tur-ba-tions ex-ist. When
  []
 
-<Introduction/Images/LPI diagram.png, id=508, 953.2413pt x 526.1256pt>
+<Introduction/Images/LPI diagram.png, id=1068, 953.2413pt x 526.1256pt>
 File: Introduction/Images/LPI diagram.png Graphic file (type png)
 <use Introduction/Images/LPI diagram.png>
 Package pdftex.def Info: Introduction/Images/LPI diagram.png  used on input line 432.
 (pdftex.def)             Requested size: 415.41043pt x 229.28024pt.
-Package acronym Info: Label `acro:Inv-Brem' newly defined as it shall be overridden
-although it is yet undefined on input line 440.
-Package acronym Info: Label `acro:EPW' newly defined as it shall be overridden
-although it is yet undefined on input line 440.
-Package acronym Info: Label `acro:TPD' newly defined as it shall be overridden
-although it is yet undefined on input line 440.
-[21]
+[37]
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 463.
  (c:/texlive/2023/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-) [22 <./Introduction/Images/LPI diagram.png>]
-
-LaTeX Warning: Reference `sec:Res1_OMEGA_stat_modelling' on page 23 undefined on input line 476.
-
-
+) [38 <./Introduction/Images/LPI diagram.png>]
 Overfull \hbox (0.63757pt too wide) in paragraph at lines 472--477
 \T1/futs/m/n/10.95 con-ver-sion ef-fi-ciency [[][]68[][]]. Over the past decade, im-plo-sion per-for-mance im-proved markedly
  []
 
-[23]
+[39]
 Package acronym Info: Label `acro:MHD' newly defined as it shall be overridden
 although it is yet undefined on input line 503.
 
 
-LaTeX Warning: Reference `chap:Theory' on page 24 undefined on input line 516.
+LaTeX Warning: Reference `chap:Theory' on page 40 undefined on input line 516.
 
 Package acronym Info: Label `acro:Rad-Hydro' newly defined as it shall be overridden
 although it is yet undefined on input line 517.
+[40]
 
-LaTeX Warning: Reference `chap:SOLAS' on page 24 undefined on input line 522.
+LaTeX Warning: Reference `chap:Conc' on page 41 undefined on input line 536.
 
-[24]
+) [41]
+\openout2 = `Numerics/NumericsMain.aux'.
 
-LaTeX Warning: Reference `chap:RbRt' on page 25 undefined on input line 528.
+ (./Numerics/NumericsMain.tex
+chapter 2.
+Package acronym Info: Label `acro:Rad-MHD' newly defined as it shall be overridden
+although it is yet undefined on input line 4.
+Package acronym Info: Label `acro:HEDP' newly defined as it shall be overridden
+although it is yet undefined on input line 5.
+[42
 
-
-LaTeX Warning: Reference `chap:Mag' on page 25 undefined on input line 532.
-
-
-LaTeX Warning: Reference `chap:Conc' on page 25 undefined on input line 536.
-
-) [25] [26
 
 
 
 ]
-Overfull \hbox (0.8041pt too wide) in paragraph at lines 28--28
+
+LaTeX Warning: Citation 'slutz_high-gain_2012' on page 43 undefined on input line 17.
+
+Package acronym Info: Label `acro:PiC' newly defined as it shall be overridden
+although it is yet undefined on input line 21.
+
+LaTeX Warning: Citation 'nguyen_cross-beam_2021' on page 43 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'myatt_wave-based_2017' on page 43 undefined on input line 21.
+
+
+Overfull \hbox (59.24919pt too wide) in paragraph at lines 17--23
+[][][][]\T1/futs/m/n/10.95 Particle in Cell ([])[] codes [[]] or wave-based solvers [[]],
+ []
+
+Package acronym Info: Label `acro:GO' newly defined as it shall be overridden
+although it is yet undefined on input line 24.
+
+LaTeX Warning: Reference `sec:Theory_GO_appliciability' on page 43 undefined on input line 24.
+
+
+LaTeX Warning: Citation 'schmitt_importance_2023-1' on page 43 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'colaitis_towards_2014' on page 43 undefined on input line 41.
+
+[43]
+
+LaTeX Warning: Citation 'paddock_one-dimensional_2021' on page 44 undefined on input line 46.
+
+Package acronym Info: Label `acro:IRT' newly defined as it shall be overridden
+although it is yet undefined on input line 70.
+Package acronym Info: Label `acro:FRT' newly defined as it shall be overridden
+although it is yet undefined on input line 71.
+[44]
+<Numerics/Images/Reflected_Rays.png, id=1295, 440.3652pt x 344.9688pt>
+File: Numerics/Images/Reflected_Rays.png Graphic file (type png)
+<use Numerics/Images/Reflected_Rays.png>
+Package pdftex.def Info: Numerics/Images/Reflected_Rays.png  used on input line 76.
+(pdftex.def)             Requested size: 284.52756pt x 222.90057pt.
+
+
+LaTeX Warning: Citation 'marozas_wavelength-detuning_2018' on page 45 undefined on input line 84.
+
+
+Overfull \hbox (94.68163pt too wide) in paragraph at lines 84--88
+ []\T1/futs/b/n/10.95 Ray Statis-tics Ap-proach \T1/futs/m/n/10.95 The \T1/futs/m/sc/10.95 Las-nex \T1/futs/m/n/10.95 [[][]85[][]], \T1/futs/m/sc/10.95 Troll \T1/futs/m/n/10.95 [[][]86[][]] and \T1/futs/m/sc/10.95 Draco \T1/futs/m/n/10.95 codes [[]],
+ []
+
+[45 <./Numerics/Images/Reflected_Rays.png>]
+Package acronym Info: Label `acro:PCGO' newly defined as it shall be overridden
+although it is yet undefined on input line 99.
+
+
+LaTeX Warning: Citation 'colaitis_towards_2014' on page 46 undefined on input line 99.
+
+
+Overfull \hbox (61.67996pt too wide) in paragraph at lines 99--103
+\T1/futs/m/n/10.95 Gaus-sian in-ten-sity pro-file, the width of which is in-te-grated along the ray tra-jec-tory [[],
+ []
+
+
+LaTeX Warning: Citation 'follett_ray-based_2018' on page 46 undefined on input line 105.
+
+
+LaTeX Warning: Citation 'igumenshchev_crossed-beam_2010' on page 46 undefined on input line 108.
+
+
+LaTeX Warning: Citation 'igumenshchev_crossed-beam_2012' on page 46 undefined on input line 108.
+
+
+Overfull \hbox (143.17973pt too wide) in paragraph at lines 104--110
+\T1/futs/m/n/10.95 ple-mented into the 1-D \T1/futs/m/sc/10.95 Lilac [][] \T1/futs/m/n/10.95 code [[], []].
+ []
+
+
+LaTeX Warning: Citation 'myatt_wave-based_2017' on page 46 undefined on input line 117.
+
+[46]
+Package acronym Info: Label `acro:IAW' newly defined as it shall be overridden
+although it is yet undefined on input line 129.
+
+
+LaTeX Warning: Citation 'nguyen_cross-beam_2021' on page 47 undefined on input line 129.
+
+
+LaTeX Warning: Citation 'seaton_cross-beam_2022-1' on page 47 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'seaton_cross-beam_2022' on page 47 undefined on input line 132.
+
+
+Overfull \hbox (70.70279pt too wide) in paragraph at lines 127--133
+\T1/futs/m/n/10.95 the linear-models used in ray-based codes, lead-ing to larger net en-ergy trans-fers [[]]. 
+ []
+
+
+LaTeX Warning: Reference `sec:ray_equations' on page 47 undefined on input line 140.
+
+<Numerics/Images/raytrace_flowchart.png, id=1361, 653.496pt x 400.551pt>
+File: Numerics/Images/raytrace_flowchart.png Graphic file (type png)
+<use Numerics/Images/raytrace_flowchart.png>
+Package pdftex.def Info: Numerics/Images/raytrace_flowchart.png  used on input line 155.
+(pdftex.def)             Requested size: 373.86685pt x 229.15988pt.
+Package acronym Info: Label `acro:MPI' newly defined as it shall be overridden
+although it is yet undefined on input line 165.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47] [48 <./Numerics/Images/raytrace_flowchart.png>]
+<Numerics/Images/SOLAS_CHIMERA_domain.png, id=1391, 867.24pt x 433.62pt>
+File: Numerics/Images/SOLAS_CHIMERA_domain.png Graphic file (type png)
+<use Numerics/Images/SOLAS_CHIMERA_domain.png>
+Package pdftex.def Info: Numerics/Images/SOLAS_CHIMERA_domain.png  used on input line 187.
+(pdftex.def)             Requested size: 415.41043pt x 207.70515pt.
+ [49 <./Numerics/Images/SOLAS_CHIMERA_domain.png>]
+Package acronym Info: Label `acro:OpenMP' newly defined as it shall be overridden
+although it is yet undefined on input line 205.
+<Numerics/Images/solas_cells_3imagescombined.png, id=1414, 520.344pt x 487.275pt>
+File: Numerics/Images/solas_cells_3imagescombined.png Graphic file (type png)
+<use Numerics/Images/solas_cells_3imagescombined.png>
+Package pdftex.def Info: Numerics/Images/solas_cells_3imagescombined.png  used on input line 222.
+(pdftex.def)             Requested size: 415.41043pt x 389.0324pt.
+ [50]
+Underfull \vbox (badness 2744) has occurred while \output is active []
+
+ [51 <./Numerics/Images/solas_cells_3imagescombined.png>]
+<Numerics/Images/ray_init_plots.png, id=1440, 1011.78pt x 331.57475pt>
+File: Numerics/Images/ray_init_plots.png Graphic file (type png)
+<use Numerics/Images/ray_init_plots.png>
+Package pdftex.def Info: Numerics/Images/ray_init_plots.png  used on input line 262.
+(pdftex.def)             Requested size: 415.41043pt x 136.13878pt.
+ [52 <./Numerics/Images/ray_init_plots.png>]
+
+LaTeX Warning: Citation 'marozas_wavelength-detuning_2018' on page 53 undefined on input line 308.
+
+
+Overfull \hbox (140.90552pt too wide) in paragraph at lines 307--314
+\T1/futs/m/n/10.95 ray ini-tial-i-sa-tion in \T1/futs/m/sc/10.95 So-las\T1/futs/m/n/10.95 . The al-go-rithm is de-scribed in de-tail in Ap-pendix A of Ref. [[]].
+ []
+
+[53]
+
+LaTeX Warning: Citation 'marozas_wavelength-detuning_2018' on page 54 undefined on input line 325.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
+
+LaTeX Warning: Reference `eq:inv_brem' on page 55 undefined on input line 344.
+
+
+LaTeX Warning: Citation 'marozas_wavelength-detuning_2018' on page 55 undefined on input line 348.
+
+
+LaTeX Warning: Citation 'marozas_wavelength-detuning_2018' on page 55 undefined on input line 368.
+
+[55]
+Overfull \hbox (7.66733pt too wide) in paragraph at lines 370--372
+\T1/futs/m/n/10.95 and the Kaiser al-go-rithm. These are de-scribed be-low, along-side the method for ray-deposition-
+ []
+
+
+LaTeX Warning: Citation 'williams_bspline-fortran_2024' on page 56 undefined on input line 378.
+
+<Numerics/Images/SOLAS_ray_shape_functions.png, id=1508, 505.89pt x 361.35pt>
+File: Numerics/Images/SOLAS_ray_shape_functions.png Graphic file (type png)
+<use Numerics/Images/SOLAS_ray_shape_functions.png>
+Package pdftex.def Info: Numerics/Images/SOLAS_ray_shape_functions.png  used on input line 395.
+(pdftex.def)             Requested size: 284.52756pt x 203.23682pt.
+[56]
+Overfull \hbox (2.78368pt too wide) in paragraph at lines 414--419
+\T1/futs/m/n/10.95 crease of the ma-te-rial, which also re-duces the [][] ker-nel. If the hy-dro-dy-namic timestep,
+ []
+
+[57 <./Numerics/Images/SOLAS_ray_shape_functions.png>]
+<Numerics/Images/Quadtrough.png, id=1542, 867.24pt x 433.62pt>
+File: Numerics/Images/Quadtrough.png Graphic file (type png)
+<use Numerics/Images/Quadtrough.png>
+Package pdftex.def Info: Numerics/Images/Quadtrough.png  used on input line 440.
+(pdftex.def)             Requested size: 415.41043pt x 207.70515pt.
+ [58 <./Numerics/Images/Quadtrough.png>]
+<Numerics/Images/cyl_helix.png, id=1553, 963.6pt x 344.268pt>
+File: Numerics/Images/cyl_helix.png Graphic file (type png)
+<use Numerics/Images/cyl_helix.png>
+Package pdftex.def Info: Numerics/Images/cyl_helix.png  used on input line 475.
+(pdftex.def)             Requested size: 415.41043pt x 148.41057pt.
+
+Underfull \vbox (badness 2573) has occurred while \output is active []
+
+ [59]
+<Numerics/Images/blastwave.png, id=1566, 505.89pt x 289.08pt>
+File: Numerics/Images/blastwave.png Graphic file (type png)
+<use Numerics/Images/blastwave.png>
+Package pdftex.def Info: Numerics/Images/blastwave.png  used on input line 514.
+(pdftex.def)             Requested size: 373.86685pt x 213.64236pt.
+ [60 <./Numerics/Images/cyl_helix.png>]
+<Numerics/Images/3d_raytube.png, id=1586, 445.884pt x 390.696pt>
+File: Numerics/Images/3d_raytube.png Graphic file (type png)
+<use Numerics/Images/3d_raytube.png>
+Package pdftex.def Info: Numerics/Images/3d_raytube.png  used on input line 554.
+(pdftex.def)             Requested size: 311.55782pt x 272.99648pt.
+
+Underfull \hbox (badness 1303) in paragraph at lines 560--560
+[][][]|\T1/futs/m/n/10.95 A 3-D il-lus-tra-tion of the ray-amplitude con-struc-tion for a sin-gle ray in a
+ []
+
+
+LaTeX Warning: Reference `eq:theory_rayamp' on page 61 undefined on input line 564.
+
+
+LaTeX Warning: Reference `sec:theory_rayamp' on page 61 undefined on input line 564.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61 <./Numerics/Images/blastwave.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62 <./Numerics/Images/3d_raytube.png>]
+<Numerics/Images/FieldCap_Diagram.png, id=1605, 1011.78pt x 397.485pt>
+File: Numerics/Images/FieldCap_Diagram.png Graphic file (type png)
+<use Numerics/Images/FieldCap_Diagram.png>
+Package pdftex.def Info: Numerics/Images/FieldCap_Diagram.png  used on input line 589.
+(pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
+
+Underfull \hbox (badness 1769) in paragraph at lines 594--594
+[][][]|\T1/futs/m/n/10.95 A demon-stra-tion of how the ray-amplitude is ob-tained from the area of
+ []
+
+[63 <./Numerics/Images/FieldCap_Diagram.png>]
+<Numerics/Images/Raysheets_withcyl.png, id=1618, 1011.78pt x 397.485pt>
+File: Numerics/Images/Raysheets_withcyl.png Graphic file (type png)
+<use Numerics/Images/Raysheets_withcyl.png>
+Package pdftex.def Info: Numerics/Images/Raysheets_withcyl.png  used on input line 631.
+(pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
+ [64]
+
+LaTeX Warning: Citation 'igumenshchev_three-dimensional_2016' on page 65 undefined on input line 659.
+
+
+LaTeX Warning: Citation 'gatu_johnson_impact_2020' on page 65 undefined on input line 659.
+
+[65 <./Numerics/Images/Raysheets_withcyl.png>]
+Package acronym Info: Label `acro:FL' newly defined as it shall be overridden
+although it is yet undefined on input line 687.
+Package acronym Info: Label `acro:EI' newly defined as it shall be overridden
+although it is yet undefined on input line 687.
+ [66]
+
+LaTeX Warning: Citation 'igumenshchev_crossed-beam_2012' on page 67 undefined on input line 701.
+
+
+LaTeX Warning: Citation 'follett_ray-based_2018' on page 67 undefined on input line 701.
+
+
+Overfull \hbox (26.7826pt too wide) in paragraph at lines 700--705
+\T1/futs/m/n/10.95 sity gra-di-ent at the caus-tic lo-ca-tion [[], [],
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67]
+<Numerics/Images/1d_field_capping.png, id=1705, 867.24pt x 346.896pt>
+File: Numerics/Images/1d_field_capping.png Graphic file (type png)
+<use Numerics/Images/1d_field_capping.png>
+Package pdftex.def Info: Numerics/Images/1d_field_capping.png  used on input line 764.
+(pdftex.def)             Requested size: 415.41043pt x 166.16412pt.
+ [68]
+Overfull \hbox (6.10391pt too wide) in paragraph at lines 789--792
+\T1/futs/m/n/10.95 prop-a-gate be-yond $\FML/futmi/m/it/10.95 " \FMS/futm/m/n/10.95 Å \T1/futs/m/n/10.95 0$. The evanes-cent field in this re-gion can be re-pro-duced in the complex-
+ []
+
+<Numerics/Images/2D_field_reconstruction_lineouts_alt.png, id=1735, 1011.78pt x 578.16pt>
+File: Numerics/Images/2D_field_reconstruction_lineouts_alt.png Graphic file (type png)
+<use Numerics/Images/2D_field_reconstruction_lineouts_alt.png>
+Package pdftex.def Info: Numerics/Images/2D_field_reconstruction_lineouts_alt.png  used on input line 797.
+(pdftex.def)             Requested size: 415.41043pt x 237.38237pt.
+[69 <./Numerics/Images/1d_field_capping.png>]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [70 <./Numerics/Images/2D_field_reconstruction_lineouts_alt.png>]
+<Numerics/Images/CBET_flowchart.PNG, id=1767, 639.48pt x 526.257pt>
+File: Numerics/Images/CBET_flowchart.PNG Graphic file (type png)
+<use Numerics/Images/CBET_flowchart.PNG>
+Package pdftex.def Info: Numerics/Images/CBET_flowchart.PNG  used on input line 835.
+(pdftex.def)             Requested size: 373.86685pt x 307.6704pt.
+ [71 <./Numerics/Images/CBET_flowchart.PNG>]
+
+LaTeX Warning: Citation 'myatt_wave-based_2017' on page 72 undefined on input line 864.
+
+
+Underfull \vbox (badness 4454) has occurred while \output is active []
+
+ [72]
+
+LaTeX Warning: Citation 'marozas_wavelength-detuning_2018' on page 73 undefined on input line 904.
+
+[73]
+Package acronym Info: Label `acro:DPRs' newly defined as it shall be overridden
+although it is yet undefined on input line 968.
+ [74]
+
+LaTeX Warning: Citation 'colaitis_3d_2023-1' on page 75 undefined on input line 979.
+
+
+Overfull \hbox (56.435pt too wide) in paragraph at lines 978--982
+\T1/futs/m/n/10.95 have been de-vel-oped which ac-count for the true po-lar-i-sa-tion an-gle be-tween 2 sheets [[],
+ []
+
+<Numerics/Images/caustic_region_diagram.png, id=1862, 939.51pt x 794.97pt>
+File: Numerics/Images/caustic_region_diagram.png Graphic file (type png)
+<use Numerics/Images/caustic_region_diagram.png>
+Package pdftex.def Info: Numerics/Images/caustic_region_diagram.png  used on input line 989.
+(pdftex.def)             Requested size: 415.41043pt x 351.49825pt.
+
+LaTeX Warning: Citation 'follett_ray-based_2018' on page 75 undefined on input line 1007.
+
+
+LaTeX Warning: Citation 'follett_ray-based_2018' on page 75 undefined on input line 1015.
+
+[75] [76 <./Numerics/Images/caustic_region_diagram.png>]
+
+LaTeX Warning: Citation 'follett_ray-based_2018' on page 77 undefined on input line 1029.
+
+[77]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [78]
+<Numerics/Images/PumpDepletionIterations.png, id=1948, 1011.78pt x 578.16pt>
+File: Numerics/Images/PumpDepletionIterations.png Graphic file (type png)
+<use Numerics/Images/PumpDepletionIterations.png>
+Package pdftex.def Info: Numerics/Images/PumpDepletionIterations.png  used on input line 1119.
+(pdftex.def)             Requested size: 415.41043pt x 237.38237pt.
+ [79] [80 <./Numerics/Images/PumpDepletionIterations.png>]
+<Numerics/Images/delE_minimisation.png, id=1985, 505.89pt x 361.35pt>
+File: Numerics/Images/delE_minimisation.png Graphic file (type png)
+<use Numerics/Images/delE_minimisation.png>
+Package pdftex.def Info: Numerics/Images/delE_minimisation.png  used on input line 1163.
+(pdftex.def)             Requested size: 249.24878pt x 178.03899pt.
+ [81 <./Numerics/Images/delE_minimisation.png>] [82]
+<Numerics/Images/CBET_test_nocaustics.png, id=2033, 2439.86531pt x 1804.49156pt>
+File: Numerics/Images/CBET_test_nocaustics.png Graphic file (type png)
+<use Numerics/Images/CBET_test_nocaustics.png>
+Package pdftex.def Info: Numerics/Images/CBET_test_nocaustics.png  used on input line 1232.
+(pdftex.def)             Requested size: 415.41043pt x 307.22758pt.
+
+Overfull \hbox (5.24376pt too wide) in paragraph at lines 1254--1259
+[]\T1/futs/m/n/10.95 The first test prob-lem is for the case of two beams cross-ing in a non-uniform, non-stationary
+ []
+
+[83]
+<Numerics/Images/caustic_CBET_test.png, id=2055, 2765.0803pt x 1244.39906pt>
+File: Numerics/Images/caustic_CBET_test.png Graphic file (type png)
+<use Numerics/Images/caustic_CBET_test.png>
+Package pdftex.def Info: Numerics/Images/caustic_CBET_test.png  used on input line 1279.
+(pdftex.def)             Requested size: 415.41043pt x 186.93663pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84 <./Numerics/Images/CBET_test_nocaustics.png>]
+<Numerics/Images/caustic_cbet_test_resscan.png, id=2076, 1011.78pt x 361.35pt>
+File: Numerics/Images/caustic_cbet_test_resscan.png Graphic file (type png)
+<use Numerics/Images/caustic_cbet_test_resscan.png>
+Package pdftex.def Info: Numerics/Images/caustic_cbet_test_resscan.png  used on input line 1313.
+(pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
+
+Overfull \hbox (6.76582pt too wide) in paragraph at lines 1320--1326
+\T1/futs/m/n/10.95 beam am-pli-fi-ca-tion af-ter en-ergy con-ser-va-tion it-er-a-tions is plot-ted in Fig. [][]2.21[][].a, which demon-
+ []
+
+[85 <./Numerics/Images/caustic_CBET_test.png>]
+<Numerics/Images/16beamCBET.png, id=2097, 1300.86pt x 544.434pt>
+File: Numerics/Images/16beamCBET.png Graphic file (type png)
+<use Numerics/Images/16beamCBET.png>
+Package pdftex.def Info: Numerics/Images/16beamCBET.png  used on input line 1332.
+(pdftex.def)             Requested size: 415.41043pt x 173.8569pt.
+ [86 <./Numerics/Images/caustic_cbet_test_resscan.png>] [87 <./Numerics/Images/16beamCBET.png>]
+<Numerics/Images/89224_setup.png, id=2136, 780.9978pt x 409.53pt>
+File: Numerics/Images/89224_setup.png Graphic file (type png)
+<use Numerics/Images/89224_setup.png>
+Package pdftex.def Info: Numerics/Images/89224_setup.png  used on input line 1396.
+(pdftex.def)             Requested size: 373.86685pt x 196.04726pt.
+<Numerics/Images/89224_absorption.png, id=2137, 722.7pt x 722.7pt>
+File: Numerics/Images/89224_absorption.png Graphic file (type png)
+<use Numerics/Images/89224_absorption.png>
+Package pdftex.def Info: Numerics/Images/89224_absorption.png  used on input line 1405.
+(pdftex.def)             Requested size: 373.86685pt x 373.86531pt.
+
+
+LaTeX Warning: Reference `sec:Theory_sidescatter_backscatter_CBET' on page 88 undefined on input line 1432.
+
+[88 <./Numerics/Images/89224_setup.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [89 <./Numerics/Images/89224_absorption.png>] [90]
+<Numerics/Images/89224_it160_pdepcbet.png, id=2205, 1011.78pt x 397.485pt>
+File: Numerics/Images/89224_it160_pdepcbet.png Graphic file (type png)
+<use Numerics/Images/89224_it160_pdepcbet.png>
+Package pdftex.def Info: Numerics/Images/89224_it160_pdepcbet.png  used on input line 1487.
+(pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [91]
+<Numerics/Images/DepositionAsymmetries_mollweide_xy32.png, id=2234, 1011.78pt x 505.89pt>
+File: Numerics/Images/DepositionAsymmetries_mollweide_xy32.png Graphic file (type png)
+<use Numerics/Images/DepositionAsymmetries_mollweide_xy32.png>
+Package pdftex.def Info: Numerics/Images/DepositionAsymmetries_mollweide_xy32.png  used on input line 1521.
+(pdftex.def)             Requested size: 415.41043pt x 207.70956pt.
+ [92 <./Numerics/Images/89224_it160_pdepcbet.png>] [93 <./Numerics/Images/DepositionAsymmetries_mollweide_xy32.png>]
+<Numerics/Images/IFRIIT_test_fields.png, id=2276, 1076.604pt x 712.626pt>
+File: Numerics/Images/IFRIIT_test_fields.png Graphic file (type png)
+<use Numerics/Images/IFRIIT_test_fields.png>
+Package pdftex.def Info: Numerics/Images/IFRIIT_test_fields.png  used on input line 1572.
+(pdftex.def)             Requested size: 415.41043pt x 274.96535pt.
+ [94] [95 <./Numerics/Images/IFRIIT_test_fields.png>])
+Overfull \hbox (1.98215pt too wide) in paragraph at lines 1677--13
+\T1/futs/m/n/10.95 sim-u-la-tion. The power de-po-si-tion asym-me-try was com-pared to the \T1/futs/m/sc/10.95 Ifriit \T1/futs/m/n/10.95 and \T1/futs/m/sc/10.95 Beam-Crosser
+ []
+
+
+Overfull \hbox (0.4903pt too wide) in paragraph at lines 1677--13
+\T1/futs/m/sc/10.95 Solas \T1/futs/m/n/10.95 is ca-pa-ble of per-form-ing 3-D spher-i-cal direct-drive im-plo-sions with [][] which could
+ []
+
+[96]
+\openout2 = `Results1/Results1Main.aux'.
+
+ (./Results1/Results1Main.tex
+chapter 3.
+[97
+
+
+
+
+]
+<Results1/Images/RbRt_beam_overlap_alt.png, id=2350, 1011.78pt x 469.755pt>
+File: Results1/Images/RbRt_beam_overlap_alt.png Graphic file (type png)
+<use Results1/Images/RbRt_beam_overlap_alt.png>
+Package pdftex.def Info: Results1/Images/RbRt_beam_overlap_alt.png  used on input line 27.
+(pdftex.def)             Requested size: 415.41043pt x 192.87317pt.
+
+
+LaTeX Warning: Citation 'scott_shock-augmented_2022' on page 98 undefined on input line 41.
+
+
+Overfull \hbox (31.5567pt too wide) in paragraph at lines 37--45
+\T1/futs/m/n/10.95 power with time, which leads to large changes of ab-la-tion pres-sure [[]].
+ []
+
+
+Underfull \vbox (badness 1845) has occurred while \output is active []
+
+ [98 <./Results1/Images/RbRt_beam_overlap_alt.png>]
+
+LaTeX Warning: Citation 'follett_ray-based_2023' on page 99 undefined on input line 73.
+
+<Results1/Images/RbRt_froula.png, id=2389, 501.875pt x 337.26pt>
+File: Results1/Images/RbRt_froula.png Graphic file (type png)
+<use Results1/Images/RbRt_froula.png>
+Package pdftex.def Info: Results1/Images/RbRt_froula.png  used on input line 83.
+(pdftex.def)             Requested size: 207.70522pt x 139.57947pt.
+
+Underfull \vbox (badness 2393) has occurred while \output is active []
+
+ [99]
+
+LaTeX Warning: Citation 'igumenshchev_crossed-beam_2012' on page 100 undefined on input line 96.
+
+
+LaTeX Warning: Citation 'igumenshchev_laser-beam_2013' on page 100 undefined on input line 106.
+
+[100 <./Results1/Images/RbRt_froula.png>]
+Package acronym Info: Label `acro:IFAR' newly defined as it shall be overridden
+although it is yet undefined on input line 132.
+ [101] [102]
+<Results1/Images/RbRt_degradation_Lees.jpeg, id=2480, 84.315pt x 71.42685pt>
+File: Results1/Images/RbRt_degradation_Lees.jpeg Graphic file (type jpg)
+<use Results1/Images/RbRt_degradation_Lees.jpeg>
+Package pdftex.def Info: Results1/Images/RbRt_degradation_Lees.jpeg  used on input line 175.
+(pdftex.def)             Requested size: 290.78603pt x 246.3433pt.
+
+
+LaTeX Warning: Citation 'craxton_direct-drive_2015' on page 103 undefined on input line 186.
+
+
+Overfull \hbox (1.323pt too wide) in paragraph at lines 186--193
+ []\T1/futs/b/n/10.95 Finite Beam Degra-da-tion \T1/futs/m/n/10.95 The \T1/futs/m/sc/10.95 Omega \T1/futs/m/n/10.95 laser fa-cil-ity has 60 beams ar-ranged around a sphere,
+ []
+
+
+Overfull \hbox (3.79839pt too wide) in paragraph at lines 186--193
+\T1/futs/m/n/10.95 % de-vi-a-tion which is be-lieved to be nec-es-sary to achieve ig-ni-tion [[],
+ []
+
+[103 <./Results1/Images/RbRt_degradation_Lees.jpeg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [104] [105]
+
+LaTeX Warning: Citation 'tubbs_direct-drive_1999' on page 106 undefined on input line 260.
+
+
+Overfull \hbox (90.02954pt too wide) in paragraph at lines 259--263
+\T1/futs/m/n/10.95 im-plo-sions, sug-gest-ing that the ap-proach is valid and ac-cepted within the com-mu-nity [[],
+ []
+
+<Results1/Images/cyl_setup.png, id=2531, 789.933pt x 362.445pt>
+File: Results1/Images/cyl_setup.png Graphic file (type png)
+<use Results1/Images/cyl_setup.png>
+Package pdftex.def Info: Results1/Images/cyl_setup.png  used on input line 270.
+(pdftex.def)             Requested size: 415.41043pt x 190.60724pt.
+[106 <./Results1/Images/cyl_setup.png>]
+Package acronym Info: Label `acro:ADI' newly defined as it shall be overridden
+although it is yet undefined on input line 293.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 309.
+
+[107]
+<Results1/Images/streaks.png, id=2571, 1032.147pt x 542.025pt>
+File: Results1/Images/streaks.png Graphic file (type png)
+<use Results1/Images/streaks.png>
+Package pdftex.def Info: Results1/Images/streaks.png  used on input line 352.
+(pdftex.def)             Requested size: 415.41043pt x 218.146pt.
+ [108]
+<Results1/Images/Mode_analysis.png, id=2589, 1011.78pt x 361.35pt>
+File: Results1/Images/Mode_analysis.png Graphic file (type png)
+<use Results1/Images/Mode_analysis.png>
+Package pdftex.def Info: Results1/Images/Mode_analysis.png  used on input line 385.
+(pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
+ [109 <./Results1/Images/streaks.png>]
+Package acronym Info: Label `acro:DFT' newly defined as it shall be overridden
+although it is yet undefined on input line 427.
+
+Underfull \vbox (badness 5147) has occurred while \output is active []
+
+ [110 <./Results1/Images/Mode_analysis.png>]
+<Results1/Images/noCBET_PR_modes.png, id=2646, 667.512pt x 537.207pt>
+File: Results1/Images/noCBET_PR_modes.png Graphic file (type png)
+<use Results1/Images/noCBET_PR_modes.png>
+Package pdftex.def Info: Results1/Images/noCBET_PR_modes.png  used on input line 453.
+(pdftex.def)             Requested size: 415.41043pt x 334.31906pt.
+<Results1/Images/NoCBET_modeflip.png, id=2660, 1011.78pt x 361.35pt>
+File: Results1/Images/NoCBET_modeflip.png Graphic file (type png)
+<use Results1/Images/NoCBET_modeflip.png>
+Package pdftex.def Info: Results1/Images/NoCBET_modeflip.png  used on input line 476.
+(pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
+ [111]
+<Results1/Images/Field_profiles_alt.png, id=2679, 706.275pt x 542.025pt>
+File: Results1/Images/Field_profiles_alt.png Graphic file (type png)
+<use Results1/Images/Field_profiles_alt.png>
+Package pdftex.def Info: Results1/Images/Field_profiles_alt.png  used on input line 500.
+(pdftex.def)             Requested size: 415.41043pt x 318.80777pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [112 <./Results1/Images/noCBET_PR_modes.png>] [113 <./Results1/Images/NoCBET_modeflip.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [114 <./Results1/Images/Field_profiles_alt.png>]
+<Results1/Images/CBET_PR_modes.png, id=2723, 667.512pt x 537.207pt>
+File: Results1/Images/CBET_PR_modes.png Graphic file (type png)
+<use Results1/Images/CBET_PR_modes.png>
+Package pdftex.def Info: Results1/Images/CBET_PR_modes.png  used on input line 540.
+(pdftex.def)             Requested size: 415.41043pt x 334.31906pt.
+ [115 <./Results1/Images/CBET_PR_modes.png>]
+<Results1/Images/CBET_modeflip.png, id=2768, 1011.78pt x 361.35pt>
+File: Results1/Images/CBET_modeflip.png Graphic file (type png)
+<use Results1/Images/CBET_modeflip.png>
+Package pdftex.def Info: Results1/Images/CBET_modeflip.png  used on input line 570.
+(pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
+ [116]
+<Results1/Images/Stagnation_plots.png, id=2799, 690.069pt x 940.386pt>
+File: Results1/Images/Stagnation_plots.png Graphic file (type png)
+<use Results1/Images/Stagnation_plots.png>
+Package pdftex.def Info: Results1/Images/Stagnation_plots.png  used on input line 608.
+(pdftex.def)             Requested size: 373.86685pt x 509.47974pt.
+ [117 <./Results1/Images/CBET_modeflip.png>]
+Underfull \vbox (badness 4254) has occurred while \output is active []
+
+ [118 <./Results1/Images/Stagnation_plots.png>]
+<Results1/Images/RbRt_sig_rhomax.png, id=2839, 867.24pt x 361.35pt>
+File: Results1/Images/RbRt_sig_rhomax.png Graphic file (type png)
+<use Results1/Images/RbRt_sig_rhomax.png>
+Package pdftex.def Info: Results1/Images/RbRt_sig_rhomax.png  used on input line 641.
+(pdftex.def)             Requested size: 415.41043pt x 173.08763pt.
+ [119 <./Results1/Images/RbRt_sig_rhomax.png>]
+<Results1/Images/RbRts_mode10_growth.png, id=2869, 573.561pt x 542.025pt>
+File: Results1/Images/RbRts_mode10_growth.png Graphic file (type png)
+<use Results1/Images/RbRts_mode10_growth.png>
+Package pdftex.def Info: Results1/Images/RbRts_mode10_growth.png  used on input line 677.
+(pdftex.def)             Requested size: 311.55782pt x 294.43423pt.
+ [120]
+Underfull \vbox (badness 1789) has occurred while \output is active []
+
+ [121 <./Results1/Images/RbRts_mode10_growth.png>] [122]
+Overfull \hbox (2.9881pt too wide) in paragraph at lines 771--776
+[]\T1/futs/m/n/10.95 Without [][] changes to de-po-si-tion uni-for-mity, the stag-na-tion state asym-me-try de-creased
+ []
+
+[123]
+
+LaTeX Warning: Citation 'hu_direct-drive_2019' on page 124 undefined on input line 801.
+
+) [124] [125]
+\openout2 = `Results2/Results2Main.aux'.
+
+ (./Results2/Results2Main.tex
+chapter 4.
+[126
+
+
+
+
+]
+<Results2/Images/wt_collisions.png, id=2991, 561.735pt x 231.045pt>
+File: Results2/Images/wt_collisions.png Graphic file (type png)
+<use Results2/Images/wt_collisions.png>
+Package pdftex.def Info: Results2/Images/wt_collisions.png  used on input line 40.
+(pdftex.def)             Requested size: 311.55782pt x 128.14687pt.
+ [127 <./Results2/Images/wt_collisions.png>]
+<Results2/Images/magicf_perkins.jpeg, id=3009, 84.315pt x 50.95035pt>
+File: Results2/Images/magicf_perkins.jpeg Graphic file (type jpg)
+<use Results2/Images/magicf_perkins.jpeg>
+Package pdftex.def Info: Results2/Images/magicf_perkins.jpeg  used on input line 67.
+(pdftex.def)             Requested size: 311.55782pt x 188.27461pt.
+
+Underfull \vbox (badness 5681) has occurred while \output is active []
+
+ [128 <./Results2/Images/magicf_perkins.jpeg>]
+<Results2/Images/magnif_yield_inc.png, id=3033, 451.6875pt x 501.875pt>
+File: Results2/Images/magnif_yield_inc.png Graphic file (type png)
+<use Results2/Images/magnif_yield_inc.png>
+Package pdftex.def Info: Results2/Images/magnif_yield_inc.png  used on input line 91.
+(pdftex.def)             Requested size: 207.70522pt x 230.78871pt.
+<Results2/Images/MagP2_Bose.png, id=3045, 512.679pt x 305.943pt>
+File: Results2/Images/MagP2_Bose.png Graphic file (type png)
+<use Results2/Images/MagP2_Bose.png>
+Package pdftex.def Info: Results2/Images/MagP2_Bose.png  used on input line 107.
+(pdftex.def)             Requested size: 249.24878pt x 148.74162pt.
+
+
+LaTeX Warning: Citation 'gotchev_laser-driven_2009' on page 129 undefined on input line 118.
+
+[129 <./Results2/Images/magnif_yield_inc.png (PNG copy)>] [130 <./Results2/Images/MagP2_Bose.png>]
+
+LaTeX Warning: Citation 'shi_three-wave_2017' on page 131 undefined on input line 153.
+
+
+LaTeX Warning: Citation 'shi_laser-plasma_2018' on page 131 undefined on input line 153.
+
+
+Overfull \hbox (13.36871pt too wide) in paragraph at lines 149--155
+\T1/futs/m/n/10.95 an-a-lytic for-mu-lae for 3 wave cou-pling in the pres-ence of a mag-netic field [[],
+ []
+
+
+LaTeX Warning: Citation 'craxton_direct-drive_2015' on page 131 undefined on input line 166.
+
+[131]
+
+LaTeX Warning: Citation 'larroche_ion-kinetic_2016' on page 132 undefined on input line 174.
+
+
+Overfull \hbox (6.34967pt too wide) in paragraph at lines 171--176
+[]\T1/futs/m/n/10.95 Directly-driven exploding-pusher tar-gets have the largest direct-drive fu-sion yields recorded
+ []
+
+
+Overfull \hbox (0.60101pt too wide) in paragraph at lines 183--187
+\T1/futs/m/n/10.95 drive, exploding-pusher ex-per-i-ments are pre-sented, with a fo-cus on how [][] acts to change
+ []
+
+<Results2/Images/magpdd_diagram_pulse.png, id=3117, 1011.78pt x 433.62pt>
+File: Results2/Images/magpdd_diagram_pulse.png Graphic file (type png)
+<use Results2/Images/magpdd_diagram_pulse.png>
+Package pdftex.def Info: Results2/Images/magpdd_diagram_pulse.png  used on input line 194.
+(pdftex.def)             Requested size: 415.41043pt x 178.03677pt.
+Package acronym Info: Label `acro:MIT' newly defined as it shall be overridden
+although it is yet undefined on input line 206.
+
+LaTeX Warning: Citation 'chang_notitle_2023' on page 132 undefined on input line 206.
+
+
+LaTeX Warning: Citation 'walsh_extended-magnetohydrodynamics_2020' on page 132 undefined on input line 213.
+
+[132] [133 <./Results2/Images/magpdd_diagram_pulse.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [134]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 271.
+
+[135]
+<Results2/Images/expl_streaks.png, id=3183, 1068.72pt x 985.719pt>
+File: Results2/Images/expl_streaks.png Graphic file (type png)
+<use Results2/Images/expl_streaks.png>
+Package pdftex.def Info: Results2/Images/expl_streaks.png  used on input line 305.
+(pdftex.def)             Requested size: 415.41043pt x 383.15039pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [136 <./Results2/Images/expl_streaks.png>]
+
+LaTeX Warning: Reference `res1:Res1_streaks' on page 137 undefined on input line 327.
+
+
+LaTeX Warning: Reference `res1:Res1_streaks' on page 137 undefined on input line 328.
+
+<Results2/Images/unmag_CBET_onoff.png, id=3205, 737.592pt x 1011.78pt>
+File: Results2/Images/unmag_CBET_onoff.png Graphic file (type png)
+<use Results2/Images/unmag_CBET_onoff.png>
+Package pdftex.def Info: Results2/Images/unmag_CBET_onoff.png  used on input line 340.
+(pdftex.def)             Requested size: 394.63864pt x 541.35098pt.
+[137]
+Underfull \vbox (badness 1769) has occurred while \output is active []
+
+ [138 <./Results2/Images/unmag_CBET_onoff.png>]
+<Results2/Images/mag_early_B_develop.png, id=3245, 1011.78pt x 874.029pt>
+File: Results2/Images/mag_early_B_develop.png Graphic file (type png)
+<use Results2/Images/mag_early_B_develop.png>
+Package pdftex.def Info: Results2/Images/mag_early_B_develop.png  used on input line 393.
+(pdftex.def)             Requested size: 415.41043pt x 358.86101pt.
+ [139]
+Underfull \vbox (badness 3942) has occurred while \output is active []
+
+ [140 <./Results2/Images/mag_early_B_develop.png>]
+<Results2/Images/magmag_beta_Rm.png, id=3266, 1011.78pt x 325.215pt>
+File: Results2/Images/magmag_beta_Rm.png Graphic file (type png)
+<use Results2/Images/magmag_beta_Rm.png>
+Package pdftex.def Info: Results2/Images/magmag_beta_Rm.png  used on input line 425.
+(pdftex.def)             Requested size: 415.41043pt x 133.52757pt.
+
+
+LaTeX Warning: Reference `sec:theory_mag_theory' on page 141 undefined on input line 435.
+
+[141 <./Results2/Images/magmag_beta_Rm.png>]
+
+LaTeX Warning: Reference `sec:theory_mag_theory' on page 142 undefined on input line 446.
+
+<Results2/Images/iso_aniso.png, id=3283, 867.24pt x 722.7pt>
+File: Results2/Images/iso_aniso.png Graphic file (type png)
+<use Results2/Images/iso_aniso.png>
+Package pdftex.def Info: Results2/Images/iso_aniso.png  used on input line 457.
+(pdftex.def)             Requested size: 332.3296pt x 276.94463pt.
+[142] [143 <./Results2/Images/iso_aniso.png>]
+<Results2/Images/nernst_comp_Bstream.png, id=3308, 867.24pt x 469.755pt>
+File: Results2/Images/nernst_comp_Bstream.png Graphic file (type png)
+<use Results2/Images/nernst_comp_Bstream.png>
+Package pdftex.def Info: Results2/Images/nernst_comp_Bstream.png  used on input line 500.
+(pdftex.def)             Requested size: 415.41043pt x 225.01393pt.
+
+
+LaTeX Warning: Citation 'walsh_extended-magnetohydrodynamics_2020' on page 144 undefined on input line 511.
+
+
+Overfull \hbox (106.01067pt too wide) in paragraph at lines 510--516
+\T1/futs/m/sc/10.95 Chimera\T1/futs/m/n/10.95 , Nernst is im-ple-mented as an ad-vec-tion of $\T1/futs/b/n/10.95 B$ \T1/futs/m/n/10.95 down $\FMS/futm/m/n/10.95 r\FML/futmi/m/it/10.95 T[]$ \T1/futs/m/n/10.95 [[]].
+ []
+
+[144 <./Results2/Images/nernst_comp_Bstream.png>]
+<Results2/Images/ne_te_Bstream_comp_alt050.png, id=3324, 1011.78pt x 415.881pt>
+File: Results2/Images/ne_te_Bstream_comp_alt050.png Graphic file (type png)
+<use Results2/Images/ne_te_Bstream_comp_alt050.png>
+Package pdftex.def Info: Results2/Images/ne_te_Bstream_comp_alt050.png  used on input line 545.
+(pdftex.def)             Requested size: 415.41043pt x 170.75345pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [145] [146 <./Results2/Images/ne_te_Bstream_comp_alt050.png>]
+<Results2/Images/magcbet_analysis.png, id=3364, 1011.78pt x 664.70332pt>
+File: Results2/Images/magcbet_analysis.png Graphic file (type png)
+<use Results2/Images/magcbet_analysis.png>
+Package pdftex.def Info: Results2/Images/magcbet_analysis.png  used on input line 578.
+(pdftex.def)             Requested size: 415.41043pt x 272.91554pt.
+ [147 <./Results2/Images/magcbet_analysis.png>]
+
+LaTeX Warning: Reference `SOLAS:pump_dep_iters' on page 148 undefined on input line 600.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [148]
+<Results2/Images/Scattering_time_phi_diffCBET_CBtr.png, id=3437, 956.154pt x 648.021pt>
+File: Results2/Images/Scattering_time_phi_diffCBET_CBtr.png Graphic file (type png)
+<use Results2/Images/Scattering_time_phi_diffCBET_CBtr.png>
+Package pdftex.def Info: Results2/Images/Scattering_time_phi_diffCBET_CBtr.png  used on input line 636.
+(pdftex.def)             Requested size: 415.41043pt x 281.54077pt.
+
+Overfull \hbox (1.7508pt too wide) in paragraph at lines 647--651
+\T1/futs/m/n/10.95 This sec-tion shall ex-plore dif-fer-ences in the [][]-deficit and [][]-scattering, be-tween mag-
+ []
+
+[149 <./Results2/Images/Scattering_time_phi_diffCBET_CBtr.png>]
+Overfull \hbox (1.42218pt too wide) in paragraph at lines 670--675
+[]\T1/futs/m/n/10.95 Firstly, the ex-pected change to the bang-time pro-files from the sim-i-lar, qual-i-ta-tive be-haviour
+ []
+
+[150]
+<Results2/Images/allall_stagnation.png, id=3494, 1011.78pt x 1024.92pt>
+File: Results2/Images/allall_stagnation.png Graphic file (type png)
+<use Results2/Images/allall_stagnation.png>
+Package pdftex.def Info: Results2/Images/allall_stagnation.png  used on input line 691.
+(pdftex.def)             Requested size: 415.41043pt x 420.8142pt.
+
+Overfull \hbox (8.89024pt too wide) in paragraph at lines 701--707
+\T1/futs/m/n/10.95 The bang-time $\FML/futmi/m/it/10.95 n[]$\T1/futs/m/n/10.95 , $\FML/futmi/m/it/10.95 T[]$ \T1/futs/m/n/10.95 and $\T1/futs/b/n/10.95 B$ \T1/futs/m/n/10.95 pro-files from the 2-D sim-u-la-tions with all mag-neti-sa-tions (columns)
+ []
+
+[151]
+<Results2/Images/CBETshape_stag_diff.png, id=3529, 1011.78pt x 375.804pt>
+File: Results2/Images/CBETshape_stag_diff.png Graphic file (type png)
+<use Results2/Images/CBETshape_stag_diff.png>
+Package pdftex.def Info: Results2/Images/CBETshape_stag_diff.png  used on input line 724.
+(pdftex.def)             Requested size: 415.41043pt x 154.29854pt.
+ [152 <./Results2/Images/allall_stagnation.png>]
+<Results2/Images/R2R0_errors.png, id=3562, 505.89pt x 361.35pt>
+File: Results2/Images/R2R0_errors.png Graphic file (type png)
+<use Results2/Images/R2R0_errors.png>
+Package pdftex.def Info: Results2/Images/R2R0_errors.png  used on input line 748.
+(pdftex.def)             Requested size: 249.24878pt x 178.03899pt.
+ [153 <./Results2/Images/CBETshape_stag_diff.png>] [154 <./Results2/Images/R2R0_errors.png>] [155]) [156]
+\openout2 = `Results3/Results3Main.aux'.
+
+ (./Results3/Results3Main.tex
+chapter 5.
+) [157
+
+
+
+
+] [158
+
+
+
+]
+Overfull \hbox (6.14769pt too wide) in paragraph at lines 28--28
 []\T1/futs/m/n/10.95 Stefano Atzeni and J¸r-gen Meyer-ter-Vehn. \T1/futs/m/it/10.95 The Physics of In-er-tial Fu-sion: Beam Plasma
  []
 
 
-Overfull \hbox (4.39388pt too wide) in paragraph at lines 28--28
-\T1/futs/m/n/10.95 ford : New York: Claren-don Press ; Ox-ford Uni-ver-sity Press, 2004. \T1/futs/m/sc/10.95 isbn\T1/futs/m/n/10.95 : 978-0-19-856264-
+Overfull \hbox (4.83699pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 Sec-tions, Co-vari-ances, Fis-sion Prod-uct Yields and De-cay Data''. In: \T1/futs/m/it/10.95 Nu-clear Data Sheets
+ []
+
+[159
+
+
+
+] [160] [161]
+Overfull \hbox (3.59473pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 P. Michel et al. ``Tun-ing the Im-plo-sion Sym-me-try of ICF Tar-gets via Con-trolled Crossed-
  []
 
 
-Overfull \hbox (1.59256pt too wide) in paragraph at lines 28--28
-[]\T1/futs/m/n/10.95 John Nuck-olls et al. ``Laser Com-pres-sion of Mat-ter to Super-High Den-si-ties: Ther-monu-
- []
-
-[27
-
-
-
-]
-Overfull \hbox (3.57384pt too wide) in paragraph at lines 28--28
-[]\T1/futs/m/n/10.95 S. X. Hu et al. ``Laser-Direct-Drive Fu-sion Tar-get De-sign with a High- Z Gradient-Density
- []
-
-[28] [29]
-Overfull \hbox (12.16965pt too wide) in paragraph at lines 28--28
+Overfull \hbox (17.51324pt too wide) in paragraph at lines 28--28
 []\T1/futs/m/n/10.95 A. L. Kritcher et al. ``En-ergy Trans-fer be-tween Lasers in Low-Gas-Fill-Density Hohlraums''.
  []
 
-[30]
-Overfull \hbox (40.18752pt too wide) in paragraph at lines 28--28
+[162]
+Overfull \hbox (2.52272pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 A. L. Kritcher et al. ``De-sign of In-er-tial Fu-sion Im-plo-sions Reach-ing the Burn-ing Plasma
+ []
+
+
+Overfull \hbox (45.53111pt too wide) in paragraph at lines 28--28
 []\T1/futs/m/n/10.95 A. Si-mon. \T1/futs/m/it/10.95 LLE Re-view Quar-terly Re-port (April-June 1989). Vol-ume 39\T1/futs/m/n/10.95 . Tech. rep. DOE/DP/40200--
  []
 
-[31]
-Overfull \hbox (13.54834pt too wide) in paragraph at lines 28--28
-[]\T1/futs/m/n/10.95 V. Gopalaswamy et al. ``Demon-stra-tion of a Hy-dro-dy-nam-i-cally Equiv-a-lent Burn-ing Plasma
+
+Overfull \hbox (0.9176pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 Frequency-Modulated Light''. In: \T1/futs/m/it/10.95 Jour-nal of Ap-plied Physics \T1/futs/m/n/10.95 66.8 (Oct. 1989), pp. 3456^^U
+ []
+
+[163]
+Overfull \hbox (1.56891pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 A. Co-laÔtis et al. ``In-verse Ray Trac-ing on Icosa-he-dral Tetra-he-dron Grids for Non-Linear
  []
 
 
-Overfull \hbox (11.93205pt too wide) in paragraph at lines 28--28
-\T1/futs/m/n/10.95 in Direct-Drive In-er-tial Con-fine-ment Fu-sion''. In: \T1/futs/m/it/10.95 Na-ture Physics \T1/futs/m/n/10.95 20.5 (May 2024), pp. 751^^U
+Overfull \hbox (1.27504pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 Im-plo-sion Ex-per-i-ments Us-ing a Physics-Based Sta-tis-ti-cal Map-ping Model''. In: \T1/futs/m/it/10.95 Physics
  []
 
-[32] [33] [34
+[164]
+Overfull \hbox (2.12097pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 of Galaxy-Cluster Tur-bu-lent Plas-mas''. In: \T1/futs/m/it/10.95 Sci-ence Ad-vances \T1/futs/m/n/10.95 8.10 (Mar. 2022), eabj6799.
+ []
 
 
-]
+Overfull \hbox (5.81758pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 Tudor Wy-att John-ston and John M. Daw-son. ``Cor-rect Val-ues for High-Frequency Power
+ []
+
+
+Overfull \hbox (2.64375pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 Ab-sorp-tion by In-verse Bremsstrahlung in Plas-mas''. In: \T1/futs/m/it/10.95 Physics of Flu-ids \T1/futs/m/n/10.95 16 (May 1973),
+ []
+
+[165]
+Overfull \hbox (2.80801pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 sions on OMEGA Us-ing Wave-length De-tun-ing''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 24.6 (June 2017),
+ []
+
+
+Overfull \hbox (0.79314pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 man Scat-ter-ing In-sta-bil-i-ties Driven by Mul-ti-ple Broad-band Lasers''. In: \T1/futs/m/it/10.95 Physics of Plas-
+ []
+
+
+Overfull \hbox (8.61931pt too wide) in paragraph at lines 28--28
+\T1/futs/m/it/10.95 mas \T1/futs/m/n/10.95 28.3 (Mar. 2021), p. 032103. \T1/futs/m/sc/10.95 issn\T1/futs/m/n/10.95 : 1070-664X, 1089-7674. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1063 / 5 . 0037869$[][]\T1/futs/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (2.06834pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 dicted by Three-Dimensional Ra-di-a-tion Hy-dro-dy-nam-ics Sim-u-la-tions of In-di-rect Drive
+ []
+
+
+Overfull \hbox (6.85782pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 Thomas B. Kaiser. ``Laser Ray Trac-ing and Power De-po-si-tion on an Un-struc-tured Three-
+ []
+
+[166]
+Overfull \hbox (2.96951pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 T D Ar-ber et al. ``Con-tem-po-rary Particle-in-Cell Ap-proach to Laser-Plasma Mod-elling''.
+ []
+
+
+Overfull \hbox (3.94958pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 Scale-Length In-sta-bil-ity Ex-per-i-ments''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 1.6 (June 1994), pp. 1971^^U
+ []
+
+
+Overfull \hbox (7.52734pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 Jurij A. Krav-cov and Ju-rij I. Orlov. \T1/futs/m/it/10.95 Caus-tics, Catas-tro-phes and Wave Fields\T1/futs/m/n/10.95 . 2. ed. Springer
+ []
+
+[167]
+Overfull \hbox (6.52393pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 cally Solv-ing the Vec-tor Kirch-hoff In-te-gral''. In: \T1/futs/m/it/10.95 Op-tics Ex-press \T1/futs/m/n/10.95 28.7 (Mar. 2020), p. 10670.
+ []
+
+
+Overfull \hbox (15.16885pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 P. Michel et al. ``Sat-u-ra-tion of Multi-Laser Beams Laser-Plasma In-sta-bil-i-ties from Stochas-
+ []
+
+
+Overfull \hbox (4.9253pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 tial Con-fine-ment Fu-sion Im-plo-sions''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 28.4 (Apr. 2021), p. 042701.
+ []
+
+[168]
+Overfull \hbox (0.38011pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 Tech. rep. LA--14503, 1487368. Dec. 2018, LA^^U14503, 1487368. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 2172 / 1487368$[][]\T1/futs/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (12.11502pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 108.12 (Mar. 2012), p. 125003. \T1/futs/m/sc/10.95 issn\T1/futs/m/n/10.95 : 0031-9007, 1079-7114. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1103 / PhysRevLett .
+ []
+
+
+Overfull \hbox (27.75143pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 J. W. Bates et al. ``Sup-press-ing Para-met-ric In-sta-bil-i-ties in Direct-Drive Inertial-Confinement-
+ []
+
+[169]
+Overfull \hbox (8.13751pt too wide) in paragraph at lines 28--28
+\T1/futs/m/it/10.95 mas \T1/futs/m/n/10.95 25.8 (Aug. 2018), p. 082710. \T1/futs/m/sc/10.95 issn\T1/futs/m/n/10.95 : 1070-664X, 1089-7674. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1063 / 1 . 5044609$[][]\T1/futs/m/n/10.95 . 
+ []
+
+[170]
+Overfull \hbox (5.03362pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 Drive Cryo-genic Tar-gets on OMEGA''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 25.6 (June 2018), p. 062701.
+ []
+
+
+Overfull \hbox (4.00159pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 Dimensional Ra-di-a-tion Hy-dro-dy-nam-ics Sim-u-la-tions''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 22.8 (Aug.
+ []
+
+[171]
+Overfull \hbox (3.00508pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 tional Ig-ni-tion Fa-cil-ity Us-ing Adiabat-Shaping''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 23.5 (May 2016),
+ []
+
+
+Overfull \hbox (13.94519pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 C.A. Walsh et al. ``Mag-ne-tized Directly-Driven ICF Cap-sules: In-creased In-sta-bil-ity Growth
+ []
+
+[172]
+Overfull \hbox (6.3339pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 Sym-me-try of In-er-tial Fu-sion Im-plo-sions''. In: \T1/futs/m/it/10.95 Phys-i-cal Re-view Let-ters \T1/futs/m/n/10.95 128.19 (May 2022),
+ []
+
+
+Overfull \hbox (28.04324pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 (June 2023), p. 905890305. \T1/futs/m/sc/10.95 issn\T1/futs/m/n/10.95 : 0022-3778, 1469-7807. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1017 / S0022377823000405$[][]\T1/futs/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (1.78967pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 Balescu Cal-cu-la-tions of Electron-Ion Tem-per-a-ture Equi-li-bra-tion in Plas-mas''. In: \T1/futs/m/it/10.95 Phys-
+ []
+
+
+Overfull \hbox (4.37332pt too wide) in paragraph at lines 28--28
+[]\T1/futs/m/n/10.95 O. M. Man-nion et al. ``Ev-i-dence of Non-Maxwellian Ion Ve-loc-ity Dis-tri-bu-tions in Spher-
+ []
+
+[173]
+Overfull \hbox (1.47215pt too wide) in paragraph at lines 28--28
+\T1/futs/m/n/10.95 Temperature Mea-sure-ments in In-er-tial Con-fine-ment Fu-sion Ex-per-i-ments''. In: \T1/futs/m/it/10.95 Physics
+ []
+
+[174]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [35
+ (./Appendix/Permissions.tex) [175
 
 
-] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Appendix/Permissions.aux))
+
+
+] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Numerics/NumericsMain.aux) (./Results1/Results1Main.aux) (./Results2/Results2Main.aux) (./Results3/Results3Main.aux) (./Appendix/Permissions.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1555,6 +3218,9 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Thesis_MainSample.run.xml'.
@@ -1562,18 +3228,18 @@ Package logreq Info: Writing requests to 'Thesis_MainSample.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34279 strings out of 474165
- 688954 string characters out of 5749497
- 2276214 words of memory out of 5000000
- 55858 multiletter control sequences out of 15000+600000
- 681056 words of font info for 175 fonts, out of 8000000 for 9000
+ 36242 strings out of 474165
+ 748238 string characters out of 5749497
+ 2585261 words of memory out of 5000000
+ 57219 multiletter control sequences out of 15000+600000
+ 743253 words of font info for 204 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,18n,121p,10978b,2023s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,19n,121p,10978b,2026s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (35 pages, 10921098 bytes).
+Output written on Thesis_MainSample.pdf (175 pages, 88617861 bytes).
 PDF statistics:
- 918 PDF objects out of 1000 (max. 8388607)
- 809 compressed objects within 9 object streams
- 207 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4412 PDF objects out of 5155 (max. 8388607)
+ 3910 compressed objects within 40 object streams
+ 752 named destinations out of 1000 (max. 500000)
+ 1005 words of extra memory for PDF output out of 10000 (max. 10000000)
 

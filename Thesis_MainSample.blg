@@ -1,15 +1,44 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'Thesis_MainSample.blg'
-[232] biber-MSWIN64:340> INFO - === 
-[301] Biber.pm:419> INFO - Reading 'Thesis_MainSample.bcf'
-[544] Biber.pm:979> INFO - Found 74 citekeys in bib section 0
-[576] Biber.pm:4419> INFO - Processing section 0
-[601] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
-[718] bibtex.pm:1713> INFO - LaTeX decoding ...
-[2003] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
-[12084] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[12084] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[12084] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[12084] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[12481] bbl.pm:660> INFO - Writing 'Thesis_MainSample.bbl' with encoding 'UTF-8'
-[29001] bbl.pm:763> INFO - Output to Thesis_MainSample.bbl
+[231] biber-MSWIN64:340> INFO - === 
+[303] Biber.pm:419> INFO - Reading 'Thesis_MainSample.bcf'
+[688] Biber.pm:979> INFO - Found 214 citekeys in bib section 0
+[720] Biber.pm:4419> INFO - Processing section 0
+[745] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
+[868] bibtex.pm:1713> INFO - LaTeX decoding ...
+[2110] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
+[16716] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[16717] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[16717] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[16717] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[17356] bbl.pm:660> INFO - Writing 'Thesis_MainSample.bbl' with encoding 'UTF-8'
+[34604] bbl.pm:763> INFO - Output to Thesis_MainSample.bbl
+[34605] Biber.pm:131> WARN - I didn't find a database entry for 'slutz_high-gain_2012' (section 0)
+[34605] Biber.pm:131> WARN - I didn't find a database entry for 'nguyen_cross-beam_2021' (section 0)
+[34606] Biber.pm:131> WARN - I didn't find a database entry for 'myatt_wave-based_2017' (section 0)
+[34606] Biber.pm:131> WARN - I didn't find a database entry for 'schmitt_importance_2023-1' (section 0)
+[34606] Biber.pm:131> WARN - I didn't find a database entry for 'colaitis_towards_2014' (section 0)
+[34606] Biber.pm:131> WARN - I didn't find a database entry for 'paddock_one-dimensional_2021' (section 0)
+[34606] Biber.pm:131> WARN - I didn't find a database entry for 'marozas_wavelength-detuning_2018' (section 0)
+[34606] Biber.pm:131> WARN - I didn't find a database entry for 'follett_ray-based_2018' (section 0)
+[34606] Biber.pm:131> WARN - I didn't find a database entry for 'igumenshchev_crossed-beam_2010' (section 0)
+[34606] Biber.pm:131> WARN - I didn't find a database entry for 'igumenshchev_crossed-beam_2012' (section 0)
+[34607] Biber.pm:131> WARN - I didn't find a database entry for 'seaton_cross-beam_2022-1' (section 0)
+[34607] Biber.pm:131> WARN - I didn't find a database entry for 'seaton_cross-beam_2022' (section 0)
+[34607] Biber.pm:131> WARN - I didn't find a database entry for 'williams_bspline-fortran_2024' (section 0)
+[34607] Biber.pm:131> WARN - I didn't find a database entry for 'igumenshchev_three-dimensional_2016' (section 0)
+[34607] Biber.pm:131> WARN - I didn't find a database entry for 'gatu_johnson_impact_2020' (section 0)
+[34607] Biber.pm:131> WARN - I didn't find a database entry for 'colaitis_3d_2023-1' (section 0)
+[34607] Biber.pm:131> WARN - I didn't find a database entry for 'scott_shock-augmented_2022' (section 0)
+[34607] Biber.pm:131> WARN - I didn't find a database entry for 'follett_ray-based_2023' (section 0)
+[34607] Biber.pm:131> WARN - I didn't find a database entry for 'igumenshchev_laser-beam_2013' (section 0)
+[34608] Biber.pm:131> WARN - I didn't find a database entry for 'craxton_direct-drive_2015' (section 0)
+[34608] Biber.pm:131> WARN - I didn't find a database entry for 'tubbs_direct-drive_1999' (section 0)
+[34608] Biber.pm:131> WARN - I didn't find a database entry for 'hu_direct-drive_2019' (section 0)
+[34608] Biber.pm:131> WARN - I didn't find a database entry for 'gotchev_laser-driven_2009' (section 0)
+[34608] Biber.pm:131> WARN - I didn't find a database entry for 'shi_three-wave_2017' (section 0)
+[34608] Biber.pm:131> WARN - I didn't find a database entry for 'shi_laser-plasma_2018' (section 0)
+[34608] Biber.pm:131> WARN - I didn't find a database entry for 'larroche_ion-kinetic_2016' (section 0)
+[34608] Biber.pm:131> WARN - I didn't find a database entry for 'chang_notitle_2023' (section 0)
+[34609] Biber.pm:131> WARN - I didn't find a database entry for 'walsh_extended-magnetohydrodynamics_2020' (section 0)
+[34609] Biber.pm:133> INFO - WARNINGS: 28
