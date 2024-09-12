@@ -62,3 +62,10 @@ Gbar
 ENDF
 isentropically
 ignitor-beam
+sr
+ps
+Fast-VFP
+Nernst-on
+with-Nernst
+without-Nernst
+Moloney

@@ -10,16 +10,16 @@
 
 Nuclear fusion is a reaction which combines multiple light nuclei together to form heavier nuclei.
 If the products of the reaction are more tightly bound than the reactants, excess energy is also released to the products.
-Broadly, the binding energy per nucleon of common nuclear isotopes increases with atomic mass up to iron, ${}^{56}\text{Fe}$, and decreases afterwards, as is shown in Fig.~\ref{fig:intro_BEperNucleon}.
+Broadly, the binding energy per nucleon of common nuclear isotopes increases with atomic mass up to iron, ${}^{56}\text{Fe}$, and decreases afterwards, as shown in Fig.~\ref{fig:intro_BEperNucleon}.
 The reverse process, nuclear fission, operates by splitting heavy nuclei into lighter products.
-Therefore, Energy is mostly released via fusion, up to product masses including iron, and via fission down to iron.
+Therefore, energy is mostly released via fusion, up to product masses including iron, and via fission down to iron.
 In 2023, fission made up approximately 9.1\% of the global electricity mix~\cite{emberinstitute_statistical_2024}.
-Like fission, fusion energy would be carbon free at the point of production, but it would also offer further distinct advantages.
+Like fission, fusion energy would be carbon-free at the point of production, but it would also offer further distinct advantages.
 Fusion power plants would not operate in regimes with potentially dangerous chain reactions, and would also generate little-to-no long-lived nuclear waste.
 In comparison with other low-carbon power sources, including wind and solar, fusion plants could operate continuously, supplying base load power.
 Studies have also shown that fusion energy could have an economically viable \ac{LCOE}, which is a metric that compares the economic costs of a power plant over its lifetime to the value of energy produced~\cite{griffiths_commercialisation_2022}.
 Performing controlled nuclear fusion on Earth for energy production has been an active area of research for many decades.
-However, multiple scientific and engineering challenges remain to be resolved, in order to make it a viable energy source.
+However, multiple scientific and engineering challenges remain to be solved in order to make it a viable energy source.
 
 The likelihood of two reactants undergoing a specific fusion reaction is described by the cross-section of the interaction,
 \begin{equation}
@@ -30,9 +30,9 @@ which is a function of the centre of mass energy, $E$, the `astrophysical $S$-fa
 The exponential term including $E_G$ in Eq.~\ref{eq:intro_cross_sec} is related to the probability of reactants tunnelling through the energy barrier, due to electrostatic Coulomb repulsion between two positively charged reactant nuclei.
 One approach to achieving the energies required to overcome this barrier are `beam-target' configurations, wherein a high energy beam of reactants is focussed onto a stationary target.
 However, this has proven unviable, due to the high likelihood of Coulomb scattering events compared to fusion reactions~\cite{rider_general_1995}.
-Thermonuclear fusion is the alternative approach, wherein the bulk fuel is heated to sufficient temperatures that the particles in the high-energy tail of the distribution have sufficient energy to undergo fusion reactions.
-For a fuel is in thermal equilibrium, the high particle energies required to overcome the Coulomb barrier, $\mathcal{O}(100)\ \text{keV}$, are well above ionisation energies (\textit{e.g. }$13.6\ \text{eV}$ for hydrogen), so the fuel will be in the plasma state.
-If the fusion products are able to deposit a sufficient fraction of their energy back into the fuel, then a self-sustaining fusion reaction is possible, where the high temperatures required for the reactants to fuse is maintained.
+Thermonuclear fusion is the alternative approach, wherein the fuel is heated to sufficient temperatures that the particles in the high-energy tail of the distribution have sufficient energy to undergo fusion reactions.
+For a fuel in thermal equilibrium, the high particle energies required to overcome the Coulomb barrier, $\mathcal{O}(100)\ \text{keV}$, are well above ionisation energies (\textit{e.g. }$13.6\ \text{eV}$ for hydrogen), so the fuel will be in the plasma state.
+If the fusion products are able to deposit a sufficient fraction of their energy back into the fuel, then a self-sustaining fusion reaction is possible, where the high temperature required for the reactants to fuse is maintained.
 For a fusion reaction with reactants labelled by 1 and 2, the number of fusion reactions per unit time and volume is known as the `volumetric reaction rate'~\cite{atzeni_physics_2004},
 \begin{equation}
     \label{eq:intro_reacrate}
@@ -49,8 +49,8 @@ Eq.~\ref{eq:intro_reacrate} explicitly demonstrates that achieving a high fuel d
     \includegraphics[width=0.9\linewidth]{Introduction/Images/BE_per_nucleon.png}
     \centering
     \caption{Binding energy per nucleon for common nuclear isotopes.
-    Binding energy peaks close to iron, and energy is released for reactions which increases binding energy of the products compared to the reactants.
-    ${}^{4}\text{He}$ has a particularly high binding energy and therefore fusion reactions which results in this isotope are strong candidates for fusion energy production.}%
+    Binding energy peaks close to ${}^{56}\text{Fe}$, and energy is released for reactions which increases binding energy of the products compared to the reactants.
+    ${}^{4}\text{He}$ has a particularly high binding energy and therefore fusion reactions resulting in ${}^{4}\text{He}$ are strong candidates for fusion energy production.}%
     \label{fig:intro_BEperNucleon}
 \end{figure}
 
@@ -65,26 +65,26 @@ Eq.~\ref{eq:intro_reacrate} explicitly demonstrates that achieving a high fuel d
 \end{figure}
 
 The efficacy of a fusion fuel for energy production is dictated by the availability of the reactants, the fusion products, the averaged reactivity of the reactants and the energy released per reaction, $Q$, which is the difference in binding energy between the reactants and products.
-Most current, fusion-energy experiments are focussed on demonstrating that fusion power production is possible, thus the choice of fuel is predominantly dictated by the reactivity.
-Hydrogen-Hydrogen isotope fusion reactions have much higher reactivities than other elements, because the Coulomb repulsion scales as $Z^2$, thus the Gamow energy, $E_G$ is significantly smaller.
-The nuclear physics is particularly favourable for the fusion of deuterium (D) and tritium (T).
-This is due to a nuclear resonance at relatively modest energies for the reaction chain which produces an excited, unstable ${}^5 \text{He}$ nucleus, that subsequently decays to ${}^4\text{He}$ and a neutron~\cite{brown_field_2014}.
-Averaged-reactivates of several important fusion reactions, obtained from reaction cross-sections from the \texttt{ENDF/B-VII.1} library~\cite{chadwick_endf_2011}, are plotted in Fig.~\ref{fig:intro_reactivities}.
-The D-T reactivity is at least an order of magnitude larger than the other reactions plotted, up to $T\sim100\ \text{keV}$, and it is thus the most commonly used fuel for high-gain fusion experiments.
+Most current fusion-energy experiments are focussed on demonstrating that fusion power production is possible, thus the choice of fuel is predominantly dictated by the reactivity.
+Hydrogen-hydrogen isotope fusion reactions have much higher reactivities than other elements, because the Coulomb repulsion scales as $Z^2$, thus the Gamow energy, $E_G$ is significantly smaller.
+The nuclear physics is particularly favourable for the fusion of deuterium (D = ${}^{2}_{1}\text{H}$) and tritium (T = ${}^{3}_{1}\text{H}$).
+This is due to a nuclear resonance at relatively modest energies for the reaction chain, which produces an excited, unstable ${}^5 \text{He}$ nucleus, that subsequently decays to ${}^4\text{He}$ and a neutron~\cite{brown_field_2014}.
+Averaged reactivates of several important fusion reactions, obtained from reaction cross-sections from the \texttt{ENDF/B-VII.1} library~\cite{chadwick_endf_2011}, are plotted in Fig.~\ref{fig:intro_reactivities}.
+The D-T reactivity is at least an order of magnitude larger than the other reactions plotted up to $T\sim100\ \text{keV}$, and it is thus the most commonly used fuel for high-gain fusion experiments.
 The reaction proceeds as,
 \begin{equation}
     \label{eq:intro_DTreac}
-    {}^{2}_{1}\text{D} + {}^{3}_{1}\text{T} \rightarrow \alpha(3.5\ \text{MeV}) + \text{n}(14.1\ \text{MeV}),
+    {}^{2}_{1}\text{H} + {}^{3}_{1}\text{H} \rightarrow \alpha(3.5\ \text{MeV}) + \text{n}(14.1\ \text{MeV}),
 \end{equation}
 where $\alpha$ is a ${}^{4}_{2}\text{He}$ nucleus, which gains $3.5\ \text{MeV}$ from the fusion energy released, $Q$, and $\text{n}$ is a neutron, which gains $14.1\ \text{MeV}$.
 The energy partition is dictated by energy-momentum conservation of the products in the centre of mass frame.
-The alpha particles typically couple their energy back into the bulk fuel via Coulomb collisions, which has the effect of raising the fuel temperature and thus further raising the reactivity, at temperatures below $T\sim60\ \text{keV}$.
+The alpha particles typically couple their energy back into the fuel via Coulomb collisions, which has the effect of raising the fuel temperature and thus further raising the reactivity, at temperatures below $T\sim60\ \text{keV}$.
 Neutrons have a much lower reaction cross-section because they are not charged, and thus typically leave the reaction region.
 However, in fusion experiments with high density configurations such as \ac{ICF}, neutron heating of the fuel can also play a significant role~\cite{daughton_influence_2023}.
 
-In order for net energy gain, sufficient energy must be released by fusion to compensate for the energy required to perform the experiment.
-This requires a fuel configuration with a combination of high temperatures and densities to obtain a large volumetric reaction rate.
-It must also remain confined for a sufficient time for enough reactions to occur to result in net energy gain.
+For net energy gain, sufficient energy must be released by fusion to compensate for the energy required to perform the experiment.
+This requires a fuel configuration with a high combination of temperature and density to obtain a large volumetric reaction rate.
+It must also remain confined for a sufficient time, so enough reactions occur to result in net energy gain.
 The method of confinement for fusion energy experiments has two broad streams: \ac{MCF}, where magnetic fields are used to confine steady-state fusion-plasma over long time-scales~\cite{rebut_joint_2018}, and \ac{ICF}, where dense fusion fuel is assembled for a short time period and `confined' by its own inertia~\cite{nuckolls_laser_1972}.
 The work conducted in this thesis is of relevance to \ac{ICF} schemes, specifically those in which the plasma is produced by laser irradiation.
 
@@ -94,23 +94,24 @@ The work conducted in this thesis is of relevance to \ac{ICF} schemes, specifica
 \section{Inertial Confinement Fusion}%
 \label{sec:intro_ICF}
 
-Large energy releases from nuclear fusion have been achieved on Earth in the form of nuclear warheads, although quantity of energy released in these uncontrolled reactions would destroy any infrastructure which would attempt to harness the power for energy production.
-In the 1950s and 60s, the first devices were built which demonstrated stimulated emission of microwave~\cite{schawlow_infrared_1958} and optical~\cite{maiman_stimulated_1960} light.
+Large energy releases from nuclear fusion have been achieved on Earth in the form of thermo-nuclear warheads, although quantity of energy released in these uncontrolled reactions would destroy any infrastructure which would attempt to harness the power for energy production.
+In the 1950s and 1960s, the first devices were built which demonstrated stimulated emission of microwave~\cite{schawlow_infrared_1958} and optical~\cite{maiman_stimulated_1960} light.
 The optical-wavelength lasers were quickly recognised as an ideal driver for a far smaller and therefore less destructive thermonuclear device than was used in warheads, which could thus be used for fusion energy generation~\cite{nuckolls_early_1998}.
 Much of the research was declassified and subsequently published in an article by Nuckolls \textit{et al.} in 1972~\cite{nuckolls_laser_1972}.
 In these \ac{ICF} experiments, the high temperatures and densities required to initiate an appreciable number of fusion reactions are maintained over a short timescale, which is set by the inertia of the fuel configuration, before the fuel disassembles due to large pressure gradients.
 The required fuel density is typically achieved by an implosion process.
 High temperatures are obtained either from the conversion to internal energy of the implosion kinetic energy, which is the central hotspot ignition variant, described in Sec.~\ref{sec:intro_centralhotspot}, or via an external heating source, as described in Sec.~\ref{sec:intro_icf_alt}.
-Before describing these schemes in more detail however, necessary criterion for energy gain conditions shall be discussed, which are agnostic of how the fusion fuel is assembled and dictate the plasma conditions which must be achieved.
+Before describing these schemes in more detail however, necessary criteria for energy gain conditions shall be discussed, which are agnostic of how the fusion fuel is assembled and dictate the plasma conditions which must be achieved.
 
 %################################################################################
 %################################################################################
 \subsection{Ignition Requirements}%
 \label{sec:intro_icf_ignition}
 
-The point at which alpha heating becomes the dominant term in the power balance of the fusion fuel is termed `ignition' and it is a necessary, although not sufficient condition for high gain \ac{ICF} experiments.
-Ignition necessitates that the plasma is confined for a sufficiently long period of time, for an appreciable number of fusion reactions to occur, raising the fuel temperatures and reactivities, which results in propagating fusion burn.
-Estimates for the required plasma conditions which must be achieved for this to occur, can be estimated by considering the timescales of confinement and fusion.
+The point at which alpha heating becomes the dominant term in the power balance of the fusion fuel is termed `ignition' and it is a necessary, although not sufficient, condition for high gain \ac{ICF} experiments.
+Ignition necessitates that the plasma is confined for a sufficiently long period of time, for an appreciable number of fusion reactions to occur.
+These reactions couple their energy back to the plasma, raising the fuel temperatures and reactivities and thus propagating fusion burn.
+Estimates for the required plasma conditions which must be achieved for this to occur can be estimated by considering the timescales of confinement and fusion.
 Initially, a uniform ion number density $n_i$ and temperature $T$, spherical fuel assembly, with outer radius $R$, shall be considered.
 The ions have an average mass, $m_i$, such that the mass-density of the fuel, $\rho = m_i n_i$ and the volume of the fuel sphere, $V = 4\pi R^3/3$.
 Dimensional considerations give an order of magnitude estimate for the timescale on which fusion reactions occur,
@@ -118,7 +119,7 @@ Dimensional considerations give an order of magnitude estimate for the timescale
     \tau_{\text{fus}} = \frac{1}{n_i \langle \sigma v \rangle}.
 \end{equation}
 A radially inward pressure gradient will exist due to the high temperature of the plasma, which will lead to an inward propagating rarefaction wave, disassembling the fuel.
-This rarefaction wave will move at the isothermal sound speed, $c_s=\sqrt{2k_{\text{B}}T/m_i}$,\footnote{The factor of 2 in $c_s$ is because the pressure is the sum of contributions from ions and electrons.} from $t=0$, such that its position of the wave is given by $r=R-c_s t$.
+This rarefaction wave will move at the isothermal sound speed, $c_s=\sqrt{2k_{\text{B}}T/m_i}$,\footnote{The factor of 2 in $c_s$ is because the pressure is the sum of contributions from ions and electrons.} from $t=0$, such that the position of the wave is given by $r=R-c_s t$.
 Therefore, the timescale on which the burning fuel remains un-rarefied and thus confined is,
 \begin{align}
     \begin{split}
@@ -164,29 +165,29 @@ This minimises the required convergence ratio, $CR = R_{\text{init}}/R_{\text{fi
 \begin{figure}[t!]
     \includegraphics[width=0.7\linewidth]{Introduction/Images/hotspot ignition white.png}
     \centering
-    \caption{Four key Stages of the central hotspot ignition \ac{ICF} concept.
+    \caption{Four key stages of the central hotspot ignition \ac{ICF} concept.
     The chronological order of the diagram is top-left, bottom-left, bottom-right and then top-right quadrants, which display the initial configuration, implosion, stagnation and burn propagation stages respectively.
     }%
     \label{fig:intro_hotspot}
 \end{figure}
 
-Increasing the fuel mass in an \ac{ICF} experiment requires larger and larger driver energy to heat the entire fuel to the required fusion temperatures, $T\sim5\ \text{keV}$.
+Increasing the fuel mass in an \ac{ICF} experiment requires larger and larger driver energy to heat the entire fuel to the required fusion temperatures, $T\sim5\ \text{keV}$, at which an appreciable population of energetic ions are able to overcome the Coulomb repulsion.
 This necessitates larger and more expensive drivers, limiting both the upfront driver cost and potential target gain.
 Therefore, experimental configurations which can minimise the driver energy required to ignite a given fuel mass are more practical for current experiments and future power plants.
 The `central hotspot ignition' method is one such configuration, where a thin shell of fuel containing a low density fuel-fill is approximately isentropically compressed by a carefully constructed driver pulse shape.
 Isentropic compression maintains a cold and dense, imploding fuel shell, while compressing the gas fill.
 Only a small mass of fuel is heated to the required fusion temperatures on the stagnation axis.
 The energy required for this heating is provided from implosion kinetic energy of the dense shell, which transfers this energy to the gas analogously to a stiff piston compressing a gas.
-Fig.~\ref{fig:intro_hotspot} shows a schematic representation of a central hotspot ignition implosion at 4 important stages.
+Fig.~\ref{fig:intro_hotspot} shows a schematic representation of a central hotspot ignition implosion at four important stages.
 The top left quadrant shows the initial, spherical target configuration, which is comprised of an outer ablator, a solid DT ice layer and an inner DT gas fill.
-Choice of ablator material is driven by a number of considerations, including mass ablation rate, minimisation of instability growth, radiation coupling and ease of manufacturing~\cite{lafon_directdriveignition_2015,kline_first_2016,hu_laserdirectdrive_2023,casey_performance_2015}.
+The choice of ablator material is driven by a number of considerations, including mass ablation rate, minimisation of instability growth, radiation coupling and ease of manufacturing~\cite{lafon_directdriveignition_2015,kline_first_2016,hu_laserdirectdrive_2023,casey_performance_2015}.
 Cryogenic temperatures are required to form the ice layer from the DT fuel.
 The driver should, ideally, uniformly irradiate the outer surface to maintain the optimal spherical compression and to minimise instability growth.
 Specific radiation drives shall be discussed in Sec.~\ref{sec:intro_mainexperiments}, but for now, the scheme shall be discussed, while remaining agnostic of the driver.
 
 The bottom left quadrant of Fig.~\ref{fig:intro_hotspot} shows the implosion phase of the scheme.
 As the radiation from the driver heats the outer layer of the ablator, it heats up and expands radially outward, which imparts a rocket force on the interior target, propelling it inward.
-A low density gas fill is used to make compression of the target easier such that high convergence ratios can be achieved.
+A gas fill makes compression of the target easier, such that high convergence ratios can be achieved.
 Greatest convergence can be achieved if the pressure of the gas fill is minimised and thus high-gain \ac{ICF} targets aim to limit `preheat' of the interior gas fill ahead of the shock.
 For example, a poorly pulse-shaped driver will lead to undesired shock heating of the interior fuel ahead of the converging shell, which raises its pressure and thus limits compressibility.
 Assuming perfectly spherical targets and driver radiation, isentropic pulses maximise the target gains, which are designed to limit shock preheating of the gas-fill.
@@ -205,13 +206,13 @@ As the remaining relatively cold and dense shell converges on the axis, $P\text{
 If the implosion velocity is sufficiently high, this piston heating of the fuel results in fusion relevant temperatures.
 The deceleration phase is also hydrodynamically unstable, because the high pressure, low density interior pushes on the high density, low pressure shell, which results in further \ac{RTI} growth.
 Long wavelength perturbations to the radiation drive result in unstagnated kinetic energy in the hotspot, limiting maximum achievable temperatures~\cite{gatujohnson_impact_2018}.
-Short wavelength perturbations from the \ac{RTI}, can introduce high-Z ablator material to the hotspot which enhances radiative losses.
+Short wavelength perturbations from the \ac{RTI} can introduce high-Z ablator material to the hotspot, which enhances radiative losses.
 If the perturbations are sufficiently large amplitude, they can puncture the shell, severely degrading confinement~\cite{smalyuk_review_2020}.
 
-The upper-right quadrant of Fig.~\ref{fig:intro_hotspot} shows the final, ignition and burn propagation phase of the design.
+The upper-right quadrant of Fig.~\ref{fig:intro_hotspot} shows the final ignition and burn propagation phase of the design.
 If the density and temperature of the fuel hotspot are sufficient, then fusion reactions begin to occur, generating energetic alpha fusion products.
 For sufficiently high areal density shells, the alpha particles deposit their energy in the dense fuel shell, raising its temperature and ablating additional fusion fuel radially inward to the burn process.
-This leads to ignition, if the confinement holds the fuel together for a sufficiently long period of time.
+This leads to ignition if the confinement holds the fuel together for a sufficiently long period of time.
 
 %################################################################################
 %################################################################################
@@ -219,23 +220,25 @@ This leads to ignition, if the confinement holds the fuel together for a suffici
 \label{sec:intro_icf_alt}
 
 In the central hotspot ignition scheme, the energy required to heat the fuel to fusion temperatures is supplied by the kinetic energy of the imploding shell.
-The high shell velocities required to obtain hotspot fusion temperatures is $\sim300\ \text{km/s}$, which is typically large enough to result in significant instability growth.
+The high shell velocity required to obtain hotspot fusion temperatures is $\sim300\ \text{km/s}$, which is typically large enough to result in significant instability growth.
 Alternative schemes exist, namely the shock- and fast-ignition variants, where the required shell density is obtained via a much slower implosion process, limiting instability growth.
 Temperatures are then achieved by applying a heating source, separate from the implosion dynamics.
 For shock ignition, the driver pulse shape is sharply ramped up at the end of the pulse, in order to generate a strong, spherically converging shock, heating the fuel to fusion temperatures~\cite{betti_shock_2007,perkins_shock_2009}.
-The main issue with this scheme for laser-driven \ac{ICF}, has been questions over laser coupling at the high intensities required to generate the ignitor shock.
-At high laser intensities, a mostly deleterious class of laser-plasma interaction known as \ac{LPIs} dominate.
-Recent work has explored the possibility of augmenting the laser pulse shape to add a dip in power, prior to the ignitor pulse rise, which conditions the plasma such that it is more amenable to strong shock generation, and thus limits the intensities required~\cite{scott_shockaugmented_2022}.
+The main issue with this scheme for laser-driven \ac{ICF} has been uncertainty surrounding laser coupling at the high intensities required to generate the ignitor shock.
+At high laser intensities, a mostly deleterious class of laser-plasma interaction, known as \ac{LPIs}, dominate.
+Recent work has explored the possibility of augmenting the laser pulse shape to add a dip in power prior to the ignitor pulse rise, which conditions the plasma such that it is more amenable to strong shock generation.
+Therefore, the intensities required to generate the shock is reduced~\cite{scott_shockaugmented_2022}.
 
-Fast-ignition is an alternative concept which utilises an external ignitor-beam of charged particles, to provide the hotspot heating~\cite{tabak_ignition_1994}.
-Scientific research related to this scheme include studying how the high energy charged particles are generated via ultra-intense laser interactions, and if they can be focused to efficiently couple their energy to the fuel~\cite{jarrott_visualizing_2016,gong_direct_2019}.
-The overall complexity of many of proposed driver and target configurations would also likely have to be reduced, in order to make \ac{IFE} relevant targets.
+Fast-ignition is an alternative concept, which utilises an external ignitor-beam of charged particles to provide the hotspot heating~\cite{tabak_ignition_1994}.
+Scientific research related to this scheme includes studying how the high energy charged particles are generated via ultra-intense laser interactions and if they can be focused to efficiently couple their energy to the fuel~\cite{jarrott_visualizing_2016,gong_direct_2019}.
+The overall complexity of many proposed driver and target configurations would also likely have to be reduced in order to make \ac{IFE} relevant targets.
 
 All of the ignition concepts introduced so far focus on igniting a small central mass, which then initiates a propagating burn wave into surrounding fuel.
-The volume-ignition variant, instead proposes igniting the entire fuel volume simultaneously~\cite{khoda-bakhsh_advanced_1992,molvig_low_2016}.
+By contrast, the volume-ignition variant proposes igniting the entire fuel volume simultaneously~\cite{khoda-bakhsh_advanced_1992,molvig_low_2016}.
 This is achieved by assembling a large, dense fuel mass, kept at a much lower temperature than the hotspot in other schemes.
 A large and dense fuel assembly has minimal radiative losses and can thus ignite at $T\sim1.5\ \text{keV}$, as opposed to the ideal ignition temperature of hotspot schemes, $T=4.3\ \text{keV}$~\cite{atzeni_physics_2004}\footnote{The ideal ignition temperature is the value at which alpha heating balances radiative losses.}.
 One issue with this scheme is that significantly more laser energy is required to ignite a given fuel mass, because the entire volume must be brought to ignition conditions at the same time.
+The high driver energies required to ignite the fuel also limit the gain to $G\sim20$, and it is thus not particularly relevant to \ac{IFE}~\cite{atzeni_physics_2004}.
 
 %################################################################################
 %################################################################################
@@ -246,12 +249,13 @@ One issue with this scheme is that significantly more laser energy is required t
     \includegraphics[width=0.8\linewidth]{Introduction/Images/IFE_powerplant.png}
     \centering
     \caption{Energy balance of an \ac{IFE} power plant.
-    Based on a similar figure from Ref.~\cite{atzeni_physics_2004}.
+    Adapted from Ref.~\cite{atzeni_physics_2004}.
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!GET PERMISSION!!!!!!!!!!!!!!!!!!!!!!
     }%
     \label{fig:intro_IFE_energy_balance}
 \end{figure}
 
-For a power plant to produce net energy from \ac{ICF} implosions, the energy from each target must of course be greater than the energy to drive the implosion.
+For a power plant to produce net energy from \ac{ICF} implosions, the energy from each target must naturally be greater than the energy to drive the implosion.
 In reality, additional inefficiencies in power plants set more stringent constraints on the energy which must be produced.
 The energy balance of an \ac{IFE} power plant is shown in Fig.~\ref{fig:intro_IFE_energy_balance}.
 A driver, such as a laser system (which is the driver considered for the work conducted in this thesis), converts an input energy, $E_{\text{in}}$, to a driver energy, $E_{\text{d}} = \eta_{\text{d}}E_{\text{in}}$, where $\eta_{\text{d}}$ is the energy efficiency of the driver.
@@ -260,16 +264,16 @@ The driver energy initiates a fusion reaction, which releases $E_{\text{fus}}$, 
     G = E_{\text{fus}}/E_{\text{d}}.
 \end{equation}
 The released fusion energy, for example in the form of energetic neutrons, is converted into thermal energy in an encompassing `blanket', and then into output electrical energy, $E_\text{out}$, by a thermal-cycle (such as steam turbines), with efficiency, $\eta_{\text{th}}$.
-Some fraction $f$ of this generated energy is recycled back into the plant to power the driver, such that the remaining fraction is sent to the grid,
+A fraction, $f$, of this generated energy is recycled back into the plant to power the driver, such that the remaining fraction is sent to the grid,
 \begin{equation}
     E_{\text{grid}} = (1-f) \eta_{\text{th}} \eta_{\text{d}} G E_{\text{in}},
 \end{equation}
 with the constraint, $f \eta_{\text{th}} \eta_{\text{d}} G \geq 1$ for net energy production.
-Power plants must also produce a sufficiently large volume of energy to be economical.
+Power plants must also produce a sufficiently large volume of energy to balance the capital cost required to build them.
 Therefore, several $\sim100\ \text{MJ}$ reactions must occur each second for a $100\ \text{MW}$ plant, which necessitates a driver that can operate at $\sim10\ \text{Hz}$.
 
-The \ac{DPSSL} concept, could feasibly produce laser energy at $\sim10\ \text{Hz}$ repetition rate, with an efficiency $\eta_d\sim10\%$~\cite{banerjee_dipole_2015,batani_future_2023}.
-Assuming a thermal cycle efficiency, $\eta_{\text{th}}=40\%$ and a recycled energy fraction, $f=1/4$, this means that a target gain of approximately $G\sim100$ would be required for power production.
+The \ac{DPSSL} design could feasibly produce laser energy at $\sim10\ \text{Hz}$ repetition rate, with an efficiency $\eta_d\sim10\%$~\cite{banerjee_dipole_2015,batani_future_2023}.
+Assuming a thermal cycle efficiency, $\eta_{\text{th}}=40\%$ and a recycled energy fraction, $f=1/4$, a target gain of approximately $G\sim100$ would be required for power production.
 Additionally, the plant must be economically profitable, thus for a $G=100$ reaction, which releases $E_{\text{fus}} = 100\ \text{MJ} = 28\ \text{kWh}$, the energy sold to the grid would make about £1.50\footnote{The UK April 2024 energy price of £0.25 per $\text{kWh}$ was used.}.
 Therefore, targets must cost approximately £0.10, which limits the tolerable manufacturing complexity.
 \ac{IFE} target concepts exist, which could feasibly be mass-produced for an acceptable cost, for example initially uniform density liquid spheres, known as `dynamic shell' targets~\cite{goncharov_novel_2020,igumenshchev_proofprinciple_2023}.
@@ -277,12 +281,12 @@ Therefore, targets must cost approximately £0.10, which limits the tolerable ma
 %###############################################################################################################################
 %###############################################################################################################################
 %###############################################################################################################################
-\section{Current Experiments/ Main Approaches}%
+\section{Current Experiments and Main Approaches}%
 \label{sec:intro_mainexperiments}
 
 In Sec.~\ref{sec:intro_ICF}, the basic principles of \ac{ICF} were introduced without specifying the driver technology.
-Although heavy ion beams have been proposed as a driver technology~\cite{metzler_target_1984}, most current research focusses on the direct-drive and indirect-drive approaches, which use laser light to directly and indirectly irradiate the target respectively.
-For the direct-drive approach, laser are focussed upon the outer surface of the target, whereas in indirect-drive, they illuminate the interior surface of a high-Z material `hohlraum', which generates a thermal bath of x-rays.
+Although heavy ion beams have been proposed as a driver technology~\cite{metzler_target_1984}, most current research focuses on the direct-drive and indirect-drive approaches, which use laser light to directly and indirectly irradiate the target, respectively.
+For the direct-drive approach, lasers are focussed upon the outer surface of the target, whereas in indirect-drive, they illuminate the interior surface of a high-Z material `hohlraum', which generates a thermal bath of x-rays.
 The indirect-drive approach was developed in order to relax requirements on laser beam uniformity and sensitivity to hydrodynamic instabilities in direct-drive~\cite{lindl_development_1995}.
 Sources of degradation and implosion dynamics are somewhat different in each of these approaches.
 Each approach is introduced below, and progress on the main experimental facilities is summarised.
@@ -297,7 +301,7 @@ Each approach is introduced below, and progress on the main experimental facilit
     \centering
     \caption{Schematic of the indirect-drive approach to \ac{ICF}.
     Laser light, represented as blue transparent rectangles, irradiates the interior of a high-Z (\textit{e.g.} gold) hohlraum, producing thermal x-rays that drive the capsule implosion.
-    A number of important physical effects, typical to indirect-drive experiments, are also illustrated on the diagram.
+    A number of important physical effects, typical to indirect-drive experiments, are also illustrated.
     }%
     \label{fig:intro_indirect}
 \end{figure}
@@ -308,24 +312,25 @@ Each approach is introduced below, and progress on the main experimental facilit
 \label{sec:intro_indirect_phys}
 
 A schematic of an indirect-drive experiment is shown in Fig.~\ref{fig:intro_indirect}.
-The \ac{NIF} at the \ac{LLNL} in the United States of America, is the largest \ac{ICF} facility and high power laser system in the world, and it mainly focusses on the indirect-drive approach to \ac{ICF}~\cite{miller_national_2004,spaeth_description_2016}.
+The \ac{NIF} at the \ac{LLNL} in the United States, is the largest \ac{ICF} facility and high-power laser system in the world, and it mainly focuses on the indirect-drive approach to \ac{ICF}~\cite{miller_national_2004,spaeth_description_2016}.
 The laser system is composed of 192 beams, which are clustered around two poles, so that they can enter the small \ac{LEH} of the hohlraum, as is demonstrated in Fig.~\ref{fig:intro_indirect}.
 Approximately $2\ \text{MJ}$ of laser energy can be delivered to the target, usually on a timescale of $10\rightarrow20\ \text{ns}$.
 The \ac{LMJ} is a newer facility at \ac{CEA} in France, which is the largest \ac{ICF} experiment outside the United States.
-It also predominantly focusses on the indirect-drive approach and, although currently still in construction, it is intended to have 176 beams that will deliver approximately $1\ \text{MJ}$ of laser energy to the hohlraum~\cite{fleurot_laser_2005}.
+It also predominantly focuses on the indirect-drive approach and, although currently still in construction, it is intended to have 176 beams that will deliver approximately $1\ \text{MJ}$ of laser energy to the hohlraum~\cite{fleurot_laser_2005}.
 
-The main benefit of the indirect-drive approach compared to direct-drive is the uniformity of the driving radiation.
-High power laser focal spots are instantaneously highly non-uniform, which is discussed in more detail in Sec.~\ref{sec:intro_direct}. 
-This can seed instabilities and target compression is also limited based on the number of available beams.
-Conversion of laser light to x-rays in a hohlraum creates a highly uniformly radiation field, which has limited short wavelength perturbations to seed \ac{RTI} growth.
-Instability growth is therefore mostly seeded from engineering features, such as the tent used to hold the capsule in place, defects in the capsule, surface roughness, and the fill tube used to insert the fuel~\cite{clark_threedimensional_2016}.
+The main benefit of the indirect-drive approach compared to direct-drive is the uniformity of the driving radiation\footnote{Although higher frequency radiation also leads to higher ablation pressures for a given power absorption, the higher coupling efficiency of direct-drive means that a given laser power has a higher ablation pressure for direct-drive than indirect-drive.}.
+High-power laser focal spots are instantaneously highly non-uniform, which can seed instabilities, and is discussed in more detail in Sec.~\ref{sec:intro_direct}. 
+Sphericity of compression is also limited by the number of available beams.
+Conversion of laser light to x-rays in a hohlraum creates a highly uniform radiation field, which has limited short wavelength perturbations to seed \ac{RTI} growth.
+Instability growth is therefore mostly seeded by engineering features, such as the tent used to hold the capsule in place, defects in the capsule, surface roughness, and the fill tube used to insert the fuel~\cite{clark_threedimensional_2016}.
 A high-Z material such as gold is used for the hohlraum, due to high laser absorption and emissivity.
 Longer wavelength modes can be seeded if the laser heating of the hohlraum is asymmetric.
 For example, Fig.~\ref{fig:intro_indirect} shows that the hohlraum wall can heat and expand, blocking the `inner-cone' beams which heat the material near the capsule equator.
 Filling the hohlraum with a low-Z gas fill\footnote{A low-Z hohlraum fill is used to limit laser absorption away from the hohlraum wall.} to limit the `gold bubble' expansion, however, this allows for deleterious \ac{LPIs} to occur, which reflect laser energy back out of the \ac{LEH}~\cite{macgowan_laser_1996}.
-Current experiments on the \ac{NIF}, use a relatively low gas fill to reduce backscatter-\ac{LPIs} (specifically \ac{SBS} and \ac{SRS}), and introduce a wavelength shift between the inner and outer cones of laser beams, which allows for a laser-plasma interaction known as \ac{CBET} to transfer power to the outer beams late in the implosion\cite{michel_tuning_2009,moody_multistep_2012,kritcher_energy_2018}.
+Current experiments on the \ac{NIF} use a relatively low gas fill to reduce backscatter-\ac{LPIs} (specifically \ac{SBS} and \ac{SRS}).
+They also introduce a wavelength shift between the inner and outer cones of laser beams, which allows for an \ac{LPI} known as \ac{CBET} to transfer power to the outer beams late in the implosion\cite{michel_tuning_2009,moody_multistep_2012,kritcher_energy_2018}.
 This compensates for absorption in the expanding gold bubble and can maintain symmetry of the implosion.
-The main drawback of the approach compared to the direct-drive, is that the conversion of laser light to capsule kinetic energy via the hohlraum, introduces an additional $\sim10\%$ efficiency decrease, limiting the maximum gains that can be achieved.
+The main drawback of the approach, compared to the direct-drive, is that the conversion of laser light to capsule kinetic energy via the hohlraum introduces an additional $\sim10\%$ efficiency decrease, limiting the maximum gains that can be achieved.
 Increasing the size of the capsule relative to the hohlraum increases the fraction of x-ray energy which is coupled to the target, but can introduce long-wavelength instabilities if made too large by blocking laser propagation.
 Direct-drive is thus often considered the preferred scheme for \ac{IFE}.
 
@@ -349,10 +354,13 @@ Fig.~\ref{fig:intro_nif_yields} plots $G$ for indirect-drive \ac{ICF} shots on t
 The initial target designs, up to 2013, utilised a low adiabat design, with a plastic (CH) ablator, known as `Low Foot', which proved very sensitive to hydrodynamic instabilities~\cite{lindl_review_2014}.
 The results of this campaign are plotted in shaded grey in Fig.~\ref{fig:intro_nif_yields}.
 This led to the subsequent, `High Foot' campaign, where the target was kept similar, but the adiabat of the design was raised to create a more stable implosion, which improved yields, plotted in red~\cite{hurricane_highfoot_2014}.
-A new ablator material, \ac{HDC}, was deployed subsequent to this campaign which had a higher density than CH, resulting in improved absorption and thus shorter laser pulses~\cite{mackinnon_highdensity_2014}.
-The gas fill-density of the hohlraum was also lowered to reduce the loss of laser energy to backscatter \ac{LPIs}.
-The `Hybrid' campaigns made further improvements, by utilising \ac{CBET} to compensate for the loss of symmetry resulting from the gold-bubble expansion in the low-fill hohlraum, using larger capsules to increase coupling efficiency and thicker shells to mitigate instabilities~\cite{zylstra_record_2021}.
-Additional improvements were made to capsule quality which minimised sources of instability~\cite{kritcher_design_2024}.
+
+The `Hybrid' campaigns which came after these experiments made several changes to improve performance.
+The gas fill-density of the hohlraum was lowered to reduce the loss of laser energy to backscatter \ac{LPIs}.
+To limit large growth-times of gold bubbles while the laser fired and thus a loss of drive symmetry the laser pulse duration had to be shortened.
+This necessitated deployment of a new ablator material, \ac{HDC}, which has a higher density than CH, and therefore the shock transit times and overall pulse lengths were reduced~\cite{mackinnon_highdensity_2014}.
+\ac{CBET} was also employed to compensate for the loss of symmetry resulting from the gold-bubble expansion in the low-fill hohlraum, larger capsules increased coupling efficiency and thicker shells mitigated instabilities~\cite{zylstra_record_2021}.
+Additional improvements were made to capsule quality, which minimised sources of instability~\cite{kritcher_design_2024}.
 Shots from these campaigns are shown in the light and darker blue in Fig.~\ref{fig:intro_nif_yields} and have led to experiments entering the burning-plasma\footnote{The burning-plasma regime is when alpha heating is larger than $P\text{d}V$ heating. This is opposed to ignition, where alpha heating is greater than loss terms.}~\cite{zylstra_burning_2022,kritcher_design_2022} and ignition regimes~\cite{abu-shawareb_lawson_2022}.
 This ultimately resulted a shot $G>1$ in December 2022, which was the first fusion experiment to produce more energy than the driver delivered~\cite{abu-shawareb_achievement_2024}.
 Although not plotted in Fig.~\ref{fig:intro_nif_yields}, the gain record at the time of writing stands at $G=2.4$~\cite{_nif_}.
@@ -366,9 +374,9 @@ Although not plotted in Fig.~\ref{fig:intro_nif_yields}, the gain record at the 
     \includegraphics[width=0.7\linewidth]{Introduction/Images/direct icf white.png}
     \centering
     \caption{Schematic of the direct-drive approach to \ac{ICF}.
-    Laser light, represented by the transparent, blue rectangles is absorbed outside the critical surface and then transported in to the ablation surface by thermal conduction.
+    Laser light, represented by the transparent-blue rectangles is absorbed outside the critical surface and then transported in to the ablation surface by thermal conduction.
     Speckle from beam smoothing optics leads to short-scale non-uniformity of deposition, known as imprint.
-    \ac{LPIs} degrade the performance, both by reflecting light, and by generating hot electrons which pre-heat the fuel.
+    \ac{LPIs} degrade the performance, both by reflecting light, and by generating hot electrons, which pre-heat the fuel.
     }%
     \label{fig:intro_direct}
 \end{figure}
@@ -383,14 +391,14 @@ Although a limited number of direct-drive implosions are performed on the \ac{NI
 Work presented in this thesis is most relevant to direct-drive implosions on this facility.
 The \textsc{Omega} laser has a total of 60 beams, arranged to provide approximately symmetric radiation to a spherical target.
 In total, beams can deliver approximately $30\ \text{kJ}$ of laser energy to the target, usually in a timescale of $2\rightarrow3\ \text{ns}$.
-As previously stated, high driver efficiencies are desirable for \ac{IFE}, and the relative inefficiency of the hohlraum light to x-ray conversion, means that direct-drive is the assumed method for a future \ac{IFE} power plant.
-As opposed to indirectly-driven \ac{NIF} experiments, where the capsule is held in place by a thin tent attached to the hohlraum, directly-driven \textsc{Omega} targets are glued to a mounting stalk to hold them in place initially.
+As previously stated, high driver efficiencies are desirable for \ac{IFE}, and the relative inefficiency of the hohlraum light to x-ray conversion means that direct-drive is the assumed method for a future \ac{IFE} power plant.
+As opposed to indirectly-driven \ac{NIF} experiments, where the capsule is held in place by a thin tent attached to the hohlraum, directly-driven \textsc{Omega} targets are glued to a mounting stalk to hold them in place.
 This can lead to low-mode asymmetries and unstagnated flows in the hotspot, which degrade the performance~\cite{gatujohnson_impact_2020}.
 
-In plasmas, electro-magnetic radiation is absorbed beyond the critical surface, which is the surface interior to which the electron density is sufficiently high, that light of a given wavelength cannot propagate.
+In plasmas, electro-magnetic radiation is absorbed beyond the critical surface, interior to which the electron density is sufficiently high, such that light of a given wavelength cannot propagate.
 For indirect-drive, high frequency x-rays are absorbed close to the ablation surface, whereas for direct-drive, longer wavelength laser light has a critical surface which is exterior to the ablation surface.
 Thus, energy is absorbed beyond the critical surface, heating this `coronal plasma'\footnote{The term coronal plasma shall be used throughout this thesis to refer to the approximately isothermal, outward flowing, low density plasma blow-off, which is exterior to the critical surface.} to high temperatures.
-The absorbed laser energy is then transported radially inward via thermal conduction in the `conduction-zone', to the higher density, lower temperature ablation surface, as is shown in Fi.g~\ref{fig:intro_direct}.
+The absorbed laser energy is then transported radially inward via thermal conduction in the `conduction-zone', to the higher density, lower temperature ablation surface, as is shown in Fig.~\ref{fig:intro_direct}.
 Non-uniform absorption at the critical surface is partially smoothed by non-radial thermal conduction in this region, which is more efficient for shorter wavelength perturbations~\cite{bodner_critical_1981}.
 
 \begin{figure}[t!]
@@ -407,7 +415,7 @@ Non-uniform absorption at the critical surface is partially smoothed by non-radi
 
 Despite this non-radial smoothing in the conduction zone, non-uniformity of the laser drive has proven to be a significant difficulty for direct-drive \ac{ICF} implosions.
 The beam layout and their widths lead to a `beam-mode' asymmetry, which for \textsc{Omega} has a distinctive Legendre-mode, $\ell=10$ pattern, which can be seen in Fig.~\ref{fig:SOLAS_qpR_IFRIIT_test}.
-Focal spots of high power lasers are also often highly non-uniform when so-called `beam-smoothing' techniques are not employed.
+Focal spots of high-power lasers are also often highly non-uniform when so-called `beam-smoothing' techniques are not employed.
 As light propagates from the beam port to the far-field, random `phase-aberrations' are picked up by the beam due to distortions in the medium through which it travels.
 These then result in large scale modulations of the focal spot intensity profile.
 When the target is illuminated by these modulated beams, significant asymmetry is imparted on the drive, severely limiting the overall performance.
@@ -415,18 +423,18 @@ A variety of beam smoothing techniques are thus employed which lead to a signifi
 Fig.~\ref{fig:intro_SmoothingOptics} shows a schematic of several important beam smoothing techniques employed by the \textsc{Omega} laser system.
 The diagram demonstrates that without beam smoothing, a uniform near-field intensity profile picks up phase aberrations along the laser chain, leading to interference and thus large scale modulations at focus.
 Phase plates are an array of small optical elements which offset the phase of the beam at discrete points in the near-field, acting to shift the scale of modulation in the far-field to a much smaller spatial scale~\cite{kato_random_1984}.
-These short-scale modulations are known as `laser-speckle', and are much more easily smoothed in the conduction zone, than the large modulations from beams without smoothing techniques applied.
+These short-scale modulations, known as `laser-speckle', are much more easily smoothed in the conduction zone than the large modulations from beams without smoothing techniques applied.
 The static phase plate far-field profile can be further improved by using \ac{SSD}, which creates a temporally varying speckle pattern and thus the time-integrated profile is much smoother.
 Fig.~\ref{fig:intro_SmoothingOptics} compactly displays how \ac{SSD} operates, which is to apply a temporally varying bandwidth to the light signal, then pass it through a diffraction grating, such that different wavelengths are dispersed in different directions~\cite{skupsky_improved_1989,hohenberger_optical_2016}.
-Finally, Polarisation smoothing is employed on \textsc{Omega}, which works by splitting each beam into two slightly spatially-offset, orthogonally polarised sub-beams.
+Finally, polarisation smoothing is employed on \textsc{Omega}, which works by splitting each beam into two slightly spatially-offset, orthogonally polarised sub-beams.
 These sub-beams do not interfere with each other, and thus when added together the root-mean-square intensity variation of the whole beam is improved by a factor $\sqrt{2}$~\cite{tsubakimoto_suppression_1992,boehly_reduction_1999}.
 
-Although the combination of these optics create an intensity spot which is smooth when time-integrated, instantaneously large amplitude, short wavelength perturbations exist.
+Although the combination of these optics creates an intensity spot which is smooth when time-integrated, instantaneously large amplitude, short wavelength perturbations exist.
 When an extended plasma corona has formed, these perturbations are effectively smoothed by non-radial thermal conduction in the conduction zone, but early in the implosion, the small amplitude perturbations are deposited close to the ablation surface.
 This is known as `laser imprint' and unless mitigated by sufficiently raising the adiabat of the implosion, can break up the shell.
 The adiabat is typically set for direct-drive implosion by including a small `picket' pulse in the laser temporal profile, which weakly shocks the shell.
 The laser turns off after this picket pulse, leading to an unsupported shock, which decays in amplitude as it travels through the shell, such that only the outer extent of the shell, where the imprint occurs, is on a high adiabat.
-Imprint does not occur in indirectly-driven implosion, and thus the highest performing direct-drive experiments normally have much higher adiabats.
+Imprint does not occur in an indirectly-driven implosion, and thus the highest performing direct-drive experiments normally have much higher adiabats.
 
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Introduction/Images/LPI diagram.png}
@@ -444,13 +452,13 @@ Imprint does not occur in indirectly-driven implosion, and thus the highest perf
 \ac{LPIs} also act to significantly degrade direct-drive \ac{ICF} implosions.
 A schematic diagram of \ac{LPIs} relevant to direct-drive is shown in Fig.~\ref{fig:intro_dd_lpis}.
 Energy is absorbed either via \ac{Inv-Brem}, which is the absorption of laser energy by an electron while it undergoes a collision with an ion, or by resonance absorption, which is the excitation of a resonant \ac{EPW} at the critical surface.
-\ac{Inv-Brem} is the dominant absorption mechanism for \textsc{Omega} experiments, because frequency-tripled\footnote{The \textsc{Omega} laser-beam are initially generated at a vacuum wavelength, $\lambda_0 = 1064\ \text{nm}$, by a Nd:YAG crystal and then passed through a non-linear optic, which converts the wavelength to $\lambda_0^{3\omega}=351\ \text{nm}$~\cite{boehly_upgrade_1995}.} light is employed for the lasers, and the \ac{Inv-Brem} rate scales with frequency of the light~\cite{huba_nrl_2013}.
+\ac{Inv-Brem} is the dominant absorption mechanism for \textsc{Omega} experiments, because frequency-tripled\footnote{The \textsc{Omega} laser-beams are initially generated at a vacuum wavelength, $\lambda_0 = 1064\ \text{nm}$, by a Nd:YAG crystal and then passed through a non-linear optic, which converts the wavelength to $\lambda_0^{3\omega}=351\ \text{nm}$~\cite{boehly_upgrade_1995}.} light is employed for the lasers, and the \ac{Inv-Brem} rate scales with frequency of the light~\cite{huba_nrl_2013}.
 Similarly to indirect-drive, \ac{SBS} and \ac{SRS} act to reflect laser light away from the capsule.
 However, unlike for indirect-drive, where \ac{CBET} is used to tune the symmetry of the implosion, in direct-drive configurations \ac{CBET} acts to reflect significant amounts of energy.
 For direct-drive, the dominant \ac{CBET} interaction occurs as light from the edge of beams reflects outward and gains energy from inward travelling beams.
 This mechanism is responsible for a $\sim20\%$ reduction in energy for typical \textsc{Omega} implosions over the whole implosion, and can instantaneously reduce power deposition by up to $\sim50\%$~\cite{colaitis_inverse_2021}.
 Additionally, \ac{LPIs} which excite an \ac{EPW}, specifically \ac{TPD} and \ac{SRS}, can trap and accelerate a population of electrons to high energies ($\gtrsim50\ \text{keV}$), which travel through the ablator material and preheat the fuel, reducing compressibility and thus performance.
-Finally, filamentation of the beam can occur, where the field self-focusses through low-density channels in the plasma, which increases laser non-uniformities~\cite{afshar-rad_evidence_1992}.
+Finally, filamentation of the beam can occur, where the field self-focuses through low-density channels in the plasma, which increases laser non-uniformities~\cite{afshar-rad_evidence_1992}.
 
 %################################################################################
 %################################################################################
@@ -458,7 +466,7 @@ Finally, filamentation of the beam can occur, where the field self-focusses thro
 \label{sec:intro_direct_exp}
 
 In a central hotpot \ac{ICF} implosion, fusion reactions are made possible by a sufficiently hot and dense plasma hotspot, which is confined by the inertia of the target.
-The energy required to assemble this hot and dense configuration occurs through a series of energy transfers.
+The energy required to assemble this hot and dense configuration occurs through a series of energy transfers:
 \begin{itemize}
     \item Laser energy is converted to internal energy by absorption in the coronal plasma.
     \item This energy is coupled to kinetic energy in the shell by thermal conduction in the conduction zone.
@@ -467,12 +475,12 @@ The energy required to assemble this hot and dense configuration occurs through 
 \end{itemize}
 The overall performance of the implosion scales with the internal energy of the hotspot and can be improved, either by increasing the available driver energy, or by increasing the efficiency of these energy conversions.
 The \textsc{Omega} laser facility has insufficient energy to achieve ignition conditions, thus inferring the performance of equivalent implosions on a larger laser direct-drive facility relies on techniques known as hydrodynamic scaling.
-A combination of analytical methods and simulations are typically used to extrapolate the performance of \textsc{Omega} implosions to \ac{NIF} energies, $E_{\text{d}}\sim2\ \text{MJ}$, in order to compare performance of indirect- and direct-drive experiments~\cite{zhou_hydrodynamic_2007}.
+A combination of analytical methods and simulations is typically used to extrapolate the performance of \textsc{Omega} implosions to \ac{NIF} energies, $E_{\text{d}}\sim2\ \text{MJ}$, in order to compare performance of indirect- and direct-drive experiments~\cite{zhou_hydrodynamic_2007}.
 
 Better hydrodynamic stability of the implosion improves the integrity of the imploding shell.
 In analogy to a stiff piston compressing a gas, a denser and more uniform shell efficiently converts kinetic energy to internal energy of the hotspot gas, whereas a shell with short wavelength perturbations is effectively less dense and more compressible, decreasing conversion efficiency~\cite{betti_deceleration_2002}.
 Over the past decade, implosion performance improved markedly by using statistical modelling techniques~\cite{lees_experimentally_2021}, to identify and reduce sources of yield degradation~\cite{lees_understanding_2023}.
-Primarily by focussing on eliminating these short wavelength instabilities using the statistical model, fusion yield was tripled in a short period of time from $5\times10^{13}$ in 2016, to $1.5\times10^{14}$ in 2018~\cite{gopalaswamy_tripled_2019}\footnote{Improved instability robustness was achieved in these implosions, mostly by limiting the convergence ratio of the implosions.}.
+Primarily by focusing on eliminating these short wavelength instabilities using the statistical model, fusion yield was tripled in a short period of time from $5\times10^{13}$ in 2016, to $1.5\times10^{14}$ in 2018~\cite{gopalaswamy_tripled_2019}\footnote{Improved instability robustness was achieved in these implosions, mostly by limiting the convergence ratio of the implosions.}.
 The details of the statistical model used are discussed in Sec.~\ref{sec:Res1_OMEGA_stat_modelling}.
 
 More recently, focus has also turned to increasing the efficiency of the energy conversion through other means.
@@ -494,7 +502,7 @@ A campaign which optimised the addition of silicon dopant recently demonstrated 
 Important physical processes in \ac{ICF} implosions occur on short time and length-scales, and have high temperatures and densities.
 Inference of plasma conditions from escaping particles or radiation is thus typically used to understand the implosion dynamics.
 However, these methods are limited to measuring emissive volumes at certain times throughout the experiments.
-Simulations are an important tool, which are used to study \ac{ICF} experiments at greater spatial and temporal resolution than is allowed for by many diagnostic tools.
+Simulations are an important tool, and are used to study \ac{ICF} experiments at greater spatial and temporal resolution than is allowed for by many diagnostic tools.
 They can also be used to, for example, extrapolate the performance of experiments to larger facilities, or to help design new experiments~\cite{kritcher_design_2022}.
 The applicability of simulations does of course depend upon the validity of the models used.
 Hydrodynamic codes are the workhorse tool, used to simulate entire \ac{ICF} implosions.
@@ -508,7 +516,7 @@ To improve predictive capability, it was deemed necessary to include a 3-D ray-t
 The discussion of indirect-drive in Sec.~\ref{sec:intro_indirect} and direct-drive in Sec.~\ref{sec:intro_direct} hopefully illustrated that \ac{LPIs} are a significant concern on current \ac{ICF} experiments.
 Particularly \ac{CBET} in direct-drive is highly energetically significant, reducing the efficiency of laser absorption by $\sim20\%$ over the whole experiment.
 Additionally, \ac{CBET} significantly alters deposition asymmetries~\cite{colaitis_inverse_2021}, and therefore it is crucial to accurately model the interaction, in order to understand the degradation of performance from multi-dimensional effects.
-Despite this, few multidimensional \ac{CBET} models exist, which are suitable for direct-drive calculations, and only a single code, \textsc{Ifriit}, had been integrated to run inline with a 3-D hydrodynamics code~\cite{colaitis_inverse_2021}.
+Despite this, few multidimensional \ac{CBET} models exist, suitable for direct-drive calculations, and only a single code, \textsc{Ifriit}, had been integrated to run inline with a 3-D hydrodynamics code~\cite{colaitis_inverse_2021}.
 The second aim of the work was therefore to develop a \ac{CBET} model for the ray-trace which could be employed in direct-drive simulations and run inline with the hydrodynamics.
 
 The remainder of this manuscript is organised as followed:

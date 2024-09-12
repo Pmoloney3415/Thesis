@@ -38,7 +38,7 @@ Neglecting the effect of random shot-to-shot variations, the dynamics and perfor
 The target can be described by a set of materials and their thicknesses.
 Initial target parameters are intimately coupled to the physics of the implosion and, in part, dictate the propagation time of shocks through the target, hydrodynamic stability and absorption of the laser energy.
 The pulse shape defines the laser power which is incident of the target as a function of time.
-It can be designed to, for example, drive shocks by introducing sharp rises in the incident power with time, which leads to large changes of ablation pressure~\cite{scott_shock-augmented_2022}.
+It can be designed to, for example, drive shocks by introducing sharp rises in the incident power with time, which leads to large changes of ablation pressure~\cite{scott_shockaugmented_2022}.
 A given facility also has a number of beam ports, each of which has a specific origin and pointing location, that influence the magnitude of the \textit{beam-mode} asymmetry, arising from the uniformity of laser absorption.
 The focal-spot intensity profile of each laser, specifically the beam radius, is an additional parameter which can be varied.
 It plays an important role in defining both the power which can be coupled to the target and the magnitude of beam-mode asymmetry.
@@ -46,7 +46,7 @@ It plays an important role in defining both the power which can be coupled to th
 As shall be explored in this chapter, increasing the beam radius alters the magnitude of energy lost via \ac{CBET}, leading to a reduction in the maximum target mass that can be imploded at a given speed~\cite{froula_increasing_2012}.
 The width of the beam relative to the target is therefore often effectively varied from shot to shot, by changing the outer radius (and therefore mass) of the target, while fixing the width of the beam.
 This defines a dimensional variable, which is the radius of the beam divided by the target radius, $R_b/R_t$.
-Typically, at the \textsc{Omega} laser facility, this is explicitly defined as the radius of the beam which contains 95 \% of the incident power divided by the initial outer target radius~\cite{froula_increasing_2012,colaitis_exploration_2023,anderson_enhanced_2024},
+Typically, at the \textsc{Omega} laser facility, this is explicitly defined as the radius of the beam which contains 95\% of the incident power divided by the initial outer target radius~\cite{froula_increasing_2012,colaitis_exploration_2023,anderson_enhanced_2024},
 \begin{equation}
     R_b/R_t = \frac{r_{95}}{R_t},
 \end{equation}
@@ -70,7 +70,7 @@ While in the absence of \ac{CBET}, increasing $R_b/R_t$ should lead to greater b
 However, when accounting for \ac{CBET}, increased overlap will result in more \ac{CBET}, which degrades absorption uniformity.
 
 Isolating the contribution of \ac{CBET} in particular is important to enable extrapolation of experimental results to future facilities.
-It is hoped that next generation direct-drive facilities will have broad bandwidth lasers\footnote{It is expected that $\Delta\omega/\omega_0\sim1\%$ will be sufficient to eliminate \ac{CBET} in direct-drive for frequency-tripled lasers.} which are expected to almost entirely eliminate \ac{CBET}~\cite{bates_mitigation_2018,bates_suppressing_2023,follett_ray-based_2023}.
+It is hoped that next generation direct-drive facilities will have broad bandwidth lasers\footnote{It is expected that $\Delta\omega/\omega_0\sim1\%$ will be sufficient to eliminate \ac{CBET} in direct-drive for frequency-tripled lasers.} which are expected to almost entirely eliminate \ac{CBET}~\cite{bates_mitigation_2018,bates_suppressing_2023,follett_raybased_2023}.
 Studying how \ac{CBET} specifically affects absorption and stagnation symmetry can not currently be done experimentally, as significant backscatter \ac{CBET} occurs at all laser facilities which are capable of conducting compression experiments.
 Therefore, computational studies are well suited to investigate how $R_b/R_t$ influences the role of \ac{CBET}.
 
@@ -93,7 +93,7 @@ Froula \textit{et al.} conducted a series of implosions which systematically var
 Soft x-ray emission data from a selection of implosions with different radii are plotted in Fig.~\ref{fig:RbRt_froula}, all of which are taken at the same target shell radius.
 These images show that at lower values of $R_b/R_t$, mid-mode perturbations\footnote{In direct-drive, \textit{mid-modes} are loosely defined as modes similar to $\ell=10$.} become increasingly significant.
 The results of these experiments found that neutron yield was maximised at $R_b/R_t\sim 0.8$.
-1-D modelling using the \ac{CBET} model in \textsc{Lilac} was in good agreement with the experimental results, verifying that \ac{CBET} was responsible for the decrease in coupled energy to the target~\cite{igumenshchev_crossed-beam_2012}.
+1-D modelling using the \ac{CBET} model in \textsc{Lilac} was in good agreement with the experimental results, verifying that \ac{CBET} was responsible for the decrease in coupled energy to the target~\cite{igumenshchev_crossedbeam_2012}.
 The DT-liner campaign on \textsc{Omega} has also significantly enhanced the absorption of laser energy, by using larger outer radius capsules to reduce $R_b/R_t$ and thus mitigate \ac{CBET}~\cite{williams_high_2021}.
 This led to the recent demonstration of hotspot fuel gain exceeding unity for the first time in a direct-drive implosion~\cite{williams_demonstration_2024}.
 
@@ -101,9 +101,9 @@ During direct-drive implosions, the target implodes radially inward, therefore t
 At the \textsc{Omega} laser facility, beam radii are fixed for a single shot, and therefore it makes sense to parameterise the initial condition by the ratio of the beam radius to the initial target radius.
 A promising laser optics technique known as \textit{zooming}, could significantly enhance performance by reducing the focal spot of the laser to track the critical radius as the target implodes~\cite{kehne_implementation_2013}.
 The reduced beam radius late in the implosion reduces blowby light and leads to more deposition closer to the ablation surface, which enhances the ablation pressure and overall performance.
-Simulations by Trickey \textit{et al.} in Ref.~\cite{trickey_physics_2024} have demonstrated that, assuming full \ac{CBET} mitigation, zooming can enhance ablation pressures by $\sim50\ \%$ for ignition scale direct-drive experiments.
+Simulations by Trickey \textit{et al.} in Ref.~\cite{trickey_physics_2024} have demonstrated that, assuming full \ac{CBET} mitigation, zooming can enhance ablation pressures by $\sim50\%$ for ignition scale direct-drive experiments.
 If zooming is employed without full \ac{CBET} mitigation, the fractional increases would be substantially larger, because \ac{CBET} losses scale very strongly with $R_b/r_{\text{cr}}$, which is the ratio of beam radius to critical radius~\cite{colaitis_exploration_2023}.
-2-D modelling has also demonstrated that zooming the beam to $\sim60$\% of its initial radius effectively mitigates \ac{CBET} while maintaining low-mode uniformity~\cite{igumenshchev_laser-beam_2013}.
+2-D modelling has also demonstrated that zooming the beam to $\sim60$\% of its initial radius effectively mitigates \ac{CBET} while maintaining low-mode uniformity~\cite{igumenshchev_laserbeam_2013}.
 
 %################################################################################
 %################################################################################
@@ -151,7 +151,7 @@ The yield over clean due to the fill age and radioactive decay can then be taken
 \end{equation}
 where $\text{Y}^{\text{sim}}_{1\text{-D,He}}$ is the yield from the 1-D simulation with accumulated ${}^{3}\text{He}$ and $\mu_4$ is a fitting parameter.
 Good agreement is observed with a fitted parameter value of $\mu_4 = 1.3$.
-The value is larger than 1 (and the 95 \% confidence interval does not include 1), which suggests stronger degradation than observed in 1-D calculations.
+The value is larger than 1 (and the 95\% confidence interval does not include 1), which suggests stronger degradation than observed in 1-D calculations.
 This could be due to radioactive decay damaging the shell, leading to increased hydrodynamic instability growth~\cite{lees_understanding_2023}.
 
 \paragraph*{Mode 1 Degradation}
@@ -177,13 +177,13 @@ Work has been conducted to minimise the effect of the $\ell=1$ on \textsc{Omega}
     \caption{Experimentally inferred fusion yield degradation due to the finite beams on the \textsc{Omega} laser facility.
     The dotted orange curve is the fit obtained from just using the $\overline{R}_{b/t}$ relation, while the black dashed curve uses the full relation in Eq.~\ref{eq:Res1_RbRt_degradation}.
     The vertical dotted line indicates the critical threshold, $\hat{R}_{b/t}^{\text{crit}}=0.86$, after which the $\hat{R}_{b/t}$ also has an effect.
-    The cross validation error from the $\overline{R}_{b/t}$ and full fit is $-1.0\ \%$ and $-0.5\ \%$ respectively.
+    The cross validation error from the $\overline{R}_{b/t}$ and full fit is $-1.0\%$ and $-0.5\%$ respectively.
     The figure has been reproduced with permission from Ref.~\cite{lees_understanding_2023}.}%
     \label{fig:RbRt_YOC_lees}
 \end{figure}
 
 \paragraph*{Finite Beam Degradation}
-The \textsc{Omega} laser facility has 60 beams arranged around a sphere, which generally gives good illumination uniformity on a hard sphere surface, less than the 1 \% deviation which is believed to be necessary to achieve ignition~\cite{craxton_direct-drive_2015,goncharov_national_2017}.
+The \textsc{Omega} laser facility has 60 beams arranged around a sphere, which generally gives good illumination uniformity on a hard sphere surface, less than the 1\% deviation which is believed to be necessary to achieve ignition~\cite{craxton_directdrive_2015,goncharov_national_2017}.
 An $\ell=10$ remains in the deposition however, as is demonstrated in Fig.~\ref{fig:SOLAS_qpR_IFRIIT_test}, which is often referred to as the beam-mode.
 In the absence of \ac{CBET}, increasing $R_b/R_t$ increases the hard-sphere illumination uniformity~\cite{gopalaswamy_using_2021}.
 As already described however, increasing beam radius leads to more blowby light and therefore more \ac{CBET}.
@@ -218,7 +218,7 @@ Experiments between $R_{b/t}^{\text{crit}} < R_b/R_t < 1$ could be influenced by
 The hypothesis tested in this chapter is that the change in yield over clean at $R_b/R_t = R_{b/t}^{\text{crit}}$ is due to increasing \ac{CBET} as beam radius increases, which increases beam-mode asymmetry and therefore suppresses the $\text{YOC}_{b}$ term.
 Although \textsc{Lilac} does include a model for \ac{CBET}, it is a 1-D code and therefore the 3-D beam-mode perturbations cannot be inferred from its results.
 Qualitatively, this hypothesis can explain the observed behaviour in Fig.~\ref{fig:RbRt_YOC_lees}, which demonstrates that at $R_{b/t}^{\text{crit}}$, the gradient of $\text{YOC}_{b}$ decreases.
-This behaviour should occur if \ac{CBET} acted to amplify the asymmetry of the stagnation state, causing the simulation to be less similar to the 1-D \textsc{Lilac} results, than if \ac{CBET} did not significantly amplify asymemtries.
+This behaviour should occur if \ac{CBET} acted to amplify the asymmetry of the stagnation state, causing the simulation to be less similar to the 1-D \textsc{Lilac} results, than if \ac{CBET} did not significantly amplify asymmetries.
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -257,7 +257,7 @@ In the corona, the expanding plasma also diverges in only two directions rather 
 This could have the effect of shifting the deposition to greater radii above the critical surface, reducing the drive efficiency.
 
 Despite these differences, the simulations were, qualitatively, sufficiently hydrodynamically similar to spherical implosions, to suggest that parallels can be drawn from the work done here to spherical implosion data.
-Cylindrical implosion experiments are also conducted on laser facilities, the results of which are often explicitly extrapolated to spherical implosions, suggesting that the approach is valid and accepted within the community~\cite{perez-callejo_cylindrical_2022,tubbs_direct-drive_1999}.
+Cylindrical implosion experiments are also conducted on laser facilities, the results of which are often explicitly extrapolated to spherical implosions, suggesting that the approach is valid and accepted within the community~\cite{perez-callejo_cylindrical_2022,tubbs_directdrive_1999}.
 Although the differences between the two regimes are not quantified in the work conducted in this chapter, future simulations could be performed, which extend the platform to a 2-D `plane' in spherical rather than cylindrical geometry, which would capture the spherical convergence of the target and divergence of the coronal flow.
 This is discussed in more detail at the end of the chapter, in Sec.~\ref{sec:Res1_Conclusions}.
 
@@ -546,7 +546,7 @@ It is important to note that although this analysis only considers a single beam
 
 Results shall be presented in this section of the $P_{\text{dep}}$ asymmetries for simulations including \ac{CBET}, contrasted to Sec.~\ref{sec:Res1_noCBET_asymmetries}, which presented results for the no-\ac{CBET} simulations.
 Similarly to Fig.~\ref{fig:Res1_PR_noCBET_modes}, plotted in Figs.~\ref{fig:Res1_PR_CBET_modes}.a,~\ref{fig:Res1_PR_CBET_modes}.c and~\ref{fig:Res1_PR_CBET_modes}.e are $P_{\text{dep}}R(t,\phi)$ for $R_b/R_t=0.8$, $0.9$ and $1.0$, respectively.
-Note that in these plots, the colour scale saturates at $20\ \%$ rather than $5\ \%$, which demonstrates that instantaneous deposition asymmetries are typically much larger when the effects of \ac{CBET} are included.
+Note that in these plots, the colour scale saturates at $20\%$ rather than $5\%$, which demonstrates that instantaneous deposition asymmetries are typically much larger when the effects of \ac{CBET} are included.
 A small discontinuity is visible in these plots at $t\sim2.15\ \text{ns}$, which is the time that the critical density passes from the CH ablator material into the DT fuel.
 Mix between these materials is not modelled in \textsc{Chimera}, so this critical density traversal leads to short-lived, potentially spurious, radially outward $\nabla n_e$ near the critical radius, which are visible in the field reconstruction and deposition.
 
@@ -798,7 +798,7 @@ Similar initial conditions could also be used to study further multidimensional 
 For example, laser imprint is a significant issue in direct-drive and means that implosions must be conducted at a high adiabat for optimal yields~\cite{patel_effects_2023}.
 This limits the compressibility and therefore maximum performance of \ac{ICF} experiments~\cite{dittrich_design_2014,robey_performance_2016}.
 Improved understanding of laser imprint requires high resolution simulations, due to the small spatial scale of the intensity modulations.
-Typically, high resolution, 2-D, $r-z$ simulations with a 3-D laser ray-trace~\cite{hu_direct-drive_2019}, or lower resolution, fully 3-D simulations~\cite{igumenshchev_rarefaction_2019} are conducted to study the effect of imprint.
+Typically, high resolution, 2-D, $r-z$ simulations with a 3-D laser ray-trace~\cite{hu_directdrive_2019}, or lower resolution, fully 3-D simulations~\cite{igumenshchev_rarefaction_2019} are conducted to study the effect of imprint.
 2-D $r-z$ \ac{Rad-Hydro} simulations with a 3-D laser ray-trace average the deposition from the 3-D ray-trace around the azimuthal angle, and therefore artificially smooth out the imprint modulation to power deposition.
 While 3-D simulations at a sufficiently high resolution should resolve the imprint seed properly, these are extremely expensive to perform, particularly for the fixed angular resolution, Eulerian code \textsc{Aster} which is typically used for these problems.
 By performing a spherical or cylindrical `slice' simulation with an imprint model, the seed and the growth of imprint induced instabilities could be consistently modelled at high resolutions, providing a complimentary study to the existing literature.
