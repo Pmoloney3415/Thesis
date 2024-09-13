@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  12 SEP 2024 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  13 SEP 2024 15:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1130,7 +1130,20 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Warning: Unused global option(s):
     [onesided,pagesize].
 
-(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Numerics/NumericsMain.aux) (./Results1/Results1Main.aux) (./Results2/Results2Main.aux) (./Appendix/Permissions.aux))
+(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Theory/TheoryMain.aux
+
+LaTeX Warning: Label `sec:theory_resisMHD' multiply defined.
+
+
+LaTeX Warning: Label `sec:theory_resisMHD@cref' multiply defined.
+
+
+LaTeX Warning: Label `sec:theory_kineticheatflow' multiply defined.
+
+
+LaTeX Warning: Label `sec:theory_kineticheatflow@cref' multiply defined.
+
+) (./Appendix/Permissions.aux))
 \openout1 = `Thesis_MainSample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1153,4 +1166,231 @@ LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font I
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+Package scrbase Info: activating english \abstractname on input line 9.
+Package scrbase Info: activating english \partname on input line 9.
+Package scrbase Info: activating english \chaptername on input line 9.
+Package scrbase Info: activating english \appendixname on input line 9.
+Package scrbase Info: activating english \figurename on input line 9.
+Package scrbase Info: activating english \tablename on input line 9.
+Package scrbase Info: activating english \contentsname on input line 9.
+Package scrbase Info: activating english \listfigurename on input line 9.
+Package scrbase Info: activating english \listtablename on input line 9.
+Package scrbase Info: activating english \bibname on input line 9.
+Package scrbase Info: activating english \indexname on input line 9.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(91.04872pt, 415.41043pt, 91.04872pt)
+* v-part:(T,H,B)=(71.13188pt, 688.5567pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=415.41043pt
+* \textheight=688.5567pt
+* \oddsidemargin=18.77873pt
+* \evensidemargin=18.77873pt
+* \topmargin=-38.53812pt
+* \headheight=17.0pt
+* \headsep=25.218pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=89.62619pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count467
+\scratchdimen=\dimen289
+\scratchbox=\box74
+\nofMPsegments=\count468
+\nofMParguments=\count469
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count470
+\MPscratchDim=\dimen290
+\MPnumerator=\count471
+\makeMPintoPDFobject=\count472
+\everyMPtoPDFconversion=\toks42
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `Thesis_MainSample.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Thesis_MainSample.bbl' found.
+ (./Thesis_MainSample.bbl)
+Package biblatex Info: Reference section=0 on input line 9.
+Package biblatex Info: Reference segment=0 on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (c:/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Redeclaring math symbol \iintop on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \iiintop on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \oiintop on input line 9.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 9.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 9.
+Package hyperref Info: Link coloring ON on input line 9.
+ (./Thesis_MainSample.out) (./Thesis_MainSample.out)
+\@outlinefile=\write4
+\openout4 = `Thesis_MainSample.out'.
+
+Class scrreprt Info: loading recommended package `bookmark'.
+(scrreprt)           Using `bookmark' together with `hyperref' is recommended,
+(scrreprt)           because of handling of possible bookmark level gaps.
+(scrreprt)           You can avoid loading `bookmark' with KOMA-Script option
+(scrreprt)           `bookmarkpackage=false' before \begin{document} and
+(scrreprt)           you can avoid this message adding:
+(scrreprt)             \usepackage{bookmark}
+(scrreprt)           before \begin{document} on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+ (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
+\BKM@id=\count473
+))
+\openout2 = `Preamble/PreambleMain.aux'.
+
+ (./Preamble/PreambleMain.tex
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 2.
+<Preamble/new_college_logo.png, id=4, 12948.375pt x 1422.31375pt>
+File: Preamble/new_college_logo.png Graphic file (type png)
+<use Preamble/new_college_logo.png>
+Package pdftex.def Info: Preamble/new_college_logo.png  used on input line 2.
+(pdftex.def)             Requested size: 195.24341pt x 21.44229pt.
+ [1
+
+
+
+
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Preamble/new_college_logo.png>] [2] (./Thesis_MainSample.toc)
+\tf@toc=\write5
+\openout5 = `Thesis_MainSample.toc'.
+
+ [3
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 75.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [4
+
+] (./Thesis_MainSample.lot)
+\tf@lot=\write6
+\openout6 = `Thesis_MainSample.lot'.
+
+ [5
+
+] (./Thesis_MainSample.lof)
+\tf@lof=\write7
+\openout7 = `Thesis_MainSample.lof'.
+
+ [6
+
+]) [7]
+\openout2 = `Theory/TheoryMain.aux'.
+
+ (./Theory/TheoryMain.tex
+chapter 1.
+[8
+
+
+
+
+] [9] [10]) [11] [12
+
+
+
+]
+
+LaTeX Warning: Empty bibliography on input line 26.
+
+\openout2 = `Appendix/Permissions.aux'.
+
+(./Appendix/Permissions.tex) [13
+
+
+
+
+
+
+] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Theory/TheoryMain.aux) (./Appendix/Permissions.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package logreq Info: Writing requests to 'Thesis_MainSample.run.xml'.
+\openout1 = `Thesis_MainSample.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 33409 strings out of 474165
+ 662967 string characters out of 5749497
+ 1938542 words of memory out of 5000000
+ 55178 multiletter control sequences out of 15000+600000
+ 639252 words of font info for 118 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 122i,11n,121p,10978b,988s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
+Output written on Thesis_MainSample.pdf (13 pages, 265332 bytes).
+PDF statistics:
+ 247 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+

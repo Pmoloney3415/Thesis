@@ -1,1 +1,292 @@
-\chapter{Theory}
+\chapter{Theory}%
+\label{chap:Theory}
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Basic Plasma Physics}%
+\label{sec:theory_plasma_phys}
+
+What is a plasma.
+Quasineutrality.
+Debeye screening.
+Plasma Frequency derivation.
+Turn this into critical density and say this is importatn for lasers.
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Kinetic and Fluid Formulations of Plasmas}%
+\label{sec:theory_kin_fluid_plasmas}
+
+A bit of blather about what these descriptions are trying to do generally.
+Ideally would solve every interaction between every particle but this is intractible.
+
+%################################################################################
+%################################################################################
+\subsection{The Vlasov Equation}%
+\label{sec:theory_vlasov}
+
+x and v of all particles described by f.
+bulk collision operator and lorentz force give vlasov equation.
+Solved by VFP.
+
+%################################################################################
+%################################################################################
+\subsection{The Fluid Equations}%
+\label{sec:theory_fluid}
+
+Take moments of vlasov, assuming equilibrium, to get fluid equations.
+Give assumptions.
+Describe closure problem.
+Say how solved in Chimera.
+Knudsen number describes how kinetic it is.
+
+%################################################################################
+%################################################################################
+\subsection{Radiation Transport}%
+\label{sec:theory_kineticheatflow}
+
+Additional mechanism which described emission and absorption of radiation by plasma.
+Important for high temperatures and densities of ICF.
+Say how solved in Chimera.
+
+%################################################################################
+%################################################################################
+\subsection{Magnetohydrodynamics}%
+\label{sec:theory_MHD}
+
+Say electric fields on large scales don't exist in plasma because they are dielectric.
+If magnetic field are important, then extend the fluid equations to include the effect of B on the above equations.
+
+%##########################################################
+\subsubsection{Ideal MHD}%
+\label{sec:theory_idealMHD}
+
+Get lorentz force on plasma.
+Solve for B using Maxwell.
+Solve for j using Ohms law.
+Magnetic tension and pressure.
+Give plasma beta.
+
+%##########################################################
+\subsubsection{Magnetised Heatflow}%
+\label{sec:theory_magheatflow}
+
+Give Hall parameters.
+Say they describe transport processes like heatflow.
+
+%##########################################################
+\subsubsection{Resistive MHD}%
+\label{sec:theory_resisMHD}
+
+Plasma often not perfectly conducting so B field moves without flow.
+Describe Rm.
+Say when important.
+
+%##########################################################
+\subsubsection{The Nernst Effect}%
+\label{sec:theory_resisMHD}
+
+Hmmm, describe and say when important.
+
+%##########################################################
+\subsubsection{The Biermann Battery Effect}%
+\label{sec:theory_biermann}
+
+Hmmm, describe and say when important.
+
+%################################################################################
+%################################################################################
+\subsection{Kinetic Heatflow}%
+\label{sec:theory_kineticheatflow}
+
+Say that in laser heated plasmas, often have Knudsen significant due to high temps and low densities.
+Therefore, accurate modes include kinetic model for heatflux.
+Either VFP or SNB etc, say roughly what they do.
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Waves in Plasma}%
+\label{sec:theory_waves_plasmas}
+
+3 waves can exist in plasma without B.
+First look at plasma waves, i.e. not a light wave, both of which are longitudinal.
+
+%################################################################################
+%################################################################################
+\subsection{Plasmas as a Dielectric Medium}%
+\label{sec:theory_dielectric}
+
+Talk about how plasmas are dielectric, therefore described by susceptibilties.
+Can get dispersion relations by susceptibilities and outline process.
+Multi-species effects.
+
+%################################################################################
+%################################################################################
+\subsection{Plasma Waves}%
+\label{sec:theory_longwaves}
+
+Get disp rels of IAW and EPW and say what they both are physically.
+
+%################################################################################
+%################################################################################
+\subsection{Light Waves}%
+\label{sec:theory_transwaves}
+
+These are transverse waves and therefore don't create space-charge separation, unlike longitudinal waves.
+Get disp rel and show wpe comes out.
+Give physical interpretation.
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Propagation of Light in a Plasma}%
+\label{sec:theory_propagation}
+
+Want to described light propagating through plasma in limit of typical ICF configurations.
+Weakly focussing, moderate intensities etc.
+
+
+%################################################################################
+%################################################################################
+\subsection{Paraxial Approximation}%
+\label{sec:theory_paraxial}
+
+Weakly focussing limit.
+Give equations, interpretations and validity.
+
+%################################################################################
+%################################################################################
+\subsection{WKB Approximation}%
+\label{sec:theory_WKB}
+
+Uniform medium limit.
+Give equations, interpretations and validity.
+Give Airy example - ie not valid nearby turning point.
+
+%################################################################################
+%################################################################################
+\subsection{Ray Tracing}%
+\label{sec:theory_rays}
+
+Give equations, interpretations and validity.
+State can be used for any kind of wave where valid.
+Say how and why used for direct drive and typical frozen plasma assumption.
+
+Talking about validity region, give extra bits can solve like ray amplitude.
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Absorption of Light in a Plasma}%
+\label{sec:theory_absorption}
+
+ICF we want to give laser energy to plasma to drive implosion, therefore need to talk about absorption.
+
+%################################################################################
+%################################################################################
+\subsection{Inv Brem}%
+\label{sec:theory_in_brem}
+
+Introduce all bits to get NRL formaularly equation.
+Talk about Langdon as well.
+
+%################################################################################
+%################################################################################
+\subsection{Resonance Absorption}%
+\label{sec:theory_res_abs}
+
+Introduce
+
+%################################################################################
+%################################################################################
+\subsection{ICF Relevant Absorption comparison}%
+\label{sec:theory_absorption_comparison}
+
+Say inv brem goes up relatively at larger scales and shorter wavelengths.
+Prefered to resonance absorption because bulk population gets energy.
+Therefore use frequency tripled light.
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Laser Plasma instabilities}%
+\label{sec:theory_LPIs}
+
+%################################################################################
+%################################################################################
+\subsection{Ponderamotive Force}%
+\label{sec:theory_ponderamotive}
+
+Introduce and say why it happens roughly.
+
+%################################################################################
+%################################################################################
+\subsection{Three-Wave Coupling}%
+\label{sec:theory_threewave}
+
+Give the general picture, i.e. ponderamotive, perturbation, driven plasma wave.
+Give momentum and energy conservation.
+List all types seeded by an EMW.
+
+%################################################################################
+%################################################################################
+\subsection{Cross-Beam Energy Transfer}%
+\label{sec:theory_CBET}
+
+Derive something to an appropriate level of detail.
+Talk about how it is in frame of plasma, flow velocities change this, mach 1 surface etc.
+Give general picture, i.e. sidescatter and backscatter and what it does in ICF.
+
+
+%##########################################################
+\subsubsection{Linear Gain Theory}%
+\label{sec:theory_lineargaincbet}
+
+Say that we use this for raytracing.
+Assume uniform plasma and can solve plasma response either by linearising fluid or kinetic equations.
+
+%##########################################################
+\subsubsection{Effect of Polarisation}%
+\label{sec:theory_cbet_polarisation}
+
+Say that LPIs are affected by polarisation via ponderatmotive beat.
+Only parallel polarisations interact.
+Important on OMEGA due to polarisation smoothing, leads to mode-1.
+
+%##########################################################
+\subsubsection{Langdon Effect on CBET}%
+\label{sec:theory_cbet_langdon}
+
+Say that Langdon affects cbet.
+Reduced model to alter linear gain.
+Could potentially explain why indirect ICF models require a clamp.
+
+%################################################################################
+%################################################################################
+\subsection{Mitigation of Laser Plasma Instabilities}%
+\label{sec:theory_lpi_mitigation}
+
+Say its coherence spatially, temporally and spectrally, so break this to stop LPIs.
+Mention stud pulses and say zooming for CBET.
+
+Mainstream approach is bandwidth.
+Talk about studies showing that bandwidth should mitigate CBET.
+Talk about experimental progress eg FLUX laser at LLE.
+
+
+%###############################################################################################################################
+%###############################################################################################################################
+%###############################################################################################################################
+\section{Summary}%
+\label{sec:theory_summary}
+
+Summarise that introduced descriptions of plasmas, particularly fluid framework solved by CHIMERA.
+Talked about waves in plasmas and their physical interpareatations.
+Talked about how light propagates, assumptions etc, used for raytracing in next section.
+LPIs, particularly CBET, modelling it is focus of next chapter.
