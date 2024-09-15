@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  13 SEP 2024 15:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.20)  15 SEP 2024 23:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Thesis_latex/Thesis_MainSample.tex
-(c:/Thesis_latex/Thesis_MainSample.tex
+**c:/Repos/Thesis/Thesis_MainSample.tex
+(c:/Repos/Thesis/Thesis_MainSample.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (./icldt.cls
@@ -1130,20 +1130,7 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Warning: Unused global option(s):
     [onesided,pagesize].
 
-(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Theory/TheoryMain.aux
-
-LaTeX Warning: Label `sec:theory_resisMHD' multiply defined.
-
-
-LaTeX Warning: Label `sec:theory_resisMHD@cref' multiply defined.
-
-
-LaTeX Warning: Label `sec:theory_kineticheatflow' multiply defined.
-
-
-LaTeX Warning: Label `sec:theory_kineticheatflow@cref' multiply defined.
-
-) (./Appendix/Permissions.aux))
+(./Thesis_MainSample.aux)
 \openout1 = `Thesis_MainSample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1268,7 +1255,6 @@ LaTeX Font Info:    Redeclaring math symbol \oiintop on input line 9.
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 9.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 9.
 Package hyperref Info: Link coloring ON on input line 9.
- (./Thesis_MainSample.out) (./Thesis_MainSample.out)
 \@outlinefile=\write4
 \openout4 = `Thesis_MainSample.out'.
 
@@ -1312,42 +1298,176 @@ Package pdftex.def Info: Preamble/new_college_logo.png  used on input line 2.
 
 
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Preamble/new_college_logo.png>] [2] (./Thesis_MainSample.toc)
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Preamble/new_college_logo.png>] [2]
+No file Thesis_MainSample.toc.
 \tf@toc=\write5
 \openout5 = `Thesis_MainSample.toc'.
 
- [3
+[3
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 75.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 74.
  (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [4
 
-] (./Thesis_MainSample.lot)
+]
+No file Thesis_MainSample.lot.
 \tf@lot=\write6
 \openout6 = `Thesis_MainSample.lot'.
 
- [5
+[5
 
-] (./Thesis_MainSample.lof)
+]
+No file Thesis_MainSample.lof.
 \tf@lof=\write7
 \openout7 = `Thesis_MainSample.lof'.
 
- [6
+[6
 
 ]) [7]
 \openout2 = `Theory/TheoryMain.aux'.
 
  (./Theory/TheoryMain.tex
 chapter 1.
+Package acronym Info: Label `acro:Rad-MHD' newly defined as it shall be overridden
+although it is yet undefined on input line 5.
+
+Package acronym Warning: Acronym `Rad-MHD' is not defined on input line 5.
+
+
+Package acronym Warning: Acronym `Rad-MHD' is not defined on input line 5.
+
+Package acronym Info: Label `acro:CBET' newly defined as it shall be overridden
+although it is yet undefined on input line 13.
+
+Package acronym Warning: Acronym `CBET' is not defined on input line 13.
+
+
+Package acronym Warning: Acronym `CBET' is not defined on input line 13.
+
+Package acronym Info: Label `acro:LPIs' newly defined as it shall be overridden
+although it is yet undefined on input line 14.
+
+Package acronym Warning: Acronym `LPIs' is not defined on input line 14.
+
+
+Package acronym Warning: Acronym `LPIs' is not defined on input line 14.
+
+
+Package acronym Warning: Acronym `CBET' is not defined on input line 14.
+
+Package acronym Info: Label `acro:ICF' newly defined as it shall be overridden
+although it is yet undefined on input line 16.
+
+Package acronym Warning: Acronym `ICF' is not defined on input line 16.
+
+
+Package acronym Warning: Acronym `ICF' is not defined on input line 16.
+
+Package acronym Info: Label `acro:Inv-Brem' newly defined as it shall be overridden
+although it is yet undefined on input line 17.
+
+Package acronym Warning: Acronym `Inv-Brem' is not defined on input line 17.
+
+
+Package acronym Warning: Acronym `Inv-Brem' is not defined on input line 17.
+
+
+Package acronym Warning: Acronym `ICF' is not defined on input line 17.
+
+
+Package acronym Warning: Acronym `LPIs' is not defined on input line 18.
+
+
+Package acronym Warning: Acronym `CBET' is not defined on input line 18.
+
+
+Package acronym Warning: Acronym `ICF' is not defined on input line 18.
+
+
+Overfull \hbox (1.07101pt too wide) in paragraph at lines 13--19
+[]\T1/futs/m/n/10.95 An ad-di-tional aim of the work was to in-clude a [][][][]\T1/futs/b/n/10.95 CBET! \T1/futs/m/n/10.95 ([])[] model into the new \T1/futs/m/sc/10.95 Chimera
+ []
+
 [8
 
 
 
 
-] [9] [10]) [11] [12
+]
 
+LaTeX Warning: Reference `chap:intro' on page 9 undefined on input line 28.
+
+
+LaTeX Warning: Reference `sec:theory_waves_plasmas' on page 9 undefined on input line 32.
+
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 38.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 38.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 38.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 38.
+Package acronym Info: Label `acro:EPW' newly defined as it shall be overridden
+although it is yet undefined on input line 62.
+
+Package acronym Warning: Acronym `EPW' is not defined on input line 62.
+
+
+Package acronym Warning: Acronym `EPW' is not defined on input line 62.
+
+[9]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 90.
+
+
+Package acronym Warning: Acronym `ICF' is not defined on input line 98.
+
+
+Package acronym Warning: Acronym `LPIs' is not defined on input line 100.
+
+[10]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 113.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 113.
+
+
+LaTeX Warning: Reference `eq:theory_vlasov' on page 11 undefined on input line 115.
+
+./Theory/TheoryMain.tex:123: Undefined control sequence.
+<argument> ...xwell_eqs} \nabla .\vec {E} &= \fra 
+                                                  {\rho _{\text {charge}}}{\...
+l.123 \end{align}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Theory/TheoryMain.tex:123: Undefined control sequence.
+<argument> ...xwell_eqs} \nabla .\vec {E} &= \fra 
+                                                  {\rho _{\text {charge}}}{\...
+l.123 \end{align}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[11] [12] [13]) [14] [15
+
+
+
+] [16
 
 
 ]
@@ -1356,9 +1476,7 @@ LaTeX Warning: Empty bibliography on input line 26.
 
 \openout2 = `Appendix/Permissions.aux'.
 
-(./Appendix/Permissions.tex) [13
-
-
+(./Appendix/Permissions.tex) [17
 
 
 
@@ -1370,27 +1488,41 @@ L3 programming layer <2020/03/25>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Thesis_MainSample.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Thesis_MainSample.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Thesis_MainSample
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Thesis_MainSample.run.xml'.
 \openout1 = `Thesis_MainSample.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33409 strings out of 474165
- 662967 string characters out of 5749497
- 1938542 words of memory out of 5000000
- 55178 multiletter control sequences out of 15000+600000
- 639252 words of font info for 118 fonts, out of 8000000 for 9000
+ 33513 strings out of 474165
+ 664246 string characters out of 5749497
+ 1939542 words of memory out of 5000000
+ 55249 multiletter control sequences out of 15000+600000
+ 682837 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,11n,121p,10978b,988s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on Thesis_MainSample.pdf (13 pages, 265332 bytes).
+ 122i,12n,121p,10978b,988s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on Thesis_MainSample.pdf (17 pages, 308485 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 82 named destinations out of 1000 (max. 500000)
  230 words of extra memory for PDF output out of 10000 (max. 10000000)
 

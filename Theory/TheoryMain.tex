@@ -1,6 +1,23 @@
-\chapter{Theory}%
+\chapter{The Interaction of Light with Plasma}%
 \label{chap:Theory}
 
+This chapter shall introduce theoretical background relevent to the work conducted in this thesis.
+The main focus of the work is centered on improving the laser modelling in the \textsc{Chimera} \ac{Rad-MHD} code.
+Therefore, the theoretical framework for modelling both the plasma and the interaction of light with it is introduced.
+
+Initially, the plasma state is defined and important length- and time-scales are provided.
+The kinetic and fluid descriptions of plasma are introduced and the validity domain of each framework is discussed, with particular reference to typical conditions for laser-plasma interactions.
+Additional physics packages of the fluid code, \textsc{Chimera}, which are utilised in later chapters, are introduced.
+A model for kinetic heatflow is desirable in fluid codes which model laser-plasma interactions, therefore although \textsc{Chimera} does not have this capability, some basic theory of kinetic heatflow is highlighted.
+
+An additional aim of the work was to include a \ac{CBET} model into the new \textsc{Chimera} laser package.
+\ac{LPIs} such as \ac{CBET} are multi-wave coupling phenomena, and therefore a basic description of waves in plasma is provided.
+The dispersion relation of the light waves in plasma is also derived.
+Beginning with the full wave equation and then introducing successive assumptions which are broadly satiisfied in typical laser-produced \ac{ICF} plasmas, the equations of ray-tracing are derived.
+Important absorption processes are then outlined, particularly \ac{Inv-Brem}, which is the dominant mechanism on the largest \ac{ICF} facilities in the world today.
+Finally, the basic theory of \ac{LPIs} is provided, particularly \ac{CBET} and its relevance for direct-drive \ac{ICF}.
+
+\newpage
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -8,11 +25,53 @@
 \section{Basic Plasma Physics}%
 \label{sec:theory_plasma_phys}
 
-What is a plasma.
-Quasineutrality.
-Debeye screening.
-Plasma Frequency derivation.
-Turn this into critical density and say this is importatn for lasers.
+As stated in Chap.~\ref{chap:intro}, thermonuclear fusion requires the fuel to exist at significant temperatures, which are well above ionisation energies.
+Therefore, the fuel configuration in these fusion expeiments is a plasma.
+Formally, a plasma is defined as a quasi-neutral, ionised gas which exhibits collective behaviour.
+The charged particles within a plasma interact via the long-range Coulomb force, and thus undergo many simultaneuos interactions with the other particles.
+This leads to a variety of collective phenomena such as the plasma-waves described in Sec.~\ref{sec:theory_waves_plasmas}.
+Quasineutrailty of the plasma means that, when observed at a length-scale $L$, the plasma has no net charge,
+\begin{equation}
+    \Sigma_{\alpha}q_{\alpha}N_{\alpha} = 0,
+\end{equation}
+where $N_{\alpha}$ is the number of particles of species $\alpha$, with charge $q_{\alpha}$, in the cube with volume $V=L^3$.
+For a `single-species' plasma\footnote{Single-species here means that there is only a single type of ion.} with average ionisation state $Z$, this implies,
+\begin{equation}
+    n_e = Z n_i,
+\end{equation}
+where $n_e$ and $n_i$ are the number densities of electrons and ions respectively.
+
+Quasineutrailty because the particles in the plasma are free to move due to forces they experience.
+Thus if a local charge imbalance occurs, the electrons, which respond faster than the ion population due to their lower mass, move to rebalance this field and restore quasineutrailty.
+This electron relocation to eliminate local electric fields is known as Debye-screening.
+The length scale below the electron population cannot effectively screen the charges sets the length scale of quasineutrality and is known as the Debye-length,
+\begin{equation}
+    \lambda_{D}^2 = \frac{\epsilon_0 k_B T_e}{n_e e^2},
+\end{equation}
+where $T_e$ is the electron temperature, $\epsilon_0$ is the permitivity of free space, $k_B$ is the Boltzmann constant and $e$ is the electron charge.
+This is valid if there is a large number of particles in the Debye sphere, $n_e L^3\gg 1$.
+The timescale of the charge relocation is of particular importance to the interaction of light with plasmas.
+Light waves are an oscillating electric field, which charged particles in the plasma can respond to.
+If the particles are able to respond quickly enough, they can therefore influence the propagation of the light and ultimately the plasma can become opaque.
+The oscillation timescale can be derived by considering a uniform assembly of quasineutral plasma and then displacing the electron population from the ions by a small distance $\delta x$ along the $x$-axis.
+The electric field which develops within the plasma is thus,
+\begin{equation}
+    E_x = \frac{n_e e \delta x}{\epsilon_0},
+\end{equation}
+leading to a restoring force $F_x = -eE_x$ on each electron.
+Solving Newton's second Law demontsrates that, when thermal motion of the electron population is ignored\footnote{Inclusion of thermal motion leads to pressure, which acts as an restoring force, and yields the dispersion relation for an \ac{EPW}.}, oscillations of the electrons occur at the `plasma frequency',
+\begin{equation}
+    \label{eq:theory_plasma_freq}
+    \omega_{p}^2 = \frac{n_e e^2}{m_e \epsilon_0}.
+\end{equation}
+If forcing oscillations occur at a frequency which is lower than $\omega_p$, then the electrons move rapidly enough to nullify the field.
+Consider light with frequency $\omega$, which is incident normal to a plasma density gradient
+Because $\omega_p\propto n_e$, the light is able to propagate until it reaches the density where $\omega = \omega_p$, which is known as the ciritcal density,
+\begin{equation}
+    \label{eq:theory_critical_density}
+    n_{\text{cr}} = \frac{m_e \epsilon_0 \omega^2}{e^2}.
+\end{equation}
+After reaching the critical density, the field of the light decays exponentially as an evanescent wave, but cannot propagate.
 
 %###############################################################################################################################
 %###############################################################################################################################
@@ -20,13 +79,49 @@ Turn this into critical density and say this is importatn for lasers.
 \section{Kinetic and Fluid Formulations of Plasmas}%
 \label{sec:theory_kin_fluid_plasmas}
 
-A bit of blather about what these descriptions are trying to do generally.
-Ideally would solve every interaction between every particle but this is intractible.
+Idealised computational modelling of a plasma state would solve the long-range electro-magnetic interaction between every pair of particles at all times.
+However, this very rapidly becomes intractable due to the large number $N$ of particles and the $\mathcal{O}(N^2)$ scaling of interactions to solve.
+Reduced frameworks must thus be devised with which to analyse and predict the behaviour of the plasma state.
+Plasmas are divided into two broad classifications.
+When in local thermal equilibrium, the plasma is often described as `thermal' and the fluid formulation is an adequate description.
+When this is not true however, for instance a particular subset of particles are heated at a rate, which is much faster than thermalising collision timescales, this subset of the system is described as `non-thermal' ot kinetic.
+In this case the fluid formulation is an inadequate description and higher fidelity tools must be used to describe the evloution of the system.
+
+When a kinetic description of a plasma is required, the distribution function, $f_{\alpha}(\vec{x},\vec{v},t)$ is used to describe the state of particle species $\alpha$.
+It provides a statistical description of the number density of particles, which inhabit a phase-space, $\vec{x}$-$\vec{v}$, at time $t$.
+If the system evolves on a time-scale much lower than the collision time, then these collisions between particles act to relax the distribution function toward a Maxwellian,
+\begin{equation}
+    f_{\alpha,\text{Max.}}(v) = n_{\alpha} {\left( \frac{1}{2\pi v_{\text{th}}^2} \right)}^{1.5} e^{-v^2/(2 v_{\text{th}}^2)},
+\end{equation}
+where $v_{\text{th}}=\sqrt{k_B T_{\alpha}/m_{\alpha}}$ is the thermal speed of the species with temperature and mass $T_{\alpha}$ and $m_{\alpha}$, respectively.
+The fraction outside the exponential is set such the integral over velocity space yields the number density of the species.
+Typically, for bulk of the target configuration throughout a laser-produced \ac{ICF} implosion, the assumption of a Maxwellian distribution is close to accurate although there are notable exceptions.
+For instance, DT fusion products have energies much higher than thermal energies and are also monoenergetic.
+\ac{LPIs} also generate energetic electron populations which are able to range through the implosion due to their low collisionality.
+Laser-heated plasmas also typically exhibit steep density and temperature gradients near the ablation surface, such that collisions, and therefore collision processes such as transport of thermal energy, do not act locally.
 
 %################################################################################
 %################################################################################
 \subsection{The Vlasov Equation}%
 \label{sec:theory_vlasov}
+
+The evolution of the distribution function for each species indiviudally, is described by the Vlasov equation,
+\begin{equation}
+    \label{eq:theory_vlasov}
+    \frac{\partial f_\alpha}{\partial t} + \vec{v}.\nabla_x f_\alpha + \frac{q_\alpha}{m_\alpha} (\vec{E} + \vec{v}\times\vec{B}) . \nabla_v f_\alpha = \left ( \frac{\partial f_\alpha}{\partial t} \right )_\text{collisions},
+\end{equation}
+where $q_\alpha$ is the charge of the species, $\vec{E}$ and $\vec{B}$ are the macroscopic electric and magnetic fields\footnote{Macroscopic here means on a scale larger than Debye shielding.}, respectively, and $\nabla_x$ and $\nabla_v$ are gradients with respect to postiion and velocity coordinates respectively.
+The equation describes the conservation of phase-space particle density.
+The collision operator on the right hand side of Eq.~\ref{eq:theory_vlasov} describes the action of microscopic fields, which arise due to the random motion of the charged plasma particles.
+Evolution of the macroscopic fields is governed by Maxwell's equations,
+\begin{align}
+    \label{eq:theory_maxwell_eqs}
+    \nabla.\vec{E} &= \fra{\rho_{\text{charge}}}{\epsilon_0},\\
+    \nabla.\vec{B} &= 0,\\
+    \nabla \times \vec{E} &= -\frac{\partial \vec{B}}{\partial t},\\
+    \nabla \times \vec{E} &= \frac{1}{\mu_0 \epsilon_0}\frac{\partial \vec{E}}{\partial t} + \mu_0 \vec{j},\\
+\end{align}
+where $\mu_0$ is the permeability of free space, $\rho_{\text{charge}}$ is the charge density and $\vec{j}$ is the current density.
 
 x and v of all particles described by f.
 bulk collision operator and lorentz force give vlasov equation.
@@ -46,7 +141,7 @@ Knudsen number describes how kinetic it is.
 %################################################################################
 %################################################################################
 \subsection{Radiation Transport}%
-\label{sec:theory_kineticheatflow}
+\label{sec:theory_radtransp}
 
 Additional mechanism which described emission and absorption of radiation by plasma.
 Important for high temperatures and densities of ICF.
@@ -87,7 +182,7 @@ Say when important.
 
 %##########################################################
 \subsubsection{The Nernst Effect}%
-\label{sec:theory_resisMHD}
+\label{sec:theory_nernst}
 
 Hmmm, describe and say when important.
 
