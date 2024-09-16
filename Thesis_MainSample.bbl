@@ -16,5 +16,1212 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{chen_introduction_2018}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a5b8b2e287cbcd596b1a245e40c69dd9}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Francis\bibnamedelima F.},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \strng{fullhash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \strng{bibnamehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \strng{authorbibnamehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \strng{authornamehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \strng{authorfullhash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Third edition, corrected publication}
+      \field{isbn}{978-3-319-22308-7}
+      \field{langid}{english}
+      \field{title}{Introduction to Plasma Physics and Controlled Fusion}
+      \field{year}{2018}
+    \endentry
+    \entry{barlow_role_2022}{article}{}
+      \name{author}{14}{}{%
+        {{hash=e8a380884785a8969b84088e1fd9a869}{%
+           family={Barlow},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9d48940159421680abb3b7e1667f95b3}{%
+           family={Goffrey},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4ad15ddff138dc47ae0c1da17ece3b06}{%
+           family={Bennett},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6e53019045e042595a40c07f176e395b}{%
+           family={Scott},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi H.\bibnamedelimi H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=0309fb2ab61e686cf5bf998033ab3fad}{%
+           family={Glize},
+           familyi={G\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4215a8f93ed32e346007dea60ff97ba0}{%
+           family={Theobald},
+           familyi={T\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=8499ffb1e8a77771776bd8fa9b12a057}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9b1124e8e6c6b4e428046a410071347b}{%
+           family={Solodov},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1b6eaad1187c68e6315ea06dae85d38e}{%
+           family={Rosenberg},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0a8d572cd8aee068b838f90a3252b067}{%
+           family={Hohenberger},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=503b60cc9f93593b502d20b67c1d9b40}{%
+           family={Woolsey},
+           familyi={W\bibinitperiod},
+           given={N.\bibnamedelimi C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b51efebe1631c7ad49414864fece169a}{%
+           family={Bradford},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0e459862e8dbf21a16ed1c0b9746d29c}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5d59bc87f9df037ad01a8771d21cae6a}{%
+           family={Arber},
+           familyi={A\bibinitperiod},
+           given={T.\bibnamedelimi D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{58b4081a372e906da902235857862a96}
+      \strng{fullhash}{7af2964e08edbc6c8f37b11f35b68007}
+      \strng{bibnamehash}{58b4081a372e906da902235857862a96}
+      \strng{authorbibnamehash}{58b4081a372e906da902235857862a96}
+      \strng{authornamehash}{58b4081a372e906da902235857862a96}
+      \strng{authorfullhash}{7af2964e08edbc6c8f37b11f35b68007}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Role of Hot Electrons in Shock Ignition Constrained by Experiment at the {{National Ignition Facility}}}
+      \field{volume}{29}
+      \field{year}{2022}
+      \field{pages}{082704}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0097080
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\HWDMYLYE\Barlow et al. - 2022 - Role of hot electrons in shock ignition constraine.pdf
+      \endverb
+    \endentry
+    \entry{epperlein_practical_1991}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d93a5a9e0b9f5077940902d57d3028f4}{%
+           family={Epperlein},
+           familyi={E\bibinitperiod},
+           given={E.\bibnamedelimi M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=4f0a08115e3deb5ba2a44594ccec2bd2}{%
+           family={Short},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{7477411c97e7158e3ff9294d1a1f48cf}
+      \strng{fullhash}{7477411c97e7158e3ff9294d1a1f48cf}
+      \strng{bibnamehash}{7477411c97e7158e3ff9294d1a1f48cf}
+      \strng{authorbibnamehash}{7477411c97e7158e3ff9294d1a1f48cf}
+      \strng{authornamehash}{7477411c97e7158e3ff9294d1a1f48cf}
+      \strng{authorfullhash}{7477411c97e7158e3ff9294d1a1f48cf}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0899-8221}
+      \field{journaltitle}{Physics of Fluids B: Plasma Physics}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{A Practical Nonlocal Model for Electron Heat Transport in Laser Plasmas}
+      \field{volume}{3}
+      \field{year}{1991}
+      \field{pages}{3092\bibrangedash 3098}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1063/1.859789
+      \endverb
+    \endentry
+    \entry{bittencourt_fundamentals_2004}{book}{}
+      \name{author}{1}{}{%
+        {{hash=20c1bfb78fdc07c07c9a74ccfafc93df}{%
+           family={Bittencourt},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{20c1bfb78fdc07c07c9a74ccfafc93df}
+      \strng{fullhash}{20c1bfb78fdc07c07c9a74ccfafc93df}
+      \strng{bibnamehash}{20c1bfb78fdc07c07c9a74ccfafc93df}
+      \strng{authorbibnamehash}{20c1bfb78fdc07c07c9a74ccfafc93df}
+      \strng{authornamehash}{20c1bfb78fdc07c07c9a74ccfafc93df}
+      \strng{authorfullhash}{20c1bfb78fdc07c07c9a74ccfafc93df}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd ed}
+      \field{isbn}{978-0-387-20975-3}
+      \field{title}{Fundamentals of Plasma Physics}
+      \field{year}{2004}
+      \keyw{Plasma (Ionized gases)}
+    \endentry
+    \entry{thomas_review_2012}{article}{}
+      \name{author}{7}{}{%
+        {{hash=934468a5b0046f1955b3dc6f15a54ec5}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={A.G.R.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c74c25699c25be010f31caea50f18dfe}{%
+           family={Tzoufras},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7d5ff9518fe28236d217b805ef68e4e6}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={A.P.L.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5b067aac485cc25a62b0f406f2006525}{%
+           family={Kingham},
+           familyi={K\bibinitperiod},
+           given={R.J.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a5a3b47e15da60b22b3f12a1a09db3c5}{%
+           family={Ridgers},
+           familyi={R\bibinitperiod},
+           given={C.P.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=57b7018e9dd60a8c33ec94bbd9da4958}{%
+           family={Sherlock},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7c54b8956af1b23c45ec779bf37ab3d7}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={A.R.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f402bbf8a3bcc9ab55ed699c9a551c14}
+      \strng{fullhash}{ecc221a26276bacf717e528e9f22d532}
+      \strng{bibnamehash}{f402bbf8a3bcc9ab55ed699c9a551c14}
+      \strng{authorbibnamehash}{f402bbf8a3bcc9ab55ed699c9a551c14}
+      \strng{authornamehash}{f402bbf8a3bcc9ab55ed699c9a551c14}
+      \strng{authorfullhash}{ecc221a26276bacf717e528e9f22d532}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00219991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{3}
+      \field{title}{A Review of {{Vlasov}}--{{Fokker}}--{{Planck}} Numerical Modeling of Inertial Confinement Fusion Plasma}
+      \field{volume}{231}
+      \field{year}{2012}
+      \field{pages}{1051\bibrangedash 1079}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1016/j.jcp.2011.09.028
+      \endverb
+    \endentry
+    \entry{taitano_eulerian_2021}{article}{}
+      \name{author}{6}{}{%
+        {{hash=384fe57a8c2074ac7112b9491ee45680}{%
+           family={Taitano},
+           familyi={T\bibinitperiod},
+           given={W.T.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a4b6354c2f281aa61498ccbf8c887924}{%
+           family={Keenan},
+           familyi={K\bibinitperiod},
+           given={B.D.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2b2b35924544aacedf49b6f42aeb8d30}{%
+           family={Chacón},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d68a7da07180bdc9c210157364eb04f0}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={S.E.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e50beed7344d20c4408284530351327e}{%
+           family={Hammer},
+           familyi={H\bibinitperiod},
+           given={H.R.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e7baf12f771db45f4cd4fb5798677e5e}{%
+           family={Simakov},
+           familyi={S\bibinitperiod},
+           given={A.N.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f3b8e5753e3e49286dcec05932820cf}
+      \strng{fullhash}{d05101cc63ccd9010a347fb4fe149791}
+      \strng{bibnamehash}{7f3b8e5753e3e49286dcec05932820cf}
+      \strng{authorbibnamehash}{7f3b8e5753e3e49286dcec05932820cf}
+      \strng{authornamehash}{7f3b8e5753e3e49286dcec05932820cf}
+      \strng{authorfullhash}{d05101cc63ccd9010a347fb4fe149791}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00104655}
+      \field{journaltitle}{Computer Physics Communications}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{An {{Eulerian Vlasov-Fokker}}--{{Planck}} Algorithm for Spherical Implosion Simulations of Inertial Confinement Fusion Capsules}
+      \field{volume}{263}
+      \field{year}{2021}
+      \field{pages}{107861}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.cpc.2021.107861
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\TXRG6D6U\Taitano et al. - 2021 - An Eulerian Vlasov-Fokker–Planck algorithm for sph.pdf
+      \endverb
+    \endentry
+    \entry{kingham_implicit_2004}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5b067aac485cc25a62b0f406f2006525}{%
+           family={Kingham},
+           familyi={K\bibinitperiod},
+           given={R.J.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7c54b8956af1b23c45ec779bf37ab3d7}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={A.R.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d963679e1a19bcbd74910384422b9275}
+      \strng{fullhash}{d963679e1a19bcbd74910384422b9275}
+      \strng{bibnamehash}{d963679e1a19bcbd74910384422b9275}
+      \strng{authorbibnamehash}{d963679e1a19bcbd74910384422b9275}
+      \strng{authornamehash}{d963679e1a19bcbd74910384422b9275}
+      \strng{authorfullhash}{d963679e1a19bcbd74910384422b9275}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00219991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{An Implicit {{Vlasov}}--{{Fokker}}--{{Planck}} Code to Model Non-Local Electron Transport in 2-{{D}} with Magnetic Fields}
+      \field{volume}{194}
+      \field{year}{2004}
+      \field{pages}{1\bibrangedash 34}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1016/j.jcp.2003.08.017
+      \endverb
+    \endentry
+    \entry{arber_contemporary_2015}{article}{}
+      \name{author}{11}{}{%
+        {{hash=5d59bc87f9df037ad01a8771d21cae6a}{%
+           family={Arber},
+           familyi={A\bibinitperiod},
+           given={T\bibnamedelima D},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=4ad15ddff138dc47ae0c1da17ece3b06}{%
+           family={Bennett},
+           familyi={B\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=42c32fbc0243408def6d2666c28cbad8}{%
+           family={Brady},
+           familyi={B\bibinitperiod},
+           given={C\bibnamedelima S},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=98bdb1353088e11f88af563dfff611a2}{%
+           family={{Lawrence-Douglas}},
+           familyi={L\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=89ef41c2176ebe1b9a2deb66e38e315c}{%
+           family={Ramsay},
+           familyi={R\bibinitperiod},
+           given={M\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=53f7bf5963c6aead4aafcbb7fc2d5ec4}{%
+           family={Sircombe},
+           familyi={S\bibinitperiod},
+           given={N\bibnamedelima J},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1c2a2bd19b6dced6dccbfd86308b7aad}{%
+           family={Gillies},
+           familyi={G\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9dac33abab4ddc1f11cb1468cbe40d91}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={R\bibnamedelima G},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=157625c94d6f8c7ca6052d4e84e40200}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7c54b8956af1b23c45ec779bf37ab3d7}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={A\bibnamedelima R},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=a5a3b47e15da60b22b3f12a1a09db3c5}{%
+           family={Ridgers},
+           familyi={R\bibinitperiod},
+           given={C\bibnamedelima P},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a947cd35556f4810f60cf140133d1fb}
+      \strng{fullhash}{2961b237423c30eab7f6d81aaa5a3cf1}
+      \strng{bibnamehash}{2a947cd35556f4810f60cf140133d1fb}
+      \strng{authorbibnamehash}{2a947cd35556f4810f60cf140133d1fb}
+      \strng{authornamehash}{2a947cd35556f4810f60cf140133d1fb}
+      \strng{authorfullhash}{2961b237423c30eab7f6d81aaa5a3cf1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0741-3335, 1361-6587}
+      \field{journaltitle}{Plasma Physics and Controlled Fusion}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Contemporary Particle-in-Cell Approach to Laser-Plasma Modelling}
+      \field{volume}{57}
+      \field{year}{2015}
+      \field{pages}{113001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0741-3335/57/11/113001
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\UW9WBTMA\Arber et al. - 2015 - Contemporary particle-in-cell approach to laser-pl.pdf
+      \endverb
+    \endentry
+    \entry{castor_radiation_2004}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fa08097a52cb50cfc8773d0b71b499b0}{%
+           family={Castor},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{fa08097a52cb50cfc8773d0b71b499b0}
+      \strng{fullhash}{fa08097a52cb50cfc8773d0b71b499b0}
+      \strng{bibnamehash}{fa08097a52cb50cfc8773d0b71b499b0}
+      \strng{authorbibnamehash}{fa08097a52cb50cfc8773d0b71b499b0}
+      \strng{authornamehash}{fa08097a52cb50cfc8773d0b71b499b0}
+      \strng{authorfullhash}{fa08097a52cb50cfc8773d0b71b499b0}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{978-0-521-83309-7 978-0-521-54062-9 978-0-511-53618-2}
+      \field{month}{9}
+      \field{title}{Radiation {{Hydrodynamics}}}
+      \field{year}{2004}
+      \verb{doi}
+      \verb 10.1017/CBO9780511536182
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\KHXHTFLL\Castor - 2004 - Radiation Hydrodynamics.pdf
+      \endverb
+    \endentry
+    \entry{braginskii_transport_1965}{article}{}
+      \name{author}{1}{}{%
+        {{hash=27ce40c5772d2c337819648acc9db801}{%
+           family={Braginskii},
+           familyi={B\bibinitperiod},
+           given={S.\bibnamedelimi I.},
+           giveni={S\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{27ce40c5772d2c337819648acc9db801}
+      \strng{fullhash}{27ce40c5772d2c337819648acc9db801}
+      \strng{bibnamehash}{27ce40c5772d2c337819648acc9db801}
+      \strng{authorbibnamehash}{27ce40c5772d2c337819648acc9db801}
+      \strng{authornamehash}{27ce40c5772d2c337819648acc9db801}
+      \strng{authorfullhash}{27ce40c5772d2c337819648acc9db801}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{ADS Bibcode: 1965RvPP....1..205B}
+      \field{journaltitle}{Reviews of Plasma Physics}
+      \field{month}{1}
+      \field{title}{Transport {{Processes}} in a {{Plasma}}}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{1}
+      \field{year}{1965}
+      \field{urldateera}{ce}
+      \field{pages}{205}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://ui.adsabs.harvard.edu/abs/1965RvPP....1..205B
+      \endverb
+      \verb{url}
+      \verb https://ui.adsabs.harvard.edu/abs/1965RvPP....1..205B
+      \endverb
+    \endentry
+    \entry{epperlein_plasma_1986}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d93a5a9e0b9f5077940902d57d3028f4}{%
+           family={Epperlein},
+           familyi={E\bibinitperiod},
+           given={E.\bibnamedelimi M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=4577d57b0b6083592a098694f13b719a}{%
+           family={Haines},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{7cd8f5b3416fa4e60951be9e6e88a029}
+      \strng{fullhash}{7cd8f5b3416fa4e60951be9e6e88a029}
+      \strng{bibnamehash}{7cd8f5b3416fa4e60951be9e6e88a029}
+      \strng{authorbibnamehash}{7cd8f5b3416fa4e60951be9e6e88a029}
+      \strng{authornamehash}{7cd8f5b3416fa4e60951be9e6e88a029}
+      \strng{authorfullhash}{7cd8f5b3416fa4e60951be9e6e88a029}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9171}
+      \field{journaltitle}{The Physics of Fluids}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Plasma Transport Coefficients in a Magnetic Field by Direct Numerical Solution of the {{Fokker}}--{{Planck}} Equation}
+      \field{volume}{29}
+      \field{year}{1986}
+      \field{pages}{1029\bibrangedash 1041}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1063/1.865901
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\RT59WY64\Epperlein and Haines - 1986 - Plasma transport coefficients in a magnetic field .pdf
+      \endverb
+    \endentry
+    \entry{chittenden_signatures_2016}{article}{}
+      \name{author}{5}{}{%
+        {{hash=97df229c0143ddf1d1280169eab4fb3d}{%
+           family={Chittenden},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e9841bb28e830faac67e25300e36fdfc}{%
+           family={Appelbe},
+           familyi={A\bibinitperiod},
+           given={B.\bibnamedelimi D.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f24c4af25aa35f970f30ccbad39edb49}{%
+           family={Manke},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9ec78152b74658ea882db980e9d097c3}{%
+           family={McGlinchey},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=35626616faa80b3a1c2ff72e93cee681}{%
+           family={Niasse},
+           familyi={N\bibinitperiod},
+           given={N.\bibnamedelimi P.\bibnamedelimi L.},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d7b3af3f41f63e4cf7bc47cd25c907c}
+      \strng{fullhash}{f0bdfd75491d92287f8fc2ebecf40b5f}
+      \strng{bibnamehash}{3d7b3af3f41f63e4cf7bc47cd25c907c}
+      \strng{authorbibnamehash}{3d7b3af3f41f63e4cf7bc47cd25c907c}
+      \strng{authornamehash}{3d7b3af3f41f63e4cf7bc47cd25c907c}
+      \strng{authorfullhash}{f0bdfd75491d92287f8fc2ebecf40b5f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Signatures of Asymmetry in Neutron Spectra and Images Predicted by Three-Dimensional Radiation Hydrodynamics Simulations of Indirect Drive Implosions}
+      \field{volume}{23}
+      \field{year}{2016}
+      \field{pages}{052708}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4949523
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\Philip\\Zotero\\storage\\NENIZF9W\\Chittenden et al. - 2016 - Signatures of asymmetry in neutron spectra and ima.pdf;C\:\\Users\\Philip\\Zotero\\storage\\TEXCIJJR\\Signatures-of-asymmetry-in-neutron-spectra-and.html
+      \endverb
+    \endentry
+    \entry{crilly_simulation_2020}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=9d11e179ccc7524b4b62ed2bec16f445}{%
+           family={Crilly},
+           familyi={C\bibinitperiod},
+           given={Aidan},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Imperial College London}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \strng{namehash}{9d11e179ccc7524b4b62ed2bec16f445}
+      \strng{fullhash}{9d11e179ccc7524b4b62ed2bec16f445}
+      \strng{bibnamehash}{9d11e179ccc7524b4b62ed2bec16f445}
+      \strng{authorbibnamehash}{9d11e179ccc7524b4b62ed2bec16f445}
+      \strng{authornamehash}{9d11e179ccc7524b4b62ed2bec16f445}
+      \strng{authorfullhash}{9d11e179ccc7524b4b62ed2bec16f445}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Simulation of Nuclear Observables in Inertial Confinement Fusion Experiments}
+      \field{type}{phdthesis}
+      \field{urlday}{5}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://inspirehep.net/literature/1850910
+      \endverb
+      \verb{url}
+      \verb https://inspirehep.net/literature/1850910
+      \endverb
+    \endentry
+    \entry{farrow_extended_2023}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=5c761a537f534ec0d4e16e20e9fc55f1}{%
+           family={Farrow},
+           familyi={F\bibinitperiod},
+           given={Griffin},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Imperial College London}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \strng{namehash}{5c761a537f534ec0d4e16e20e9fc55f1}
+      \strng{fullhash}{5c761a537f534ec0d4e16e20e9fc55f1}
+      \strng{bibnamehash}{5c761a537f534ec0d4e16e20e9fc55f1}
+      \strng{authorbibnamehash}{5c761a537f534ec0d4e16e20e9fc55f1}
+      \strng{authornamehash}{5c761a537f534ec0d4e16e20e9fc55f1}
+      \strng{authorfullhash}{5c761a537f534ec0d4e16e20e9fc55f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{Extended {{Magnetohydrodynamic Effects}} in {{Z-Pinch Plasmas}}}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+    \endentry
+    \entry{oneill_modelling_2023}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=8fd77d8adf1407b8e8894ed446fdb402}{%
+           family={O'Neill},
+           familyi={O\bibinitperiod},
+           given={Sam\bibnamedelimb Thomas\bibnamedelima Jack},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Imperial College London}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \strng{namehash}{8fd77d8adf1407b8e8894ed446fdb402}
+      \strng{fullhash}{8fd77d8adf1407b8e8894ed446fdb402}
+      \strng{bibnamehash}{8fd77d8adf1407b8e8894ed446fdb402}
+      \strng{authorbibnamehash}{8fd77d8adf1407b8e8894ed446fdb402}
+      \strng{authornamehash}{8fd77d8adf1407b8e8894ed446fdb402}
+      \strng{authorfullhash}{8fd77d8adf1407b8e8894ed446fdb402}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{title}{Modelling {{Ignition}} and {{Burn}} in {{Pre-magnetised Inertial Confinement Fusion Experiments}}}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\69CH7SZX\O’Neill - Modelling Ignition and Burn in Pre-magnetised Iner.pdf
+      \endverb
+    \endentry
+    \entry{chaturvedi_simulating_2024}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=690a5566d81b93a89e82a82193af5dd3}{%
+           family={Chaturvedi},
+           familyi={C\bibinitperiod},
+           given={Nikita},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Imperial College London}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \strng{namehash}{690a5566d81b93a89e82a82193af5dd3}
+      \strng{fullhash}{690a5566d81b93a89e82a82193af5dd3}
+      \strng{bibnamehash}{690a5566d81b93a89e82a82193af5dd3}
+      \strng{authorbibnamehash}{690a5566d81b93a89e82a82193af5dd3}
+      \strng{authornamehash}{690a5566d81b93a89e82a82193af5dd3}
+      \strng{authorfullhash}{690a5566d81b93a89e82a82193af5dd3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Simulating {{Radiatively Cooled Pulsed-Power Driven Systems}} Using {{Static Mesh Refinement}}}
+      \field{type}{phdthesis}
+      \field{year}{2024}
+    \endentry
+    \entry{tong_burn_2019}{article}{}
+      \name{author}{6}{}{%
+        {{hash=bd554fded8ed65349ede58998d4de8e3}{%
+           family={Tong},
+           familyi={T\bibinitperiod},
+           given={J.K.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9ec78152b74658ea882db980e9d097c3}{%
+           family={McGlinchey},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e9841bb28e830faac67e25300e36fdfc}{%
+           family={Appelbe},
+           familyi={A\bibinitperiod},
+           given={B.D.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4bf3440c7a4721d96de0cac52c806432}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={C.A.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1818a5e0b94f667ea43c327deb9c74c4}{%
+           family={Crilly},
+           familyi={C\bibinitperiod},
+           given={A.J.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=97df229c0143ddf1d1280169eab4fb3d}{%
+           family={Chittenden},
+           familyi={C\bibinitperiod},
+           given={J.P.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b93381f830aa32178739014ed15284a7}
+      \strng{fullhash}{a47e6d6786f488f86bb50f86293554bc}
+      \strng{bibnamehash}{b93381f830aa32178739014ed15284a7}
+      \strng{authorbibnamehash}{b93381f830aa32178739014ed15284a7}
+      \strng{authornamehash}{b93381f830aa32178739014ed15284a7}
+      \strng{authorfullhash}{a47e6d6786f488f86bb50f86293554bc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0029-5515, 1741-4326}
+      \field{journaltitle}{Nuclear Fusion}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Burn Regimes in the Hydrodynamic Scaling of Perturbed Inertial Confinement Fusion Hotspots}
+      \field{volume}{59}
+      \field{year}{2019}
+      \field{pages}{086015}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1741-4326/ab22d4
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\2WVZ5M6P\Tong et al. - 2019 - Burn regimes in the hydrodynamic scaling of pertur.pdf
+      \endverb
+    \endentry
+    \entry{morel_diffusionlimit_2000}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fcbb06e1fac0e4574261813b3bd9c0b7}{%
+           family={Morel},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{fcbb06e1fac0e4574261813b3bd9c0b7}
+      \strng{fullhash}{fcbb06e1fac0e4574261813b3bd9c0b7}
+      \strng{bibnamehash}{fcbb06e1fac0e4574261813b3bd9c0b7}
+      \strng{authorbibnamehash}{fcbb06e1fac0e4574261813b3bd9c0b7}
+      \strng{authornamehash}{fcbb06e1fac0e4574261813b3bd9c0b7}
+      \strng{authorfullhash}{fcbb06e1fac0e4574261813b3bd9c0b7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{ADS Bibcode: 2000JQSRT..65..769M}
+      \field{issn}{0022-4073}
+      \field{journaltitle}{Journal of Quantitative Spectroscopy and Radiative Transfer}
+      \field{month}{2}
+      \field{title}{Diffusion-Limit Asymptotics of the Transport Equation, the {{P1}}/3 Equations, and Two Flux-Limited Diffusion Theories}
+      \field{volume}{65}
+      \field{year}{2000}
+      \field{pages}{769\bibrangedash 778}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/S0022-4073(99)00148-X
+      \endverb
+    \endentry
+    \entry{jennings_radiation_2005}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=4ace15bfc099a30f17a225c43ce6cfb0}{%
+           family={Jennings},
+           familyi={J\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Imperial College London}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \strng{namehash}{4ace15bfc099a30f17a225c43ce6cfb0}
+      \strng{fullhash}{4ace15bfc099a30f17a225c43ce6cfb0}
+      \strng{bibnamehash}{4ace15bfc099a30f17a225c43ce6cfb0}
+      \strng{authorbibnamehash}{4ace15bfc099a30f17a225c43ce6cfb0}
+      \strng{authornamehash}{4ace15bfc099a30f17a225c43ce6cfb0}
+      \strng{authorfullhash}{4ace15bfc099a30f17a225c43ce6cfb0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Radiation {{Transport Effects}} in {{Wire Array Z-Pinches}} and {{Magneto-Hydrodynamic Modelling Techniques}}}
+      \field{type}{phdthesis}
+      \field{year}{2005}
+    \endentry
+    \entry{mcglinchey_radiationhydrodynamics_2017}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=9ec78152b74658ea882db980e9d097c3}{%
+           family={McGlinchey},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Imperial College London}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \strng{namehash}{9ec78152b74658ea882db980e9d097c3}
+      \strng{fullhash}{9ec78152b74658ea882db980e9d097c3}
+      \strng{bibnamehash}{9ec78152b74658ea882db980e9d097c3}
+      \strng{authorbibnamehash}{9ec78152b74658ea882db980e9d097c3}
+      \strng{authornamehash}{9ec78152b74658ea882db980e9d097c3}
+      \strng{authorfullhash}{9ec78152b74658ea882db980e9d097c3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Radiation-{{Hydrodynamics Simulations}} of the {{Impact}} of {{Instabilities}} and {{Asymmetries}} of {{Inertial Confinement Fusion}}}
+      \field{type}{phdthesis}
+      \field{year}{2017}
+    \endentry
+    \entry{yuan_spacetime_2024}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e09e217e8dda9d13b0b91082f4dc7e67}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={W\bibnamedelima Q},
+           giveni={W\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=01a60335cc2bd546491ab18d50112416}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Z\bibnamedelima H},
+           giveni={Z\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=03a4fc970ae2dbd8c0418eed831eaafc}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={S\bibnamedelima P},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a3ef29295d8c7f095474f5397e3af015}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={X\bibnamedelima T},
+           giveni={X\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=b1e1e4d071e0c7c4c9f2326b3a4aafa5}{%
+           family={Qiao},
+           familyi={Q\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a65154ed7721e937391bb46fa8d47f9}
+      \strng{fullhash}{5599cd6899f860206de3bdfe49134c14}
+      \strng{bibnamehash}{2a65154ed7721e937391bb46fa8d47f9}
+      \strng{authorbibnamehash}{2a65154ed7721e937391bb46fa8d47f9}
+      \strng{authornamehash}{2a65154ed7721e937391bb46fa8d47f9}
+      \strng{authorfullhash}{5599cd6899f860206de3bdfe49134c14}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0741-3335, 1361-6587}
+      \field{journaltitle}{Plasma Physics and Controlled Fusion}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Space-Time Dependent Non-Local Thermal Transport Effects on Laser Ablation Dynamics in Inertial Confinement Fusion}
+      \field{volume}{66}
+      \field{year}{2024}
+      \field{pages}{045023}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1361-6587/ad27f1
+      \endverb
+    \endentry
+    \entry{schurtz_nonlocal_2000}{article}{}
+      \name{author}{3}{}{%
+        {{hash=33cbf37de9284da1b74e4aeb5354035c}{%
+           family={Schurtz},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8d41fa9a3ac6134888e6b94267ba1563}{%
+           family={Nicolaï},
+           familyi={N\bibinitperiod},
+           given={{\relax\bibnamedelimb Ph}.\bibnamedelimi D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=4ab5063ee47db89b1b995bf2578144d2}{%
+           family={Busquet},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ccf9e8421979609746df895a4a2af35}
+      \strng{fullhash}{741e5e7ad7e6a2b8eddc48676d588e82}
+      \strng{bibnamehash}{5ccf9e8421979609746df895a4a2af35}
+      \strng{authorbibnamehash}{5ccf9e8421979609746df895a4a2af35}
+      \strng{authornamehash}{5ccf9e8421979609746df895a4a2af35}
+      \strng{authorfullhash}{741e5e7ad7e6a2b8eddc48676d588e82}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{A Nonlocal Electron Conduction Model for Multidimensional Radiation Hydrodynamics Codes}
+      \field{volume}{7}
+      \field{year}{2000}
+      \field{pages}{4238\bibrangedash 4249}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1063/1.1289512
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\6HVAYKY2\Schurtz et al. - 2000 - A nonlocal electron conduction model for multidime.pdf
+      \endverb
+    \endentry
+    \entry{nicolai_practical_2006}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8d41fa9a3ac6134888e6b94267ba1563}{%
+           family={Nicolaï},
+           familyi={N\bibinitperiod},
+           given={{\relax\bibnamedelimb Ph}.\bibnamedelimi D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=35c3971bdf3d2b8c6baba79e3029a963}{%
+           family={Feugeas},
+           familyi={F\bibinitperiod},
+           given={J.-L.\bibnamedelimi A.},
+           giveni={J\bibinithyphendelim L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=33cbf37de9284da1b74e4aeb5354035c}{%
+           family={Schurtz},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6cdb840b640fe563ff7ea2a0a5bd14a8}
+      \strng{fullhash}{9df5545c4b85c06516a96587053d7297}
+      \strng{bibnamehash}{6cdb840b640fe563ff7ea2a0a5bd14a8}
+      \strng{authorbibnamehash}{6cdb840b640fe563ff7ea2a0a5bd14a8}
+      \strng{authornamehash}{6cdb840b640fe563ff7ea2a0a5bd14a8}
+      \strng{authorfullhash}{9df5545c4b85c06516a96587053d7297}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{A Practical Nonlocal Model for Heat Transport in Magnetized Laser Plasmas}
+      \field{volume}{13}
+      \field{year}{2006}
+      \field{pages}{032701}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.2179392
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\TWDN37ZM\Nicolaï et al. - 2006 - A practical nonlocal model for heat transport in m.pdf
+      \endverb
+    \endentry
+    \entry{cao_improved_2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=54683b111d1d6c4594625e81230ea9bf}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Duc},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e1bfe91ea2c0176d0029f5ef35f180b2}{%
+           family={Moses},
+           familyi={M\bibinitperiod},
+           given={Gregory},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5a0f8b9711bbc13a52a0f84c0e10be11}{%
+           family={Delettrez},
+           familyi={D\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e447cec740cf3d749970fc95bf495b6d}
+      \strng{fullhash}{2a30994e9aadc519988c1df6f7eaf8dd}
+      \strng{bibnamehash}{e447cec740cf3d749970fc95bf495b6d}
+      \strng{authorbibnamehash}{e447cec740cf3d749970fc95bf495b6d}
+      \strng{authornamehash}{e447cec740cf3d749970fc95bf495b6d}
+      \strng{authorfullhash}{2a30994e9aadc519988c1df6f7eaf8dd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Improved Non-Local Electron Thermal Transport Model for Two-Dimensional Radiation Hydrodynamics Simulations}
+      \field{volume}{22}
+      \field{year}{2015}
+      \field{pages}{082308}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4928445
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\97EJB2X3\Cao et al. - 2015 - Improved non-local electron thermal transport mode.pdf
+      \endverb
+    \endentry
+    \entry{sherlock_comparison_2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=57b7018e9dd60a8c33ec94bbd9da4958}{%
+           family={Sherlock},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0469718bcaa3f018ea252446ec79c9ac}{%
+           family={Brodrick},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a5a3b47e15da60b22b3f12a1a09db3c5}{%
+           family={Ridgers},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{91304a2be3ff59694dd291a3431f0efc}
+      \strng{fullhash}{37f32e0bfd4152c97544e342da95e570}
+      \strng{bibnamehash}{91304a2be3ff59694dd291a3431f0efc}
+      \strng{authorbibnamehash}{91304a2be3ff59694dd291a3431f0efc}
+      \strng{authornamehash}{91304a2be3ff59694dd291a3431f0efc}
+      \strng{authorfullhash}{37f32e0bfd4152c97544e342da95e570}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{A Comparison of Non-Local Electron Transport Models for Laser-Plasmas Relevant to Inertial Confinement Fusion}
+      \field{volume}{24}
+      \field{year}{2017}
+      \field{pages}{082706}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4986095
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\JEXFR8XY\Sherlock et al. - 2017 - A comparison of non-local electron transport model.pdf
+      \endverb
+    \endentry
+    \entry{bell_fast_2024}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ef01a837ae4d809ded87953601eafc6f}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={Anthony\bibnamedelima R},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=9fba8ba110f279f8fecfd7c8efb256ad}{%
+           family={Sherlock},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{53c398659c3de9fedb8530c82202b8ac}
+      \strng{fullhash}{53c398659c3de9fedb8530c82202b8ac}
+      \strng{bibnamehash}{53c398659c3de9fedb8530c82202b8ac}
+      \strng{authorbibnamehash}{53c398659c3de9fedb8530c82202b8ac}
+      \strng{authornamehash}{53c398659c3de9fedb8530c82202b8ac}
+      \strng{authorfullhash}{53c398659c3de9fedb8530c82202b8ac}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0741-3335, 1361-6587}
+      \field{journaltitle}{Plasma Physics and Controlled Fusion}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{title}{The {\emph{Fast}} {{VFP}} Code for Solution of the {{Vlasov-Fokker-Planck}} Equation}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1088/1361-6587/ad2278
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\X5WIVAAP\Bell and Sherlock - 2024 - The fast VFP code for solution of the Vlaso.pdf
+      \endverb
+    \endentry
+    \entry{mitchell_reduced_2024}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2354f98d95e36a1d3a3b1378bd4a3dcf}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={N\bibnamedelima T},
+           giveni={N\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=aa2dd62270284a82685763541b9fe542}{%
+           family={Chapman},
+           familyi={C\bibinitperiod},
+           given={D\bibnamedelima A},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d9e2f8b057c9a01b166f56258eb3ff21}{%
+           family={McDevitt},
+           familyi={M\bibinitperiod},
+           given={C\bibnamedelima J},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9db65e12013a7d8776f47adc5ae744af}{%
+           family={Read},
+           familyi={R\bibinitperiod},
+           given={M\bibnamedelima P},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=f9e23665237e5c4214311068b24d1d5d}{%
+           family={Kagan},
+           familyi={K\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9af611cdd89cf800588d4dd8483f4b1}
+      \strng{fullhash}{59edbded59046bb61712d9a1214f4a1a}
+      \strng{bibnamehash}{e9af611cdd89cf800588d4dd8483f4b1}
+      \strng{authorbibnamehash}{e9af611cdd89cf800588d4dd8483f4b1}
+      \strng{authornamehash}{e9af611cdd89cf800588d4dd8483f4b1}
+      \strng{authorfullhash}{59edbded59046bb61712d9a1214f4a1a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0741-3335, 1361-6587}
+      \field{journaltitle}{Plasma Physics and Controlled Fusion}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{A Reduced Kinetic Method for Investigating Non-Local Ion Heat Transport in Ideal Multi-Species Plasmas}
+      \field{volume}{66}
+      \field{year}{2024}
+      \field{pages}{075005}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1361-6587/ad4740
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\Q3DQ5XZL\Mitchell et al. - 2024 - A reduced kinetic method for investigating non-loc.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

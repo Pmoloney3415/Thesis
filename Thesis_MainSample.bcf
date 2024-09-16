@@ -2361,6 +2361,34 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">Bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">chen_introduction_2018</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">barlow_role_2022</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">epperlein_practical_1991</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">bittencourt_fundamentals_2004</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">thomas_review_2012</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">taitano_eulerian_2021</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">kingham_implicit_2004</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">arber_contemporary_2015</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">castor_radiation_2004</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">braginskii_transport_1965</bcf:citekey>
+    <bcf:citekey order="10" intorder="2">epperlein_plasma_1986</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">chittenden_signatures_2016</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">crilly_simulation_2020</bcf:citekey>
+    <bcf:citekey order="11" intorder="3">farrow_extended_2023</bcf:citekey>
+    <bcf:citekey order="11" intorder="4">oneill_modelling_2023</bcf:citekey>
+    <bcf:citekey order="11" intorder="5">chaturvedi_simulating_2024</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">tong_burn_2019</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">castor_radiation_2004</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">morel_diffusionlimit_2000</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">jennings_radiation_2005</bcf:citekey>
+    <bcf:citekey order="15" intorder="2">mcglinchey_radiationhydrodynamics_2017</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">yuan_spacetime_2024</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">schurtz_nonlocal_2000</bcf:citekey>
+    <bcf:citekey order="17" intorder="2">nicolai_practical_2006</bcf:citekey>
+    <bcf:citekey order="17" intorder="3">cao_improved_2015</bcf:citekey>
+    <bcf:citekey order="17" intorder="4">sherlock_comparison_2017</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">bell_fast_2024</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">mitchell_reduced_2024</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

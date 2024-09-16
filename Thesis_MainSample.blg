@@ -1,0 +1,17 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Thesis_MainSample.blg'
+[274] biber-MSWIN64:340> INFO - === 
+[348] Biber.pm:419> INFO - Reading 'Thesis_MainSample.bcf'
+[591] Biber.pm:979> INFO - Found 27 citekeys in bib section 0
+[628] Biber.pm:4419> INFO - Processing section 0
+[659] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
+[801] bibtex.pm:1713> INFO - LaTeX decoding ...
+[2351] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
+[2897] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2898] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2898] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[2898] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[2954] bbl.pm:660> INFO - Writing 'Thesis_MainSample.bbl' with encoding 'UTF-8'
+[2986] bbl.pm:763> INFO - Output to Thesis_MainSample.bbl
+[2987] Biber.pm:131> WARN - ISBN '978-0-521-83309-7 978-0-521-54062-9 978-0-511-53618-2' in entry 'castor_radiation_2004' is invalid - run biber with '--validate_datamodel' for details.
+[2987] Biber.pm:133> INFO - WARNINGS: 1

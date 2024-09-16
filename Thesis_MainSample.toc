@@ -1,37 +1,37 @@
 \contentsline {chapter}{\numberline {1}The Interaction of Light with Plasma}{8}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Basic Plasma Physics}{9}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Kinetic and Fluid Formulations of Plasmas}{10}{section.1.2}%
+\contentsline {section}{\numberline {1.2}The Kinetic and Fluid Formulations}{10}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}The Vlasov Equation}{11}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}The Fluid Equations}{11}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Radiation Transport}{11}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Magnetohydrodynamics}{12}{subsection.1.2.4}%
-\contentsline {subsubsection}{\numberline {1.2.4.1}Ideal MHD}{12}{subsubsection.1.2.4.1}%
-\contentsline {subsubsection}{\numberline {1.2.4.2}Magnetised Heatflow}{12}{subsubsection.1.2.4.2}%
-\contentsline {subsubsection}{\numberline {1.2.4.3}Resistive MHD}{12}{subsubsection.1.2.4.3}%
-\contentsline {subsubsection}{\numberline {1.2.4.4}The Nernst Effect}{12}{subsubsection.1.2.4.4}%
-\contentsline {subsubsection}{\numberline {1.2.4.5}The Biermann Battery Effect}{12}{subsubsection.1.2.4.5}%
-\contentsline {subsection}{\numberline {1.2.5}Kinetic Heatflow}{12}{subsection.1.2.5}%
-\contentsline {section}{\numberline {1.3}Waves in Plasma}{12}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Plasmas as a Dielectric Medium}{12}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Plasma Waves}{12}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Light Waves}{13}{subsection.1.3.3}%
-\contentsline {section}{\numberline {1.4}Propagation of Light in a Plasma}{13}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Paraxial Approximation}{13}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}WKB Approximation}{13}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Ray Tracing}{13}{subsection.1.4.3}%
-\contentsline {section}{\numberline {1.5}Absorption of Light in a Plasma}{13}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Inv Brem}{13}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Resonance Absorption}{13}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}ICF Relevant Absorption comparison}{13}{subsection.1.5.3}%
-\contentsline {section}{\numberline {1.6}Laser Plasma instabilities}{14}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Ponderamotive Force}{14}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}Three-Wave Coupling}{14}{subsection.1.6.2}%
-\contentsline {subsection}{\numberline {1.6.3}Cross-Beam Energy Transfer}{14}{subsection.1.6.3}%
-\contentsline {subsubsection}{\numberline {1.6.3.1}Linear Gain Theory}{14}{subsubsection.1.6.3.1}%
-\contentsline {subsubsection}{\numberline {1.6.3.2}Effect of Polarisation}{14}{subsubsection.1.6.3.2}%
-\contentsline {subsubsection}{\numberline {1.6.3.3}Langdon Effect on CBET}{14}{subsubsection.1.6.3.3}%
-\contentsline {subsection}{\numberline {1.6.4}Mitigation of Laser Plasma Instabilities}{14}{subsection.1.6.4}%
-\contentsline {section}{\numberline {1.7}Summary}{14}{section.1.7}%
-\contentsline {chapter}{Bibliography}{17}{section*.12}%
-\contentsline {chapter}{Copyright Permissions}{17}{section*.13}%
+\contentsline {subsection}{\numberline {1.2.2}The Fluid Equations}{12}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Radiation Transport}{12}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Magnetohydrodynamics}{13}{subsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.4.1}Ideal MHD}{13}{subsubsection.1.2.4.1}%
+\contentsline {subsubsection}{\numberline {1.2.4.2}Magnetised Heatflow}{13}{subsubsection.1.2.4.2}%
+\contentsline {subsubsection}{\numberline {1.2.4.3}Resistive MHD}{14}{subsubsection.1.2.4.3}%
+\contentsline {subsubsection}{\numberline {1.2.4.4}The Nernst Effect}{14}{subsubsection.1.2.4.4}%
+\contentsline {subsubsection}{\numberline {1.2.4.5}The Biermann Battery Effect}{14}{subsubsection.1.2.4.5}%
+\contentsline {subsection}{\numberline {1.2.5}Kinetic Heatflow}{14}{subsection.1.2.5}%
+\contentsline {section}{\numberline {1.3}Waves in Plasma}{14}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Plasmas as a Dielectric Medium}{15}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Plasma Waves}{15}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Light Waves}{15}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Propagation of Light in a Plasma}{15}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Paraxial Approximation}{15}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}WKB Approximation}{15}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Ray Tracing}{15}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Absorption of Light in a Plasma}{15}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Inv Brem}{15}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Resonance Absorption}{15}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}ICF Relevant Absorption comparison}{16}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}Laser Plasma instabilities}{16}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Ponderamotive Force}{16}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Three-Wave Coupling}{16}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Cross-Beam Energy Transfer}{16}{subsection.1.6.3}%
+\contentsline {subsubsection}{\numberline {1.6.3.1}Linear Gain Theory}{16}{subsubsection.1.6.3.1}%
+\contentsline {subsubsection}{\numberline {1.6.3.2}Effect of Polarisation}{16}{subsubsection.1.6.3.2}%
+\contentsline {subsubsection}{\numberline {1.6.3.3}Langdon Effect on CBET}{16}{subsubsection.1.6.3.3}%
+\contentsline {subsection}{\numberline {1.6.4}Mitigation of Laser Plasma Instabilities}{16}{subsection.1.6.4}%
+\contentsline {section}{\numberline {1.7}Summary}{17}{section.1.7}%
+\contentsline {chapter}{Bibliography}{19}{section*.17}%
+\contentsline {chapter}{Copyright Permissions}{23}{section*.19}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

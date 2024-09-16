@@ -1,21 +1,21 @@
 \chapter{The Interaction of Light with Plasma}%
 \label{chap:Theory}
 
-This chapter shall introduce theoretical background relevent to the work conducted in this thesis.
-The main focus of the work is centered on improving the laser modelling in the \textsc{Chimera} \ac{Rad-MHD} code.
+This chapter shall introduce theoretical background relevant to the work conducted in this thesis.
+The main focus of the work is centred on improving the laser modelling in the \textsc{Chimera} \ac{Rad-MHD} code.
 Therefore, the theoretical framework for modelling both the plasma and the interaction of light with it is introduced.
 
-Initially, the plasma state is defined and important length- and time-scales are provided.
-The kinetic and fluid descriptions of plasma are introduced and the validity domain of each framework is discussed, with particular reference to typical conditions for laser-plasma interactions.
+Initially, the plasma state is defined and important length- and time-scales are provided in Sec.~\ref{sec:theory_plasma_phys}.
+The kinetic and fluid descriptions of plasma are introduced in Sec.~\ref{sec:theory_kin_fluid_plasmas} and the validity domain of each framework is discussed, with particular reference to typical conditions for laser-plasma interactions.
 Additional physics packages of the fluid code, \textsc{Chimera}, which are utilised in later chapters, are introduced.
 A model for kinetic heatflow is desirable in fluid codes which model laser-plasma interactions, therefore although \textsc{Chimera} does not have this capability, some basic theory of kinetic heatflow is highlighted.
 
 An additional aim of the work was to include a \ac{CBET} model into the new \textsc{Chimera} laser package.
-\ac{LPIs} such as \ac{CBET} are multi-wave coupling phenomena, and therefore a basic description of waves in plasma is provided.
+\ac{LPIs} such as \ac{CBET} are multi-wave coupling phenomena, and therefore a basic description of waves in plasma is provided in Sec.~\ref{sec:theory_waves_plasmas}.
 The dispersion relation of the light waves in plasma is also derived.
-Beginning with the full wave equation and then introducing successive assumptions which are broadly satiisfied in typical laser-produced \ac{ICF} plasmas, the equations of ray-tracing are derived.
-Important absorption processes are then outlined, particularly \ac{Inv-Brem}, which is the dominant mechanism on the largest \ac{ICF} facilities in the world today.
-Finally, the basic theory of \ac{LPIs} is provided, particularly \ac{CBET} and its relevance for direct-drive \ac{ICF}.
+Beginning with the full wave equation and then introducing successive assumptions which are broadly satisfied in typical laser-produced \ac{ICF} plasmas, Sec.~\ref{sec:theory_propagation} derives the equations of ray-tracing.
+In Sec.~\ref{sec:theory_absorption} important absorption processes are then outlined, particularly \ac{Inv-Brem}, which is the dominant mechanism on the largest \ac{ICF} facilities in the world today.
+Finally, the basic theory of \ac{LPIs} is provided in Sec.~\ref{sec:theory_LPIs}, particularly \ac{CBET} and its relevance for direct-drive \ac{ICF}.
 
 \newpage
 
@@ -26,11 +26,11 @@ Finally, the basic theory of \ac{LPIs} is provided, particularly \ac{CBET} and i
 \label{sec:theory_plasma_phys}
 
 As stated in Chap.~\ref{chap:intro}, thermonuclear fusion requires the fuel to exist at significant temperatures, which are well above ionisation energies.
-Therefore, the fuel configuration in these fusion expeiments is a plasma.
-Formally, a plasma is defined as a quasi-neutral, ionised gas which exhibits collective behaviour.
-The charged particles within a plasma interact via the long-range Coulomb force, and thus undergo many simultaneuos interactions with the other particles.
+Therefore, the fuel configuration in these fusion experiments is a plasma.
+Formally, a plasma is defined as a quasi-neutral, ionised gas which exhibits collective behaviour~\cite{chen_introduction_2018}.
+The charged particles within a plasma interact via the long-range Coulomb force, and thus undergo many simultaneous interactions with the other particles.
 This leads to a variety of collective phenomena such as the plasma-waves described in Sec.~\ref{sec:theory_waves_plasmas}.
-Quasineutrailty of the plasma means that, when observed at a length-scale $L$, the plasma has no net charge,
+Quasineutrality of the plasma means that, when observed at a length-scale $L$, the plasma has no net charge,
 \begin{equation}
     \Sigma_{\alpha}q_{\alpha}N_{\alpha} = 0,
 \end{equation}
@@ -41,32 +41,33 @@ For a `single-species' plasma\footnote{Single-species here means that there is o
 \end{equation}
 where $n_e$ and $n_i$ are the number densities of electrons and ions respectively.
 
-Quasineutrailty because the particles in the plasma are free to move due to forces they experience.
-Thus if a local charge imbalance occurs, the electrons, which respond faster than the ion population due to their lower mass, move to rebalance this field and restore quasineutrailty.
+Quasineutrality arises because the particles in the plasma are free to move due to forces they experience.
+Thus, if a local charge imbalance occurs, the electrons, which respond faster than the ion population due to their lower mass, move to rebalance this field and restore quasineutrality.
 This electron relocation to eliminate local electric fields is known as Debye-screening.
-The length scale below the electron population cannot effectively screen the charges sets the length scale of quasineutrality and is known as the Debye-length,
+The length scale below the electron population cannot effectively screen the charges sets the length scale of quasineutrality, and is known as the Debye-length,
 \begin{equation}
     \lambda_{D}^2 = \frac{\epsilon_0 k_B T_e}{n_e e^2},
 \end{equation}
-where $T_e$ is the electron temperature, $\epsilon_0$ is the permitivity of free space, $k_B$ is the Boltzmann constant and $e$ is the electron charge.
-This is valid if there is a large number of particles in the Debye sphere, $n_e L^3\gg 1$.
+where $T_e$ is the electron temperature, $\epsilon_0$ is the permittivity of free space, $k_B$ is the Boltzmann constant and $e$ is the electron charge.
+This screening can only occur if there is a large number of particles in the Debye sphere, $n_e L^3\gg 1$.
+
 The timescale of the charge relocation is of particular importance to the interaction of light with plasmas.
-Light waves are an oscillating electric field, which charged particles in the plasma can respond to.
-If the particles are able to respond quickly enough, they can therefore influence the propagation of the light and ultimately the plasma can become opaque.
+Light waves are an oscillating electric field, which the charged particles in the plasma can respond to.
+If the particles are able to respond quickly enough, they can therefore influence the propagation of the light and ultimately force the plasma can become opaque to the propagating light wave.
 The oscillation timescale can be derived by considering a uniform assembly of quasineutral plasma and then displacing the electron population from the ions by a small distance $\delta x$ along the $x$-axis.
 The electric field which develops within the plasma is thus,
 \begin{equation}
     E_x = \frac{n_e e \delta x}{\epsilon_0},
 \end{equation}
 leading to a restoring force $F_x = -eE_x$ on each electron.
-Solving Newton's second Law demontsrates that, when thermal motion of the electron population is ignored\footnote{Inclusion of thermal motion leads to pressure, which acts as an restoring force, and yields the dispersion relation for an \ac{EPW}.}, oscillations of the electrons occur at the `plasma frequency',
+Solving Newton's second Law demonstrates that, when thermal motion of the electron population is ignored\footnote{Inclusion of thermal motion leads to pressure, which acts as a restoring force, and yields the dispersion relation for an \ac{EPW}.}, oscillations of the electrons occur at the `plasma frequency',
 \begin{equation}
     \label{eq:theory_plasma_freq}
     \omega_{p}^2 = \frac{n_e e^2}{m_e \epsilon_0}.
 \end{equation}
 If forcing oscillations occur at a frequency which is lower than $\omega_p$, then the electrons move rapidly enough to nullify the field.
 Consider light with frequency $\omega$, which is incident normal to a plasma density gradient
-Because $\omega_p\propto n_e$, the light is able to propagate until it reaches the density where $\omega = \omega_p$, which is known as the ciritcal density,
+Because $\omega_p\propto n_e$, the light is able to propagate until it reaches the density where $\omega = \omega_p$, which is known as the critical density,
 \begin{equation}
     \label{eq:theory_critical_density}
     n_{\text{cr}} = \frac{m_e \epsilon_0 \omega^2}{e^2}.
@@ -76,7 +77,7 @@ After reaching the critical density, the field of the light decays exponentially
 %###############################################################################################################################
 %###############################################################################################################################
 %###############################################################################################################################
-\section{Kinetic and Fluid Formulations of Plasmas}%
+\section{The Kinetic and Fluid Formulations}%
 \label{sec:theory_kin_fluid_plasmas}
 
 Idealised computational modelling of a plasma state would solve the long-range electro-magnetic interaction between every pair of particles at all times.
@@ -84,68 +85,115 @@ However, this very rapidly becomes intractable due to the large number $N$ of pa
 Reduced frameworks must thus be devised with which to analyse and predict the behaviour of the plasma state.
 Plasmas are divided into two broad classifications.
 When in local thermal equilibrium, the plasma is often described as `thermal' and the fluid formulation is an adequate description.
-When this is not true however, for instance a particular subset of particles are heated at a rate, which is much faster than thermalising collision timescales, this subset of the system is described as `non-thermal' ot kinetic.
-In this case the fluid formulation is an inadequate description and higher fidelity tools must be used to describe the evloution of the system.
+There are numerous situations when this is not true however, for instance if a particular subset of particles is heated at a rate, which is much faster than thermalising collision timescales.
+In this case, the subset of the system is described as `non-thermal' or `kinetic'.
+The fluid formulation becomes an inadequate description and higher fidelity, kinetic tools must be used to describe the evolution of the system.
 
 When a kinetic description of a plasma is required, the distribution function, $f_{\alpha}(\vec{x},\vec{v},t)$ is used to describe the state of particle species $\alpha$.
 It provides a statistical description of the number density of particles, which inhabit a phase-space, $\vec{x}$-$\vec{v}$, at time $t$.
-If the system evolves on a time-scale much lower than the collision time, then these collisions between particles act to relax the distribution function toward a Maxwellian,
+If the system evolves on a timescale much lower than the collision time and plasma length scales are lower than the collisional mean free-path, then these collisions between particles act to locally relax the distribution function toward a Maxwellian,
 \begin{equation}
-    f_{\alpha,\text{Max.}}(v) = n_{\alpha} {\left( \frac{1}{2\pi v_{\text{th}}^2} \right)}^{1.5} e^{-v^2/(2 v_{\text{th}}^2)},
+    \label{eq:theory_maxwellian}
+    f_{\alpha,\text{Max.}}(v) = n_{\alpha} {\left( \frac{1}{2\pi v_{\text{th}}^2} \right)}^{1.5} e^{-\left [ v/ \left (\sqrt{2} v_{\text{th}} \right ) \right ]^2},
 \end{equation}
 where $v_{\text{th}}=\sqrt{k_B T_{\alpha}/m_{\alpha}}$ is the thermal speed of the species with temperature and mass $T_{\alpha}$ and $m_{\alpha}$, respectively.
 The fraction outside the exponential is set such the integral over velocity space yields the number density of the species.
-Typically, for bulk of the target configuration throughout a laser-produced \ac{ICF} implosion, the assumption of a Maxwellian distribution is close to accurate although there are notable exceptions.
+Typically, for bulk of the target configuration throughout a laser-produced \ac{ICF} implosion, the assumption of a Maxwellian distribution is close to accurate, although there are several notable exceptions.
 For instance, DT fusion products have energies much higher than thermal energies and are also monoenergetic.
-\ac{LPIs} also generate energetic electron populations which are able to range through the implosion due to their low collisionality.
-Laser-heated plasmas also typically exhibit steep density and temperature gradients near the ablation surface, such that collisions, and therefore collision processes such as transport of thermal energy, do not act locally.
+\ac{LPIs} also generate energetic electron populations which are able to range through the implosion due to their low collisionality~\cite{barlow_role_2022}.
+Additionally, laser-heated plasmas typically exhibit steep density and temperature gradients near the ablation surface, such that collisions, and therefore collision processes such as transport of thermal energy, do not act locally~\cite{epperlein_practical_1991}.
+When performing fluid simulations of \ac{ICF} experiments, accurate modelling of these phenomena requires specific non-local modelling techniques.
 
 %################################################################################
 %################################################################################
 \subsection{The Vlasov Equation}%
 \label{sec:theory_vlasov}
 
-The evolution of the distribution function for each species indiviudally, is described by the Vlasov equation,
+The evolution of the distribution function for each species individually, is described by the Vlasov equation,
 \begin{equation}
     \label{eq:theory_vlasov}
     \frac{\partial f_\alpha}{\partial t} + \vec{v}.\nabla_x f_\alpha + \frac{q_\alpha}{m_\alpha} (\vec{E} + \vec{v}\times\vec{B}) . \nabla_v f_\alpha = \left ( \frac{\partial f_\alpha}{\partial t} \right )_\text{collisions},
 \end{equation}
-where $q_\alpha$ is the charge of the species, $\vec{E}$ and $\vec{B}$ are the macroscopic electric and magnetic fields\footnote{Macroscopic here means on a scale larger than Debye shielding.}, respectively, and $\nabla_x$ and $\nabla_v$ are gradients with respect to postiion and velocity coordinates respectively.
+where $q_\alpha$ is the charge of the species, $\vec{E}$ and $\vec{B}$ are the macroscopic electric and magnetic fields\footnote{Macroscopic here means on a scale larger than the Debye length.}, respectively, and $\nabla_x$ and $\nabla_v$ are gradients with respect to position and velocity coordinates respectively~\cite{bittencourt_fundamentals_2004}.
 The equation describes the conservation of phase-space particle density.
-The collision operator on the right hand side of Eq.~\ref{eq:theory_vlasov} describes the action of microscopic fields, which arise due to the random motion of the charged plasma particles.
+The collision operator on the right-hand side of Eq.~\ref{eq:theory_vlasov} describes the action of microscopic fields, which arise due to the random motion of the charged plasma particles.
 Evolution of the macroscopic fields is governed by Maxwell's equations,
 \begin{align}
     \label{eq:theory_maxwell_eqs}
-    \nabla.\vec{E} &= \fra{\rho_{\text{charge}}}{\epsilon_0},\\
+    \nabla.\vec{E} &= \frac{\rho_{\text{charge}}}{\epsilon_0},\\
     \nabla.\vec{B} &= 0,\\
     \nabla \times \vec{E} &= -\frac{\partial \vec{B}}{\partial t},\\
-    \nabla \times \vec{E} &= \frac{1}{\mu_0 \epsilon_0}\frac{\partial \vec{E}}{\partial t} + \mu_0 \vec{j},\\
+    \nabla \times \vec{B} &= \mu_0 \epsilon_0\frac{\partial \vec{E}}{\partial t} + \mu_0 \vec{J},
 \end{align}
-where $\mu_0$ is the permeability of free space, $\rho_{\text{charge}}$ is the charge density and $\vec{j}$ is the current density.
-
-x and v of all particles described by f.
-bulk collision operator and lorentz force give vlasov equation.
-Solved by VFP.
+where $\mu_0$ is the permeability of free space, $\rho_{\text{charge}}$ is the charge density, $\vec{J}$ is the current density and $\nabla\equiv \nabla_x$.
+In the general case with three spatial dimensions, Eq.~\ref{eq:theory_vlasov} is seven dimensional and evolves on small spatial and temporal scales.
+Therefore, it is typically too expensive to solve in its entirety for the relatively long times and large spatial scales of an entire \ac{ICF} implosion.
+Solution methods to the Vlasov equation include \ac{VFP} codes, which discretise the 6-D phase space of Eq.~\ref{eq:theory_vlasov} and evolve the state forward in time~\cite{thomas_review_2012}.
+The velocity space can be either directly discretised~\cite{taitano_eulerian_2021}, or expanded in spherical harmonics~\cite{kingham_implicit_2004}.
+Alternatively, the distribution function can be approximated by Monte Carlo techniques, which is done in \ac{PiC} codes~\cite{arber_contemporary_2015}
 
 %################################################################################
 %################################################################################
 \subsection{The Fluid Equations}%
 \label{sec:theory_fluid}
 
-Take moments of vlasov, assuming equilibrium, to get fluid equations.
-Give assumptions.
-Describe closure problem.
-Say how solved in Chimera.
-Knudsen number describes how kinetic it is.
+Due to the expense of the Vlasov equation, the assumption of local thermodynamic equilibrium can be used to derive the fluid equations.
+By inserting Eq.~\ref{eq:theory_maxwellian} into Eq.~\ref{eq:theory_vlasov}, multiplying each side of the equation by functions of $\vec{v}$ and integrating over velocity space, the fluid equations can be derived.
+This process is known as taking moments of the Vlasov equation.
+A moment of the Vlasov equation at order $n$ of $\vec{v}$ yields an equation which depends upon the $n+1$ moment.
+A solvable system of equations thus requires an external closure.
+The inviscid hydrodynamic equations\footnote{Note that since the velocity dependence has been integrated out, all variables are now only functions of $\vec{x}$.} are obtained from $n=[0,1,2]$ moments,
+\begin{align}
+    \label{eq:theory_fluid_eqs}
+    \left [ \frac{\partial}{\partial t} + \vec{u_\alpha}.\nabla \right ] \rho_\alpha + \rho_\alpha\nabla . \vec{u_\alpha} &= 0,\\
+    \rho_\alpha \left [ \frac{\partial}{\partial t} + \vec{u_\alpha}.\nabla \right ] \vec{u_\alpha} &= -\nabla P_\alpha + \vec{F}_{\alpha,\text{ext.}},\\
+    \left [ \frac{\partial}{\partial t} + \vec{u_\alpha}.\nabla \right ] \epsilon_\alpha + (\epsilon_\alpha + P_\alpha)\nabla.\vec{u_\alpha} &= -\nabla . \vec{q_\alpha} + Q_{\alpha,\text{ext.}},
+\end{align}
+where $\rho_\alpha$ is the mass density of species $\alpha$, $\vec{u_\alpha}$ is the fluid velocity, $\epsilon_\alpha$ is the internal energy, $P_\alpha$ is the isotropic pressure, $\vec{F}_{\alpha,\text{ext.}}$ is external forcing, $\vec{q_\alpha}$ is the heat flux and $Q_{\alpha,\text{ext.}}$ is external heating or cooling~\cite{castor_radiation_2004}.
+A closure relation for the plasma pressure can be obtained from an \ac{EoS}, such as the ideal gas law, which relates pressure to density, temperature and energy density.
+The heat flux can be obtained from Fourier's law,
+\begin{equation}
+    \label{eq:theory_fourier_heat}
+    \vec{q} = -\kappa \nabla T,
+\end{equation}
+where the thermal conductivity, $\kappa$, is obtained from local transport theory~\cite{braginskii_transport_1965,epperlein_plasma_1986}.
+
+The \textsc{Chimera} code is a two-temperature, single fluid code.
+This means that electrons and ions are assumed to be co-moving and cannot separate.
+However, their temperatures are able to evolve separately and equilibrate with each other due to collision.
+Details of the numerical implementation can be found in other publications~\cite{chittenden_signatures_2016,crilly_simulation_2020,farrow_extended_2023,oneill_modelling_2023,chaturvedi_simulating_2024}. 
+Additional physics packages are included by calculating contributions to the external forces and heating.
+For example, the non-thermal fusion products are modelled by a Monte Carlo treatment, which collide with the bulk plasma and thus deposit energy which contributes to the electron and ion $Q_{\alpha,\text{ext.}}$~\cite{tong_burn_2019}.
 
 %################################################################################
 %################################################################################
 \subsection{Radiation Transport}%
 \label{sec:theory_radtransp}
 
-Additional mechanism which described emission and absorption of radiation by plasma.
-Important for high temperatures and densities of ICF.
-Say how solved in Chimera.
+For this section, a distinction between coherent, approximately visible or \ac{UV} wavelength laser radiation, and higher frequency ($\omega \gg \omega_p$) x-ray radiation is drawn.
+The former is the main focus of Chap.~\ref{sec:SOLAS}.
+It refracts significantly in coronal plasma density gradients and radiation at this wavelength is not significantly re-emitted by the thermal plasma.
+In contrast, the latter does not significantly refract and is re-emitted by in \ac{ICF} plasma conditions.
+The latter is accounted for numerically in \textsc{Chimera} by a radiation transport algorithm, which is cursively described here.
+
+In addition to driving the implosion of indirect-drive \ac{ICF} experiments, x-ray radiation is also significant in a wide array of laser-driven \ac{HEDP} physics experiments.
+For example, the hot coronal plasma in direct-drive radiates a significant amount of energy as thermal Bremsstrahlung emission.
+This both lowers the coronal temperatures, reducing the thermal conduction drive efficiency and also preheats the fuel, making it harder to compress.
+Radiation acts both as a source and sink of energy, as it is radiated and emitted by the material, depending on the plasma conditions and the atomic properties.
+Thermal emission is wavelength dependent and atomic transitions create sharp resonances of emissivity and opacity in wavelength space.
+Therefore, the radiation-transport algorithm must be discretised in wavelength, depending on the properties of the material and the plasma conditions.
+
+The radiative transfer equation describes the propagation, absorption, emission and scattering of photons with matter,
+\begin{equation}
+    \label{eq:theory_rad_transfer}
+    \frac{\partial I_\nu}{\partial t} + c \hat{\vec{\Omega}}.\nabla i_\nu = \left ( \frac{\partial I_\nu}{\partial t} \right )_{\text{collisions}} + \left ( \frac{\partial I_\nu}{\partial t} \right )_{\text{source}},
+\end{equation}
+where $c$ is the speed of light in vacuum, $I_\nu$ is the spectrally resolved radiation intensity, $\hat{\vec{\Omega}}$ is the photon direction of travel~\cite{castor_radiation_2004}.
+The left-hand side describes the advection of radiation at speed $c$ and the first and second terms on the right-hand side describe collisions between matter and photons, and emission or absorption of photons by the matter respectively.
+Eq.~\ref{eq:theory_rad_transfer} is seven dimensional, and therefore is typically highly expensive to solve, so approximations are often employed to make solutions more tractable.
+In analogy to derivation of the fluid equations from the Vlasov equation, angular moments of Eq.~\ref{eq:theory_rad_transfer} can be taken to reduce the dimensionality of the problem.
+This also leads to a requirement for a closure relation, and the approach taken in \textsc{Chimera} is to use the $P_{1/3}$ closure, which works well for highly isotropic radiation fields~\cite{morel_diffusionlimit_2000}.
+More detail of the \textsc{Chimera} implementation is provided in Refs.~\cite{jennings_radiation_2005,mcglinchey_radiationhydrodynamics_2017}.
 
 %################################################################################
 %################################################################################
@@ -197,9 +245,20 @@ Hmmm, describe and say when important.
 \subsection{Kinetic Heatflow}%
 \label{sec:theory_kineticheatflow}
 
-Say that in laser heated plasmas, often have Knudsen significant due to high temps and low densities.
-Therefore, accurate modes include kinetic model for heatflux.
-Either VFP or SNB etc, say roughly what they do.
+While the \textsc{Chimera} implementation of thermal transport is simply to use the local limit described in Eq.~\ref{eq:theory_fourier_heat}, this is not always a valid approximation in laser produced plasmas.
+When laser-heating is applied to a plasma, laser energy is transferred to the electron population mostly by \ac{Inv-Brem}, as is described in Sec.~\ref{sec:theory_absorption}, heating the electron fluid to significant temperatures.
+For laser-solid interactions, this often results in sharp temperature and density gradients in the conduction zone, where the thermal energy of the hot corona is transported via thermal conduction to an ablation surface.
+To assess whether local transport theory is valid, the Knudsen number is a convenient parameter which compares the mean free path of electrons, $\lambda_{\text{mfp}}$ to the length scale of the gradient, $L$.
+Specifically, the Knudsen number is defined,
+\begin{equation}
+    \text{Kn} = \frac{\lambda_{\text{mfp}}}{L} = \frac{3 (k_B^2 T_e^2)}{4 \sqrt{2\pi} e^4 Z^2 n_i \ln{\Lambda} L},
+\end{equation}
+and transport effects, become significantly non-local when $\text{Kn}\sim0.1$, which is often observed for high-power laser solid conduction zones~\cite{yuan_spacetime_2024}.
+Physically, more energetic particles within a plasma are less collisional and also play a more significant role in heat flux because it is obtained a higher order moment quantity than density or fluid velocity.
+Therefore, the fast heat carrying particles in the tail of the distribution function are able to range through longer length scales and preheat the fuel more than a local treatment would predict.
+Although not included within \textsc{Chimera}, models for non-local transport exist, which can be included in fluid models, such as \textsc{Snb}~\cite{schurtz_nonlocal_2000,nicolai_practical_2006,cao_improved_2015,sherlock_comparison_2017}, Fast-\textsc{VFP}~\cite{bell_fast_2024} and \textsc{Rkm}~\cite{mitchell_reduced_2024}.
+They obtain an improved heat flux estimate, $\vec{q}$, which accounts for non-local conduction effects such including pre-heat, ad can be included in the fluid framework.
+Implementation of one of these models into \textsc{Chimera} could significantly improve the modelling capability for simulations involving laser-solid interactions, including direct-drive calculations.
 
 %###############################################################################################################################
 %###############################################################################################################################
