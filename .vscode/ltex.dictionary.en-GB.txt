@@ -76,3 +76,7 @@ Debye-screening
 Debye-length
 quasineutrality
 Quasineutrality
+Ampère
+gyrofrequency
+Righi-Leduc
+anisotropises

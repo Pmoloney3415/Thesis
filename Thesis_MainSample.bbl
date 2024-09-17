@@ -623,6 +623,34 @@
       \verb C\:\\Users\\Philip\\Zotero\\storage\\NENIZF9W\\Chittenden et al. - 2016 - Signatures of asymmetry in neutron spectra and ima.pdf;C\:\\Users\\Philip\\Zotero\\storage\\TEXCIJJR\\Signatures-of-asymmetry-in-neutron-spectra-and.html
       \endverb
     \endentry
+    \entry{walsh_extended_2018}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=4bf3440c7a4721d96de0cac52c806432}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={C.\bibnamedelimi A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Imperial College London}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \strng{namehash}{4bf3440c7a4721d96de0cac52c806432}
+      \strng{fullhash}{4bf3440c7a4721d96de0cac52c806432}
+      \strng{bibnamehash}{4bf3440c7a4721d96de0cac52c806432}
+      \strng{authorbibnamehash}{4bf3440c7a4721d96de0cac52c806432}
+      \strng{authornamehash}{4bf3440c7a4721d96de0cac52c806432}
+      \strng{authorfullhash}{4bf3440c7a4721d96de0cac52c806432}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Extended {{Magneto-Hydrodynamic Effects}} in {{Indirect Drive Inertial Confinement Fusion Experiments}}}
+      \field{type}{phdthesis}
+      \field{year}{2018}
+    \endentry
     \entry{crilly_simulation_2020}{thesis}{}
       \name{author}{1}{}{%
         {{hash=9d11e179ccc7524b4b62ed2bec16f445}{%
@@ -900,6 +928,478 @@
       \field{type}{phdthesis}
       \field{year}{2017}
     \endentry
+    \entry{ramazanov_coulomb_2001}{article}{}
+      \name{author}{2}{}{%
+        {{hash=af498b0aca266e798b41728b9998cc27}{%
+           family={Ramazanov},
+           familyi={R\bibinitperiod},
+           given={T.\bibnamedelimi S.},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=e7a590f8e7a60c2aeff680cb7704405f}{%
+           family={Kodanova},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{5a1025ced05f0d5068f8de72afb56edb}
+      \strng{fullhash}{5a1025ced05f0d5068f8de72afb56edb}
+      \strng{bibnamehash}{5a1025ced05f0d5068f8de72afb56edb}
+      \strng{authorbibnamehash}{5a1025ced05f0d5068f8de72afb56edb}
+      \strng{authornamehash}{5a1025ced05f0d5068f8de72afb56edb}
+      \strng{authorfullhash}{5a1025ced05f0d5068f8de72afb56edb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Coulomb Logarithm of a Nonideal Plasma}
+      \field{volume}{8}
+      \field{year}{2001}
+      \field{pages}{5049\bibrangedash 5050}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1063/1.1407820
+      \endverb
+    \endentry
+    \entry{kodanova_investigation_2015}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e7a590f8e7a60c2aeff680cb7704405f}{%
+           family={Kodanova},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=af498b0aca266e798b41728b9998cc27}{%
+           family={Ramazanov},
+           familyi={R\bibinitperiod},
+           given={T.\bibnamedelimi S.},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=8493cabd35561b16e73f0d75a0d68f27}{%
+           family={Issanova},
+           familyi={I\bibinitperiod},
+           given={M.\bibnamedelimi K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=9a1d8c009671874a16759401888a6f5a}{%
+           family={Nigmetova},
+           familyi={N\bibinitperiod},
+           given={G.\bibnamedelimi N.},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=26d7d20639a2c875d79598fe5d0109f0}{%
+           family={Moldabekov},
+           familyi={M\bibinitperiod},
+           given={{\relax\bibnamedelimb Zh}.\bibnamedelimi A.},
+           giveni={Z\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{799044e38496a1f8a55a22d030c72aab}
+      \strng{fullhash}{bcba500ec00da3670eb30f2b04fe87d3}
+      \strng{bibnamehash}{799044e38496a1f8a55a22d030c72aab}
+      \strng{authorbibnamehash}{799044e38496a1f8a55a22d030c72aab}
+      \strng{authornamehash}{799044e38496a1f8a55a22d030c72aab}
+      \strng{authorfullhash}{bcba500ec00da3670eb30f2b04fe87d3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0863-1042, 1521-3986}
+      \field{journaltitle}{Contributions to Plasma Physics}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2-3}
+      \field{title}{Investigation of {{Coulomb Logarithm}} and {{Relaxation Processes}} in {{Dense Plasma}} on the {{Basis}} of {{Effective Potentials}}}
+      \field{volume}{55}
+      \field{year}{2015}
+      \field{pages}{271\bibrangedash 276}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1002/ctpp.201400094
+      \endverb
+    \endentry
+    \entry{lin_temperature_2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=13fa75e0d9bd363df4cc9c3acc9aee97}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Chengliang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2d52d384dd22fd20b49395467e0fe578}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c8c8fb0dfd19a280f8dcebd301d49f80}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f985f6e401ce5bb8c981635f57241804}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Shiyang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ebbba2f353e9b7182274b65988d6f9e6}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jianguo},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{d0bff70ee2e56950427f8d34726cf7e8}
+      \strng{fullhash}{4b932d021ebe26046824b033e4aecd76}
+      \strng{bibnamehash}{d0bff70ee2e56950427f8d34726cf7e8}
+      \strng{authorbibnamehash}{d0bff70ee2e56950427f8d34726cf7e8}
+      \strng{authornamehash}{d0bff70ee2e56950427f8d34726cf7e8}
+      \strng{authorfullhash}{4b932d021ebe26046824b033e4aecd76}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0029-5515, 1741-4326}
+      \field{journaltitle}{Nuclear Fusion}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Temperature Relaxation and Generalized {{Coulomb}} Logarithm in Two-Temperature Dense Plasmas Relevant to Inertial Confinement Fusion Implosions}
+      \field{volume}{63}
+      \field{year}{2023}
+      \field{pages}{106005}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1741-4326/acee96
+      \endverb
+    \endentry
+    \entry{parks_why_2004}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d2be4002009570c83e653a1cf2bd8bfa}{%
+           family={Parks},
+           familyi={P\bibinitperiod},
+           given={George\bibnamedelima K.},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science and Business Media LLC}%
+      }
+      \strng{namehash}{d2be4002009570c83e653a1cf2bd8bfa}
+      \strng{fullhash}{d2be4002009570c83e653a1cf2bd8bfa}
+      \strng{bibnamehash}{d2be4002009570c83e653a1cf2bd8bfa}
+      \strng{authorbibnamehash}{d2be4002009570c83e653a1cf2bd8bfa}
+      \strng{authornamehash}{d2be4002009570c83e653a1cf2bd8bfa}
+      \strng{authorfullhash}{d2be4002009570c83e653a1cf2bd8bfa}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0038-6308}
+      \field{journaltitle}{Space Science Reviews}
+      \field{langid}{english}
+      \field{number}{1/2}
+      \field{title}{Why Space Physics Needs to Go beyond the {{MHD}} Box}
+      \field{volume}{113}
+      \field{year}{2004}
+      \field{pages}{97\bibrangedash 121}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1023/b:spac.0000042941.14372.9b
+      \endverb
+    \endentry
+    \entry{mathioudakis_alfven_2013}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9faff6a4c5bb4fb988d046345b781a7c}{%
+           family={Mathioudakis},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f09e862d56f7e3e9c775c8d5c73d663d}{%
+           family={Jess},
+           familyi={J\bibinitperiod},
+           given={D.\bibnamedelimi B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=d5d997ec3d585a68459ac7bfc7ef3dab}{%
+           family={Erdélyi},
+           familyi={E\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science and Business Media LLC}%
+      }
+      \strng{namehash}{d25f9003c9ef12fef1d5935260fe87c5}
+      \strng{fullhash}{5aa55ba85ce1ebf24d6c2c2fd23fdc20}
+      \strng{bibnamehash}{d25f9003c9ef12fef1d5935260fe87c5}
+      \strng{authorbibnamehash}{d25f9003c9ef12fef1d5935260fe87c5}
+      \strng{authornamehash}{d25f9003c9ef12fef1d5935260fe87c5}
+      \strng{authorfullhash}{5aa55ba85ce1ebf24d6c2c2fd23fdc20}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0038-6308, 1572-9672}
+      \field{journaltitle}{Space Science Reviews}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{1-4}
+      \field{shorttitle}{Alfvén {{Waves}} in the {{Solar Atmosphere}}}
+      \field{title}{Alfvén {{Waves}} in the {{Solar Atmosphere}}: {{From Theory}} to {{Observations}}}
+      \field{volume}{175}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 27}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1007/s11214-012-9944-7
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\KGL4Z882\Mathioudakis et al. - 2013 - Alfvén Waves in the Solar Atmosphere From Theory .pdf
+      \endverb
+    \endentry
+    \entry{boozer_equations_1998}{article}{}
+      \name{author}{1}{}{%
+        {{hash=16deea5b9b90e50a1c16d8bc8f39bd78}{%
+           family={Boozer},
+           familyi={B\bibinitperiod},
+           given={Allen\bibnamedelima H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{16deea5b9b90e50a1c16d8bc8f39bd78}
+      \strng{fullhash}{16deea5b9b90e50a1c16d8bc8f39bd78}
+      \strng{bibnamehash}{16deea5b9b90e50a1c16d8bc8f39bd78}
+      \strng{authorbibnamehash}{16deea5b9b90e50a1c16d8bc8f39bd78}
+      \strng{authornamehash}{16deea5b9b90e50a1c16d8bc8f39bd78}
+      \strng{authorfullhash}{16deea5b9b90e50a1c16d8bc8f39bd78}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Equations for Studies of Feedback Stabilization}
+      \field{volume}{5}
+      \field{year}{1998}
+      \field{pages}{3350\bibrangedash 3357}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1063/1.873048
+      \endverb
+    \endentry
+    \entry{kuznetsova_multiscale_2007}{article}{}
+      \name{author}{8}{}{%
+        {{hash=88bd113899e57676aa0eaa59387af188}{%
+           family={Kuznetsova},
+           familyi={K\bibinitperiod},
+           given={M.\bibnamedelimi M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d3eb2bd8a1e4ad8693a51cb0cd631e60}{%
+           family={Hesse},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c0e0a301fb42ee19773e58916117696a}{%
+           family={Rastätter},
+           familyi={R\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3e73a662913f068f8db701713c49e92e}{%
+           family={Taktakishvili},
+           familyi={T\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=247a0db1f5d743b3c6cabe8e037a2193}{%
+           family={Toth},
+           familyi={T\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=87948d852e995bcd8ee6a8e0302e9f58}{%
+           family={De\bibnamedelima Zeeuw},
+           familyi={D\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={D.\bibnamedelimi L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3dad549d50ee9d736a5fd2cc7c99e572}{%
+           family={Ridley},
+           familyi={R\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3b669ab46cdd0ac6138d47fda0affdb4}{%
+           family={Gombosi},
+           familyi={G\bibinitperiod},
+           given={T.\bibnamedelimi I.},
+           giveni={T\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Geophysical Union (AGU)}%
+      }
+      \strng{namehash}{9901bf82d65b5a7b55faf2d10e0b577a}
+      \strng{fullhash}{61dce7cb8c35e601447adcab633d98db}
+      \strng{bibnamehash}{9901bf82d65b5a7b55faf2d10e0b577a}
+      \strng{authorbibnamehash}{9901bf82d65b5a7b55faf2d10e0b577a}
+      \strng{authornamehash}{9901bf82d65b5a7b55faf2d10e0b577a}
+      \strng{authorfullhash}{61dce7cb8c35e601447adcab633d98db}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0148-0227}
+      \field{journaltitle}{Journal of Geophysical Research: Space Physics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{A10}
+      \field{title}{Multiscale Modeling of Magnetospheric Reconnection}
+      \field{volume}{112}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.1029/2007ja012316
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\CXIW9AF7\Kuznetsova et al. - 2007 - Multiscale modeling of magnetospheric reconnection.pdf
+      \endverb
+    \endentry
+    \entry{perez-colljimenez_role_2022}{article}{}
+      \name{author}{7}{}{%
+        {{hash=bdcf9ae7ebc40265bafecdfc18525e30}{%
+           family={Pérez-Coll\bibnamedelima Jiménez},
+           familyi={P\bibinithyphendelim C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Judit},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8b28f9478d604a27a404ef54b7a21040}{%
+           family={Tenfjord},
+           familyi={T\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ea9917d3191e60fe9536a6f26a5b8e2e}{%
+           family={Hesse},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=00d329055e2310cdd799820db15f1abf}{%
+           family={Norgren},
+           familyi={N\bibinitperiod},
+           given={Cecilia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5fef4d1e6f55ce13e2ec53ebfb6cafbf}{%
+           family={Kwagala},
+           familyi={K\bibinitperiod},
+           given={Norah},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d7b364e260d9c59772907be4cfe32927}{%
+           family={Kolst{ø}},
+           familyi={K\bibinitperiod},
+           given={H{å}kon\bibnamedelima Midthun},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9cc7548e7c2d92c3bde1743cf7c5c4ed}{%
+           family={Spinnangr},
+           familyi={S\bibinitperiod},
+           given={Susanne\bibnamedelima Fl{ø}},
+           giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Geophysical Union (AGU)}%
+      }
+      \strng{namehash}{cd8315b3e2d02a3b7a1d3338555c63b3}
+      \strng{fullhash}{bb9262725b901d590abeedeb73b6dc59}
+      \strng{bibnamehash}{cd8315b3e2d02a3b7a1d3338555c63b3}
+      \strng{authorbibnamehash}{cd8315b3e2d02a3b7a1d3338555c63b3}
+      \strng{authornamehash}{cd8315b3e2d02a3b7a1d3338555c63b3}
+      \strng{authorfullhash}{bb9262725b901d590abeedeb73b6dc59}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2169-9380, 2169-9402}
+      \field{journaltitle}{Journal of Geophysical Research: Space Physics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{The {{Role}} of {{Resistivity}} on the {{Efficiency}} of {{Magnetic Reconnection}} in {{MHD}}}
+      \field{volume}{127}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1029/2021ja030134
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\34PMA7BW\Pérez‐Coll Jiménez et al. - 2022 - The Role of Resistivity on the Efficiency of Magne.pdf
+      \endverb
+    \endentry
+    \entry{slutz_pulsedpowerdriven_2010}{article}{}
+      \name{author}{8}{}{%
+        {{hash=65bfd60bdf44fee6434b5ea8ad2012f0}{%
+           family={Slutz},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=16e9459c34344299bee97493051bf99b}{%
+           family={Herrmann},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b991e33f70a926ffb192ce756ef99312}{%
+           family={Vesey},
+           familyi={V\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=09d68447c34c97fde51feabd4c621111}{%
+           family={Sefkow},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=5b6f64a0b7f3037cdf8afe09f1d00d64}{%
+           family={Sinars},
+           familyi={S\bibinitperiod},
+           given={D.\bibnamedelimi B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=4d64152ab610c8ca2193d1502f892a0c}{%
+           family={Rovang},
+           familyi={R\bibinitperiod},
+           given={D.\bibnamedelimi C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=bc315f9d29dcf85f508bb4647120061c}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={K.\bibnamedelimi J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7cdc5076f6c9f911dd68a123fc6486d7}{%
+           family={Cuneo},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{591ae6c0d120441177e35592f258b30f}
+      \strng{fullhash}{ebc13600c68aa55121074270dc96239a}
+      \strng{bibnamehash}{591ae6c0d120441177e35592f258b30f}
+      \strng{authorbibnamehash}{591ae6c0d120441177e35592f258b30f}
+      \strng{authornamehash}{591ae6c0d120441177e35592f258b30f}
+      \strng{authorfullhash}{ebc13600c68aa55121074270dc96239a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Pulsed-Power-Driven Cylindrical Liner Implosions of Laser Preheated Fuel Magnetized with an Axial Field}
+      \field{volume}{17}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.1063/1.3333505
+      \endverb
+    \endentry
     \entry{yuan_spacetime_2024}{article}{}
       \name{author}{5}{}{%
         {{hash=e09e217e8dda9d13b0b91082f4dc7e67}{%
@@ -934,8 +1434,8 @@
       \strng{authorbibnamehash}{2a65154ed7721e937391bb46fa8d47f9}
       \strng{authornamehash}{2a65154ed7721e937391bb46fa8d47f9}
       \strng{authorfullhash}{5599cd6899f860206de3bdfe49134c14}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0741-3335, 1361-6587}
@@ -975,8 +1475,8 @@
       \strng{authorbibnamehash}{5ccf9e8421979609746df895a4a2af35}
       \strng{authornamehash}{5ccf9e8421979609746df895a4a2af35}
       \strng{authorfullhash}{741e5e7ad7e6a2b8eddc48676d588e82}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -1020,8 +1520,8 @@
       \strng{authorbibnamehash}{6cdb840b640fe563ff7ea2a0a5bd14a8}
       \strng{authornamehash}{6cdb840b640fe563ff7ea2a0a5bd14a8}
       \strng{authorfullhash}{9df5545c4b85c06516a96587053d7297}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -1065,8 +1565,8 @@
       \strng{authorbibnamehash}{e447cec740cf3d749970fc95bf495b6d}
       \strng{authornamehash}{e447cec740cf3d749970fc95bf495b6d}
       \strng{authorfullhash}{2a30994e9aadc519988c1df6f7eaf8dd}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -1110,8 +1610,8 @@
       \strng{authorbibnamehash}{91304a2be3ff59694dd291a3431f0efc}
       \strng{authornamehash}{91304a2be3ff59694dd291a3431f0efc}
       \strng{authorfullhash}{37f32e0bfd4152c97544e342da95e570}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -1150,8 +1650,8 @@
       \strng{authorbibnamehash}{53c398659c3de9fedb8530c82202b8ac}
       \strng{authornamehash}{53c398659c3de9fedb8530c82202b8ac}
       \strng{authorfullhash}{53c398659c3de9fedb8530c82202b8ac}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0741-3335, 1361-6587}
@@ -1201,8 +1701,8 @@
       \strng{authorbibnamehash}{e9af611cdd89cf800588d4dd8483f4b1}
       \strng{authornamehash}{e9af611cdd89cf800588d4dd8483f4b1}
       \strng{authorfullhash}{59edbded59046bb61712d9a1214f4a1a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0741-3335, 1361-6587}

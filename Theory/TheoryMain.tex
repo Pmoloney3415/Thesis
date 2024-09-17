@@ -112,17 +112,21 @@ When performing fluid simulations of \ac{ICF} experiments, accurate modelling of
 The evolution of the distribution function for each species individually, is described by the Vlasov equation,
 \begin{equation}
     \label{eq:theory_vlasov}
-    \frac{\partial f_\alpha}{\partial t} + \vec{v}.\nabla_x f_\alpha + \frac{q_\alpha}{m_\alpha} (\vec{E} + \vec{v}\times\vec{B}) . \nabla_v f_\alpha = \left ( \frac{\partial f_\alpha}{\partial t} \right )_\text{collisions},
+    \frac{\partial f_\alpha}{\partial t} + \vec{v}.\nabla_x f_\alpha + \frac{q_\alpha}{m_\alpha} (\vec{E} + \vec{v}\times\vec{B}) . \nabla_v f_\alpha = \left ( \frac{\partial f_\alpha}{\partial t} \right )_\text{collisions} + \left ( \frac{\partial f_\alpha}{\partial t} \right )_\text{external},
 \end{equation}
 where $q_\alpha$ is the charge of the species, $\vec{E}$ and $\vec{B}$ are the macroscopic electric and magnetic fields\footnote{Macroscopic here means on a scale larger than the Debye length.}, respectively, and $\nabla_x$ and $\nabla_v$ are gradients with respect to position and velocity coordinates respectively~\cite{bittencourt_fundamentals_2004}.
 The equation describes the conservation of phase-space particle density.
 The collision operator on the right-hand side of Eq.~\ref{eq:theory_vlasov} describes the action of microscopic fields, which arise due to the random motion of the charged plasma particles.
+External forces, for example gravity, are also accounted for in the second right-hand side term.
 Evolution of the macroscopic fields is governed by Maxwell's equations,
 \begin{align}
-    \label{eq:theory_maxwell_eqs}
+    \label{eq:theory_maxwell_eqs_1}
     \nabla.\vec{E} &= \frac{\rho_{\text{charge}}}{\epsilon_0},\\
+    \label{eq:theory_maxwell_eqs_2}
     \nabla.\vec{B} &= 0,\\
+    \label{eq:theory_maxwell_eqs_3}
     \nabla \times \vec{E} &= -\frac{\partial \vec{B}}{\partial t},\\
+    \label{eq:theory_maxwell_eqs_4}
     \nabla \times \vec{B} &= \mu_0 \epsilon_0\frac{\partial \vec{E}}{\partial t} + \mu_0 \vec{J},
 \end{align}
 where $\mu_0$ is the permeability of free space, $\rho_{\text{charge}}$ is the charge density, $\vec{J}$ is the current density and $\nabla\equiv \nabla_x$.
@@ -144,26 +148,53 @@ A moment of the Vlasov equation at order $n$ of $\vec{v}$ yields an equation whi
 A solvable system of equations thus requires an external closure.
 The inviscid hydrodynamic equations\footnote{Note that since the velocity dependence has been integrated out, all variables are now only functions of $\vec{x}$.} are obtained from $n=[0,1,2]$ moments,
 \begin{align}
-    \label{eq:theory_fluid_eqs}
+    \label{eq:theory_fluid_eqs_1}
     \left [ \frac{\partial}{\partial t} + \vec{u_\alpha}.\nabla \right ] \rho_\alpha + \rho_\alpha\nabla . \vec{u_\alpha} &= 0,\\
-    \rho_\alpha \left [ \frac{\partial}{\partial t} + \vec{u_\alpha}.\nabla \right ] \vec{u_\alpha} &= -\nabla P_\alpha + \vec{F}_{\alpha,\text{ext.}},\\
-    \left [ \frac{\partial}{\partial t} + \vec{u_\alpha}.\nabla \right ] \epsilon_\alpha + (\epsilon_\alpha + P_\alpha)\nabla.\vec{u_\alpha} &= -\nabla . \vec{q_\alpha} + Q_{\alpha,\text{ext.}},
+    \label{eq:theory_fluid_eqs_2}
+    \rho_\alpha \left [ \frac{\partial}{\partial t} + \vec{u_\alpha}.\nabla \right ] \vec{u_\alpha} &= -\nabla P_\alpha + \vec{F}_{\alpha,L} + \vec{F}_{\alpha,\text{ext.}} + \vec{F}_{\alpha,\text{col.}},\\
+    \label{eq:theory_fluid_eqs_3}
+    \left [ \frac{\partial}{\partial t} + \vec{u_\alpha}.\nabla \right ] U_\alpha + (U_\alpha + P_\alpha)\nabla.\vec{u_\alpha} &= -\nabla . \vec{q_\alpha} + Q_{\alpha,\text{ext.}} + Q_{\alpha,\text{col.}},
 \end{align}
-where $\rho_\alpha$ is the mass density of species $\alpha$, $\vec{u_\alpha}$ is the fluid velocity, $\epsilon_\alpha$ is the internal energy, $P_\alpha$ is the isotropic pressure, $\vec{F}_{\alpha,\text{ext.}}$ is external forcing, $\vec{q_\alpha}$ is the heat flux and $Q_{\alpha,\text{ext.}}$ is external heating or cooling~\cite{castor_radiation_2004}.
+where $\rho_\alpha$ is the mass density of species $\alpha$, $\vec{u_\alpha}$ is the fluid velocity, $U_\alpha$ is the internal energy, $P_\alpha$ is the isotropic pressure, $\vec{F}_{\alpha,L} = n_\alpha q_\alpha (\vec{E} + \vec{u}_\alpha \times \vec{B})$ is the Lorentz, $\vec{F}_{\alpha,\text{ext.}}$ is external forcing, $\vec{F}_{\alpha,\text{col.}}$ is collisional forcing, $\vec{q_\alpha}$ is the heat flux, $Q_{\alpha,\text{ext.}}$ is external heating or cooling and $Q_{\alpha,\text{col.}}$ is collisional heating or cooling~\cite{castor_radiation_2004}.
 A closure relation for the plasma pressure can be obtained from an \ac{EoS}, such as the ideal gas law, which relates pressure to density, temperature and energy density.
 The heat flux can be obtained from Fourier's law,
 \begin{equation}
     \label{eq:theory_fourier_heat}
-    \vec{q} = -\kappa \nabla T,
+    \vec{q_\alpha} = -\kappa \nabla T_\alpha,
 \end{equation}
 where the thermal conductivity, $\kappa$, is obtained from local transport theory~\cite{braginskii_transport_1965,epperlein_plasma_1986}.
 
-The \textsc{Chimera} code is a two-temperature, single fluid code.
-This means that electrons and ions are assumed to be co-moving and cannot separate.
-However, their temperatures are able to evolve separately and equilibrate with each other due to collision.
-Details of the numerical implementation can be found in other publications~\cite{chittenden_signatures_2016,crilly_simulation_2020,farrow_extended_2023,oneill_modelling_2023,chaturvedi_simulating_2024}. 
+The single-fluid, two temperature hydrodynamic equations can be obtained by assuming quasineutrality ($Z n_i = n_e = n$), the electron mass is negligible to the ion mass ($m_i \gg m_e$) and modelling only a single ion-species\footnote{When multiple ion-species compose the plasma, \textit{e.g.} for CH ablator or DT fuel, then the average ion mass (by number density) must be used and frictional forces/ temperature separation between ion species ignored.}.
+The populations will therefore be co-moving, and it follows that,
+\begin{align}
+    \rho &\equiv m_i n_i + m_e n_e \approx m_i n,\\
+    \vec{u} &\equiv \frac{(\rho_i \vec{u}_i + \rho_e \vec{u}_e)}{\rho} \approx \vec{u}_i,
+\end{align}
+where the fluid density, $\rho$, and velocity, $\vec{u}$, have been defined.
+Noting also that collisions within a fluid will not affect their net momentum and that collisional forces between the electron and ion will cancel, the fluid equations for electrons and ions can be added to obtain the single-fluid, two temperature equations,
+\begin{align}
+    \label{eq:theory_singlefluid_eqs_1}
+    \left [ \frac{\partial}{\partial t} + \vec{u}.\nabla \right ] \rho + \rho\nabla . \vec{u} &= 0,\\
+    \label{eq:theory_singlefluid_eqs_2}
+    \rho \left [ \frac{\partial}{\partial t} + \vec{u}.\nabla \right ] \vec{u} &= -\nabla P + \vec{F}_{L},\\
+    \label{eq:theory_singlefluid_eqs_3}
+    \left [ \frac{\partial}{\partial t} + \vec{u}.\nabla \right ] U_e + (U_e + P_e)\nabla.\vec{u} &= -\nabla . \vec{q_e} + Q_{e,\text{ext.}} + Q_{e,\text{col.}},\\
+    \label{eq:theory_singlefluid_eqs_4}
+    \left [ \frac{\partial}{\partial t} + \vec{u}.\nabla \right ] U_i + (U_i + P_i)\nabla.\vec{u} &= -\nabla . \vec{q_i} + Q_{i,\text{ext.}} + Q_{i,\text{col.}},
+\end{align}
+where the total pressure is defined, $P=P_e+P_i$, the external forcing has been dropped, and equilibration between the electron and ion temperatures occurs via the collisional heating terms $Q_{\alpha,\text{col.}}$.
+By defining the current from electron motion in the frame of the plasma, $\vec{J}=-n_e e (\vec{u}_e - \vec{u})$ and utilising quasineutrality, the Lorentz force term in the single fluid approximation,
+\begin{equation}
+    \label{eq:theory_lorentz_force}
+    \vec{F}_{L} = \vec{J}\times\vec{B}.
+\end{equation}
+The \textsc{Chimera} code solves the two-temperature, single fluid equations.
+In the absence of magnetic fields, the Lorentz force term goes to zero.
+Macroscopic magnetic fields can be included under the extended-\ac{MHD} framework, and their evolution and effect on plasma transport and dynamics is discussed in Sec.~\ref{sec:theory_MHD}.
+Further details of the numerical solution to the fluid equations can be found in Refs.~\cite{chittenden_signatures_2016,walsh_extended_2018,crilly_simulation_2020,farrow_extended_2023,oneill_modelling_2023,chaturvedi_simulating_2024}. 
 Additional physics packages are included by calculating contributions to the external forces and heating.
 For example, the non-thermal fusion products are modelled by a Monte Carlo treatment, which collide with the bulk plasma and thus deposit energy which contributes to the electron and ion $Q_{\alpha,\text{ext.}}$~\cite{tong_burn_2019}.
+The additional physics packages which are utilised in the subsequent work presented in this manuscript are discussed briefly below.
 
 %################################################################################
 %################################################################################
@@ -200,45 +231,92 @@ More detail of the \textsc{Chimera} implementation is provided in Refs.~\cite{je
 \subsection{Magnetohydrodynamics}%
 \label{sec:theory_MHD}
 
-Say electric fields on large scales don't exist in plasma because they are dielectric.
-If magnetic field are important, then extend the fluid equations to include the effect of B on the above equations.
+The method used to evolve macroscopic magnetic fields and their impact upon the plasma dynamics and transport is discussed in this section.
+Magnetic fields are able to alter the evolution of the plasma state via the Lorentz force in Eq.~\ref{eq:theory_singlefluid_eqs_2} and by altering the conductivities in Eq.~\ref{eq:theory_fourier_heat}.
+The relative importance of magnetisation can typically be broadly assessed by calculating dimensionless numbers.
+For instance, the plasma $\beta$ describes the ratio of thermal pressure to the magnetic pressure\footnote{Using Amp\`ere's law with $(\partial \vec{E} / \partial t) \ll c^2$, the Lorentz force in Eq,~\ref{eq:theory_lorentz_force} can be recast as the sum of magnetic pressure and tension~\cite{oneill_modelling_2023}.},
+\begin{equation}
+    \beta = \frac{2 \mu_0 P}{|\vec{B}|^2}.
+\end{equation}
+This gives an order of magnitude estimate for when it is necessary to include the Lorentz force in the momentum equation, \textit{i.e.} for high beta plasmas, thermal pressure dominates over magnetic pressure.
+Similarly, the Hall parameter, $\omega_\alpha \tau_\alpha$, describes the ratio of the gyrofrequency to the collision frequency for a species, $\alpha$.
+For example, the electron Hall parameter,
+\begin{equation}
+    \omega_e \tau_e = \frac{e |\vec{B}|}{m_e} \frac{3\sqrt{m_e} (k_B T_e)^{1.5}}{4 \sqrt{2\pi} e^4 Z^2 n_i \ln \Lambda },
+\end{equation}
+where $\ln\Lambda$ is the Coulomb logarithm, which is an important parameter for collisional phenomena that is related to the impact parameter of collisions~\cite{ramazanov_coulomb_2001,kodanova_investigation_2015,lin_temperature_2023}.
+When $\omega_\alpha \tau_\alpha \sim 1$, then collisional phenomena, such as thermal conduction, are significantly affected by the magnetic field.
 
-%##########################################################
-\subsubsection{Ideal MHD}%
-\label{sec:theory_idealMHD}
-
-Get lorentz force on plasma.
-Solve for B using Maxwell.
-Solve for j using Ohms law.
-Magnetic tension and pressure.
-Give plasma beta.
-
-%##########################################################
-\subsubsection{Magnetised Heatflow}%
-\label{sec:theory_magheatflow}
-
-Give Hall parameters.
-Say they describe transport processes like heatflow.
+The evolution of the magnetic field is governed by Faraday's law (Eq.~\ref{eq:theory_maxwell_eqs_3}) and the electric field by Amp\`ere's law (Eq.~\ref{eq:theory_maxwell_eqs_4}).
+This is not a closed system of equations due to the appearance of $\vec{J}$ in Amp\`ere's law however, and therefore an additional equation is required to evolve the fields.
+This can be derived from the momentum equations for ions and electrons, Eq.~\ref{eq:theory_fluid_eqs_2}~\cite{farrow_extended_2023}.
+In the limit of no electron inertia, the left-hand side of Eq.~\ref{eq:theory_fluid_eqs_2} is zero, leading to the `generalised Ohm's law',
+\begin{equation}
+    \label{eq:theory_GOL}
+    \vec{E} = -\vec{u}\times\vec{B} + \frac{\vec{J}\times\vec{B}}{n_e e} - \frac{\nabla P_e}{n_e e} + \frac{1}{n_e e}\left( \frac{ \overline{\alpha} . \vec{J} }{ n_e e } - n_e \overline{\beta} . \nabla T_e \right),
+\end{equation}
+where $\overline{\alpha}$ and $\overline{\beta}$ are transport coefficient tensors, the precise form of which is described in, for example, Ref.~\cite{oneill_modelling_2023}.
+Taking the curl of Eq.~\ref{eq:theory_GOL} and combining with Faraday's law yields the magnetic induction equation,
+\begin{equation}
+    \label{eq:theory_B_induction}
+    \frac{\partial \vec{B}}{\partial t} = \nabla \times \left( \vec{u}\times\vec{B} - \frac{\vec{J}\times\vec{B}}{n_e e} + \frac{\nabla P_e}{n_e e} - \frac{ \overline{\alpha} . \vec{J} }{ n_e^2 e^2 } + \frac{\overline{\beta} . \nabla T_e}{e} \right).
+\end{equation}
+Each term on the right-hand side of the Eq.~\ref{eq:theory_B_induction} is ascribed a physical affect.
+The first term describes advection of the field with the movement of the plasma.
+When this term dominates, the `ideal \ac{MHD}' framework is obtained, in which the field is said to be frozen-in to the flow.
+Ideal \ac{MHD} can often be applied in fields such as space physics~\cite{parks_why_2004,mathioudakis_alfven_2013} and \ac{MCF}~\cite{boozer_equations_1998}, where many phenomena featuring highly conductive plasmas are well described by this limit.
+In order from the second term on the right-hand side, the subsequent terms are related to, the Hall effect (collisionless advection of field with current), the Biermann effect (generation of field), resistive phenomena and thermoelectric phenomena.
+The non-ideal terms of relevance to the work conducted in this thesis are discussed below.
 
 %##########################################################
 \subsubsection{Resistive MHD}%
 \label{sec:theory_resisMHD}
 
-Plasma often not perfectly conducting so B field moves without flow.
-Describe Rm.
-Say when important.
+When only the first term and the resistive term from Eq.~\ref{eq:theory_B_induction} are significant (and using a simple form for the transport coefficient, $\overline{\alpha}$), then the induction equation can be written,
+\begin{equation}
+    \frac{\partial \vec{B}}{\partial t} = \nabla \times \left( \vec{u}\times\vec{B} \right) - \nabla \times \left( \frac{\eta}{\mu_0}\nabla\times \vec{B} \right),
+\end{equation}
+where $\eta$ is the resistivity of the plasma~\cite{farrow_extended_2023}.
+As already discussed, the first term describes advection of the plasma with the fluid, whereas the second term describes resistive diffusion of the plasma.
+This effect moves $\vec{B}$ from regions of high- to low-field, via the damping of currents due to collisions between electrons and ions.
+Resistive diffusion can lead to phenomena such as magnetic reconnection~\cite{kuznetsova_multiscale_2007,perez-colljimenez_role_2022}.
+The relative importance of these two terms is described by the magnetic Reynolds number, which is the ratio field advection to diffusion,
+\begin{equation}
+    R_m = \frac{\mu_0 |\vec{u}| L}{\eta},
+\end{equation}
+where $L$ is the characteristic length scale of the system.
 
 %##########################################################
 \subsubsection{The Nernst Effect}%
 \label{sec:theory_nernst}
 
-Hmmm, describe and say when important.
+The Nernst effect arises from the thermoelectric term in Eq.~\ref{eq:theory_B_induction}, and makes a contribution to the field induction,
+\begin{equation}
+    \left( \frac{\partial \vec{B}}{\partial t} \right)_{\text{Nernst}} = \nabla \times \left( - \frac{\beta_{\wedge}}{e |\vec{B}|}\nabla T_e \times \vec{B} \right),
+\end{equation}
+where $\beta_{\wedge}$ is a transport coefficient.
+This contribution looks like an advection of the field in the direction of $-\nabla T_e$ with a velocity,
+\begin{equation}
+    \vec{v}_{N} = -\frac{\beta_{\wedge}}{e |\vec{B}|}\nabla T_e.
+\end{equation}
+Nernst-advection of magnetic field is often of particular importance to magnetised \ac{HEDP} experiments, acting to move field down temperature gradients, even when the plasma is highly conductive~\cite{slutz_pulsedpowerdriven_2010,walsh_extended_2018}.
+As this is a collisional phenomenon, it is most important in regions where the electron Hall parameter is low, $\omega_e\tau_e\ll 1$.
 
 %##########################################################
-\subsubsection{The Biermann Battery Effect}%
-\label{sec:theory_biermann}
+\subsubsection{Magnetised Thermal Conduction}%
+\label{sec:theory_magheatflow}
 
-Hmmm, describe and say when important.
+Magnetic fields can affect collisional transport anisotropically by forcing particles to gyrate around field lines, which changes their collisional behaviour anisotropically.
+Because the Lorentz force does not affect particle motion in the direction parallel to field lines, transport along the direction, $\hat{\vec{b}}=\vec{B}/|\vec{B}|$, is unaffected by magnetisation.
+However, the gyration around field lines restricts transport in the perpendicular direction, compared to the parallel direction.
+Local transport analysis of the heat flux demonstrates that the electron thermal conduction heatflow can be expanded,
+\begin{equation}
+    \vec{q}_e = - \kappa_{\parallel} \hat{\vec{b}} \left( \hat{\vec{b}}.\nabla T_e \right) - \kappa_{\perp} \hat{\vec{b}} \times \left( \nabla T_e \times \hat{\vec{b}} \right) - \kappa_{\wedge} \hat{\vec{b}} \times \nabla T_e,
+\end{equation}
+where the $\kappa_{\parallel}$ term describes thermal conduction parallel to the field, $\kappa_{\perp}$ perpendicular to the field and $\kappa_{\wedge}$ perpendicular to the field and the temperature gradient~\cite{epperlein_plasma_1986}.
+The wedge term, $\kappa_{\wedge}$, describes `Righi-Leduc' heatflow, which occurs along isotherms.
+Considering the first two terms, when unmagnetised, $\kappa_{\parallel}=\kappa_{\perp}$ and conduction is isotropic.
+As the magnetisation increases, however, $\kappa_{\perp}$ decreases with respect to $\kappa_{\parallel}$, for example, $\kappa_{\perp}/\kappa_{\parallel} \sim 1$ at $\omega_e\tau_e = 1$, which anisotropises the thermal conduction.
 
 %################################################################################
 %################################################################################
@@ -266,8 +344,10 @@ Implementation of one of these models into \textsc{Chimera} could significantly 
 \section{Waves in Plasma}%
 \label{sec:theory_waves_plasmas}
 
-3 waves can exist in plasma without B.
-First look at plasma waves, i.e. not a light wave, both of which are longitudinal.
+\ac{LPIs} are a class of multi-wave coupling phenomena that occur when a light wave excites additional plasma-waves.
+Therefore, understanding \ac{LPIs} requires some background theoretical knowledge of the relevant waves.
+In the absence of a macroscopic magnetic field, three classes of wave can propagate in a plasma: the \ac{IAW}, the \ac{EPW} and the \ac{EMW}, \textit{i.e.} a light wave.
+This section shall describe the basic theory of these waves and provide dispersion relations for their propagation.
 
 %################################################################################
 %################################################################################

@@ -211,7 +211,7 @@ Magnetic fields of strength $B_{z0}=0$, $25$ and $50\ \text{T}$ were applied alo
 
 An explicit $P_{1/3}$ radiation transport algorithm was used for all simulations, using tabulated opacities and emissivities from the \textsc{SpK} code~\cite{crilly_spk_2023}.
 A tabulated \texttt{Sesame} equation of state was employed for each material~\cite{mchardy_introduction_2018}.
-The \textsc{Chimera} extended-\ac{MHD} package was used, which included resistive diffusion of the magnetic field, Lorentz force of the magnetic field on the hydrodynamics, Nernst advection of the field down temperature gradients and anisotropic thermal conduction~\cite{walsh_extendedmagnetohydrodynamics_2020}.
+The \textsc{Chimera} extended-\ac{MHD} package was used, which included resistive diffusion of the magnetic field, Lorentz force of the magnetic field on the hydrodynamics, Nernst-advection of the field down temperature gradients and anisotropic thermal conduction~\cite{walsh_extendedmagnetohydrodynamics_2020}.
 Thermal conduction was solved using a Super-time-stepping, semi-implicit algorithm~\cite{vaidya_scalable_2017}, with flux-limited, Spitzer conductivities~\cite{spitzer_transport_1953}.
 An electron flux limiter of $f_{\text{lim},e} = 0.15$ was set for all simulations.
 Exploding-pushers exhibit high coronal temperatures due to the high-$Z$ ablator and large temperatures for the strong imploding shock, therefore simulation yields and bangtimes are highly sensitive to thermal conduction and the choice of flux limiter.
@@ -500,9 +500,9 @@ The Hall parameter, $\omega\tau\propto T^{3/2}|\vec{B}|$, so a less oblate shock
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Results2/Images/nernst_comp_Bstream.png}
     \centering
-    \caption{Panel a) plots in-flight electron density profiles from the $B_{z0}=25\ \text{T}$, no-\ac{CBET} simulations with (left-side) and without (right-side) Nernst advection of the magnetic field.
+    \caption{Panel a) plots in-flight electron density profiles from the $B_{z0}=25\ \text{T}$, no-\ac{CBET} simulations with (left-side) and without (right-side) Nernst-advection of the magnetic field.
     The magnetic field is also plotted as streamlines in the top-half of each plot, coloured by magnitude.
-    Panel b) plots magnetic field magnitude from the Nernst (left-side) and no-Nernst (right-side) simulation along with Nernst advection velocity streamlines from the Nernst-on simulation.
+    Panel b) plots magnetic field magnitude from the Nernst (left-side) and no-Nernst (right-side) simulation along with Nernst-advection velocity streamlines from the Nernst-on simulation.
     Advection of the field is important in the low Hall parameter equatorial region, pulling $\vec{B}$ down $\nabla T_e$, into the dense wall.
     Altered field at the equator impacts on the magnetised thermal conduction, which ultimately imprints on the density, as is seen in panel a).}%
     \label{fig:Res2_nernst_comp}
@@ -512,11 +512,11 @@ The final extended-\ac{MHD} term that was independently examined was the Nernst 
 In \textsc{Chimera}, Nernst is implemented as an advection of $\vec{B}$ down $\nabla T_e$~\cite{walsh_extendedmagnetohydrodynamics_2020}.
 It is a collisional term, and therefore dominates in plasma with low values of $\omega_e\tau_e$.
 The plots of Hall parameter in Fig.~\ref{fig:Res2_iso_aniso} demonstrate that the coronal plasma has low Hall parameters at the equator, which suggests that the Nernst effect would be most important at the equator of the capsule and have minimal effect on the field profiles near the poles.
-An additional simulation, with $B_{z0}=25\ \text{T}$ and no-\ac{CBET}, was conducted without Nernst advection of magnetic field to understand its impact upon the field and plasma dynamics.
+An additional simulation, with $B_{z0}=25\ \text{T}$ and no-\ac{CBET}, was conducted without Nernst-advection of magnetic field to understand its impact upon the field and plasma dynamics.
 The simulation without the Nernst effect is labelled in Tab.~\ref{tab:Res2_magexpl_results} as run 14.
 
 Fig.~\ref{fig:Res2_nernst_comp}.b plots the magnetic field strength from equivalent simulations with-Nernst (left-side) and without-Nernst (right-side) at $t=0.60\ \text{ns}$.
-The simulation including Nernst (run 6 in Tab.~\ref{tab:Res2_magexpl_results}), also plots the Nernst advection velocity as streamlines, coloured by the speed.
+The simulation including Nernst (run 6 in Tab.~\ref{tab:Res2_magexpl_results}), also plots the Nernst-advection velocity as streamlines, coloured by the speed.
 The largest advection speeds are $\sim10^6\ \text{ms}^{-1}$, which is comparable to the coronal fluid ablation speed, demonstrating that Nernst-advection is non-negligible in dictating the magnetic field structure.
 As expected, the equator of the target had the largest Nernst speeds, due to the low Hall parameter, and it acted to push field from the coronal plasma onto the interior edge of the shell.
 This created a localised field `pile-up' in this region for the Nernst simulation, compared to the simulation on the right.
