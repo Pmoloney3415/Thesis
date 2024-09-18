@@ -46,9 +46,9 @@ Thus, if a local charge imbalance occurs, the electrons, which respond faster th
 This electron relocation to eliminate local electric fields is known as Debye-screening.
 The length scale below the electron population cannot effectively screen the charges sets the length scale of quasineutrality, and is known as the Debye-length,
 \begin{equation}
-    \lambda_{D}^2 = \frac{\epsilon_0 k_B T_e}{n_e e^2},
+    \lambda_{D}^2 = \frac{\varepsilon_0 k_B T_e}{n_e e^2},
 \end{equation}
-where $T_e$ is the electron temperature, $\epsilon_0$ is the permittivity of free space, $k_B$ is the Boltzmann constant and $e$ is the electron charge.
+where $T_e$ is the electron temperature, $\varepsilon_0$ is the permittivity of free space, $k_B$ is the Boltzmann constant and $e$ is the electron charge.
 This screening can only occur if there is a large number of particles in the Debye sphere, $n_e L^3\gg 1$.
 
 The timescale of the charge relocation is of particular importance to the interaction of light with plasmas.
@@ -57,20 +57,20 @@ If the particles are able to respond quickly enough, they can therefore influenc
 The oscillation timescale can be derived by considering a uniform assembly of quasineutral plasma and then displacing the electron population from the ions by a small distance $\delta x$ along the $x$-axis.
 The electric field which develops within the plasma is thus,
 \begin{equation}
-    E_x = \frac{n_e e \delta x}{\epsilon_0},
+    E_x = \frac{n_e e \delta x}{\varepsilon_0},
 \end{equation}
 leading to a restoring force $F_x = -eE_x$ on each electron.
 Solving Newton's second Law demonstrates that, when thermal motion of the electron population is ignored\footnote{Inclusion of thermal motion leads to pressure, which acts as a restoring force, and yields the dispersion relation for an \ac{EPW}.}, oscillations of the electrons occur at the `plasma frequency',
 \begin{equation}
     \label{eq:theory_plasma_freq}
-    \omega_{p}^2 = \frac{n_e e^2}{m_e \epsilon_0}.
+    \omega_{p}^2 = \frac{n_e e^2}{m_e \varepsilon_0}.
 \end{equation}
 If forcing oscillations occur at a frequency which is lower than $\omega_p$, then the electrons move rapidly enough to nullify the field.
 Consider light with frequency $\omega$, which is incident normal to a plasma density gradient
 Because $\omega_p\propto n_e$, the light is able to propagate until it reaches the density where $\omega = \omega_p$, which is known as the critical density,
 \begin{equation}
     \label{eq:theory_critical_density}
-    n_{\text{cr}} = \frac{m_e \epsilon_0 \omega^2}{e^2}.
+    n_{\text{cr}} = \frac{m_e \varepsilon_0 \omega^2}{e^2}.
 \end{equation}
 After reaching the critical density, the field of the light decays exponentially as an evanescent wave, but cannot propagate.
 
@@ -94,9 +94,9 @@ It provides a statistical description of the number density of particles, which 
 If the system evolves on a timescale much lower than the collision time and plasma length scales are lower than the collisional mean free-path, then these collisions between particles act to locally relax the distribution function toward a Maxwellian,
 \begin{equation}
     \label{eq:theory_maxwellian}
-    f_{\alpha,\text{Max.}}(v) = n_{\alpha} {\left( \frac{1}{2\pi v_{\text{th}}^2} \right)}^{1.5} e^{-\left [ v/ \left (\sqrt{2} v_{\text{th}} \right ) \right ]^2},
+    f_{\alpha,\text{Max.}}(v) = n_{\alpha} {\left( \frac{1}{2\pi v_{T\alpha}^2} \right)}^{1.5} e^{-\left [ v/ \left (\sqrt{2} v_{T\alpha} \right ) \right ]^2},
 \end{equation}
-where $v_{\text{th}}=\sqrt{k_B T_{\alpha}/m_{\alpha}}$ is the thermal speed of the species with temperature and mass $T_{\alpha}$ and $m_{\alpha}$, respectively.
+where $v_{T\alpha}=\sqrt{k_B T_{\alpha}/m_{\alpha}}$ is the thermal speed of the species with temperature and mass $T_{\alpha}$ and $m_{\alpha}$, respectively.
 The fraction outside the exponential is set such the integral over velocity space yields the number density of the species.
 Typically, for bulk of the target configuration throughout a laser-produced \ac{ICF} implosion, the assumption of a Maxwellian distribution is close to accurate, although there are several notable exceptions.
 For instance, DT fusion products have energies much higher than thermal energies and are also monoenergetic.
@@ -121,13 +121,13 @@ External forces, for example gravity, are also accounted for in the second right
 Evolution of the macroscopic fields is governed by Maxwell's equations,
 \begin{align}
     \label{eq:theory_maxwell_eqs_1}
-    \nabla.\vec{E} &= \frac{\rho_{\text{charge}}}{\epsilon_0},\\
+    \nabla.\vec{E} &= \frac{\rho_{\text{charge}}}{\varepsilon_0},\\
     \label{eq:theory_maxwell_eqs_2}
     \nabla.\vec{B} &= 0,\\
     \label{eq:theory_maxwell_eqs_3}
     \nabla \times \vec{E} &= -\frac{\partial \vec{B}}{\partial t},\\
     \label{eq:theory_maxwell_eqs_4}
-    \nabla \times \vec{B} &= \mu_0 \epsilon_0\frac{\partial \vec{E}}{\partial t} + \mu_0 \vec{J},
+    \nabla \times \vec{B} &= \mu_0 \varepsilon_0\frac{\partial \vec{E}}{\partial t} + \mu_0 \vec{J},
 \end{align}
 where $\mu_0$ is the permeability of free space, $\rho_{\text{charge}}$ is the charge density, $\vec{J}$ is the current density and $\nabla\equiv \nabla_x$.
 In the general case with three spatial dimensions, Eq.~\ref{eq:theory_vlasov} is seven dimensional and evolves on small spatial and temporal scales.
@@ -166,10 +166,10 @@ where the thermal conductivity, $\kappa$, is obtained from local transport theor
 
 The single-fluid, two temperature hydrodynamic equations can be obtained by assuming quasineutrality ($Z n_i = n_e = n$), the electron mass is negligible to the ion mass ($m_i \gg m_e$) and modelling only a single ion-species\footnote{When multiple ion-species compose the plasma, \textit{e.g.} for CH ablator or DT fuel, then the average ion mass (by number density) must be used and frictional forces/ temperature separation between ion species ignored.}.
 The populations will therefore be co-moving, and it follows that,
-\begin{align}
-    \rho &\equiv m_i n_i + m_e n_e \approx m_i n,\\
-    \vec{u} &\equiv \frac{(\rho_i \vec{u}_i + \rho_e \vec{u}_e)}{\rho} \approx \vec{u}_i,
-\end{align}
+\begin{alignat}{2}
+    \rho &\equiv m_i n_i + m_e n_e &&\approx m_i n,\\
+    \vec{u} &\equiv \frac{(\rho_i \vec{u}_i + \rho_e \vec{u}_e)}{\rho} &&\approx \vec{u}_i,
+\end{alignat}
 where the fluid density, $\rho$, and velocity, $\vec{u}$, have been defined.
 Noting also that collisions within a fluid will not affect their net momentum and that collisional forces between the electron and ion will cancel, the fluid equations for electrons and ions can be added to obtain the single-fluid, two temperature equations,
 \begin{align}
@@ -341,38 +341,234 @@ Implementation of one of these models into \textsc{Chimera} could significantly 
 %###############################################################################################################################
 %###############################################################################################################################
 %###############################################################################################################################
-\section{Waves in Plasma}%
+\section{Waves in Fluid Plasma}%
 \label{sec:theory_waves_plasmas}
 
 \ac{LPIs} are a class of multi-wave coupling phenomena that occur when a light wave excites additional plasma-waves.
 Therefore, understanding \ac{LPIs} requires some background theoretical knowledge of the relevant waves.
 In the absence of a macroscopic magnetic field, three classes of wave can propagate in a plasma: the \ac{IAW}, the \ac{EPW} and the \ac{EMW}, \textit{i.e.} a light wave.
 This section shall describe the basic theory of these waves and provide dispersion relations for their propagation.
+The treatment provided in this section assumes that the plasma acts as a fluid.
+For a full kinetic treatment, the reader is referred to the work of Michel in Ref.~\ref{michel_introduction_2023}, from which many of the following relations are also obtained.
 
 %################################################################################
 %################################################################################
 \subsection{Plasmas as a Dielectric Medium}%
 \label{sec:theory_dielectric}
 
-Talk about how plasmas are dielectric, therefore described by susceptibilties.
-Can get dispersion relations by susceptibilities and outline process.
-Multi-species effects.
+Freely moving particles in a plasma are able to respond to external electric fields by relocating, which reduces the size of the field that the plasma sees.
+In others words plasma are dielectric, and it is therefore convenient to define the permittivity of the plasma in analogy to solutions of Maxwell's equations in matter.
+The dielectric displacement vector is defined,
+\begin{equation}
+    \vec{D} = \varepsilon_0 \varepsilon \vec{E},
+\end{equation}
+where $\varepsilon$ is the permittivity of the plasma\footnote{Outside of plasma physics, the displacement vector is usually defined $\vec{D} = \varepsilon\vec{E} = \varepsilon_0 \varepsilon_{r}$ and $\varepsilon_r$ is the `relative' permittivity.}.
+Defining the electrical conductivity, $\sigma$, such that $\vec{J}=\sigma\vec{E}$ it can be shown that the permittivity takes the form,
+\begin{equation}
+    \label{eq:theory_perm_def}
+    \varepsilon = 1 + i\frac{\sigma}{\varepsilon_0\omega} \equiv 1 + \chi,
+\end{equation}
+where the dielectric susceptibility, $\chi$, has been introduced~\cite{michel_introduction_2023}.
+The permittivity and susceptibility represent the plasma response to applied fields.
+In general, each species within a plasma contributes separately to the susceptibility, such that $\chi = \sum\nolimits_\alpha \chi_\alpha$, where $\chi_\alpha$ are the contributions from electrons and the individual ion species within the plasma.
+
+\begin{figure}[t!]
+    \includegraphics[width=0.75\linewidth]{Theory/Images/plasma_waves.png}
+    \centering
+    \caption{Particle motion in a) transverse and b) longitudinal plasma waves.
+    This diagram was adapted from Ref.~\cite{michel_introduction_2023}.}%
+    \label{fig:theory_plasma_waves}
+\end{figure}
+
+In order to describe waves, the plasma of the plasma must be described in observable variables.
+Here, the plasma is treated as a fluid, and is allowed to respond linearly to the applied fields.
+An initially uniform, stationary plasma in equilibrium is considered with a number density for each species, $n_{\alpha 0}$.
+Assuming an ideal gas equation of state and plasma conditions, the plasma response is described by a velocity ($\delta \vec{v}_\alpha$) and density ($\delta n_\alpha$) perturbation, because the temperature perturbation is proportional to the density perturbation~\cite{michel_introduction_2023}.
+Linearising, we seek a solution to the following plasma response,
+\begin{alignat}{2}
+    n_\alpha(\vec{x},t) &= n_{\alpha 0} + \delta n_\alpha(\vec{x},t),&&\\
+    \vec{v}_\alpha(\vec{x},t) &= \vec{v}_{\alpha 0} + \delta \vec{v}_\alpha(\vec{x},t) &&= 0 + \delta \vec{v}_\alpha(\vec{x},t),\\
+    \vec{E}(\vec{x},t) &= \vec{E}_{0} + \delta \vec{E}(\vec{x},t) &&= 0 + \delta \vec{E}(\vec{x},t),\\
+    \vec{B}(\vec{x},t) &= \vec{B}_{0} + \delta \vec{B}(\vec{x},t) &&= 0 + \delta \vec{B}(\vec{x},t),\\
+\end{alignat}
+where the subscript 0 quantities are (constant) the equilibrium values and $\delta\vec{E}=\vec{E}$ and $\delta\vec{B}=\vec{B}$ are the applied fields.
+Inserting the linearised equations for each species into Eq.~\ref{eq:theory_singlefluid_eqs_1} and Eq.~\ref{eq:theory_singlefluid_eqs_2} it can be shown~\cite{michel_introduction_2023},
+\begin{align}
+    \label{eq:theory_wave1s_1}
+    \frac{\delta n_\alpha}{n_{\alpha 0}} &= \frac{\vec{k}.\delta\vec{v}_\alpha}{\omega},\\
+    \label{eq:theory_wave1s_2}
+    \omega \delta\vec{v}_\alpha &= \gamma_\alpha v_{T\alpha}^2 \frac{\delta n_\alpha}{n_{\alpha 0}} \vec{k} + i\frac{q_\alpha}{m_\alpha}\vec{E},
+\end{align}
+where $\gamma_\alpha$ is the adiabatic index, $\omega$ is the conjugate variable of time, $t$, from a Laplace transform and $\vec{k}$ is the conjugate variable of space, $\vec{x}$, from a Fourier transform.
+These equations can then be combined to relate $\delta n_\alpha$ and $\delta \vec{v}_\alpha$ to $\vec{E}$,
+\begin{align}
+    \label{eq:theory_wave2s_1}
+    \left[ \omega^2 - \gamma_\alpha v_{T\alpha}^2 k^2 \right]\frac{\delta n_\alpha}{n_{\alpha 0}} &= i \frac{q_\alpha}{m_\alpha} \vec{k}.\vec{E},\\
+    \label{eq:theory_wave2s_2}
+    \left[ \omega^2 - \gamma_\alpha v_{T\alpha}^2 \vec{k}(\vec{k}.) \right]\delta \vec{v}_\alpha &= i \frac{q_\alpha \omega}{m_\alpha} \vec{k}.\vec{E}.
+\end{align}
+Assuming a plane wave of the form $\vec{E}\propto \exp{\left[ i\left( \vec{k}.\vec{x} - \omega t \right) \right]}$, we identify $\vec{k}$ as the wavenumber and $\omega$ as the angular frequency.
+Using the Ansatz that waves can either be transverse ($\vec{k}.\vec{E}=0$) or longitudinal ($\vec{k}\times\vec{E}=0$), dispersion relations in the fluid regime can be obtained for admissible solutions using these equations.
+Fig.~\ref{fig:theory_plasma_waves}.a and Fig.~\ref{fig:theory_plasma_waves}.b plot the motion of particles from each of these varieties.
+
+%################################################################################
+%################################################################################
+\subsection{Electromagnetic Waves}%
+\label{sec:theory_transwaves}
+
+Firstly, the transverse wave solution shall be obtained, which is an \ac{EMW} propagating in the plasma.
+Inserting the transverse wave Ansatz ($\vec{k}.\vec{E}=0$) into Eq.~\ref{eq:theory_wave2s_2} demonstrates that $\vec{k}.\delta\vec{v}_\alpha=0$, and therefore $\delta\vec{v}_\alpha = \delta\vec{v}_{\alpha\perp}$.
+The transformed equation for the conservation of momentum, Eq.~\ref{eq:theory_wave1s_2} yields,
+\begin{equation}
+    \label{eq:theory_EMW_quiver}
+    \delta\vec{v}_{\alpha\perp} - i \frac{q_\alpha}{m_\alpha \omega}\vec{E},
+\end{equation}
+which demonstrates that under the Lorentz force of the field, the particles undergo oscillatory `quiver' motion.
+The quiver velocity of the ions is ignored because $m_i \gg m_e$ and therefore the ions are considered as a static background compared to the electron oscillations.
+Therefore, the linearised current is only from the electron motion, $\sum\nolimits_\alpha\delta\vec{J}_\alpha\sim\delta\vec{J}_e = -e n_{e0}\delta \vec{v}_e = \sigma \vec{E}$.
+Utilising the definition of the permittivity from Eq.~\ref{eq:theory_perm_def}, the plasma response to an \ac{EMW} is obtained,
+\begin{alignat}{2}
+    \label{eq:theory_emw_epsilon}
+    \varepsilon &= 1 - \frac{\omega_p^2}{\omega^2} &&= 1- \frac{n_{e0}}{n_{\text{cr}}},\\
+    \chi &= - \frac{\omega_p^2}{\omega^2}, &&
+\end{alignat}
+where the plasma frequency, defined previously in Eq.~\ref{eq:theory_plasma_freq}, has emerged.
+
+\begin{figure}[t!]
+    \includegraphics[width=0.6\linewidth]{Theory/Images/EMW_disp_rel.png}
+    \centering
+    \caption{The dispersion relation for an \ac{EMW} propagating in a plasma.
+    For $\omega<\omega_p$, the oscillatory plane wave Ansatz turns into a decaying evanescent wave, thus the wave does propagate.}%
+    \label{fig:EMW_disp_rel}
+\end{figure}
+
+A dispersion relation can also be obtained by utilising Maxwell's equations.
+Taking the curl of Faraday's law (Eq.~\ref{eq:theory_maxwell_eqs_3}) and combining this with Amp\`ere's law (Eq.~\ref{eq:theory_maxwell_eqs_4}) to eliminate $\vec{B}$ yields,
+\begin{equation}
+    \label{eq:theory_manipulatedmaxwell}
+    \left[ \partial_t^2 - c^2\nabla^2 + c^2 \nabla(\nabla.) \right]\vec{E} = -\frac{1}{\varepsilon_0}\partial_t \vec{J}.
+\end{equation}
+Inserting a plane wave Ansatz for $\vec{E}$ and inserting Eq.~\ref{eq:theory_emw_epsilon} to eliminate $\vec{J}$, the dispersion relation for an \ac{EMW} is obtained,
+\begin{equation}
+    \label{eq:emw_disp_rel}
+    \omega^2 = \omega_p^2 + c^2 k^2,
+\end{equation}
+which is plotted in Fig.~\ref{fig:EMW_disp_rel}.
+For $\omega<\omega_p$, Eq.~\ref{eq:emw_disp_rel} demonstrates that $k$ becomes imaginary and therefore the plane wave Ansatz turns into a non-propagating, exponentially decaying evanescent wave.
+The phase $v_\phi$ and group $v_g$ velocities of the light are,
+\begin{alignat}{2}
+    v_\phi &= \frac{w}{k} &&= \frac{c}{\sqrt{\varepsilon}},\\
+    v_g &= \frac{\partial w}{\partial k} &&= \sqrt{\varepsilon} c,
+\end{alignat}
+which defines the refractive index of plasma, $n_{\text{ref}}=\sqrt{\varepsilon} = \sqrt{1-n_e/n_{\text{cr}}}$.
+Note that $\sqrt{\varepsilon}<1$ so $v_\phi>c$.
+However, the group velocity, which is the speed that information travels, remains subluminal.
 
 %################################################################################
 %################################################################################
 \subsection{Plasma Waves}%
 \label{sec:theory_longwaves}
 
-Get disp rels of IAW and EPW and say what they both are physically.
+\begin{figure}[t!]
+    \includegraphics[width=0.7\linewidth]{Theory/Images/IAW_EPW.png}
+    \centering
+    \caption{Illustration of electron (small blue circle) and ion (large red circle) motion in a) an \ac{IAW} and b) an \ac{EPW}.}%
+    \label{fig:theory_IAW_EPW}
+\end{figure}
 
-%################################################################################
-%################################################################################
-\subsection{Light Waves}%
-\label{sec:theory_transwaves}
+Two propagating longitudinal wave can exist in an unmagnetised plasma, an \ac{EPW}, which are oscillations of the electron fluid on a timescale which is too fast for the ions to respond and an \ac{IAW}, which is a slower, joint oscillation of the electron and ion fluid.
+The inertia of the \ac{EPW} and \ac{IAW} are set by the electron and ion masses respectively.
+Electron pressure drives the \ac{EPW}, whereas both fluids contribute to the \ac{IAW} pressure, depending on the ionisation level of the plasma.
+Fig.~\ref{fig:theory_IAW_EPW} illustrates particle motion in each wave.
+Dispersion relations can be obtained similarly to the \ac{EMW} method from Sec.~\ref{sec:theory_transwaves}.
+By first inserting the longitudinal Ansatz ($\vec{k}\times\vec{E}=0$) into Eq.~\ref{eq:theory_wave2s_2} to obtain the particle motion in a longitudinal wave,
+\begin{equation}
+    \delta \vec{v}_\alpha = i \frac{q_\alpha \omega}{m_\alpha} \frac{\vec{E}}{\omega^2 - \gamma_\alpha v_{T\alpha}^2 k^2}.
+\end{equation}
+Unlike the \ac{EMW}, we make no assumptions yet about which species contribute to the current, and thus the general form of the conductivity for longitudinal waves includes contributions from all species,
+\begin{equation}
+    \sigma = i\omega\varepsilon_0 \sum_{\alpha} \frac{\omega_{p\alpha}^2}{\omega^2 - \gamma_\alpha v_{T\alpha}^2 k^2},
+\end{equation}
+which yields the longitudinal wave permittivity and equivalently susceptibility,
+\begin{align}
+    \label{eq:long_permittivity}
+    \varepsilon &= 1 + \sum_\alpha \chi_\alpha,\\
+    \label{eq:long_susceptibility}
+    \chi_\alpha  &= - \frac{\omega_{p\alpha}^2}{\omega^2 - \gamma_\alpha v_{T\alpha}^2 k^2}.
+\end{align}
+Inserting the plane wave Ansatz into~\ref{eq:theory_manipulatedmaxwell} and using Eq.~\ref{eq:long_permittivity} to eliminate $\vec{J}$ yields the generalised dispersion relation for longitudinal waves in a plasma,
+\begin{equation}
+    \label{eq:long_disp_rel}
+    \varepsilon \vec{E} = 0.
+\end{equation}
+Further use of an Ansatz can be utilised to obtain a specific description of a particular plasma wave.
+Note that unlike transverse waves, where $\delta n_\alpha=0$, which is seen by inserting $\vec{k}.\vec{E}$ into Eq.~\ref{eq:theory_wave2s_1}, longitudinal waves do give rise to a density perturbation, which heuristically can be understood by looking at Fig.~\ref{fig:theory_plasma_waves}.
+This leads to an electric field within the plasma, which is important for damping.
 
-These are transverse waves and therefore don't create space-charge separation, unlike longitudinal waves.
-Get disp rel and show wpe comes out.
-Give physical interpretation.
+The longitudinal susceptibility (Eq.~\ref{eq:long_susceptibility}) has a pole at $\omega^2 = \gamma_\alpha v_{T\alpha}^2 k^2$, suggesting unbounded growth of the wave when its phase velocity is close to the thermal velocity of the species, $\alpha$.
+This does not occur in actuality however, due to a process known as Landau damping, which is a resonant exchange of energy from the wave to particles.
+When the phase velocity of the wave approaches this resonance, particles with velocity just below the group velocity, $\vec{v}\lesssim\vec{v}_\phi$, are trapped in the potential created by the charge separation and accelerated.
+This transfers energy from the wave to the particles and thus prevents unbounded growth of the density perturbation.
+
+%##########################################################
+\subsubsection{Electron Plasma Waves}%
+\label{sec:theory_EPWs}
+
+Firstly the \ac{EPW} shall be considered.
+These are fast oscillations of the electron fluid such that the heavier ions do not respond on the oscillation timescale.
+To arrive at the dispersion relation, the assumption that the phase velocity is much faster than the electron thermal velocity is made, such that the wave can freely propagate without experiencing strong Landau damping, $w/k \gg v_{Te}$.
+This assumption also yields $\lambda \gg v_{Te}/\omega$, which states that electrons travelling at the thermal velocity will not move a significant portion of the wavelength, $\lambda$, in one oscillation.
+Temperature equilibration is thus limited throughout the wave, which means that there is no heat flux and such the electron fluid is adiabatic.
+An adiabatic fluid has $\gamma_e=3$, which is equivalent to a single degree of freedom in the motion.
+Finally, assuming that the ions are slow due to their large mass, and thus do not contribute to the permittivity\footnote{Explicitly for the \ac{EPW}, $\omega/k \gg v_{Te} \gg v_{Ti}$ and thus $|\chi_e| \gg |\chi_i|$}.
+By using these assumptions in the generalised dispersion relation for longitudinal plasma waves, Eq.~\ref{eq:long_disp_rel}, the dispersion relation for the \ac{EPW} is obtained,
+\begin{equation}
+    \omega^2 = \omega_{pe}^2 + 3k^2v_{Te}^2.
+\end{equation}
+Just as for light waves, \ac{EPW} cannot propagate at $\omega\geq\omega_{pe}$.
+The phase and group velocity of the wave are obtained from this dispersion relation,
+\begin{alignat}{2}
+    v_\phi &= \frac{w}{k} &&= v_{Te}\frac{\sqrt{1+3k^2\lambda_{D}^2}}{k\lambda_D},\\
+    v_g &= \frac{\partial w}{\partial k} &&= 3v_{Te}\frac{k\lambda_D}{\sqrt{1+3k^2\lambda_{D}^2}}.
+\end{alignat}
+
+%##########################################################
+\subsubsection{Ion Acoustic Waves}%
+\label{sec:theory_IAWs}
+
+The \ac{IAW} is of particular importance to the work conducted in this thesis, because it is the wave that mediates the energy exchange between light waves in \ac{CBET}.
+To obtain the dispersion relation for this wave, the phase velocity of the wave is assumed to be much greater than the thermal velocity of the ions, but much less than the electron thermal velocity\footnote{For the \ac{IAW}, $v_{Ti}\ll \omega/k \ll v_{Te}$.}.
+Using the same logic as the electrons, the ion fluid is assumed to be adiabatic, so $\gamma_i=3$.
+The electrons, however, move much faster than the wave.
+Therefore, they are able to equilibrate their temperature across the wave in a single oscillation, and are taken to be isothermal ($\gamma_e=1$).
+When inserted into Eq.~\ref{eq:long_disp_rel}, these assumptions yield the dispersion relation,
+\begin{equation}
+    \omega^2 = \frac{k^2}{1 + k^2\lambda_D^2}\frac{ZT_e}{m_i} + 3 k^2 v_{Ti}^2.
+\end{equation}
+For oscillation wavelengths much larger than the Debye length, $k \lambda_D \ll 1$, this simplifies to,
+\begin{equation}
+    \omega \approx c_s k,
+\end{equation}
+where the sound speed is defined,
+\begin{equation}
+    c_s = \sqrt{\frac{Z k_B T_e + 3 k_B T_i}{m_i}}.
+\end{equation}
+The phase and group velocity of the light are thus simply $c_s$ in this limit, so the wave is non-dispersive.
+
+Commonly in \ac{ICF}, plasmas are composed of multiple ion species, for instance the ablator of \textsc{Omega} targets is commonly composed of a CH plastic or SiO$_2$ glass shell.
+The \ac{IAW} properties are typically greatly altered due to the additional susceptibility contributions from each species.
+This leads to multiple \ac{IAW} modes with distinct speeds and damping.
+Denoting the `heavy' and `light' ion species as $h$ and $l$ respectively, a fast ion mode exists when the phase velocity is greater than both ion thermal velocities,
+\begin{equation}
+    v_{Th} \leq v_{Tl} \ll v_{\phi,\text{fast}} \ll v_{Te}.
+\end{equation}
+A fast mode is also observed when only the heavy ion species are slower than the phase velocity,
+\begin{equation}
+    v_{Th} \ll v_{\phi,\text{slow}} \ll v_{Tl}  \ll v_{Te}.
+\end{equation}
+This is of particular relevance to the work in this manuscript, since \ac{CBET} in direct-drive typically occurs in multi-ion ablators, and it is moderated by an energy exchange via an \ac{IAW}.
+Therefore, for example, different wave phenomena can affect the growth and saturation of energy transfer and must be accurately accounted for in computational modelling.
+This leads to the different \ac{CBET} treatments, described in Sec.~\ref{sec:SOLAS_ray_power_change}.
 
 %###############################################################################################################################
 %###############################################################################################################################

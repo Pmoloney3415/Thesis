@@ -1,2 +1,5 @@
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Particle motion in a) transverse and b) longitudinal plasma waves. This diagram was adapted from Ref.~\blx@tocontentsinit {0}\cite {michel_introduction_2023}.}}{19}{figure.caption.21}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The dispersion relation for an \ac {EMW} propagating in a plasma. For $\omega <\omega _p$, the oscillatory plane wave Ansatz turns into a decaying evanescent wave, thus the wave does propagate.}}{21}{figure.caption.22}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Illustration of electron (small blue circle) and ion (large red circle) motion in a) an \ac {IAW} and b) an \ac {EPW}.}}{22}{figure.caption.23}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

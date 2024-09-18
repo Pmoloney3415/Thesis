@@ -80,3 +80,4 @@ Ampère
 gyrofrequency
 Righi-Leduc
 anisotropises
+wavenumber

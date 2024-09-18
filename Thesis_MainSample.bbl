@@ -39,8 +39,8 @@
       \strng{authorbibnamehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
       \strng{authornamehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
       \strng{authorfullhash}{a5b8b2e287cbcd596b1a245e40c69dd9}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{Third edition, corrected publication}
@@ -128,8 +128,8 @@
       \strng{authorbibnamehash}{58b4081a372e906da902235857862a96}
       \strng{authornamehash}{58b4081a372e906da902235857862a96}
       \strng{authorfullhash}{7af2964e08edbc6c8f37b11f35b68007}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -168,8 +168,8 @@
       \strng{authorbibnamehash}{7477411c97e7158e3ff9294d1a1f48cf}
       \strng{authornamehash}{7477411c97e7158e3ff9294d1a1f48cf}
       \strng{authorfullhash}{7477411c97e7158e3ff9294d1a1f48cf}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0899-8221}
@@ -206,8 +206,8 @@
       \strng{authorbibnamehash}{20c1bfb78fdc07c07c9a74ccfafc93df}
       \strng{authornamehash}{20c1bfb78fdc07c07c9a74ccfafc93df}
       \strng{authorfullhash}{20c1bfb78fdc07c07c9a74ccfafc93df}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3rd ed}
@@ -260,8 +260,8 @@
       \strng{authorbibnamehash}{f402bbf8a3bcc9ab55ed699c9a551c14}
       \strng{authornamehash}{f402bbf8a3bcc9ab55ed699c9a551c14}
       \strng{authorfullhash}{ecc221a26276bacf717e528e9f22d532}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00219991}
@@ -317,8 +317,8 @@
       \strng{authorbibnamehash}{7f3b8e5753e3e49286dcec05932820cf}
       \strng{authornamehash}{7f3b8e5753e3e49286dcec05932820cf}
       \strng{authorfullhash}{d05101cc63ccd9010a347fb4fe149791}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00104655}
@@ -356,8 +356,8 @@
       \strng{authorbibnamehash}{d963679e1a19bcbd74910384422b9275}
       \strng{authornamehash}{d963679e1a19bcbd74910384422b9275}
       \strng{authorfullhash}{d963679e1a19bcbd74910384422b9275}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00219991}
@@ -438,8 +438,8 @@
       \strng{authorbibnamehash}{2a947cd35556f4810f60cf140133d1fb}
       \strng{authornamehash}{2a947cd35556f4810f60cf140133d1fb}
       \strng{authorfullhash}{2961b237423c30eab7f6d81aaa5a3cf1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0741-3335, 1361-6587}
@@ -476,8 +476,8 @@
       \strng{authorbibnamehash}{fa08097a52cb50cfc8773d0b71b499b0}
       \strng{authornamehash}{fa08097a52cb50cfc8773d0b71b499b0}
       \strng{authorfullhash}{fa08097a52cb50cfc8773d0b71b499b0}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{1}
@@ -1701,8 +1701,8 @@
       \strng{authorbibnamehash}{e9af611cdd89cf800588d4dd8483f4b1}
       \strng{authornamehash}{e9af611cdd89cf800588d4dd8483f4b1}
       \strng{authorfullhash}{59edbded59046bb61712d9a1214f4a1a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0741-3335, 1361-6587}
@@ -1719,6 +1719,39 @@
       \endverb
       \verb{file}
       \verb C:\Users\Philip\Zotero\storage\Q3DQ5XZL\Mitchell et al. - 2024 - A reduced kinetic method for investigating non-loc.pdf
+      \endverb
+    \endentry
+    \entry{michel_introduction_2023}{book}{}
+      \name{author}{1}{}{%
+        {{hash=078de7ef47e8f12b02ee1b9712f28e2c}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \strng{fullhash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \strng{bibnamehash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \strng{authorbibnamehash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \strng{authornamehash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \strng{authorfullhash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-031-23423-1 978-3-031-23426-2}
+      \field{langid}{english}
+      \field{series}{Graduate Texts in Physics}
+      \field{title}{Introduction to Laser-Plasma Interactions}
+      \field{year}{2023}
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\CAJZMJ7T\Michel - 2023 - Introduction to laser-plasma interactions.pdf
       \endverb
     \endentry
   \enddatalist
