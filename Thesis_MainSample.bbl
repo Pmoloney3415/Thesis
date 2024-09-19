@@ -1754,6 +1754,58 @@
       \verb C:\Users\Philip\Zotero\storage\CAJZMJ7T\Michel - 2023 - Introduction to laser-plasma interactions.pdf
       \endverb
     \endentry
+    \entry{colaitis_modeling_2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e934becb097bb2f595aae90e2af104fd}{%
+           family={Colaïtis},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e3a7f95adb731de3cc9f6ae3a5610671}{%
+           family={Duchateau},
+           familyi={D\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4fec200a203808056ba04abc579d2551}{%
+           family={Nicolaï},
+           familyi={N\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=167ce9f3411fa48087206161d06a1eab}{%
+           family={Tikhonchuk},
+           familyi={T\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{4cc55e6095ec58422ab01cef09a40d5c}
+      \strng{fullhash}{14e4e0d2d83249e4cc4d32198cf93d2e}
+      \strng{bibnamehash}{4cc55e6095ec58422ab01cef09a40d5c}
+      \strng{authorbibnamehash}{4cc55e6095ec58422ab01cef09a40d5c}
+      \strng{authornamehash}{4cc55e6095ec58422ab01cef09a40d5c}
+      \strng{authorfullhash}{14e4e0d2d83249e4cc4d32198cf93d2e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Physical Review E}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shorttitle}{Towards Modeling of Nonlinear Laser-Plasma Interactions with Hydrocodes}
+      \field{title}{Towards Modeling of Nonlinear Laser-Plasma Interactions with Hydrocodes: {{The}} Thick-Ray Approach}
+      \field{volume}{89}
+      \field{year}{2014}
+      \field{pages}{033101}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.89.033101
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\Philip\\Zotero\\storage\\B27B27Z8\\Colaïtis et al. - 2014 - Towards modeling of nonlinear laser-plasma interac.pdf;C\:\\Users\\Philip\\Zotero\\storage\\EZ5AY72A\\PhysRevE.89.html
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

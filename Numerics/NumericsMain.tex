@@ -144,7 +144,7 @@ A short summary of the computational derived-types is presented here, to aid und
 In \textsc{Solas}, a domain balanced mesh is created from the hydrodynamic grid in \textsc{Chimera}.
 The mesh is made up of \textit{laser-cells}, which hold information about the geometry, hydrodynamic-quantities, laser-quantities\footnote{Laser quantities include, for example, \ac{Inv-Brem} deposition and electric field strength.} and neighbouring cells on the \textsc{Solas} grid.
 \textit{Beam} objects are created which hold user-defined geometric information about the beam-port and pointing location and also store a list of rays from the beam.
-Each ray is defined by a position $(\mathbf{x})$, wavevector $(\mathbf{k})$, phase $(\varphi)$, angular frequency $(\omega)$ and power ($P$).
+Each ray is defined by a position $(\mathbf{x})$, wavevector $(\mathbf{k})$, phase $(\varphi)$\footnote{Note that the phase $\varphi$ has units of space. It can be converted to the dimensionless phase, $\psi=k_0\varphi$, where $k_0$ is the vacuum wavenumber.}, angular frequency $(\omega)$ and power ($P$).
 If field reconstruction is performed, then each ray also stores up to three additional \textit{neighbour-rays}, from which the electric field of the ray can be reconstructed, as described in Sec.~\ref{sec:SOLAS_field_reconstruc}.
 
 %################################################################################

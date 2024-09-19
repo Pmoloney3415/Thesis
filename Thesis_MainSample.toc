@@ -15,23 +15,21 @@
 \contentsline {subsection}{\numberline {1.3.3}Plasma Waves}{21}{subsection.1.3.3}%
 \contentsline {subsubsection}{\numberline {1.3.3.1}Electron Plasma Waves}{23}{subsubsection.1.3.3.1}%
 \contentsline {subsubsection}{\numberline {1.3.3.2}Ion Acoustic Waves}{23}{subsubsection.1.3.3.2}%
-\contentsline {section}{\numberline {1.4}Propagation of Light in a Plasma}{24}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Paraxial Approximation}{25}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}WKB Approximation}{25}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Ray Tracing}{25}{subsection.1.4.3}%
-\contentsline {section}{\numberline {1.5}Absorption of Light in a Plasma}{25}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Inv Brem}{25}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Resonance Absorption}{25}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}ICF Relevant Absorption comparison}{25}{subsection.1.5.3}%
-\contentsline {section}{\numberline {1.6}Laser Plasma instabilities}{25}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Ponderamotive Force}{25}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}Three-Wave Coupling}{25}{subsection.1.6.2}%
-\contentsline {subsection}{\numberline {1.6.3}Cross-Beam Energy Transfer}{26}{subsection.1.6.3}%
-\contentsline {subsubsection}{\numberline {1.6.3.1}Linear Gain Theory}{26}{subsubsection.1.6.3.1}%
-\contentsline {subsubsection}{\numberline {1.6.3.2}Effect of Polarisation}{26}{subsubsection.1.6.3.2}%
-\contentsline {subsubsection}{\numberline {1.6.3.3}Langdon Effect on CBET}{26}{subsubsection.1.6.3.3}%
-\contentsline {subsection}{\numberline {1.6.4}Mitigation of Laser Plasma Instabilities}{26}{subsection.1.6.4}%
-\contentsline {section}{\numberline {1.7}Summary}{26}{section.1.7}%
-\contentsline {chapter}{Bibliography}{29}{section*.24}%
-\contentsline {chapter}{Copyright Permissions}{33}{section*.26}%
+\contentsline {section}{\numberline {1.4}Propagation and Absorption of Light in a Plasma}{24}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}WKB Approximation}{25}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Ray Tracing}{26}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Inv Brem}{27}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Resonance Absorption}{27}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}ICF Relevant Absorption comparison}{27}{subsection.1.4.5}%
+\contentsline {section}{\numberline {1.5}Laser Plasma instabilities}{27}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Ponderamotive Force}{27}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Three-Wave Coupling}{27}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Cross-Beam Energy Transfer}{28}{subsection.1.5.3}%
+\contentsline {subsubsection}{\numberline {1.5.3.1}Linear Gain Theory}{28}{subsubsection.1.5.3.1}%
+\contentsline {subsubsection}{\numberline {1.5.3.2}Effect of Polarisation}{28}{subsubsection.1.5.3.2}%
+\contentsline {subsubsection}{\numberline {1.5.3.3}Langdon Effect on CBET}{28}{subsubsection.1.5.3.3}%
+\contentsline {subsection}{\numberline {1.5.4}Mitigation of Laser Plasma Instabilities}{28}{subsection.1.5.4}%
+\contentsline {section}{\numberline {1.6}Summary}{28}{section.1.6}%
+\contentsline {chapter}{Bibliography}{31}{section*.24}%
+\contentsline {chapter}{Copyright Permissions}{35}{section*.26}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

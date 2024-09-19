@@ -448,11 +448,13 @@ Taking the curl of Faraday's law (Eq.~\ref{eq:theory_maxwell_eqs_3}) and combini
     \label{eq:theory_manipulatedmaxwell}
     \left[ \partial_t^2 - c^2\nabla^2 + c^2 \nabla(\nabla.) \right]\vec{E} = -\frac{1}{\varepsilon_0}\partial_t \vec{J}.
 \end{equation}
-Inserting a plane wave Ansatz for $\vec{E}$ and inserting Eq.~\ref{eq:theory_emw_epsilon} to eliminate $\vec{J}$, the dispersion relation for an \ac{EMW} is obtained,
-\begin{equation}
+Inserting a plane wave Ansatz for $\vec{E}$ and inserting Eq.~\ref{eq:theory_emw_epsilon} to eliminate $\vec{J}$, the dispersion relation and wave equation for an \ac{EMW} are obtained,
+\begin{align}
     \label{eq:emw_disp_rel}
-    \omega^2 = \omega_p^2 + c^2 k^2,
-\end{equation}
+    \omega^2 - \omega_p^2 - c^2 k^2 &= 0,\\
+    \label{eq:theory_emw_wave_eq}
+    \left( \partial_t^2 + \omega_{pe}^2 - c^2\nabla^2 \right)\vec{E}(\vec{x},t) &= 0,
+\end{align}
 which is plotted in Fig.~\ref{fig:EMW_disp_rel}.
 For $\omega<\omega_p$, Eq.~\ref{eq:emw_disp_rel} demonstrates that $k$ becomes imaginary and therefore the plane wave Ansatz turns into a non-propagating, exponentially decaying evanescent wave.
 The phase $v_\phi$ and group $v_g$ velocities of the light are,
@@ -463,6 +465,7 @@ The phase $v_\phi$ and group $v_g$ velocities of the light are,
 which defines the refractive index of plasma, $n_{\text{ref}}=\sqrt{\varepsilon} = \sqrt{1-n_e/n_{\text{cr}}}$.
 Note that $\sqrt{\varepsilon}<1$ so $v_\phi>c$.
 However, the group velocity, which is the speed that information travels, remains subluminal.
+Additionally, a wave equation for 
 
 %################################################################################
 %################################################################################
@@ -573,49 +576,126 @@ This leads to the different \ac{CBET} treatments, described in Sec.~\ref{sec:SOL
 %###############################################################################################################################
 %###############################################################################################################################
 %###############################################################################################################################
-\section{Propagation of Light in a Plasma}%
+\section{Propagation and Absorption of Light in a Plasma}%
 \label{sec:theory_propagation}
 
-Want to described light propagating through plasma in limit of typical ICF configurations.
-Weakly focussing, moderate intensities etc.
-
-
-%################################################################################
-%################################################################################
-\subsection{Paraxial Approximation}%
-\label{sec:theory_paraxial}
-
-Weakly focussing limit.
-Give equations, interpretations and validity.
+This section shall describe light propagating and absorption through plasma in the regime of typical \ac{ICF} conditions.
+Typically, sub-critical laser-driven \ac{ICF} plasmas can be treated as a linear medium and intensity of the light is sufficiently modest that it does not directly alter the refractive index of the plasma.
+By making the WKB approximation, which is that over a wavelength the plasma may be treated as uniform, the equations of ray-tracing are derived.
+Ray-tracing is the tool used to model lasers in the \textsc{Solas} model, described in Chap.~\ref{chap:SOLAS}.
+Absorption processes, which are important to energy deposition in laser-drive \ac{ICF} are then introduced, particularly collisional absorption, otherwise known as \ac{Inv-Brem}.
+An absorption per unit length for \ac{Inv-Brem} is provided, which is suitable for integration along ray trajectories.
 
 %################################################################################
 %################################################################################
 \subsection{WKB Approximation}%
 \label{sec:theory_WKB}
 
-Uniform medium limit.
-Give equations, interpretations and validity.
-Give Airy example - ie not valid nearby turning point.
+Laser-driven plasmas are heated and expand, leadig to density gradients in the region where the light propagates.
+The propagation path of the light through this plasma is governed by the refractive index, or equivalently permittivity, $\varepsilon = n_{\text{ref}}^2=1-n_e/n_{\text{cr}}$.
+Thus, light refracts in plasmas with a density gradient.
+Here, a description of light propagation through a non-uniform plasma is obtained, in the limit that the plasma density does not vary significantly over the wavelength of the oscillation.
+It is convenient to work with vector potentials, $\vec{B} = \nabla\times\vec{A}$ and $\vec{E} = -\partial_t\vec{A}$\footnote{Note that the Coulomb gauge has been used here, $\nabla.\vec{A}=0$, otherwise $\vec{E}=-\partial_t\vec{A}-\nabla\phi$, where $\phi$ is the scalar potential.}, rather than electric field for laser-plasma waves.
+This is because electric fields can describe longitudinal and trasverse waves, whereas the vector potential is purely for transverse oscillations and as such cannot describe plasma waves.
+Using the vector potential, the \ac{EMW} wave equation, Eq.~\ref{eq:theory_emw_wave_eq}, can be rederived from Maxwell's equations,
+\begin{equation}
+    \label{eq:theory_waveeq_a}
+    \left( \partial_t^2 + \omega_{pe}^2 - c^2\nabla^2 \right)\vec{a} = 0,
+\end{equation}
+where the normalised vector potential is defined,
+\begin{equation}
+    \vec{a} = \frac{e}{m c}\vec{A}.
+\end{equation}
+If the wave propagates normally up a plasma density gradient (aligned with $z$), polarisation of the wave can be ignored by rotational symmetry and a solution can be souhgt of the form,
+\begin{equation}
+    \label{eq:theory_fz}
+    a(z,t) = \frac{1}{2} f(z) a_0e^{-i\omega_0 t} + c.c.,
+\end{equation}
+where $\omega_0$ is the vacuum angular frequency, $a_0$ is the oscillation amplitude, $c.c.$ is the complex conjugate and $f(z)$ is the spatial dependene of the oscillation.
+In this limit, the WKB (Wentzel, Kramers, Brillouin) approximation can be used to find a solution for $f(z)$.
+
+Inserting Eq.~\ref{eq:theory_fz} into the wave equation, Eq.~\ref{eq:theory_waveeq_a}, yields the Helmholtz equation,
+\begin{equation}
+    \label{eq:theory_Helmholtz}
+    \left[ \partial_z^2 + \varepsilon(z)k_0^2 \right] f(z) = 0,
+\end{equation}
+where $k_0=\omega_0/c$ is the vacuum wavenumber.
+This describes the steady state propagation of light through a plasma, which is defined by the permittivity, $\varepsilon$.
+The WKB method assumes that spatial variations of the medium are much larger than the wavelength, \textit{i.e.} $\lambda_0 = 2\pi /k_0 \ll 1/|\nabla\varepsilon|$.
+An Ansatz is used~\cite{michel_introduction_2023},
+\begin{equation}
+    \label{eq:theory_Helmholtz_ansatz}
+    f(z) = e^{i k_0 \varphi (z)},
+\end{equation}
+where $\varphi$ is a series expansion~\cite{colaitis_modeling_2014},
+\begin{equation}
+    \label{eq:theory_S_expansion}
+    \varphi(z) = k_0 \left[ S_0 (z) + \frac{S_1 (z)}{i k_0} + \frac{S_2 (z)}{(i k_0)^2} + \dots \right],
+\end{equation}
+which is valid so long as the expansion parameter is large, $k_0=\omega_0/c \gg 1/|\nabla \varepsilon|$.
+
+By combining Eqs.~\ref{eq:theory_Helmholtz},~\ref{eq:theory_Helmholtz_ansatz} and~\ref{eq:theory_S_expansion} and keeping only the dominant, $\mathcal{O}(k_0^2)$ terms, the expression for the first order expansion term is obtained,
+\begin{equation}
+    S_0(z) = \pm \int_0^z \sqrt{\varepsilon(z)}\ \text{d}z.
+\end{equation}
+If only this term is kept and there is a uniform plasma (therefore $\varepsilon$ is constant), then a plane wave propagating solution is obtained for the field,
+\begin{equation}
+    a(z,t) = \frac{a_0}{2} \exp{\left[  i (\pm k_0 z - \omega_0 t )\right]}.
+\end{equation}
+If the next order terms, $\mathcal{O}(k_0^1)$, are collected and equated, then the following expression is retrieved,
+\begin{equation}
+    S_1(z) = i \ln{\left( \varepsilon^{1/4} \right)} + k_0 \varphi_0,
+\end{equation}
+where $k_0\varphi_0$ is an integration constant, identified as the initial phase of the light.
+This returns an expression for the light field~\cite{michel_introduction_2023},
+\begin{equation}
+    \label{eq:theory_WKB_rayfield}
+    a(z,t) = \frac{1}{2}\frac{a_0}{\varepsilon^{1/4}}\exp{ \left[ \pm i \int_0^z k(z) \text{d}z - i\omega_0 t +ik_0\varphi_0 \right] } + c.c,
+\end{equation}
+where $k(z)=\sqrt{\varepsilon(z)}k_0$.
+The $\varepsilon^{1/4}$ term outside the exponential leads to higher field in regions of the plasma with higher densities and is known as `field-swelling.'
+It occurs due to the reduced group velocity of light at lower $\varepsilon$ values, resulting in a pile up of field as light propagates up a density gradient.
+The validity condition of the WKB solution in Eq.~\ref{eq:theory_WKB_rayfield} can be demonstrated by mandating that the $\mathcal{O}(k_0^0)$ order terms from the expansion are much smaller than the $\mathcal{O}(k_0^1)$ terms.
+This leads to the validity domain (for the normally incident light considered here),
+\begin{equation}
+    \frac{|\nabla \varepsilon|}{\varepsilon} \ll k,
+\end{equation}
+where, stated again for emaphasis, $k=\sqrt{\varepsilon}k_0$.
+In other words, the lengthscale $L$ associated with $\nabla\varepsilon$ must be far larger than the oscillation wavelength $\lambda = 2\pi/(k_0\sqrt{\varepsilon})$.
+This condition is violated either for plasmas with extreme density gradients, or in a narrow region near the critical surface, where the oscillation wavelength grows to infinity.
 
 %################################################################################
 %################################################################################
 \subsection{Ray Tracing}%
 \label{sec:theory_rays}
 
+The WKB approximation correctly captures the behaviour of light, apart from a narrow region near the wave turning point.
+Ray-tracing is a technique, which provides a framework to integrate the WKB solution along the trajectory of the light, at discrete points on an initial pahse front.
+This turns out to be a highly useful tool for numerical implemnetation of laser modeling.
+Starting from the Helmholtz equation, now generalised to multiple dimensions~\cite{colaitis_modeling_2014},
+\begin{equation}
+    \left[ \nabla^2 + \varepsilon(\vec{x})k_0^2 \right] a(\vec{x}) = 0,
+\end{equation}
+a solution is sort of the form,
+\begin{equation}
+    a(\vec{x}) = A(\vec{x}) e^{i k_0 \varphi(\vec{x})},
+\end{equation}
+where going from 1-D$\rightarrow$3-D, we have made the change $f(z)\rightarrow A(\vec{x})$, where $A(\vec{x})$ is now the `ray-amplitude.'
+Similarly to Sec.~\ref{sec:theory_WKB}, $\varphi(\vec{x})$ is expanded, and the Ansatz is inserted into the Helmholtz equation, which returns the following equations:
+\begin{align}
+    \label{eq:theory_eikonal_eq}
+    \left(\nabla \varphi(\vec{x})\right)^2 &= \varepsilon(\vec{x}),\\
+    \label{eq:theory_transport_eq}
+    2\left(\nabla A(\vec{x}) . \nabla \varphi (\vec{x}) \right) + A(\vec{x}) \nabla^2 \varphi(\vec{x}) &= 0,
+\end{align}
+where Eq.~\ref{eq:theory_eikonal_eq} is known as the Eikonal equation, and Eq.~\ref{eq:theory_transport_eq} is known as the transport equation.
+So far, this is simply a multi-dimesional corolorary of the same procedure that was followed in Sec.~\ref{sec:theory_WKB}.
+
 Give equations, interpretations and validity.
 State can be used for any kind of wave where valid.
 Say how and why used for direct drive and typical frozen plasma assumption.
 
 Talking about validity region, give extra bits can solve like ray amplitude.
-
-
-%###############################################################################################################################
-%###############################################################################################################################
-%###############################################################################################################################
-\section{Absorption of Light in a Plasma}%
-\label{sec:theory_absorption}
-
-ICF we want to give laser energy to plasma to drive implosion, therefore need to talk about absorption.
 
 %################################################################################
 %################################################################################
@@ -640,7 +720,6 @@ Introduce
 Say inv brem goes up relatively at larger scales and shorter wavelengths.
 Prefered to resonance absorption because bulk population gets energy.
 Therefore use frequency tripled light.
-
 
 %###############################################################################################################################
 %###############################################################################################################################

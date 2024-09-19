@@ -1,8 +1,8 @@
-PWD C:/Thesis_latex
+PWD c:/Repos/Thesis
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Thesis_latex/Thesis_MainSample.tex
+INPUT c:/Repos/Thesis/Thesis_MainSample.tex
 OUTPUT Thesis_MainSample.log
 INPUT ./icldt.cls
 INPUT icldt.cls
@@ -597,6 +597,7 @@ INPUT ./Thesis_MainSample.out
 INPUT ./Thesis_MainSample.out
 INPUT Thesis_MainSample.run.xml
 OUTPUT Thesis_MainSample.run.xml
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb
