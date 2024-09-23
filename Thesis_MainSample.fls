@@ -1,8 +1,8 @@
-PWD c:/Repos/Thesis
+PWD C:/Thesis_latex
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Repos/Thesis/Thesis_MainSample.tex
+INPUT c:/Thesis_latex/Thesis_MainSample.tex
 OUTPUT Thesis_MainSample.log
 INPUT ./icldt.cls
 INPUT icldt.cls
@@ -458,6 +458,8 @@ OUTPUT Thesis_MainSample.lot
 INPUT ./Thesis_MainSample.lof
 INPUT ./Thesis_MainSample.lof
 INPUT Thesis_MainSample.lof
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 OUTPUT Thesis_MainSample.lof
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futmii.vf
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
@@ -471,6 +473,9 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futr8r.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futri8r.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futsy.vf
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
 INPUT ./Theory/TheoryMain.tex
 INPUT ./Theory/TheoryMain.tex
 OUTPUT Theory/TheoryMain.aux
@@ -490,6 +495,8 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futsy.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futsy.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
@@ -512,11 +519,6 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futr8t.vf
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futr8r.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tfm
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
-INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futsy.vf
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futmii.vf
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
@@ -525,8 +527,6 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futri8r.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futr8t.vf
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futb8t.vf
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
@@ -568,6 +568,16 @@ INPUT ./Theory/Images/IAW_EPW.png
 INPUT ./Theory/Images/IAW_EPW.png
 INPUT ./Theory/Images/IAW_EPW.png
 INPUT ./Theory/Images/IAW_EPW.png
+INPUT ./Theory/Images/Inv_Brem.png
+INPUT ./Theory/Images/Inv_Brem.png
+INPUT ./Theory/Images/Inv_Brem.png
+INPUT ./Theory/Images/Inv_Brem.png
+INPUT ./Theory/Images/Inv_Brem.png
+INPUT ./Theory/Images/Res_Abs.png
+INPUT ./Theory/Images/Res_Abs.png
+INPUT ./Theory/Images/Res_Abs.png
+INPUT ./Theory/Images/Res_Abs.png
+INPUT ./Theory/Images/Res_Abs.png
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futr8t.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/fourier/futb8t.vf

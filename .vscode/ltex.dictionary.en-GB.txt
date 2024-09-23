@@ -81,3 +81,5 @@ gyrofrequency
 Righi-Leduc
 anisotropises
 wavenumber
+Eikonal
+rederived

@@ -421,7 +421,7 @@ Inserting the transverse wave Ansatz ($\vec{k}.\vec{E}=0$) into Eq.~\ref{eq:theo
 The transformed equation for the conservation of momentum, Eq.~\ref{eq:theory_wave1s_2} yields,
 \begin{equation}
     \label{eq:theory_EMW_quiver}
-    \delta\vec{v}_{\alpha\perp} - i \frac{q_\alpha}{m_\alpha \omega}\vec{E},
+    \delta\vec{v}_{\alpha\perp} = i \frac{q_\alpha}{m_\alpha \omega}\vec{E},
 \end{equation}
 which demonstrates that under the Lorentz force of the field, the particles undergo oscillatory `quiver' motion.
 The quiver velocity of the ions is ignored because $m_i \gg m_e$ and therefore the ions are considered as a static background compared to the electron oscillations.
@@ -459,8 +459,8 @@ which is plotted in Fig.~\ref{fig:EMW_disp_rel}.
 For $\omega<\omega_p$, Eq.~\ref{eq:emw_disp_rel} demonstrates that $k$ becomes imaginary and therefore the plane wave Ansatz turns into a non-propagating, exponentially decaying evanescent wave.
 The phase $v_\phi$ and group $v_g$ velocities of the light are,
 \begin{alignat}{2}
-    v_\phi &= \frac{w}{k} &&= \frac{c}{\sqrt{\varepsilon}},\\
-    v_g &= \frac{\partial w}{\partial k} &&= \sqrt{\varepsilon} c,
+    v_\phi &= \frac{\omega}{k} &&= \frac{c}{\sqrt{\varepsilon}},\\
+    v_g &= \frac{\partial \omega}{\partial k} &&= \sqrt{\varepsilon} c,
 \end{alignat}
 which defines the refractive index of plasma, $n_{\text{ref}}=\sqrt{\varepsilon} = \sqrt{1-n_e/n_{\text{cr}}}$.
 Note that $\sqrt{\varepsilon}<1$ so $v_\phi>c$.
@@ -591,12 +591,12 @@ An absorption per unit length for \ac{Inv-Brem} is provided, which is suitable f
 \subsection{WKB Approximation}%
 \label{sec:theory_WKB}
 
-Laser-driven plasmas are heated and expand, leadig to density gradients in the region where the light propagates.
+Laser-driven plasmas are heated and expand, leading to density gradients in the region where the light propagates.
 The propagation path of the light through this plasma is governed by the refractive index, or equivalently permittivity, $\varepsilon = n_{\text{ref}}^2=1-n_e/n_{\text{cr}}$.
 Thus, light refracts in plasmas with a density gradient.
 Here, a description of light propagation through a non-uniform plasma is obtained, in the limit that the plasma density does not vary significantly over the wavelength of the oscillation.
 It is convenient to work with vector potentials, $\vec{B} = \nabla\times\vec{A}$ and $\vec{E} = -\partial_t\vec{A}$\footnote{Note that the Coulomb gauge has been used here, $\nabla.\vec{A}=0$, otherwise $\vec{E}=-\partial_t\vec{A}-\nabla\phi$, where $\phi$ is the scalar potential.}, rather than electric field for laser-plasma waves.
-This is because electric fields can describe longitudinal and trasverse waves, whereas the vector potential is purely for transverse oscillations and as such cannot describe plasma waves.
+This is because electric fields can describe longitudinal and transverse waves, whereas the vector potential is purely for transverse oscillations and as such cannot describe plasma waves.
 Using the vector potential, the \ac{EMW} wave equation, Eq.~\ref{eq:theory_emw_wave_eq}, can be rederived from Maxwell's equations,
 \begin{equation}
     \label{eq:theory_waveeq_a}
@@ -606,12 +606,12 @@ where the normalised vector potential is defined,
 \begin{equation}
     \vec{a} = \frac{e}{m c}\vec{A}.
 \end{equation}
-If the wave propagates normally up a plasma density gradient (aligned with $z$), polarisation of the wave can be ignored by rotational symmetry and a solution can be souhgt of the form,
+If the wave propagates normally up a plasma density gradient (aligned with $z$), polarisation of the wave can be ignored by rotational symmetry and a solution can be sought of the form,
 \begin{equation}
     \label{eq:theory_fz}
     a(z,t) = \frac{1}{2} f(z) a_0e^{-i\omega_0 t} + c.c.,
 \end{equation}
-where $\omega_0$ is the vacuum angular frequency, $a_0$ is the oscillation amplitude, $c.c.$ is the complex conjugate and $f(z)$ is the spatial dependene of the oscillation.
+where $\omega_0$ is the vacuum angular frequency, $a_0$ is the oscillation amplitude, $c.c.$ is the complex conjugate and $f(z)$ is the spatial dependence of the oscillation.
 In this limit, the WKB (Wentzel, Kramers, Brillouin) approximation can be used to find a solution for $f(z)$.
 
 Inserting Eq.~\ref{eq:theory_fz} into the wave equation, Eq.~\ref{eq:theory_waveeq_a}, yields the Helmholtz equation,
@@ -660,8 +660,8 @@ This leads to the validity domain (for the normally incident light considered he
 \begin{equation}
     \frac{|\nabla \varepsilon|}{\varepsilon} \ll k,
 \end{equation}
-where, stated again for emaphasis, $k=\sqrt{\varepsilon}k_0$.
-In other words, the lengthscale $L$ associated with $\nabla\varepsilon$ must be far larger than the oscillation wavelength $\lambda = 2\pi/(k_0\sqrt{\varepsilon})$.
+where, stated again for emphasis, $k=\sqrt{\varepsilon}k_0$.
+In other words, the length scale $L$ associated with $\nabla\varepsilon$ must be far larger than the oscillation wavelength $\lambda = 2\pi/(k_0\sqrt{\varepsilon})$.
 This condition is violated either for plasmas with extreme density gradients, or in a narrow region near the critical surface, where the oscillation wavelength grows to infinity.
 
 %################################################################################
@@ -670,8 +670,8 @@ This condition is violated either for plasmas with extreme density gradients, or
 \label{sec:theory_rays}
 
 The WKB approximation correctly captures the behaviour of light, apart from a narrow region near the wave turning point.
-Ray-tracing is a technique, which provides a framework to integrate the WKB solution along the trajectory of the light, at discrete points on an initial pahse front.
-This turns out to be a highly useful tool for numerical implemnetation of laser modeling.
+Ray-tracing is a technique, which provides a framework to integrate the WKB solution along the trajectory of the light, at discrete points on an initial phase front.
+This turns out to be a highly useful tool for numerical implementation of laser modelling.
 Starting from the Helmholtz equation, now generalised to multiple dimensions~\cite{colaitis_modeling_2014},
 \begin{equation}
     \left[ \nabla^2 + \varepsilon(\vec{x})k_0^2 \right] a(\vec{x}) = 0,
@@ -684,42 +684,183 @@ where going from 1-D$\rightarrow$3-D, we have made the change $f(z)\rightarrow A
 Similarly to Sec.~\ref{sec:theory_WKB}, $\varphi(\vec{x})$ is expanded, and the Ansatz is inserted into the Helmholtz equation, which returns the following equations:
 \begin{align}
     \label{eq:theory_eikonal_eq}
-    \left(\nabla \varphi(\vec{x})\right)^2 &= \varepsilon(\vec{x}),\\
+    \left[\nabla \varphi(\vec{x})\right]^2  - \varepsilon(\vec{x}) &= 0,\\
     \label{eq:theory_transport_eq}
-    2\left(\nabla A(\vec{x}) . \nabla \varphi (\vec{x}) \right) + A(\vec{x}) \nabla^2 \varphi(\vec{x}) &= 0,
+    2\left[\nabla A(\vec{x}) . \nabla \varphi (\vec{x}) \right] + A(\vec{x}) \nabla^2 \varphi(\vec{x}) &= 0,
 \end{align}
 where Eq.~\ref{eq:theory_eikonal_eq} is known as the Eikonal equation, and Eq.~\ref{eq:theory_transport_eq} is known as the transport equation.
-So far, this is simply a multi-dimesional corolorary of the same procedure that was followed in Sec.~\ref{sec:theory_WKB}.
+So far, this is simply a multidimensional corollary of the same procedure that was followed in Sec.~\ref{sec:theory_WKB}.
 
-Give equations, interpretations and validity.
-State can be used for any kind of wave where valid.
-Say how and why used for direct drive and typical frozen plasma assumption.
+The ray-tracing equations are obtained by noticing that Eq.~\ref{eq:theory_eikonal_eq} describes the Hamiltonian of a system,
+\begin{equation}
+    \mathcal{H} = \frac{1}{2} \left[ \vec{k}^2 - \varepsilon(\vec{x}) \right],
+\end{equation}
+which has a momentum $\vec{k} = \nabla \varphi(\vec{x})$, and a potential $-\varepsilon(\vec{x})$.
+Thus, using the characteristic technique, the following equations of motion are obtained,
+\begin{align}
+    \label{eq:theory_ray_x}
+    \frac{\text{d} \vec{x}}{\text{d} \tau}&=\vec{k}, \\
+    \label{eq:theory_ray_k}
+    \frac{\text{d} \vec{k}}{\text{d} \tau}&=\frac{1}{2} \nabla \varepsilon(\vec{x}),
+\end{align}
+which describe the evolution of a wave packet (typically called a ray) along its optical path length, $\tau$, through a medium defined by $\varepsilon(\vec{x})$~\cite{colaitis_modeling_2014}.
+Similarly to the WKB solution, it is valid as long as the evolution of the envelope function, \textit{i.e.} the ray amplitude $A(\vec{x})$, are slow compared to the spatial oscillations described by $|\vec{k}|$.
+These equations can be readily integrated along $\tau$ to describe the trajectory of the field, from a discrete initial point on its initial surface.
 
-Talking about validity region, give extra bits can solve like ray amplitude.
+The evolution of the ray amplitude is obtained by integrating the transport equation, Eq.~\ref{eq:theory_transport_eq},
+\begin{align}
+    \label{eq:theory_ray_amp}
+    A(\tau) &= A(0)\left| \frac{D(0)}{D(\tau)} \right|^{1/2}, \\
+    D(\tau) &= 
+    \begin{bmatrix}
+        \frac{\partial x}{\partial \zeta_1} & \frac{\partial x}{\partial \zeta_2} & \frac{\partial x}{\partial \tau} \\
+        \frac{\partial y}{\partial \zeta_1} & \frac{\partial y}{\partial \zeta_2} & \frac{\partial y}{\partial \tau} \\
+        \frac{\partial z}{\partial \zeta_1} & \frac{\partial z}{\partial \zeta_2} & \frac{\partial z}{\partial \tau}
+    \end{bmatrix},
+\end{align}
+where $[x,y,z]$ and $[\zeta_1,\zeta_2,\tau]$ are the ray real-space and phase-space coordinates respectively and $D(\tau)$ is the Jacobian for the coordinate transform from phase-space to real-space~\cite{colaitis_inverse_2021}.
+Physically, the phase space coordinate $\tau$ represents the distance along a wave packet trajectory, and $[\zeta_1,\zeta_2]$ are the initial position of the wave packets on the 2-D beam port ($\tau=0$).
+This represents the conservation of energy along a tube of the light, defined by an infinitesimally small separation of rays.
+Here, infinitesimally small refers to small compared to the spatial variations of the medium, $L\sim|\varepsilon/\nabla \varepsilon|$.
+Unlike Eqs.~\ref{eq:theory_ray_x} and~\ref{eq:theory_ray_k}, it is not immediately obvious how to integrate this equation along a ray path.
+The solution method taken in this manuscript is to trace a small bundle of rays and calculate their separation at discrete points along the path, which is described in more detail in Sec.~\ref{sec:SOLAS_ray_amplitude}.
+
+Temporal variation of the medium may also affect the evolution of the field.
+For most \ac{HEDP} experiments, the time taken for light to traverse the region of interest is small compared to the temporal evolution of $\varepsilon$, therefore it is usually safe to disregard its effect.
+One exception to this is \ac{LPIs}.
+The mechanism for these instabilities is described in more detail in Sec.~\ref{sec:theory_LPIs}, but they can rely on a precisely matched \ac{EMW} frequency condition to excite.
+Therefore, even small differences to wave frequencies can lead to errors in modelling.
+The evolution of the frequency of the light is obtained from the dispersion relation~\cite{dewandre_doppler_1981},
+\begin{equation}
+    \frac{\text{d}\omega^2}{\text{d}t} = \frac{\text{d}\omega_p^2}{\text{d}t}.
+\end{equation}
+This leads to an equation for the integration along ray trajectories,
+\begin{equation}
+    \label{eq:theory_doppler}
+    \frac{\text{d} \omega}{\text{d} \tau}=\frac{\omega}{2 c} \frac{\partial\left(n_e / n_{\text{cr}}\right)}{\partial t},
+\end{equation}
+where $\text{d}t = \text{d}\tau/c$.
+Eq.~\ref{eq:theory_doppler} describes the temporal bunching or rarefaction of successive wavefronts propagating at a discrete point in space, due to a temporally increasing or decreasing refractive index.
+As heuristically described in the above, the evolution timescale is long compared $1/\omega$ and therefore the percentage change is small.
+Eq.~\ref{eq:theory_doppler} can thus be evolved independently of Eqs.~\ref{eq:theory_ray_x} and~\ref{eq:theory_ray_k}.
+In direct-drive \ac{ICF} experiments, evolution of the coronal plasma can be diagnosed by measuring this frequency shift~\cite{seka_timeresolved_2008}.
 
 %################################################################################
 %################################################################################
-\subsection{Inv Brem}%
+\subsection{Inverse Bremsstrahlung}%
 \label{sec:theory_in_brem}
 
-Introduce all bits to get NRL formaularly equation.
-Talk about Langdon as well.
+\begin{figure}[t!]
+    \includegraphics[width=0.6\linewidth]{Theory/Images/Inv_Brem.png}
+    \centering
+    \caption{An electron-ion collision in the presence of an oscillating electric field.
+    The collision time is much shorter than the oscillation time.
+    The magnitude of the electron velocity just before ($\vec{w}$) and just after ($\vec{w}'$) the collision is the same, since the collision is elastic.
+    However, the electron continues its quiver motion ($\vec{u}$) just after the collision and thus the time-averaged velocities before ($\vec{v}$) and after ($\vec{v}'$) are different.
+    The figure has been reproduced with permission from Ref.~\cite{michel_introduction_2023}.}%
+    \label{fig:theory_inv_brem}
+\end{figure}
+
+Lasers are used in \ac{HEDP} experiments as an energy source, which drives the plasma dynamics.
+The energy from the laser must therefore be absorbed into the plasma to drive this motion.
+\ac{Inv-Brem}, otherwise known as collisional absorption, is the dominant heating mechanism for modern direct-drive experiments.
+This is the absorption of wave energy by the electron population of the plasma as they undergo collisions with the ions.
+Collisions with the ions are required for energy transfer from the wave to the electrons, as without collision, the electrons would simply gain and lose energy cyclically as they oscillated in the laser electric field.
+When collisions with ions are included, electrons are deflected, disrupting their cyclical quiver energy exchange.
+Therefore, the full portion of kinetic energy that an electron gains from a quiver oscillation, is not restored to the field, resulting in damping of the wave and net energy gain of the electron population.
+
+The physical picture of the absorption process is outlined in Fig.~\ref{fig:theory_inv_brem}.
+In this figure, an electron undergoes a collision with an ion, while oscillating in an electric field.
+The total motion of the electron, $\vec{w}$, is described by a quiver component, $\vec{u}$, and a guiding centre component, $\vec{v}$, which is averaged over the oscillatory motion,
+\begin{equation}
+    \vec{w} = \vec{v} + \vec{u},
+\end{equation}
+where $|\vec{u}| = e|\vec{E}|/m_e \omega$ is the quiver velocity of the electrons in the field, defined in Eq.~\ref{eq:theory_EMW_quiver}.
+The thermal energy of the population is effectively the randomly distributed velocities, $\vec{v}$, which is a Maxwellian if the plasma is in equilibrium.
+The quiver velocity of the electrons is thus effectively a guiding centre drift of a Maxwellian compared to a stationary ion population, which relaxes to a Maxwellian by collisions with the ions.
+An equation of motion\footnote{Note that only the dominant terms in an expansion around the `small' parameter, $|\vec{u}|/|\vec{v}|\equiv v_\text{quiv.}/v_{Te}$ have been kept. It has been shown that the following \ac{Inv-Brem} absorption rate is valid for $v_\text{quiv.}/v_{Te}\leq 1$~\cite{bunkin_interaction_1973}.} for the quiver component can therefore be written,
+\begin{equation}
+    \label{eq:theory_electron_quiver_partial}
+    \frac{\partial\vec{u}}{\partial t} = - \frac{e}{m_e}\vec{E} - \nu_{ei} \vec{u},
+\end{equation}
+where $\nu_{ei}$ is the electron-ion collision rate~\cite{michel_introduction_2023},
+\begin{equation}
+    \nu_{ei} = \frac{2 n_i}{\sqrt{2\pi} m_e^2 v_{Te}^3} \left( \frac{Z e^2}{4 \pi \varepsilon_0} \right)^2 \frac{4\pi}{3} \ln{\left(\Lambda\right)}.
+\end{equation}
+The Coulomb logarithm, $\ln(\Lambda)$, is the logarithm of the ratio of minimum and maximum impact parameters for a collision.
+Its expression takes different forms for different physical effects.
+When considering a quivering electron, oscillating in an electric field, the appropriate form for $\Lambda$ is,
+\begin{align}
+    \Lambda &= \frac{v_{Te}}{V},\\
+    V &= \text{max}\left( \omega, \omega_p \right) \times \text{max}\left( \frac{Z e^2}{k_B T_e}, \frac{\hbar}{\sqrt{m_e k_B T_e}} \right),
+\end{align}
+where $\hbar$ is the reduced Planck constant~\cite{huba_nrl_2013}.
+
+Assuming a plane wave solution, ($\vec{E},\vec{v}\propto \exp{(i\omega t)}$), an expression for the quiver velocity is found from Eq.~\ref{eq:theory_electron_quiver_partial},
+\begin{equation}
+    \vec{u} = \frac{-ie}{m(\omega + i\nu_{ie})}\vec{E}.
+\end{equation}
+Recalling the definition of the current, $\vec{J}_e = -e n_e \vec{u} = -i\omega \varepsilon_0 \chi_e$, and therefore the permittivity ($\varepsilon = 1-\chi_e$) is found to be,
+\begin{equation}
+    \varepsilon = 1 - \frac{\omega_p^2}{\omega^2 + i \omega\nu_{ei}}.
+\end{equation}
+In the small absorption limit, where $\nu_{ei}\ll \omega$, the wavevector, $|\vec{k}| = \sqrt{\varepsilon}\omega/c$ is complex,
+\begin{equation}
+    |\vec{k}| = \frac{\omega}{c}\sqrt{\varepsilon} + i\frac{1}{2}\frac{\nu_{ei}}{c\sqrt{\varepsilon}}\frac{n_e}{n_{\text{cr}}}.
+\end{equation}
+The small absorption limit is generally valid for the hot coronal plasmas of direct-drive \ac{ICF} experiments, apart from in a thin region close to the critical surface~\cite{colaitis_real_2019}.
+This describes a damping of the wave amplitude as it propagates in space, with an absorption rate per $\text{d}\tau$,
+\begin{equation}
+    \label{eq:theory_inv_brem}
+    \kappa_{\text{IB}} = 2 \frac{\nu_{ei}}{c}\frac{n_e}{n_{\text{cr}}},
+\end{equation}
+where the $\sqrt{\varepsilon}$ drops out when converting from unit arc length to path length.
+
+One further improvement that can be made to Eq.~\ref{eq:theory_inv_brem}, by noting that \ac{Inv-Brem} preferentially heats the colder population of electrons, because the collision frequency $\nu_{ei}\propto v^{-3}$.
+If the heating rate is fast compared to the collisional rate which returns the distribution function to Maxwellian, then this can lead to super-Gaussian distribution functions.
+These distributions have a lower population of the cold electrons, which are heated more by \ac{Inv-Brem}.
+Therefore, the overall absorption rate is decreased.
+This process is known as the Langdon effect~\cite{langdon_nonlinear_1980} and is parameterised by the ratio of the heating rate to the thermalising the electron-electron collision rate,
+\begin{equation}
+    \alpha = Z^* \frac{v_{\text{quiv}}^2}{v_{Te}^2},
+\end{equation}
+where $Z^* = \langle Z^2 \rangle / \langle Z \rangle $ (the average is taken over multiple ion species if present) and $v_{\text{quiv.}} = e|\vec{E}|/m_e \omega$ is the quiver velocity.
+The modified absorption kernel is then the value from Eq.~\ref{eq:theory_inv_brem}, multiplied by the factor~\cite{colaitis_inverse_2021},
+\begin{equation}
+    f_{\text{L}} = \left[ 1 - 0.553/\left( 1 + {[0.27/\alpha]}^{0.75} \right) \right].
+\end{equation}
+One issue with accurately implementing this effect in a ray-tracing code is that the field along each ray must be known to calculate $v_{\text{quiv.}}$, and therefore the amplitude of the ray must be integrated, which is not trivial.
 
 %################################################################################
 %################################################################################
 \subsection{Resonance Absorption}%
 \label{sec:theory_res_abs}
 
-Introduce
+\begin{figure}[t!]
+    \includegraphics[width=0.65\linewidth]{Theory/Images/Res_Abs.png}
+    \centering
+    \caption{Illustration of resonance absorption for a non-normally incident, p-polarised light wave, propagating up a density gradient.
+    At the turning point of the light, if sufficiently close to the critical density, then the evanescent light can tunnel through to the critical surface and resonantly excite an \ac{EPW}.
+    The \ac{EPW} propagates down the density ramp and transfers energy to the electrons through damping.
+    The figure has been reproduced with permission from Ref.~\cite{michel_introduction_2023}.}%
+    \label{fig:theory_res_abs}
+\end{figure}
 
-%################################################################################
-%################################################################################
-\subsection{ICF Relevant Absorption comparison}%
-\label{sec:theory_absorption_comparison}
+An additional absorption mechanism is also important for many \ac{HEDP} experiments, known as resonance absorption.
+This mechanism is far less important for direct-drive experiments on \textsc{Omega} and the \ac{NIF}, due to the use of frequency tripled light and long plasma scale lengths, however a short discussion is included for completeness.
+An illustration of the procedure is shown in Fig.~\ref{fig:theory_res_abs}.
+Light propagating up a density gradient, reaches a maximum plasma density of $n_e = n_{\text{cr}} \cos{\theta}$, where $\theta$ is the angle of the light to the density gradient.
+If the light is p-polarised, then the field oscillates in the plane of the gradient, therefore a finite portion of the evanescent field is able to tunnel through to the critical density.
+This field will resonantly excite an \ac{EPW} at the frequency of the light wave, which propagates down the density gradient.
+As it propagates down, the \ac{EPW} will irreversibly lose energy to the plasma via Landau damping or collisional damping, resulting in laser energy absorption by the plasma.
 
-Say inv brem goes up relatively at larger scales and shorter wavelengths.
-Prefered to resonance absorption because bulk population gets energy.
-Therefore use frequency tripled light.
+If the light is normally incident to the density ramp, then the field is purely s-polarised, thus no resonance absorption can occur.
+However, the light must propagate sufficiently close to normal incidence in order to get close to the critical surface.
+This places strict requirements on plasma conditions and laser propagation for resonance absorption to be significant compared to \ac{Inv-Brem}.
+In long density length scale plasmas, only a very small portion of the incident laser light gets sufficiently close to the critical surface for large portions of resonance absorption to occur.
+Additionally, \ac{Inv-Brem} often dominates apart from when it becomes ineffective at high plasma temperatures.
+It can however be a significant absorption mechanism for short length and time scale, high intensity laser-solid interactions, before the target has significantly heated and expanded.
+Specifically for \ac{ICF} however, resonance absorption is thought to be mostly insignificant on \textsc{Omega} since the move to frequency tripled lasers~\cite{craxton_directdrive_2015}.
 
 %###############################################################################################################################
 %###############################################################################################################################

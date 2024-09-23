@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.20)  19 SEP 2024 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  23 SEP 2024 19:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Repos/Thesis/Thesis_MainSample.tex
-(c:/Repos/Thesis/Thesis_MainSample.tex
+**c:/Thesis_latex/Thesis_MainSample.tex
+(c:/Thesis_latex/Thesis_MainSample.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (./icldt.cls
@@ -1324,6 +1324,12 @@ Package acronym Info: Label `acro:IAW' newly defined as it shall be overridden
 although it is yet undefined on input line 4.
 Package acronym Info: Label `acro:EPW' newly defined as it shall be overridden
 although it is yet undefined on input line 4.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
 )
 \tf@lof=\write7
 \openout7 = `Thesis_MainSample.lof'.
@@ -1371,6 +1377,10 @@ LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 38.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 38.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 38.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
@@ -1380,18 +1390,7 @@ Overfull \hbox (2.76146pt too wide) in paragraph at lines 61--64
 \T1/futs/m/n/10.95 leading to a restor-ing force $\FML/futmi/m/it/10.95 F[] \FMS/futm/m/n/10.95 Å ^^@\FML/futmi/m/it/10.95 eE[]$ \T1/futs/m/n/10.95 on each elec-tron. Solv-ing New-ton's sec-ond Law demon-
  []
 
-[10]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 92.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 92.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 92.
- [11]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 117.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 117.
+[10] [11]
 Package acronym Info: Label `acro:VFP' newly defined as it shall be overridden
 although it is yet undefined on input line 135.
 Package acronym Info: Label `acro:PiC' newly defined as it shall be overridden
@@ -1433,7 +1432,7 @@ LaTeX Warning: Reference `sec:theory_absorption' on page 17 undefined on input l
 LaTeX Warning: Reference `michel_introduction_2023' on page 18 undefined on input line 352.
 
 [18]
-<Theory/Images/plasma_waves.png, id=414, 724.3863pt x 409.53pt>
+<Theory/Images/plasma_waves.png, id=424, 724.3863pt x 409.53pt>
 File: Theory/Images/plasma_waves.png Graphic file (type png)
 <use Theory/Images/plasma_waves.png>
 Package pdftex.def Info: Theory/Images/plasma_waves.png  used on input line 376.
@@ -1442,13 +1441,13 @@ Package pdftex.def Info: Theory/Images/plasma_waves.png  used on input line 376.
 Underfull \vbox (badness 1253) has occurred while \output is active []
 
  [19 <./Theory/Images/plasma_waves.png>]
-<Theory/Images/EMW_disp_rel.png, id=442, 462.528pt x 346.896pt>
+<Theory/Images/EMW_disp_rel.png, id=452, 462.528pt x 346.896pt>
 File: Theory/Images/EMW_disp_rel.png Graphic file (type png)
 <use Theory/Images/EMW_disp_rel.png>
 Package pdftex.def Info: Theory/Images/EMW_disp_rel.png  used on input line 438.
 (pdftex.def)             Requested size: 249.24878pt x 186.93993pt.
  [20]
-<Theory/Images/IAW_EPW.png, id=463, 1340.8494pt x 1137.7707pt>
+<Theory/Images/IAW_EPW.png, id=473, 1340.8494pt x 1137.7707pt>
 File: Theory/Images/IAW_EPW.png Graphic file (type png)
 <use Theory/Images/IAW_EPW.png>
 Package pdftex.def Info: Theory/Images/IAW_EPW.png  used on input line 476.
@@ -1465,11 +1464,46 @@ LaTeX Warning: Reference `sec:SOLAS_ray_power_change' on page 24 undefined on in
 
 LaTeX Warning: Reference `chap:SOLAS' on page 24 undefined on input line 585.
 
-[24] [25] [26] [27]) [28] [29
+[24]
+Overfull \hbox (1.30174pt too wide) in paragraph at lines 594--601
+\T1/futs/m/n/10.95 Laser-driven plas-mas are heated and ex-pand, lead-ing to den-sity gra-di-ents in the re-gion where
+ []
+
+[25] [26]
+Overfull \hbox (10.40115pt too wide) in paragraph at lines 710--711
+[]\T1/futs/m/n/10.95 The evo-lu-tion of the ray am-pli-tude is ob-tained by in-te-grat-ing the trans-port equa-tion, Eq. [][]1.81[][], 
+ []
 
 
+LaTeX Warning: Reference `sec:SOLAS_ray_amplitude' on page 27 undefined on input line 726.
 
-] [30
+[27]
+<Theory/Images/Inv_Brem.png, id=629, 987.69pt x 736.7525pt>
+File: Theory/Images/Inv_Brem.png Graphic file (type png)
+<use Theory/Images/Inv_Brem.png>
+Package pdftex.def Info: Theory/Images/Inv_Brem.png  used on input line 754.
+(pdftex.def)             Requested size: 249.24878pt x 185.91893pt.
+ [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./Theory/Images/Inv_Brem.png (PNG copy)>]
+Overfull \hbox (5.89928pt too wide) in paragraph at lines 826--829
+\FML/futmi/m/it/10.95 e\FMS/futm/m/n/10.95 j\T1/futs/b/n/10.95 E\FMS/futm/m/n/10.95 j\T1/futs/m/n/10.95 /\FML/futmi/m/it/10.95 m[]!$ \T1/futs/m/n/10.95 is the quiver ve-loc-ity. The mod-i-fied ab-sorp-tion ker-nel is then the value from Eq. [][]1.97[][],
+ []
+
+
+Underfull \vbox (badness 8094) has occurred while \output is active []
+
+ [30]
+<Theory/Images/Res_Abs.png, id=682, 1179.40625pt x 544.0325pt>
+File: Theory/Images/Res_Abs.png Graphic file (type png)
+<use Theory/Images/Res_Abs.png>
+Package pdftex.def Info: Theory/Images/Res_Abs.png  used on input line 840.
+(pdftex.def)             Requested size: 270.01424pt x 124.55205pt.
+Package acronym Info: Label `acro:NIF' newly defined as it shall be overridden
+although it is yet undefined on input line 850.
+ [31 <./Theory/Images/Res_Abs.png (PNG copy)>]) [32] [33] [34
+
 
 
 ]
@@ -1486,7 +1520,9 @@ Overfull \hbox (1.1218pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 sion Sim-u-la-tions of In-er-tial Con-fine-ment Fu-sion Cap-sules''. In: \T1/futs/m/it/10.95 Com-puter Physics Com-
  []
 
-[31
+[35
+
+
 
 ]
 Overfull \hbox (3.88611pt too wide) in paragraph at lines 27--27
@@ -1498,7 +1534,7 @@ Overfull \hbox (9.91621pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 tions, and Two Flux-Limited Dif-fu-sion The-o-ries''. In: \T1/futs/m/it/10.95 Jour-nal of Quan-ti-ta-tive Spec-troscopy
  []
 
-[32]
+[36]
 Overfull \hbox (30.35541pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 Duc Cao et al. ``Im-proved Non-Local Elec-tron Ther-mal Trans-port Model for Two-Dimensional
  []
@@ -1508,10 +1544,10 @@ Overfull \hbox (13.9152pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Ra-di-a-tion Hy-dro-dy-nam-ics Sim-u-la-tions''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 22.8 (Aug. 2015), p. 082308.
  []
 
-[33] [34]
+[37] [38]
 \openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex) [35
+ (./Appendix/Permissions.tex) [39
 
 
 
@@ -1532,18 +1568,18 @@ Package logreq Info: Writing requests to 'Thesis_MainSample.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34234 strings out of 474165
- 682765 string characters out of 5749497
+ 34334 strings out of 474165
+ 685914 string characters out of 5749497
  1944542 words of memory out of 5000000
- 55775 multiletter control sequences out of 15000+600000
+ 55841 multiletter control sequences out of 15000+600000
  695109 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,12n,121p,10978b,2017s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,14n,121p,10978b,2017s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (35 pages, 2660685 bytes).
+Output written on Thesis_MainSample.pdf (39 pages, 2770290 bytes).
 PDF statistics:
- 860 PDF objects out of 1000 (max. 8388607)
- 779 compressed objects within 8 object streams
- 240 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 984 PDF objects out of 1000 (max. 8388607)
+ 892 compressed objects within 9 object streams
+ 274 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
