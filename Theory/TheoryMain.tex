@@ -822,6 +822,7 @@ These distributions have a lower population of the cold electrons, which are hea
 Therefore, the overall absorption rate is decreased.
 This process is known as the Langdon effect~\cite{langdon_nonlinear_1980} and is parameterised by the ratio of the heating rate to the thermalising the electron-electron collision rate,
 \begin{equation}
+    \label{eq:theory_alpha_langdon}
     \alpha = Z^* \frac{v_{\text{quiv}}^2}{v_{Te}^2},
 \end{equation}
 where $Z^* = \langle Z^2 \rangle / \langle Z \rangle $ (the average is taken over multiple ion species if present) and $v_{\text{quiv.}} = e|\vec{E}|/m_e \omega$ is the quiver velocity.
@@ -870,52 +871,250 @@ Specifically for \ac{ICF} however, resonance absorption is thought to be mostly 
 
 %################################################################################
 %################################################################################
-\subsection{Ponderamotive Force}%
-\label{sec:theory_ponderamotive}
+\subsection{Ponderomotive  Force}%
+\label{sec:theory_ponderomotive }
 
-Introduce and say why it happens roughly.
+When interacting with a wave that has a non-uniform envelope, plasma particles undergo a drift from the regions of high field amplitude to low amplitude, on top of their fast quiver motion.
+This effect is known as the ponderomotive force and is crucial to the development of \ac{LPIs}.
+Although the ponderomotive force acts on particles in both longitudinal and transverse waves in plasmas, this section shall focus only on the effect due to an \ac{EMW}.
+Considering an \ac{EMW} with a non-uniform envelope, polarised along the $\pm \hat{\vec{x}}$ axis and propagating along $+\hat{\vec{z}}$, the electric field of the wave can be written,
+\begin{equation}
+    \vec{E}(\vec{x},t) - E_0(\vec{x},t)\cos{(\varphi)}\hat{\vec{x}},
+\end{equation}
+where $\varphi = kz - \omega t$ and $E_0$ is the slowly varying envelope.
+As previously discussed, the particle will undergo fast quiver oscillations due to the $\cos{(\psi)}$.
+The non-uniform component of the field shall introduce a slow drift motion of the particle if the envelope is slowly varying, analogous to single-particle motion `$E\times B$' and `$\nabla B$' drifts~\cite{chen_introduction_2018}.
+Thus, an Ansatz to the particle motion is sought of the form,
+\begin{equation}
+    \label{eq:theory_ponder_ansatz}
+    \vec{x}(t) = \vec{x}_0(t) + \vec{x}_s(t),
+\end{equation}
+where $\vec{x}_0(t)$ is the quiver motion and $\vec{x}_s(t)=\langle\vec{x}(t)\rangle$ is the slow drift motion of the particle.
+The brackets here refer to an average over a single oscillation period.
+
+The field amplitude is assumed to e slowly varying and thus does not significantly change over the scale of a particle quiver oscillation.
+A Taylor expansion can thus be performed for the field about the cycle-averaged $\vec{x}_s$ for small quiver movements, $\vec{x}_0$,
+\begin{equation}
+    \vec{E}\left[\vec{x}(t),t\right] = \vec{E}\left[\vec{x}_0(t) + \vec{x}_s(t),t\right] \approx \vec{E}_s + \left[ \vec{x}_0(t).\nabla \right] \vec{E}_s,
+\end{equation}
+where,
+\begin{equation}
+    \vec{E}_s = \vec{E}\left[ \vec{x}_s(t),t \right] = E_{0s} \cos{(\varphi_s)} \hat{\vec{x}},
+\end{equation}
+and $\varphi = kz_s - \omega t$.
+For simplicity, the magnetic field is simply taken to be the equal to the average field over a cycle, \textit{i.e.} $\vec{B}\approx\vec{B}_s$.
+A Taylor expansion of the magnetic field around $\vec{x}_s$ yields second order corrections to the final expression.
+An expression for the magnetic field is found by integrating Faraday's law, Eq.~\ref{eq:theory_maxwell_eqs_3},
+\begin{eqnarray}
+    \label{eq:theory_ponder_B}
+    \vec{B}_s = \frac{1}{\omega}\nabla\times \left[ E_{0s} \sin{(\varphi)} \hat{\vec{x}} \right].
+\end{eqnarray}
+
+The equation of motion, averaged over the quiver motion for a charged particle interacting via the Lorentz force with these fields can thus be written,
+\begin{equation}
+    \label{eq:theory_ponder_eom}
+    m \frac{\text{d}^2 \vec{x}_s}{\text{d}t^2} \approx q\langle \left( \vec{x}_0.\nabla \right) \vec{E}_s \rangle + q\langle \vec{v}_0\times \vec{B}_s(\vec{x},t) \rangle,
+\end{equation}
+where the fact that $\langle\vec{E}_s\rangle=0$, as it is averaged over a cycle, has been used to simplify the first term on the left.
+The velocity of the particle $\vec{v}=\vec{v}_0 + \vec{v}_s \approx \vec{v}_0$, because it was assumed that the quiver motion is much faster the drift in the Ansatz, Eq.~\ref{eq:theory_ponder_ansatz}.
+For sufficiently low intensities, the particle velocities will be non-relativistic and therefore the magnetic field will not influence the leading order quiver motion, $\vec{x}_0(t)$.
+The quiver motion is therefore a simple oscillation in the electric field,
+\begin{align}
+    \label{eq:theory_ponder_x}
+    \vec{x}_0(t) &= \frac{-q}{m \omega^2} E_{0s} \cos{\left(\varphi\right)} \hat{\vec{x}},\\
+    \label{eq:theory_ponder_v}
+    \vec{v}_0(t) &= \frac{-q}{m \omega} E_{0s} \sin{\left(\varphi\right)} \hat{\vec{x}},
+\end{align}
+where $\vec{v}_0$ is the quiver velocity.
+Substituting in Eqs.~\ref{eq:theory_ponder_B},~\ref{eq:theory_ponder_x} and~\ref{eq:theory_ponder_v} into the equation of motion Eq.~\ref{eq:theory_ponder_B} yields a drift force term~\cite{michel_introduction_2023},
+\begin{equation}
+    \label{eq:theory_ponder_eom2}
+    m \frac{\text{d}^2 \vec{x}_s}{\text{d}t^2} = \vec{F}_p,
+\end{equation}
+where the ponderomotive force is identified,
+\begin{equation}
+    \label{eq:theory_ponder_force}
+    \vec{F}_p = \frac{-q^2}{2m\omega^2}\nabla \left\langle \vec{E}_s^2 \right\rangle.
+\end{equation}
+
+The force term in Eq.~\ref{eq:theory_ponder_eom2} acts to push charged particle undergoing quiver motion down the gradient of the slowly varying field envelope.
+One important difference between the ponderomotive force for longitudinal plasma waves and transverse light waves, is that the gradient term in the direction $\vec{F}_p\perp\vec{E}$ originates from the magnetic field component of the Lorentz force.
+Longitudinal plasma waves, \textit{i.e.} the \ac{IAW} and the \ac{EPW}, do not have a magnetic component and therefore the force is only $\vec{F}_p\parallel\vec{E}$.
+Although the force acts on all charged particles, it pushes electrons much more easily than ions as $\vec{F}_p\propto 1/m$.
+This electron movement sets up a charge displacement, which then pulls the ions along with the electron population.
+Eq.~\ref{eq:theory_ponder_force} was derived by assuming a Taylor expansion of $\vec{E}$ in the oscillation displacement from the cycle average, $\vec{x}_0$.
+This is valid if the displacement is not too large, which is true for non-relativistic intensities, \textit{i.e.} the normalised vector potential amplitude $a_0\ll 1$~\cite{michel_introduction_2023}.
 
 %################################################################################
 %################################################################################
-\subsection{Three-Wave Coupling}%
+\subsection{Three-Wave Coupling with Two Light Waves}%
 \label{sec:theory_threewave}
 
-Give the general picture, i.e. ponderamotive, perturbation, driven plasma wave.
-Give momentum and energy conservation.
-List all types seeded by an EMW.
+\begin{figure}[t!]
+    \includegraphics[width=0.75\linewidth]{Theory/Images/2wave_beat.png}
+    \centering
+    \caption{Two light waves crossing each other and leading to a beat pattern in the summed field.
+    When in a plasma background, the charged particles will experience a drift motion down the beat pattern envelope, known as the ponderomotive force.}%
+    \label{fig:theory_twowavebeat}
+\end{figure}
+
+An important example of the ponderomotive force in action for \ac{LPIs} is the case of two crossing light waves in a plasma, with slightly different wave numbers ($\vec{k}_0-\vec{k}_1 = \vec{k}_\Delta$) and frequencies ($\omega_0-\omega_1 = \omega_\Delta$).
+The waves will thus create a beat pattern which has an envelope with wavenumber $\vec{k}_\Delta$ and oscillation frequency $\omega_\Delta$.
+Two light waves crossing and creating a beat pattern is plotted in Fig.~\ref{fig:theory_twowavebeat}.
+Only the spatial variation is plotted, but the beat pattern also oscillates in time.
+This beat profile  leads to a ponderomotive force term,
+\begin{equation}
+    \vec{F}_p = \frac{q^2}{4 m \overline{\omega}^2}|E_0| |E_1| \hat{\vec{e}}_0 . \hat{\vec{e}}_1 \sin{\varphi_\Delta}\vec{k}_\Delta,
+\end{equation}
+where $\hat{\vec{e}}_i$ and $|E_i|$ are the polarisation unit vector and field amplitude of wave $i$, respectively, and $\overline{\omega} = (\omega_0 + \omega_1)/2$.
+The phase term is $\varphi_\Delta = |\vec{k}_\Delta|z - \omega_\Delta t$.
+The force is thus modulated at the oscillation wavelength and frequency of the beat envelope.
+This acts to push particles into the beat region with the lowest envelope at a given time and if $\omega_\Delta$ and $\vec{k}_\Delta$ match the dispersion relation for a plasma wave, an \ac{EPW} or \ac{IAW} can be resonantly excited.
+Electrons evacuation from the ponderomotive force sets up a modulation in $n_e$ and thus the plasma refractive index.
+This acts as a grating, which can scatter light from one wave to the other.
+An unstable feedback loop can thus occur, whereby light is scattered from one wave to another, increasing the magnitude of $|E_0| |E_1|$.
+A stronger ponderomotive force thus increases the amplitude of the grating, scattering yet more light between the waves.
+This continues until some process saturates the interaction, for example `pump depletion' saturation occurs when the beam transferring energy to the other beams sufficiently depletes its energy that the rate of energy transfer no longer increases.
+The instabilities \ac{CBET}, \ac{SRS} and \ac{SBS} are all excited via this process.
+
+\begin{figure}[t!]
+    \includegraphics[width=0.6\linewidth]{Theory/Images/LPI_conservation_disprel.png}
+    \centering
+    \caption{The frequency and wave number matching conditions for \ac{LPIs}, whereby a pump \ac{EMW}, labelled 0, loses energy to two daughter waves.
+        Here the daughter waves are another \ac{EMW} with lower frequency ($\omega_1<\omega_0$) and an \ac{IAW}, which are labelled 1 and 2, respectively.
+        \ac{EMW}$\rightarrow$\ac{EMW}$+$\ac{IAW} identifies the process as \ac{CBET} or \ac{SBS}.
+    }%
+    \label{fig:theory_LPI_disprel}
+\end{figure}
+
+The frequency and wave number matching conditions for a resonant excitation of a  can be expressed in the form,
+\begin{align}
+    \label{eq:theory_omega_match}
+    \omega_2 = \omega_0 - \omega_1,\\
+    \label{eq:theory_k_match}
+    \vec{k}_2 = \vec{k}_0 - \vec{k_1},
+\end{align}
+where $\omega_2$ and $\vec{k}_2$ match the dispersion relation for either an \ac{EPW} or \ac{IAW}.
+Wave `0' is often referred to as the `pump' wave and the other waves are known as the `daughter' waves.
+Eqs.~\ref{eq:theory_omega_match} and~\ref{eq:theory_k_match} can heuristically be thought of as conservation of wave quanta energy and momentum, respectively, seen more clearly by multiplying both sides by $\hbar$.
+This conservation is illustrated in Fig.~\ref{fig:theory_LPI_disprel}, which plots the dispersion relations for an \ac{CBET} or \ac{SBS}, whereby a pump \ac{EMW} loses energy to a daughter \ac{EMW} and \ac{IAW}.
 
 %################################################################################
 %################################################################################
 \subsection{Cross-Beam Energy Transfer}%
 \label{sec:theory_CBET}
 
-Derive something to an appropriate level of detail.
-Talk about how it is in frame of plasma, flow velocities change this, mach 1 surface etc.
-Give general picture, i.e. sidescatter and backscatter and what it does in ICF.
+\begin{figure}[t!]
+    \includegraphics[width=0.8\linewidth]{Theory/Images/CBET_mechanism.png}
+    \centering
+    \caption{A 1-D Illustration of the mechanism by which \ac{CBET} grows.
+    Panel a) plots the incident electric fields from two lasers, overlapping in a plasma background.
+    This creates a beat pattern which ponderomotively pushes charges within the plasma to regions where the beat envelope is small, as is shown in panel b).
+    If the spatial and temporal frequency of the beat oscillation matches the \ac{IAW} dispersion relation, then an \ac{IAW} grows, which is shown in panel c).
+    The density modulation from the \ac{IAW} acts as a grating which transfers energy from one beam to the other.
+    }%
+    \label{fig:theory_CBET_mechanism}
+\end{figure}
 
+As stated, \ac{CBET} one of the \ac{LPIs}, which involves the decay of an \ac{EMW} into another \ac{EMW} and an \ac{IAW}.
+This is almost the same as \ac{SBS}, but distinct.
+For \ac{SBS}, the daughter \ac{EMW} wave occurs due to light scattering from the plasma, and therefore grows from noise.
+The scattered light wave is low amplitude, therefore is low amplitude such that its field can be significantly amplified via the process.
+In \ac{CBET} however, the daughter \ac{EMW} is another laser beam, \textit{i.e.} two laser beams cross leading to a beat pattern and subsequent energy exchange from one beam to another.
+This procedure is illustrated in Fig.~\ref{fig:theory_CBET_mechanism}
+Both light waves are relatively large in field amplitude and therefore a significant amount of energy can be transferred, even when the waves do not quite resonantly drive an \ac{IAW}~\cite{michel_introduction_2023}.
 
-%##########################################################
-\subsubsection{Linear Gain Theory}%
-\label{sec:theory_lineargaincbet}
+A fluid description of the plasma may be used as a useful starting point to introduce the key physics of \ac{CBET} and obtain a rate of energy transfer between the light waves, known as the gain.
+A kinetic plasma description is often required to accurately model the interaction, especially when occurring in multi-species plasmas~\cite{williams_frequency_1995}.
+While not provided here, the kinetic gain (derived in, for example, Ref.~\cite{michel_saturation_2013}) is presented in Sec.~\ref{sec:SOLAS_ray_power_change}, along with a description of its benefits over the fluid gain.
+The fluid gain derivation was first calculated in Ref.~\cite{randall_theory_1981}. 
 
-Say that we use this for raytracing.
-Assume uniform plasma and can solve plasma response either by linearising fluid or kinetic equations.
+The system of equation to solve to calculate the gain rate of \ac{CBET} may be written as,
+\begin{align}
+    \label{eq:theory_CBET_interaction1}
+    (\partial_t^2 + \omega_p^2 - c^2\nabla^2)\vec{a}_0 &= -\omega_p^2\frac{\delta n_e}{n_{e}}\vec{a}_1,\\
+    \label{eq:theory_CBET_interaction2}
+    (\partial_t^2 + \omega_p^2 - c^2\nabla^2)\vec{a}_1 &= -\omega_p^2\frac{\delta n_e}{n_{e}}\vec{a}_0,\\
+    \label{eq:theory_CBET_interaction3}
+    \left[ \left( \partial_t + \nu + \vec{u}.\nabla \right)^2 - c_s^2\nabla^2 \right]\frac{\delta n_e}{n_{e}} &= \frac{Z m_e c^2}{m_i}\nabla^2 (\vec{a}_0 . \vec{a}_1).
+\end{align}
+In Eqs.~\ref{eq:theory_CBET_interaction1} and~\ref{eq:theory_CBET_interaction2} $\vec{a}_i$ are the normalised vector potentials of the light waves, which undergo an interaction proportional to the density modulation generated by an \ac{IAW}, $\delta n_e/n_{e}$, which is driven by the other wave.
+These equations describe the general coupling of two light waves via an \ac{IAW}.
+Eq.~\ref{eq:theory_CBET_interaction3} is the driven wave equation for the \ac{IAW} in a plasma with flow velocity $\vec{u}$ and ionisation $Z$, which experiences damping, $\nu$.
+Much more detail on the derivation and solution of this system of equations is provided in Ref.~\cite{michel_introduction_2023}, however, a final amplification rate is obtained,
+\begin{align}
+    \label{eq:theory_CBET_linear_gain}
+    \gamma_{01} &= \frac{n_e e}{4 m_e c \omega_0} \frac{1}{T_e \left( 1 + 3 T_i / Z T_e \right)} \frac{R(\eta_{01})}{\nu}, \\
+    R(\eta_{01}) &= \frac{ (\nu/\omega_{s})^2 \eta_{01} } { (\eta_{01}^2 - 1)^2 + (\nu/\omega_s)^2 \eta_{01}^2 }, \\
+    \label{eq:theory_resonace_param_fluid}
+    \eta_{01} &= \frac{ \omega_\Delta - \vec{k}_\Delta.\vec{u} }{\omega_s},
+\end{align}
+where $T_e$ and $T_i$ are the electron and ion temperatures in $\text{eV}$ respectively and $\omega_s = |\vec{k}_\Delta|c_s$ is the \ac{IAW} frequency.
+The gain, $\gamma_{01}$ describes the spatial amplification rate per unit path length of beam 0 interacting with beam 1, such that $|a_i|^2\sim |a_{i0}|^2\exp{(\gamma_{ij}|a_j0|^2 \text{d}\tau)}$.
+The key assumptions in the derivation of Eq.~\ref{eq:theory_CBET_linear_gain} include that the plasma response is linear, such that the effect of the ponderomotive force can be treated perturbatively.
+This proves to be a good assumption for the intensities used in direct-drive \ac{ICF}, which are specifically limited to avoid the non-linear regime where \ac{LPIs} can dominate.
+Another assumption is that the plasma and pump field are homogeneous over the interaction length.
+For implementation in a ray-tracing code, this is a good assumption because the gain is applied over ray steps, which are by necessity small compared to gradient length scales of the plasma.
+A final assumption was used, that the fields were had parallel polarisation, which shall be discussed in Sec.~\ref{sec:theory_cbet_polarisation}. 
+
+\begin{figure}[t!]
+    \includegraphics[width=\linewidth]{Theory/Images/CBET_modes.png}
+    \centering
+    \caption{The two \ac{CBET} modes which are identified from the fluid \ac{CBET} gain in Eq.~\ref{eq:theory_CBET_linear_gain}, in the context of direct-drive \ac{ICF}.
+    The backscatter mode (left) is dominant in direct-drive \ac{ICF}.
+    In this regime, the light waves have approximately equal frequencies and therefore the required frequency difference in the plasma frame to excite an \ac{IAW} is a result of the Doppler shift.
+    In the sidescatter mode (right) which is employed in indirect-drive to tune symmetry~\cite{michel_tuning_2009}, the flow is orthogonal to the wave vector and therefore \ac{CBET} only occurs due to a frequency difference between the waves.
+    This figure has been reproduced with permission from Ref.~\cite{marozas_wavelengthdetuning_2018}.
+    }%
+    \label{fig:theory_CBET_modes}
+\end{figure}
+
+Maximal scattering occurs when the resonance parameter, $\eta_{01}=1$.
+Eq.~\ref{eq:theory_resonace_param_fluid} therefore identifies two distinct regimes when a resonance can be achieved, which are shown in Fig.~\ref{fig:theory_CBET_modes}.
+In a stationary plasma (or when $\vec{k}_\Delta \perp \vec{u}$), scattering can only occur when the beams have a frequency difference, which is known as the sidescatter mode.
+Alternatively, if the beams have equal frequency, the plasma flow term in the numerator of Eq.~\ref{eq:theory_resonace_param_fluid} ($\vec{k}_\Delta.\vec{u}$), acts to Doppler shift the frequencies of the laser beams in the frame of the plasma.
+This results in a frequency difference which can drive an \ac{IAW} if $|\vec{u}|\approx c_s$.
+Direct-drive coronal plasma flow is supersonic and therefore backscatter \ac{CBET} occurs close to the Mach-1 surface.
+The plasma flow in the corona is approximately radially outward, and thus the Doppler shift acts to increase the frequency of the radially inward travelling beam in the plasma frame.
+From the energy conservation condition in Eq.~\ref{eq:theory_omega_match}, energy is therefore depleted from the inbound laser beam and transferred to the outbound beam.
+The Mach-1 surface is significantly separated from the region close to critical, where \ac{Inv-Brem} deposition is important and therefore energy is effectively reflected in direct-drive implosions by backscatter \ac{CBET} before it is deposited within the plasma.
+Although all lasers on the \textsc{Omega} laser facility have the same frequency, the frequency shift term from Eq.~\ref{eq:theory_doppler}, means that lasers which have propagated through a different plasma profile have slightly different frequencies.
+Although small\footnote{Typically, the frequency difference for light which has propagated through a steady state direct-drive corona is on the order of $\Delta\omega/\omega\sim\mathcal{O}(0.1\%)$.} this shift is often of the order of the numerator terms in Eq.~\ref{eq:theory_resonace_param_fluid} and thus must be included when modelling direct-drive \ac{CBET}.
+For indirect-drive implosions, the \ac{LEH} where the lasers cross does not have significant plasma flow.
+Therefore, in order to tune the symmetry of capsules implosions with \ac{CBET}, the sidescatter mechanism is utilised, by introducing a finite frequency difference between the inner and outer cones of beams.
+The frequency difference is experimentally tuned to obtain a round implosion morphology.
 
 %##########################################################
 \subsubsection{Effect of Polarisation}%
 \label{sec:theory_cbet_polarisation}
 
-Say that LPIs are affected by polarisation via ponderatmotive beat.
-Only parallel polarisations interact.
-Important on OMEGA due to polarisation smoothing, leads to mode-1.
+\ac{CBET} is affected by the polarisation of the light waves which seed it.
+Only the parallel polarisation components of the waves create the ponderomotive beat field which sets up the density modulation.
+In the case of mixed polarisation, the gain rate can simply be reduced by multiplying by a random polarisation factor, which is provided in Eq.~\ref{eq:polarisation_smoothing}.
+Polarisation smoothing optics are typically employed on direct-drive facilities which create a mixed polarisation beam, as described in Sec.~\ref{sec:intro_direct_phys}.
+In reality, however, the \ac{DPRs} on \textsc{Omega} do not actually create a single, mixed polarisation laser spot, but 2 slightly offset sub-beams on the target.
+\ac{CBET} models which track polarisation or rays have been developed, which account for the true polarisation angle between 2 sheets~\cite{edgell_nonuniform_2021,colaitis_3d_2022,colaitis_3d_2023,colaitis_3d_2023a}.
+These models have demonstrated that polarised \ac{CBET} on \textsc{Omega} creates a mode-1 which is always in the same direction.
+This persistent mode-1 was experimentally observed from neutron time of flight diagnostics before its origin was understood~\cite{mannion_mitigation_2021}.
 
 %##########################################################
 \subsubsection{Langdon Effect on CBET}%
 \label{sec:theory_cbet_langdon}
 
-Say that Langdon affects cbet.
-Reduced model to alter linear gain.
-Could potentially explain why indirect ICF models require a clamp.
+As was described in Sec.~\ref{sec:theory_in_brem}, \ac{Inv-Brem} preferentially heats the colder electron population, leading to a super-Gaussian electron distribution function.
+A non-Maxwellian distribution function has an altered susceptibility to \ac{IAW}~\cite{afeyan_kinetic_1998}, and therefore \ac{Inv-Brem} heated plasmas have a modified resonance condition for \ac{CBET}.
+Dedicated experiments have been performed which used Thompson scattering to measure the electron distribution function of an \ac{Inv-Brem} heated, gas jet plasma to study how \ac{CBET} is modified~\cite{turnbull_impact_2020}.
+These experiments demonstrated that the \ac{CBET} gain was systematically reduced by an altered dispersion relation,
+\begin{equation}
+    \omega = k c_s \left[ \frac{3 \Gamma^2(3/m)}{\Gamma(1/m)\Gamma(5/m)} \right]^{1/2},
+\end{equation}
+where $\Gamma$ is the Gamma function and,
+\begin{equation}
+    m(\alpha) = 2 + \frac{3}{1 + 1.66/\alpha^{0.724}},
+\end{equation}
+and $\alpha$ is defined in Eq.~\ref{eq:theory_alpha_langdon}.
+This is a small effect in direct-drive experiments on \textsc{Omega} due to the relatively low amplitude overlapped field strengths in a direct-drive geometry~\cite{colaitis_inverse_2021}.
+However, reduction of the gain via Langdon disturbing the electron distribution function could be one possible explanation for why \ac{CBET} calculations on the \ac{NIF} are not predictive and require an artificial clamp on the \ac{IAW} amplitude~\cite{michel_stochastic_2012,kritcher_energy_2018}.
 
 %################################################################################
 %################################################################################
@@ -928,15 +1127,3 @@ Mention stud pulses and say zooming for CBET.
 Mainstream approach is bandwidth.
 Talk about studies showing that bandwidth should mitigate CBET.
 Talk about experimental progress eg FLUX laser at LLE.
-
-
-%###############################################################################################################################
-%###############################################################################################################################
-%###############################################################################################################################
-\section{Summary}%
-\label{sec:theory_summary}
-
-Summarise that introduced descriptions of plasmas, particularly fluid framework solved by CHIMERA.
-Talked about waves in plasmas and their physical interpareatations.
-Talked about how light propagates, assumptions etc, used for raytracing in next section.
-LPIs, particularly CBET, modelling it is focus of next chapter.

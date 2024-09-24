@@ -83,3 +83,4 @@ anisotropises
 wavenumber
 Eikonal
 rederived
+ponderomotively
