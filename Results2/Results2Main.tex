@@ -2,9 +2,9 @@
 \label{chap:Mag}
 
 This chapter describes a set of simulations which were conducted to understand the role of \ac{CBET} in magnetised, direct-drive implosions.
-Magnetised \ac{ICF} is a promising route to achieving higher target gains, due to the reduction of hotspot thermal energy loss at stagnation and additional confinement of the alpha particles responsible for burn propagation.
+Magnetised \ac{ICF} is a promising route to achieving higher target gains, due to the reduction of hotspot thermal energy loss at stagnation and additional confinement of the DT fusion alpha products.
 For direct-drive implosions, magnetisation can significantly alter the coronal plasma conditions, due to the anisotropisation of thermal transport.
-The \ac{IAW} dispersion relation, which mediates \ac{CBET} interactions, depends upon the background plasma and therefore significantly altered temperature and density profiles could alter the action of \ac{CBET}.
+The \ac{IAW} dispersion relation, which mediates \ac{CBET} interactions, depends upon the background plasma and, therefore significantly altered temperature and density profiles could alter the action of \ac{CBET}.
 No direct-drive suitable \ac{CBET} model had been integrated into a \ac{Rad-MHD} code, prior to the development of \textsc{Solas}.
 Therefore, the \textsc{Chimera}-\textsc{Solas} framework has enabled the effect of magnetisation on \ac{CBET} to be studied for a direct-drive implosion.
 
@@ -39,28 +39,28 @@ The exploding-pusher concept is then briefly summarised to aid understanding of 
 \begin{figure}[t!]
     \includegraphics[width=0.75\linewidth]{Results2/Images/wt_collisions.png}
     \centering
-    \caption{Cartoon to illustrate the effect of magnetisation on collisions, and therefore transport, of a test positive charge.
+    \caption{Cartoon to illustrate the effect of magnetisation on collisions, and therefore transport, of a positive test charge.
     Particle locations after collision are represented as blue circles and the path taken by the particle is shown by the black arrows.
-    As the Hall parameter of the particle increases, diffusion is increasingly limited, and therefore collision transport is reduced.}%
+    As the Hall parameter of the particle increases, diffusion is increasingly limited, and therefore collisional transport is reduced.}%
     \label{fig:Res2_omegatau}
 \end{figure}
 
 Magnetisation of an \ac{ICF} target has long been thought of as a potential aid to ignition~\cite{lindemuth_parameter_1983,jones_physics_1986}.
 It is still a relevant field of study in the context of regular ignition events on the \ac{NIF}, because by relaxing the ignition threshold, magnetisation could make larger targets feasible at an equivalent laser energy, and therefore lead to higher gains than unmagnetised implosions.
-For a central hotspot ignition target, ignition occurs when the heat source of alpha energy deposition balances the thermal and radiative losses in the hotspot.
+For a central hotspot ignition target, ignition occurs when the heat source of alpha energy deposition is the dominant term in the power balance of the hotspot.
 Thermal conduction is suppressed perpendicular to magnetic field lines, therefore a magnetic field can reduce thermal losses and aid the power balance required for ignition.
 Fig.~\ref{fig:Res2_omegatau} demonstrates the effect of increasing magnetisation on a unit positive test charge.
 By constraining charged particles to orbit field lines, collisional transport terms, such as thermal conduction, are reduced perpendicular to the field direction.
 Fits of transport coefficients to Fokker-Planck simulations, demonstrate that in a Hydrogen plasma, thermal conductivity perpendicular to field lines, $\kappa_{\perp}$, is reduced to $\sim$30\% of the parallel value, $\kappa_{\parallel}$, at Hall parameter, $\omega\tau=1$, and $\sim$1\% at $\omega\tau=10$~\cite{epperlein_plasma_1986}.
-Thus, for Hall parameters, $\omega\tau\gtrsim 10$, thermal conduction losses are almost negligible in the direction perpendicular to field lines.
+Thus, for Hall parameters, $\omega\tau\gtrsim 10$, electron thermal conduction losses are greatly reduced in the direction perpendicular to field lines.
 
 Using an order of magnitude estimate for a sub-ignition threshold hotspot, $T_e\sim 2.5\ \text{keV}$ and $\rho\sim50\ \text{g cm}^{-3}$, a field strength $|\vec{B}|\sim 2.5\ \text{kT}$ is required to obtain $\omega\tau\sim1$~\cite{oneill_modelling_2023}.
 This field strength cannot be produced directly, but it is possible to produce a smaller field which, assuming frozen in magnetic field and a spherical compression, is amplified by the square of the convergence,
 \begin{equation}
     \label{eq:Res2_flux_compression}
-    |\vec{B_1}|=|\vec{B_0}| \left(\frac{R_0}{R_1}\right)^2,
+    |\vec{B_1}|=|\vec{B}_0| \left(\frac{R_0}{R_1}\right)^2,
 \end{equation}
-where $|\vec{B_0}|$ and $|\vec{B_1}|$ are initial and final magnetic fields, respectively and $R_0$ and $R_1$ are initial and final radii, respectively.
+where $|\vec{B}_0|$ and $|\vec{B_1}|$ are initial and final magnetic fields, respectively and $R_0$ and $R_1$ are initial and final radii, respectively.
 Laboratory magnetic fields can be produced from pulsed power coils with field strength $|\vec{B}|\sim\mathcal{O}(50)\ \text{T}$~\cite{fiksel_note_2015}, so even moderate convergence-ratio targets ($R_0/R_1\sim10$) are able to produce strongly magnetised core plasma.
 
 \begin{figure}[t!]
@@ -73,9 +73,9 @@ Laboratory magnetic fields can be produced from pulsed power coils with field st
 \end{figure}
 
 Fig.~\ref{fig:Res2_perkins_magicf} plots results of magnetised indirect-drive simulations, for a target on the threshold of ignition~\cite{perkins_potential_2017}.
-Increasing magnitudes of radiation perturbation were applied to the drive (moving to the right on the $x$-axis).
+Increasing magnitudes of drive perturbation were applied to the drive (moving to the right on the $x$-axis).
 At some threshold level of perturbation the target is prevented from achieving ignition, which is visible as the steep decrease in yield at a specific level of perturbation for each curve.
-The results demonstrate that when an initial magnetic field was applied to the target, it more robustly ignited with increasing field strength, due to reduced conduction losses.
+The results demonstrate that when an initial magnetic field was applied to the target it more robustly ignited with increasing field strength, due to reduced conduction losses.
 This simulation work, prior to the achievement of ignition on the \ac{NIF}~\cite{zylstra_burning_2022}, motivated the development of a magnetised \ac{ICF} campaign at \ac{LLNL}~\cite{moody_magnetized_2022}.
 
 The \textsc{Chimera} code has been used to study a wide array of physics relevant to magnetised \ac{ICF}.
@@ -102,7 +102,7 @@ Indirect-drive experiments have been conducted on the \ac{NIF} to demonstrate th
 Non-cryogenic, deuterium-filled capsules were deployed with initial field strengths up to $26\ \text{T}$~\cite{moody_increased_2022}.
 Results from this experimental campaign are shown in Fig.~\ref{fig:Res2_moody_magnif}.a.
 The magnetised targets demonstrated significantly enhanced ion temperatures and neutron yields and work is underway to explore non-uniform field configurations to further enhance the benefits of magnetisation~\cite{walsh_application_2023}.
-Fig.~\ref{fig:Res2_moody_magnif}.b,~\ref{fig:Res2_moody_magnif}.c and ~\ref{fig:Res2_moody_magnif}.d plot x-ray images at stagnation of different experiments, showing that a shape-tuning process had to be conducted in order to optimise the sphericity of the target, due to the field leading to anisotropic thermal conduction.
+Fig.~\ref{fig:Res2_moody_magnif}.b,~\ref{fig:Res2_moody_magnif}.c and ~\ref{fig:Res2_moody_magnif}.d plot x-ray images at stagnation of different experiments, showing that a shape-tuning process had to be conducted in order to optimise the sphericity of the target, partially due to the field leading to anisotropic thermal conduction.
 
 \begin{figure}[t!]
     \includegraphics[width=0.6\linewidth]{Results2/Images/MagP2_Bose.png}
@@ -131,7 +131,7 @@ This is compared to previous experiments which produced $\omega_e\tau_e\sim1$ an
 For direct-drive on \textsc{Omega}, laser deposition is transported to the ablation surface by electron thermal conduction, thus large electron Hall parameters led to an effective anisotropisation of the implosion drive.
 
 Fig.~\ref{fig:Res2_Bose_magp2} shows x-ray self-emission images of an unmagnetised (left) and magnetised (right) target with an initial $|\vec{B}_0|=50\ \text{T}$ seed field.
-The strongly magnetised coronal electrons led to decreased drive $\perp\hat{\vec{B_0}}$, markedly increasing the oblateness of the diagnostic image compared to the unmagnetised target.
+The strongly magnetised coronal electrons led to decreased drive $\perp\vec{B}_0$, markedly increasing the oblateness of the diagnostic image compared to the unmagnetised target.
 An ion magnetisation of $\omega_i\tau_i\sim7$ was also reported.
 Previous \ac{Rad-MHD} modelling of these experiments, using the \textsc{Chimera} code, did not include the effects of \ac{CBET}.
 The development of \textsc{Solas}, and particularly the \ac{CBET} model, motivated further computational study of these experiments, to explore whether \ac{CBET} played a significant role in dictating the shape of these implosions.
@@ -156,7 +156,7 @@ This was a challenging problem, due to the lack of simple geometries for the int
 
 The simulation results here neglect this direct affect of magnetisation on \ac{CBET}, partially because the theory is not yet deemed to be significantly mature to implement within a reduced, ray-based model.
 Additionally, coronal magnetic field strengths of $|\vec{B}|\lesssim50\ \text{T}$ were observed in the underdense coronal plasma so significant modifications to the \ac{IAW} dispersion relation were not expected.
-It is noted, however, that altered damping of the waves from magnetisation may affect the results, but the focus of the study was predominantly to explore how magnetisation might indirectly affect \ac{CBET}.
+It is noted, however, that altered damping of the waves from magnetisation may affect the results, but the focus of the study presented here was predominantly to explore how magnetisation might indirectly affect \ac{CBET}.
 
 %################################################################################
 %################################################################################
@@ -529,9 +529,9 @@ The effective re-orientation of $\vec{B}$ at the equator meant that thermal cond
 This locally increased the drive along $z\sim0$, leading to the bump at the equator.
 
 Comparison of run 6 (Nernst) and run 14 (no-Nernst) in Tab.~\ref{tab:Res2_magexpl_results} shows minimal difference in the integrated metrics, despite the altered dynamics.
-This is mostly because the changes were localised to the equator.
+This is mostly because the changes were localised toward the equator.
 This material was thus well separated from the polar region, which experienced the strongest shock convergence and therefore greatest temperatures and neutron production.
-It is expected however, that experiments with symmetric laser illumination, and therefore a less oblate implosion, may be more influenced by the Nernst effect, because the equator of the shell would partake more in neutron production.
+It is expected however, that experiments with symmetric laser illumination, and therefore a less oblate implosion, may be more influenced by the Nernst effect, because more neutron production would occur near the equator of the shell.
 Additionally, it is worth noting that this bump is likely to only be observed in magnetised direct-drive implosion and not indirect-drive.
 This is because the main action of Nernst in these simulations was to change the field and therefore anisotropic transport in the conduction zone, which is the layer in direct-drive implosions that transports energy from the laser absorption region to the ablation surface.
 However, for indirect-drive, x-rays penetrate effectively all the way through to the ablation surface, so there is no conduction zone.
@@ -583,7 +583,7 @@ Suggestions for an alternative implosion are provided, which would increase the 
     All plots are from the $B_{z0}=0\ \text{T}$, with-\ac{CBET} simulation at $t=0.30\ \text{ns}$.
     Panel a) plots the instantaneous deposition with (right-side) and without (left-side) the effect of \ac{CBET}.
     The `\ac{CBET}-deficit', $\Delta P_{\text{CBET}}$, which is the no-\ac{CBET} deposition, subtracted from the with-\ac{CBET} deposition, is plotted in panel b).
-    Panel c) plots the radially integrated $\Delta P_{\text{CBET}}$, as a function of polar angle.
+    Panel c) plots the radially integrated $\Delta P_{\text{CBET}}$, as a function of polar angle ($\theta=0,\ 180^{\circ}$ are the poles).
     The `\ac{CBET}-scattering', is plotted in panel d), and the radial integral is plotted in panel e).
     At this time, it is evident from panel e) that more \ac{CBET} occurred at the capsule poles, resulting in a \ac{CBET}-reduction of deposition near the poles, seen in panel c).
     The critical surface is shown in all 2-D panels by a dashed magenta line.}%
@@ -725,7 +725,7 @@ For simulations which exhibited larger hotspot temperatures, the higher pressure
 \begin{figure}[t!]
     \includegraphics[width=\linewidth]{Results2/Images/CBETshape_stag_diff.png}
     \centering
-    \caption{Difference in $n_e$ and $T_e$ bangtime profiles, between the full-\ac{CBET} and \ac{CBET}-magnitude a) $B_{z0}=0$, b) $B_{z0}=25$ and c) $B_{z0}=50\ \text{T}$ simulations.
+    \caption{Difference in $n_e$ and $T_e$ bangtime profiles, between the full-\ac{CBET} and partial-\ac{CBET} a) $B_{z0}=0$, b) $B_{z0}=25$ and c) $B_{z0}=50\ \text{T}$ simulations.
     The difference in variable $v$, is defined as $\Delta v = v_{\text{full-CB}}-v_{\text{partial-CB}}$, so higher colour scale values represent regions with increased $v$ for the full-\ac{CBET} calculation.
     These results primarily show that \ac{CBET} slightly reduced the bangtime equatorial radius, and thus reduced the oblateness, compared to simulations where the spatial redistribution of power due to \ac{CBET} was neglected.}%
     \label{fig:Res2_CBETshape_diff}
@@ -753,7 +753,8 @@ By comparing Fig.~\ref{fig:Res2_CBETshape_diff}.a with Fig.~\ref{fig:Res2_CBETsh
     All values and errors were obtained by fitting an ellipse (with axes orientated along $\hat{\vec{x}}$ and $\hat{\vec{z}}$), to the radius of maximum density.
     No-\ac{CBET} simulations were consistently more round, because the initial shock was stronger, and therefore travelled ahead of the pusher material more quickly than the \ac{CBET} equivalent.
     Thus, after rebounding off the axis, it met the infalling mass and produced thermonuclear conditions at a larger radius.
-    As was seen in Fig.~\ref{fig:Res2_CBETshape_diff}, throughout the entire implosion, when the effect of \ac{CBET} on spatial location of deposition was included, it acted to slightly move energy from the pole to the waist and thus marginally reduced the oblateness of the stagnation state.}%
+    As was seen in Fig.~\ref{fig:Res2_CBETshape_diff}, throughout the entire implosion, when the effect of \ac{CBET} on spatial location of deposition was included, it acted to slightly move energy from the pole to the waist and thus marginally reduced the oblateness of the stagnation state.
+    Note that the dashed lines are not fits, they are simply included to guide the eye.}%
     \label{fig:Res2_R2R0_errors}
 \end{figure}
 
@@ -800,7 +801,7 @@ Simulations were also conducted which included an initial magnetic field along t
 The key physical processes which were dynamically significant to the implosion dynamics were identified by conducting additional simulations which turned off the effect of each process in turn.
 Anisotropic thermal conduction was shown to be highly significant.
 It acted to insulate the deposited energy at the poles of the equator, preventing thermal equilibration in the polar direction and thus led to an increased asymmetry of the drive.
-The generally high temperatures of the target led to large $R_m$ and Plasma $\beta$ values, therefore the Lorentz force and resistive diffusion had minimal impact on the implosion.
+The generally high temperatures of the target led to large $R_m$ and plasma $\beta$ values, therefore the Lorentz force and resistive diffusion had minimal impact on the implosion.
 Nernst-advection of the magnetic field effectively reoriented the coronal field structure at the low-Hall parameter, equator of the target.
 This field reorientation altered the anisotropic thermal conduction, leading to a `bump' in the density at the target waist.
 Although this equatorial-bump had minimal impact on integrated neutron diagnostics, because it was well removed from the polar-regions, which produced the most thermonuclear reactions, it may significantly impact yields for symmetrically driven targets.

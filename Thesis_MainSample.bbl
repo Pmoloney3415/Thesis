@@ -39,8 +39,8 @@
       \strng{authorbibnamehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
       \strng{authornamehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
       \strng{authorfullhash}{a5b8b2e287cbcd596b1a245e40c69dd9}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{Third edition, corrected publication}
@@ -128,8 +128,8 @@
       \strng{authorbibnamehash}{58b4081a372e906da902235857862a96}
       \strng{authornamehash}{58b4081a372e906da902235857862a96}
       \strng{authorfullhash}{7af2964e08edbc6c8f37b11f35b68007}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -168,8 +168,8 @@
       \strng{authorbibnamehash}{7477411c97e7158e3ff9294d1a1f48cf}
       \strng{authornamehash}{7477411c97e7158e3ff9294d1a1f48cf}
       \strng{authorfullhash}{7477411c97e7158e3ff9294d1a1f48cf}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0899-8221}
@@ -206,8 +206,8 @@
       \strng{authorbibnamehash}{20c1bfb78fdc07c07c9a74ccfafc93df}
       \strng{authornamehash}{20c1bfb78fdc07c07c9a74ccfafc93df}
       \strng{authorfullhash}{20c1bfb78fdc07c07c9a74ccfafc93df}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3rd ed}
@@ -260,8 +260,8 @@
       \strng{authorbibnamehash}{f402bbf8a3bcc9ab55ed699c9a551c14}
       \strng{authornamehash}{f402bbf8a3bcc9ab55ed699c9a551c14}
       \strng{authorfullhash}{ecc221a26276bacf717e528e9f22d532}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00219991}
@@ -1754,6 +1754,85 @@
       \verb C:\Users\Philip\Zotero\storage\CAJZMJ7T\Michel - 2023 - Introduction to laser-plasma interactions.pdf
       \endverb
     \endentry
+    \entry{tajima_laser_1979}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1f20f1467741bf30bc7368e515fb967a}{%
+           family={Tajima},
+           familyi={T\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=78fffb86e6e0a9a5d9e564920b378091}{%
+           family={Dawson},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f30352b51d89a865cbf9e28dc98a447}
+      \strng{fullhash}{2f30352b51d89a865cbf9e28dc98a447}
+      \strng{bibnamehash}{2f30352b51d89a865cbf9e28dc98a447}
+      \strng{authorbibnamehash}{2f30352b51d89a865cbf9e28dc98a447}
+      \strng{authornamehash}{2f30352b51d89a865cbf9e28dc98a447}
+      \strng{authorfullhash}{2f30352b51d89a865cbf9e28dc98a447}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{4}
+      \field{title}{Laser {{Electron Accelerator}}}
+      \field{volume}{43}
+      \field{year}{1979}
+      \field{pages}{267\bibrangedash 270}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.43.267
+      \endverb
+    \endentry
+    \entry{esarey_physics_2009}{article}{}
+      \name{author}{3}{}{%
+        {{hash=375dbcd44a512e0a96f2aecccfe0dfba}{%
+           family={Esarey},
+           familyi={E\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d0444a1c804e8a76f3b1bcb24ca925fd}{%
+           family={Schroeder},
+           familyi={S\bibinitperiod},
+           given={C.\bibnamedelimi B.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=47990152ef68656180da7e1083f5b31e}{%
+           family={Leemans},
+           familyi={L\bibinitperiod},
+           given={W.\bibnamedelimi P.},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f30f0c3fa96ba1813b99b33c2c559a4e}
+      \strng{fullhash}{bbea61d87ba0694710682120e37b6083}
+      \strng{bibnamehash}{f30f0c3fa96ba1813b99b33c2c559a4e}
+      \strng{authorbibnamehash}{f30f0c3fa96ba1813b99b33c2c559a4e}
+      \strng{authornamehash}{f30f0c3fa96ba1813b99b33c2c559a4e}
+      \strng{authorfullhash}{bbea61d87ba0694710682120e37b6083}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0034-6861, 1539-0756}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{3}
+      \field{title}{Physics of Laser-Driven Plasma-Based Electron Accelerators}
+      \field{volume}{81}
+      \field{year}{2009}
+      \field{pages}{1229\bibrangedash 1285}
+      \range{pages}{57}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.81.1229
+      \endverb
+    \endentry
     \entry{colaitis_modeling_2014}{article}{}
       \name{author}{4}{}{%
         {{hash=e934becb097bb2f595aae90e2af104fd}{%
@@ -1787,8 +1866,8 @@
       \strng{authornamehash}{4cc55e6095ec58422ab01cef09a40d5c}
       \strng{authorfullhash}{14e4e0d2d83249e4cc4d32198cf93d2e}
       \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{journaltitle}{Physical Review E}
@@ -2020,8 +2099,8 @@
       \strng{authorbibnamehash}{fcc5b3423c3a47a0a4e968001fc2d0eb}
       \strng{authornamehash}{fcc5b3423c3a47a0a4e968001fc2d0eb}
       \strng{authorfullhash}{e27b1779f3c5fbbbb32b899ad3dc91d1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0038-5670}
@@ -2750,6 +2829,7 @@
       \strng{authorbibnamehash}{2b01f672854025ef0eebf46df6e59ac6}
       \strng{authornamehash}{2b01f672854025ef0eebf46df6e59ac6}
       \strng{authorfullhash}{e638cc33aeb20ecca7578ea6509c4e29}
+      \field{extraname}{1}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -2811,6 +2891,7 @@
       \strng{authorbibnamehash}{bb59d6cea72d27ac49cfe36a3f7aa088}
       \strng{authornamehash}{bb59d6cea72d27ac49cfe36a3f7aa088}
       \strng{authorfullhash}{cfd79cf11fe55ea26b26a586c0c6fd41}
+      \field{extraname}{1}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
@@ -3617,6 +3698,1182 @@
       \endverb
       \verb{file}
       \verb C:\Users\Philip\Zotero\storage\6U6SMFE2\Kritcher et al. - 2018 - Energy transfer between lasers in low-gas-fill-den.pdf
+      \endverb
+    \endentry
+    \entry{froula_increasing_2012}{article}{}
+      \name{author}{15}{}{%
+        {{hash=9092f6f29c9362cee82dcdc73a1312b4}{%
+           family={Froula},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=2212d3a898af579f9c06362b27eac40b}{%
+           family={Igumenshchev},
+           familyi={I\bibinitperiod},
+           given={I.\bibnamedelimi V.},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=6f2b6d22bccee10d1ac9a6c3fbf5a43b}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi T.},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=f60ba9a87c812b68a8c0a413dcdc0990}{%
+           family={Edgell},
+           familyi={E\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=58000cc58ee180ac376725839390390c}{%
+           family={Follett},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=fdecf382204dc4d8548bcf8cda121951}{%
+           family={Glebov},
+           familyi={G\bibinitperiod},
+           given={V.\bibnamedelimi {\relax\bibnamedelimb Yu}.},
+           giveni={V\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=35f19b0555e565cfa746b426ef11560d}{%
+           family={Goncharov},
+           familyi={G\bibinitperiod},
+           given={V.\bibnamedelimi N.},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=3bcd9755b9c7b72736d6d682649029bc}{%
+           family={Kwiatkowski},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7fea78660488805fa9f8592516f39148}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={F.\bibnamedelimi J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=220407928aa54f9d688f04b6912154ca}{%
+           family={Radha},
+           familyi={R\bibinitperiod},
+           given={P.\bibnamedelimi B.},
+           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=522535a681007cce5e538cb3f6533d48}{%
+           family={Seka},
+           familyi={S\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=7c9fe9aa31314cb944216639be3d07f6}{%
+           family={Sorce},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7a2ae3f265ad7c3ad65b07de074f73ce}{%
+           family={Stagnitto},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bb9d925c3d6fe02f81be17747ebc045e}{%
+           family={Stoeckl},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=28b85203bfc2f6560cdaed3fc7fca668}{%
+           family={Sangster},
+           familyi={S\bibinitperiod},
+           given={T.\bibnamedelimi C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9799aa61ddf406cb7179e46306767dd}
+      \strng{fullhash}{20f8cdee4d6c2a0392847b60bbc16c4e}
+      \strng{bibnamehash}{d9799aa61ddf406cb7179e46306767dd}
+      \strng{authorbibnamehash}{d9799aa61ddf406cb7179e46306767dd}
+      \strng{authornamehash}{d9799aa61ddf406cb7179e46306767dd}
+      \strng{authorfullhash}{20f8cdee4d6c2a0392847b60bbc16c4e}
+      \field{extraname}{1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{12}
+      \field{title}{Increasing {{Hydrodynamic Efficiency}} by {{Reducing Cross-Beam Energy Transfer}} in {{Direct-Drive-Implosion Experiments}}}
+      \field{volume}{108}
+      \field{year}{2012}
+      \field{pages}{125003}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.108.125003
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\XZM9ELU6\Froula et al. - 2012 - Increasing Hydrodynamic Efficiency by Reducing Cro.pdf
+      \endverb
+    \endentry
+    \entry{froula_mitigation_2013}{article}{}
+      \name{author}{12}{}{%
+        {{hash=9092f6f29c9362cee82dcdc73a1312b4}{%
+           family={Froula},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=5e2722e17abafb2a49a1f9b4dd050ee3}{%
+           family={Kessler},
+           familyi={K\bibinitperiod},
+           given={T.\bibnamedelimi J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2212d3a898af579f9c06362b27eac40b}{%
+           family={Igumenshchev},
+           familyi={I\bibinitperiod},
+           given={I.\bibnamedelimi V.},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=e416fb763da15cc47886ac6129215e9c}{%
+           family={Betti},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=35f19b0555e565cfa746b426ef11560d}{%
+           family={Goncharov},
+           familyi={G\bibinitperiod},
+           given={V.\bibnamedelimi N.},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=0e6aa57c3b1a8bafb72bc185160451b2}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=93b5ffbd7896a4f7a6c68cb39fdcb012}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi X.},
+           giveni={S\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+        {{hash=68e5ac4baf2439f40bda0438d2f95cfa}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0687e11d9406c5231cf587078d0a5f9a}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=4eebd9bcfbe37487c706d6b86af39549}{%
+           family={Meyerhofer},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi D.},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f956eddd5e3ec31c1ec4b59e7e99d9a0}{%
+           family={Shvydky},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9213e9d79ab0fe6ba43b9b10cc57ca10}{%
+           family={Zuegel},
+           familyi={Z\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9799aa61ddf406cb7179e46306767dd}
+      \strng{fullhash}{6cbdd767c176f9b3a2e49da4524e9244}
+      \strng{bibnamehash}{d9799aa61ddf406cb7179e46306767dd}
+      \strng{authorbibnamehash}{d9799aa61ddf406cb7179e46306767dd}
+      \strng{authornamehash}{d9799aa61ddf406cb7179e46306767dd}
+      \strng{authorfullhash}{6cbdd767c176f9b3a2e49da4524e9244}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{8}
+      \field{shorttitle}{Mitigation of Cross-Beam Energy Transfer}
+      \field{title}{Mitigation of Cross-Beam Energy Transfer: {{Implication}} of Two-State Focal Zooming on {{OMEGA}}}
+      \field{volume}{20}
+      \field{year}{2013}
+      \field{pages}{082704}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4818427
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\PRTRP4KJ\Froula et al. - 2013 - Mitigation of cross-beam energy transfer Implicat.pdf
+      \endverb
+    \endentry
+    \entry{igumenshchev_laserbeam_2013}{article}{}
+      \name{author}{13}{}{%
+        {{hash=2212d3a898af579f9c06362b27eac40b}{%
+           family={Igumenshchev},
+           familyi={I\bibinitperiod},
+           given={I.\bibnamedelimi V.},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9092f6f29c9362cee82dcdc73a1312b4}{%
+           family={Froula},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=f60ba9a87c812b68a8c0a413dcdc0990}{%
+           family={Edgell},
+           familyi={E\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=35f19b0555e565cfa746b426ef11560d}{%
+           family={Goncharov},
+           familyi={G\bibinitperiod},
+           given={V.\bibnamedelimi N.},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=5e2722e17abafb2a49a1f9b4dd050ee3}{%
+           family={Kessler},
+           familyi={K\bibinitperiod},
+           given={T.\bibnamedelimi J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7fea78660488805fa9f8592516f39148}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={F.\bibnamedelimi J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=90c78c15ec656383f9350509b50f06fd}{%
+           family={McCrory},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=1697cc367fa22b488e944031a711e9e4}{%
+           family={McKenty},
+           familyi={M\bibinitperiod},
+           given={P.\bibnamedelimi W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=4eebd9bcfbe37487c706d6b86af39549}{%
+           family={Meyerhofer},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi D.},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=6f2b6d22bccee10d1ac9a6c3fbf5a43b}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi T.},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=28b85203bfc2f6560cdaed3fc7fca668}{%
+           family={Sangster},
+           familyi={S\bibinitperiod},
+           given={T.\bibnamedelimi C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=522535a681007cce5e538cb3f6533d48}{%
+           family={Seka},
+           familyi={S\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=b0bce2336525098702b55a4d6d19fc0d}{%
+           family={Skupsky},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{90ae2aef550026eedf077a1e6429cb6f}
+      \strng{fullhash}{2e07431cfead09661d6b94c2d75f7ce2}
+      \strng{bibnamehash}{90ae2aef550026eedf077a1e6429cb6f}
+      \strng{authorbibnamehash}{90ae2aef550026eedf077a1e6429cb6f}
+      \strng{authornamehash}{90ae2aef550026eedf077a1e6429cb6f}
+      \strng{authorfullhash}{2e07431cfead09661d6b94c2d75f7ce2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{14}
+      \field{title}{Laser-{{Beam Zooming}} to {{Mitigate Crossed-Beam Energy Losses}} in {{Direct-Drive Implosions}}}
+      \field{volume}{110}
+      \field{year}{2013}
+      \field{pages}{145001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.110.145001
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\BF9MSYJR\Igumenshchev et al. - 2013 - Laser-Beam Zooming to Mitigate Crossed-Beam Energy.pdf
+      \endverb
+    \endentry
+    \entry{kehne_implementation_2013}{article}{}
+      \name{author}{9}{}{%
+        {{hash=1cb9fc18eda650614585a66ae66efb25}{%
+           family={Kehne},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=dcd80462dfeed162ed44d969e82dae16}{%
+           family={Karasik},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=71e49609fe8c8530cbcb6e1ee3441c13}{%
+           family={Aglitsky},
+           familyi={A\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=35f520a277712e32ab4be250aaae0718}{%
+           family={Smyth},
+           familyi={S\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=1b730342496aff6e9462b443db99184d}{%
+           family={Terrell},
+           familyi={T\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2ab0a3398dc31d11af37e1261d2262f7}{%
+           family={Weaver},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3dcf6d2e609647826e38799ea1de3ccf}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=45438121056c8a8a514d4f7be2bb13cf}{%
+           family={Lehmberg},
+           familyi={L\bibinitperiod},
+           given={R.\bibnamedelimi H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=1cbcc61890560eefc4acd2ce23ca614e}{%
+           family={Obenschain},
+           familyi={O\bibinitperiod},
+           given={S.\bibnamedelimi P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{9035f15f5396c7fa25c7ba7e0ac0247c}
+      \strng{fullhash}{1da2f14d6daf68e1e0dd81139a06445a}
+      \strng{bibnamehash}{9035f15f5396c7fa25c7ba7e0ac0247c}
+      \strng{authorbibnamehash}{9035f15f5396c7fa25c7ba7e0ac0247c}
+      \strng{authornamehash}{9035f15f5396c7fa25c7ba7e0ac0247c}
+      \strng{authorfullhash}{1da2f14d6daf68e1e0dd81139a06445a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0034-6748, 1089-7623}
+      \field{journaltitle}{Review of Scientific Instruments}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Implementation of Focal Zooming on the {{Nike KrF}} Laser}
+      \field{volume}{84}
+      \field{year}{2013}
+      \field{pages}{013509}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4789313
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\DYXH78YJ\Kehne et al. - 2013 - Implementation of focal zooming on the Nike KrF la.pdf
+      \endverb
+    \endentry
+    \entry{afeyan_optimal_2013}{article}{}
+      \name{author}{2}{}{%
+        {{hash=583cf9d490ecdedb809522c6c17fba31}{%
+           family={Afeyan},
+           familyi={A\bibinitperiod},
+           given={Bedros},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1e433311e53168cfa599c6beb02a1261}{%
+           family={Hüller},
+           familyi={H\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=c646dbeaa7711b13a9b67d0dc93b55ff}{%
+           family={Mora},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a9ced72e9fefe295135cb982fe0c105a}{%
+           family={Tanaka},
+           familyi={T\bibinitperiod},
+           given={K.\bibnamedelimi A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=56cd52a65d9a501547884c83eba0e763}{%
+           family={Moses},
+           familyi={M\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{3af11709af759b9093aadec54ec3da8c}
+      \strng{fullhash}{3af11709af759b9093aadec54ec3da8c}
+      \strng{bibnamehash}{3af11709af759b9093aadec54ec3da8c}
+      \strng{authorbibnamehash}{3af11709af759b9093aadec54ec3da8c}
+      \strng{authornamehash}{3af11709af759b9093aadec54ec3da8c}
+      \strng{authorfullhash}{3af11709af759b9093aadec54ec3da8c}
+      \strng{editorbibnamehash}{42696024b4216fe52f527b0a06ac2841}
+      \strng{editornamehash}{42696024b4216fe52f527b0a06ac2841}
+      \strng{editorfullhash}{e760298e9eeae67c5f9936c6c5da937e}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2100-014X}
+      \field{journaltitle}{EPJ Web of Conferences}
+      \field{title}{Optimal Control of Laser Plasma Instabilities Using {{Spike Trains}} of {{Uneven Duration}} and {{Delay}} ({{STUD}} Pulses) for {{ICF}} and {{IFE}}}
+      \field{volume}{59}
+      \field{year}{2013}
+      \field{pages}{05009}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1051/epjconf/20135905009
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\6QGB3RPZ\Afeyan and Hüller - 2013 - Optimal control of laser plasma instabilities usin.pdf
+      \endverb
+    \endentry
+    \entry{edgell_mitigation_2017}{article}{}
+      \name{author}{6}{}{%
+        {{hash=f60ba9a87c812b68a8c0a413dcdc0990}{%
+           family={Edgell},
+           familyi={E\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=77f30f2c1d64ccde467444c3db2360b6}{%
+           family={Follett},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=2212d3a898af579f9c06362b27eac40b}{%
+           family={Igumenshchev},
+           familyi={I\bibinitperiod},
+           given={I.\bibnamedelimi V.},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=c31a815b8ec90dbb3e11d61d7bfd47d0}{%
+           family={Myatt},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=b4ae7dd850f97f9bb6d8dcdb2750f18a}{%
+           family={Shaw},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=9092f6f29c9362cee82dcdc73a1312b4}{%
+           family={Froula},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb59d6cea72d27ac49cfe36a3f7aa088}
+      \strng{fullhash}{cebcbc36b5e0c1685b93ff88cb680c75}
+      \strng{bibnamehash}{bb59d6cea72d27ac49cfe36a3f7aa088}
+      \strng{authorbibnamehash}{bb59d6cea72d27ac49cfe36a3f7aa088}
+      \strng{authornamehash}{bb59d6cea72d27ac49cfe36a3f7aa088}
+      \strng{authorfullhash}{cebcbc36b5e0c1685b93ff88cb680c75}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{Mitigation of Cross-Beam Energy Transfer in Symmetric Implosions on {{OMEGA}} Using Wavelength Detuning}
+      \field{volume}{24}
+      \field{year}{2017}
+      \field{pages}{062706}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4985315
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\9PU9MQBI\Edgell et al. - 2017 - Mitigation of cross-beam energy transfer in symmet.pdf
+      \endverb
+    \endentry
+    \entry{marozas_first_2018}{article}{}
+      \name{author}{20}{}{%
+        {{hash=59932dcf659e79b935539d489e5c6dd6}{%
+           family={Marozas},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0a8d572cd8aee068b838f90a3252b067}{%
+           family={Hohenberger},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1b6eaad1187c68e6315ea06dae85d38e}{%
+           family={Rosenberg},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=35e38546471d850fcc698116699e9607}{%
+           family={Turnbull},
+           familyi={T\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6b2f5e8457c5e5760c71322e5e67a636}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={T.\bibnamedelimi J.\bibnamedelimi B.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=220407928aa54f9d688f04b6912154ca}{%
+           family={Radha},
+           familyi={R\bibinitperiod},
+           given={P.\bibnamedelimi B.},
+           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=1697cc367fa22b488e944031a711e9e4}{%
+           family={McKenty},
+           familyi={M\bibinitperiod},
+           given={P.\bibnamedelimi W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=9213e9d79ab0fe6ba43b9b10cc57ca10}{%
+           family={Zuegel},
+           familyi={Z\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=7fea78660488805fa9f8592516f39148}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={F.\bibnamedelimi J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=36eb4889e8ca5ce9b70212807c2b57ef}{%
+           family={Regan},
+           familyi={R\bibinitperiod},
+           given={S.\bibnamedelimi P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=28b85203bfc2f6560cdaed3fc7fca668}{%
+           family={Sangster},
+           familyi={S\bibinitperiod},
+           given={T.\bibnamedelimi C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=522535a681007cce5e538cb3f6533d48}{%
+           family={Seka},
+           familyi={S\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a72e2f8cf300eeea65ec54f3c7ceb0dd}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={E.\bibnamedelimi M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=35f19b0555e565cfa746b426ef11560d}{%
+           family={Goncharov},
+           familyi={G\bibinitperiod},
+           given={V.\bibnamedelimi N.},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=65f34a821efd5ded884e5a2fe0a55c6f}{%
+           family={Bowers},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=1ca2954b3e2facb25ad892dd9124289f}{%
+           family={Di\bibnamedelima Nicola},
+           familyi={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={J.-M.\bibnamedelimi G.},
+           giveni={J\bibinithyphendelim M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=86b1e1179eac209aaaca06460872bc09}{%
+           family={Erbert},
+           familyi={E\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=64c2f92931be0627008bbc1265ea6a5a}{%
+           family={MacGowan},
+           familyi={M\bibinitperiod},
+           given={B.\bibnamedelimi J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=cc565a50152b911ee5b45b90a831c39d}{%
+           family={Pelz},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a70eccdc57f4e900eca9b36f5e4b7392}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={S.\bibnamedelimi T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b01f672854025ef0eebf46df6e59ac6}
+      \strng{fullhash}{218cfa4d16b11373e6daeb497cc92cf3}
+      \strng{bibnamehash}{2b01f672854025ef0eebf46df6e59ac6}
+      \strng{authorbibnamehash}{2b01f672854025ef0eebf46df6e59ac6}
+      \strng{authornamehash}{2b01f672854025ef0eebf46df6e59ac6}
+      \strng{authorfullhash}{218cfa4d16b11373e6daeb497cc92cf3}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{8}
+      \field{title}{First {{Observation}} of {{Cross-Beam Energy Transfer Mitigation}} for {{Direct-Drive Inertial Confinement Fusion Implosions Using Wavelength Detuning}} at the {{National Ignition Facility}}}
+      \field{volume}{120}
+      \field{year}{2018}
+      \field{pages}{085001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.120.085001
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\XIKXWBIM\Marozas et al. - 2018 - First Observation of Cross-Beam Energy Transfer Mi.pdf
+      \endverb
+    \endentry
+    \entry{bates_mitigation_2018}{article}{}
+      \name{author}{7}{}{%
+        {{hash=55d52ad6aed737a7fb907d3bac2afbb6}{%
+           family={Bates},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=c31a815b8ec90dbb3e11d61d7bfd47d0}{%
+           family={Myatt},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=b4ae7dd850f97f9bb6d8dcdb2750f18a}{%
+           family={Shaw},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=77f30f2c1d64ccde467444c3db2360b6}{%
+           family={Follett},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=2ab0a3398dc31d11af37e1261d2262f7}{%
+           family={Weaver},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=45438121056c8a8a514d4f7be2bb13cf}{%
+           family={Lehmberg},
+           familyi={L\bibinitperiod},
+           given={R.\bibnamedelimi H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=1cbcc61890560eefc4acd2ce23ca614e}{%
+           family={Obenschain},
+           familyi={O\bibinitperiod},
+           given={S.\bibnamedelimi P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{85cecde4bb5657a7eb6b3e261f204b3d}
+      \strng{fullhash}{247a65006a42a43f81af4f27c18dce63}
+      \strng{bibnamehash}{85cecde4bb5657a7eb6b3e261f204b3d}
+      \strng{authorbibnamehash}{85cecde4bb5657a7eb6b3e261f204b3d}
+      \strng{authornamehash}{85cecde4bb5657a7eb6b3e261f204b3d}
+      \strng{authorfullhash}{247a65006a42a43f81af4f27c18dce63}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2470-0045, 2470-0053}
+      \field{journaltitle}{Physical Review E}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{Mitigation of Cross-Beam Energy Transfer in Inertial-Confinement-Fusion Plasmas with Enhanced Laser Bandwidth}
+      \field{volume}{97}
+      \field{year}{2018}
+      \field{pages}{061202}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.97.061202
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\U2EKD32I\Bates et al. - 2018 - Mitigation of cross-beam energy transfer in inerti.pdf
+      \endverb
+    \endentry
+    \entry{bates_suppressing_2023}{article}{}
+      \name{author}{10}{}{%
+        {{hash=55d52ad6aed737a7fb907d3bac2afbb6}{%
+           family={Bates},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=77f30f2c1d64ccde467444c3db2360b6}{%
+           family={Follett},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=b4ae7dd850f97f9bb6d8dcdb2750f18a}{%
+           family={Shaw},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1cbcc61890560eefc4acd2ce23ca614e}{%
+           family={Obenschain},
+           familyi={O\bibinitperiod},
+           given={S.\bibnamedelimi P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=c31a815b8ec90dbb3e11d61d7bfd47d0}{%
+           family={Myatt},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=2ab0a3398dc31d11af37e1261d2262f7}{%
+           family={Weaver},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=37515d800912cb259dbdda99b5a719c8}{%
+           family={Wolford},
+           familyi={W\bibinitperiod},
+           given={M.\bibnamedelimi F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=1cb9fc18eda650614585a66ae66efb25}{%
+           family={Kehne},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=82fe0fb0bdedd9f79263939b15535385}{%
+           family={Myers},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=5e2722e17abafb2a49a1f9b4dd050ee3}{%
+           family={Kessler},
+           familyi={K\bibinitperiod},
+           given={T.\bibnamedelimi J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{85cecde4bb5657a7eb6b3e261f204b3d}
+      \strng{fullhash}{8107531e50a72efff0ee1055166f38fa}
+      \strng{bibnamehash}{85cecde4bb5657a7eb6b3e261f204b3d}
+      \strng{authorbibnamehash}{85cecde4bb5657a7eb6b3e261f204b3d}
+      \strng{authornamehash}{85cecde4bb5657a7eb6b3e261f204b3d}
+      \strng{authorfullhash}{8107531e50a72efff0ee1055166f38fa}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Suppressing Parametric Instabilities in Direct-Drive Inertial-Confinement-Fusion Plasmas Using Broadband Laser Light}
+      \field{volume}{30}
+      \field{year}{2023}
+      \field{pages}{052703}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0150865
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\TCIMWJD7\Bates et al. - 2023 - Suppressing parametric instabilities in direct-dri.pdf
+      \endverb
+    \endentry
+    \entry{seaton_crossbeam_2022}{article}{}
+      \name{author}{5}{}{%
+        {{hash=38456db97c29cdc6fe1c6152bcb8586d}{%
+           family={Seaton},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=5a95a99f3d3aa76ea961a84f31fc0da0}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=77f30f2c1d64ccde467444c3db2360b6}{%
+           family={Follett},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=22ef7dce6fa8d1ad0406dcc1ed9d2f62}{%
+           family={Albright},
+           familyi={A\bibinitperiod},
+           given={B.\bibnamedelimi J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=514a3c6f01f3208dcb89bf67a3912bb4}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{699f28cb62501e793f287a9fd1e403a7}
+      \strng{fullhash}{c60cac4a87ecd89dfebdd53a9fb2ce6a}
+      \strng{bibnamehash}{699f28cb62501e793f287a9fd1e403a7}
+      \strng{authorbibnamehash}{699f28cb62501e793f287a9fd1e403a7}
+      \strng{authornamehash}{699f28cb62501e793f287a9fd1e403a7}
+      \strng{authorfullhash}{c60cac4a87ecd89dfebdd53a9fb2ce6a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Cross-Beam Energy Transfer in Direct-Drive {{ICF}}. {{II}}. {{Theory}} and Simulation of Mitigation through Increased Laser Bandwidth}
+      \field{volume}{29}
+      \field{year}{2022}
+      \field{pages}{042707}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0078801
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\Philip\\Zotero\\storage\\2XGNG9MQ\\Seaton et al. - 2022 - Cross-beam energy transfer in direct-drive ICF. II.pdf;C\:\\Users\\Philip\\Zotero\\storage\\V6EDMWZL\\Cross-beam-energy-transfer-in-direct-drive-ICF-II.html
+      \endverb
+    \endentry
+    \entry{colaitis_exploration_2023}{article}{}
+      \name{author}{9}{}{%
+        {{hash=e934becb097bb2f595aae90e2af104fd}{%
+           family={Colaïtis},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=77f30f2c1d64ccde467444c3db2360b6}{%
+           family={Follett},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=7974d99412a88421865e41c7c6fdc869}{%
+           family={Dorrer},
+           familyi={D\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=38456db97c29cdc6fe1c6152bcb8586d}{%
+           family={Seaton},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1292884a356bbd5c5ae3559bdac17373}{%
+           family={Viala},
+           familyi={V\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=412982d1a2fe908abd17d603053665d0}{%
+           family={Igumenshchev},
+           familyi={I\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=35e38546471d850fcc698116699e9607}{%
+           family={Turnbull},
+           familyi={T\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b3709b59a43a24e897553cd4e617cd66}{%
+           family={Goncharov},
+           familyi={G\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=9092f6f29c9362cee82dcdc73a1312b4}{%
+           family={Froula},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{4cc55e6095ec58422ab01cef09a40d5c}
+      \strng{fullhash}{d839e25c15a2ca9aecb755a8d2dd380b}
+      \strng{bibnamehash}{4cc55e6095ec58422ab01cef09a40d5c}
+      \strng{authorbibnamehash}{4cc55e6095ec58422ab01cef09a40d5c}
+      \strng{authornamehash}{4cc55e6095ec58422ab01cef09a40d5c}
+      \strng{authorfullhash}{d839e25c15a2ca9aecb755a8d2dd380b}
+      \field{extraname}{7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Exploration of Cross-Beam Energy Transfer Mitigation Constraints for Designing an Ignition-Scale Direct-Drive Inertial Confinement Fusion Driver}
+      \field{volume}{30}
+      \field{year}{2023}
+      \field{pages}{082701}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0150813
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\VMIIYVXV\Colaïtis et al. - 2023 - Exploration of cross-beam energy transfer mitigati.pdf
+      \endverb
+    \endentry
+    \entry{follett_raybased_2023}{article}{}
+      \name{author}{7}{}{%
+        {{hash=77f30f2c1d64ccde467444c3db2360b6}{%
+           family={Follett},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=e934becb097bb2f595aae90e2af104fd}{%
+           family={Colaïtis},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=38456db97c29cdc6fe1c6152bcb8586d}{%
+           family={Seaton},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=d53d0ba6ae6593f7ca4974f47d18ca43}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=35e38546471d850fcc698116699e9607}{%
+           family={Turnbull},
+           familyi={T\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9092f6f29c9362cee82dcdc73a1312b4}{%
+           family={Froula},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=665997aeead5989ed60cd8887458fb7c}{%
+           family={Palastro},
+           familyi={P\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{294356f4aae5a63b374f8220deb729c1}
+      \strng{fullhash}{2f343939ba2ac818a3cde2ec2a9e4e12}
+      \strng{bibnamehash}{294356f4aae5a63b374f8220deb729c1}
+      \strng{authorbibnamehash}{294356f4aae5a63b374f8220deb729c1}
+      \strng{authornamehash}{294356f4aae5a63b374f8220deb729c1}
+      \strng{authorfullhash}{2f343939ba2ac818a3cde2ec2a9e4e12}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Ray-Based Cross-Beam Energy Transfer Modeling for Broadband Lasers}
+      \field{volume}{30}
+      \field{year}{2023}
+      \field{pages}{042102}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0137420
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\XQVICBTJ\Follett et al. - 2023 - Ray-based cross-beam energy transfer modeling for .pdf
+      \endverb
+    \endentry
+    \entry{betti_shock_2007}{article}{}
+      \name{author}{6}{}{%
+        {{hash=e416fb763da15cc47886ac6129215e9c}{%
+           family={Betti},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=26f276950c9dd83c79ccb65b6a3e78e7}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={C.\bibnamedelimi D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=98dce228dd1dcaf5f614bcc664c10a64}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={K.\bibnamedelimi S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b11c724d3281b7fafc24a3d8914839b6}{%
+           family={Perkins},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4215a8f93ed32e346007dea60ff97ba0}{%
+           family={Theobald},
+           familyi={T\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9b1124e8e6c6b4e428046a410071347b}{%
+           family={Solodov},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c595f88f3a8bcc2960d09a41b5911e0}
+      \strng{fullhash}{75be332b02219e477cff026fa17abbb1}
+      \strng{bibnamehash}{8c595f88f3a8bcc2960d09a41b5911e0}
+      \strng{authorbibnamehash}{8c595f88f3a8bcc2960d09a41b5911e0}
+      \strng{authornamehash}{8c595f88f3a8bcc2960d09a41b5911e0}
+      \strng{authorfullhash}{75be332b02219e477cff026fa17abbb1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{15}
+      \field{title}{Shock {{Ignition}} of {{Thermonuclear Fuel}} with {{High Areal Density}}}
+      \field{volume}{98}
+      \field{year}{2007}
+      \field{pages}{155001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.98.155001
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\5HLNEY7A\Betti et al. - 2007 - Shock Ignition of Thermonuclear Fuel with High Are.pdf
+      \endverb
+    \endentry
+    \entry{perkins_shock_2009}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b11c724d3281b7fafc24a3d8914839b6}{%
+           family={Perkins},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e416fb763da15cc47886ac6129215e9c}{%
+           family={Betti},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d16cc0f3ac24a66ddc433f1ec29c6b65}{%
+           family={LaFortune},
+           familyi={L\bibinitperiod},
+           given={K.\bibnamedelimi N.},
+           giveni={K\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=945c42ffb2eceeab01fb824df1b0d2d4}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={W.\bibnamedelimi H.},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{228187d7c43ac62ad4152252b79009c5}
+      \strng{fullhash}{b45131955ecd615da56b3eba6d0feae3}
+      \strng{bibnamehash}{228187d7c43ac62ad4152252b79009c5}
+      \strng{authorbibnamehash}{228187d7c43ac62ad4152252b79009c5}
+      \strng{authornamehash}{228187d7c43ac62ad4152252b79009c5}
+      \strng{authorfullhash}{b45131955ecd615da56b3eba6d0feae3}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{4}
+      \field{shorttitle}{Shock {{Ignition}}}
+      \field{title}{Shock {{Ignition}}: {{A New Approach}} to {{High Gain Inertial Confinement Fusion}} on the {{National Ignition Facility}}}
+      \field{volume}{103}
+      \field{year}{2009}
+      \field{pages}{045004}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.103.045004
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\L42EBHJX\Perkins et al. - 2009 - Shock Ignition A New Approach to High Gain Inerti.pdf
+      \endverb
+    \endentry
+    \entry{scott_shockaugmented_2022}{article}{}
+      \name{author}{8}{}{%
+        {{hash=6e53019045e042595a40c07f176e395b}{%
+           family={Scott},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi H.\bibnamedelimi H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=e8a380884785a8969b84088e1fd9a869}{%
+           family={Barlow},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ed8c87e575f37fc913c5f6bfa5109492}{%
+           family={Trickey},
+           familyi={T\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=faac071581cf6ba0c1614e8b8a148f19}{%
+           family={Ruocco},
+           familyi={R\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0309fb2ab61e686cf5bf998033ab3fad}{%
+           family={Glize},
+           familyi={G\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=23255922fe1b935e9ee007fba931c1a7}{%
+           family={Antonelli},
+           familyi={A\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0e459862e8dbf21a16ed1c0b9746d29c}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=503b60cc9f93593b502d20b67c1d9b40}{%
+           family={Woolsey},
+           familyi={W\bibinitperiod},
+           given={N.\bibnamedelimi C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{433787e17a71ea8ae00480315012dfab}
+      \strng{fullhash}{7b533a16c113588da93bd051f7ded6e6}
+      \strng{bibnamehash}{433787e17a71ea8ae00480315012dfab}
+      \strng{authorbibnamehash}{433787e17a71ea8ae00480315012dfab}
+      \strng{authornamehash}{433787e17a71ea8ae00480315012dfab}
+      \strng{authorfullhash}{7b533a16c113588da93bd051f7ded6e6}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{19}
+      \field{title}{Shock-{{Augmented Ignition Approach}} to {{Laser Inertial Fusion}}}
+      \field{volume}{129}
+      \field{year}{2022}
+      \field{pages}{195001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.129.195001
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\W9B84ZXR\Scott et al. - 2022 - Shock-Augmented Ignition Approach to Laser Inertia.pdf
+      \endverb
+    \endentry
+    \entry{deeney_advances_2022}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=940e7ebd0a0c918057fd73bee02005b6}{%
+           family={Deeney},
+           familyi={D\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Seattle, WA, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{940e7ebd0a0c918057fd73bee02005b6}
+      \strng{fullhash}{940e7ebd0a0c918057fd73bee02005b6}
+      \strng{bibnamehash}{940e7ebd0a0c918057fd73bee02005b6}
+      \strng{authorbibnamehash}{940e7ebd0a0c918057fd73bee02005b6}
+      \strng{authornamehash}{940e7ebd0a0c918057fd73bee02005b6}
+      \strng{authorfullhash}{940e7ebd0a0c918057fd73bee02005b6}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 {{IEEE International Conference}} on {{Plasma Science}} ({{ICOPS}})}
+      \field{isbn}{978-1-66547-925-7}
+      \field{month}{5}
+      \field{title}{Advances in {{Direct-Drive Fusion}}, {{High-Energy-Density Physics}}, and {{Laser Technologies}} at the {{Laboratory}} for {{Laser Energetics}}}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 2}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1109/ICOPS45751.2022.9813166
       \endverb
     \endentry
     \entry{abu-shawareb_achievement_2024}{article}{}
@@ -10406,8 +11663,8 @@
       \strng{authorbibnamehash}{42d1fdc40af263508bdb02872c59ea90}
       \strng{authornamehash}{42d1fdc40af263508bdb02872c59ea90}
       \strng{authorfullhash}{03a3c3bcc496f5428bf0969de4fdbba5}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0031-9007, 1079-7114}
@@ -10425,111 +11682,6 @@
       \endverb
       \verb{file}
       \verb C:\Users\Philip\Zotero\storage\7ZBKCZD5\Abu-Shawareb et al. - 2024 - Achievement of Target Gain Larger than Unity in an.pdf
-      \endverb
-    \endentry
-    \entry{froula_increasing_2012}{article}{}
-      \name{author}{15}{}{%
-        {{hash=9092f6f29c9362cee82dcdc73a1312b4}{%
-           family={Froula},
-           familyi={F\bibinitperiod},
-           given={D.\bibnamedelimi H.},
-           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=2212d3a898af579f9c06362b27eac40b}{%
-           family={Igumenshchev},
-           familyi={I\bibinitperiod},
-           given={I.\bibnamedelimi V.},
-           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=6f2b6d22bccee10d1ac9a6c3fbf5a43b}{%
-           family={Michel},
-           familyi={M\bibinitperiod},
-           given={D.\bibnamedelimi T.},
-           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=f60ba9a87c812b68a8c0a413dcdc0990}{%
-           family={Edgell},
-           familyi={E\bibinitperiod},
-           given={D.\bibnamedelimi H.},
-           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=58000cc58ee180ac376725839390390c}{%
-           family={Follett},
-           familyi={F\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=fdecf382204dc4d8548bcf8cda121951}{%
-           family={Glebov},
-           familyi={G\bibinitperiod},
-           given={V.\bibnamedelimi {\relax\bibnamedelimb Yu}.},
-           giveni={V\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=35f19b0555e565cfa746b426ef11560d}{%
-           family={Goncharov},
-           familyi={G\bibinitperiod},
-           given={V.\bibnamedelimi N.},
-           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=3bcd9755b9c7b72736d6d682649029bc}{%
-           family={Kwiatkowski},
-           familyi={K\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=7fea78660488805fa9f8592516f39148}{%
-           family={Marshall},
-           familyi={M\bibinitperiod},
-           given={F.\bibnamedelimi J.},
-           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=220407928aa54f9d688f04b6912154ca}{%
-           family={Radha},
-           familyi={R\bibinitperiod},
-           given={P.\bibnamedelimi B.},
-           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=522535a681007cce5e538cb3f6533d48}{%
-           family={Seka},
-           familyi={S\bibinitperiod},
-           given={W.},
-           giveni={W\bibinitperiod}}}%
-        {{hash=7c9fe9aa31314cb944216639be3d07f6}{%
-           family={Sorce},
-           familyi={S\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-        {{hash=7a2ae3f265ad7c3ad65b07de074f73ce}{%
-           family={Stagnitto},
-           familyi={S\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=bb9d925c3d6fe02f81be17747ebc045e}{%
-           family={Stoeckl},
-           familyi={S\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-        {{hash=28b85203bfc2f6560cdaed3fc7fca668}{%
-           family={Sangster},
-           familyi={S\bibinitperiod},
-           given={T.\bibnamedelimi C.},
-           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \strng{namehash}{d9799aa61ddf406cb7179e46306767dd}
-      \strng{fullhash}{20f8cdee4d6c2a0392847b60bbc16c4e}
-      \strng{bibnamehash}{d9799aa61ddf406cb7179e46306767dd}
-      \strng{authorbibnamehash}{d9799aa61ddf406cb7179e46306767dd}
-      \strng{authornamehash}{d9799aa61ddf406cb7179e46306767dd}
-      \strng{authorfullhash}{20f8cdee4d6c2a0392847b60bbc16c4e}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0031-9007, 1079-7114}
-      \field{journaltitle}{Physical Review Letters}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{number}{12}
-      \field{title}{Increasing {{Hydrodynamic Efficiency}} by {{Reducing Cross-Beam Energy Transfer}} in {{Direct-Drive-Implosion Experiments}}}
-      \field{volume}{108}
-      \field{year}{2012}
-      \field{pages}{125003}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.108.125003
-      \endverb
-      \verb{file}
-      \verb C:\Users\Philip\Zotero\storage\XZM9ELU6\Froula et al. - 2012 - Increasing Hydrodynamic Efficiency by Reducing Cro.pdf
       \endverb
     \endentry
     \entry{lees_understanding_2023}{article}{}
@@ -10671,8 +11823,8 @@
       \strng{authorbibnamehash}{1e5e517d7c35dd33f23883e2352fd81b}
       \strng{authornamehash}{1e5e517d7c35dd33f23883e2352fd81b}
       \strng{authorfullhash}{9521b64011063094b2de05423e8007f2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -10741,8 +11893,9 @@
       \strng{authorbibnamehash}{228187d7c43ac62ad4152252b79009c5}
       \strng{authornamehash}{228187d7c43ac62ad4152252b79009c5}
       \strng{authorfullhash}{af659f33c06e53d5c38ae691a23c9f19}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -11036,8 +12189,8 @@
       \strng{authorbibnamehash}{180de77ced9337b6aa844ab7b24ed063}
       \strng{authornamehash}{180de77ced9337b6aa844ab7b24ed063}
       \strng{authorfullhash}{83fb3eb9209182719b376ea88ccce947}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0031-9007, 1079-7114}
@@ -11201,8 +12354,8 @@
       \strng{authorbibnamehash}{c68024faf78573bcdb25be5fadbe3481}
       \strng{authornamehash}{c68024faf78573bcdb25be5fadbe3481}
       \strng{authorfullhash}{f5593561814037b9533dd5e26c9a8906}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0031-9007, 1079-7114}

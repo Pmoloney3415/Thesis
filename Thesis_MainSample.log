@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  24 SEP 2024 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  25 SEP 2024 18:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1130,7 +1130,7 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Warning: Unused global option(s):
     [onesided,pagesize].
 
-(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Theory/TheoryMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
+(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Theory/TheoryMain.aux) (./Appendix/Appendix1Main.aux))
 \openout1 = `Thesis_MainSample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1324,11 +1324,6 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
-
-Overfull \hbox (4.28021pt too wide) in paragraph at lines 7--7
- [][] []\T1/futs/m/n/10.95 Two light waves cross-ing each other and lead-ing to a beat pat-tern in the summed 
- []
-
 Package acronym Info: Label `acro:LPIs' newly defined as it shall be overridden
 although it is yet undefined on input line 8.
 Package acronym Info: Label `acro:CBET' newly defined as it shall be overridden
@@ -1364,11 +1359,8 @@ Overfull \hbox (4.87431pt too wide) in paragraph at lines 4--7
 \T1/futs/m/n/10.95 the-sis. The main fo-cus of the work is cen-tred on im-prov-ing the laser mod-elling in the \T1/futs/m/sc/10.95 Chimera
  []
 
-
-LaTeX Warning: Reference `sec:theory_absorption' on page 8 undefined on input line 17.
-
 Package acronym Info: Label `acro:Inv-Brem' newly defined as it shall be overridden
-although it is yet undefined on input line 17.
+although it is yet undefined on input line 18.
 [8
 
 
@@ -1376,199 +1368,226 @@ although it is yet undefined on input line 17.
 
 ]
 
-LaTeX Warning: Reference `chap:intro' on page 9 undefined on input line 28.
+LaTeX Warning: Reference `chap:intro' on page 9 undefined on input line 29.
 
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 38.
+(Font)              scaled to size 8.27998pt on input line 39.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 38.
+(Font)              scaled to size 6.99199pt on input line 39.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 38.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 38.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 38.
+(Font)              scaled to size 8.27998pt on input line 39.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 38.
-
-Overfull \hbox (2.76146pt too wide) in paragraph at lines 61--64
-\T1/futs/m/n/10.95 leading to a restor-ing force $\FML/futmi/m/it/10.95 F[] \FMS/futm/m/n/10.95 Å ^^@\FML/futmi/m/it/10.95 eE[]$ \T1/futs/m/n/10.95 on each elec-tron. Solv-ing New-ton's sec-ond Law demon-
- []
-
+(Font)              scaled to size 6.99199pt on input line 39.
 [9] [10]
 Package acronym Info: Label `acro:VFP' newly defined as it shall be overridden
-although it is yet undefined on input line 135.
-Package acronym Info: Label `acro:PiC' newly defined as it shall be overridden
 although it is yet undefined on input line 137.
+Package acronym Info: Label `acro:PiC' newly defined as it shall be overridden
+although it is yet undefined on input line 139.
  [11]
 Package acronym Info: Label `acro:EoS' newly defined as it shall be overridden
-although it is yet undefined on input line 159.
+although it is yet undefined on input line 161.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
 Package acronym Info: Label `acro:MHD' newly defined as it shall be overridden
-although it is yet undefined on input line 193.
-Package acronym Info: Label `acro:UV' newly defined as it shall be overridden
-although it is yet undefined on input line 204.
-
-
-LaTeX Warning: Reference `sec:SOLAS' on page 13 undefined on input line 205.
-
+although it is yet undefined on input line 195.
 Package acronym Info: Label `acro:HEDP' newly defined as it shall be overridden
-although it is yet undefined on input line 210.
+although it is yet undefined on input line 207.
 
-Overfull \hbox (8.30246pt too wide) in paragraph at lines 210--216
-\T1/futs/m/n/10.95 ex-per-i-ments. For ex-am-ple, the hot coro-nal plasma in direct-drive ra-di-ates a sig-nif-i-cant amount
- []
 
-[13] [14]
+LaTeX Warning: Reference `chap:SOLAS' on page 13 undefined on input line 208.
+
+[13]
+
+LaTeX Warning: Reference `chap:Mag' on page 14 undefined on input line 246.
+
+
+Underfull \vbox (badness 2103) has occurred while \output is active []
+
+ [14]
 Package acronym Info: Label `acro:MCF' newly defined as it shall be overridden
-although it is yet undefined on input line 267.
+although it is yet undefined on input line 274.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
+ [15] [16]
 
-LaTeX Warning: Reference `sec:theory_absorption' on page 16 undefined on input line 327.
+LaTeX Warning: Reference `sec:theory_absorption' on page 17 undefined on input line 336.
 
-[16]
 
-LaTeX Warning: Reference `michel_introduction_2023' on page 17 undefined on input line 352.
+Underfull \vbox (badness 2556) has occurred while \output is active []
 
-[17]
+ [17]
 <Theory/Images/plasma_waves.png, id=421, 724.3863pt x 409.53pt>
 File: Theory/Images/plasma_waves.png Graphic file (type png)
 <use Theory/Images/plasma_waves.png>
-Package pdftex.def Info: Theory/Images/plasma_waves.png  used on input line 376.
+Package pdftex.def Info: Theory/Images/plasma_waves.png  used on input line 388.
 (pdftex.def)             Requested size: 311.55782pt x 176.1382pt.
 
-Underfull \vbox (badness 1253) has occurred while \output is active []
+Underfull \vbox (badness 2626) has occurred while \output is active []
 
  [18 <./Theory/Images/plasma_waves.png>]
-<Theory/Images/EMW_disp_rel.png, id=448, 462.528pt x 346.896pt>
+Underfull \vbox (badness 2469) has occurred while \output is active []
+
+ [19]
+<Theory/Images/EMW_disp_rel.png, id=457, 462.528pt x 346.896pt>
 File: Theory/Images/EMW_disp_rel.png Graphic file (type png)
 <use Theory/Images/EMW_disp_rel.png>
-Package pdftex.def Info: Theory/Images/EMW_disp_rel.png  used on input line 438.
+Package pdftex.def Info: Theory/Images/EMW_disp_rel.png  used on input line 457.
 (pdftex.def)             Requested size: 249.24878pt x 186.93993pt.
- [19]
-<Theory/Images/IAW_EPW.png, id=470, 1340.8494pt x 1137.7707pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <./Theory/Images/EMW_disp_rel.png>]
+<Theory/Images/IAW_EPW.png, id=476, 1340.75906pt x 1137.4997pt>
 File: Theory/Images/IAW_EPW.png Graphic file (type png)
 <use Theory/Images/IAW_EPW.png>
-Package pdftex.def Info: Theory/Images/IAW_EPW.png  used on input line 476.
-(pdftex.def)             Requested size: 290.78603pt x 246.73398pt.
- [20 <./Theory/Images/EMW_disp_rel.png>] [21 <./Theory/Images/IAW_EPW.png>]
-Overfull \hbox (5.37033pt too wide) in paragraph at lines 511--515
+Package pdftex.def Info: Theory/Images/IAW_EPW.png  used on input line 494.
+(pdftex.def)             Requested size: 290.78603pt x 246.69255pt.
+
+Underfull \vbox (badness 7540) has occurred while \output is active []
+
+ [21 <./Theory/Images/IAW_EPW.png>]
+Overfull \hbox (6.37161pt too wide) in paragraph at lines 519--521
+\T1/futs/m/n/10.95 Inserting the plane wave Ansatz into [][]1.49[][] (com-bined Faraday-Maxwell laws) and us-ing Eq. [][]1.56[][]
+ []
+
+
+Overfull \hbox (5.37033pt too wide) in paragraph at lines 530--537
 []\T1/futs/m/n/10.95 The lon-gi-tu-di-nal sus-cep-ti-bil-ity (Eq. [][]1.57[][]) has a pole at $\FML/futmi/m/it/10.95 ![] \FMS/futm/m/n/10.95 Å \FML/futmi/m/it/10.95 ^^M[]v[]k[]$\T1/futs/m/n/10.95 , sug-gest-ing un-bounded
  []
 
 [22]
+Underfull \vbox (badness 2608) has occurred while \output is active []
 
-LaTeX Warning: Reference `sec:SOLAS_ray_power_change' on page 23 undefined on input line 574.
+ [23]
+
+LaTeX Warning: Reference `sec:SOLAS_ray_power_change' on page 24 undefined on input line 596.
 
 
-LaTeX Warning: Reference `chap:SOLAS' on page 23 undefined on input line 585.
+LaTeX Warning: Reference `chap:SOLAS' on page 24 undefined on input line 607.
 
-[23]
-Overfull \hbox (1.30174pt too wide) in paragraph at lines 594--601
+
+Overfull \hbox (1.30174pt too wide) in paragraph at lines 616--623
 \T1/futs/m/n/10.95 Laser-driven plas-mas are heated and ex-pand, lead-ing to den-sity gra-di-ents in the re-gion where
  []
 
 [24] [25]
-Overfull \hbox (10.40115pt too wide) in paragraph at lines 710--711
+
+LaTeX Warning: Reference `sec:SOLAS_ray_amplitude' on page 26 undefined on input line 692.
+
+
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+ [26]
+Overfull \hbox (10.40115pt too wide) in paragraph at lines 738--739
 []\T1/futs/m/n/10.95 The evo-lu-tion of the ray am-pli-tude is ob-tained by in-te-grat-ing the trans-port equa-tion, Eq. [][]1.81[][], 
  []
 
 
-LaTeX Warning: Reference `sec:SOLAS_ray_amplitude' on page 26 undefined on input line 726.
+LaTeX Warning: Reference `sec:SOLAS_ray_amplitude' on page 27 undefined on input line 754.
 
-[26]
-<Theory/Images/Inv_Brem.png, id=625, 987.69pt x 736.7525pt>
-File: Theory/Images/Inv_Brem.png Graphic file (type png)
-<use Theory/Images/Inv_Brem.png>
-Package pdftex.def Info: Theory/Images/Inv_Brem.png  used on input line 754.
-(pdftex.def)             Requested size: 249.24878pt x 185.91893pt.
- [27]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <./Theory/Images/Inv_Brem.png (PNG copy)>]
-Overfull \hbox (5.89928pt too wide) in paragraph at lines 827--830
+ [27]
+<Theory/Images/Inv_Brem.png, id=633, 987.69pt x 736.7525pt>
+File: Theory/Images/Inv_Brem.png Graphic file (type png)
+<use Theory/Images/Inv_Brem.png>
+Package pdftex.def Info: Theory/Images/Inv_Brem.png  used on input line 782.
+(pdftex.def)             Requested size: 249.24878pt x 185.91893pt.
+ [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./Theory/Images/Inv_Brem.png (PNG copy)>]
+Overfull \hbox (5.89928pt too wide) in paragraph at lines 854--857
 \FML/futmi/m/it/10.95 e\FMS/futm/m/n/10.95 j\T1/futs/b/n/10.95 E\FMS/futm/m/n/10.95 j\T1/futs/m/n/10.95 /\FML/futmi/m/it/10.95 m[]!$ \T1/futs/m/n/10.95 is the quiver ve-loc-ity. The mod-i-fied ab-sorp-tion ker-nel is then the value from Eq. [][]1.97[][],
  []
 
 
-Underfull \vbox (badness 8094) has occurred while \output is active []
+Underfull \vbox (badness 8075) has occurred while \output is active []
 
- [29]
-<Theory/Images/Res_Abs.png, id=679, 1179.40625pt x 544.0325pt>
+ [30]
+<Theory/Images/Res_Abs.png, id=686, 1179.40625pt x 544.0325pt>
 File: Theory/Images/Res_Abs.png Graphic file (type png)
 <use Theory/Images/Res_Abs.png>
-Package pdftex.def Info: Theory/Images/Res_Abs.png  used on input line 841.
+Package pdftex.def Info: Theory/Images/Res_Abs.png  used on input line 868.
 (pdftex.def)             Requested size: 270.01424pt x 124.55205pt.
 Package acronym Info: Label `acro:NIF' newly defined as it shall be overridden
-although it is yet undefined on input line 851.
- [30 <./Theory/Images/Res_Abs.png (PNG copy)>]
-Underfull \vbox (badness 5504) has occurred while \output is active []
+although it is yet undefined on input line 878.
+ [31 <./Theory/Images/Res_Abs.png (PNG copy)>]
+Underfull \vbox (badness 1721) has occurred while \output is active []
 
- [31]
-<Theory/Images/2wave_beat.png, id=728, 2215.404pt x 1346.631pt>
+ [32]
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
+ [33]
+<Theory/Images/2wave_beat.png, id=752, 2215.404pt x 1346.631pt>
 File: Theory/Images/2wave_beat.png Graphic file (type png)
 <use Theory/Images/2wave_beat.png>
-Package pdftex.def Info: Theory/Images/2wave_beat.png  used on input line 954.
+Package pdftex.def Info: Theory/Images/2wave_beat.png  used on input line 987.
 (pdftex.def)             Requested size: 311.55782pt x 189.36952pt.
- [32]
 Package acronym Info: Label `acro:SRS' newly defined as it shall be overridden
-although it is yet undefined on input line 978.
-<Theory/Images/LPI_conservation_disprel.png, id=745, 717.4002pt x 505.89pt>
+although it is yet undefined on input line 1011.
+ [34 <./Theory/Images/2wave_beat.png>]
+<Theory/Images/LPI_conservation_disprel.png, id=768, 717.4002pt x 505.89pt>
 File: Theory/Images/LPI_conservation_disprel.png Graphic file (type png)
 <use Theory/Images/LPI_conservation_disprel.png>
-Package pdftex.def Info: Theory/Images/LPI_conservation_disprel.png  used on input line 981.
+Package pdftex.def Info: Theory/Images/LPI_conservation_disprel.png  used on input line 1014.
 (pdftex.def)             Requested size: 249.24878pt x 175.75958pt.
-
-Underfull \vbox (badness 3919) has occurred while \output is active []
-
- [33 <./Theory/Images/2wave_beat.png>]
-<Theory/Images/CBET_mechanism.png, id=785, 1857.339pt x 1590.4218pt>
+<Theory/Images/CBET_mechanism.png, id=797, 1857.339pt x 1590.4218pt>
 File: Theory/Images/CBET_mechanism.png Graphic file (type png)
 <use Theory/Images/CBET_mechanism.png>
-Package pdftex.def Info: Theory/Images/CBET_mechanism.png  used on input line 1008.
+Package pdftex.def Info: Theory/Images/CBET_mechanism.png  used on input line 1042.
 (pdftex.def)             Requested size: 332.3296pt x 284.56482pt.
 
 
-LaTeX Warning: Reference `sec:SOLAS_ray_power_change' on page 34 undefined on input line 1029.
+LaTeX Warning: Reference `sec:SOLAS_ray_power_change' on page 35 undefined on input line 1063.
 
-
+[35 <./Theory/Images/LPI_conservation_disprel.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34 <./Theory/Images/LPI_conservation_disprel.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35 <./Theory/Images/CBET_mechanism.png>]
-<Theory/Images/CBET_modes.png, id=840, 671.673pt x 227.541pt>
+ [36 <./Theory/Images/CBET_mechanism.png>]
+<Theory/Images/CBET_modes.png, id=858, 671.673pt x 227.541pt>
 File: Theory/Images/CBET_modes.png Graphic file (type png)
 <use Theory/Images/CBET_modes.png>
-Package pdftex.def Info: Theory/Images/CBET_modes.png  used on input line 1061.
+Package pdftex.def Info: Theory/Images/CBET_modes.png  used on input line 1097.
 (pdftex.def)             Requested size: 415.41043pt x 140.73022pt.
 Package acronym Info: Label `acro:LEH' newly defined as it shall be overridden
-although it is yet undefined on input line 1083.
+although it is yet undefined on input line 1119.
 
-Overfull \hbox (2.78pt too wide) in paragraph at lines 1072--1086
+Overfull \hbox (2.78pt too wide) in paragraph at lines 1108--1122
 \T1/futs/m/n/10.95 iden-ti-fies two dis-tinct regimes when a res-o-nance can be achieved, which are shown in Fig. [][]1.9[][].
  []
 
 
 Underfull \vbox (badness 5302) has occurred while \output is active []
 
- [36 <./Theory/Images/CBET_modes.png>]
+ [37 <./Theory/Images/CBET_modes.png>]
 
-LaTeX Warning: Reference `eq:polarisation_smoothing' on page 37 undefined on input line 1093.
+LaTeX Warning: Reference `eq:polarisation_smoothing' on page 38 undefined on input line 1129.
 
 
-LaTeX Warning: Reference `sec:intro_direct_phys' on page 37 undefined on input line 1094.
+LaTeX Warning: Reference `sec:intro_direct_phys' on page 38 undefined on input line 1130.
 
 Package acronym Info: Label `acro:DPRs' newly defined as it shall be overridden
-although it is yet undefined on input line 1095.
-[37]) [38] [39
+although it is yet undefined on input line 1131.
+
+Underfull \vbox (badness 5878) has occurred while \output is active []
+
+ [38]
+
+LaTeX Warning: Reference `chap:RbRt' on page 39 undefined on input line 1169.
+
+[39]
+Package acronym Info: Label `acro:SSD' newly defined as it shall be overridden
+although it is yet undefined on input line 1185.
+) [40] [41
 
 
 
@@ -1577,16 +1596,40 @@ although it is yet undefined on input line 1095.
 
  (./Appendix/Appendix1Main.tex
 chapter A.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 6.
 (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [40
+) [42
 
 
-{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]) [41] [42
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [43]
+chapter B.
+
+LaTeX Warning: Reference `fig:intro_nif_yields' on page 44 undefined on input line 74.
+
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 80.
+(c:/texlive/2023/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)
+
+LaTeX Warning: Reference `fig:intro_nif_yields' on page 44 undefined on input line 82.
 
 
+LaTeX Warning: Reference `fig:RbRt_froula' on page 44 undefined on input line 86.
 
+
+LaTeX Warning: Reference `fig:RbRt_YOC_lees' on page 44 undefined on input line 87.
+
+
+LaTeX Warning: Reference `fig:Res2_perkins_magicf' on page 44 undefined on input line 88.
+
+
+LaTeX Warning: Reference `fig:Res2_moody_magnif' on page 44 undefined on input line 89.
+
+
+LaTeX Warning: Reference `fig:Res2_Bose_magp2' on page 44 undefined on input line 90.
+
+) [44
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 26.
@@ -1602,7 +1645,11 @@ Overfull \hbox (1.1218pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 sion Sim-u-la-tions of In-er-tial Con-fine-ment Fu-sion Cap-sules''. In: \T1/futs/m/it/10.95 Com-puter Physics Com-
  []
 
-[43
+[45
+
+
+
+
 
 ]
 Overfull \hbox (3.88611pt too wide) in paragraph at lines 27--27
@@ -1614,7 +1661,7 @@ Overfull \hbox (9.91621pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 tions, and Two Flux-Limited Dif-fu-sion The-o-ries''. In: \T1/futs/m/it/10.95 Jour-nal of Quan-ti-ta-tive Spec-troscopy
  []
 
-[44]
+[46]
 Overfull \hbox (30.35541pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 Duc Cao et al. ``Im-proved Non-Local Elec-tron Ther-mal Trans-port Model for Two-Dimensional
  []
@@ -1624,17 +1671,17 @@ Overfull \hbox (13.9152pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Ra-di-a-tion Hy-dro-dy-nam-ics Sim-u-la-tions''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 22.8 (Aug. 2015), p. 082308.
  []
 
-[45]
+[47] [48]
 Overfull \hbox (9.82526pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 P. Michel et al. ``Sat-u-ra-tion of Multi-Laser Beams Laser-Plasma In-sta-bil-i-ties from Stochas-
  []
 
-[46]
+
 Overfull \hbox (16.92194pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 J. A. Marozas et al. ``Wavelength-Detuning Cross-Beam En-ergy Trans-fer Mit-i-ga-tion Scheme
  []
 
-[47]
+[49]
 Overfull \hbox (12.16965pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 A. L. Kritcher et al. ``En-ergy Trans-fer be-tween Lasers in Low-Gas-Fill-Density Hohlraums''.
  []
@@ -1644,41 +1691,17 @@ Overfull \hbox (6.68425pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 ergy Trans-fer in Direct-Drive-Implosion Ex-per-i-ments''. In: \T1/futs/m/it/10.95 Phys-i-cal Re-view Let-ters \T1/futs/m/n/10.95 108.12
  []
 
-[48]
-\openout2 = `Appendix/Permissions.aux'.
 
- (./Appendix/Permissions.tex
-
-LaTeX Warning: Reference `fig:intro_nif_yields' on page 49 undefined on input line 5.
-
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 11.
-(c:/texlive/2023/texmf-dist/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-)
-
-LaTeX Warning: Reference `fig:intro_nif_yields' on page 49 undefined on input line 13.
+Overfull \hbox (8.0306pt too wide) in paragraph at lines 27--27
+[]\T1/futs/m/n/10.95 I. V. Igu-men-shchev et al. ``Laser-Beam Zoom-ing to Mit-i-gate Crossed-Beam En-ergy Losses
+ []
 
 
-LaTeX Warning: Reference `fig:RbRt_froula' on page 49 undefined on input line 17.
+Overfull \hbox (22.40784pt too wide) in paragraph at lines 27--27
+[]\T1/futs/m/n/10.95 J. W. Bates et al. ``Sup-press-ing Para-met-ric In-sta-bil-i-ties in Direct-Drive Inertial-Confinement-
+ []
 
-
-LaTeX Warning: Reference `fig:RbRt_YOC_lees' on page 49 undefined on input line 18.
-
-
-LaTeX Warning: Reference `fig:Res2_perkins_magicf' on page 49 undefined on input line 19.
-
-
-LaTeX Warning: Reference `fig:Res2_moody_magnif' on page 49 undefined on input line 20.
-
-
-LaTeX Warning: Reference `fig:Res2_Bose_magp2' on page 49 undefined on input line 21.
-
-) [49
-
-
-
-
-] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Theory/TheoryMain.aux) (./Appendix/Appendix1Main.aux) (./Appendix/Permissions.aux))
+[50] [51] [52] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Theory/TheoryMain.aux) (./Appendix/Appendix1Main.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1694,18 +1717,18 @@ Package logreq Info: Writing requests to 'Thesis_MainSample.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34612 strings out of 474165
- 694364 string characters out of 5749497
- 2049819 words of memory out of 5000000
- 56044 multiletter control sequences out of 15000+600000
+ 34660 strings out of 474165
+ 696812 string characters out of 5749497
+ 2080308 words of memory out of 5000000
+ 56080 multiletter control sequences out of 15000+600000
  695545 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,14n,121p,10978b,2019s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,14n,121p,10978b,2020s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (49 pages, 12760001 bytes).
+Output written on Thesis_MainSample.pdf (52 pages, 11771518 bytes).
 PDF statistics:
- 1324 PDF objects out of 1440 (max. 8388607)
- 1189 compressed objects within 12 object streams
- 337 named destinations out of 1000 (max. 500000)
+ 1431 PDF objects out of 1440 (max. 8388607)
+ 1293 compressed objects within 13 object streams
+ 356 named destinations out of 1000 (max. 500000)
  251 words of extra memory for PDF output out of 10000 (max. 10000000)
 
