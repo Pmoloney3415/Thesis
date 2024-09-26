@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'Thesis_MainSample.blg'
-[228] biber-MSWIN64:340> INFO - === 
-[301] Biber.pm:419> INFO - Reading 'Thesis_MainSample.bcf'
-[567] Biber.pm:979> INFO - Found 84 citekeys in bib section 0
-[598] Biber.pm:4419> INFO - Processing section 0
-[623] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
-[739] bibtex.pm:1713> INFO - LaTeX decoding ...
-[2212] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
-[7624] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[7624] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[7624] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[7624] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[7870] bbl.pm:660> INFO - Writing 'Thesis_MainSample.bbl' with encoding 'UTF-8'
-[16181] bbl.pm:763> INFO - Output to Thesis_MainSample.bbl
-[16181] Biber.pm:131> WARN - ISBN '978-0-521-83309-7 978-0-521-54062-9 978-0-511-53618-2' in entry 'castor_radiation_2004' is invalid - run biber with '--validate_datamodel' for details.
-[16181] Biber.pm:131> WARN - ISBN '978-3-031-23423-1 978-3-031-23426-2' in entry 'michel_introduction_2023' is invalid - run biber with '--validate_datamodel' for details.
-[16181] Biber.pm:133> INFO - WARNINGS: 2
+[222] biber-MSWIN64:340> INFO - === 
+[291] Biber.pm:419> INFO - Reading 'Thesis_MainSample.bcf'
+[804] Biber.pm:979> INFO - Found 261 citekeys in bib section 0
+[835] Biber.pm:4419> INFO - Processing section 0
+[859] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
+[975] bibtex.pm:1713> INFO - LaTeX decoding ...
+[2356] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
+[17255] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[17255] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[17256] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[17256] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[17966] bbl.pm:660> INFO - Writing 'Thesis_MainSample.bbl' with encoding 'UTF-8'
+[35208] bbl.pm:763> INFO - Output to Thesis_MainSample.bbl
+[35208] Biber.pm:131> WARN - ISBN '978-0-521-83309-7 978-0-521-54062-9 978-0-511-53618-2' in entry 'castor_radiation_2004' is invalid - run biber with '--validate_datamodel' for details.
+[35208] Biber.pm:131> WARN - ISBN '978-3-031-23423-1 978-3-031-23426-2' in entry 'michel_introduction_2023' is invalid - run biber with '--validate_datamodel' for details.
+[35208] Biber.pm:133> INFO - WARNINGS: 2

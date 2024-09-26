@@ -1,1 +1,203 @@
-\chapter{Conclusions} \label{chap:conclusions}
+\chapter{Conclusions}%
+\label{chap:conclusions}
+
+The work presented in this manuscript details the development, validation and use of the \textsc{Solas} laser ray-trace and \ac{CBET} model, along with its integration to the \textsc{Chimera} \ac{Rad-MHD} code.
+Prior to the development of \textsc{Solas}, direct-drive simulations with the \textsc{Chimera} code had limited predictive capability, because a simple 1-D ray-trace was used which did not include any mechanisms for loss of coupling.
+The extensive validation problems presented in Chap.~\ref{chap:SOLAS} demonstrate that \textsc{Chimera}-\textsc{Solas} simulations are capable of predictive simulations.
+A review of the model capabilities and code validation is first provided, before summaries of the simulations conducted for this thesis are presented.
+Potential improvements to both the model and the simulations are also suggested.
+The thesis is concluded with some closing remarks about the work conducted.
+
+\newpage
+
+\section{The \textsc{Solas} Ray-Trace and CBET Model}
+
+The primary outcome of this thesis was the development of a laser ray-tracing and \ac{CBET} module for the \textsc{Chimera} code.
+This was mainly intended for use in direct-drive simulations, but it would also allow for more accurate modelling of other \ac{HEDP} experiments, for example indirect-drive \ac{ICF} and laser-driven gas jet experiments.
+
+\subsection{Model Development and Validation}
+
+As described in Chap.~\ref{chap:SOLAS}, a custom ray-trace grid was implemented, which combines cells from an underlying Eulerian grid, leading to a resolution that is more suitable for laser length scales.
+The grid resolution is also adaptive, such that areas close to the critical surface where refraction and deposition occur on shorter length scales, can be accurately modelled.
+The grid also allows for approximately equal area grids in multidimensional spherical simulations, which is crucial for avoiding grid artefacts in deposition when modelling \ac{CBET}.
+An adaptive RK-45 algorithm was used to evolve the ray trajectories and \ac{Inv-Brem} deposition.
+This efficiently integrates the path of rays, while maintaining an acceptable degree of accuracy.
+Validation problems were presented which compared the solver to analytic solutions, which were all in excellent agreement with the \textsc{Solas} results.
+
+Accurate \ac{CBET} modelling, particularly for direct-drive, depends on an accurate and low-noise field reconstruction algorithm.
+Methods which rely on ray statistics to obtain the intensity were tested, and although not presented in the thesis, they were found to lead to significant inaccuracies and spurious laser-grid artefacts in the deposition.
+Therefore, an `neighbour-ray' algorithm was implemented following Ref.~\cite{follett_validation_2022}, in which each ray is co-traced alongside a triangle of neighbour rays to sweep out an area of the ray.
+This area provides an estimate for the ray amplitude and, therefore field strength, or equivalently intensity~\cite{tracy_ray_2014}.
+An estimate for the ray amplitude also allows proper treatment of the field in the vicinity of caustics, where the WKB assumption used for ray-tracing breaks down, and therefore ray-based field reconstruction diverges.
+\ac{FL} and \ac{EI} algorithms were implemented to limit the ray amplitude and hence field strength in the vicinity of caustics, which is necessary for accurate \ac{CBET} modelling in direct-drive.
+A memory efficient, load-balanced grid approach with dynamic memory structure was implemented to store the laser fields from many beams.
+Numerous field reconstruction test problems were conducted which compared the \textsc{Solas} fields to results from a wave-based code.
+These results demonstrated that the solver correctly reproduced the field in direct-drive like plasma profiles and was thus suitable for inclusion in a \ac{CBET} model.
+
+The \ac{CBET} algorithm implemented in \textsc{Chimera} saturates via pump depletion and therefore the field of the lasers is solved for iteratively while accounting for \ac{CBET}.
+The linear fluid and kinetic \ac{CBET} gains were both implemented.
+The kinetic gain enables accurate computation of the gain for multiple ion species plasmas, which are commonly used for the ablator of direct-drive targets.
+A memory efficient, caching of ray-trajectories and \ac{CBET} gains was implemented via a linked list, to avoid excessive re-computation costs for the pump-depletion iterations.
+A \ac{CGT} algorithm~\cite{follett_raybased_2018} was implemented to improve the accuracy and energy conservation of the model at the reduced resolutions necessary for full, 3-D simulations.
+Numerous \ac{CBET} test problems were conducted, both with and without laser caustics and the \textsc{Solas} results were found to compare favourably to both wave- and ray-based models.
+
+Finally, the model was employed, integrated with \textsc{Chimera}, to model \textsc{Omega} direct-drive implosions.
+The \textsc{Omega} shot 89224 was simulated both with and without \ac{CBET} included~\cite{cao_interpreting_2019}.
+The results demonstrated that \ac{CBET} significantly reduced the deposited power and hence the bangtime of the implosion.
+The bangtime, which is effectively a proxy for the energy coupled to the target, was in excellent agreement with the \textsc{Lilac} result for the same initial conditions.
+A 3-D post-process of spherically symmetric LILAC hydrodynamic data was also conducted~\cite{colaitis_inverse_2021}.
+The deposition asymmetry from \textsc{Solas} both with and without \ac{CBET} were in excellent agreement with results from the \textsc{Ifriit} and \textsc{BeamCrosser} codes~\cite{colaitis_3d_2023a}.
+These results demonstrate that \textsc{Chimera}-\textsc{Solas} simulations are capable of accurately modelling direct-drive simulations and including the effect of \ac{CBET} on absorption-reduction and asymmetry.
+
+\subsection{Potential \textsc{Solas} Enhancements}
+
+Other than \textsc{Chimera}-\textsc{Solas}, only a single code combination, \textsc{Aster}-\textsc{Ifriit}, is capable of accurately modelling \ac{CBET} for direct-drive in 3-D.
+The effect of \ac{CBET} on stagnation asymmetry is an inherently 3-D problem, due to the lack of rotational symmetry about a single axis on the \textsc{Omega} laser system.
+Therefore, even without further improvements, the model could be extensively utilised to study 3-D \ac{CBET} physics and how it impacts direct-drive implosions on both \textsc{Omega} and the \ac{NIF}.
+Numerous improvements could be made to the model however such that it is capable of accurately modelling a wider array of \ac{ICF} physics.
+
+An initial improvement could be to include the Langdon effect on both absorption~\cite{turnbull_inverse_2023} and \ac{CBET}~\cite{turnbull_impact_2020}.
+Langdon is the name given to the preferential heating of the colder electron population in the distribution function by \ac{Inv-Brem}~\cite{langdon_nonlinear_1980}.
+If the heating rate is faster than the thermalising collisions, then this distorts the distribution function away from Maxwellian, reducing the fraction of colder electrons and therefore reducing absorption.
+This is a significant effect for direct-drive \ac{ICF} implosions, for which it has been shown to reduce absorption rates by $\mathcal{O}(10\%)$~\cite{turnbull_inverse_2023}.
+This was not implemented, mainly because the focus of the work was to understand how \ac{CBET} affected implosions rather than Langdon.
+It should now be simple to include the absorption reduction factor, which relies mainly on an accurate electric field reconstruction.
+Additionally, Langdon distribution functions alter the susceptibility of the plasma and hence the \ac{IAW} dispersion relation, hence \ac{CBET} scattering is also altered.
+This can also be accounted for by modifying the gain appropriately, which could also be easily implemented in the model as it stands~\cite{turnbull_impact_2020}.
+One interesting area of investigation with the Langdon reduction of \ac{CBET} could be to investigate whether this is sufficient to remove the need for a gain clamp in indirect-drive \ac{CBET} models~\cite{michel_tuning_2009}.
+Intensities are large in the \ac{LEH} of indirect-drive configurations, which could lead to significant gain reductions, and therefore make \ac{CBET} modelling more predictive for these experiments.
+Indirect-drive simulations have been conducted using \textsc{Solas}~\cite{chittenden_crossbeam_2024}, although these required gain limiters for the pump-depletion iterations to converge.
+
+Additionally, a model for polarised \ac{CBET} could be implemented into \textsc{Solas}.
+The ponderomotive drift of particles from which \ac{CBET} grows only occurs between parallel polarised beams.
+While the \textsc{Omega} lasers are approximately randomly polarised, which is simple to account for in \ac{CBET} models, polarisation smoothing optics actually split each beam into two, spatially offset, orthogonally polarised sub-beams.
+The \ac{CBET} interaction of these sub-beams leads to a persistent $\ell=1$ asymmetry on \textsc{Omega}~\cite{mannion_mitigation_2021,edgell_nonuniform_2021,colaitis_3d_2022}.
+By accounting for the polarisation of the light, this $\ell=1$ could be recreated and studied computationally through \textsc{Chimera}-\textsc{Solas} simulations.
+
+A further suggestion for an improvement to \textsc{Solas} would be to include the capability to model laser bandwidth in \ac{CBET} interactions~\cite{follett_raybased_2023}.
+Broadband lasers are assumed to be the best route on future facilities to eliminating \ac{CBET}.
+The \ac{CBET} interaction is time-dependent however, and therefore understanding the bandwidth required to mitigate it requires inline modelling of the interaction~\cite{colaitis_exploration_2023}.
+Ray-based implementations of \ac{CBET} models which account for bandwidth exist and could be included in \textsc{Solas}.
+
+A final suggestion to improve the capability of \textsc{Solas}, would be to include additional \ac{LPIs}.
+On \textsc{Omega}, \ac{CBET} is by far the most significant instability in terms of energy loss, due to the high field strength of the daughter wave.
+However, on larger facilities with longer scale length plasmas, other \ac{LPIs} which grow connectively can become significant, particularly \ac{SRS}~\cite{scott_shock_2021}.
+Studies have shown that \ac{SRS} may be less sensitive to laser bandwidth~\cite{zhao_mitigation_2022} and therefore accurate modelling of this effect is crucial for the design of next generation direct-drive facilities.
+A significant challenge to modelling all \ac{LPIs} is an accurate field reconstruction, which now exists in \textsc{Solas}, and therefore it should be possible to include reduced models for these interactions~\cite{debayle_unified_2019}.
+
+\subsection{Potential \textsc{Chimera} Enhancements}
+
+Further enhancements could be made to the \textsc{Chimera} code to include the accuracy of the non-laser physics packages, which are important for predictive direct-drive \ac{ICF} experiments.
+For instance, the \textsc{Chimera} Monte-Carlo alpha transport algorithm could be adapted such that it could be used to model hot-electron generation and pre-heat of the fuel~\cite{tong_burn_2019}.
+Monte-Carlo models are the gold standard of modelling for hot-electrons~\cite{barlow_role_2022,tentori_3d_2022,tentori_3d_2022a} and much of the code infrastructure required to model them already exists in \textsc{Chimera}.
+Hot-electrons are generated via the \ac{SRS} instability, and therefore may well be increasingly significant at larger scale facilities, due to the increasing plasma scale length and the potential inefficacy of broadband light to mitigate \ac{SRS}.
+Therefore, a hot-electron modelling capability could be highly useful for designing these next generation facilities.
+
+Finally, the steep temperature and density gradients in the conduction zone for laser-driven targets, mean that the heatflow which transports laser energy to the ablation surface is not well modelled by a local, Spitzer conductivity~\cite{yuan_spacetime_2024}.
+Reduced treatments for non-local heatflow could be implemented into \textsc{Chimera}, for example \textsc{Snb}~\cite{schurtz_nonlocal_2000,nicolai_practical_2006,cao_improved_2015}, \textsc{Fast-VFP}~\cite{bell_fast_2024} or \textsc{Rkm}~\cite{mitchell_reduced_2024}.
+These models would more accurately predict the thermal transport and therefore drive and preheat from the conduction zone.
+
+\section{Effect of Beam Radius on Beam-Mode Asymmetry}
+
+A summary of the work conducted in Chap.~\ref{chap:RbRt} is presented in this section, along with some suggestions for further work.
+In this chapter, a series of simulations was conducted to attempt to understand the effect of the beam radius initial condition on the performance of direct-drive targets on \textsc{Omega}.
+In particular, statistical modelling of \textsc{Omega} implosions has demonstrated that the scaling of performance in this parameter is not well understood~\cite{lees_experimentally_2021,lees_understanding_2023}.
+It was hypothesised that the varying effect of \ac{CBET} at different beam radii may explain the complicated scaling relation observed in the data.
+
+\subsection{Summary of Simulations}
+
+In order to study the effect of \ac{CBET} as a function of beam-radius, an ensemble of $\sim10$ simulations was required.
+Additionally, because the energetics of an implosion decrease with increasing \ac{CBET} (less coupled energy and therefore less mass can be imploded), each simulation in the ensemble required $\mathcal{O}(10)$ tuning simulations to obtain the initial conditions.
+While the true effect of \ac{CBET} is 3-D, performing $\mathcal{O}(100)$ 3-D \ac{CBET} simulations was well over the maximum computational resources available for this project.
+A 2-D, cylindrical direct-drive simulation platform was therefore designed, which was able to qualitatively reproduce the physics of a spherical implosion.
+Because the simulation geometry was planar, a 2-D ray-trace fully described the laser propagation through the system, which reduced the number of rays required, and therefore \ac{CBET} costs by $\mathcal{O}(100)$ compared to a fully 3-D simulation.
+This platform thus enabled the impact of \ac{CBET} on stagnation to be studied as a function of beam radius, via a simulation ensemble.
+
+A 1-D tuning procedure was initially conducted to obtain the required laser power to drive hydrodynamically similar implosions at all beam radii.
+Integrated implosion metrics indicated that the 1-D simulation results were all sufficiently similar to study the degradation as a function of beam radius, due to \textit{only} multidimensional effects in 2-D simulations.
+These 2-D cylindrical simulations indicated that in the absence of \ac{CBET}, symmetry of the stagnation state increased in the absence of \ac{CBET}.
+When \ac{CBET} was included, `modal-flips' of the deposition were observed in time due to \ac{CBET} acting non-uniformly around the target azimuth.
+Broadly, the symmetry of the stagnation state was observed to decrease with increasing beam radius when \ac{CBET} was accounted for.
+However, the trend obtained was non-monotonic, due to the modal flips instantaneously reducing deposition asymmetry, depending on the beam radius and target convergence.
+It was hypothesised that this non-monotonic trend (if observed in 3-D spherical simulations as well) could be the origin of the complicated statistical scaling in performance with the beam radius on \textsc{Omega}.
+
+\subsection{Suggestions for Further Work}
+
+Two main improvements were identified to make the results from this chapter more relevant to the \textsc{Omega} statistical model.
+The first would be made to these simulations would be to use a spherical geometry.
+The cylindrical convergence of the target and divergence of the coronal plasma is not directly applicable to spherical targets, even if qualitatively similar.
+It was only computationally possible to create such a large ensemble of simulations for this chapter by conducting a 2-D ray-trace (\textit{i.e.} the rays move in a plane, not in a full 3-D volume), as this reduced the number of rays required by orders of magnitude.
+\ac{CBET} is typically by far the most expensive effect to model in direct-drive calculations, so this reduction is cost enabled a large number of simulations to be conducted.
+This greatly limits the viability of performing a 3-D \ac{Rad-Hydro} simulations with 3-D \ac{CBET} ray-trace, each of which would likely take a month or longer to run on hundreds to thousands of processors.
+Simulating \ac{CBET} accurately in a 2-D $r$-$z$ spherical \ac{Rad-Hydro} simulation requires the full azimuthal extent and therefore a 3-D ray-trace is required, which (depending on laser-grid resolution in the azimuthal direction) is similarly expensive to a 3-D calculation.
+Additionally, the power deposition in these simulations must be azimuthally averaged around the target, which artificially reduces the amplitude of the beam-mode perturbations, such that the true performance scaling with beam radius could not be accurately captured.
+However, a 2-D `planar' simulation could provide the correct spherical convergence properties, while also maintaining the benefit of a 2-D ray-trace.
+This platform would be in $r$-$\phi$ coordinates and have a polar angle extent $\theta \in [\lesssim\pi/2,\gtrsim\pi/2]$.
+A planar, 2-D raytrace could therefore be performed\footnote{Note that the deposition would have to be altered as a function of $r$, to account for varying cell volume with convergence.}, maintaining the computational cost advantages over 3-D simulations.
+
+A further enhancement would be to alter the 1-D tuning procedure to ensure that the results are more directly applicable to the \textsc{Omega} statistical model.
+In Chap.~\ref{chap:RbRt}, the targets were kept hydrodynamically similar, in the sense that the energy coupled to the target was the same.
+This was achieved by increasing the incident laser power such that the same energy was absorbed for each simulation, despite the larger beam radius simulations experiencing more \ac{CBET} due to increased beam overlap.
+This is contrary to what happens on \textsc{Omega}, where the laser energy is kept constant, and the target is altered (decreasing radius and mass) to create larger beam radius to target radius ratios.
+The trends observed from this simulation campaign are therefore not directly comparable to the statistical model and only qualitative comparisons can be drawn.
+By performing a more in-depth target optimisation procedure does not vary the laser pulse but rather the target itself,\footnote{Note that this procedure was not followed for the work in Chap.~\ref{chap:RbRt} because it is a higher dimensional optimisation procedure.} then the trends obtained could be compared directly to the statistical model.
+
+\section{The Effect of Coronal Magnetisation on CBET Scattering}
+
+A summary of the work conducted in Chap.~\ref{chap:Mag} is presented in this section, along with some suggestions for further work.
+Magnetisation of direct-drive targets are known to enhance the $\ell=2$ stagnation asymmetry of pole-heavy driven magnetised exploding pusher targets~\cite{bose_effect_2022}.
+This asymmetry arises from anisotropisation of the heatflow and therefore also leads to asymmetry in the magnetised, coronal plasma, where the lasers propagate.
+\ac{CBET} is known to be sensitive to global, $\ell=1$ coronal asymmetries~\cite{colaitis_inverse_2021}.
+Therefore, it was hypothesised that the asymmetry of the corona due to magnetisation could anisotropically affect \ac{CBET} scattering and a series of simulations was conducted to explore this.
+
+\subsection{Summary of Simulations}
+
+A series of simulations was performed with varying strengths of seed magnetic field and treatments of \ac{CBET}, to assess both the role of magnetisation on exploding pusher implosions, and how they are affected by \ac{CBET}.
+Initially, unmagnetised 1-D calculations were performed, which demonstrated that \ac{CBET} is dynamically significant for exploding pushers, reducing absorption by $\sim15\%$ and bangtime by $\sim10\%$.
+It is worth noting that this is less significant than for conventional hotspot ignition \textsc{Omega} designs ($\gtrsim20\%$ reduction), which is mainly due to the SiO$_2$ ablator material leading to higher coronal plasma temperatures.
+Unmagnetised 2-D simulations demonstrated that the polar-drive configuration led to significant asymmetry of the hydrodynamic profiles at bangtime.
+
+Magnetised 2-D simulations without \ac{CBET} were conducted to assess the role of various extended-\ac{MHD} effects on the implosion dynamics.
+Anisotropic thermal conduction was observed to be the most dynamically significant as it anisotropised the heatflow, enhancing the $\ell=2$ asymmetry from the drive geometry.
+High plasma $\beta$ and magnetic Reynolds numbers meant that the Lorentz force and resistive diffusion respectively were relatively unimportant.
+While it did not significantly impact the integrated metrics, the Nernst effect significantly altered the field structure at the low Hall parameter equator of the target, which led to an altered density profile in this region.
+Due to the global $\ell=2$ asymmetry however, this alteration was substantially separated from the hottest plasma regions were the yields was produced and therefore limited effect was seen in the integrated metrics.
+
+Simulations were conducted in 2-D with varying initial field strengths and \ac{CBET} treatments to understand how \ac{CBET} was affected by magnetised coronal profiles.
+The main comparison was between full-\ac{CBET} simulations and partial-\ac{CBET} simulations, where only the reduction of deposited power due to \ac{CBET} (not the redistribution of deposition) was fed into the hydrodynamics.
+The computational diagnostics from \textsc{Solas}, which can be used to understood how \ac{CBET} affects the deposition asymmetry, demonstrated some minor changes to the scattering of light due to \ac{CBET}.
+Particularly, higher magnetisation appeared to marginally reduce the deposition asymmetry from \ac{CBET}, especially early in the implosion.
+However, comparison of the bangtime profiles did not demonstrate significant difference between the full- and partial-\ac{CBET} simulations for any seed magnetisation.
+Therefore, it was concluded that \ac{CBET} was not significantly affected by magnetisation for these direct-drive exploding pusher targets.
+
+\subsection{Suggestions for Further Work}
+
+The first avenue for further work should be to properly compare the computational results to the experimental results, by using synthetic x-ray diagnostics to obtain comparable images of the bangtime asymmetry.
+This was not conducted in this thesis, as the focus of the work was to investigate the action of \ac{CBET} in these experiments and there was insufficient time to complete a full experimental comparison.
+Several suggestions were provided to design an experiment, which may observe a more significant impact on \ac{CBET} scattering due to magnetisation.
+Firstly, a symmetric laser drive could be employed.
+The pole-heavy drive which was used in these simulations mostly obscured the much smaller changes to implosion morphology due to \ac{CBET} acting differently in magnetised coronas.
+By utilising a symmetric drive, the zeroth order polar-drive asymmetry would be eliminated, such that the \ac{CBET} changes to deposition may appear more obvious in both simulations and experiments.
+Additionally, a more conventional hotspot ignition style implosion could be utilised with a CH ablator.
+A lower $Z$ ablator implosion would exhibit lower coronal plasma temperatures, leading to a greater reduction of deposition by \ac{CBET}.
+This would make the changes to deposition symmetry more evident.
+
+\section{Final Remarks}
+
+The work in this manuscript has outlined the development, validation and use of the \textsc{Solas} ray-trace and \ac{CBET} model.
+\textsc{Ifriit} is the only a single other direct-drive suitable, 3-D \ac{CBET} model which has been integrated into a 3-D \ac{Rad-Hydro} code (\textsc{Aster}).
+The lack of computational models capable of studying the inherently 3-D physics of \ac{CBET} mean that there is ample possibility for further computational study with this model.
+It is worth noting however, that \ac{CBET} modelling is very expensive and dominates the computational runtimes of 1-, 2- and 3-D \textsc{Chimera}-\textsc{Solas} simulations.
+This is also true of \textsc{Aster}-\textsc{Ifriit} simulations~\cite{colaitis_inverse_2021}.
+Memory overheads are also very large due to the necessity of storing field information for many beams over an entire 3-D computational grid.
+The large memory requirements make effective load balancing across processors difficult.
+It also makes it difficult to envisage how current multidimensional \ac{CBET} models could be effectively refactored for \ac{GPU} acceleration, due to the limited \ac{RAM} available on current units.
+It is likely that such a code would need to find a much more memory efficient method to store the field from beams for this to be possible.
+
+An additional point to make is that it is hoped that \ac{CBET} will become a problem of the past on next generation laser facilities, due to the development of broad bandwidth lasers.
+There are still, however, many experiments which have and shall in future be performed on current, low bandwidth facilities.
+Understanding the performance enhancement which can be expected from broadband lasers, and hence how to design these future facilities, requires a complete understanding of how \ac{LPIs} degrade current implosions.
+One interesting example is that \ac{CBET} acts to mitigate $\ell=1$ asymmetries, which arise from target offsets and mispointing of the laser~\cite{anderson_effect_2020}.
+Mitigation of \ac{CBET} is therefore likely to enhance the sensitivity to these damaging perturbations therefore, so enhanced facility capabilities will be required to reduce this random errors.
+\ac{CBET} models may also be adapted to include additional \ac{LPIs}, which are a less significant concern for direct-drive implosions, but may increase in importance as the energy and scale lengths of the plasma increase.
+In short, many problems remain to be solved and there is ample area for investigation in the inline modelling of \ac{CBET} and other \ac{LPIs} for \ac{ICF}.

@@ -21,7 +21,7 @@ The physical processes by which lasers interact with plasma are a result of micr
 The detailed microphysics of these interactions are often studied using \ac{PiC} codes~\cite{nguyen_crossbeam_2021} or wave-based solvers~\cite{myatt_wavebased_2017}, typically for scales and durations of tens of micrometres and hundreds of picoseconds.
 Coupling these tools directly to multidimensional \ac{Rad-Hydro} simulations, which are often used for millimetre and nanosecond scales, is usually computationally intractable.
 
-The \ac{GO} assumptions are often applicable for \ac{HEDP} laser-plasma interactions and therefore ray-tracing offers a computationally tractable approach to modelling lasers in these experiments\footnote{Validity is discussed in detail for \ac{ICF} plasmas in Sec.~\ref{sec:Theory_GO_appliciability}}.
+The \ac{GO} assumptions are often applicable for \ac{HEDP} laser-plasma interactions and therefore ray-tracing offers a computationally tractable approach to modelling lasers in these experiments.
 By assuming static \ac{Rad-Hydro} profiles (which is normally valid for the propagation time of light through the computational domain) a laser beam can be discretized into a bundle of rays.
 The ray equations can then be integrated along their path to solve for the trajectory of the light, assuming that refraction dominates over diffraction.
 A discrete amount of power can also be given to each ray.
@@ -137,7 +137,7 @@ Kinetic modelling of \ac{CBET} has demonstrated that the growth of \ac{LPIs} can
 \section{\textsc{Solas} 3-D Laser Ray-Trace}%
 \label{sec:SOLAS_raytrace}
 
-This section describes how the ray equations, derived from the Helmholtz equation in Sec.~\ref{sec:theory_ray_equations} are solved in the \textsc{Solas} module for the \textsc{Chimera} \ac{Rad-MHD} code.
+This section describes how the ray equations, derived from the Helmholtz equation in Sec.~\ref{sec:theory_rays} are solved in the \textsc{Solas} module for the \textsc{Chimera} \ac{Rad-MHD} code.
 Details of the mesh used for spherical simulations, load balancing options as well as validation problems are provided.
 
 A short summary of the computational derived-types is presented here, to aid understanding of the following sections.
@@ -561,7 +561,7 @@ This section outlines the method used in \textsc{Solas} to obtain the electric f
     \label{fig:SOLAS_3draytube}
 \end{figure}
 
-Recalling the formula for the ray-amplitude, $A$, Eq.~\ref{eq:theory_rayamp} from Sec.~\ref{sec:theory_rayamp},
+Recalling the formula for the ray-amplitude, $A$, Eq.~\ref{eq:theory_ray_amp} from Sec.~\ref{sec:theory_rays},
 \begin{align}
     A(\tau) = A(0)\left| \frac{D(0)}{D(\tau)} \right|^{1/2}, &&
     D(\tau) = 
@@ -604,7 +604,7 @@ For example, a 1-D spherical direct-drive \ac{Rad-Hydro} simulation still requir
 These neighbour-rays are then co-traced up to the phase of the `main-ray' to evaluate the area of the main-ray on its phase front.
 Fig.~\ref{fig:SOLAS_3draytube} plots an example of this co-tracing procedure for a single ray propagating in a 3-D direct-drive profile.
 It can be seen that as the reflects away from the critical surface, the area diverges.
-Note that artifically large neighbour-ray separation was used for this plot as it is purely illustrative.
+Note that artificially large neighbour-ray separation was used for this plot as it is purely illustrative.
 Practically, the separation distance of the bundle of neighbour-rays (i.e. the side-length of the triangle, $\Delta l$) does not need to be infinitesimally small, but small enough that it accurately captures the local change of $|D(\tau)|$.
 In terms of the hydrodynamic profiles, this means that $\Delta l \ll L_{n_e}$, where $L_{n_e}$ is the density length scale of the plasma.
 For \textsc{Omega} scale direct-drive simulations, an initial separation of $\Delta l\lesssim 1\ \mu\text{m}$ is found to give converged behaviour.
@@ -1580,64 +1580,6 @@ The reflected sheet travels mostly radially outward and therefore has been signi
 In the absence of \ac{CBET}, the field strength of the reflected sheet is significantly lower than the incident sheet field strengths for two reasons.
 Firstly, peak absorption occurs at the maximum radial penetration depth of the light into plasma, which is typically close to where rays experience their caustic and change sheet.
 Additionally, the rays diverge after reflecting from the critical surface leading to a reduction in ray amplitude and therefore field strength.
-
-
-\iffalse
-
-%###############################################################################################################################
-%###############################################################################################################################
-%###############################################################################################################################
-\section{Future Model Extensions}
-
-Say that there is even more laser/ CBET physics that is interesting and can be implemented within the ray-tracing framework.
-Some are straightforward to implement, while others more difficult and computationally expensive.
-
-%################################################################################
-%################################################################################
-\subsection{Langdon Effect on Absorption}
-
-Describe Langdon from a kinetic perspective and why it reduces absorption.
-Describe how you can fit it and include as a modification to ray-tracing absorption if you have the field/ intensity.
-Describe the magnitude of the effect for ICF like conditions.
-Describe breifly how it would be implemented, say it would not be difficult.
-
-%################################################################################
-%################################################################################
-\subsection{Langdon Effect on CBET}
-
-Describe what this is.
-Say that it is important for high overlapping intensities, eg hohlraum LEH.
-Say that it is thought to stabilise the CBET interaction in indirect drive configurations and remove the need for artificial clamps.
-Describe briefly how it would be implemented, say it would not be difficult.
-
-%################################################################################
-%################################################################################
-\subsection{Polarised CBET}
-
-Describe how ion acoustic waves are driven by beat between electric fields from light and therefore is polarisation dependent.
-Say how on \textsc{Omega}, RPP smoothing means that each beam is split into 2 sub-beams with linear polarisation.
-Say that these do not have a symmetry to the configuration about the sphere.
-Say that this leads to mode-1 on \textsc{Omega}.
-Say that you can track polarisation of rays and trace these sub-beams independently.
-Would make it more expensive, but definitely feasible.
-
-%################################################################################
-%################################################################################
-\subsection{Bandwidth for CBET Mitigation Studies}
-
-Describe how bandwidth should reduce LPI growth rates.
-Understanding the desired bandwidth to mitigate CBET is a key consideration for design of future laser systems.
-Fields can be modified to include discrete wavelengths to model bandwidth.
-
-%################################################################################
-%################################################################################
-\subsection{Additional LPIs}
-
-Could look at TPD, SBS and SRS.
-In theory not a difficult problem to do backscatter, but side-SRS is difficult, because additional rays would need to be launched.
-This could make the model more useful to indirect-drive experiments and design of ignition scale direct-drive facilities, where SRS is thought to be important energetically due to long scale lengths.
-
-\fi
 
 %###############################################################################################################################
 %###############################################################################################################################
