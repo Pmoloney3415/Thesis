@@ -131,7 +131,7 @@
 \contentsline {section}{\numberline {6.3}The Effect of Coronal Magnetisation on CBET Scattering}{201}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Summary of Simulations}{201}{subsection.6.3.1}%
 \contentsline {subsection}{\numberline {6.3.2}Suggestions for Further Work}{202}{subsection.6.3.2}%
-\contentsline {section}{\numberline {6.4}Final Remarks}{202}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Final Remarks on CBET Modelling}{202}{section.6.4}%
 \contentsline {chapter}{\numberline {A}List of Acronyms}{205}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Copyright Permissions}{208}{appendix.B}%
 \contentsline {chapter}{Bibliography}{209}{section*.162}%

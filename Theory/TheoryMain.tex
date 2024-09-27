@@ -1,7 +1,7 @@
 \chapter{The Interaction of Light with Plasma}%
 \label{chap:Theory}
 
-This chapter shall introduce theoretical background relevant to the work conducted in this thesis.
+This chapter shall introduce the theoretical background relevant to the work conducted in this thesis.
 The main focus of the work is centred on improving the laser modelling in the \textsc{Chimera} \ac{Rad-MHD} code.
 Therefore, the theoretical framework for modelling both the plasma and the propagation and absorption of light in it is introduced.
 
@@ -14,7 +14,7 @@ Therefore, although \textsc{Chimera} does not have this capability, some basic t
 An additional aim of the work was to include a \ac{CBET} model into the new \textsc{Chimera} laser package.
 \ac{LPIs} such as \ac{CBET} are multi-wave coupling phenomena, and therefore a basic description of waves in plasma is provided in Sec.~\ref{sec:theory_waves_plasmas}.
 The dispersion relation of the light waves in plasma is also derived.
-Beginning with the full wave equation and then introducing successive assumptions which are broadly satisfied in typical laser-produced \ac{ICF} plasmas, Sec.~\ref{sec:theory_propagation} derives the equations of ray-tracing.
+In Sec.~\ref{sec:theory_propagation}, beginning with the full wave equation and then introducing successive assumptions which are broadly satisfied in typical laser-produced \ac{ICF} plasmas, the equations of ray-tracing are derived.
 Important absorption processes are then outlined, particularly \ac{Inv-Brem}, which is the dominant mechanism on the largest \ac{ICF} facilities in the world today.
 Finally, the basic theory of \ac{LPIs} is provided in Sec.~\ref{sec:theory_LPIs}, particularly \ac{CBET} and its relevance for direct-drive \ac{ICF}.
 
@@ -28,9 +28,9 @@ Finally, the basic theory of \ac{LPIs} is provided in Sec.~\ref{sec:theory_LPIs}
 
 As stated in Chap.~\ref{chap:intro}, thermonuclear fusion requires fuel to exist at significant temperatures, which are well above ionisation energies.
 Therefore, the fuel configuration in these fusion experiments is a plasma.
-Formally, a plasma is defined as a quasi-neutral, ionised gas which exhibits collective behaviour~\cite{chen_introduction_2018}.
+Formally, a plasma is defined as a quasi-neutral, ionised gas, which exhibits collective behaviour~\cite{chen_introduction_2018}.
 The charged particles within a plasma interact via the long-range Coulomb force, and thus undergo many simultaneous interactions with the other particles.
-This leads to a variety of collective phenomena such as the plasma-waves described in Sec.~\ref{sec:theory_waves_plasmas}.
+This leads to a variety of collective phenomena, such as the plasma waves described in Sec.~\ref{sec:theory_waves_plasmas}.
 Quasineutrality of the plasma means that, when observed at a length-scale $L$, the plasma has no net charge,
 \begin{equation}
     \Sigma_{\alpha}q_{\alpha}N_{\alpha} = 0,
@@ -98,10 +98,10 @@ If the system macroscopically evolves on a timescale much longer than the collis
     f_{\alpha,\text{Max.}}(v) = n_{\alpha} {\left( \frac{1}{2\pi v_{T\alpha}^2} \right)}^{1.5} e^{-\left [ v/ \left (\sqrt{2} v_{T\alpha} \right ) \right ]^2},
 \end{equation}
 where $v_{T\alpha}=\sqrt{k_B T_{\alpha}/m_{\alpha}}$ is the thermal speed of the species with temperature and mass $T_{\alpha}$ and $m_{\alpha}$, respectively.
-The fraction outside the exponential is set such the integral over velocity space yields the number density of the species.
+The fraction outside the exponential is set such that the integral over velocity space yields the number density of the species.
 Typically, for bulk of the target configuration throughout a laser-produced \ac{ICF} implosion, the assumption of a Maxwellian distribution is close to accurate, although there are several notable exceptions.
 For instance, DT fusion products have energies much higher than thermal energies and are also monoenergetic.
-\ac{LPIs} also generate energetic electron populations which are able to range through the implosion due to their low collisionality~\cite{barlow_role_2022}.
+\ac{LPIs} also generate energetic electron populations, which are able to range through the implosion due to their low collisionality~\cite{barlow_role_2022}.
 Additionally, laser-heated plasmas typically exhibit steep density and temperature gradients near the ablation surface.
 Therefore, collisions and related phenomena like the transport of thermal energy, do not act locally~\cite{epperlein_practical_1991}.
 When performing fluid simulations of \ac{ICF} experiments, an accurate description of these kinetic phenomena requires specific non-local modelling techniques.
@@ -132,7 +132,7 @@ Evolution of the macroscopic fields is governed by Maxwell's equations,
     \nabla \times \vec{B} &= \mu_0 \varepsilon_0\frac{\partial \vec{E}}{\partial t} + \mu_0 \vec{J},
 \end{align}
 where $\mu_0$ is the permeability of free space, $\rho_{\text{charge}}$ is the charge density, $\vec{J}$ is the current density and from now on, $\nabla\equiv \nabla_x$.
-In the general case with three spatial dimensions, Eq.~\ref{eq:theory_vlasov} is seven dimensional and evolves on small spatial and temporal scales.
+In the general case with three spatial dimensions, Eq.~\ref{eq:theory_vlasov} is seven-dimensional and evolves on small spatial and temporal scales.
 Therefore, it is typically too expensive to solve in its entirety for the relatively long times and large spatial scales of an entire \ac{ICF} implosion.
 Solution methods to the Vlasov equation include \ac{VFP} codes, which discretise the 6-D phase space of Eq.~\ref{eq:theory_vlasov} and evolve the state forward in time~\cite{thomas_review_2012}.
 The velocity space can be either directly discretised~\cite{taitano_eulerian_2021}, or expanded in spherical harmonics~\cite{kingham_implicit_2004}.
@@ -196,8 +196,9 @@ Macroscopic magnetic fields can be included under the extended-\ac{MHD} framewor
 The evolution of the fields and their effect on plasma transport and dynamics under this framework is discussed in Sec.~\ref{sec:theory_MHD}.
 Further details of the numerical solution in \textsc{Chimera} to the fluid equations can be found in Refs.~\cite{chittenden_signatures_2016,walsh_extended_2018,crilly_simulation_2020,farrow_extended_2023,oneill_modelling_2023,chaturvedi_simulating_2024}. 
 Additional physics packages are included by calculating contributions to the forcing and heating.
-For example, the non-thermal fusion products are modelled by a Monte Carlo treatment, which collide with the bulk plasma and thus deposit energy which contributes to the electron and ion $Q_{\alpha,\text{ext.}}$~\cite{tong_burn_2019}.
-The additional physics packages which are utilised in the subsequent work presented in this manuscript are discussed briefly below.
+For example, the non-thermal fusion products are modelled by a Monte Carlo treatment.
+These energetic particles collide with the thermal plasma constituents and thus deposit energy, which contributes to the electron and ion $Q_{\alpha,\text{ext.}}$~\cite{tong_burn_2019}.
+The additional physics packages utilised in the subsequent work presented in this manuscript are discussed briefly below.
 
 %################################################################################
 %################################################################################
@@ -206,15 +207,15 @@ The additional physics packages which are utilised in the subsequent work presen
 
 In \ac{HEDP}, a distinction between coherent, long wavelength ($\omega \lesssim \omega_p$) laser radiation, and higher frequency ($\omega \gg \omega_p$) x-ray radiation is drawn.
 Modelling the former is the main focus of Chap.~\ref{chap:SOLAS}.
-It refracts significantly in coronal plasma density gradients and radiation at this wavelength is not significantly re-emitted by the thermal plasma.
+The long wavelength visible radiation refracts significantly in coronal plasma density gradients, and radiation at this wavelength is not significantly re-emitted by the thermal plasma.
 In contrast, the x-ray radiation does not significantly refract and is re-emitted in \ac{ICF} plasma conditions.
-This x-ray radiation accounted for numerically in \textsc{Chimera} by a radiation transport algorithm, which is cursively described here.
+This x-ray radiation is accounted for numerically in \textsc{Chimera} by a radiation transport algorithm, which is cursively described here.
 
 In addition to driving the implosion of indirect-drive \ac{ICF} experiments, x-ray radiation is also significant in a wide array of laser-driven \ac{HEDP} physics experiments.
 For example, the hot coronal plasma in direct-drive radiates a significant amount of energy as thermal Bremsstrahlung emission.
 This both lowers the coronal temperatures, which reduces the thermal conduction drive efficiency, and also preheats the fuel making it harder to compress.
 Radiation acts as both a source and sink of energy, as it is radiated and emitted by the plasma.
-Thermal emission is wavelength dependent and atomic transitions create sharp resonances of emissivity and opacity in wavelength space.
+Thermal emission is wavelength-dependent and atomic transitions create sharp resonances of emissivity and opacity in wavelength space.
 Therefore, the radiation-transport algorithm must be discretised in wavelength, depending on the properties of the material and the plasma conditions.
 
 The radiative transfer equation describes the propagation, absorption, emission and scattering of photons with matter,
@@ -224,7 +225,7 @@ The radiative transfer equation describes the propagation, absorption, emission 
 \end{equation}
 where $c$ is the speed of light in vacuum, $I_\nu$ is the spectrally resolved radiation intensity and $\hat{\vec{\Omega}}$ is the photon direction of travel~\cite{castor_radiation_2004}.
 The left-hand side describes the advection of radiation at speed $c$ and the first and second terms on the right-hand side describe collisions between matter and photons, and emission or absorption of photons by the matter respectively.
-Eq.~\ref{eq:theory_rad_transfer} is seven dimensional, and therefore is typically highly expensive to solve, so approximations are often employed to make the solution more tractable.
+Similarly to the Vlasov equation, Eq.~\ref{eq:theory_rad_transfer} is 7-D, and therefore is typically highly expensive to solve, so approximations are often employed to make the solution more tractable.
 In analogy to derivation of the fluid equations from the Vlasov equation, angular moments of Eq.~\ref{eq:theory_rad_transfer} can be taken to reduce the dimensionality of the problem.
 This also leads to the requirement for a closure relation, and the approach taken in \textsc{Chimera} is to use the $P_{1/3}$ closure, which works well for highly isotropic radiation fields~\cite{morel_diffusionlimit_2000}.
 More detail of the \textsc{Chimera} implementation is provided in Refs.~\cite{jennings_radiation_2005,mcglinchey_radiationhydrodynamics_2017}.
@@ -242,7 +243,7 @@ For instance, the plasma $\beta$ describes the ratio of thermal pressure to the 
     \beta = \frac{2 \mu_0 P}{|\vec{B}|^2}.
 \end{equation}
 This gives an order of magnitude estimate for when it is necessary to include the Lorentz force in the momentum equation.
-For example in high beta plasmas, thermal pressure dominates over magnetic pressure and the Lorentz force is thus unimportant.
+For example, in high beta plasmas, thermal pressure dominates over magnetic pressure and the Lorentz force is thus unimportant.
 This is often the case when magnetising a laser-driven \ac{ICF} implosion, as shall be demonstrated in Chap.~\ref{chap:Mag}.
 Similarly, the Hall parameter, $\omega_\alpha \tau_\alpha$, describes the ratio of the gyrofrequency to the collision frequency for a species, $\alpha$.
 Here, $\omega_\alpha$ is the gyrofrequency of the species and $\tau_\alpha$ is specifically its momentum loss collision time, which from now shall simply be referred to as the collision time.
@@ -333,14 +334,15 @@ This anisotropises the thermal conduction with respect to the orientation of $\v
 \label{sec:theory_kineticheatflow}
 
 While the \textsc{Chimera} implementation of thermal transport is simply to use the local limit described in Eq.~\ref{eq:theory_fourier_heat}, this is not always a valid approximation in laser produced plasmas.
-When laser-heating is applied to a plasma, laser energy is transferred to the electron population mostly by \ac{Inv-Brem}, as is described in Sec.~\ref{sec:theory_absorption}, heating the electron fluid to significant temperatures.
-For laser-solid interactions, this often results in sharp temperature and density gradients in the conduction zone, where the thermal energy of the hot corona is transported via thermal conduction to an ablation surface.
+When laser-heating is applied to a plasma, laser energy is transferred to the electron population mostly by \ac{Inv-Brem}, described in Sec.~\ref{sec:theory_in_brem}.
+This process heats the electron fluid to significant temperatures, and energy is transferred to the ions via collisions on a slower timescale.
+For laser-solid interactions, this often results in sharp electron temperature and density gradients in the conduction zone, where the energy of the hot corona is transported via thermal conduction to an ablation surface.
 To assess whether local transport theory is valid, the Knudsen number is a convenient dimensionless parameter, which compares the mean free path of electrons $\lambda_{\text{mfp}}$ to the length scale of the gradient, $L$.
 Specifically, the Knudsen number is defined,
 \begin{equation}
     \text{Kn} = \frac{\lambda_{\text{mfp}}}{L} = \frac{3 (k_B^2 T_e^2)}{4 \sqrt{2\pi} e^4 Z^2 n_i \ln{\Lambda} L},
 \end{equation}
-and transport effects, become significantly non-local when $\text{Kn}\sim0.1$.
+and transport effects become significantly non-local when $\text{Kn}\sim0.1$.
 Knudsen numbers of this magnitude are often observed for high-power laser solid conduction zones~\cite{yuan_spacetime_2024}.
 Physically, more energetic particles within a plasma are less collisional and also play a more significant role in heat flux.
 This is because the heat flux is obtained from a higher order moment than density or fluid velocity, so it is more sensitive to the particles in the high energy tail of the distribution.
@@ -356,7 +358,7 @@ Implementation of one of these models into \textsc{Chimera} could significantly 
 \section{Fluid Description of Waves in Plasma}%
 \label{sec:theory_waves_plasmas}
 
-\ac{LPIs} are a class of multi-wave coupling phenomena that occur when a light wave excites additional plasma-waves.
+\ac{LPIs} are a class of multi-wave coupling phenomena that occur when a light wave excites additional plasma waves.
 Therefore, understanding \ac{LPIs} requires some background theoretical knowledge of the relevant waves.
 In the absence of a macroscopic magnetic field, three classes of wave can propagate in a plasma: the \ac{IAW}, the \ac{EPW} and the \ac{EMW}, \textit{i.e.} a light wave.
 This section shall describe the basic theory of these waves and provide dispersion relations for their propagation.
@@ -369,7 +371,7 @@ For a full kinetic treatment, the reader is referred to the work of Michel in Re
 \label{sec:theory_dielectric}
 
 Freely moving particles in a plasma are able to respond to external electric fields by relocating, which reduces the size of the field that the plasma sees.
-In others words plasma is a dielectric medium, and it is therefore convenient to define the permittivity of the plasma in analogy to the solution of Maxwell's equations in matter.
+In other words plasma is a dielectric medium, and it is therefore convenient to define the permittivity of the plasma in analogy to the solution of Maxwell's equations in matter.
 The dielectric displacement vector is defined,
 \begin{equation}
     \vec{D} = \varepsilon_0 \varepsilon \vec{E},
@@ -497,8 +499,10 @@ However, the group velocity, which is the speed that information travels, remain
     \label{fig:theory_IAW_EPW}
 \end{figure}
 
-Two propagating longitudinal wave can exist in an unmagnetised plasma, an \ac{EPW}, which is an oscillation of the electron fluid on a timescale which is too fast for the ions to respond and an \ac{IAW}, which is a slower, joint oscillation of the electron and ion fluid.
-The inertia of the \ac{EPW} and \ac{IAW} are set by the electron and ion masses respectively.
+Two propagating longitudinal waves can exist in an unmagnetised plasma.
+One is an \ac{EPW}, which is an oscillation of the electron fluid on a timescale which is too fast for the ions to respond.
+The other is an \ac{IAW}, which is a slower, joint oscillation of the electron and ion fluid.
+The inertia of the \ac{EPW} and \ac{IAW} are set by the electron and ion masses, respectively.
 Electron pressure drives the \ac{EPW}, whereas both fluids contribute to the \ac{IAW} pressure, depending on the ionisation level of the plasma.
 Fig.~\ref{fig:theory_IAW_EPW} illustrates particle motion in each wave.
 Dispersion relations can be obtained similarly to the \ac{EMW} method from Sec.~\ref{sec:theory_transwaves}.
@@ -539,11 +543,12 @@ This energy gain of particles in longitudinal plasma waves is the basis for lase
 \subsubsection{Electron Plasma Waves}%
 \label{sec:theory_EPWs}
 
-Firstly the \ac{EPW} shall be considered.
+Firstly, the \ac{EPW} shall be considered.
 These are fast oscillations of the electron fluid such that the heavier ions do not respond on the oscillation timescale.
 To arrive at the dispersion relation, the assumption that the phase velocity is much faster than the electron thermal velocity is made, such that the wave can freely propagate without experiencing strong Landau damping, $w/k \gg v_{Te}$.
 This assumption also yields $\lambda \gg v_{Te}/\omega$, which states that electrons travelling at the thermal velocity will not move a significant portion of the wavelength, $\lambda$, in one oscillation.
-Temperature equilibration is thus limited throughout the wave, which means that there is no heat flux and such the electron fluid is assumed to be adiabatic.
+Temperature equilibration is thus limited throughout the wave, which means that there is little heat flux.
+Therefore, the electron fluid is assumed to be adiabatic.
 An adiabatic fluid has $\gamma_e=3$, which is equivalent to a single degree of freedom in the motion.
 Finally, the assumption is made that the ions are slow due to their large mass, and thus do not contribute to the permittivity.\footnote{Explicitly for the \ac{EPW}, $\omega/k \gg v_{Te} \gg v_{Ti}$ and thus $|\chi_e| \gg |\chi_i|$}
 By using these assumptions in the generalised dispersion relation for longitudinal plasma waves, Eq.~\ref{eq:long_disp_rel}, the dispersion relation for the \ac{EPW} is obtained,
@@ -697,7 +702,7 @@ When calculating field amplitudes under the WKB approximation therefore, special
 \label{sec:theory_rays}
 
 The WKB approximation correctly captures the behaviour of light, apart from a narrow region near the wave turning point.
-Ray-tracing is a technique, which provides a framework to integrate the WKB solution along the trajectory of the light, at discrete points on an initial phase front.
+Ray-tracing is a technique which provides a framework to integrate the WKB solution along the trajectory of the light, at discrete points on an initial phase front.
 This turns out to be a highly useful tool for numerical implementation of laser modelling.
 Starting from the Helmholtz equation, now generalised to multiple dimensions~\cite{colaitis_modeling_2014},
 \begin{equation}
@@ -707,7 +712,7 @@ a solution is sought of the form,
 \begin{equation}
     a(\vec{x}) = A(\vec{x}) e^{i k_0 \varphi(\vec{x})} \equiv A(\vec{x}) e^{i \psi(\vec{x})},
 \end{equation}
-where going from 1-D$\rightarrow$3-D, we have made the change $f(z)\rightarrow A(\vec{x})$, where $A(\vec{x})$ is now called the `ray-amplitude'.
+where going from 1-D$\rightarrow$3-D the change $f(z)\rightarrow A(\vec{x})$ is made, and $A(\vec{x})$ is called the `ray-amplitude'.
 Similarly to Sec.~\ref{sec:theory_WKB}, $\varphi(\vec{x})$ is expanded, and the Ansatz is inserted into the Helmholtz equation, which returns the following equations:
 \begin{align}
     \label{eq:theory_eikonal_eq}
@@ -735,7 +740,7 @@ The wavevector is simply related to this momentum $\vec{k}=k_0\vec{p}$.
 Similarly to the WKB solution, it is valid as long as the evolution of the envelope function, \textit{i.e.} the ray amplitude $A(\vec{x})$, are slow compared to the spatial oscillations described by $|\vec{k}|$.
 These equations can be readily integrated along $\tau$ to describe the trajectory of the field, from a discrete initial point on its initial surface.
 
-The evolution of the ray amplitude is obtained by integrating the transport equation, Eq.~\ref{eq:theory_transport_eq},
+The evolution of the ray amplitude is obtained by integrating the transport equation, Eq. \ref{eq:theory_transport_eq},
 \begin{align}
     \label{eq:theory_ray_amp}
     A(\tau) &= A(0)\left| \frac{D(0)}{D(\tau)} \right|^{1/2}, \\
@@ -746,7 +751,7 @@ The evolution of the ray amplitude is obtained by integrating the transport equa
         \frac{\partial z}{\partial \zeta_1} & \frac{\partial z}{\partial \zeta_2} & \frac{\partial z}{\partial \tau}
     \end{bmatrix},
 \end{align}
-where $[x,y,z]$ and $[\zeta_1,\zeta_2,\tau]$ are the ray real-space and phase-space coordinates respectively and $D(\tau)$ is the Jacobian for the coordinate transform from phase-space to real-space~\cite{colaitis_inverse_2021}.
+where $[x,y,z]$ and $[\zeta_1,\zeta_2,\tau]$ are the ray real-space and phase-space coordinates, respectively and $D(\tau)$ is the Jacobian for the coordinate transform from phase-space to real-space~\cite{colaitis_inverse_2021}.
 Physically, the phase space coordinate $\tau$ represents the distance along a wave packet trajectory, and $[\zeta_1,\zeta_2]$ are the initial position of the wave packets on the 2-D beam port ($\tau=0$).
 This represents the conservation of energy along a tube of the light, defined by an infinitesimally small separation of rays.
 Here, infinitesimally small means that it is small compared to the spatial variations of the medium, $L\sim|\varepsilon/\nabla \varepsilon|$.
@@ -1159,7 +1164,9 @@ However, reduction of the gain via Langdon disturbing the electron distribution 
 
 \ac{LPIs} are significantly detrimental to \ac{ICF} experiments.
 For example, direct-drive experiments on \textsc{Omega} experience a 50\% deposition reduction instantaneously, which particularly occurs late in the implosion at peak incident power~\cite{colaitis_inverse_2021}.
-This severely limits the ablation and therefore stagnation pressures which can be achieved.
+This drastically reduces the coupled energy ablation and ablation pressures which can be achieved.
+If \ac{CBET} were fully mitigated, scaling relations demonstrate that the hotspot pressure required for ignition would be substantially reduced~\cite{goncharov_national_2017,campbell_laserdirectdrive_2017}.
+This would enable direct-drive ignition designs at reduced convergence ratios, which would be far more robust to instability growth, broadening the available implosion design-space.
 Mitigation of \ac{LPIs} and particularly \ac{CBET} is an active area of investigation related to direct-drive \ac{ICF} and there are several distinct approaches which have been explored.
 
 For \ac{LPIs} to occur, there must be a spatial, temporal and spectral matching between waves.
