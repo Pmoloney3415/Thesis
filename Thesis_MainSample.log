@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  27 SEP 2024 16:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.20)  28 SEP 2024 08:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Thesis_latex/Thesis_MainSample.tex
-(c:/Thesis_latex/Thesis_MainSample.tex
+**c:/Repos/Thesis/Thesis_MainSample.tex
+(c:/Repos/Thesis/Thesis_MainSample.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (./icldt.cls
@@ -2642,13 +2642,13 @@ Overfull \hbox (6.76582pt too wide) in paragraph at lines 1313--1319
 \T1/futs/m/n/10.95 beam am-pli-fi-ca-tion af-ter en-ergy con-ser-va-tion it-er-a-tions is plot-ted in Fig. [][]3.21[][].a, which demon-
  []
 
-<Numerics/Images/16beamCBET.png, id=3052, 1300.86pt x 544.434pt>
+<Numerics/Images/16beamCBET.png, id=3052, 963.6pt x 403.179pt>
 File: Numerics/Images/16beamCBET.png Graphic file (type png)
 <use Numerics/Images/16beamCBET.png>
 Package pdftex.def Info: Numerics/Images/16beamCBET.png  used on input line 1325.
-(pdftex.def)             Requested size: 415.41043pt x 173.8569pt.
+(pdftex.def)             Requested size: 415.41043pt x 173.80653pt.
 [124 <./Numerics/Images/caustic_cbet_test_resscan.png>]
-Underfull \vbox (badness 1275) has occurred while \output is active []
+Underfull \vbox (badness 1303) has occurred while \output is active []
 
  [125 <./Numerics/Images/16beamCBET.png>]
 <Numerics/Images/89224_setup.png, id=3092, 780.9978pt x 409.53pt>
@@ -3294,13 +3294,13 @@ Package logreq Info: Writing requests to 'Thesis_MainSample.run.xml'.
 Here is how much of TeX's memory you used:
  37195 strings out of 474165
  776240 string characters out of 5749497
- 2716794 words of memory out of 5000000
+ 2716792 words of memory out of 5000000
  57821 multiletter control sequences out of 15000+600000
  743253 words of font info for 204 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,19n,121p,10978b,2024s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (230 pages, 61299936 bytes).
+Output written on Thesis_MainSample.pdf (230 pages, 60293047 bytes).
 PDF statistics:
  6012 PDF objects out of 6186 (max. 8388607)
  5395 compressed objects within 54 object streams
