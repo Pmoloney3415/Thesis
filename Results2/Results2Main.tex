@@ -1,5 +1,6 @@
 \chapter{Simulations of Cross-Beam Energy Transfer for Magnetised Direct-Drive}%
 \label{chap:Mag}
+\acresetall
 
 This chapter describes a set of simulations which were conducted to understand the role of \ac{CBET} in magnetised, direct-drive implosions.
 Magnetised \ac{ICF} is a promising route to achieving higher target gains, due to the reduction of hotspot thermal energy loss at stagnation and additional confinement of the DT fusion alpha products.
@@ -51,7 +52,7 @@ For a central hotspot ignition target, ignition occurs when the heat source of a
 Thermal conduction is suppressed perpendicular to magnetic field lines, therefore a magnetic field can reduce thermal losses and aid the power balance required for ignition.
 Fig.~\ref{fig:Res2_omegatau} demonstrates the effect of increasing magnetisation on a unit positive test charge.
 By constraining charged particles to orbit field lines, collisional transport terms, such as thermal conduction, are reduced perpendicular to the field direction.
-Fits of transport coefficients to Fokker-Planck simulations, demonstrate that in a Hydrogen plasma, thermal conductivity perpendicular to field lines, $\kappa_{\perp}$, is reduced to $\sim$30\% of the parallel value, $\kappa_{\parallel}$, at Hall parameter, $\omega\tau=1$, and $\sim$1\% at $\omega\tau=10$~\cite{epperlein_plasma_1986}.
+Transport calculations demonstrate that in a Hydrogen plasma, thermal conductivity perpendicular to field lines, $\kappa_{\perp}$, is reduced to $\sim$30\% of the parallel value, $\kappa_{\parallel}$, at Hall parameter, $\omega\tau=1$, and $\sim$1\% at $\omega\tau=10$~\cite{epperlein_plasma_1986}.
 Thus, for Hall parameters, $\omega\tau\gtrsim 10$, electron thermal conduction losses are greatly reduced in the direction perpendicular to field lines.
 
 Using an order of magnitude estimate for a sub-ignition threshold hotspot, $T_e\sim 2.5\ \text{keV}$ and $\rho\sim50\ \text{g cm}^{-3}$, a field strength $|\vec{B}|\sim 2.5\ \text{kT}$ is required to obtain $\omega\tau\sim1$~\cite{oneill_modelling_2023}.
@@ -381,7 +382,7 @@ This section presents the effect that various extended-\ac{MHD} terms had on the
 Simulations were conducted with an initial field strength $B_{z0}=\ 25\text{T}$ and particular terms turned off, to deduce what the important physical processes were.
 The origin of the field structure is presented, which demonstrates that in the plasma corona, field lines are mainly radial due to the field being frozen in to highly conductive, radially outflowing plasma.
 Anisotropic thermal conduction in this highly magnetised coronal plasma acted to keep heat localised to the polar regions, which enhanced the drive on the pole relative to the waist.
-The results demonstrate that resistive diffusion and the Lorentz force have very little impact on the implosion physics, due to the bulk of the plasma being highly resistive and high-$\beta$, respectively.
+The results demonstrate that resistive diffusion and the Lorentz force have very little impact on the implosion physics, due to the bulk of the plasma being highly conductive and high-$\beta$, respectively.
 Nernst-advection of the magnetic field acted to significantly redistribute the field in the low Hall parameter, equatorial region of the capsule, which formed a `divot' in density on the capsule waist.
 This divot was however well separated from the region where burn was important, and thus had minimal impact on integrated neutron diagnostics.
 
@@ -501,7 +502,6 @@ The Hall parameter, $\omega\tau\propto T^{3/2}|\vec{B}|$, so a less oblate shock
     \includegraphics[width=\linewidth]{Results2/Images/nernst_comp_Bstream.png}
     \centering
     \caption{Panel a) plots in-flight electron density profiles from the $B_{z0}=25\ \text{T}$, no-\ac{CBET} simulations with (left-side) and without (right-side) Nernst-advection of the magnetic field.
-    The magnetic field is also plotted as streamlines in the top-half of each plot, coloured by magnitude.
     Panel b) plots magnetic field magnitude from the Nernst (left-side) and no-Nernst (right-side) simulation along with Nernst-advection velocity streamlines from the Nernst-on simulation.
     Advection of the field is important in the low Hall parameter equatorial region, pulling $\vec{B}$ down $\nabla T_e$, into the dense wall.
     Altered field at the equator impacts on the magnetised thermal conduction, which ultimately imprints on the density, as is seen in panel a).}%
@@ -671,7 +671,7 @@ When this occurred, the trajectory of light changed asymmetrically, leading to a
 
 Firstly, the expected change to the bangtime profiles from the similar, qualitative behaviour shall be described.
 Bangtimes for these implosions were at $t\sim0.75\ \text{ns}$, so the late time behaviour shortly before and after this, was unimportant in dictating the bangtime shapes.
-The most significant $\Delta P_{\text{CBET}}$ values occurred between $t\sim0.2\rightarrow0.3\ \text{ns}$ at the poles, for both the magnetised and magnetised simulation.
+The most significant $\Delta P_{\text{CBET}}$ values occurred between $t\sim0.2\rightarrow0.3\ \text{ns}$ at the poles, for both the magnetised and unmagnetised simulation.
 This \ac{CBET}-induced power redistribution would have reduced the strength of the shock launch along the poles, compared to the equator.
 Therefore, simulations with an equal magnitude of power deposition, but no spatial relocation of deposition (\textit{i.e.} the partial-\ac{CBET} simulations), were expected to exhibit a larger $\ell=2$ asymmetry, because \ac{CBET} appeared to reduce the asymmetry of the drive.
 

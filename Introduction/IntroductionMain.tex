@@ -1,5 +1,6 @@
 \chapter{Introduction}%
 \label{chap:intro}
+\acresetall
 
 
 %###############################################################################################################################
@@ -265,9 +266,11 @@ The driver energy initiates a fusion reaction, which releases $E_{\text{fus}}$, 
 The released fusion energy, for example in the form of energetic neutrons, is converted into thermal energy in an encompassing `blanket', and then into output electrical energy, $E_\text{out}$, by a thermal-cycle (such as steam turbines), with efficiency, $\eta_{\text{th}}$.
 A fraction, $f$, of this generated energy is recycled back into the plant to power the driver, such that the remaining fraction is sent to the grid,
 \begin{equation}
-    E_{\text{grid}} = (1-f) \eta_{\text{th}} \eta_{\text{d}} G E_{\text{in}},
+    E_{\text{grid}} = (1-f) \eta_{\text{th}} \eta_{\text{d}} G E_{\text{in}}.
 \end{equation}
-with the constraint, $f \eta_{\text{th}} \eta_{\text{d}} G \geq 1$ for net energy production.
+In order for the reaction to be self-sustaining, $f$ must be set such that $E_{\text{in}}$ is sufficient to initiate another reaction.
+This leads to the energy balance for the cycle, $f\eta_{\text{d}}\eta_{\text{th}}G=1$.
+By definition, $0\leq f \leq 1$, so if $\eta_{\text{d}}\eta_{\text{th}}G\leq 1$, then net energy production is not possible.
 Power plants must also produce a sufficiently large volume of energy to balance the capital cost required to build them.
 Therefore, several $\sim100\ \text{MJ}$ reactions must occur each second for a $100\ \text{MW}$ plant, which necessitates a driver that can operate at $\sim10\ \text{Hz}$.
 
@@ -458,6 +461,16 @@ For direct-drive, the dominant \ac{CBET} interaction occurs as light from the ed
 This mechanism is responsible for a $\sim20\%$ reduction in energy for typical \textsc{Omega} implosions over the whole implosion, and can instantaneously reduce power deposition by up to $\sim50\%$~\cite{colaitis_inverse_2021}.
 Additionally, \ac{LPIs} which excite an \ac{EPW}, specifically \ac{TPD} and \ac{SRS}, can trap and accelerate a population of electrons to high energies ($\gtrsim50\ \text{keV}$), which travel through the ablator material and preheat the fuel, reducing compressibility and thus performance.
 Finally, filamentation of the beam can occur, where the field self-focuses through low-density channels in the plasma, which increases laser non-uniformities~\cite{afshar-rad_evidence_1992}.
+
+On the \textsc{Omega} laser facility, direct-drive implosion designs typically operate with peak intensities that are kept below $I\sim10^{19}\ \text{Wm}^{-2}$.
+This is primarily in order to limit the growth rate of \ac{LPIs}, which increase in significance at greater intensities.
+Considering just the energy reflection caused by \ac{LPIs} and not hot electron generation, \ac{CBET} is the dominant instability on \textsc{Omega}.
+Future direct-drive facilities with greater laser energy would lead to longer plasma scale-lengths.
+In these long scale-length plasmas additional instabilities, namely \ac{SRS}, are observed to become more significant~\cite{scott_shock_2021}.
+Additionally, laser filamentation is not a significant concern for current \textsc{Omega} direct-drive designs due to the limited laser intensity and beam smoothing techniques employed.
+Smoothing techniques act to limit the available seeds for filament growth.
+The work in this thesis related to \ac{LPIs} aimed to improve modelling of current-scale direct-drive designs, primarily on the \textsc{Omega} laser facility.
+Model development therefore focussed on accurately modelling the dominant mechanism for energy reflection, \ac{CBET}.
 
 %################################################################################
 %################################################################################

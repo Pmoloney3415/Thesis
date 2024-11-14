@@ -258,8 +258,8 @@
       \strng{authorbibnamehash}{19bfb42f335f289412c40427f5bfb472}
       \strng{authornamehash}{19bfb42f335f289412c40427f5bfb472}
       \strng{authorfullhash}{19bfb42f335f289412c40427f5bfb472}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -806,8 +806,8 @@
       \strng{authorbibnamehash}{b07316d1e355a530420db1254940037b}
       \strng{authornamehash}{b07316d1e355a530420db1254940037b}
       \strng{authorfullhash}{b07316d1e355a530420db1254940037b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0028-0836, 1476-4687}
@@ -2309,8 +2309,8 @@
       \strng{authornamehash}{c6f937328674c3ab74805096ff8e1b70}
       \strng{authorfullhash}{8fd4c1c13e260ff05da6a836d6586668}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0741-3335, 1361-6587}
@@ -3080,8 +3080,8 @@
       \strng{authorbibnamehash}{adffe14815053d9160e59356c2a479ac}
       \strng{authornamehash}{adffe14815053d9160e59356c2a479ac}
       \strng{authorfullhash}{d74fd9f861c8ac5f3b424316248f3a20}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1094-4087}
@@ -3178,8 +3178,8 @@
       \strng{authorbibnamehash}{7de9abd2eacbf7b1315127f6d7739778}
       \strng{authornamehash}{7de9abd2eacbf7b1315127f6d7739778}
       \strng{authorfullhash}{72cff203fb26cb9c94a4dce81b9d4b3c}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{2095-4719, 2052-3289}
@@ -21433,8 +21433,8 @@
       \strng{authornamehash}{4cc55e6095ec58422ab01cef09a40d5c}
       \strng{authorfullhash}{80bae126965a465b760ae4b08fae21a8}
       \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0021-9991}
@@ -21508,6 +21508,132 @@
       \range{pages}{4}
       \verb{doi}
       \verb 10.1103/PhysRevLett.68.942
+      \endverb
+    \endentry
+    \entry{scott_shock_2021}{article}{}
+      \name{author}{19}{}{%
+        {{hash=6e53019045e042595a40c07f176e395b}{%
+           family={Scott},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi H.\bibnamedelimi H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=0309fb2ab61e686cf5bf998033ab3fad}{%
+           family={Glize},
+           familyi={G\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=23255922fe1b935e9ee007fba931c1a7}{%
+           family={Antonelli},
+           familyi={A\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0e459862e8dbf21a16ed1c0b9746d29c}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4215a8f93ed32e346007dea60ff97ba0}{%
+           family={Theobald},
+           familyi={T\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=8b74e1185a384bbd2ffa6ae592ef9750}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e416fb763da15cc47886ac6129215e9c}{%
+           family={Betti},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bb9d925c3d6fe02f81be17747ebc045e}{%
+           family={Stoeckl},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=38456db97c29cdc6fe1c6152bcb8586d}{%
+           family={Seaton},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=5d59bc87f9df037ad01a8771d21cae6a}{%
+           family={Arber},
+           familyi={A\bibinitperiod},
+           given={T.\bibnamedelimi D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=e8a380884785a8969b84088e1fd9a869}{%
+           family={Barlow},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9d48940159421680abb3b7e1667f95b3}{%
+           family={Goffrey},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4ad15ddff138dc47ae0c1da17ece3b06}{%
+           family={Bennett},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0725d4a843cf1cadd5a37319e6248f35}{%
+           family={Garbett},
+           familyi={G\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=65e781f78d1225d0af48b90ae8a26e5a}{%
+           family={Atzeni},
+           familyi={A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2594c7abef7f8283c332919597fa2cff}{%
+           family={Casner},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=01f30a84695805f41a63cb856bdde855}{%
+           family={Batani},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d32559a5fc6b9c48ad950f89259bc465}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d850a4601b9c74f2e4663b853bc3bc70}{%
+           family={Woolsey},
+           familyi={W\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{433787e17a71ea8ae00480315012dfab}
+      \strng{fullhash}{2f79e6a4e7f90bbe6ae8a746d24c4562}
+      \strng{bibnamehash}{433787e17a71ea8ae00480315012dfab}
+      \strng{authorbibnamehash}{433787e17a71ea8ae00480315012dfab}
+      \strng{authornamehash}{433787e17a71ea8ae00480315012dfab}
+      \strng{authorfullhash}{2f79e6a4e7f90bbe6ae8a746d24c4562}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{6}
+      \field{title}{Shock {{Ignition Laser-Plasma Interactions}} in {{Ignition-Scale Plasmas}}}
+      \field{volume}{127}
+      \field{year}{2021}
+      \field{pages}{065001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.127.065001
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\MKYXBYXQ\Scott et al. - 2021 - Shock Ignition Laser-Plasma Interactions in Igniti.pdf
       \endverb
     \endentry
     \entry{zhou_hydrodynamic_2007}{article}{}
@@ -22892,8 +23018,8 @@
       \strng{authornamehash}{37b676ca2c4a56ed9c1bbb331635bb49}
       \strng{authorfullhash}{0e8f1bee78a1a366da7a1deb9e39fb16}
       \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1745-2473, 1745-2481}
@@ -22942,6 +23068,61 @@
       \field{langid}{english}
       \field{title}{Introduction to Plasma Physics and Controlled Fusion}
       \field{year}{2018}
+    \endentry
+    \entry{gibbon_treecode_2004}{article}{}
+      \name{author}{5}{}{%
+        {{hash=584d27c4d52f916f677c821843c41870}{%
+           family={Gibbon},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=51393e0ab9e4e64019271189176776a8}{%
+           family={Beg},
+           familyi={B\bibinitperiod},
+           given={F.\bibnamedelimi N.},
+           giveni={F\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=64e2786164720d827a1426b2815874f5}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={E.\bibnamedelimi L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=9dac33abab4ddc1f11cb1468cbe40d91}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=3a31c8407bb2b7a3cfd7078d4ed8a0ec}{%
+           family={Zepf},
+           familyi={Z\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{029d316e4a7695e588d5e7ac20b82c38}
+      \strng{fullhash}{22150c56f8cfcae45327a25879d3f323}
+      \strng{bibnamehash}{029d316e4a7695e588d5e7ac20b82c38}
+      \strng{authorbibnamehash}{029d316e4a7695e588d5e7ac20b82c38}
+      \strng{authornamehash}{029d316e4a7695e588d5e7ac20b82c38}
+      \strng{authorfullhash}{22150c56f8cfcae45327a25879d3f323}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Tree-Code Simulations of Proton Acceleration from Laser-Irradiated Wire Targets}
+      \field{volume}{11}
+      \field{year}{2004}
+      \field{pages}{4032\bibrangedash 4040}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1063/1.1767096
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\JRH2PD7L\Gibbon et al. - 2004 - Tree-code simulations of proton acceleration from .pdf
+      \endverb
     \endentry
     \entry{barlow_role_2022}{article}{}
       \name{author}{14}{}{%
@@ -23173,6 +23354,43 @@
       \verb 10.1016/j.jcp.2011.09.028
       \endverb
     \endentry
+    \entry{kingham_implicit_2004}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5b067aac485cc25a62b0f406f2006525}{%
+           family={Kingham},
+           familyi={K\bibinitperiod},
+           given={R.J.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7c54b8956af1b23c45ec779bf37ab3d7}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={A.R.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d963679e1a19bcbd74910384422b9275}
+      \strng{fullhash}{d963679e1a19bcbd74910384422b9275}
+      \strng{bibnamehash}{d963679e1a19bcbd74910384422b9275}
+      \strng{authorbibnamehash}{d963679e1a19bcbd74910384422b9275}
+      \strng{authornamehash}{d963679e1a19bcbd74910384422b9275}
+      \strng{authorfullhash}{d963679e1a19bcbd74910384422b9275}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00219991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{An Implicit {{Vlasov}}--{{Fokker}}--{{Planck}} Code to Model Non-Local Electron Transport in 2-{{D}} with Magnetic Fields}
+      \field{volume}{194}
+      \field{year}{2004}
+      \field{pages}{1\bibrangedash 34}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1016/j.jcp.2003.08.017
+      \endverb
+    \endentry
     \entry{taitano_eulerian_2021}{article}{}
       \name{author}{6}{}{%
         {{hash=384fe57a8c2074ac7112b9491ee45680}{%
@@ -23212,8 +23430,8 @@
       \strng{authorbibnamehash}{7f3b8e5753e3e49286dcec05932820cf}
       \strng{authornamehash}{7f3b8e5753e3e49286dcec05932820cf}
       \strng{authorfullhash}{d05101cc63ccd9010a347fb4fe149791}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00104655}
@@ -23232,41 +23450,55 @@
       \verb C:\Users\Philip\Zotero\storage\TXRG6D6U\Taitano et al. - 2021 - An Eulerian Vlasov-Fokker–Planck algorithm for sph.pdf
       \endverb
     \endentry
-    \entry{kingham_implicit_2004}{article}{}
-      \name{author}{2}{}{%
+    \entry{ridgers_inadequacy_2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a5a3b47e15da60b22b3f12a1a09db3c5}{%
+           family={Ridgers},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=6af67eadff85b27ef079857948aefd82}{%
+           family={Arran},
+           familyi={A\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=354fab86fc078303272cba5a5de3462e}{%
+           family={Bissell},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
         {{hash=5b067aac485cc25a62b0f406f2006525}{%
            family={Kingham},
            familyi={K\bibinitperiod},
-           given={R.J.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=7c54b8956af1b23c45ec779bf37ab3d7}{%
-           family={Bell},
-           familyi={B\bibinitperiod},
-           given={A.R.},
-           giveni={A\bibinitperiod}}}%
+           given={R.\bibnamedelimi J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
       }
-      \strng{namehash}{d963679e1a19bcbd74910384422b9275}
-      \strng{fullhash}{d963679e1a19bcbd74910384422b9275}
-      \strng{bibnamehash}{d963679e1a19bcbd74910384422b9275}
-      \strng{authorbibnamehash}{d963679e1a19bcbd74910384422b9275}
-      \strng{authornamehash}{d963679e1a19bcbd74910384422b9275}
-      \strng{authorfullhash}{d963679e1a19bcbd74910384422b9275}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \strng{namehash}{73d7cf9bb277fe1c0740619422ace753}
+      \strng{fullhash}{a0868b3beec536eb4237557edf2cff60}
+      \strng{bibnamehash}{73d7cf9bb277fe1c0740619422ace753}
+      \strng{authorbibnamehash}{73d7cf9bb277fe1c0740619422ace753}
+      \strng{authornamehash}{73d7cf9bb277fe1c0740619422ace753}
+      \strng{authorfullhash}{a0868b3beec536eb4237557edf2cff60}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{00219991}
-      \field{journaltitle}{Journal of Computational Physics}
+      \field{issn}{1364-503X, 1471-2962}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
       \field{langid}{english}
-      \field{month}{2}
-      \field{number}{1}
-      \field{title}{An Implicit {{Vlasov}}--{{Fokker}}--{{Planck}} Code to Model Non-Local Electron Transport in 2-{{D}} with Magnetic Fields}
-      \field{volume}{194}
-      \field{year}{2004}
-      \field{pages}{1\bibrangedash 34}
-      \range{pages}{34}
+      \field{month}{1}
+      \field{number}{2189}
+      \field{title}{The Inadequacy of a Magnetohydrodynamic Approach to the {{Biermann}} Battery}
+      \field{volume}{379}
+      \field{year}{2021}
+      \field{pages}{20200017}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.1016/j.jcp.2003.08.017
+      \verb 10.1098/rsta.2020.0017
+      \endverb
+      \verb{file}
+      \verb C:\Users\Philip\Zotero\storage\NUIAAZLV\Ridgers et al. - 2021 - The inadequacy of a magnetohydrodynamic approach t.pdf
       \endverb
     \endentry
     \entry{arber_contemporary_2015}{article}{}
@@ -23333,8 +23565,8 @@
       \strng{authorbibnamehash}{2a947cd35556f4810f60cf140133d1fb}
       \strng{authornamehash}{2a947cd35556f4810f60cf140133d1fb}
       \strng{authorfullhash}{2961b237423c30eab7f6d81aaa5a3cf1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0741-3335, 1361-6587}
@@ -25012,6 +25244,147 @@
       \verb 10.1103/PhysRevLett.44.575
       \endverb
     \endentry
+    \entry{ridgers_transport_2008}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a5a3b47e15da60b22b3f12a1a09db3c5}{%
+           family={Ridgers},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=934468a5b0046f1955b3dc6f15a54ec5}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={A.\bibnamedelimi G.\bibnamedelimi R.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=5b067aac485cc25a62b0f406f2006525}{%
+           family={Kingham},
+           familyi={K\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7d5ff9518fe28236d217b805ef68e4e6}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={A.\bibnamedelimi P.\bibnamedelimi L.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{73d7cf9bb277fe1c0740619422ace753}
+      \strng{fullhash}{b749e01234220e8488a38d46f2a49623}
+      \strng{bibnamehash}{73d7cf9bb277fe1c0740619422ace753}
+      \strng{authorbibnamehash}{73d7cf9bb277fe1c0740619422ace753}
+      \strng{authornamehash}{73d7cf9bb277fe1c0740619422ace753}
+      \strng{authorfullhash}{b749e01234220e8488a38d46f2a49623}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Transport in the Presence of Inverse Bremsstrahlung Heating and Magnetic Fields}
+      \field{volume}{15}
+      \field{year}{2008}
+      \field{pages}{092311}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.2978092
+      \endverb
+    \endentry
+    \entry{turnbull_inverse_2023}{article}{}
+      \name{author}{13}{}{%
+        {{hash=35e38546471d850fcc698116699e9607}{%
+           family={Turnbull},
+           familyi={T\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5fb7894805ff43d5cba2f369cdeffa3e}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=57b7018e9dd60a8c33ec94bbd9da4958}{%
+           family={Sherlock},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=351eca42106c99a75d3c1c313f6a067d}{%
+           family={Divol},
+           familyi={D\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=732b892681372fb2245c5beca12b82e1}{%
+           family={Shaffer},
+           familyi={S\bibinitperiod},
+           given={N.\bibnamedelimi R.},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=78304409222604d42e364a4b1cce89e3}{%
+           family={Strozzi},
+           familyi={S\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e934becb097bb2f595aae90e2af104fd}{%
+           family={Colaïtis},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f60ba9a87c812b68a8c0a413dcdc0990}{%
+           family={Edgell},
+           familyi={E\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=77f30f2c1d64ccde467444c3db2360b6}{%
+           family={Follett},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=8d129340ef115e3eb414d6db704183ce}{%
+           family={McMillen},
+           familyi={M\bibinitperiod},
+           given={K.\bibnamedelimi R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=315cab441d841c10e0b25f2596df0726}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0be7e9d258212fd30f536a866c985dd0}{%
+           family={Milder},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=9092f6f29c9362cee82dcdc73a1312b4}{%
+           family={Froula},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{f438dda340a226d676636543ecce9a2e}
+      \strng{fullhash}{a85fdd75d7b69379443874647222fb04}
+      \strng{bibnamehash}{f438dda340a226d676636543ecce9a2e}
+      \strng{authorbibnamehash}{f438dda340a226d676636543ecce9a2e}
+      \strng{authornamehash}{f438dda340a226d676636543ecce9a2e}
+      \strng{authorfullhash}{a85fdd75d7b69379443874647222fb04}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{14}
+      \field{title}{Inverse {{Bremsstrahlung Absorption}}}
+      \field{volume}{130}
+      \field{year}{2023}
+      \field{pages}{145103}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.130.145103
+      \endverb
+    \endentry
     \entry{craxton_directdrive_2015}{article}{}
       \name{author}{32}{}{%
         {{hash=a727fc9d172e491c1eeaf50e3211f0c8}{%
@@ -26177,7 +26550,7 @@
       \strng{authorbibnamehash}{4d0b3bc0adb2af041c7ff3ac98b3aa82}
       \strng{authornamehash}{4d0b3bc0adb2af041c7ff3ac98b3aa82}
       \strng{authorfullhash}{41d4291fe7945e17e63bd91e1a759fbd}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -29204,8 +29577,8 @@
       \strng{authorbibnamehash}{9b3bf360697b8b90c9f6d44e2714cb5a}
       \strng{authornamehash}{9b3bf360697b8b90c9f6d44e2714cb5a}
       \strng{authorfullhash}{087921d29cc9bc9c161d1667ad491ecc}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -29260,8 +29633,8 @@
       \strng{authornamehash}{4cc55e6095ec58422ab01cef09a40d5c}
       \strng{authorfullhash}{787b2a501037976c9ea55a47d3e62e9c}
       \field{extraname}{9}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1070-664X, 1089-7674}
@@ -29312,8 +29685,8 @@
       \strng{authornamehash}{4cc55e6095ec58422ab01cef09a40d5c}
       \strng{authorfullhash}{c0cbd2d6a9ca3ffea2a9e874c5016367}
       \field{extraname}{10}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1539-3755, 1550-2376}
@@ -29378,8 +29751,8 @@
       \strng{authornamehash}{294356f4aae5a63b374f8220deb729c1}
       \strng{authorfullhash}{879eb59d6cf77fb056dd6a3f6b98f11d}
       \field{extraname}{3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2470-0045, 2470-0053}
@@ -29741,6 +30114,53 @@
       \endverb
       \verb{file}
       \verb C:\Users\Philip\Zotero\storage\VDADW6EE\Follett et al. - 2021 - Thresholds of absolute two-plasmon-decay and stimu.pdf
+      \endverb
+    \endentry
+    \entry{berger_dominant_1998}{article}{}
+      \name{author}{4}{}{%
+        {{hash=22f4cba21b3c6fdc42d12eed80e3a6f7}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={R.\bibnamedelimi L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2316ef148cd2978aa1ec49b12f5fa597}{%
+           family={Still},
+           familyi={S\bibinitperiod},
+           given={C.\bibnamedelimi H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=d712f81f6c75ff959adb896171e823aa}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=07c470b529caa8beb1b88683dfe88654}{%
+           family={Langdon},
+           familyi={L\bibinitperiod},
+           given={A.\bibnamedelimi B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae8e5bcbacbafb0c8d68f0ee128fb169}
+      \strng{fullhash}{5e6e635eec3855d678659c06d9430956}
+      \strng{bibnamehash}{ae8e5bcbacbafb0c8d68f0ee128fb169}
+      \strng{authorbibnamehash}{ae8e5bcbacbafb0c8d68f0ee128fb169}
+      \strng{authornamehash}{ae8e5bcbacbafb0c8d68f0ee128fb169}
+      \strng{authorfullhash}{5e6e635eec3855d678659c06d9430956}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1070-664X, 1089-7674}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{On the Dominant and Subdominant Behavior of Stimulated {{Raman}} and {{Brillouin}} Scattering Driven by Nonuniform Laser Beams}
+      \field{volume}{5}
+      \field{year}{1998}
+      \field{pages}{4337\bibrangedash 4356}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1063/1.873171
       \endverb
     \endentry
     \entry{seaton_crossbeam_2022a}{article}{}
@@ -31383,6 +31803,7 @@
       \strng{authorbibnamehash}{4527199db85f2f7b3c7c0611b007d15d}
       \strng{authornamehash}{4527199db85f2f7b3c7c0611b007d15d}
       \strng{authorfullhash}{763d8533472351e0dc03a09ba21ff302}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -31542,8 +31963,8 @@
       \strng{authornamehash}{62c8a9a32198ffce5c611e5cf566ece2}
       \strng{authorfullhash}{57f28d32ec6ee9248ed2d65fa9bedb50}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{ADS Bibcode: 2020APS..DPPB09014T}
@@ -31604,8 +32025,8 @@
       \strng{authornamehash}{2416c50f111f0461dfcd22c8a1220467}
       \strng{authorfullhash}{d3be615ca57f55123c228bb1bbb9a90c}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0031-9007, 1079-7114}
@@ -31659,8 +32080,8 @@
       \strng{authorbibnamehash}{881a0294956d2dee526d60f6d3029ea2}
       \strng{authornamehash}{881a0294956d2dee526d60f6d3029ea2}
       \strng{authorfullhash}{e62a0ba14f475cb5b637c51647d82f68}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0031-9007, 1079-7114}
@@ -31750,8 +32171,8 @@
       \strng{authornamehash}{2416c50f111f0461dfcd22c8a1220467}
       \strng{authorfullhash}{a1bd425ffbd2b06e798d650273443457}
       \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -31816,8 +32237,8 @@
       \strng{authornamehash}{eea688524cd490fdf61ec339890e7ef6}
       \strng{authorfullhash}{f9a1a239fc6247947450d97c77ec4c93}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0031-9007}
@@ -31856,8 +32277,8 @@
       \strng{authorbibnamehash}{e40ff18c4dd758af770a1886cedc7d10}
       \strng{authornamehash}{e40ff18c4dd758af770a1886cedc7d10}
       \strng{authorfullhash}{e40ff18c4dd758af770a1886cedc7d10}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -31936,8 +32357,8 @@
       \strng{authorbibnamehash}{d65960b0d2c8bca6e331a1dedb5e938f}
       \strng{authornamehash}{d65960b0d2c8bca6e331a1dedb5e938f}
       \strng{authorfullhash}{c1252093abe890089ff8004c3940f8b0}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1070-664X, 1089-7674}
@@ -32287,8 +32708,8 @@
       \strng{authornamehash}{c6f937328674c3ab74805096ff8e1b70}
       \strng{authorfullhash}{f1f46d15dcd2035d5e0d9c841023f398}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1748-0221}
@@ -33009,6 +33430,72 @@
       \verb{file}
       \verb C:\Users\Philip\Zotero\storage\CE79QL2I\Woo et al. - 2020 - Inferring thermal ion temperature and residual kin.pdf
       \endverb
+    \endentry
+    \entry{ejaz_can_2024}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=48c5692870efb0415aed114c424cf863}{%
+           family={Ejaz},
+           familyi={E\bibinitperiod},
+           given={Rahman},
+           giveni={R\bibinitperiod}}}%
+        {{hash=811a27c9670b3b12e3b11ff01da492d2}{%
+           family={Gopalaswamy},
+           familyi={G\bibinitperiod},
+           given={Varchas},
+           giveni={V\bibinitperiod}}}%
+        {{hash=983e63c44aa21540568ce9445265d4bf}{%
+           family={Betti},
+           familyi={B\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6677b8cc9d5c956e78b43e797cd7926d}{%
+           family={Lees},
+           familyi={L\bibinitperiod},
+           given={Aarne},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0def532433a7bde871af921ac26a24a1}{%
+           family={Kanan},
+           familyi={K\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{6ee126fac2d36b11079e8284f673c384}
+      \strng{fullhash}{a2c35e8ffa7e980cb446a99f68e94cbc}
+      \strng{bibnamehash}{6ee126fac2d36b11079e8284f673c384}
+      \strng{authorbibnamehash}{6ee126fac2d36b11079e8284f673c384}
+      \strng{authornamehash}{6ee126fac2d36b11079e8284f673c384}
+      \strng{authorfullhash}{a2c35e8ffa7e980cb446a99f68e94cbc}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{9}
+      \field{number}{arXiv:2409.08832}
+      \field{title}{Can {{Kans}} (Re)Discover Predictive Models for {{Direct-Drive Laser Fusion}}?}
+      \field{urlday}{14}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2409.08832
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\Philip\\Zotero\\storage\\3MVCPS2P\\Ejaz et al. - 2024 - Can Kans (re)discover predictive models for Direct.pdf;C\:\\Users\\Philip\\Zotero\\storage\\M2C649QU\\2409.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2409.08832
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2409.08832
+      \endverb
+      \keyw{Computer Science - Machine Learning}
     \endentry
     \entry{perez-callejo_cylindrical_2022}{article}{}
       \name{author}{30}{}{%
@@ -36897,99 +37384,6 @@
       \field{title}{Ray Tracing and beyond: Phase Space Methods in Plasma Wave Theory}
       \field{year}{2014}
     \endentry
-    \entry{turnbull_inverse_2023}{article}{}
-      \name{author}{13}{}{%
-        {{hash=35e38546471d850fcc698116699e9607}{%
-           family={Turnbull},
-           familyi={T\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=5fb7894805ff43d5cba2f369cdeffa3e}{%
-           family={Katz},
-           familyi={K\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=57b7018e9dd60a8c33ec94bbd9da4958}{%
-           family={Sherlock},
-           familyi={S\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=351eca42106c99a75d3c1c313f6a067d}{%
-           family={Divol},
-           familyi={D\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod}}}%
-        {{hash=732b892681372fb2245c5beca12b82e1}{%
-           family={Shaffer},
-           familyi={S\bibinitperiod},
-           given={N.\bibnamedelimi R.},
-           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=78304409222604d42e364a4b1cce89e3}{%
-           family={Strozzi},
-           familyi={S\bibinitperiod},
-           given={D.\bibnamedelimi J.},
-           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=e934becb097bb2f595aae90e2af104fd}{%
-           family={Colaïtis},
-           familyi={C\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=f60ba9a87c812b68a8c0a413dcdc0990}{%
-           family={Edgell},
-           familyi={E\bibinitperiod},
-           given={D.\bibnamedelimi H.},
-           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=77f30f2c1d64ccde467444c3db2360b6}{%
-           family={Follett},
-           familyi={F\bibinitperiod},
-           given={R.\bibnamedelimi K.},
-           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=8d129340ef115e3eb414d6db704183ce}{%
-           family={McMillen},
-           familyi={M\bibinitperiod},
-           given={K.\bibnamedelimi R.},
-           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=315cab441d841c10e0b25f2596df0726}{%
-           family={Michel},
-           familyi={M\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=0be7e9d258212fd30f536a866c985dd0}{%
-           family={Milder},
-           familyi={M\bibinitperiod},
-           given={A.\bibnamedelimi L.},
-           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=9092f6f29c9362cee82dcdc73a1312b4}{%
-           family={Froula},
-           familyi={F\bibinitperiod},
-           given={D.\bibnamedelimi H.},
-           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{f438dda340a226d676636543ecce9a2e}
-      \strng{fullhash}{a85fdd75d7b69379443874647222fb04}
-      \strng{bibnamehash}{f438dda340a226d676636543ecce9a2e}
-      \strng{authorbibnamehash}{f438dda340a226d676636543ecce9a2e}
-      \strng{authornamehash}{f438dda340a226d676636543ecce9a2e}
-      \strng{authorfullhash}{a85fdd75d7b69379443874647222fb04}
-      \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0031-9007, 1079-7114}
-      \field{journaltitle}{Physical Review Letters}
-      \field{langid}{english}
-      \field{month}{4}
-      \field{number}{14}
-      \field{title}{Inverse {{Bremsstrahlung Absorption}}}
-      \field{volume}{130}
-      \field{year}{2023}
-      \field{pages}{145103}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.130.145103
-      \endverb
-    \endentry
     \entry{chittenden_crossbeam_2024}{misc}{}
       \name{author}{1}{}{%
         {{hash=97df229c0143ddf1d1280169eab4fb3d}{%
@@ -37014,132 +37408,6 @@
       \field{month}{9}
       \field{title}{Cross-{{Beam Energy Transfer}} in {{Magnetised Laser Driven Hohlraums}}}
       \field{year}{2024}
-    \endentry
-    \entry{scott_shock_2021}{article}{}
-      \name{author}{19}{}{%
-        {{hash=6e53019045e042595a40c07f176e395b}{%
-           family={Scott},
-           familyi={S\bibinitperiod},
-           given={R.\bibnamedelimi H.\bibnamedelimi H.},
-           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=0309fb2ab61e686cf5bf998033ab3fad}{%
-           family={Glize},
-           familyi={G\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=23255922fe1b935e9ee007fba931c1a7}{%
-           family={Antonelli},
-           familyi={A\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod}}}%
-        {{hash=0e459862e8dbf21a16ed1c0b9746d29c}{%
-           family={Khan},
-           familyi={K\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=4215a8f93ed32e346007dea60ff97ba0}{%
-           family={Theobald},
-           familyi={T\bibinitperiod},
-           given={W.},
-           giveni={W\bibinitperiod}}}%
-        {{hash=8b74e1185a384bbd2ffa6ae592ef9750}{%
-           family={Wei},
-           familyi={W\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e416fb763da15cc47886ac6129215e9c}{%
-           family={Betti},
-           familyi={B\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=bb9d925c3d6fe02f81be17747ebc045e}{%
-           family={Stoeckl},
-           familyi={S\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-        {{hash=38456db97c29cdc6fe1c6152bcb8586d}{%
-           family={Seaton},
-           familyi={S\bibinitperiod},
-           given={A.\bibnamedelimi G.},
-           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=5d59bc87f9df037ad01a8771d21cae6a}{%
-           family={Arber},
-           familyi={A\bibinitperiod},
-           given={T.\bibnamedelimi D.},
-           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=e8a380884785a8969b84088e1fd9a869}{%
-           family={Barlow},
-           familyi={B\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=9d48940159421680abb3b7e1667f95b3}{%
-           family={Goffrey},
-           familyi={G\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=4ad15ddff138dc47ae0c1da17ece3b06}{%
-           family={Bennett},
-           familyi={B\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=0725d4a843cf1cadd5a37319e6248f35}{%
-           family={Garbett},
-           familyi={G\bibinitperiod},
-           given={W.},
-           giveni={W\bibinitperiod}}}%
-        {{hash=65e781f78d1225d0af48b90ae8a26e5a}{%
-           family={Atzeni},
-           familyi={A\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=2594c7abef7f8283c332919597fa2cff}{%
-           family={Casner},
-           familyi={C\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=01f30a84695805f41a63cb856bdde855}{%
-           family={Batani},
-           familyi={B\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=d32559a5fc6b9c48ad950f89259bc465}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-        {{hash=d850a4601b9c74f2e4663b853bc3bc70}{%
-           family={Woolsey},
-           familyi={W\bibinitperiod},
-           given={N.},
-           giveni={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{433787e17a71ea8ae00480315012dfab}
-      \strng{fullhash}{2f79e6a4e7f90bbe6ae8a746d24c4562}
-      \strng{bibnamehash}{433787e17a71ea8ae00480315012dfab}
-      \strng{authorbibnamehash}{433787e17a71ea8ae00480315012dfab}
-      \strng{authornamehash}{433787e17a71ea8ae00480315012dfab}
-      \strng{authorfullhash}{2f79e6a4e7f90bbe6ae8a746d24c4562}
-      \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0031-9007, 1079-7114}
-      \field{journaltitle}{Physical Review Letters}
-      \field{langid}{english}
-      \field{month}{8}
-      \field{number}{6}
-      \field{title}{Shock {{Ignition Laser-Plasma Interactions}} in {{Ignition-Scale Plasmas}}}
-      \field{volume}{127}
-      \field{year}{2021}
-      \field{pages}{065001}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.127.065001
-      \endverb
-      \verb{file}
-      \verb C:\Users\Philip\Zotero\storage\MKYXBYXQ\Scott et al. - 2021 - Shock Ignition Laser-Plasma Interactions in Igniti.pdf
-      \endverb
     \endentry
     \entry{zhao_mitigation_2022}{article}{}
       \name{author}{5}{}{%
@@ -37175,8 +37443,8 @@
       \strng{authorbibnamehash}{bef8fc25e38915796ab6e3e295454d05}
       \strng{authornamehash}{bef8fc25e38915796ab6e3e295454d05}
       \strng{authorfullhash}{5b0e5e089df484af555b58d153036963}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2367-3192}
@@ -37221,8 +37489,8 @@
       \strng{authornamehash}{cc52b62b097ec6f8455d5cf57d23ec75}
       \strng{authorfullhash}{d2a65a7e4b03789601748e666feb53fe}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2468-2047, 2468-080X}
@@ -37267,8 +37535,8 @@
       \strng{authornamehash}{cc52b62b097ec6f8455d5cf57d23ec75}
       \strng{authorfullhash}{d2a65a7e4b03789601748e666feb53fe}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2468-2047, 2468-080X}

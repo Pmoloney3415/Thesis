@@ -1,5 +1,6 @@
 \chapter{The Interaction of Light with Plasma}%
 \label{chap:Theory}
+\acresetall
 
 This chapter shall introduce the theoretical background relevant to the work conducted in this thesis.
 The main focus of the work is centred on improving the laser modelling in the \textsc{Chimera} \ac{Rad-MHD} code.
@@ -50,7 +51,7 @@ The length scale below the electron population cannot effectively screen the cha
     \lambda_{D}^2 = \frac{\varepsilon_0 k_B T_e}{n_e e^2},
 \end{equation}
 where $T_e$ is the electron temperature, $\varepsilon_0$ is the permittivity of free space, $k_B$ is the Boltzmann constant and $e$ is the electron charge.
-This screening can only occur if there is a large number of particles in the Debye sphere, $n_e L^3\gg 1$.
+This screening can only occur if there is a large number of particles in the Debye sphere, $n_e \lambda_D^3\gg 1$.
 
 The timescale of the charge relocation is of particular importance to the interaction of light with plasmas.
 Light waves are an oscillating electric and magnetic field, which the charged particles in the plasma can respond to.
@@ -82,7 +83,7 @@ After reaching the critical density, the field of the light decays exponentially
 \label{sec:theory_kin_fluid_plasmas}
 
 Idealised computational modelling of a plasma would solve the long-range electro-magnetic interaction between every pair of particles at all times.
-However, this approach very rapidly becomes intractable due to the large number $N$ of particles and the $\mathcal{O}(N^2)$ scaling of interactions to solve.
+However, this approach very rapidly becomes intractable due to the large number $N$ of particles and the $\mathcal{O}(N^2)$ scaling of interactions to solve\footnote{Note that it is possible to perform $N$-body plasma simulations by utilising, for example tree-code techniques~\cite{gibbon_treecode_2004}, although this is not a common approach.}.
 Reduced frameworks must thus be devised to predict the evolution of the plasma.
 Plasmas are divided into two broad classifications.
 When in local thermal equilibrium, the plasma is often described as `thermal' and the fluid formulation is an adequate description.
@@ -92,7 +93,7 @@ The fluid formulation becomes an inadequate description and higher fidelity, kin
 
 When a kinetic description of a plasma is required, the distribution function, $f_{\alpha}(\vec{x},\vec{v},t)$ is used to describe the state of particle species $\alpha$.
 It provides a statistical description of the number density of particles, which inhabit a phase-space, $[\vec{x}$,$\vec{v}]$, at time $t$.
-If the system macroscopically evolves on a timescale much longer than the collision time and length scales are lower than the collisional mean free-path, then these collisions between particles relax the distribution function toward a Maxwellian,
+If the system macroscopically evolves on a timescale much longer than the collision time and length scales are longer than the collisional mean free-path, then these collisions between particles relax the distribution function toward a Maxwellian,
 \begin{equation}
     \label{eq:theory_maxwellian}
     f_{\alpha,\text{Max.}}(v) = n_{\alpha} {\left( \frac{1}{2\pi v_{T\alpha}^2} \right)}^{1.5} e^{-\left [ v/ \left (\sqrt{2} v_{T\alpha} \right ) \right ]^2},
@@ -108,18 +109,27 @@ When performing fluid simulations of \ac{ICF} experiments, an accurate descripti
 
 %################################################################################
 %################################################################################
-\subsection{The Vlasov Equation}%
+\subsection{The Kinetic Formulation}%
 \label{sec:theory_vlasov}
 
-The evolution of the distribution function for each individual species is described by the Vlasov equation,
+The evolution of the distribution function for each individual species is described by the Vlasov-Fokker-Planck equation,
 \begin{equation}
     \label{eq:theory_vlasov}
     \frac{\partial f_\alpha}{\partial t} + \vec{v}.\nabla_x f_\alpha + \frac{q_\alpha}{m_\alpha} (\vec{E} + \vec{v}\times\vec{B}) . \nabla_v f_\alpha = \left ( \frac{\partial f_\alpha}{\partial t} \right )_\text{collisions} + \left ( \frac{\partial f_\alpha}{\partial t} \right )_\text{external},
 \end{equation}
 where $q_\alpha$ is the charge of the species, $\vec{E}$ and $\vec{B}$ are the macroscopic electric and magnetic fields,\footnote{Macroscopic here means on a scale larger than the Debye length.} respectively, and $\nabla_x$ and $\nabla_v$ are gradients with respect to position and velocity coordinates, respectively~\cite{bittencourt_fundamentals_2004}.
-The equation describes the conservation of phase-space particle density.
+The equation describes the conservation of number of particles in phase-space.
+The Vlasov equation, which is obtained from~\ref{eq:theory_vlasov} by setting the collisional term on the right-hand side to zero, describes collisionless systems.
+In these collisionless systems, forces from macroscopic fields dominate over short scale length forces, \textit{i.e.} collisions between particles.
+When collisional timescales are sufficiently small that collisions influence the evolution of the distribution function, then the collisional term cannot be neglected and the full Vlasov-Fokker-Planck equation must be solved.
 The collision operator on the right-hand side of Eq.~\ref{eq:theory_vlasov} describes the action of microscopic fields, which arise due to the random motion of the charged plasma particles.
+Various collision operators can be employed, but the Fokker-Planck collision operator takes the form,
+\begin{equation}
+    \left ( \frac{\partial f_\alpha}{\partial t} \right )_\text{collisions} = - \nabla_v. (\vec{A} f_{\alpha}) + \nabla_v. (\vec{D}. \nabla_v f_{\alpha}),
+\end{equation}
+where the first term on the right-hand side represents drag or slowing due to collisions and the second term represents diffusion of particles in velocity space due to small-angle collisions.
 External forces, for example gravity, are also accounted for in the second right-hand side term.
+
 Evolution of the macroscopic fields is governed by Maxwell's equations,
 \begin{align}
     \label{eq:theory_maxwell_eqs_1}
@@ -132,11 +142,14 @@ Evolution of the macroscopic fields is governed by Maxwell's equations,
     \nabla \times \vec{B} &= \mu_0 \varepsilon_0\frac{\partial \vec{E}}{\partial t} + \mu_0 \vec{J},
 \end{align}
 where $\mu_0$ is the permeability of free space, $\rho_{\text{charge}}$ is the charge density, $\vec{J}$ is the current density and from now on, $\nabla\equiv \nabla_x$.
-In the general case with three spatial dimensions, Eq.~\ref{eq:theory_vlasov} is seven-dimensional and evolves on small spatial and temporal scales.
-Therefore, it is typically too expensive to solve in its entirety for the relatively long times and large spatial scales of an entire \ac{ICF} implosion.
-Solution methods to the Vlasov equation include \ac{VFP} codes, which discretise the 6-D phase space of Eq.~\ref{eq:theory_vlasov} and evolve the state forward in time~\cite{thomas_review_2012}.
-The velocity space can be either directly discretised~\cite{taitano_eulerian_2021}, or expanded in spherical harmonics~\cite{kingham_implicit_2004}.
-Alternatively, the distribution function can be approximated by Monte Carlo techniques, which is done in \ac{PiC} codes~\cite{arber_contemporary_2015}
+In the general case with three spatial dimensions, the phase space of Eq.~\ref{eq:theory_vlasov} is 6-D and evolves on small spatial and temporal scales.
+It is therefore expensive to solve in its entirety for the relatively long times and large spatial scales of an entire \ac{ICF} implosion.
+Solution methods to the Vlasov equation include \ac{VFP} codes.
+Rather than directly discretising the 6-D phase space, the velocity space of the distribution function can be expanded in a suitable set of basis functions, such as spherical harmonics.
+This enables a 3-D discretisation to model 2 spatial dimensions~\cite{thomas_review_2012,kingham_implicit_2004}.
+The velocity space can also be directly discretised for lower dimensional problems~\cite{taitano_eulerian_2021}.
+Practically, \ac{VFP} codes often encounter numerical instabilities around the sharp gradients that are encountered in \ac{ICF} implosions, due to the generation of large magnitude electric fields in these regions~\cite{ridgers_inadequacy_2021}.
+Alternatively, the distribution function can be approximated by Monte Carlo techniques, which is the technique utilised in \ac{PiC} codes~\cite{arber_contemporary_2015}.
 
 %################################################################################
 %################################################################################
@@ -145,8 +158,8 @@ Alternatively, the distribution function can be approximated by Monte Carlo tech
 
 Due to the expense of the Vlasov equation, the assumption of local thermodynamic equilibrium can be used to derive the fluid equations.
 By inserting Eq.~\ref{eq:theory_maxwellian} into Eq.~\ref{eq:theory_vlasov}, multiplying each side of the equation by functions of $\vec{v}$ and then integrating over velocity space, the fluid equations can be derived~\cite{chen_introduction_2018}.
-This process is known as taking moments of the Vlasov equation.
-A moment of the Vlasov equation at order $n$ of $\vec{v}$, \textit{i.e.} multiplying the Vlasov equation by a function of $\vec{v}^n$ and integrating over $\text{d}\vec{v}$, yields an equation which depends upon the $n+1$ moment.
+This process is known as taking moments of the \ac{VFP} equation.
+A moment of the \ac{VFP} equation at order $n$ of $\vec{v}$, \textit{i.e.} multiplying the \ac{VFP} equation by a function of $\mathcal{O}(\vec{v}^n)$\footnote{Note that either an inner- or outer-product formulation of the velocity vectors may be employed. Therefore, generically, the $\mathcal{O}(\vec{v}^n)$ moment yields a tensor equation of rank $n$.} and integrating over $\text{d}\vec{v}$, yields an equation which depends upon the $n+1$ moment.
 A solvable system of equations thus requires an external closure.
 The inviscid hydrodynamic equations\footnote{Note that since the velocity dependence has been integrated out, all variables are now only functions of $\vec{x}$.} are obtained from $n=[0,1,2]$ moments,
 \begin{align}
@@ -158,6 +171,8 @@ The inviscid hydrodynamic equations\footnote{Note that since the velocity depend
     \left [ \frac{\partial}{\partial t} + \vec{u_\alpha}.\nabla \right ] U_\alpha + (U_\alpha + P_\alpha)\nabla.\vec{u_\alpha} &= -\nabla . \vec{q_\alpha} + Q_{\alpha,\text{ext.}} + Q_{\alpha,\text{col.}},
 \end{align}
 where $\rho_\alpha$ is the mass density of species $\alpha$, $\vec{u_\alpha}$ is the fluid velocity, $U_\alpha$ is the internal energy, $P_\alpha$ is the isotropic pressure, $\vec{F}_{\alpha,L} = n_\alpha q_\alpha (\vec{E} + \vec{u}_\alpha \times \vec{B})$ is the Lorentz, $\vec{F}_{\alpha,\text{ext.}}$ is external forcing, $\vec{F}_{\alpha,\text{col.}}$ is collisional forcing, $\vec{q_\alpha}$ is the heat flux, $Q_{\alpha,\text{ext.}}$ is external heating or cooling and $Q_{\alpha,\text{col.}}$ is collisional heating or cooling~\cite{castor_radiation_2004}.
+In its most general form, Eq.~\ref{eq:theory_fluid_eqs_3} is obtained by taking the outer product, $\vec{v}\vec{v}$ moment, which yields an anisotropic pressure tensor.
+Typically, for unmagnetised plasmas the pressure can be treated as isotropic, however.
 A closure relation for the plasma pressure can be obtained from an \ac{EoS}, such as the ideal gas law, which relates pressure to density, temperature and energy density.
 The heat flux can be obtained from Fourier's law,
 \begin{equation}
@@ -376,7 +391,7 @@ The dielectric displacement vector is defined,
 \begin{equation}
     \vec{D} = \varepsilon_0 \varepsilon \vec{E},
 \end{equation}
-where $\varepsilon$ is the permittivity of the plasma.\footnote{Outside of plasma physics, the displacement vector is usually defined $\vec{D} = \varepsilon\vec{E} = \varepsilon_0 \varepsilon_{r}$ and $\varepsilon_r$ is the `relative' permittivity.}
+where $\varepsilon$ is the permittivity of the plasma.\footnote{Outside of plasma physics, the displacement vector is usually defined $\vec{D} = \varepsilon\vec{E} = \varepsilon_0 \varepsilon_{r}\vec{E}$ and $\varepsilon_r$ is the `relative' permittivity.}
 Defining the electrical conductivity, $\sigma$, such that $\vec{J}=\sigma\vec{E}$ it can be shown that the permittivity takes the form,
 \begin{equation}
     \label{eq:theory_perm_def}
@@ -420,13 +435,13 @@ Inserting the linearised equations for each species into Eq.~\ref{eq:theory_flui
     \omega \delta\vec{v}_\alpha &= \gamma_\alpha v_{T\alpha}^2 \frac{\delta n_\alpha}{n_{\alpha 0}} \vec{k} + i\frac{q_\alpha}{m_\alpha}\vec{E},
 \end{align}
 where $\omega$ is the conjugate variable of time, $t$, from a Laplace transform and $\vec{k}$ is the conjugate variable of space, $\vec{x}$, from a Fourier transform.
-The same equations can be obtained with a less formal treatment, by assuming a plane wave Ansatz for the perturbed quantities, $\delta\sim\exp{[i(\vec{k}.\vec{x} + \omega t)]}$.
+The same equations can be obtained with a less formal treatment, by assuming a plane wave Ansatz for the perturbed quantities, $\delta\sim\exp{\left[ i\left( \vec{k}.\vec{x} - \omega t \right) \right]}$.
 These equations can then be combined to relate $\delta n_\alpha$ and $\delta \vec{v}_\alpha$ to $\vec{E}$,
 \begin{align}
     \label{eq:theory_wave2s_1}
     \left[ \omega^2 - \gamma_\alpha v_{T\alpha}^2 k^2 \right]\frac{\delta n_\alpha}{n_{\alpha 0}} &= i \frac{q_\alpha}{m_\alpha} \vec{k}.\vec{E},\\
     \label{eq:theory_wave2s_2}
-    \left[ \omega^2 - \gamma_\alpha v_{T\alpha}^2 \vec{k}(\vec{k}.) \right]\delta \vec{v}_\alpha &= i \frac{q_\alpha \omega}{m_\alpha} \vec{k}.\vec{E}.
+    \left[ \omega^2 - \gamma_\alpha v_{T\alpha}^2 \vec{k}(\vec{k}.) \right]\delta \vec{v}_\alpha &= i \frac{q_\alpha \omega}{m_\alpha} \vec{E}.
 \end{align}
 Assuming a plane wave of the form $\vec{E}\propto \exp{\left[ i\left( \vec{k}.\vec{x} - \omega t \right) \right]}$, we identify $\vec{k}$ as the wavenumber and $\omega$ as the angular frequency.
 Using the Ansatz that waves can either be transverse ($\vec{k}.\vec{E}=0$) or longitudinal ($\vec{k}\times\vec{E}=0$), dispersion relations in the fluid regime can be obtained for admissible solutions using these equations.
@@ -533,7 +548,7 @@ The charge separation from these longitudinal oscillations leads to an additiona
 
 The longitudinal susceptibility (Eq.~\ref{eq:long_susceptibility}) has a pole at $\omega^2 = \gamma_\alpha v_{T\alpha}^2 k^2$, suggesting unbounded growth of the wave when its phase velocity is close to the thermal velocity of the species, $\alpha$.
 This does not occur in actuality however, due to a process known as Landau damping, which is a resonant exchange of energy from the wave to particles.
-When the phase velocity of the wave approaches this resonance, particles with velocity just below the group velocity, $|\vec{v}|\lesssim|\vec{v}_\phi|$, are trapped in the potential created by the charge separation and accelerated.
+When the phase velocity of the wave approaches this resonance, particles with velocity just below the phase velocity, $|\vec{v}|\lesssim|\vec{v}_\phi|$, are trapped in the potential created by the charge separation and accelerated.
 This transfers energy from the wave to the particles and thus prevents unbounded growth of the density perturbation.
 Particles with velocity $|\vec{v}|\gtrsim|\vec{v}_\phi|$ are equivalently trapped and decelerated, leading to energy gain of the wave.
 However, phase velocities of the plasma waves are greater than the thermal velocity where the fluid, Maxwellian distribution function peaks, and thus more particles are accelerated by this effect.
@@ -839,6 +854,7 @@ Recalling the definition of the current, $\vec{J}_e = -e n_e \vec{u} = -i\omega 
 \end{equation}
 In the small absorption limit, where $\nu_{ei}\ll \omega$, the wavevector, $k = \sqrt{\varepsilon}\omega/c$ is complex,
 \begin{equation}
+    \label{eq:theory_inv_brem_temp}
     k = \frac{\omega}{c}\sqrt{\varepsilon} + i\frac{1}{2}\frac{\nu_{ei}}{c\sqrt{\varepsilon}}\frac{n_e}{n_{\text{cr}}}.
 \end{equation}
 The small absorption limit is generally valid for the hot coronal plasmas of direct-drive \ac{ICF} experiments, apart from in a thin region close to the critical surface~\cite{colaitis_real_2019}.
@@ -848,11 +864,12 @@ The imaginary component describes a damping of the wave amplitude as it propagat
     \kappa_{\text{IB}} = 2 \frac{\nu_{ei}}{c}\frac{n_e}{n_{\text{cr}}},
 \end{equation}
 where the $\sqrt{\varepsilon}$ drops out when converting from unit arc length to path length.
+The factor of 2 in Eqs.~\ref{eq:theory_inv_brem_temp} and~\ref{eq:theory_inv_brem}, arises from a Taylor expansion of $\sqrt{\varepsilon}$ around the small parameter $\nu_{ei}/\omega$.
 
-One further improvement can be made to Eq.~\ref{eq:theory_inv_brem}, by noting that \ac{Inv-Brem} preferentially heats the colder population of electrons, because the collision frequency $\nu_{ei}\propto v^{-3}$.
+A further improvement can be made to Eq.~\ref{eq:theory_inv_brem}, by noting that \ac{Inv-Brem} preferentially heats the colder population of electrons, because the collision frequency $\nu_{ei}\propto v^{-3}$.
 If the heating rate is fast compared to the collisional rate which returns the distribution function to Maxwellian, then this can lead to super-Gaussian distribution functions.
 These distributions have a lower population of the cold electrons, therefore the overall absorption rate is decreased.
-This process is known as the Langdon effect~\cite{langdon_nonlinear_1980} and is parameterised by the ratio of the heating rate to the thermalising the electron-electron collision rate,
+This process is known as the Langdon effect~\cite{langdon_nonlinear_1980} and is parameterised by the ratio of the heating rate to the thermalising, electron-electron collision rate,
 \begin{equation}
     \label{eq:theory_alpha_langdon}
     \alpha = Z^* \frac{v_{\text{quiv}}^2}{v_{Te}^2},
@@ -863,6 +880,10 @@ The modified absorption kernel is then the value from Eq.~\ref{eq:theory_inv_bre
     f_{\text{L}} = \left[ 1 - 0.553/\left( 1 + {[0.27/\alpha]}^{0.75} \right) \right].
 \end{equation}
 One issue with accurately implementing this effect in a ray-tracing code is that the field along each ray must be known to calculate $v_{\text{quiv.}}$, and therefore the amplitude of the ray must be integrated, which is not trivial.
+Non-Maxwellian electron distributions also lead to modified transport properties of the plasma~\cite{ridgers_transport_2008}.
+These modifications to thermal conduction are important to consider for laser direct-drive implosions, because the laser energy is transported from the absorption region to the ablation surface via thermal conduction.
+Recent work has also been conducted, using laser heated gas jets to explore the validity of Eq.~\ref{eq:theory_inv_brem} for describing the \ac{Inv-Brem} absorption rate~\cite{turnbull_inverse_2023}.
+This work demonstrated that both the Langdon effect and modifications due to ion-screening are required to best reproduce the measured laser absorption for direct-drive relevant conditions.
 
 %################################################################################
 %################################################################################

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.20)  28 SEP 2024 08:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  14 NOV 2024 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Repos/Thesis/Thesis_MainSample.tex
-(c:/Repos/Thesis/Thesis_MainSample.tex
+**c:/Thesis_latex/Thesis_MainSample.tex
+(c:/Thesis_latex/Thesis_MainSample.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (./icldt.cls
@@ -1130,7 +1130,247 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Warning: Unused global option(s):
     [onesided,pagesize].
 
-(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Theory/TheoryMain.aux) (./Numerics/NumericsMain.aux) (./Results1/Results1Main.aux) (./Results2/Results2Main.aux) (./Conclusions/ConclusionsMain.aux) (./Appendix/Appendix1Main.aux))
+(./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux
+
+LaTeX Warning: Label `acro:ICF@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:LPIs@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:IFE@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:NIF@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:SBS@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:SRS@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:CBET@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:LLE@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:SSD@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Inv-Brem@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:EPW@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:TPD@cref' multiply defined.
+
+) (./Theory/TheoryMain.aux
+
+LaTeX Warning: Label `acro:Rad-MHD@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:CBET@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:LPIs@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:ICF@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Inv-Brem@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:EPW@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:MHD@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:MCF@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:IAW@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:EMW@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:NIF@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:SRS@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:SBS@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:LEH@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:SSD@cref' multiply defined.
+
+) (./Numerics/NumericsMain.aux
+
+LaTeX Warning: Label `acro:Rad-MHD@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:HEDP@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:LPIs@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:CBET@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:ICF@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:PiC@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Rad-Hydro@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Inv-Brem@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:SBS@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:LLE@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:LLNL@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:CEA@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:IAW@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:DPRs@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:CGT@cref' multiply defined.
+
+) (./Results1/Results1Main.aux
+
+LaTeX Warning: Label `acro:CBET@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:RTI@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Rad-Hydro@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Inv-Brem@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:ICF@cref' multiply defined.
+
+) (./Results2/Results2Main.aux
+
+LaTeX Warning: Label `acro:CBET@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:ICF@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:IAW@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Rad-MHD@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:MHD@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:LPIs@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:NIF@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:LLNL@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:SBS@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:EPW@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:SRS@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:TPD@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Rad-Hydro@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:MIT@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Inv-Brem@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:RTI@cref' multiply defined.
+
+) (./Conclusions/ConclusionsMain.aux
+
+LaTeX Warning: Label `acro:CBET@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Rad-MHD@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:HEDP@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:ICF@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Inv-Brem@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:FL@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:EI@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:CGT@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:NIF@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:IAW@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:LEH@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:LPIs@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:SRS@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:Rad-Hydro@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:MHD@cref' multiply defined.
+
+) (./Appendix/Appendix1Main.aux))
 \openout1 = `Thesis_MainSample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1346,367 +1586,367 @@ Underfull \vbox (badness 1406) has occurred while \output is active []
 
 ]
 Overfull \hbox (1.09499pt too wide) detected at line 59
- [][][]\T1/futs/m/n/10.95 100[][]
+ [][][]\T1/futs/m/n/10.95 102[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 60
- [][][]\T1/futs/m/n/10.95 100[][]
+ [][][]\T1/futs/m/n/10.95 103[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 62
- [][][]\T1/futs/m/n/10.95 105[][]
+ [][][]\T1/futs/m/n/10.95 107[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 63
- [][][]\T1/futs/m/n/10.95 106[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 66
  [][][]\T1/futs/m/n/10.95 109[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 67
- [][][]\T1/futs/m/n/10.95 110[][]
+Overfull \hbox (1.09499pt too wide) detected at line 66
+ [][][]\T1/futs/m/n/10.95 112[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 68
+Overfull \hbox (1.09499pt too wide) detected at line 67
  [][][]\T1/futs/m/n/10.95 113[][]
  []
 
 
+Overfull \hbox (1.09499pt too wide) detected at line 68
+ [][][]\T1/futs/m/n/10.95 117[][]
+ []
+
+
 Overfull \hbox (1.09499pt too wide) detected at line 69
- [][][]\T1/futs/m/n/10.95 115[][]
+ [][][]\T1/futs/m/n/10.95 118[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 70
- [][][]\T1/futs/m/n/10.95 117[][]
+ [][][]\T1/futs/m/n/10.95 120[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 71
- [][][]\T1/futs/m/n/10.95 117[][]
+ [][][]\T1/futs/m/n/10.95 120[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 72
- [][][]\T1/futs/m/n/10.95 119[][]
+ [][][]\T1/futs/m/n/10.95 122[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 73
- [][][]\T1/futs/m/n/10.95 121[][]
+ [][][]\T1/futs/m/n/10.95 124[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 77
- [][][]\T1/futs/m/n/10.95 126[][]
+ [][][]\T1/futs/m/n/10.95 129[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 78
- [][][]\T1/futs/m/n/10.95 126[][]
+ [][][]\T1/futs/m/n/10.95 129[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 79
- [][][]\T1/futs/m/n/10.95 131[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 80
  [][][]\T1/futs/m/n/10.95 133[][]
  []
 
 
-Overfull \hbox (1.98195pt too wide) detected at line 81
- [][]\T1/futs/b/n/10.95 135[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 82
+Overfull \hbox (1.09499pt too wide) detected at line 80
  [][][]\T1/futs/m/n/10.95 136[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 83
- [][][]\T1/futs/m/n/10.95 138[][]
+Overfull \hbox (1.98195pt too wide) detected at line 81
+ [][]\T1/futs/b/n/10.95 138[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 84
+Overfull \hbox (1.09499pt too wide) detected at line 82
  [][][]\T1/futs/m/n/10.95 139[][]
  []
 
 
+Overfull \hbox (1.09499pt too wide) detected at line 83
+ [][][]\T1/futs/m/n/10.95 141[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 84
+ [][][]\T1/futs/m/n/10.95 142[][]
+ []
+
+
 Overfull \hbox (1.09499pt too wide) detected at line 85
- [][][]\T1/futs/m/n/10.95 143[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 86
- [][][]\T1/futs/m/n/10.95 143[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 87
- [][][]\T1/futs/m/n/10.95 144[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 88
- [][][]\T1/futs/m/n/10.95 145[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 89
  [][][]\T1/futs/m/n/10.95 146[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 90
+Overfull \hbox (1.09499pt too wide) detected at line 86
+ [][][]\T1/futs/m/n/10.95 146[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 87
  [][][]\T1/futs/m/n/10.95 147[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 91
- [][][]\T1/futs/m/n/10.95 149[][]
+Overfull \hbox (1.09499pt too wide) detected at line 88
+ [][][]\T1/futs/m/n/10.95 148[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 92
+Overfull \hbox (1.09499pt too wide) detected at line 89
+ [][][]\T1/futs/m/n/10.95 150[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 90
  [][][]\T1/futs/m/n/10.95 151[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 93
+Overfull \hbox (1.09499pt too wide) detected at line 91
  [][][]\T1/futs/m/n/10.95 153[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 94
+Overfull \hbox (1.09499pt too wide) detected at line 92
  [][][]\T1/futs/m/n/10.95 154[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 95
- [][][]\T1/futs/m/n/10.95 155[][]
+Overfull \hbox (1.09499pt too wide) detected at line 93
+ [][][]\T1/futs/m/n/10.95 156[][]
  []
 
-[11]
-Overfull \hbox (1.09499pt too wide) detected at line 96
+
+Overfull \hbox (1.09499pt too wide) detected at line 94
  [][][]\T1/futs/m/n/10.95 158[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 97
- [][][]\T1/futs/m/n/10.95 160[][]
+Overfull \hbox (1.09499pt too wide) detected at line 95
+ [][][]\T1/futs/m/n/10.95 159[][]
  []
 
-
-Overfull \hbox (1.09499pt too wide) detected at line 98
- [][][]\T1/futs/m/n/10.95 161[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 99
- [][][]\T1/futs/m/n/10.95 161[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 100
+[11]
+Overfull \hbox (1.09499pt too wide) detected at line 96
  [][][]\T1/futs/m/n/10.95 162[][]
  []
 
 
+Overfull \hbox (1.09499pt too wide) detected at line 97
+ [][][]\T1/futs/m/n/10.95 164[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 98
+ [][][]\T1/futs/m/n/10.95 165[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 99
+ [][][]\T1/futs/m/n/10.95 165[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 100
+ [][][]\T1/futs/m/n/10.95 165[][]
+ []
+
+
 Overfull \hbox (1.98195pt too wide) detected at line 101
- [][]\T1/futs/b/n/10.95 164[][]
+ [][]\T1/futs/b/n/10.95 167[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 102
- [][][]\T1/futs/m/n/10.95 165[][]
+ [][][]\T1/futs/m/n/10.95 168[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 103
- [][][]\T1/futs/m/n/10.95 165[][]
+ [][][]\T1/futs/m/n/10.95 168[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 104
- [][][]\T1/futs/m/n/10.95 167[][]
+ [][][]\T1/futs/m/n/10.95 170[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 105
- [][][]\T1/futs/m/n/10.95 169[][]
+ [][][]\T1/futs/m/n/10.95 172[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 106
- [][][]\T1/futs/m/n/10.95 169[][]
+ [][][]\T1/futs/m/n/10.95 172[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 107
- [][][]\T1/futs/m/n/10.95 170[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 108
- [][][]\T1/futs/m/n/10.95 170[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 109
  [][][]\T1/futs/m/n/10.95 173[][]
  []
 
 
+Overfull \hbox (1.09499pt too wide) detected at line 108
+ [][][]\T1/futs/m/n/10.95 173[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 109
+ [][][]\T1/futs/m/n/10.95 176[][]
+ []
+
+
 Overfull \hbox (1.09499pt too wide) detected at line 110
- [][][]\T1/futs/m/n/10.95 175[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 111
- [][][]\T1/futs/m/n/10.95 177[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 112
  [][][]\T1/futs/m/n/10.95 178[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 113
- [][][]\T1/futs/m/n/10.95 179[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 114
+Overfull \hbox (1.09499pt too wide) detected at line 111
  [][][]\T1/futs/m/n/10.95 180[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 115
+Overfull \hbox (1.09499pt too wide) detected at line 112
+ [][][]\T1/futs/m/n/10.95 181[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 113
  [][][]\T1/futs/m/n/10.95 182[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 116
- [][][]\T1/futs/m/n/10.95 184[][]
+Overfull \hbox (1.09499pt too wide) detected at line 114
+ [][][]\T1/futs/m/n/10.95 183[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 117
+Overfull \hbox (1.09499pt too wide) detected at line 115
  [][][]\T1/futs/m/n/10.95 185[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 118
+Overfull \hbox (1.09499pt too wide) detected at line 116
  [][][]\T1/futs/m/n/10.95 187[][]
  []
 
 
+Overfull \hbox (1.09499pt too wide) detected at line 117
+ [][][]\T1/futs/m/n/10.95 188[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 118
+ [][][]\T1/futs/m/n/10.95 190[][]
+ []
+
+
 Overfull \hbox (1.09499pt too wide) detected at line 119
- [][][]\T1/futs/m/n/10.95 189[][]
+ [][][]\T1/futs/m/n/10.95 192[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 120
- [][][]\T1/futs/m/n/10.95 193[][]
+ [][][]\T1/futs/m/n/10.95 196[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 121
- [][][]\T1/futs/m/n/10.95 193[][]
+ [][][]\T1/futs/m/n/10.95 196[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 122
- [][][]\T1/futs/m/n/10.95 194[][]
- []
-
-
-Overfull \hbox (1.98195pt too wide) detected at line 123
- [][]\T1/futs/b/n/10.95 195[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 124
- [][][]\T1/futs/m/n/10.95 196[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 125
- [][][]\T1/futs/m/n/10.95 196[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 126
  [][][]\T1/futs/m/n/10.95 197[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 127
- [][][]\T1/futs/m/n/10.95 198[][]
+Overfull \hbox (1.98195pt too wide) detected at line 123
+ [][]\T1/futs/b/n/10.95 198[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 128
+Overfull \hbox (1.09499pt too wide) detected at line 124
  [][][]\T1/futs/m/n/10.95 199[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 129
+Overfull \hbox (1.09499pt too wide) detected at line 125
  [][][]\T1/futs/m/n/10.95 199[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 130
+Overfull \hbox (1.09499pt too wide) detected at line 126
  [][][]\T1/futs/m/n/10.95 200[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 131
+Overfull \hbox (1.09499pt too wide) detected at line 127
  [][][]\T1/futs/m/n/10.95 201[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 128
+ [][][]\T1/futs/m/n/10.95 202[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 129
+ [][][]\T1/futs/m/n/10.95 202[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 130
+ [][][]\T1/futs/m/n/10.95 203[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 131
+ [][][]\T1/futs/m/n/10.95 204[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 132
- [][][]\T1/futs/m/n/10.95 201[][]
+ [][][]\T1/futs/m/n/10.95 204[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 133
- [][][]\T1/futs/m/n/10.95 202[][]
+ [][][]\T1/futs/m/n/10.95 205[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 134
- [][][]\T1/futs/m/n/10.95 202[][]
+ [][][]\T1/futs/m/n/10.95 205[][]
  []
 
 [12]
 Overfull \hbox (1.98195pt too wide) detected at line 135
- [][]\T1/futs/b/n/10.95 205[][]
- []
-
-
-Overfull \hbox (1.98195pt too wide) detected at line 136
  [][]\T1/futs/b/n/10.95 208[][]
  []
 
 
+Overfull \hbox (1.98195pt too wide) detected at line 136
+ [][]\T1/futs/b/n/10.95 211[][]
+ []
+
+
 Overfull \hbox (1.98195pt too wide) detected at line 137
- [][]\T1/futs/b/n/10.95 209[][]
+ [][]\T1/futs/b/n/10.95 213[][]
  []
 
 )
@@ -1715,27 +1955,27 @@ Overfull \hbox (1.98195pt too wide) detected at line 137
 
  [13] (./Thesis_MainSample.lot
 Overfull \hbox (1.09499pt too wide) detected at line 4
- [][][]\T1/futs/m/n/10.95 121[][]
+ [][][]\T1/futs/m/n/10.95 125[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 5
- [][][]\T1/futs/m/n/10.95 126[][]
+ [][][]\T1/futs/m/n/10.95 129[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 7
- [][][]\T1/futs/m/n/10.95 146[][]
+ [][][]\T1/futs/m/n/10.95 149[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 9
- [][][]\T1/futs/m/n/10.95 173[][]
+ [][][]\T1/futs/m/n/10.95 176[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 13
- [][][]\T1/futs/m/n/10.95 208[][]
+ [][][]\T1/futs/m/n/10.95 211[][]
  []
 
 )
@@ -1807,7 +2047,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
 Overfull \hbox (0.94055pt too wide) in paragraph at lines 20--20
- [][] []\T1/futs/m/n/10.95 The two [][] modes which are iden-ti-fied from the fluid [][] gain in Eq. [][]2.116[][], 
+ [][] []\T1/futs/m/n/10.95 The two [][] modes which are iden-ti-fied from the fluid [][] gain in Eq. [][]2.117[][], 
  []
 
 
@@ -1819,13 +2059,23 @@ Overfull \hbox (10.86041pt too wide) in paragraph at lines 25--25
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
+Overfull \hbox (1.09499pt too wide) detected at line 29
+ [][][]\T1/futs/m/n/10.95 101[][]
+ []
+
+
 Overfull \hbox (4.15987pt too wide) in paragraph at lines 29--29
  [][] []\T1/futs/m/n/10.95 Results from the cylindrical-helix test prob-lem, ob-tained us-ing the de-fault adap- 
  []
 
 
+Overfull \hbox (1.09499pt too wide) detected at line 30
+ [][][]\T1/futs/m/n/10.95 102[][]
+ []
+
+
 Overfull \hbox (1.09499pt too wide) detected at line 31
- [][][]\T1/futs/m/n/10.95 101[][]
+ [][][]\T1/futs/m/n/10.95 103[][]
  []
 
 
@@ -1835,7 +2085,7 @@ Overfull \hbox (15.95181pt too wide) in paragraph at lines 31--31
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 32
- [][][]\T1/futs/m/n/10.95 102[][]
+ [][][]\T1/futs/m/n/10.95 104[][]
  []
 
 
@@ -1845,7 +2095,7 @@ Overfull \hbox (28.52292pt too wide) in paragraph at lines 32--32
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 33
- [][][]\T1/futs/m/n/10.95 103[][]
+ [][][]\T1/futs/m/n/10.95 106[][]
  []
 
 
@@ -1853,29 +2103,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18]
 Overfull \hbox (1.09499pt too wide) detected at line 34
- [][][]\T1/futs/m/n/10.95 107[][]
+ [][][]\T1/futs/m/n/10.95 110[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 35
- [][][]\T1/futs/m/n/10.95 108[][]
+ [][][]\T1/futs/m/n/10.95 111[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 36
- [][][]\T1/futs/m/n/10.95 110[][]
+ [][][]\T1/futs/m/n/10.95 112[][]
  []
 
 Package acronym Info: Label `acro:CGT' newly defined as it shall be overridden
 although it is yet undefined on input line 37.
 
 Overfull \hbox (1.09499pt too wide) detected at line 37
- [][][]\T1/futs/m/n/10.95 114[][]
+ [][][]\T1/futs/m/n/10.95 116[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 38
- [][][]\T1/futs/m/n/10.95 118[][]
+ [][][]\T1/futs/m/n/10.95 121[][]
  []
 
 
@@ -1883,37 +2133,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
 Overfull \hbox (1.09499pt too wide) detected at line 39
- [][][]\T1/futs/m/n/10.95 119[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 40
  [][][]\T1/futs/m/n/10.95 122[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 41
- [][][]\T1/futs/m/n/10.95 123[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 42
+Overfull \hbox (1.09499pt too wide) detected at line 40
  [][][]\T1/futs/m/n/10.95 124[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 43
- [][][]\T1/futs/m/n/10.95 125[][]
+Overfull \hbox (1.09499pt too wide) detected at line 41
+ [][][]\T1/futs/m/n/10.95 126[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 44
+Overfull \hbox (1.09499pt too wide) detected at line 42
  [][][]\T1/futs/m/n/10.95 127[][]
  []
 
 
+Overfull \hbox (1.09499pt too wide) detected at line 43
+ [][][]\T1/futs/m/n/10.95 127[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 44
+ [][][]\T1/futs/m/n/10.95 129[][]
+ []
+
+
 Overfull \hbox (1.09499pt too wide) detected at line 45
- [][][]\T1/futs/m/n/10.95 128[][]
+ [][][]\T1/futs/m/n/10.95 130[][]
  []
 
 
@@ -1923,22 +2173,22 @@ Overfull \hbox (2.40933pt too wide) in paragraph at lines 45--45
 
 [20]
 Overfull \hbox (1.09499pt too wide) detected at line 46
- [][][]\T1/futs/m/n/10.95 130[][]
+ [][][]\T1/futs/m/n/10.95 132[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 47
- [][][]\T1/futs/m/n/10.95 131[][]
+ [][][]\T1/futs/m/n/10.95 134[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 48
- [][][]\T1/futs/m/n/10.95 133[][]
+ [][][]\T1/futs/m/n/10.95 136[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 50
- [][][]\T1/futs/m/n/10.95 136[][]
+ [][][]\T1/futs/m/n/10.95 139[][]
  []
 
 
@@ -1948,12 +2198,12 @@ Overfull \hbox (7.13815pt too wide) in paragraph at lines 50--50
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 51
- [][][]\T1/futs/m/n/10.95 138[][]
+ [][][]\T1/futs/m/n/10.95 141[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 52
- [][][]\T1/futs/m/n/10.95 141[][]
+ [][][]\T1/futs/m/n/10.95 144[][]
  []
 
 
@@ -1961,37 +2211,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
 Overfull \hbox (1.09499pt too wide) detected at line 53
- [][][]\T1/futs/m/n/10.95 144[][]
+ [][][]\T1/futs/m/n/10.95 146[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 54
- [][][]\T1/futs/m/n/10.95 147[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 55
  [][][]\T1/futs/m/n/10.95 148[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 56
+Overfull \hbox (1.09499pt too wide) detected at line 55
  [][][]\T1/futs/m/n/10.95 150[][]
  []
 
 
-Overfull \hbox (4.11598pt too wide) in paragraph at lines 56--56
- \T1/futs/m/n/10.95 of time ($\FML/futmi/m/it/10.95 x$\T1/futs/m/n/10.95 -axis) and an-gle ($\FML/futmi/m/it/10.95 y$\T1/futs/m/n/10.95 -axis), along-side am-pli-tudes of the dom-i-nant modes 
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 57
+Overfull \hbox (1.09499pt too wide) detected at line 56
  [][][]\T1/futs/m/n/10.95 151[][]
  []
 
 
+Overfull \hbox (1.09499pt too wide) detected at line 57
+ [][][]\T1/futs/m/n/10.95 153[][]
+ []
+
+
+Overfull \hbox (4.11598pt too wide) in paragraph at lines 57--57
+ \T1/futs/m/n/10.95 of time ($\FML/futmi/m/it/10.95 x$\T1/futs/m/n/10.95 -axis) and an-gle ($\FML/futmi/m/it/10.95 y$\T1/futs/m/n/10.95 -axis), along-side am-pli-tudes of the dom-i-nant modes 
+ []
+
+
 Overfull \hbox (1.09499pt too wide) detected at line 58
- [][][]\T1/futs/m/n/10.95 152[][]
+ [][][]\T1/futs/m/n/10.95 154[][]
  []
 
 
@@ -1999,50 +2249,50 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
 Overfull \hbox (1.09499pt too wide) detected at line 59
- [][][]\T1/futs/m/n/10.95 153[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 60
  [][][]\T1/futs/m/n/10.95 155[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 61
- [][][]\T1/futs/m/n/10.95 156[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 62
+Overfull \hbox (1.09499pt too wide) detected at line 60
  [][][]\T1/futs/m/n/10.95 157[][]
  []
 
 
+Overfull \hbox (1.09499pt too wide) detected at line 61
+ [][][]\T1/futs/m/n/10.95 158[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 62
+ [][][]\T1/futs/m/n/10.95 160[][]
+ []
+
+
 Overfull \hbox (1.09499pt too wide) detected at line 63
- [][][]\T1/futs/m/n/10.95 159[][]
+ [][][]\T1/futs/m/n/10.95 161[][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-Overfull \hbox (1.09499pt too wide) detected at line 65
- [][][]\T1/futs/m/n/10.95 165[][]
+Overfull \hbox (1.09499pt too wide) detected at line 64
+ [][][]\T1/futs/m/n/10.95 162[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 66
- [][][]\T1/futs/m/n/10.95 166[][]
+ [][][]\T1/futs/m/n/10.95 168[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 67
- [][][]\T1/futs/m/n/10.95 167[][]
+ [][][]\T1/futs/m/n/10.95 169[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 68
- [][][]\T1/futs/m/n/10.95 168[][]
+ [][][]\T1/futs/m/n/10.95 170[][]
  []
 
 
@@ -2057,7 +2307,7 @@ Overfull \hbox (1.09499pt too wide) detected at line 70
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 71
- [][][]\T1/futs/m/n/10.95 176[][]
+ [][][]\T1/futs/m/n/10.95 177[][]
  []
 
 
@@ -2065,32 +2315,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
 Overfull \hbox (1.09499pt too wide) detected at line 72
- [][][]\T1/futs/m/n/10.95 178[][]
- []
-
-
-Overfull \hbox (1.09499pt too wide) detected at line 73
  [][][]\T1/futs/m/n/10.95 179[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 74
+Overfull \hbox (1.09499pt too wide) detected at line 73
  [][][]\T1/futs/m/n/10.95 181[][]
  []
 
 
-Overfull \hbox (1.09499pt too wide) detected at line 75
+Overfull \hbox (1.09499pt too wide) detected at line 74
  [][][]\T1/futs/m/n/10.95 182[][]
  []
 
 
-Overfull \hbox (1.54272pt too wide) in paragraph at lines 75--75
- \T1/futs/m/n/10.95 tion of the field is im-por-tant in the low Hall pa-ram-e-ter equa-to-rial re-gion, pulling 
+Overfull \hbox (1.09499pt too wide) detected at line 75
+ [][][]\T1/futs/m/n/10.95 184[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 76
- [][][]\T1/futs/m/n/10.95 184[][]
+ [][][]\T1/futs/m/n/10.95 185[][]
  []
 
 
@@ -2098,12 +2343,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
 Overfull \hbox (1.09499pt too wide) detected at line 77
- [][][]\T1/futs/m/n/10.95 185[][]
+ [][][]\T1/futs/m/n/10.95 187[][]
  []
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 78
- [][][]\T1/futs/m/n/10.95 187[][]
+ [][][]\T1/futs/m/n/10.95 188[][]
  []
 
 
@@ -2113,7 +2358,7 @@ Overfull \hbox (1.09499pt too wide) detected at line 79
 
 
 Overfull \hbox (1.09499pt too wide) detected at line 80
- [][][]\T1/futs/m/n/10.95 191[][]
+ [][][]\T1/futs/m/n/10.95 193[][]
  []
 
 
@@ -2121,7 +2366,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
 Overfull \hbox (1.09499pt too wide) detected at line 81
- [][][]\T1/futs/m/n/10.95 192[][]
+ [][][]\T1/futs/m/n/10.95 194[][]
+ []
+
+
+Overfull \hbox (1.09499pt too wide) detected at line 82
+ [][][]\T1/futs/m/n/10.95 195[][]
  []
 
 )
@@ -2134,845 +2384,947 @@ Overfull \hbox (1.09499pt too wide) detected at line 81
  (./Introduction/IntroductionMain.tex
 chapter 1.
 Package acronym Info: Label `acro:LCOE' newly defined as it shall be overridden
-although it is yet undefined on input line 20.
+although it is yet undefined on input line 21.
 [29
 
 
 
 
 ]
-<Introduction/Images/BE_per_nucleon.png, id=805, 722.7pt x 433.62pt>
+<Introduction/Images/BE_per_nucleon.png, id=809, 722.7pt x 433.62pt>
 File: Introduction/Images/BE_per_nucleon.png Graphic file (type png)
 <use Introduction/Images/BE_per_nucleon.png>
-Package pdftex.def Info: Introduction/Images/BE_per_nucleon.png  used on input line 49.
+Package pdftex.def Info: Introduction/Images/BE_per_nucleon.png  used on input line 50.
 (pdftex.def)             Requested size: 373.86685pt x 224.31918pt.
-<Introduction/Images/fusion-reactivities.png, id=806, 505.89pt x 433.62pt>
+<Introduction/Images/fusion-reactivities.png, id=810, 505.89pt x 433.62pt>
 File: Introduction/Images/fusion-reactivities.png Graphic file (type png)
 <use Introduction/Images/fusion-reactivities.png>
-Package pdftex.def Info: Introduction/Images/fusion-reactivities.png  used on input line 58.
+Package pdftex.def Info: Introduction/Images/fusion-reactivities.png  used on input line 59.
 (pdftex.def)             Requested size: 249.24878pt x 213.64677pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30 <./Introduction/Images/BE_per_nucleon.png>]
+Package acronym Info: Label `acro:ICF' overridden on input line 84.
 Package acronym Info: Label `acro:MCF' newly defined as it shall be overridden
-although it is yet undefined on input line 88.
+although it is yet undefined on input line 89.
  [31 <./Introduction/Images/fusion-reactivities.png>]
-Overfull \hbox (2.87848pt too wide) in paragraph at lines 97--105
+Overfull \hbox (2.87848pt too wide) in paragraph at lines 98--106
 \T1/futs/m/n/10.95 Large en-ergy re-leases from nu-clear fu-sion have been achieved on Earth in the form of thermo-
  []
 
 
-Overfull \hbox (4.981pt too wide) in paragraph at lines 97--105
+Overfull \hbox (4.981pt too wide) in paragraph at lines 98--106
 \T1/futs/m/n/10.95 nuclear war-heads, al-though quan-tity of en-ergy re-leased in these un-con-trolled re-ac-tions would
  []
 
 [32]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 122.
+(Font)              scaled to size 8.27998pt on input line 123.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 122.
+(Font)              scaled to size 6.99199pt on input line 123.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 122.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 123.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 122.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 123.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 122.
+(Font)              scaled to size 8.27998pt on input line 123.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 122.
+(Font)              scaled to size 6.99199pt on input line 123.
 
 Underfull \vbox (badness 1158) has occurred while \output is active []
 
  [33]
-<Introduction/Images/hotspot ignition white.png, id=878, 844.40268pt x 840.64464pt>
+<Introduction/Images/hotspot ignition white.png, id=883, 844.40268pt x 840.64464pt>
 File: Introduction/Images/hotspot ignition white.png Graphic file (type png)
 <use Introduction/Images/hotspot ignition white.png>
-Package pdftex.def Info: Introduction/Images/hotspot ignition white.png  used on input line 166.
+Package pdftex.def Info: Introduction/Images/hotspot ignition white.png  used on input line 167.
 (pdftex.def)             Requested size: 290.78603pt x 289.4968pt.
  [34 <./Introduction/Images/hotspot ignition white.png>]
 Package acronym Info: Label `acro:RTI' newly defined as it shall be overridden
-although it is yet undefined on input line 194.
+although it is yet undefined on input line 195.
 
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [35] [36]
-<Introduction/Images/IFE_powerplant.png, id=948, 710.655pt x 328.8285pt>
+ [35]
+Package acronym Info: Label `acro:LPIs' overridden on input line 229.
+Package acronym Info: Label `acro:IFE' overridden on input line 235.
+ [36]
+<Introduction/Images/IFE_powerplant.png, id=955, 710.655pt x 328.8285pt>
 File: Introduction/Images/IFE_powerplant.png Graphic file (type png)
 <use Introduction/Images/IFE_powerplant.png>
-Package pdftex.def Info: Introduction/Images/IFE_powerplant.png  used on input line 249.
+Package pdftex.def Info: Introduction/Images/IFE_powerplant.png  used on input line 250.
 (pdftex.def)             Requested size: 332.3296pt x 153.77672pt.
 Package acronym Info: Label `acro:DPSSL' newly defined as it shall be overridden
-although it is yet undefined on input line 274.
-
-Underfull \vbox (badness 1867) has occurred while \output is active []
-
+although it is yet undefined on input line 277.
  [37 <./Introduction/Images/IFE_powerplant.png>]
-<Introduction/Images/indirect icf white.png, id=979, 643.6848pt x 219.4599pt>
+<Introduction/Images/indirect icf white.png, id=986, 643.6848pt x 219.4599pt>
 File: Introduction/Images/indirect icf white.png Graphic file (type png)
 <use Introduction/Images/indirect icf white.png>
-Package pdftex.def Info: Introduction/Images/indirect icf white.png  used on input line 299.
+Package pdftex.def Info: Introduction/Images/indirect icf white.png  used on input line 302.
 (pdftex.def)             Requested size: 415.41043pt x 141.63593pt.
+Package acronym Info: Label `acro:NIF' overridden on input line 317.
 Package acronym Info: Label `acro:LLNL' newly defined as it shall be overridden
-although it is yet undefined on input line 314.
+although it is yet undefined on input line 317.
 Package acronym Info: Label `acro:LEH' newly defined as it shall be overridden
-although it is yet undefined on input line 315.
+although it is yet undefined on input line 318.
 Package acronym Info: Label `acro:LMJ' newly defined as it shall be overridden
-although it is yet undefined on input line 317.
+although it is yet undefined on input line 320.
 Package acronym Info: Label `acro:CEA' newly defined as it shall be overridden
-although it is yet undefined on input line 317.
+although it is yet undefined on input line 320.
  [38 <./Introduction/Images/indirect icf white.png>]
-<Introduction/Images/NIF_yields.jpg, id=1030, 2497.33pt x 1993.4475pt>
+Package acronym Info: Label `acro:SBS' overridden on input line 332.
+Package acronym Info: Label `acro:SRS' overridden on input line 332.
+Package acronym Info: Label `acro:CBET' overridden on input line 333.
+<Introduction/Images/NIF_yields.jpg, id=1034, 2497.33pt x 1993.4475pt>
 File: Introduction/Images/NIF_yields.jpg Graphic file (type jpg)
 <use Introduction/Images/NIF_yields.jpg>
-Package pdftex.def Info: Introduction/Images/NIF_yields.jpg  used on input line 337.
+Package pdftex.def Info: Introduction/Images/NIF_yields.jpg  used on input line 340.
 (pdftex.def)             Requested size: 415.41043pt x 331.58139pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [39]
 Package acronym Info: Label `acro:HDC' newly defined as it shall be overridden
-although it is yet undefined on input line 360.
+although it is yet undefined on input line 363.
  [40 <./Introduction/Images/NIF_yields.jpg>]
-<Introduction/Images/direct icf white.png, id=1092, 286.1892pt x 278.9622pt>
+<Introduction/Images/direct icf white.png, id=1097, 286.1892pt x 278.9622pt>
 File: Introduction/Images/direct icf white.png Graphic file (type png)
 <use Introduction/Images/direct icf white.png>
-Package pdftex.def Info: Introduction/Images/direct icf white.png  used on input line 373.
+Package pdftex.def Info: Introduction/Images/direct icf white.png  used on input line 376.
 (pdftex.def)             Requested size: 290.78603pt x 283.44373pt.
+Package acronym Info: Label `acro:LLE' overridden on input line 392.
  [41 <./Introduction/Images/direct icf white.png>]
-<Introduction/Images/SmoothingOptics.png, id=1118, 1001.5016pt x 513.117pt>
+<Introduction/Images/SmoothingOptics.png, id=1130, 1001.5016pt x 513.117pt>
 File: Introduction/Images/SmoothingOptics.png Graphic file (type png)
 <use Introduction/Images/SmoothingOptics.png>
-Package pdftex.def Info: Introduction/Images/SmoothingOptics.png  used on input line 404.
+Package pdftex.def Info: Introduction/Images/SmoothingOptics.png  used on input line 407.
 (pdftex.def)             Requested size: 415.41043pt x 212.8378pt.
- [42 <./Introduction/Images/SmoothingOptics.png>]
-Overfull \hbox (8.11638pt too wide) in paragraph at lines 431--437
+Package acronym Info: Label `acro:SSD' overridden on input line 414.
+ [42]
+Overfull \hbox (8.11638pt too wide) in paragraph at lines 434--440
 \T1/futs/m/n/10.95 time-integrated, in-stan-ta-neously large am-pli-tude, short wave-length per-tur-ba-tions ex-ist. When
  []
 
-<Introduction/Images/LPI diagram.png, id=1140, 953.2413pt x 526.1256pt>
+<Introduction/Images/LPI diagram.png, id=1152, 953.2413pt x 526.1256pt>
 File: Introduction/Images/LPI diagram.png Graphic file (type png)
 <use Introduction/Images/LPI diagram.png>
-Package pdftex.def Info: Introduction/Images/LPI diagram.png  used on input line 439.
+Package pdftex.def Info: Introduction/Images/LPI diagram.png  used on input line 442.
 (pdftex.def)             Requested size: 415.41043pt x 229.28024pt.
-[43]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 470.
+Package acronym Info: Label `acro:Inv-Brem' overridden on input line 450.
+Package acronym Info: Label `acro:EPW' overridden on input line 450.
+Package acronym Info: Label `acro:TPD' overridden on input line 450.
+
+Underfull \vbox (badness 3029) has occurred while \output is active []
+
+ [43 <./Introduction/Images/SmoothingOptics.png>]
+Underfull \vbox (badness 1655) has occurred while \output is active []
+
+ [44 <./Introduction/Images/LPI diagram.png>]
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 483.
  (c:/texlive/2023/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-) [44 <./Introduction/Images/LPI diagram.png>]
-Overfull \hbox (0.63757pt too wide) in paragraph at lines 479--484
-\T1/futs/m/n/10.95 con-ver-sion ef-fi-ciency [[][]70[][]]. Over the past decade, im-plo-sion per-for-mance im-proved markedly
+)
+Overfull \hbox (0.63757pt too wide) in paragraph at lines 492--497
+\T1/futs/m/n/10.95 con-ver-sion ef-fi-ciency [[][]71[][]]. Over the past decade, im-plo-sion per-for-mance im-proved markedly
  []
 
 [45]
 Package acronym Info: Label `acro:MHD' newly defined as it shall be overridden
-although it is yet undefined on input line 510.
+although it is yet undefined on input line 523.
+ [46]
 Package acronym Info: Label `acro:Rad-Hydro' newly defined as it shall be overridden
-although it is yet undefined on input line 524.
- [46]) [47]
+although it is yet undefined on input line 537.
+ [47]) [48]
 \openout2 = `Theory/TheoryMain.aux'.
 
  (./Theory/TheoryMain.tex
 chapter 2.
-[48
+Package acronym Info: Label `acro:Rad-MHD' overridden on input line 6.
+Package acronym Info: Label `acro:CBET' overridden on input line 15.
+Package acronym Info: Label `acro:LPIs' overridden on input line 16.
+Package acronym Info: Label `acro:ICF' overridden on input line 18.
+Package acronym Info: Label `acro:Inv-Brem' overridden on input line 19.
+[49
 
 
 
 
-] [49] [50]
-Package acronym Info: Label `acro:VFP' newly defined as it shall be overridden
-although it is yet undefined on input line 137.
-Package acronym Info: Label `acro:PiC' newly defined as it shall be overridden
-although it is yet undefined on input line 139.
- [51]
-Package acronym Info: Label `acro:EoS' newly defined as it shall be overridden
-although it is yet undefined on input line 161.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+]
+Package acronym Info: Label `acro:EPW' overridden on input line 65.
+ [50] [51]
+Underfull \vbox (badness 6691) has occurred while \output is active []
 
  [52]
-Package acronym Info: Label `acro:HEDP' newly defined as it shall be overridden
-although it is yet undefined on input line 208.
- [53] [54]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package acronym Info: Label `acro:VFP' newly defined as it shall be overridden
+although it is yet undefined on input line 147.
+Package acronym Info: Label `acro:PiC' newly defined as it shall be overridden
+although it is yet undefined on input line 152.
+Package acronym Info: Label `acro:EoS' newly defined as it shall be overridden
+although it is yet undefined on input line 176.
 
- [55] [56] [57]
-<Theory/Images/plasma_waves.png, id=1529, 724.3863pt x 409.53pt>
+Underfull \vbox (badness 2680) has occurred while \output is active []
+
+ [53]
+Package acronym Info: Label `acro:MHD' overridden on input line 210.
+ [54]
+Package acronym Info: Label `acro:HEDP' newly defined as it shall be overridden
+although it is yet undefined on input line 223.
+ [55] [56]
+Package acronym Info: Label `acro:MCF' overridden on input line 290.
+
+Underfull \vbox (badness 4779) has occurred while \output is active []
+
+ [57] [58]
+Package acronym Info: Label `acro:IAW' overridden on input line 378.
+Package acronym Info: Label `acro:EMW' overridden on input line 378.
+ [59]
+<Theory/Images/plasma_waves.png, id=1590, 724.3863pt x 409.53pt>
 File: Theory/Images/plasma_waves.png Graphic file (type png)
 <use Theory/Images/plasma_waves.png>
-Package pdftex.def Info: Theory/Images/plasma_waves.png  used on input line 390.
+Package pdftex.def Info: Theory/Images/plasma_waves.png  used on input line 405.
 (pdftex.def)             Requested size: 311.55782pt x 176.1382pt.
-
-Underfull \vbox (badness 2626) has occurred while \output is active []
-
- [58 <./Theory/Images/plasma_waves.png>]
-Underfull \vbox (badness 2469) has occurred while \output is active []
-
- [59]
-<Theory/Images/EMW_disp_rel.png, id=1565, 462.528pt x 346.896pt>
-File: Theory/Images/EMW_disp_rel.png Graphic file (type png)
-<use Theory/Images/EMW_disp_rel.png>
-Package pdftex.def Info: Theory/Images/EMW_disp_rel.png  used on input line 459.
-(pdftex.def)             Requested size: 249.24878pt x 186.93993pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60 <./Theory/Images/EMW_disp_rel.png>]
-<Theory/Images/IAW_EPW.png, id=1584, 1340.75906pt x 1137.4997pt>
+ [60 <./Theory/Images/plasma_waves.png>]
+<Theory/Images/EMW_disp_rel.png, id=1613, 462.528pt x 346.896pt>
+File: Theory/Images/EMW_disp_rel.png Graphic file (type png)
+<use Theory/Images/EMW_disp_rel.png>
+Package pdftex.def Info: Theory/Images/EMW_disp_rel.png  used on input line 474.
+(pdftex.def)             Requested size: 249.24878pt x 186.93993pt.
+
+Underfull \vbox (badness 1803) has occurred while \output is active []
+
+ [61]
+<Theory/Images/IAW_EPW.png, id=1634, 1340.75906pt x 1137.4997pt>
 File: Theory/Images/IAW_EPW.png Graphic file (type png)
 <use Theory/Images/IAW_EPW.png>
-Package pdftex.def Info: Theory/Images/IAW_EPW.png  used on input line 496.
+Package pdftex.def Info: Theory/Images/IAW_EPW.png  used on input line 511.
 (pdftex.def)             Requested size: 290.78603pt x 246.69255pt.
- [61 <./Theory/Images/IAW_EPW.png>]
-Overfull \hbox (6.37161pt too wide) in paragraph at lines 523--525
-\T1/futs/m/n/10.95 Inserting the plane wave Ansatz into [][]2.49[][] (com-bined Faraday-Maxwell laws) and us-ing Eq. [][]2.56[][]
+ [62 <./Theory/Images/EMW_disp_rel.png>]
+Overfull \hbox (6.37161pt too wide) in paragraph at lines 538--540
+\T1/futs/m/n/10.95 Inserting the plane wave Ansatz into [][]2.50[][] (com-bined Faraday-Maxwell laws) and us-ing Eq. [][]2.57[][]
  []
 
 
-Overfull \hbox (5.37033pt too wide) in paragraph at lines 534--541
-[]\T1/futs/m/n/10.95 The lon-gi-tu-di-nal sus-cep-ti-bil-ity (Eq. [][]2.57[][]) has a pole at $\FML/futmi/m/it/10.95 ![] \FMS/futm/m/n/10.95 Å \FML/futmi/m/it/10.95 ^^M[]v[]k[]$\T1/futs/m/n/10.95 , sug-gest-ing un-bounded
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63 <./Theory/Images/IAW_EPW.png>]
+Overfull \hbox (5.37033pt too wide) in paragraph at lines 549--556
+[]\T1/futs/m/n/10.95 The lon-gi-tu-di-nal sus-cep-ti-bil-ity (Eq. [][]2.58[][]) has a pole at $\FML/futmi/m/it/10.95 ![] \FMS/futm/m/n/10.95 Å \FML/futmi/m/it/10.95 ^^M[]v[]k[]$\T1/futs/m/n/10.95 , sug-gest-ing un-bounded
  []
 
-[62] [63]
-Overfull \hbox (1.30174pt too wide) in paragraph at lines 621--628
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64] [65]
+Overfull \hbox (1.30174pt too wide) in paragraph at lines 636--643
 \T1/futs/m/n/10.95 Laser-driven plas-mas are heated and ex-pand, lead-ing to den-sity gra-di-ents in the re-gion where
  []
 
-[64]
+[66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65]
-Underfull \vbox (badness 2707) has occurred while \output is active []
+ [67] [68]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66] [67]
-<Theory/Images/Inv_Brem.png, id=1744, 987.69pt x 736.7525pt>
+ [69]
+<Theory/Images/Inv_Brem.png, id=1802, 987.69pt x 736.7525pt>
 File: Theory/Images/Inv_Brem.png Graphic file (type png)
 <use Theory/Images/Inv_Brem.png>
-Package pdftex.def Info: Theory/Images/Inv_Brem.png  used on input line 787.
+Package pdftex.def Info: Theory/Images/Inv_Brem.png  used on input line 802.
 (pdftex.def)             Requested size: 249.24878pt x 185.91893pt.
- [68]
-Underfull \vbox (badness 1824) has occurred while \output is active []
+ [70 <./Theory/Images/Inv_Brem.png (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69 <./Theory/Images/Inv_Brem.png (PNG copy)>]
-Overfull \hbox (5.89928pt too wide) in paragraph at lines 859--862
-\FML/futmi/m/it/10.95 e\FMS/futm/m/n/10.95 j\T1/futs/b/n/10.95 E\FMS/futm/m/n/10.95 j\T1/futs/m/n/10.95 /\FML/futmi/m/it/10.95 m[]!$ \T1/futs/m/n/10.95 is the quiver ve-loc-ity. The mod-i-fied ab-sorp-tion ker-nel is then the value from Eq. [][]2.97[][],
+ [71]
+Overfull \hbox (5.89928pt too wide) in paragraph at lines 876--879
+\FML/futmi/m/it/10.95 e\FMS/futm/m/n/10.95 j\T1/futs/b/n/10.95 E\FMS/futm/m/n/10.95 j\T1/futs/m/n/10.95 /\FML/futmi/m/it/10.95 m[]!$ \T1/futs/m/n/10.95 is the quiver ve-loc-ity. The mod-i-fied ab-sorp-tion ker-nel is then the value from Eq. [][]2.98[][],
  []
 
-<Theory/Images/Res_Abs.png, id=1783, 1179.40625pt x 544.0325pt>
+<Theory/Images/Res_Abs.png, id=1848, 1179.40625pt x 544.0325pt>
 File: Theory/Images/Res_Abs.png Graphic file (type png)
 <use Theory/Images/Res_Abs.png>
-Package pdftex.def Info: Theory/Images/Res_Abs.png  used on input line 873.
+Package pdftex.def Info: Theory/Images/Res_Abs.png  used on input line 894.
 (pdftex.def)             Requested size: 270.01424pt x 124.55205pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
+ [72]
+Package acronym Info: Label `acro:NIF' overridden on input line 904.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71 <./Theory/Images/Res_Abs.png (PNG copy)>] [72]
-<Theory/Images/2wave_beat.png, id=1849, 2215.3164pt x 1346.631pt>
+ [73 <./Theory/Images/Res_Abs.png (PNG copy)>] [74]
+<Theory/Images/2wave_beat.png, id=1917, 2215.3164pt x 1346.631pt>
 File: Theory/Images/2wave_beat.png Graphic file (type png)
 <use Theory/Images/2wave_beat.png>
-Package pdftex.def Info: Theory/Images/2wave_beat.png  used on input line 992.
+Package pdftex.def Info: Theory/Images/2wave_beat.png  used on input line 1013.
 (pdftex.def)             Requested size: 311.55782pt x 189.39006pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [73]
-<Theory/Images/LPI_conservation_disprel.png, id=1869, 717.4002pt x 505.89pt>
+ [75]
+Package acronym Info: Label `acro:SRS' overridden on input line 1037.
+Package acronym Info: Label `acro:SBS' overridden on input line 1037.
+<Theory/Images/LPI_conservation_disprel.png, id=1936, 717.4002pt x 505.89pt>
 File: Theory/Images/LPI_conservation_disprel.png Graphic file (type png)
 <use Theory/Images/LPI_conservation_disprel.png>
-Package pdftex.def Info: Theory/Images/LPI_conservation_disprel.png  used on input line 1019.
+Package pdftex.def Info: Theory/Images/LPI_conservation_disprel.png  used on input line 1040.
 (pdftex.def)             Requested size: 249.24878pt x 175.75958pt.
- [74 <./Theory/Images/2wave_beat.png>]
-<Theory/Images/CBET_mechanism.png, id=1904, 1857.339pt x 1590.4218pt>
+ [76 <./Theory/Images/2wave_beat.png>]
+<Theory/Images/CBET_mechanism.png, id=1973, 1857.339pt x 1590.4218pt>
 File: Theory/Images/CBET_mechanism.png Graphic file (type png)
 <use Theory/Images/CBET_mechanism.png>
-Package pdftex.def Info: Theory/Images/CBET_mechanism.png  used on input line 1047.
+Package pdftex.def Info: Theory/Images/CBET_mechanism.png  used on input line 1068.
 (pdftex.def)             Requested size: 332.3296pt x 284.56482pt.
- [75 <./Theory/Images/LPI_conservation_disprel.png>]
+ [77 <./Theory/Images/LPI_conservation_disprel.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76 <./Theory/Images/CBET_mechanism.png>]
-<Theory/Images/CBET_modes.png, id=1965, 671.673pt x 227.541pt>
+ [78 <./Theory/Images/CBET_mechanism.png>]
+<Theory/Images/CBET_modes.png, id=2034, 671.673pt x 227.541pt>
 File: Theory/Images/CBET_modes.png Graphic file (type png)
 <use Theory/Images/CBET_modes.png>
-Package pdftex.def Info: Theory/Images/CBET_modes.png  used on input line 1102.
+Package pdftex.def Info: Theory/Images/CBET_modes.png  used on input line 1123.
 (pdftex.def)             Requested size: 415.41043pt x 140.73022pt.
+Package acronym Info: Label `acro:LEH' overridden on input line 1145.
 
-Overfull \hbox (2.78pt too wide) in paragraph at lines 1113--1127
+Overfull \hbox (2.78pt too wide) in paragraph at lines 1134--1148
 \T1/futs/m/n/10.95 iden-ti-fies two dis-tinct regimes when a res-o-nance can be achieved, which are shown in Fig. [][]2.9[][].
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77 <./Theory/Images/CBET_modes.png>]
+ [79 <./Theory/Images/CBET_modes.png>]
 Package acronym Info: Label `acro:DPRs' newly defined as it shall be overridden
-although it is yet undefined on input line 1136.
+although it is yet undefined on input line 1157.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1742) has occurred while \output is active []
 
- [78] [79]) [80]
+ [80] [81]
+Package acronym Info: Label `acro:SSD' overridden on input line 1213.
+) [82]
 \openout2 = `Numerics/NumericsMain.aux'.
 
  (./Numerics/NumericsMain.tex
 chapter 3.
-
-Overfull \hbox (1.70695pt too wide) in paragraph at lines 4--8
-\T1/futs/m/n/10.95 quently used to model `long-pulse' lasers for [][] ex-per-i-ments and why the stan-dard frame-
- []
-
-[81
+Package acronym Info: Label `acro:Rad-MHD' overridden on input line 5.
+Package acronym Info: Label `acro:HEDP' overridden on input line 6.
+Package acronym Info: Label `acro:LPIs' overridden on input line 6.
+Package acronym Info: Label `acro:CBET' overridden on input line 7.
+[83
 
 
 
 
 ]
+Package acronym Info: Label `acro:ICF' overridden on input line 18.
+Package acronym Info: Label `acro:PiC' overridden on input line 22.
+Package acronym Info: Label `acro:Rad-Hydro' overridden on input line 23.
 Package acronym Info: Label `acro:GO' newly defined as it shall be overridden
-although it is yet undefined on input line 24.
- [82]
+although it is yet undefined on input line 25.
+Package acronym Info: Label `acro:Inv-Brem' overridden on input line 30.
+ [84]
+Package acronym Info: Label `acro:SBS' overridden on input line 67.
 Package acronym Info: Label `acro:IRT' newly defined as it shall be overridden
-although it is yet undefined on input line 70.
-Package acronym Info: Label `acro:FRT' newly defined as it shall be overridden
 although it is yet undefined on input line 71.
- [83]
-<Numerics/Images/Reflected_Rays.png, id=2228, 440.3652pt x 344.9688pt>
+Package acronym Info: Label `acro:FRT' newly defined as it shall be overridden
+although it is yet undefined on input line 72.
+Package acronym Info: Label `acro:LLE' overridden on input line 74.
+ [85]
+<Numerics/Images/Reflected_Rays.png, id=2308, 440.3652pt x 344.9688pt>
 File: Numerics/Images/Reflected_Rays.png Graphic file (type png)
 <use Numerics/Images/Reflected_Rays.png>
-Package pdftex.def Info: Numerics/Images/Reflected_Rays.png  used on input line 76.
+Package pdftex.def Info: Numerics/Images/Reflected_Rays.png  used on input line 77.
 (pdftex.def)             Requested size: 284.52756pt x 222.90057pt.
- [84 <./Numerics/Images/Reflected_Rays.png>]
+Package acronym Info: Label `acro:LLNL' overridden on input line 85.
+Package acronym Info: Label `acro:CEA' overridden on input line 85.
+ [86 <./Numerics/Images/Reflected_Rays.png>]
 Package acronym Info: Label `acro:PCGO' newly defined as it shall be overridden
-although it is yet undefined on input line 99.
- [85]
-Overfull \hbox (9.70036pt too wide) in paragraph at lines 140--142
+although it is yet undefined on input line 100.
+ [87]
+Package acronym Info: Label `acro:IAW' overridden on input line 133.
+
+Overfull \hbox (9.70036pt too wide) in paragraph at lines 144--146
 \T1/futs/m/n/10.95 This sec-tion de-scribes how the ray equa-tions, de-rived from the Helmholtz equa-tion in Sec. [][]2.4.2[][]
  []
 
-<Numerics/Images/raytrace_flowchart.png, id=2310, 653.3208pt x 401.8212pt>
+[88]
+<Numerics/Images/raytrace_flowchart.png, id=2405, 653.3208pt x 401.8212pt>
 File: Numerics/Images/raytrace_flowchart.png Graphic file (type png)
 <use Numerics/Images/raytrace_flowchart.png>
-Package pdftex.def Info: Numerics/Images/raytrace_flowchart.png  used on input line 155.
+Package pdftex.def Info: Numerics/Images/raytrace_flowchart.png  used on input line 159.
 (pdftex.def)             Requested size: 373.86685pt x 229.94176pt.
 Package acronym Info: Label `acro:MPI' newly defined as it shall be overridden
-although it is yet undefined on input line 165.
-[86] [87 <./Numerics/Images/raytrace_flowchart.png>]
-<Numerics/Images/SOLAS_CHIMERA_domain.png, id=2342, 867.24pt x 433.62pt>
+although it is yet undefined on input line 169.
+ [89 <./Numerics/Images/raytrace_flowchart.png>]
+<Numerics/Images/SOLAS_CHIMERA_domain.png, id=2430, 867.24pt x 433.62pt>
 File: Numerics/Images/SOLAS_CHIMERA_domain.png Graphic file (type png)
 <use Numerics/Images/SOLAS_CHIMERA_domain.png>
-Package pdftex.def Info: Numerics/Images/SOLAS_CHIMERA_domain.png  used on input line 187.
+Package pdftex.def Info: Numerics/Images/SOLAS_CHIMERA_domain.png  used on input line 191.
 (pdftex.def)             Requested size: 415.41043pt x 207.70515pt.
+ [90 <./Numerics/Images/SOLAS_CHIMERA_domain.png>]
 Package acronym Info: Label `acro:OpenMP' newly defined as it shall be overridden
-although it is yet undefined on input line 205.
- [88 <./Numerics/Images/SOLAS_CHIMERA_domain.png>]
-<Numerics/Images/solas_cells_3imagescombined.png, id=2364, 520.344pt x 487.5816pt>
+although it is yet undefined on input line 209.
+<Numerics/Images/solas_cells_3imagescombined.png, id=2452, 520.344pt x 487.5816pt>
 File: Numerics/Images/solas_cells_3imagescombined.png Graphic file (type png)
 <use Numerics/Images/solas_cells_3imagescombined.png>
-Package pdftex.def Info: Numerics/Images/solas_cells_3imagescombined.png  used on input line 222.
+Package pdftex.def Info: Numerics/Images/solas_cells_3imagescombined.png  used on input line 226.
 (pdftex.def)             Requested size: 415.41043pt x 389.27718pt.
- [89]
-Underfull \vbox (badness 1067) has occurred while \output is active []
+ [91]
+Underfull \vbox (badness 2529) has occurred while \output is active []
 
- [90 <./Numerics/Images/solas_cells_3imagescombined.png>]
-<Numerics/Images/ray_init_plots.png, id=2392, 1011.78pt x 331.57475pt>
+ [92 <./Numerics/Images/solas_cells_3imagescombined.png>]
+<Numerics/Images/ray_init_plots.png, id=2480, 1011.78pt x 331.57475pt>
 File: Numerics/Images/ray_init_plots.png Graphic file (type png)
 <use Numerics/Images/ray_init_plots.png>
-Package pdftex.def Info: Numerics/Images/ray_init_plots.png  used on input line 262.
+Package pdftex.def Info: Numerics/Images/ray_init_plots.png  used on input line 266.
 (pdftex.def)             Requested size: 415.41043pt x 136.13878pt.
- [91 <./Numerics/Images/ray_init_plots.png>] [92] [93]
-Overfull \hbox (7.66733pt too wide) in paragraph at lines 370--372
+ [93 <./Numerics/Images/ray_init_plots.png>] [94]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [95] [96]
+Overfull \hbox (7.66733pt too wide) in paragraph at lines 374--376
 \T1/futs/m/n/10.95 and the Kaiser al-go-rithm. These are de-scribed be-low, along-side the method for ray-deposition-
  []
 
-[94]
-Overfull \hbox (3.17429pt too wide) in paragraph at lines 386--393
- []\T1/futs/b/n/10.95 Kaiser Al-go-rithm \T1/futs/m/n/10.95 The Kaiser al-go-rithm for ray in-te-gra-tion has also been im-ple-mented [[][]176[][]].
+
+Overfull \hbox (3.17429pt too wide) in paragraph at lines 390--397
+ []\T1/futs/b/n/10.95 Kaiser Al-go-rithm \T1/futs/m/n/10.95 The Kaiser al-go-rithm for ray in-te-gra-tion has also been im-ple-mented [[][]182[][]].
  []
 
-<Numerics/Images/SOLAS_ray_shape_functions.png, id=2467, 505.89pt x 361.35pt>
+<Numerics/Images/SOLAS_ray_shape_functions.png, id=2552, 505.89pt x 361.35pt>
 File: Numerics/Images/SOLAS_ray_shape_functions.png Graphic file (type png)
 <use Numerics/Images/SOLAS_ray_shape_functions.png>
-Package pdftex.def Info: Numerics/Images/SOLAS_ray_shape_functions.png  used on input line 395.
+Package pdftex.def Info: Numerics/Images/SOLAS_ray_shape_functions.png  used on input line 399.
 (pdftex.def)             Requested size: 284.52756pt x 203.23682pt.
-[95 <./Numerics/Images/SOLAS_ray_shape_functions.png>]
-Overfull \hbox (2.78368pt too wide) in paragraph at lines 414--419
+[97]
+Overfull \hbox (2.78368pt too wide) in paragraph at lines 418--423
 \T1/futs/m/n/10.95 crease of the ma-te-rial, which also re-duces the [][] ker-nel. If the hy-dro-dy-namic timestep,
  []
 
-[96]
-<Numerics/Images/Quadtrough.png, id=2498, 867.24pt x 433.62pt>
+
+Underfull \vbox (badness 4699) has occurred while \output is active []
+
+ [98 <./Numerics/Images/SOLAS_ray_shape_functions.png>]
+<Numerics/Images/Quadtrough.png, id=2587, 867.24pt x 433.62pt>
 File: Numerics/Images/Quadtrough.png Graphic file (type png)
 <use Numerics/Images/Quadtrough.png>
-Package pdftex.def Info: Numerics/Images/Quadtrough.png  used on input line 440.
+Package pdftex.def Info: Numerics/Images/Quadtrough.png  used on input line 444.
 (pdftex.def)             Requested size: 415.41043pt x 207.70515pt.
- [97 <./Numerics/Images/Quadtrough.png>]
-<Numerics/Images/cyl_helix.png, id=2513, 963.6pt x 344.0052pt>
+ [99 <./Numerics/Images/Quadtrough.png>]
+<Numerics/Images/cyl_helix.png, id=2598, 963.6pt x 344.0052pt>
 File: Numerics/Images/cyl_helix.png Graphic file (type png)
 <use Numerics/Images/cyl_helix.png>
-Package pdftex.def Info: Numerics/Images/cyl_helix.png  used on input line 475.
+Package pdftex.def Info: Numerics/Images/cyl_helix.png  used on input line 479.
 (pdftex.def)             Requested size: 415.41043pt x 148.29727pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2573) has occurred while \output is active []
 
- [98 <./Numerics/Images/cyl_helix.png>]
-<Numerics/Images/blastwave.png, id=2525, 505.89pt x 289.08pt>
+ [100]
+<Numerics/Images/blastwave.png, id=2611, 505.89pt x 289.08pt>
 File: Numerics/Images/blastwave.png Graphic file (type png)
 <use Numerics/Images/blastwave.png>
-Package pdftex.def Info: Numerics/Images/blastwave.png  used on input line 514.
+Package pdftex.def Info: Numerics/Images/blastwave.png  used on input line 518.
 (pdftex.def)             Requested size: 373.86685pt x 213.64236pt.
- [99 <./Numerics/Images/blastwave.png>]
-<Numerics/Images/3d_raytube.png, id=2545, 446.1468pt x 390.7398pt>
+ [101 <./Numerics/Images/cyl_helix.png>]
+<Numerics/Images/3d_raytube.png, id=2632, 446.1468pt x 390.7398pt>
 File: Numerics/Images/3d_raytube.png Graphic file (type png)
 <use Numerics/Images/3d_raytube.png>
-Package pdftex.def Info: Numerics/Images/3d_raytube.png  used on input line 554.
+Package pdftex.def Info: Numerics/Images/3d_raytube.png  used on input line 558.
 (pdftex.def)             Requested size: 311.55782pt x 272.87804pt.
 
-Underfull \hbox (badness 1303) in paragraph at lines 560--560
+Underfull \hbox (badness 1303) in paragraph at lines 564--564
 [][][]|\T1/futs/m/n/10.95 A 3-D il-lus-tra-tion of the ray-amplitude con-struc-tion for a sin-gle ray in a
  []
 
-[100]
-<Numerics/Images/FieldCap_Diagram.png, id=2558, 1011.78pt x 397.485pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102 <./Numerics/Images/blastwave.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [103 <./Numerics/Images/3d_raytube.png>]
+<Numerics/Images/FieldCap_Diagram.png, id=2652, 1011.78pt x 397.485pt>
 File: Numerics/Images/FieldCap_Diagram.png Graphic file (type png)
 <use Numerics/Images/FieldCap_Diagram.png>
-Package pdftex.def Info: Numerics/Images/FieldCap_Diagram.png  used on input line 589.
+Package pdftex.def Info: Numerics/Images/FieldCap_Diagram.png  used on input line 593.
 (pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
 
-Underfull \hbox (badness 1769) in paragraph at lines 594--594
+Underfull \hbox (badness 1769) in paragraph at lines 598--598
 [][][]|\T1/futs/m/n/10.95 A demon-stra-tion of how the ray-amplitude is ob-tained from the area of
  []
 
-
-Underfull \vbox (badness 5388) has occurred while \output is active []
-
- [101 <./Numerics/Images/3d_raytube.png>]
-Underfull \vbox (badness 3138) has occurred while \output is active []
-
- [102 <./Numerics/Images/FieldCap_Diagram.png>]
-<Numerics/Images/Raysheets_withcyl.png, id=2576, 1011.78pt x 397.485pt>
+[104 <./Numerics/Images/FieldCap_Diagram.png>]
+<Numerics/Images/Raysheets_withcyl.png, id=2665, 1011.78pt x 397.485pt>
 File: Numerics/Images/Raysheets_withcyl.png Graphic file (type png)
 <use Numerics/Images/Raysheets_withcyl.png>
-Package pdftex.def Info: Numerics/Images/Raysheets_withcyl.png  used on input line 631.
+Package pdftex.def Info: Numerics/Images/Raysheets_withcyl.png  used on input line 635.
 (pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
- [103 <./Numerics/Images/Raysheets_withcyl.png>] [104]
+ [105] [106 <./Numerics/Images/Raysheets_withcyl.png>]
 Package acronym Info: Label `acro:FL' newly defined as it shall be overridden
-although it is yet undefined on input line 687.
+although it is yet undefined on input line 691.
 Package acronym Info: Label `acro:EI' newly defined as it shall be overridden
-although it is yet undefined on input line 687.
- [105] [106]
-<Numerics/Images/1d_field_capping.png, id=2677, 867.24pt x 346.896pt>
+although it is yet undefined on input line 691.
+
+Underfull \vbox (badness 2326) has occurred while \output is active []
+
+ [107]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [108]
+<Numerics/Images/1d_field_capping.png, id=2761, 867.24pt x 346.896pt>
 File: Numerics/Images/1d_field_capping.png Graphic file (type png)
 <use Numerics/Images/1d_field_capping.png>
-Package pdftex.def Info: Numerics/Images/1d_field_capping.png  used on input line 764.
+Package pdftex.def Info: Numerics/Images/1d_field_capping.png  used on input line 768.
 (pdftex.def)             Requested size: 415.41043pt x 166.16412pt.
- [107 <./Numerics/Images/1d_field_capping.png>]
-Overfull \hbox (6.10391pt too wide) in paragraph at lines 789--792
+ [109]
+Overfull \hbox (6.10391pt too wide) in paragraph at lines 793--796
 \T1/futs/m/n/10.95 prop-a-gate be-yond $\FML/futmi/m/it/10.95 " \FMS/futm/m/n/10.95 Å \T1/futs/m/n/10.95 0$. The evanes-cent field in this re-gion can be re-pro-duced in the complex-
  []
 
-<Numerics/Images/2D_field_reconstruction_lineouts_alt.png, id=2703, 1011.78pt x 578.16pt>
+<Numerics/Images/2D_field_reconstruction_lineouts_alt.png, id=2791, 1011.78pt x 578.16pt>
 File: Numerics/Images/2D_field_reconstruction_lineouts_alt.png Graphic file (type png)
 <use Numerics/Images/2D_field_reconstruction_lineouts_alt.png>
-Package pdftex.def Info: Numerics/Images/2D_field_reconstruction_lineouts_alt.png  used on input line 797.
+Package pdftex.def Info: Numerics/Images/2D_field_reconstruction_lineouts_alt.png  used on input line 801.
 (pdftex.def)             Requested size: 415.41043pt x 237.38237pt.
-[108 <./Numerics/Images/2D_field_reconstruction_lineouts_alt.png>]
-<Numerics/Images/CBET_flowchart.PNG, id=2730, 639.3486pt x 526.1256pt>
+[110 <./Numerics/Images/1d_field_capping.png>]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [111 <./Numerics/Images/2D_field_reconstruction_lineouts_alt.png>]
+<Numerics/Images/CBET_flowchart.PNG, id=2823, 639.3486pt x 526.1256pt>
 File: Numerics/Images/CBET_flowchart.PNG Graphic file (type png)
 <use Numerics/Images/CBET_flowchart.PNG>
-Package pdftex.def Info: Numerics/Images/CBET_flowchart.PNG  used on input line 835.
+Package pdftex.def Info: Numerics/Images/CBET_flowchart.PNG  used on input line 839.
 (pdftex.def)             Requested size: 373.86685pt x 307.6578pt.
- [109] [110 <./Numerics/Images/CBET_flowchart.PNG>]
-Underfull \vbox (badness 1859) has occurred while \output is active []
-
- [111]
-Underfull \vbox (badness 4872) has occurred while \output is active []
-
- [112]
-<Numerics/Images/caustic_region_diagram.png, id=2816, 939.51pt x 794.97pt>
+ [112 <./Numerics/Images/CBET_flowchart.PNG>] [113] [114]
+Package acronym Info: Label `acro:DPRs' overridden on input line 972.
+ [115]
+<Numerics/Images/caustic_region_diagram.png, id=2913, 939.51pt x 794.97pt>
 File: Numerics/Images/caustic_region_diagram.png Graphic file (type png)
 <use Numerics/Images/caustic_region_diagram.png>
-Package pdftex.def Info: Numerics/Images/caustic_region_diagram.png  used on input line 982.
+Package pdftex.def Info: Numerics/Images/caustic_region_diagram.png  used on input line 986.
 (pdftex.def)             Requested size: 415.41043pt x 351.49825pt.
- [113]
-Underfull \vbox (badness 2426) has occurred while \output is active []
+Package acronym Info: Label `acro:CGT' overridden on input line 992.
 
- [114 <./Numerics/Images/caustic_region_diagram.png>] [115]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [116]
-<Numerics/Images/PumpDepletionIterations.png, id=2902, 1011.78pt x 578.16pt>
+ [116 <./Numerics/Images/caustic_region_diagram.png>] [117] [118]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [119]
+<Numerics/Images/PumpDepletionIterations.png, id=2997, 1011.78pt x 578.16pt>
 File: Numerics/Images/PumpDepletionIterations.png Graphic file (type png)
 <use Numerics/Images/PumpDepletionIterations.png>
-Package pdftex.def Info: Numerics/Images/PumpDepletionIterations.png  used on input line 1112.
+Package pdftex.def Info: Numerics/Images/PumpDepletionIterations.png  used on input line 1116.
 (pdftex.def)             Requested size: 415.41043pt x 237.38237pt.
- [117]
-Underfull \vbox (badness 2126) has occurred while \output is active []
 
- [118 <./Numerics/Images/PumpDepletionIterations.png>]
-<Numerics/Images/delE_minimisation.png, id=2939, 505.89pt x 361.35pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [120] [121 <./Numerics/Images/PumpDepletionIterations.png>]
+<Numerics/Images/delE_minimisation.png, id=3034, 505.89pt x 361.35pt>
 File: Numerics/Images/delE_minimisation.png Graphic file (type png)
 <use Numerics/Images/delE_minimisation.png>
-Package pdftex.def Info: Numerics/Images/delE_minimisation.png  used on input line 1156.
+Package pdftex.def Info: Numerics/Images/delE_minimisation.png  used on input line 1160.
 (pdftex.def)             Requested size: 249.24878pt x 178.03899pt.
- [119 <./Numerics/Images/delE_minimisation.png>] [120]
-<Numerics/Images/CBET_test_nocaustics.png, id=2987, 642.7212pt x 463.9734pt>
+ [122 <./Numerics/Images/delE_minimisation.png>] [123]
+<Numerics/Images/CBET_test_nocaustics.png, id=3083, 643.203pt x 465.9006pt>
 File: Numerics/Images/CBET_test_nocaustics.png Graphic file (type png)
 <use Numerics/Images/CBET_test_nocaustics.png>
-Package pdftex.def Info: Numerics/Images/CBET_test_nocaustics.png  used on input line 1225.
-(pdftex.def)             Requested size: 415.41043pt x 299.88pt.
-
-Overfull \hbox (5.24376pt too wide) in paragraph at lines 1247--1252
-[]\T1/futs/m/n/10.95 The first test prob-lem is for the case of two beams cross-ing in a non-uniform, non-stationary
- []
-
-
-Underfull \vbox (badness 2951) has occurred while \output is active []
-
- [121] [122 <./Numerics/Images/CBET_test_nocaustics.png>]
-<Numerics/Images/caustic_CBET_test.png, id=3015, 2765.0803pt x 1244.39906pt>
+Package pdftex.def Info: Numerics/Images/CBET_test_nocaustics.png  used on input line 1229.
+(pdftex.def)             Requested size: 415.41043pt x 300.90524pt.
+ [124 <./Numerics/Images/CBET_test_nocaustics.png>]
+<Numerics/Images/caustic_CBET_test.png, id=3103, 2765.0803pt x 1244.39906pt>
 File: Numerics/Images/caustic_CBET_test.png Graphic file (type png)
 <use Numerics/Images/caustic_CBET_test.png>
-Package pdftex.def Info: Numerics/Images/caustic_CBET_test.png  used on input line 1272.
+Package pdftex.def Info: Numerics/Images/caustic_CBET_test.png  used on input line 1276.
 (pdftex.def)             Requested size: 415.41043pt x 186.93663pt.
- [123 <./Numerics/Images/caustic_CBET_test.png>]
-<Numerics/Images/caustic_cbet_test_resscan.png, id=3039, 1011.78pt x 361.35pt>
+
+Underfull \vbox (badness 1163) has occurred while \output is active []
+
+ [125]
+<Numerics/Images/caustic_cbet_test_resscan.png, id=3128, 1011.78pt x 361.35pt>
 File: Numerics/Images/caustic_cbet_test_resscan.png Graphic file (type png)
 <use Numerics/Images/caustic_cbet_test_resscan.png>
-Package pdftex.def Info: Numerics/Images/caustic_cbet_test_resscan.png  used on input line 1306.
+Package pdftex.def Info: Numerics/Images/caustic_cbet_test_resscan.png  used on input line 1310.
 (pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
 
-Overfull \hbox (6.76582pt too wide) in paragraph at lines 1313--1319
+Overfull \hbox (6.76582pt too wide) in paragraph at lines 1317--1323
 \T1/futs/m/n/10.95 beam am-pli-fi-ca-tion af-ter en-ergy con-ser-va-tion it-er-a-tions is plot-ted in Fig. [][]3.21[][].a, which demon-
  []
 
-<Numerics/Images/16beamCBET.png, id=3052, 963.6pt x 403.179pt>
+[126 <./Numerics/Images/caustic_CBET_test.png>]
+<Numerics/Images/16beamCBET.png, id=3146, 963.6pt x 403.179pt>
 File: Numerics/Images/16beamCBET.png Graphic file (type png)
 <use Numerics/Images/16beamCBET.png>
-Package pdftex.def Info: Numerics/Images/16beamCBET.png  used on input line 1325.
+Package pdftex.def Info: Numerics/Images/16beamCBET.png  used on input line 1329.
 (pdftex.def)             Requested size: 415.41043pt x 173.80653pt.
-[124 <./Numerics/Images/caustic_cbet_test_resscan.png>]
-Underfull \vbox (badness 1303) has occurred while \output is active []
-
- [125 <./Numerics/Images/16beamCBET.png>]
-<Numerics/Images/89224_setup.png, id=3092, 780.9978pt x 409.53pt>
+ [127 <./Numerics/Images/caustic_cbet_test_resscan.png> <./Numerics/Images/16beamCBET.png>] [128]
+<Numerics/Images/89224_setup.png, id=3186, 780.9978pt x 409.53pt>
 File: Numerics/Images/89224_setup.png Graphic file (type png)
 <use Numerics/Images/89224_setup.png>
-Package pdftex.def Info: Numerics/Images/89224_setup.png  used on input line 1389.
+Package pdftex.def Info: Numerics/Images/89224_setup.png  used on input line 1393.
 (pdftex.def)             Requested size: 373.86685pt x 196.04726pt.
-<Numerics/Images/89224_absorption.png, id=3093, 722.7pt x 722.7pt>
+<Numerics/Images/89224_absorption.png, id=3187, 722.7pt x 722.7pt>
 File: Numerics/Images/89224_absorption.png Graphic file (type png)
 <use Numerics/Images/89224_absorption.png>
-Package pdftex.def Info: Numerics/Images/89224_absorption.png  used on input line 1398.
+Package pdftex.def Info: Numerics/Images/89224_absorption.png  used on input line 1402.
 (pdftex.def)             Requested size: 373.86685pt x 373.86531pt.
- [126] [127 <./Numerics/Images/89224_setup.png>] [128 <./Numerics/Images/89224_absorption.png>]
-<Numerics/Images/89224_it160_pdepcbet.png, id=3161, 1011.78pt x 397.485pt>
+ [129 <./Numerics/Images/89224_setup.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [130 <./Numerics/Images/89224_absorption.png>] [131]
+<Numerics/Images/89224_it160_pdepcbet.png, id=3256, 1011.78pt x 397.485pt>
 File: Numerics/Images/89224_it160_pdepcbet.png Graphic file (type png)
 <use Numerics/Images/89224_it160_pdepcbet.png>
-Package pdftex.def Info: Numerics/Images/89224_it160_pdepcbet.png  used on input line 1480.
+Package pdftex.def Info: Numerics/Images/89224_it160_pdepcbet.png  used on input line 1484.
 (pdftex.def)             Requested size: 415.41043pt x 163.20038pt.
- [129]
-<Numerics/Images/DepositionAsymmetries_mollweide_xy32.png, id=3190, 1011.78pt x 505.89pt>
+
+Underfull \vbox (badness 1436) has occurred while \output is active []
+
+ [132 <./Numerics/Images/89224_it160_pdepcbet.png>]
+<Numerics/Images/DepositionAsymmetries_mollweide_xy32.png, id=3285, 1011.78pt x 505.89pt>
 File: Numerics/Images/DepositionAsymmetries_mollweide_xy32.png Graphic file (type png)
 <use Numerics/Images/DepositionAsymmetries_mollweide_xy32.png>
-Package pdftex.def Info: Numerics/Images/DepositionAsymmetries_mollweide_xy32.png  used on input line 1514.
+Package pdftex.def Info: Numerics/Images/DepositionAsymmetries_mollweide_xy32.png  used on input line 1518.
 (pdftex.def)             Requested size: 415.41043pt x 207.70956pt.
+ [133]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [134 <./Numerics/Images/DepositionAsymmetries_mollweide_xy32.png>]
+<Numerics/Images/IFRIIT_test_fields.png, id=3329, 820.5054pt x 541.5432pt>
+File: Numerics/Images/IFRIIT_test_fields.png Graphic file (type png)
+<use Numerics/Images/IFRIIT_test_fields.png>
+Package pdftex.def Info: Numerics/Images/IFRIIT_test_fields.png  used on input line 1569.
+(pdftex.def)             Requested size: 415.41043pt x 274.1754pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [130 <./Numerics/Images/89224_it160_pdepcbet.png>] [131 <./Numerics/Images/DepositionAsymmetries_mollweide_xy32.png>]
-<Numerics/Images/IFRIIT_test_fields.png, id=3233, 820.5054pt x 541.5432pt>
-File: Numerics/Images/IFRIIT_test_fields.png Graphic file (type png)
-<use Numerics/Images/IFRIIT_test_fields.png>
-Package pdftex.def Info: Numerics/Images/IFRIIT_test_fields.png  used on input line 1565.
-(pdftex.def)             Requested size: 415.41043pt x 274.1754pt.
- [132] [133 <./Numerics/Images/IFRIIT_test_fields.png>])
-Overfull \hbox (1.98215pt too wide) in paragraph at lines 1612--13
+ [135]
+Underfull \vbox (badness 1253) has occurred while \output is active []
+
+ [136 <./Numerics/Images/IFRIIT_test_fields.png>])
+Overfull \hbox (1.98215pt too wide) in paragraph at lines 1616--13
 \T1/futs/m/n/10.95 sim-u-la-tion. The power de-po-si-tion asym-me-try was com-pared to the \T1/futs/m/sc/10.95 Ifriit \T1/futs/m/n/10.95 and \T1/futs/m/sc/10.95 Beam-Crosser
  []
 
 
-Overfull \hbox (0.4903pt too wide) in paragraph at lines 1612--13
+Overfull \hbox (0.4903pt too wide) in paragraph at lines 1616--13
 \T1/futs/m/sc/10.95 Solas \T1/futs/m/n/10.95 is ca-pa-ble of per-form-ing 3-D spher-i-cal direct-drive im-plo-sions with [][] which could
  []
 
-[134]
+[137]
 \openout2 = `Results1/Results1Main.aux'.
 
  (./Results1/Results1Main.tex
 chapter 4.
-[135
+Package acronym Info: Label `acro:CBET' overridden on input line 8.
+[138
 
 
 
 
 ]
-<Results1/Images/RbRt_beam_overlap_alt.png, id=3307, 1011.78pt x 469.755pt>
+<Results1/Images/RbRt_beam_overlap_alt.png, id=3401, 1011.78pt x 469.755pt>
 File: Results1/Images/RbRt_beam_overlap_alt.png Graphic file (type png)
 <use Results1/Images/RbRt_beam_overlap_alt.png>
-Package pdftex.def Info: Results1/Images/RbRt_beam_overlap_alt.png  used on input line 27.
+Package pdftex.def Info: Results1/Images/RbRt_beam_overlap_alt.png  used on input line 28.
 (pdftex.def)             Requested size: 415.41043pt x 192.87317pt.
 
 Underfull \vbox (badness 1845) has occurred while \output is active []
 
- [136 <./Results1/Images/RbRt_beam_overlap_alt.png>]
-<Results1/Images/RbRt_froula.png, id=3348, 501.875pt x 337.26pt>
+ [139 <./Results1/Images/RbRt_beam_overlap_alt.png>]
+<Results1/Images/RbRt_froula.png, id=3443, 501.875pt x 337.26pt>
 File: Results1/Images/RbRt_froula.png Graphic file (type png)
 <use Results1/Images/RbRt_froula.png>
-Package pdftex.def Info: Results1/Images/RbRt_froula.png  used on input line 83.
+Package pdftex.def Info: Results1/Images/RbRt_froula.png  used on input line 84.
 (pdftex.def)             Requested size: 207.70522pt x 139.57947pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [137] [138 <./Results1/Images/RbRt_froula.png>]
+ [140] [141 <./Results1/Images/RbRt_froula.png>]
+Package acronym Info: Label `acro:RTI' overridden on input line 131.
 Package acronym Info: Label `acro:IFAR' newly defined as it shall be overridden
-although it is yet undefined on input line 132.
- [139] [140]
-<Results1/Images/RbRt_degradation_Lees.jpeg, id=3440, 84.315pt x 71.42685pt>
+although it is yet undefined on input line 133.
+ [142] [143]
+<Results1/Images/RbRt_degradation_Lees.jpeg, id=3535, 84.315pt x 71.42685pt>
 File: Results1/Images/RbRt_degradation_Lees.jpeg Graphic file (type jpg)
 <use Results1/Images/RbRt_degradation_Lees.jpeg>
-Package pdftex.def Info: Results1/Images/RbRt_degradation_Lees.jpeg  used on input line 175.
+Package pdftex.def Info: Results1/Images/RbRt_degradation_Lees.jpeg  used on input line 176.
 (pdftex.def)             Requested size: 290.78603pt x 246.3433pt.
 
-Overfull \hbox (1.323pt too wide) in paragraph at lines 186--193
+Overfull \hbox (1.323pt too wide) in paragraph at lines 187--194
  []\T1/futs/b/n/10.95 Finite Beam Degra-da-tion \T1/futs/m/n/10.95 The \T1/futs/m/sc/10.95 Omega \T1/futs/m/n/10.95 laser fa-cil-ity has 60 beams ar-ranged around a sphere,
  []
 
-[141 <./Results1/Images/RbRt_degradation_Lees.jpeg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [142] [143]
-<Results1/Images/cyl_setup.png, id=3490, 789.6702pt x 363.2772pt>
+[144 <./Results1/Images/RbRt_degradation_Lees.jpeg>]
+<Results1/Images/New_stat_model_Y_vs_RbRt.png, id=3556, 505.89pt x 361.35pt>
+File: Results1/Images/New_stat_model_Y_vs_RbRt.png Graphic file (type png)
+<use Results1/Images/New_stat_model_Y_vs_RbRt.png>
+Package pdftex.def Info: Results1/Images/New_stat_model_Y_vs_RbRt.png  used on input line 220.
+(pdftex.def)             Requested size: 290.78603pt x 207.70847pt.
+ [145]
+Package acronym Info: Label `acro:Rad-Hydro' overridden on input line 254.
+ [146 <./Results1/Images/New_stat_model_Y_vs_RbRt.png>]
+<Results1/Images/cyl_setup.png, id=3595, 789.6702pt x 363.2772pt>
 File: Results1/Images/cyl_setup.png Graphic file (type png)
 <use Results1/Images/cyl_setup.png>
-Package pdftex.def Info: Results1/Images/cyl_setup.png  used on input line 270.
+Package pdftex.def Info: Results1/Images/cyl_setup.png  used on input line 284.
 (pdftex.def)             Requested size: 415.41043pt x 191.10587pt.
- [144 <./Results1/Images/cyl_setup.png>]
+ [147]
 Package acronym Info: Label `acro:ADI' newly defined as it shall be overridden
-although it is yet undefined on input line 293.
+although it is yet undefined on input line 307.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 309.
+               Default added (so using `tbp') on input line 323.
 
-[145]
-<Results1/Images/streaks.png, id=3534, 963.6pt x 505.4082pt>
+[148 <./Results1/Images/cyl_setup.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [149]
+<Results1/Images/streaks.png, id=3642, 963.6pt x 505.4082pt>
 File: Results1/Images/streaks.png Graphic file (type png)
 <use Results1/Images/streaks.png>
-Package pdftex.def Info: Results1/Images/streaks.png  used on input line 352.
+Package pdftex.def Info: Results1/Images/streaks.png  used on input line 366.
 (pdftex.def)             Requested size: 415.41043pt x 217.87654pt.
- [146]
-<Results1/Images/Mode_analysis.png, id=3553, 1011.78pt x 361.35pt>
+Package acronym Info: Label `acro:Inv-Brem' overridden on input line 389.
+ [150 <./Results1/Images/streaks.png>]
+<Results1/Images/Mode_analysis.png, id=3663, 1011.78pt x 361.35pt>
 File: Results1/Images/Mode_analysis.png Graphic file (type png)
 <use Results1/Images/Mode_analysis.png>
-Package pdftex.def Info: Results1/Images/Mode_analysis.png  used on input line 385.
+Package pdftex.def Info: Results1/Images/Mode_analysis.png  used on input line 399.
 (pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
- [147 <./Results1/Images/streaks.png>]
+
+Underfull \vbox (badness 3108) has occurred while \output is active []
+
+ [151 <./Results1/Images/Mode_analysis.png>]
 Package acronym Info: Label `acro:DFT' newly defined as it shall be overridden
-although it is yet undefined on input line 427.
-
-Underfull \vbox (badness 5147) has occurred while \output is active []
-
- [148 <./Results1/Images/Mode_analysis.png>]
-<Results1/Images/noCBET_PR_modes.png, id=3610, 667.293pt x 537.207pt>
+although it is yet undefined on input line 441.
+<Results1/Images/noCBET_PR_modes.png, id=3712, 667.293pt x 537.207pt>
 File: Results1/Images/noCBET_PR_modes.png Graphic file (type png)
 <use Results1/Images/noCBET_PR_modes.png>
-Package pdftex.def Info: Results1/Images/noCBET_PR_modes.png  used on input line 453.
+Package pdftex.def Info: Results1/Images/noCBET_PR_modes.png  used on input line 467.
 (pdftex.def)             Requested size: 415.41043pt x 334.42561pt.
-<Results1/Images/NoCBET_modeflip.png, id=3624, 1011.78pt x 361.35pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [152]
+Underfull \vbox (badness 3118) has occurred while \output is active []
+
+ [153 <./Results1/Images/noCBET_PR_modes.png>]
+<Results1/Images/NoCBET_modeflip.png, id=3741, 1011.78pt x 361.35pt>
 File: Results1/Images/NoCBET_modeflip.png Graphic file (type png)
 <use Results1/Images/NoCBET_modeflip.png>
-Package pdftex.def Info: Results1/Images/NoCBET_modeflip.png  used on input line 476.
+Package pdftex.def Info: Results1/Images/NoCBET_modeflip.png  used on input line 490.
 (pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
- [149]
-<Results1/Images/Field_profiles_alt.png, id=3643, 706.3188pt x 542.025pt>
+<Results1/Images/Field_profiles_alt.png, id=3754, 706.3188pt x 542.025pt>
 File: Results1/Images/Field_profiles_alt.png Graphic file (type png)
 <use Results1/Images/Field_profiles_alt.png>
-Package pdftex.def Info: Results1/Images/Field_profiles_alt.png  used on input line 500.
+Package pdftex.def Info: Results1/Images/Field_profiles_alt.png  used on input line 514.
 (pdftex.def)             Requested size: 415.41043pt x 318.78296pt.
-
+ [154 <./Results1/Images/NoCBET_modeflip.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [150 <./Results1/Images/noCBET_PR_modes.png>] [151 <./Results1/Images/NoCBET_modeflip.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [152 <./Results1/Images/Field_profiles_alt.png>]
-<Results1/Images/CBET_PR_modes.png, id=3689, 667.293pt x 537.207pt>
+ [155 <./Results1/Images/Field_profiles_alt.png>]
+<Results1/Images/CBET_PR_modes.png, id=3794, 667.293pt x 537.207pt>
 File: Results1/Images/CBET_PR_modes.png Graphic file (type png)
 <use Results1/Images/CBET_PR_modes.png>
-Package pdftex.def Info: Results1/Images/CBET_PR_modes.png  used on input line 540.
+Package pdftex.def Info: Results1/Images/CBET_PR_modes.png  used on input line 554.
 (pdftex.def)             Requested size: 415.41043pt x 334.42561pt.
- [153 <./Results1/Images/CBET_PR_modes.png>]
-<Results1/Images/CBET_modeflip.png, id=3732, 1011.78pt x 361.35pt>
+ [156]
+Underfull \vbox (badness 2237) has occurred while \output is active []
+
+ [157 <./Results1/Images/CBET_PR_modes.png>]
+<Results1/Images/CBET_modeflip.png, id=3842, 1011.78pt x 361.35pt>
 File: Results1/Images/CBET_modeflip.png Graphic file (type png)
 <use Results1/Images/CBET_modeflip.png>
-Package pdftex.def Info: Results1/Images/CBET_modeflip.png  used on input line 570.
+Package pdftex.def Info: Results1/Images/CBET_modeflip.png  used on input line 584.
 (pdftex.def)             Requested size: 415.41043pt x 148.36398pt.
- [154]
-<Results1/Images/Stagnation_plots.png, id=3763, 689.9376pt x 940.4736pt>
+ [158 <./Results1/Images/CBET_modeflip.png>]
+<Results1/Images/Stagnation_plots.png, id=3874, 689.9376pt x 940.4736pt>
 File: Results1/Images/Stagnation_plots.png Graphic file (type png)
 <use Results1/Images/Stagnation_plots.png>
-Package pdftex.def Info: Results1/Images/Stagnation_plots.png  used on input line 608.
+Package pdftex.def Info: Results1/Images/Stagnation_plots.png  used on input line 622.
 (pdftex.def)             Requested size: 373.86685pt x 509.64198pt.
- [155 <./Results1/Images/CBET_modeflip.png>]
-Underfull \vbox (badness 3965) has occurred while \output is active []
-
- [156 <./Results1/Images/Stagnation_plots.png>]
-<Results1/Images/RbRt_sig_rhomax.png, id=3804, 867.24pt x 361.35pt>
+<Results1/Images/RbRt_sig_rhomax.png, id=3904, 867.24pt x 361.35pt>
 File: Results1/Images/RbRt_sig_rhomax.png Graphic file (type png)
 <use Results1/Images/RbRt_sig_rhomax.png>
-Package pdftex.def Info: Results1/Images/RbRt_sig_rhomax.png  used on input line 641.
+Package pdftex.def Info: Results1/Images/RbRt_sig_rhomax.png  used on input line 655.
 (pdftex.def)             Requested size: 415.41043pt x 173.08763pt.
- [157 <./Results1/Images/RbRt_sig_rhomax.png>]
-<Results1/Images/RbRts_mode10_growth.png, id=3834, 573.8238pt x 542.025pt>
+
+Underfull \vbox (badness 1622) has occurred while \output is active []
+
+ [159]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [160 <./Results1/Images/Stagnation_plots.png>] [161 <./Results1/Images/RbRt_sig_rhomax.png>]
+<Results1/Images/RbRts_mode10_growth.png, id=3946, 573.8238pt x 542.025pt>
 File: Results1/Images/RbRts_mode10_growth.png Graphic file (type png)
 <use Results1/Images/RbRts_mode10_growth.png>
-Package pdftex.def Info: Results1/Images/RbRts_mode10_growth.png  used on input line 677.
+Package pdftex.def Info: Results1/Images/RbRts_mode10_growth.png  used on input line 693.
 (pdftex.def)             Requested size: 311.55782pt x 294.29364pt.
- [158]
-Underfull \vbox (badness 1859) has occurred while \output is active []
+ [162 <./Results1/Images/RbRts_mode10_growth.png>] [163]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [159 <./Results1/Images/RbRts_mode10_growth.png>] [160]
-Overfull \hbox (2.9881pt too wide) in paragraph at lines 771--776
+ [164]
+Overfull \hbox (2.9881pt too wide) in paragraph at lines 787--792
 []\T1/futs/m/n/10.95 Without [][] changes to de-po-si-tion uni-for-mity, the stag-na-tion state asym-me-try de-creased
  []
 
-[161]) [162] [163]
+[165]
+Package acronym Info: Label `acro:ICF' overridden on input line 815.
+) [166]
 \openout2 = `Results2/Results2Main.aux'.
 
  (./Results2/Results2Main.tex
 chapter 5.
-[164
+Package acronym Info: Label `acro:CBET' overridden on input line 5.
+Package acronym Info: Label `acro:ICF' overridden on input line 6.
+Package acronym Info: Label `acro:IAW' overridden on input line 8.
+Package acronym Info: Label `acro:Rad-MHD' overridden on input line 9.
+Package acronym Info: Label `acro:MHD' overridden on input line 16.
+[167
 
 
 
 
 ]
-<Results2/Images/wt_collisions.png, id=3954, 561.7788pt x 231.264pt>
+Package acronym Info: Label `acro:LPIs' overridden on input line 32.
+<Results2/Images/wt_collisions.png, id=4065, 561.7788pt x 231.264pt>
 File: Results2/Images/wt_collisions.png Graphic file (type png)
 <use Results2/Images/wt_collisions.png>
-Package pdftex.def Info: Results2/Images/wt_collisions.png  used on input line 40.
+Package pdftex.def Info: Results2/Images/wt_collisions.png  used on input line 41.
 (pdftex.def)             Requested size: 311.55782pt x 128.26128pt.
- [165 <./Results2/Images/wt_collisions.png>]
-<Results2/Images/magicf_perkins.jpeg, id=3970, 84.315pt x 50.95035pt>
+Package acronym Info: Label `acro:NIF' overridden on input line 50.
+ [168 <./Results2/Images/wt_collisions.png>]
+<Results2/Images/magicf_perkins.jpeg, id=4083, 84.315pt x 50.95035pt>
 File: Results2/Images/magicf_perkins.jpeg Graphic file (type jpg)
 <use Results2/Images/magicf_perkins.jpeg>
-Package pdftex.def Info: Results2/Images/magicf_perkins.jpeg  used on input line 67.
+Package pdftex.def Info: Results2/Images/magicf_perkins.jpeg  used on input line 68.
 (pdftex.def)             Requested size: 311.55782pt x 188.27461pt.
+Package acronym Info: Label `acro:LLNL' overridden on input line 80.
 
 Underfull \vbox (badness 5681) has occurred while \output is active []
 
- [166 <./Results2/Images/magicf_perkins.jpeg>]
-<Results2/Images/magnif_yield_inc.png, id=3993, 451.6875pt x 501.875pt>
+ [169 <./Results2/Images/magicf_perkins.jpeg>]
+<Results2/Images/magnif_yield_inc.png, id=4107, 451.6875pt x 501.875pt>
 File: Results2/Images/magnif_yield_inc.png Graphic file (type png)
 <use Results2/Images/magnif_yield_inc.png>
-Package pdftex.def Info: Results2/Images/magnif_yield_inc.png  used on input line 92.
+Package pdftex.def Info: Results2/Images/magnif_yield_inc.png  used on input line 93.
 (pdftex.def)             Requested size: 207.70522pt x 230.78871pt.
-<Results2/Images/MagP2_Bose.png, id=4005, 512.6352pt x 305.943pt>
+<Results2/Images/MagP2_Bose.png, id=4119, 512.6352pt x 305.943pt>
 File: Results2/Images/MagP2_Bose.png Graphic file (type png)
 <use Results2/Images/MagP2_Bose.png>
-Package pdftex.def Info: Results2/Images/MagP2_Bose.png  used on input line 108.
+Package pdftex.def Info: Results2/Images/MagP2_Bose.png  used on input line 109.
 (pdftex.def)             Requested size: 249.24878pt x 148.75096pt.
- [167 <./Results2/Images/magnif_yield_inc.png (PNG copy)>] [168 <./Results2/Images/MagP2_Bose.png>] [169]
-Overfull \hbox (6.34967pt too wide) in paragraph at lines 172--177
+ [170 <./Results2/Images/magnif_yield_inc.png (PNG copy)>] [171 <./Results2/Images/MagP2_Bose.png>]
+Package acronym Info: Label `acro:SBS' overridden on input line 153.
+Package acronym Info: Label `acro:EPW' overridden on input line 153.
+Package acronym Info: Label `acro:SRS' overridden on input line 153.
+Package acronym Info: Label `acro:TPD' overridden on input line 153.
+ [172]
+Package acronym Info: Label `acro:Rad-Hydro' overridden on input line 176.
+
+Overfull \hbox (6.34967pt too wide) in paragraph at lines 173--178
 []\T1/futs/m/n/10.95 Directly-driven exploding-pusher tar-gets have the largest direct-drive fu-sion yields recorded
  []
 
 
-Overfull \hbox (0.60101pt too wide) in paragraph at lines 184--188
+Overfull \hbox (0.60101pt too wide) in paragraph at lines 185--189
 \T1/futs/m/n/10.95 drive, exploding-pusher ex-per-i-ments are pre-sented, with a fo-cus on how [][] acts to change
  []
 
-<Results2/Images/magpdd_diagram_pulse.png, id=4086, 1011.78pt x 433.62pt>
+<Results2/Images/magpdd_diagram_pulse.png, id=4202, 1011.78pt x 433.62pt>
 File: Results2/Images/magpdd_diagram_pulse.png Graphic file (type png)
 <use Results2/Images/magpdd_diagram_pulse.png>
-Package pdftex.def Info: Results2/Images/magpdd_diagram_pulse.png  used on input line 195.
+Package pdftex.def Info: Results2/Images/magpdd_diagram_pulse.png  used on input line 196.
 (pdftex.def)             Requested size: 415.41043pt x 178.03677pt.
-[170] [171 <./Results2/Images/magpdd_diagram_pulse.png>]
+Package acronym Info: Label `acro:MIT' overridden on input line 208.
+[173] [174 <./Results2/Images/magpdd_diagram_pulse.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [172]
+ [175]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 272.
+               Default added (so using `tbp') on input line 273.
 
-[173]
-<Results2/Images/expl_streaks.png, id=4157, 1068.6324pt x 985.7628pt>
+[176]
+<Results2/Images/expl_streaks.png, id=4278, 1068.6324pt x 985.7628pt>
 File: Results2/Images/expl_streaks.png Graphic file (type png)
 <use Results2/Images/expl_streaks.png>
-Package pdftex.def Info: Results2/Images/expl_streaks.png  used on input line 306.
+Package pdftex.def Info: Results2/Images/expl_streaks.png  used on input line 307.
 (pdftex.def)             Requested size: 415.41043pt x 383.19751pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [174 <./Results2/Images/expl_streaks.png>]
-<Results2/Images/unmag_CBET_onoff.png, id=4181, 737.6358pt x 1011.78pt>
+ [177 <./Results2/Images/expl_streaks.png>]
+<Results2/Images/unmag_CBET_onoff.png, id=4302, 737.6358pt x 1011.78pt>
 File: Results2/Images/unmag_CBET_onoff.png Graphic file (type png)
 <use Results2/Images/unmag_CBET_onoff.png>
-Package pdftex.def Info: Results2/Images/unmag_CBET_onoff.png  used on input line 341.
+Package pdftex.def Info: Results2/Images/unmag_CBET_onoff.png  used on input line 342.
 (pdftex.def)             Requested size: 394.63864pt x 541.30467pt.
- [175]
-Underfull \vbox (badness 1810) has occurred while \output is active []
-
- [176 <./Results2/Images/unmag_CBET_onoff.png>]
-<Results2/Images/mag_early_B_develop.png, id=4221, 1011.78pt x 873.9852pt>
+ [178] [179 <./Results2/Images/unmag_CBET_onoff.png>] [180]
+<Results2/Images/mag_early_B_develop.png, id=4345, 1011.78pt x 873.9852pt>
 File: Results2/Images/mag_early_B_develop.png Graphic file (type png)
 <use Results2/Images/mag_early_B_develop.png>
-Package pdftex.def Info: Results2/Images/mag_early_B_develop.png  used on input line 394.
+Package pdftex.def Info: Results2/Images/mag_early_B_develop.png  used on input line 395.
 (pdftex.def)             Requested size: 415.41043pt x 358.84302pt.
- [177]
-Underfull \vbox (badness 3954) has occurred while \output is active []
-
- [178 <./Results2/Images/mag_early_B_develop.png>]
-<Results2/Images/magmag_beta_Rm.png, id=4241, 1011.78pt x 325.215pt>
+ [181 <./Results2/Images/mag_early_B_develop.png>]
+<Results2/Images/magmag_beta_Rm.png, id=4363, 1011.78pt x 325.215pt>
 File: Results2/Images/magmag_beta_Rm.png Graphic file (type png)
 <use Results2/Images/magmag_beta_Rm.png>
-Package pdftex.def Info: Results2/Images/magmag_beta_Rm.png  used on input line 426.
+Package pdftex.def Info: Results2/Images/magmag_beta_Rm.png  used on input line 427.
 (pdftex.def)             Requested size: 415.41043pt x 133.52757pt.
- [179 <./Results2/Images/magmag_beta_Rm.png>]
-<Results2/Images/iso_aniso.png, id=4261, 867.24pt x 722.7pt>
+ [182 <./Results2/Images/magmag_beta_Rm.png>]
+<Results2/Images/iso_aniso.png, id=4382, 867.24pt x 722.7pt>
 File: Results2/Images/iso_aniso.png Graphic file (type png)
 <use Results2/Images/iso_aniso.png>
-Package pdftex.def Info: Results2/Images/iso_aniso.png  used on input line 458.
+Package pdftex.def Info: Results2/Images/iso_aniso.png  used on input line 459.
 (pdftex.def)             Requested size: 332.3296pt x 276.94463pt.
- [180]
-Overfull \hbox (1.42229pt too wide) in paragraph at lines 482--487
+ [183]
+Overfull \hbox (1.42229pt too wide) in paragraph at lines 483--488
 []\T1/futs/m/n/10.95 Bangtimes tem-per-a-ture pro-files, plot-ted in Fig. [][]5.10[][].d, cor-rob-o-rate this anal-y-sis, by demon-
  []
 
-[181 <./Results2/Images/iso_aniso.png>]
-<Results2/Images/nernst_comp_Bstream.png, id=4287, 867.24pt x 469.2732pt>
+[184 <./Results2/Images/iso_aniso.png>]
+<Results2/Images/nernst_comp_Bstream.png, id=4407, 867.24pt x 469.2732pt>
 File: Results2/Images/nernst_comp_Bstream.png Graphic file (type png)
 <use Results2/Images/nernst_comp_Bstream.png>
-Package pdftex.def Info: Results2/Images/nernst_comp_Bstream.png  used on input line 501.
+Package pdftex.def Info: Results2/Images/nernst_comp_Bstream.png  used on input line 502.
 (pdftex.def)             Requested size: 415.41043pt x 224.78314pt.
- [182 <./Results2/Images/nernst_comp_Bstream.png>]
-<Results2/Images/ne_te_Bstream_comp_alt050.png, id=4304, 1011.78pt x 415.7934pt>
+ [185 <./Results2/Images/nernst_comp_Bstream.png>]
+<Results2/Images/ne_te_Bstream_comp_alt050.png, id=4424, 1011.78pt x 415.7934pt>
 File: Results2/Images/ne_te_Bstream_comp_alt050.png Graphic file (type png)
 <use Results2/Images/ne_te_Bstream_comp_alt050.png>
 Package pdftex.def Info: Results2/Images/ne_te_Bstream_comp_alt050.png  used on input line 547.
 (pdftex.def)             Requested size: 415.41043pt x 170.71748pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [183] [184 <./Results2/Images/ne_te_Bstream_comp_alt050.png>]
-<Results2/Images/magcbet_analysis.png, id=4342, 1011.78pt x 664.70332pt>
+ [186] [187 <./Results2/Images/ne_te_Bstream_comp_alt050.png>]
+<Results2/Images/magcbet_analysis.png, id=4463, 1011.78pt x 664.70332pt>
 File: Results2/Images/magcbet_analysis.png Graphic file (type png)
 <use Results2/Images/magcbet_analysis.png>
 Package pdftex.def Info: Results2/Images/magcbet_analysis.png  used on input line 580.
 (pdftex.def)             Requested size: 415.41043pt x 272.91554pt.
- [185 <./Results2/Images/magcbet_analysis.png>]
+ [188 <./Results2/Images/magcbet_analysis.png>]
+Package acronym Info: Label `acro:Inv-Brem' overridden on input line 607.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [186]
-<Results2/Images/Scattering_time_phi_diffCBET_CBtr.png, id=4417, 955.8912pt x 648.021pt>
+ [189]
+<Results2/Images/Scattering_time_phi_diffCBET_CBtr.png, id=4539, 955.8912pt x 648.021pt>
 File: Results2/Images/Scattering_time_phi_diffCBET_CBtr.png Graphic file (type png)
 <use Results2/Images/Scattering_time_phi_diffCBET_CBtr.png>
 Package pdftex.def Info: Results2/Images/Scattering_time_phi_diffCBET_CBtr.png  used on input line 638.
 (pdftex.def)             Requested size: 415.41043pt x 281.61987pt.
- [187 <./Results2/Images/Scattering_time_phi_diffCBET_CBtr.png>]
+ [190 <./Results2/Images/Scattering_time_phi_diffCBET_CBtr.png>]
 Overfull \hbox (1.42218pt too wide) in paragraph at lines 672--677
 []\T1/futs/m/n/10.95 Firstly, the ex-pected change to the bang-time pro-files from the sim-i-lar, qual-i-ta-tive be-haviour
  []
 
-[188]
-<Results2/Images/allall_stagnation.png, id=4474, 1011.78pt x 1025.2704pt>
+[191]
+<Results2/Images/allall_stagnation.png, id=4596, 1011.78pt x 1025.2704pt>
 File: Results2/Images/allall_stagnation.png Graphic file (type png)
 <use Results2/Images/allall_stagnation.png>
 Package pdftex.def Info: Results2/Images/allall_stagnation.png  used on input line 693.
@@ -2982,50 +3334,72 @@ Overfull \hbox (8.89024pt too wide) in paragraph at lines 703--709
 \T1/futs/m/n/10.95 The bang-time $\FML/futmi/m/it/10.95 n[]$\T1/futs/m/n/10.95 , $\FML/futmi/m/it/10.95 T[]$ \T1/futs/m/n/10.95 and $\T1/futs/b/n/10.95 B$ \T1/futs/m/n/10.95 pro-files from the 2-D sim-u-la-tions with all mag-neti-sa-tions (columns)
  []
 
-[189]
-<Results2/Images/CBETshape_stag_diff.png, id=4509, 1011.78pt x 375.804pt>
+Package acronym Info: Label `acro:RTI' overridden on input line 723.
+[192]
+<Results2/Images/CBETshape_stag_diff.png, id=4630, 1011.78pt x 375.804pt>
 File: Results2/Images/CBETshape_stag_diff.png Graphic file (type png)
 <use Results2/Images/CBETshape_stag_diff.png>
 Package pdftex.def Info: Results2/Images/CBETshape_stag_diff.png  used on input line 726.
 (pdftex.def)             Requested size: 415.41043pt x 154.29854pt.
- [190 <./Results2/Images/allall_stagnation.png>]
-<Results2/Images/R2R0_errors.png, id=4542, 505.89pt x 361.35pt>
+ [193 <./Results2/Images/allall_stagnation.png>]
+<Results2/Images/R2R0_errors.png, id=4665, 505.89pt x 361.35pt>
 File: Results2/Images/R2R0_errors.png Graphic file (type png)
 <use Results2/Images/R2R0_errors.png>
 Package pdftex.def Info: Results2/Images/R2R0_errors.png  used on input line 750.
 (pdftex.def)             Requested size: 249.24878pt x 178.03899pt.
- [191 <./Results2/Images/CBETshape_stag_diff.png>]
+ [194 <./Results2/Images/CBETshape_stag_diff.png>]
 Underfull \vbox (badness 1005) has occurred while \output is active []
 
- [192 <./Results2/Images/R2R0_errors.png>] [193]) [194]
+ [195 <./Results2/Images/R2R0_errors.png>] [196]) [197]
 \openout2 = `Conclusions/ConclusionsMain.aux'.
 
  (./Conclusions/ConclusionsMain.tex
 chapter 6.
-[195
+Package acronym Info: Label `acro:CBET' overridden on input line 5.
+Package acronym Info: Label `acro:Rad-MHD' overridden on input line 5.
+[198
 
 
 
 
-] [196]
-Overfull \hbox (2.98807pt too wide) in paragraph at lines 68--80
+]
+Package acronym Info: Label `acro:HEDP' overridden on input line 20.
+Package acronym Info: Label `acro:ICF' overridden on input line 20.
+Package acronym Info: Label `acro:Inv-Brem' overridden on input line 27.
+
+Overfull \hbox (23.72726pt too wide) in paragraph at lines 24--31
+\T1/futs/m/n/10.95 adap-tive RK-45 al-go-rithm was em-ployed to evolve the ray tra-jec-to-ries and [][][][]Inverse-Bremsstrahlung
+ []
+
+Package acronym Info: Label `acro:FL' overridden on input line 38.
+Package acronym Info: Label `acro:EI' overridden on input line 38.
+Package acronym Info: Label `acro:CGT' overridden on input line 48.
+[199]
+Package acronym Info: Label `acro:NIF' overridden on input line 66.
+Package acronym Info: Label `acro:IAW' overridden on input line 76.
+Package acronym Info: Label `acro:LEH' overridden on input line 79.
+
+Overfull \hbox (2.98807pt too wide) in paragraph at lines 69--81
 \T1/futs/m/n/10.95 the ther-mal-is-ing col-li-sions, then this dis-torts the dis-tri-bu-tion func-tion away from Maxwellian,
  []
 
-[197] [198] [199]
-Underfull \vbox (badness 2970) has occurred while \output is active []
+[200]
+Package acronym Info: Label `acro:LPIs' overridden on input line 93.
+Package acronym Info: Label `acro:SRS' overridden on input line 95.
+Package acronym Info: Label `acro:Rad-Hydro' overridden on input line 103.
+ [201] [202] [203]
+Package acronym Info: Label `acro:MHD' overridden on input line 176.
 
- [200]
-Overfull \hbox (1.06448pt too wide) in paragraph at lines 182--188
+Overfull \hbox (1.06448pt too wide) in paragraph at lines 183--189
 \T1/futs/m/n/10.95 the scat-ter-ing of light due to [][]. Par-tic-u-larly, higher mag-neti-sa-tion ap-peared to marginally
  []
 
-[201]
+[204]
 Package acronym Info: Label `acro:GPU' newly defined as it shall be overridden
-although it is yet undefined on input line 212.
+although it is yet undefined on input line 213.
 Package acronym Info: Label `acro:RAM' newly defined as it shall be overridden
-although it is yet undefined on input line 212.
-) [202] [203] [204
+although it is yet undefined on input line 213.
+ [205]) [206] [207
 
 
 
@@ -3037,12 +3411,17 @@ chapter A.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 4.
 (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [205
-
-
-] [206] [207]
-chapter B.
 ) [208
+
+
+] [209] [210]
+chapter B.
+) [211
+
+] [212
+
+
+
 
 ]
 Overfull \hbox (6.14769pt too wide) in paragraph at lines 27--27
@@ -3054,13 +3433,9 @@ Overfull \hbox (4.83699pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Sec-tions, Co-vari-ances, Fis-sion Prod-uct Yields and De-cay Data''. In: \T1/futs/m/it/10.95 Nu-clear Data Sheets
  []
 
-[209
+[213
 
-
-
-
-
-] [210] [211]
+] [214] [215]
 Overfull \hbox (3.59473pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 P. Michel et al. ``Tun-ing the Im-plo-sion Sym-me-try of ICF Tar-gets via Con-trolled Crossed-
  []
@@ -3070,7 +3445,7 @@ Overfull \hbox (17.51324pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 A. L. Kritcher et al. ``En-ergy Trans-fer be-tween Lasers in Low-Gas-Fill-Density Hohlraums''.
  []
 
-[212]
+[216]
 Overfull \hbox (2.52272pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 A. L. Kritcher et al. ``De-sign of In-er-tial Fu-sion Im-plo-sions Reach-ing the Burn-ing Plasma
  []
@@ -3085,7 +3460,7 @@ Overfull \hbox (0.9176pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Frequency-Modulated Light''. In: \T1/futs/m/it/10.95 Jour-nal of Ap-plied Physics \T1/futs/m/n/10.95 66.8 (Oct. 1989), pp. 3456^^U
  []
 
-[213]
+[217]
 Overfull \hbox (1.56891pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 A. Co-laÔtis et al. ``In-verse Ray Trac-ing on Icosa-he-dral Tetra-he-dron Grids for Non-Linear
  []
@@ -3095,17 +3470,17 @@ Overfull \hbox (1.27504pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Im-plo-sion Ex-per-i-ments Us-ing a Physics-Based Sta-tis-ti-cal Map-ping Model''. In: \T1/futs/m/it/10.95 Physics
  []
 
-[214]
+[218]
 Overfull \hbox (8.0596pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 port in Laser Plas-mas''. In: \T1/futs/m/it/10.95 Physics of Flu-ids B: Plasma Physics \T1/futs/m/n/10.95 3.11 (Nov. 1991), pp. 3092^^U
  []
 
-
+[219]
 Overfull \hbox (2.96951pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 T D Ar-ber et al. ``Con-tem-po-rary Particle-in-Cell Ap-proach to Laser-Plasma Mod-elling''.
  []
 
-[215]
+
 Overfull \hbox (2.06834pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 dicted by Three-Dimensional Ra-di-a-tion Hy-dro-dy-nam-ics Sim-u-la-tions of In-di-rect Drive
  []
@@ -3115,22 +3490,27 @@ Overfull \hbox (0.82553pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 C. A. Walsh. ``Ex-tended Magneto-Hydrodynamic Ef-fects in In-di-rect Drive In-er-tial Con-
  []
 
-[216]
+[220] [221]
 Overfull \hbox (4.00159pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Dimensional Ra-di-a-tion Hy-dro-dy-nam-ics Sim-u-la-tions''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 22.8 (Aug.
  []
 
-[217]
+
 Overfull \hbox (5.30296pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 W. Seka et al. ``Time-Resolved Ab-sorp-tion in Cryo-genic and Room-Temperature Direct-
  []
 
-[218]
+[222]
+Overfull \hbox (9.79362pt too wide) in paragraph at lines 27--27
+\T1/futs/m/n/10.95 130.14 (Apr. 2023), p. 145103. \T1/futs/m/sc/10.95 issn\T1/futs/m/n/10.95 : 0031-9007, 1079-7114. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1103 / PhysRevLett .
+ []
+
+
 Overfull \hbox (15.16885pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 P. Michel et al. ``Sat-u-ra-tion of Multi-Laser Beams Laser-Plasma In-sta-bil-i-ties from Stochas-
  []
 
-
+[223]
 Overfull \hbox (3.05379pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 line Mod-el-ing of Po-lar-ized Cross Beam En-ergy Trans-fer and Sub-se-quent Drive Anoma-
  []
@@ -3140,12 +3520,12 @@ Overfull \hbox (4.9253pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 tial Con-fine-ment Fu-sion Im-plo-sions''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 28.4 (Apr. 2021), p. 042701.
  []
 
-[219]
+
 Overfull \hbox (12.11502pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 108.12 (Mar. 2012), p. 125003. \T1/futs/m/sc/10.95 issn\T1/futs/m/n/10.95 : 0031-9007, 1079-7114. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1103 / PhysRevLett .
  []
 
-
+[224]
 Overfull \hbox (2.80801pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 sions on OMEGA Us-ing Wave-length De-tun-ing''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 24.6 (June 2017),
  []
@@ -3155,7 +3535,7 @@ Overfull \hbox (27.75143pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 J. W. Bates et al. ``Sup-press-ing Para-met-ric In-sta-bil-i-ties in Direct-Drive Inertial-Confinement-
  []
 
-[220]
+
 Overfull \hbox (2.26215pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 C. Deeney. ``Ad-vances in Direct-Drive Fu-sion, High-Energy-Density Physics, and Laser
  []
@@ -3170,7 +3550,7 @@ Overfull \hbox (2.12097pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 of Galaxy-Cluster Tur-bu-lent Plas-mas''. In: \T1/futs/m/it/10.95 Sci-ence Ad-vances \T1/futs/m/n/10.95 8.10 (Mar. 2022), eabj6799.
  []
 
-[221]
+[225]
 Overfull \hbox (5.31241pt too wide) in paragraph at lines 27--27
 \T1/futs/m/it/10.95 mas \T1/futs/m/n/10.95 30.1 (Jan. 2023), p. 012701. \T1/futs/m/sc/10.95 issn\T1/futs/m/n/10.95 : 1070-664X, 1089-7674. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1063 / 5 . 0118080$[][]\T1/futs/m/n/10.95 . 
  []
@@ -3185,7 +3565,7 @@ Overfull \hbox (2.64375pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Ab-sorp-tion by In-verse Bremsstrahlung in Plas-mas''. In: \T1/futs/m/it/10.95 Physics of Flu-ids \T1/futs/m/n/10.95 16 (May 1973),
  []
 
-[222]
+[226]
 Overfull \hbox (0.38751pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 I. V. Igu-men-shchev et al. ``Crossed-Beam En-ergy Trans-fer in Direct-Drive Im-plo-sions''.
  []
@@ -3200,7 +3580,7 @@ Overfull \hbox (8.61931pt too wide) in paragraph at lines 27--27
 \T1/futs/m/it/10.95 mas \T1/futs/m/n/10.95 28.3 (Mar. 2021), p. 032103. \T1/futs/m/sc/10.95 issn\T1/futs/m/n/10.95 : 1070-664X, 1089-7674. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1063 / 5 . 0037869$[][]\T1/futs/m/n/10.95 . 
  []
 
-
+[227]
 Overfull \hbox (6.85782pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 Thomas B. Kaiser. ``Laser Ray Trac-ing and Power De-po-si-tion on an Un-struc-tured Three-
  []
@@ -3210,27 +3590,27 @@ Overfull \hbox (3.94958pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Scale-Length In-sta-bil-ity Ex-per-i-ments''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 1.6 (June 1994), pp. 1971^^U
  []
 
-[223]
+
 Overfull \hbox (7.52734pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 Jurij A. Krav-cov and Ju-rij I. Orlov. \T1/futs/m/it/10.95 Caus-tics, Catas-tro-phes and Wave Fields\T1/futs/m/n/10.95 . 2. ed. Springer
  []
 
-
+[228]
 Overfull \hbox (6.52393pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 cally Solv-ing the Vec-tor Kirch-hoff In-te-gral''. In: \T1/futs/m/it/10.95 Op-tics Ex-press \T1/futs/m/n/10.95 28.7 (Mar. 2020), p. 10670.
  []
 
-[224]
+
 Overfull \hbox (0.38011pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Tech. rep. LA--14503, 1487368. Dec. 2018, LA^^U14503, 1487368. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 2172 / 1487368$[][]\T1/futs/m/n/10.95 . 
  []
 
-[225]
+[229]
 Overfull \hbox (8.13751pt too wide) in paragraph at lines 27--27
 \T1/futs/m/it/10.95 mas \T1/futs/m/n/10.95 25.8 (Aug. 2018), p. 082710. \T1/futs/m/sc/10.95 issn\T1/futs/m/n/10.95 : 1070-664X, 1089-7674. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1063 / 1 . 5044609$[][]\T1/futs/m/n/10.95 . 
  []
 
-[226]
+[230]
 Overfull \hbox (5.03362pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Drive Cryo-genic Tar-gets on OMEGA''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 25.6 (June 2018), p. 062701.
  []
@@ -3240,7 +3620,7 @@ Overfull \hbox (3.00508pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 tional Ig-ni-tion Fa-cil-ity Us-ing Adiabat-Shaping''. In: \T1/futs/m/it/10.95 Physics of Plas-mas \T1/futs/m/n/10.95 23.5 (May 2016),
  []
 
-[227]
+[231]
 Overfull \hbox (13.94519pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 C.A. Walsh et al. ``Mag-ne-tized Directly-Driven ICF Cap-sules: In-creased In-sta-bil-ity Growth
  []
@@ -3250,7 +3630,7 @@ Overfull \hbox (6.3339pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Sym-me-try of In-er-tial Fu-sion Im-plo-sions''. In: \T1/futs/m/it/10.95 Phys-i-cal Re-view Let-ters \T1/futs/m/n/10.95 128.19 (May 2022),
  []
 
-
+[232]
 Overfull \hbox (5.00842pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 O. V. Gotchev et al. ``Laser-Driven Magnetic-Flux Com-pres-sion in High-Energy-Density
  []
@@ -3260,7 +3640,7 @@ Overfull \hbox (28.04324pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 (June 2023), p. 905890305. \T1/futs/m/sc/10.95 issn\T1/futs/m/n/10.95 : 0022-3778, 1469-7807. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1017 / S0022377823000405$[][]\T1/futs/m/n/10.95 . 
  []
 
-[228]
+
 Overfull \hbox (1.78967pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Balescu Cal-cu-la-tions of Electron-Ion Tem-per-a-ture Equi-li-bra-tion in Plas-mas''. In: \T1/futs/m/it/10.95 Phys-
  []
@@ -3270,21 +3650,20 @@ Overfull \hbox (4.37332pt too wide) in paragraph at lines 27--27
 []\T1/futs/m/n/10.95 O. M. Man-nion et al. ``Ev-i-dence of Non-Maxwellian Ion Ve-loc-ity Dis-tri-bu-tions in Spher-
  []
 
-
+[233]
 Overfull \hbox (1.47215pt too wide) in paragraph at lines 27--27
 \T1/futs/m/n/10.95 Temperature Mea-sure-ments in In-er-tial Con-fine-ment Fu-sion Ex-per-i-ments''. In: \T1/futs/m/it/10.95 Physics
  []
 
-[229]
-Overfull \hbox (9.79362pt too wide) in paragraph at lines 27--27
-\T1/futs/m/n/10.95 130.14 (Apr. 2023), p. 145103. \T1/futs/m/sc/10.95 issn\T1/futs/m/n/10.95 : 0031-9007, 1079-7114. \T1/futs/m/sc/10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1103 / PhysRevLett .
- []
-
-[230] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Theory/TheoryMain.aux) (./Numerics/NumericsMain.aux) (./Results1/Results1Main.aux) (./Results2/Results2Main.aux) (./Conclusions/ConclusionsMain.aux) (./Appendix/Appendix1Main.aux))
+[234] (./Thesis_MainSample.aux (./Preamble/PreambleMain.aux) (./Introduction/IntroductionMain.aux) (./Theory/TheoryMain.aux) (./Numerics/NumericsMain.aux) (./Results1/Results1Main.aux) (./Results2/Results2Main.aux) (./Conclusions/ConclusionsMain.aux) (./Appendix/Appendix1Main.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Thesis_MainSample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Thesis_MainSample.run.xml'.
@@ -3292,18 +3671,18 @@ Package logreq Info: Writing requests to 'Thesis_MainSample.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37195 strings out of 474165
- 776240 string characters out of 5749497
- 2716792 words of memory out of 5000000
- 57821 multiletter control sequences out of 15000+600000
+ 37313 strings out of 474165
+ 778679 string characters out of 5749497
+ 2726350 words of memory out of 5000000
+ 57848 multiletter control sequences out of 15000+600000
  743253 words of font info for 204 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,19n,121p,10978b,2024s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Thesis_MainSample.pdf (230 pages, 60293047 bytes).
+Output written on Thesis_MainSample.pdf (234 pages, 60379391 bytes).
 PDF statistics:
- 6012 PDF objects out of 6186 (max. 8388607)
- 5395 compressed objects within 54 object streams
- 1084 named destinations out of 1200 (max. 500000)
- 1322 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6177 PDF objects out of 6186 (max. 8388607)
+ 5551 compressed objects within 56 object streams
+ 1175 named destinations out of 1200 (max. 500000)
+ 1327 words of extra memory for PDF output out of 10000 (max. 10000000)
 

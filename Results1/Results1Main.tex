@@ -1,5 +1,6 @@
 \chapter{Cylindrical Simulations to Study the Effect of Beam Radius in Direct-Drive}%
 \label{chap:RbRt}
+\acresetall
 
 This chapter describes a cylindrical, direct-drive implosion simulation platform and its use to study the effect of the beam radius initial condition on \textsc{Omega} laser facility experiments.
 Although results from the cylindrical simulations do not have the same convergence properties of spherical implosions, the essential physics for studying the effect of beam radius is preserved.
@@ -37,7 +38,7 @@ The chapter concludes with a summary of the simulations and suggestions for furt
 Neglecting the effect of random shot-to-shot variations, the dynamics and performance of an idealised direct-drive implosion is defined by a limited number of initial conditions.
 The target can be described by a set of materials and their thicknesses.
 Initial target parameters are intimately coupled to the physics of the implosion and, in part, dictate the propagation time of shocks through the target, hydrodynamic stability and absorption of the laser energy.
-The pulse shape defines the laser power which is incident of the target as a function of time.
+The pulse shape defines the laser power which is incident on the target as a function of time.
 It can be designed to, for example, drive shocks by introducing sharp rises in the incident power with time, which leads to large changes of ablation pressure~\cite{scott_shockaugmented_2022}.
 A given facility also has a number of beam ports, each of which has a specific origin and pointing location, that influence the magnitude of the \textit{beam-mode} asymmetry, arising from the uniformity of laser absorption.
 The focal-spot intensity profile of each laser, specifically the beam radius, is an additional parameter which can be varied.
@@ -45,7 +46,7 @@ It plays an important role in defining both the power which can be coupled to th
 
 As shall be explored in this chapter, increasing the beam radius alters the magnitude of energy lost via \ac{CBET}, leading to a reduction in the maximum target mass that can be imploded at a given speed~\cite{froula_increasing_2012}.
 The width of the beam relative to the target is therefore often effectively varied from shot to shot, by changing the outer radius (and therefore mass) of the target, while fixing the width of the beam.
-This defines a dimensional variable, which is the radius of the beam divided by the target radius, $R_b/R_t$.
+This defines a dimensionless variable, which is the radius of the beam divided by the target radius, $R_b/R_t$.
 Typically, at the \textsc{Omega} laser facility, this is explicitly defined as the radius of the beam which contains 95\% of the incident power divided by the initial outer target radius~\cite{froula_increasing_2012,colaitis_exploration_2023,anderson_enhanced_2024},
 \begin{equation}
     R_b/R_t = \frac{r_{95}}{R_t},
@@ -53,7 +54,7 @@ Typically, at the \textsc{Omega} laser facility, this is explicitly defined as t
 where $r_{95}$ is defined by the integral,
 \begin{equation}
     \label{eq:Res1_r95}
-    \int_0^{r_{95}}e^{- \left| \frac{r}{\sigma} \right| ^{n_s}}\text{d}r = 0.95,
+    \int_0^{r_{95}}e^{- \left| \frac{r}{\sigma} \right| ^{n_s}}r\text{d}r = 0.95,
 \end{equation}
 and the definition of a circular, super-Gaussian beam profile from Eq.~\ref{eq:supgaus} has been used.
 In the absence of \ac{CBET}, it can intuitively be understood that increasing this parameter should improve the uniformity of the laser illumination, because beam spots overlap each other more on the target, and therefore reduce the beam-mode~\cite{lees_understanding_2023}.
@@ -214,6 +215,19 @@ Introducing the $R_{b/t}^{\text{crit}}$ threshold significantly reduces the cros
 The switch between the two regimes is found from the fitting procedure to occur at $R_{b/t}^{\text{crit}}=0.86$.
 This is close to value of minimum illumination asymmetry for beams incident on a hard hard-sphere ($R_b/R_t=0.82$), which suggests that the degradation at the lowest values of $R_b/R_t$ is dominated by beam-mode, however this has not been experimentally or computationally verified.
 Experiments between $R_{b/t}^{\text{crit}} < R_b/R_t < 1$ could be influenced by changing behaviour due to \ac{CBET} or imprint, which is not properly captured by the 1-D \textsc{Lilac} simulations included in the model.
+
+\begin{figure}[t!]
+    \includegraphics[width=0.7\linewidth]{Results1/Images/New_stat_model_Y_vs_RbRt.png}
+    \centering
+    \caption{Predictions for how the absolute yield varies across \textsc{Omega} direct-drive experiments with $R_b/R_t$.
+    A change in behaviour is clearly seen at $R_{b/t}^{\text{crit}}=0.86$, at which point the yield trend with $R_b/R_t$ flips from monotonically increasing to decreasing.
+    The data in this figure is obtained from Ref.~\cite{ejaz_can_2024}.}%
+    \label{fig:RbRt_Y_ejaz}
+\end{figure}
+
+The change in behaviour observed at $R_{b/t}^{\text{crit}}=0.86$ is more clearly visible in recent extensions to the statistical model~\cite{ejaz_can_2024}.
+This extension of the model enables predictions of the absolute yield from experiments, rather than the fraction of expected yield with respect to 1-D simulations~\cite{ejaz_can_2024}.
+The prediction yield with respect to beam radius over target radius for the extended model are plotted in Fig.~\ref{fig:RbRt_Y_ejaz}, which clearly demonstrates a transition in behaviour at $R_b/R_t=0.86$.
 
 The hypothesis tested in this chapter is that the change in yield over clean at $R_b/R_t = R_{b/t}^{\text{crit}}$ is due to increasing \ac{CBET} as beam radius increases, which increases beam-mode asymmetry and therefore suppresses the $\text{YOC}_{b}$ term.
 Although \textsc{Lilac} does include a model for \ac{CBET}, it is a 1-D code and therefore the 3-D beam-mode perturbations cannot be inferred from its results.
@@ -574,7 +588,7 @@ However, the $R_b/R_t=1.0$ beams are not quite wide enough to fully translate to
     Panel d) plots the deviation from the mean of the radially integrated profiles around the azimuthal angle for all 3 simulations.
     Fig.~\ref{fig:Res1_field_profiles}.a and Fig.~\ref{fig:Res1_field_profiles}.b plot a single, incident sheet field from panels a) and c) respectively.
     It can be seen that the centre of the beam depletion at $t=1.5\ \text{ns}$ leads to less deposition at the beam angles (magenta lines) on panel d).
-    Panel b) shows that during the \ac{CBET} induced mode-flip, a significant $\ell=20$ occurs in the deposition.
+    Panel d) shows that during the \ac{CBET} induced mode-flip, a significant $\ell=20$ occurs in the deposition.
     The reducing absorption at the centre of one beam is highlighted in by the dashed circles.}%
     \label{fig:Res1_CBET_Deposition_change}
 \end{figure}
@@ -642,11 +656,13 @@ This is believed to be due to the developing mode-flip, visible in Fig.~\ref{fig
     \centering
     \caption{Trends of a) stagnation asymmetry and b) maximum (azimuthally averaged) fuel density for \ac{CBET} and no-\ac{CBET} simulations.
     The no-\ac{CBET} improvement in symmetry with $R_b/R_t$ is observed which also corresponds to improved compression.
-    The symmetry trend including \ac{CBET} is more complex, but broadly the stagnation state symmetry is worse with increasing $R_b/R_t$.}%
+    The symmetry trend including \ac{CBET} is more complex, but broadly the stagnation state symmetry is worse with increasing $R_b/R_t$.
+    Note that simulations had a similar stagnation areal density, $\rho_{\text{DT}} R\sim 2.5\ \text{g}\ \text{cm}^{-2}$.
+    This nominal value is provided to help the reader to appreciate the magnitude of asymmetry plotted in panel a).}%
     \label{fig:Res1_asymm_trend}
 \end{figure}
 
-The standard deviations of the radially integrated stagnation state fuel density,
+The standard deviations in azimuthal angle of the radially integrated stagnation state fuel density,
 \begin{equation}
     \sigma [\rho_{\text{DT}}R] = \sqrt{ \langle \rho_{\text{DT}}R^2 \rangle - \langle \rho_{\text{DT}}R \rangle^2 },
 \end{equation}

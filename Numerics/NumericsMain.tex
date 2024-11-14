@@ -1,5 +1,6 @@
 \chapter{\textsc{Solas}, a 3-D Laser Ray-Trace and Cross-Beam Energy Transfer Model}%
 \label{chap:SOLAS}
+\acresetall
 
 This chapter describes the \textsc{Solas} code, a 3-D laser ray-tracing module implemented in the \ac{Rad-MHD} code \textsc{Chimera}.
 The chapter begins with a discussion of why ray-tracing is frequently used to model `long-pulse' lasers for \ac{HEDP} experiments and why the standard framework is inadequate to model \ac{LPIs}.
@@ -119,6 +120,9 @@ It then solves the nonlinear coupling of electromagnetic waves by allowing first
 The perturbative approach limits \textsc{Lpse} to linear problems and the temporal and spatial resolution required to resolve the beat frequency mean that coupling to multidimensional \ac{Rad-Hydro} simulations is not feasible.
 However, it is an extremely useful tool to validate implementation of \ac{CBET} models, especially for laser caustics where diffraction is important, such as the test case presented in Sec.~\ref{sec:SOLAS_CBET_caustic_test}.
 It can also been used for many other important studies, such as the mitigation of \ac{LPIs} via laser bandwidth and the effect of beam smoothing techniques on the growth rate of \ac{LPIs}~\cite{follett_thresholds_2021}.
+The \textsc{Pf3d} code is also frequently used to perform multidimensional simulations of \ac{ICF} relevant \ac{LPIs}~\cite{berger_dominant_1998}.
+\textsc{Pf3d} models laser beams in the paraxial (weakly-refracting) limit and is therefore better suited to indirect drive problems where laser light typically undergoes weaker refraction than for direct-drive in an extended plasma corona.
+
 
 %################################################################################
 %################################################################################
@@ -431,7 +435,7 @@ For simulations where a laser heats a solid, initially cold target, Eq.~\ref{eq:
 \label{sec:SOLAS_ray_validation}
 
 Several validation problems have been conducted to verify that the ray solver has been implemented correctly.
-Here the quadratic trough and cylindrical helix test problems are presented, which compare the path of a single ray in to an analytic solution in order to verify that the ray solvers correctly obtain the trajectory of light.
+Here the quadratic trough and cylindrical helix test problems are presented, which compare the path of a single ray to an analytic solution in order to verify that the ray solvers correctly obtain the trajectory of light.
 The blast wave problem is also presented which is a test of \ac{Inv-Brem} absorption to an analytic solution in the absence of thermal conduction and hydrodynamic motion.
 
 \paragraph*{Quadratic trough}
