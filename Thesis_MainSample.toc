@@ -1,138 +1,138 @@
-\contentsline {chapter}{\numberline {1}Introduction}{29}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Nuclear Fusion}{29}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Inertial Confinement Fusion}{32}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Ignition Requirements}{32}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Central Hotspot Ignition}{34}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Alternative Ignition Approaches}{36}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Inertial Fusion Energy Considerations}{37}{subsection.1.2.4}%
-\contentsline {section}{\numberline {1.3}Current Experiments and Main Approaches}{38}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Indirect-Drive}{38}{subsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.1.1}Indirect-Drive Physics}{38}{subsubsection.1.3.1.1}%
-\contentsline {subsubsection}{\numberline {1.3.1.2}Indirect-Drive Experimental Progress}{40}{subsubsection.1.3.1.2}%
-\contentsline {subsection}{\numberline {1.3.2}Direct-Drive}{41}{subsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.2.1}Direct-Drive Physics}{41}{subsubsection.1.3.2.1}%
-\contentsline {subsubsection}{\numberline {1.3.2.2}Direct-Drive Experimental Progress}{45}{subsubsection.1.3.2.2}%
-\contentsline {section}{\numberline {1.4}Objective of the work}{46}{section.1.4}%
-\contentsline {chapter}{\numberline {2}The Interaction of Light with Plasma}{49}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Basic Plasma Physics}{50}{section.2.1}%
-\contentsline {section}{\numberline {2.2}The Kinetic and Fluid Formulations of Plasma}{51}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}The Kinetic Formulation}{52}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}The Fluid Equations}{53}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Radiation Transport}{55}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Magnetohydrodynamics}{56}{subsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.4.1}Resistive MHD}{57}{subsubsection.2.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.2.4.2}The Nernst Effect}{57}{subsubsection.2.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.2.4.3}Magnetised Thermal Conduction}{58}{subsubsection.2.2.4.3}%
-\contentsline {subsection}{\numberline {2.2.5}Kinetic Heatflow}{58}{subsection.2.2.5}%
-\contentsline {section}{\numberline {2.3}Fluid Description of Waves in Plasma}{59}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Plasma as a Dielectric Medium}{59}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Electromagnetic Waves}{61}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Plasma Waves}{62}{subsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Electron Plasma Waves}{64}{subsubsection.2.3.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.3.2}Ion Acoustic Waves}{65}{subsubsection.2.3.3.2}%
-\contentsline {section}{\numberline {2.4}Propagation and Absorption of Light in a Plasma}{66}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}The WKB Approximation}{66}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Ray-Tracing}{68}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Inverse-Bremsstrahlung}{70}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Resonance Absorption}{73}{subsection.2.4.4}%
-\contentsline {section}{\numberline {2.5}Laser Plasma instabilities}{74}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}The Ponderomotive Force}{74}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Three-Wave Coupling with Two Light Waves}{76}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Cross-Beam Energy Transfer}{77}{subsection.2.5.3}%
-\contentsline {subsubsection}{\numberline {2.5.3.1}Effect of Polarisation}{80}{subsubsection.2.5.3.1}%
-\contentsline {subsubsection}{\numberline {2.5.3.2}Langdon Effect on CBET}{81}{subsubsection.2.5.3.2}%
-\contentsline {subsection}{\numberline {2.5.4}Mitigation of Cross-Beam Energy Transfer}{81}{subsection.2.5.4}%
-\contentsline {chapter}{\numberline {3}\textsc {Solas}, a 3-D Laser Ray-Trace and Cross-Beam Energy Transfer Model}{83}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Ray-Tracing for Hydrodynamic Simulations of Fusion Plasmas}{84}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Existing Cross-Beam Energy Transfer Models}{85}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Ray-Based Models}{85}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Wave Solvers}{87}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Particle in Cell Codes}{88}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}\textsc {Solas} 3-D Laser Ray-Trace}{88}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Outline of \textsc {Solas}-\textsc {Chimera} Interfacing}{89}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}\textsc {Solas} Mesh Structure}{89}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Re-Domain Balance for Radial Geometries}{90}{subsubsection.3.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Semi-Structured Eulerian Grid with Combined Cells}{91}{subsubsection.3.3.2.2}%
-\contentsline {subsection}{\numberline {3.3.3}Ray Initialisation}{93}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Equations of Rays and Adaptive Integration}{96}{subsection.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.4.1}Ray Solver Validation}{99}{subsubsection.3.3.4.1}%
-\contentsline {section}{\numberline {3.4}Ray-Based Field Reconstruction and Ray Sheets}{102}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Ray-Amplitude and Field Estimate from Neighbour-Rays}{103}{subsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.1}Caustics and Ray-Sheets}{105}{subsubsection.3.4.1.1}%
-\contentsline {subsection}{\numberline {3.4.2}Caustic Field Capping}{107}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Field Reconstruction Validation}{109}{subsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.3.1}1-D Reflected Beam}{109}{subsubsection.3.4.3.1}%
-\contentsline {subsubsection}{\numberline {3.4.3.2}2-D Reflected Beam}{110}{subsubsection.3.4.3.2}%
-\contentsline {section}{\numberline {3.5}Ray-Based CBET Model}{112}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Power Change of Rays due to CBET}{113}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Caustic Gain Truncation}{117}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Coherent Caustic Correction and Caustic Region Identification}{118}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Dynamic Memory for Storing Fields and CBET Gains}{120}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Pump Depletion Iterations}{120}{subsection.3.5.5}%
-\contentsline {subsection}{\numberline {3.5.6}Energy Conservation Iterations}{122}{subsection.3.5.6}%
-\contentsline {subsection}{\numberline {3.5.7}CBET Validation}{124}{subsection.3.5.7}%
-\contentsline {subsubsection}{\numberline {3.5.7.1}2-D CBET Without Caustics}{124}{subsubsection.3.5.7.1}%
-\contentsline {subsubsection}{\numberline {3.5.7.2}2-D CBET With Caustics}{125}{subsubsection.3.5.7.2}%
-\contentsline {subsubsection}{\numberline {3.5.7.3}16 Beam CBET in 2-D}{127}{subsubsection.3.5.7.3}%
-\contentsline {section}{\numberline {3.6}Simulations of CBET for \textsc {Omega} Direct-Drive Implosions}{129}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}1-D hydrodynamics, 3-D Ray-Trace Simulation of \textsc {Omega} Shot 89224}{129}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}3-D Post Process of Absorption Non-Uniformity}{133}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Conclusions}{136}{section.3.7}%
-\contentsline {chapter}{\numberline {4}Cylindrical Simulations to Study the Effect of Beam Radius in Direct-Drive}{138}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction to Beam Radius in Direct-Drive Inertial Confinement Fusion}{139}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Previous Work Studying the Effect of Beam Radius on \textsc {Omega}}{141}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Statistical Modelling of \textsc {Omega} Direct-Drive Implosions}{142}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Cylindrical Simulation Platform for Beam Radius Parameter Scan}{146}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Advantages and Validity Considerations of the Cylindrical Simulation Platform}{146}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Pulse Shape and Target Initial Conditions}{147}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}1-D Implosion Tuning}{148}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Asymmetry of Deposited Power}{150}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis and Quantity Definitions}{151}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Deposition Asymmetries in the Absence of CBET}{153}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}CBET Imprint on Incident Field}{154}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Deposition Asymmetries in the Presence of CBET}{156}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Stagnation State Asymmetry}{158}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Stagnation State Asymmetry Trend with Beam Radius}{159}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Time Resolved Asymmetry Growth}{162}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Comparison of Results to Statistical Modelling}{164}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Conclusions}{165}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Summary of work}{165}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Future Work}{165}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {5}Simulations of Cross-Beam Energy Transfer for Magnetised Direct-Drive}{167}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Magnetised Inertial Confinement Fusion and Exploding-Pushers}{168}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Potential Benefits of Target Magnetisation}{168}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Experimental Studies of Magnetised-ICF}{170}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Magnetised Laser-Plasma Instabilities}{172}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}The Exploding-Pusher Configuration}{172}{subsection.5.1.4}%
-\contentsline {section}{\numberline {5.2}Cross-Beam Energy Transfer in Unmagnetised Exploding-Pushers}{173}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Simulation Configuration}{173}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}1-D Simulations}{176}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}2-D Simulations}{178}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Magnetisation in Exploding-Pusher Implosions}{180}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}In-Flight Field Structure}{181}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Resistive Diffusion and the Lorentz Force}{182}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Anisotropic Thermal Conduction}{183}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}The Nernst Effect}{185}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5.4}The Effect of Magnetisation on Cross-Beam Energy Transfer and Stagnation}{187}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Analysis and Key Definitions}{188}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Spatial Change of CBET and Deposition from Magnetisation}{190}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Stagnation Profiles}{192}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Conclusions}{196}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Summary of Work}{196}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Future Work}{197}{subsection.5.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusions}{198}{chapter.6}%
-\contentsline {section}{\numberline {6.1}The \textsc {Solas} Ray-Trace and CBET Model}{199}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Model Development and Validation}{199}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Potential \textsc {Solas} Enhancements}{200}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Potential \textsc {Chimera} Enhancements}{201}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Effect of Beam Radius on Beam-Mode Asymmetry}{202}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Summary of Simulations}{202}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Suggestions for Further Work}{203}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}The Effect of Coronal Magnetisation on CBET Scattering}{204}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Summary of Simulations}{204}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Suggestions for Further Work}{205}{subsection.6.3.2}%
-\contentsline {section}{\numberline {6.4}Final Remarks on CBET Modelling}{205}{section.6.4}%
-\contentsline {chapter}{\numberline {A}List of Acronyms}{208}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Copyright Permissions}{211}{appendix.B}%
-\contentsline {chapter}{Bibliography}{213}{section*.241}%
+\contentsline {chapter}{\numberline {1}Introduction}{27}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Nuclear Fusion}{27}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Inertial Confinement Fusion}{30}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Ignition Requirements}{30}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Central Hotspot Ignition}{32}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Alternative Ignition Approaches}{34}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Inertial Fusion Energy Considerations}{35}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Current Experiments and Main Approaches}{36}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Indirect-Drive}{36}{subsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.1.1}Indirect-Drive Physics}{36}{subsubsection.1.3.1.1}%
+\contentsline {subsubsection}{\numberline {1.3.1.2}Indirect-Drive Experimental Progress}{38}{subsubsection.1.3.1.2}%
+\contentsline {subsection}{\numberline {1.3.2}Direct-Drive}{39}{subsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.2.1}Direct-Drive Physics}{39}{subsubsection.1.3.2.1}%
+\contentsline {subsubsection}{\numberline {1.3.2.2}Direct-Drive Experimental Progress}{43}{subsubsection.1.3.2.2}%
+\contentsline {section}{\numberline {1.4}Objective of the work}{44}{section.1.4}%
+\contentsline {chapter}{\numberline {2}The Interaction of Light with Plasma}{47}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Basic Plasma Physics}{48}{section.2.1}%
+\contentsline {section}{\numberline {2.2}The Kinetic and Fluid Formulations of Plasma}{49}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}The Kinetic Formulation}{50}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}The Fluid Equations}{51}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Radiation Transport}{53}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Magnetohydrodynamics}{54}{subsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4.1}Resistive MHD}{55}{subsubsection.2.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.2.4.2}The Nernst Effect}{55}{subsubsection.2.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.2.4.3}Magnetised Thermal Conduction}{56}{subsubsection.2.2.4.3}%
+\contentsline {subsection}{\numberline {2.2.5}Kinetic Heatflow}{56}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Fluid Description of Waves in Plasma}{57}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Plasma as a Dielectric Medium}{57}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Electromagnetic Waves}{59}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Plasma Waves}{60}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Electron Plasma Waves}{62}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}Ion Acoustic Waves}{63}{subsubsection.2.3.3.2}%
+\contentsline {section}{\numberline {2.4}Propagation and Absorption of Light in a Plasma}{64}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}The WKB Approximation}{64}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Ray-Tracing}{66}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Inverse-Bremsstrahlung}{68}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Resonance Absorption}{71}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Laser Plasma instabilities}{72}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}The Ponderomotive Force}{72}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Three-Wave Coupling with Two Light Waves}{74}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Cross-Beam Energy Transfer}{75}{subsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.3.1}Effect of Polarisation}{78}{subsubsection.2.5.3.1}%
+\contentsline {subsubsection}{\numberline {2.5.3.2}Langdon Effect on CBET}{79}{subsubsection.2.5.3.2}%
+\contentsline {subsection}{\numberline {2.5.4}Mitigation of Cross-Beam Energy Transfer}{79}{subsection.2.5.4}%
+\contentsline {chapter}{\numberline {3}\textsc {Solas}, a 3-D Laser Ray-Trace and Cross-Beam Energy Transfer Model}{81}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Ray-Tracing for Hydrodynamic Simulations of Fusion Plasmas}{82}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Existing Cross-Beam Energy Transfer Models}{83}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Ray-Based Models}{83}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Wave Solvers}{85}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Particle in Cell Codes}{86}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}\textsc {Solas} 3-D Laser Ray-Trace}{86}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Outline of \textsc {Solas}-\textsc {Chimera} Interfacing}{87}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}\textsc {Solas} Mesh Structure}{87}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Re-Domain Balance for Radial Geometries}{88}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Semi-Structured Eulerian Grid with Combined Cells}{89}{subsubsection.3.3.2.2}%
+\contentsline {subsection}{\numberline {3.3.3}Ray Initialisation}{91}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Equations of Rays and Adaptive Integration}{94}{subsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.4.1}Ray Solver Validation}{97}{subsubsection.3.3.4.1}%
+\contentsline {section}{\numberline {3.4}Ray-Based Field Reconstruction and Ray Sheets}{100}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Ray-Amplitude and Field Estimate from Neighbour-Rays}{101}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}Caustics and Ray-Sheets}{103}{subsubsection.3.4.1.1}%
+\contentsline {subsection}{\numberline {3.4.2}Caustic Field Capping}{105}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Field Reconstruction Validation}{107}{subsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}1-D Reflected Beam}{107}{subsubsection.3.4.3.1}%
+\contentsline {subsubsection}{\numberline {3.4.3.2}2-D Reflected Beam}{108}{subsubsection.3.4.3.2}%
+\contentsline {section}{\numberline {3.5}Ray-Based CBET Model}{110}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Power Change of Rays due to CBET}{111}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Caustic Gain Truncation}{115}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Coherent Caustic Correction and Caustic Region Identification}{116}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Dynamic Memory for Storing Fields and CBET Gains}{118}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Pump Depletion Iterations}{118}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Energy Conservation Iterations}{120}{subsection.3.5.6}%
+\contentsline {subsection}{\numberline {3.5.7}CBET Validation}{122}{subsection.3.5.7}%
+\contentsline {subsubsection}{\numberline {3.5.7.1}2-D CBET Without Caustics}{122}{subsubsection.3.5.7.1}%
+\contentsline {subsubsection}{\numberline {3.5.7.2}2-D CBET With Caustics}{123}{subsubsection.3.5.7.2}%
+\contentsline {subsubsection}{\numberline {3.5.7.3}16 Beam CBET in 2-D}{125}{subsubsection.3.5.7.3}%
+\contentsline {section}{\numberline {3.6}Simulations of CBET for \textsc {Omega} Direct-Drive Implosions}{127}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}1-D hydrodynamics, 3-D Ray-Trace Simulation of \textsc {Omega} Shot 89224}{127}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}3-D Post Process of Absorption Non-Uniformity}{131}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Conclusions}{134}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Cylindrical Simulations to Study the Effect of Beam Radius in Direct-Drive}{136}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction to Beam Radius in Direct-Drive Inertial Confinement Fusion}{137}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Previous Work Studying the Effect of Beam Radius on \textsc {Omega}}{139}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Statistical Modelling of \textsc {Omega} Direct-Drive Implosions}{140}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Cylindrical Simulation Platform for Beam Radius Parameter Scan}{144}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Advantages and Validity Considerations of the Cylindrical Simulation Platform}{144}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Pulse Shape and Target Initial Conditions}{145}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}1-D Implosion Tuning}{146}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Asymmetry of Deposited Power}{148}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis and Quantity Definitions}{149}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Deposition Asymmetries in the Absence of CBET}{151}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}CBET Imprint on Incident Field}{152}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Deposition Asymmetries in the Presence of CBET}{154}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Stagnation State Asymmetry}{156}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Stagnation State Asymmetry Trend with Beam Radius}{157}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Time Resolved Asymmetry Growth}{160}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Comparison of Results to Statistical Modelling}{162}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Conclusions}{163}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Summary of work}{163}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Future Work}{163}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Simulations of Cross-Beam Energy Transfer for Magnetised Direct-Drive}{165}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Magnetised Inertial Confinement Fusion and Exploding-Pushers}{166}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Potential Benefits of Target Magnetisation}{166}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Experimental Studies of Magnetised-ICF}{168}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Magnetised Laser-Plasma Instabilities}{170}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}The Exploding-Pusher Configuration}{170}{subsection.5.1.4}%
+\contentsline {section}{\numberline {5.2}Cross-Beam Energy Transfer in Unmagnetised Exploding-Pushers}{171}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Simulation Configuration}{171}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}1-D Simulations}{174}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}2-D Simulations}{176}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Magnetisation in Exploding-Pusher Implosions}{178}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}In-Flight Field Structure}{179}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Resistive Diffusion and the Lorentz Force}{180}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Anisotropic Thermal Conduction}{181}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}The Nernst Effect}{183}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}The Effect of Magnetisation on Cross-Beam Energy Transfer and Stagnation}{185}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Analysis and Key Definitions}{186}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Spatial Change of CBET and Deposition from Magnetisation}{188}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Stagnation Profiles}{190}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Conclusions}{194}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Summary of Work}{194}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Future Work}{195}{subsection.5.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusions}{196}{chapter.6}%
+\contentsline {section}{\numberline {6.1}The \textsc {Solas} Ray-Trace and CBET Model}{197}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Model Development and Validation}{197}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Potential \textsc {Solas} Enhancements}{198}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Potential \textsc {Chimera} Enhancements}{199}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Effect of Beam Radius on Beam-Mode Asymmetry}{200}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Summary of Simulations}{200}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Suggestions for Further Work}{201}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}The Effect of Coronal Magnetisation on CBET Scattering}{202}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Summary of Simulations}{202}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Suggestions for Further Work}{203}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Final Remarks on CBET Modelling}{203}{section.6.4}%
+\contentsline {chapter}{\numberline {A}List of Acronyms}{206}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Copyright Permissions}{209}{appendix.B}%
+\contentsline {chapter}{Bibliography}{211}{section*.241}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

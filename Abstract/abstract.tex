@@ -1,33 +1,22 @@
 \begin{abstract}
 
 Accurate modelling of laser propagation and energy deposition in direct-drive \ac{ICF} is crucial to performing predictive simulations.
-Laser energy drives all subsequent dynamics, therefore unless a valid model is employed to obtain the deposition profile, the capability of codes to both design future implosions and analyse past experiments is significantly reduced.
 \ac{CBET} is an interaction of laser light and the plasma state of matter, which can halve the deposited power in direct-drive implosions and amplify deposition asymmetries by an order of magnitude.
-Computational models which are used to simulate direct-drive implosions and do not include this effect, therefore cannot be truly predictive.
+Computational models which do not account for \ac{CBET}, can therefore not be truly predictive.
 This thesis presents the development, validation and use of \textsc{Solas}: a 3-D, ray-based \ac{CBET} model, which has been integrated into the \textsc{Chimera} code.
 
 The development of \textsc{Solas} and its integration into the \textsc{Chimera} code are described.
-A novel computational grid for the ray-trace, which allows for adaptive radial resolution and straightforward coupling to an Eulerian hydrodynamics code, is presented.
 Test problems were conducted which validated the ray-trace, energy deposition, electric field reconstruction and \ac{CBET} solver.
 \textsc{Chimera}-\textsc{Solas} simulations of direct-drive targets on the \textsc{Omega} laser facility are presented, which are in excellent agreement with existing codes.
 
 A study is presented, which investigated the role of \ac{CBET} with respect to the beam radius initial condition for direct-drive implosions.
-A 2-D cylindrical simulation platform was developed, which allowed for rapid computation of an ensemble of both \ac{CBET} and no-\ac{CBET} calculations.
-The results of this study demonstrate that in the absence of \ac{CBET}, increasing the beam radius improves the stagnation state symmetry of implosions.
-However, a larger beam radius leads to more \ac{CBET} and a subsequent degradation of symmetry.
+The results demonstrate that in the absence of \ac{CBET}, increasing the beam radius improves the stagnation state symmetry of implosions.
+However, a larger beam radius leads to more \ac{CBET} and a subsequent symmetry degradation.
 These results could help to explain observed trends in statistical modelling of \textsc{Omega} implosions.
 
 A final study is presented, which aimed to understand how the role of \ac{CBET} changes when a target is magnetised prior to the laser drive.
-Pre-magnetisation is predicted to reduce hotspot thermal conduction losses, and could thus potentially enhance the maximum performance of implosions at a given laser energy.
-However, magnetised direct-drive experiments have demonstrated that anisotropic thermal conduction in the coronal plasma can lead to additional asymmetry of the implosion.
-\ac{CBET} is known to be highly sensitive to long wavelength, coronal asymmetries.
-Therefore, simulations of magnetised direct-drive targets were conducted, to understand if magnetisation of the corona affected \ac{CBET} scattering.
-While \ac{CBET} was observed to be dynamically significant in these implosions, significantly reducing the coupled energy, its effect appeared to be mostly insensitive to the level of pre-magnetisation.
-Particularly, the stagnation state asymmetry was very similar for simulations when \ac{CBET} redistribution of deposition was included and discounted.
-Modifications to the implosion design are suggested, which may lead to a more experimentally observable impact of magnetisation on \ac{CBET}.
-
-It is hoped that the next generation of direct-drive laser facilities will incorporate bandwidth to fully mitigate \ac{CBET}.
-Therefore, understanding how \ac{CBET} affects current implosions is crucial to be able to confidently extrapolate performance onto these future facilities.
-3-D \ac{CBET} models, which are able to model both the energy coupling losses and enhanced deposition asymmetry, are therefore a crucial tool for experimental analysis and design.
+Magnetised direct-drive experiments have demonstrated that anisotropic thermal conduction in the coronal plasma can lead to asymmetry of the implosion.
+Simulations of magnetised direct-drive targets were conducted, to understand if coronal magnetisation affected \ac{CBET} scattering.
+Although \ac{CBET} was observed to be dynamically significant to the implosions, the interplay of \ac{CBET} with the magnetic field was found to be minimal.
 
 \end{abstract}
